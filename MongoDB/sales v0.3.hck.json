@@ -1,0 +1,1680 @@
+{
+    "modelName": "sales",
+    "collections": [
+        {
+            "collectionName": "customers",
+            "type": "object",
+            "GUID": "166589b0-0440-11e6-a1a6-29098b60dd65",
+            "description": "Master collection for cusotmers",
+            "comments": "More comments can be put here",
+            "additionalProperties": false,
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "245a1400-0440-11e6-a1a6-29098b60dd65",
+                    "name": "_id",
+                    "description": "MongoDB-generated unique document ID",
+                    "required": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "30c4f110-0440-11e6-a1a6-29098b60dd65",
+                    "name": "name",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "b1d6ab80-0441-11e6-a1a6-29098b60dd65"
+                    ],
+                    "sample": "John Doe",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "2f6f4780-f674-11e6-a8f0-0b0b313c735c",
+                    "type": "reference",
+                    "name": "address",
+                    "$ref": "#model/definitions/address",
+                    "refType": "model",
+                    "ref": "b89c3b50-f672-11e6-a8f0-0b0b313c735c",
+                    "refIdPath": [
+                        "53fc2360-128a-11e8-9f2d-819809faafb9",
+                        "58f47820-f672-11e6-a8f0-0b0b313c735c",
+                        "b89c3b50-f672-11e6-a8f0-0b0b313c735c"
+                    ],
+                    "childRelationships": [
+                        "5d24e7b0-00c0-11e7-b3e8-155c696e0db1"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "b502c8b0-0442-11e6-a1a6-29098b60dd65",
+                    "name": "otherInfo",
+                    "type": "string",
+                    "default": "cosntant",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "whatever info is relevant",
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "GUID": "58f49f30-f672-11e6-a8f0-0b0b313c735c",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        },
+        {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "GUID": "c3e838b0-0721-11e6-a0f3-475ccb6d8902",
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "name": "_id",
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "5682e440-0722-11e6-a0f3-475ccb6d8902"
+                    ],
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "GUID": "cfe70d80-0721-11e6-a0f3-475ccb6d8902",
+                    "type": "string",
+                    "primaryKey": false,
+                    "sample": "This is product description",
+                    "name": "description",
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "6ec9f2f0-0722-11e6-a0f3-475ccb6d8902"
+                    ],
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "GUID": "de41fac0-0721-11e6-a0f3-475ccb6d8902",
+                    "description": "Price in dollars",
+                    "type": "numeric",
+                    "unit": "Dollars",
+                    "primaryKey": false,
+                    "sample": 3.24,
+                    "minimum": 2,
+                    "maximum": 50,
+                    "name": "unitPrice",
+                    "mode": "double",
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "89b76980-0722-11e6-a0f3-475ccb6d8902"
+                    ],
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "GUID": "4f043b60-9764-11e6-9e22-2f925240a0a2",
+                    "name": "moreInfo",
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                }
+            ],
+            "collectionName": "products",
+            "GUID": "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+            "indexes": [],
+            "definitions": {
+                "GUID": "58f49f31-f672-11e6-a8f0-0b0b313c735c",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        },
+        {
+            "type": "object",
+            "description": "Denormalized collection embedding an arry of order lines, each embedding product information",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "GUID": "68dada10-0440-11e6-a1a6-29098b60dd65",
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "name": "_id",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "GUID": "8627c470-0440-11e6-a1a6-29098b60dd65",
+                    "type": "document",
+                    "primaryKey": false,
+                    "properties": [
+                        {
+                            "type": "document",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "properties": [
+                                {
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "sample": "customers",
+                                    "GUID": "dd06a5a0-1289-11e8-9f2d-819809faafb9",
+                                    "required": true,
+                                    "name": "$ref",
+                                    "error": {
+                                        "name": false
+                                    },
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "objectId",
+                                    "primaryKey": false,
+                                    "relationshipType": "Foreign Key",
+                                    "parentRelationship": "152408b0-128a-11e8-9f2d-819809faafb9",
+                                    "foreignCollection": "166589b0-0440-11e6-a1a6-29098b60dd65",
+                                    "foreignField": [
+                                        "166589b0-0440-11e6-a1a6-29098b60dd65",
+                                        "245a1400-0440-11e6-a1a6-29098b60dd65"
+                                    ],
+                                    "GUID": "dd067e90-1289-11e8-9f2d-819809faafb9",
+                                    "required": true,
+                                    "name": "$id",
+                                    "error": {
+                                        "sample": false,
+                                        "name": false
+                                    },
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "dd067e91-1289-11e8-9f2d-819809faafb9",
+                                    "name": "$db",
+                                    "error": {
+                                        "name": false
+                                    },
+                                    "isActivated": true
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "GUID": "dd065780-1289-11e8-9f2d-819809faafb9",
+                            "name": "customerRef",
+                            "dbRef": true,
+                            "isActivated": true
+                        },
+                        {
+                            "GUID": "34b6f650-0441-11e6-a1a6-29098b60dd65",
+                            "type": "string",
+                            "primaryKey": false,
+                            "sample": "John Doe",
+                            "name": "customerName",
+                            "relationshipType": "Foreign Master",
+                            "parentRelationship": "b1d6ab80-0441-11e6-a1a6-29098b60dd65",
+                            "foreignCollection": "166589b0-0440-11e6-a1a6-29098b60dd65",
+                            "foreignField": [
+                                "166589b0-0440-11e6-a1a6-29098b60dd65",
+                                "30c4f110-0440-11e6-a1a6-29098b60dd65"
+                            ],
+                            "required": true,
+                            "isActivated": true
+                        },
+                        {
+                            "GUID": "3d960560-f674-11e6-a8f0-0b0b313c735c",
+                            "type": "reference",
+                            "name": "customerAddress",
+                            "$ref": "#model/definitions/address",
+                            "refType": "model",
+                            "ref": "b89c3b50-f672-11e6-a8f0-0b0b313c735c",
+                            "refIdPath": [
+                                "53fc2360-128a-11e8-9f2d-819809faafb9",
+                                "58f47820-f672-11e6-a8f0-0b0b313c735c",
+                                "b89c3b50-f672-11e6-a8f0-0b0b313c735c"
+                            ],
+                            "relationshipType": "Foreign Master",
+                            "foreignCollection": "166589b0-0440-11e6-a1a6-29098b60dd65",
+                            "foreignField": [
+                                "166589b0-0440-11e6-a1a6-29098b60dd65",
+                                "2f6f4780-f674-11e6-a8f0-0b0b313c735c"
+                            ],
+                            "parentRelationship": "5d24e7b0-00c0-11e7-b3e8-155c696e0db1",
+                            "isActivated": true
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "name": "customerInfo",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "GUID": "95bc9140-0440-11e6-a1a6-29098b60dd65",
+                    "type": "array",
+                    "primaryKey": false,
+                    "name": "orderItems",
+                    "relationshipType": "",
+                    "properties": [
+                        {
+                            "GUID": "b2df1040-0440-11e6-a1a6-29098b60dd65",
+                            "type": "document",
+                            "primaryKey": false,
+                            "properties": [
+                                {
+                                    "GUID": "c7c58ed0-0440-11e6-a1a6-29098b60dd65",
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "sample": 1,
+                                    "minimum": 1,
+                                    "name": "sequence",
+                                    "relationshipType": "",
+                                    "required": true,
+                                    "maximum": 200,
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "d6d80c40-0440-11e6-a1a6-29098b60dd65",
+                                    "type": "objectId",
+                                    "primaryKey": false,
+                                    "name": "producId",
+                                    "relationshipType": "Foreign Key",
+                                    "parentRelationship": "5682e440-0722-11e6-a0f3-475ccb6d8902",
+                                    "foreignCollection": "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+                                    "foreignField": [
+                                        "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+                                        "c3e838b0-0721-11e6-a0f3-475ccb6d8902"
+                                    ],
+                                    "required": true,
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "eb3313b0-0440-11e6-a1a6-29098b60dd65",
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "sample": "Product description here",
+                                    "name": "productDescription",
+                                    "relationshipType": "Foreign Master",
+                                    "parentRelationship": "6ec9f2f0-0722-11e6-a0f3-475ccb6d8902",
+                                    "foreignCollection": "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+                                    "foreignField": [
+                                        "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+                                        "cfe70d80-0721-11e6-a0f3-475ccb6d8902"
+                                    ],
+                                    "required": true,
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "fce2d140-0440-11e6-a1a6-29098b60dd65",
+                                    "type": "numeric",
+                                    "unit": "Dollars",
+                                    "primaryKey": false,
+                                    "sample": 3.24,
+                                    "minimum": 2,
+                                    "exclusiveMinimum": true,
+                                    "maximum": 50,
+                                    "name": "productUnitPrice",
+                                    "mode": "double",
+                                    "relationshipType": "Foreign Master",
+                                    "parentRelationship": "89b76980-0722-11e6-a0f3-475ccb6d8902",
+                                    "foreignCollection": "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+                                    "foreignField": [
+                                        "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+                                        "de41fac0-0721-11e6-a0f3-475ccb6d8902"
+                                    ],
+                                    "required": true,
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "09993640-0441-11e6-a1a6-29098b60dd65",
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "sample": 5,
+                                    "name": "quantity",
+                                    "mode": "integer64",
+                                    "relationshipType": "",
+                                    "required": true,
+                                    "isActivated": true
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "arrayItem": true,
+                            "relationshipType": "",
+                            "isActivated": true
+                        }
+                    ],
+                    "required": true,
+                    "isActivated": true
+                }
+            ],
+            "collectionName": "sales Orders",
+            "GUID": "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+            "indexes": [
+                {
+                    "GUID": "55142f50-948b-11e6-a93f-696fa271dfc7",
+                    "name": "houseNum",
+                    "key": [
+                        {
+                            "keyId": "235d5fe0-f674-11e6-a8f0-0b0b313c735c",
+                            "type": "ascending"
+                        }
+                    ],
+                    "unique": true,
+                    "dropDuplicates": false,
+                    "sparse": false,
+                    "ttlIndex": "",
+                    "backgroundIndexing": false,
+                    "languageOverride": false,
+                    "weights": ""
+                }
+            ],
+            "definitions": {
+                "GUID": "58f49f32-f672-11e6-a8f0-0b0b313c735c",
+                "properties": [],
+                "type": "definitions"
+            },
+            "sharding": {
+                "key": "",
+                "error": {
+                    "key": false
+                },
+                "numInitialChunks": 897897,
+                "collation": "simple"
+            },
+            "isActivated": true
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "b1d6ab80-0441-11e6-a1a6-29098b60dd65",
+            "name": "fm_customerName",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Master",
+            "parentCollection": "166589b0-0440-11e6-a1a6-29098b60dd65",
+            "parentField": [
+                [
+                    "166589b0-0440-11e6-a1a6-29098b60dd65",
+                    "30c4f110-0440-11e6-a1a6-29098b60dd65"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+            "childField": [
+                [
+                    "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+                    "8627c470-0440-11e6-a1a6-29098b60dd65",
+                    "34b6f650-0441-11e6-a1a6-29098b60dd65"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "5682e440-0722-11e6-a0f3-475ccb6d8902",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+            "parentField": [
+                [
+                    "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+                    "c3e838b0-0721-11e6-a0f3-475ccb6d8902"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+            "childField": [
+                [
+                    "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+                    "95bc9140-0440-11e6-a1a6-29098b60dd65",
+                    "b2df1040-0440-11e6-a1a6-29098b60dd65",
+                    "d6d80c40-0440-11e6-a1a6-29098b60dd65"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "6ec9f2f0-0722-11e6-a0f3-475ccb6d8902",
+            "name": "fm_productDescription",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Master",
+            "parentCollection": "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+            "parentField": [
+                [
+                    "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+                    "cfe70d80-0721-11e6-a0f3-475ccb6d8902"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+            "childField": [
+                [
+                    "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+                    "95bc9140-0440-11e6-a1a6-29098b60dd65",
+                    "b2df1040-0440-11e6-a1a6-29098b60dd65",
+                    "eb3313b0-0440-11e6-a1a6-29098b60dd65"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "89b76980-0722-11e6-a0f3-475ccb6d8902",
+            "name": "New Relationship(2)",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Master",
+            "parentCollection": "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+            "parentField": [
+                [
+                    "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+                    "de41fac0-0721-11e6-a0f3-475ccb6d8902"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+            "childField": [
+                [
+                    "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+                    "95bc9140-0440-11e6-a1a6-29098b60dd65",
+                    "b2df1040-0440-11e6-a1a6-29098b60dd65",
+                    "fce2d140-0440-11e6-a1a6-29098b60dd65"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "5d24e7b0-00c0-11e7-b3e8-155c696e0db1",
+            "name": "fk customers. to salesOrders.customerInfo.",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Master",
+            "parentCollection": "166589b0-0440-11e6-a1a6-29098b60dd65",
+            "parentField": [
+                [
+                    "166589b0-0440-11e6-a1a6-29098b60dd65",
+                    "2f6f4780-f674-11e6-a8f0-0b0b313c735c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+            "childField": [
+                [
+                    "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+                    "8627c470-0440-11e6-a1a6-29098b60dd65",
+                    "3d960560-f674-11e6-a8f0-0b0b313c735c"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "152408b0-128a-11e8-9f2d-819809faafb9",
+            "name": "fk customers._id to salesOrders.customerInfo.customerRef.$id",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "166589b0-0440-11e6-a1a6-29098b60dd65",
+            "parentField": [
+                [
+                    "166589b0-0440-11e6-a1a6-29098b60dd65",
+                    "245a1400-0440-11e6-a1a6-29098b60dd65"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+            "childField": [
+                [
+                    "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+                    "8627c470-0440-11e6-a1a6-29098b60dd65",
+                    "dd065780-1289-11e8-9f2d-819809faafb9",
+                    "dd067e90-1289-11e8-9f2d-819809faafb9"
+                ]
+            ],
+            "childCardinality": "1"
+        }
+    ],
+    "users": [
+        {
+            "GUID": "ccc78ad0-066d-11e6-a4f2-b73d588e0d07",
+            "name": "admin",
+            "read": true,
+            "readWrite": true,
+            "dbAdmin": true,
+            "userAdmin": true,
+            "clusterAdmin": true,
+            "readAnyDatabase": true,
+            "readWriteAnyDatabase": true,
+            "userAdminAnyDatabase": true,
+            "dbAnyDatabase": true
+        }
+    ],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "235d38d0-f674-11e6-a8f0-0b0b313c735c": "address",
+        "166589b0-0440-11e6-a1a6-29098b60dd65": "customers",
+        "245a1400-0440-11e6-a1a6-29098b60dd65": "_id",
+        "30c4f110-0440-11e6-a1a6-29098b60dd65": "name",
+        "46aed5e0-0440-11e6-a1a6-29098b60dd65": "sales Orders",
+        "68dada10-0440-11e6-a1a6-29098b60dd65": "_id",
+        "8627c470-0440-11e6-a1a6-29098b60dd65": "customerInfo",
+        "95bc9140-0440-11e6-a1a6-29098b60dd65": "orderItems",
+        "c7c58ed0-0440-11e6-a1a6-29098b60dd65": "sequence",
+        "d6d80c40-0440-11e6-a1a6-29098b60dd65": "producId",
+        "eb3313b0-0440-11e6-a1a6-29098b60dd65": "productDescription",
+        "fce2d140-0440-11e6-a1a6-29098b60dd65": "productUnitPrice",
+        "09993640-0441-11e6-a1a6-29098b60dd65": "quantity",
+        "34b6f650-0441-11e6-a1a6-29098b60dd65": "customerName",
+        "b502c8b0-0442-11e6-a1a6-29098b60dd65": "otherInfo",
+        "b63dd6c0-0721-11e6-a0f3-475ccb6d8902": "products",
+        "c3e838b0-0721-11e6-a0f3-475ccb6d8902": "_id",
+        "cfe70d80-0721-11e6-a0f3-475ccb6d8902": "description",
+        "de41fac0-0721-11e6-a0f3-475ccb6d8902": "unitPrice",
+        "4f043b60-9764-11e6-9e22-2f925240a0a2": "moreInfo",
+        "2f6f4780-f674-11e6-a8f0-0b0b313c735c": "address",
+        "3d960560-f674-11e6-a8f0-0b0b313c735c": "customerAddress",
+        "dd065780-1289-11e8-9f2d-819809faafb9": "customerRef",
+        "dd067e90-1289-11e8-9f2d-819809faafb9": "$id",
+        "dd067e91-1289-11e8-9f2d-819809faafb9": "$db",
+        "dd06a5a0-1289-11e8-9f2d-819809faafb9": "$ref"
+    },
+    "definitions": {
+        "GUID": "58f47820-f672-11e6-a8f0-0b0b313c735c",
+        "properties": [
+            {
+                "type": "document",
+                "primaryKey": false,
+                "properties": [
+                    {
+                        "type": "string",
+                        "primaryKey": false,
+                        "sample": "123",
+                        "GUID": "235d5fe0-f674-11e6-a8f0-0b0b313c735c",
+                        "required": true,
+                        "name": "houseNumber",
+                        "isActivated": true
+                    },
+                    {
+                        "type": "string",
+                        "primaryKey": false,
+                        "sample": "Main Street",
+                        "GUID": "235d5fe1-f674-11e6-a8f0-0b0b313c735c",
+                        "required": true,
+                        "name": "streetName",
+                        "isActivated": true
+                    },
+                    {
+                        "type": "string",
+                        "primaryKey": false,
+                        "sample": "# 12",
+                        "GUID": "235d5fe2-f674-11e6-a8f0-0b0b313c735c",
+                        "required": true,
+                        "name": "appartment",
+                        "isActivated": true
+                    },
+                    {
+                        "type": "string",
+                        "primaryKey": false,
+                        "sample": "Anytown",
+                        "GUID": "235d5fe4-f674-11e6-a8f0-0b0b313c735c",
+                        "required": true,
+                        "name": "city",
+                        "isActivated": true
+                    },
+                    {
+                        "type": "string",
+                        "primaryKey": false,
+                        "enum": [
+                            "CA",
+                            "NY"
+                        ],
+                        "sample": "CA",
+                        "GUID": "235d5fe5-f674-11e6-a8f0-0b0b313c735c",
+                        "required": true,
+                        "name": "state",
+                        "error": {
+                            "enum": false,
+                            "enums": [
+                                false,
+                                false
+                            ]
+                        },
+                        "isActivated": true
+                    },
+                    {
+                        "type": "numeric",
+                        "primaryKey": false,
+                        "sample": 90000,
+                        "GUID": "235d5fe3-f674-11e6-a8f0-0b0b313c735c",
+                        "required": true,
+                        "name": "zipCode",
+                        "isActivated": true
+                    }
+                ],
+                "additionalProperties": false,
+                "GUID": "b89c3b50-f672-11e6-a8f0-0b0b313c735c",
+                "required": true,
+                "name": "address",
+                "definitionRefs": [
+                    [
+                        "166589b0-0440-11e6-a1a6-29098b60dd65",
+                        "2f6f4780-f674-11e6-a8f0-0b0b313c735c"
+                    ],
+                    [
+                        "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+                        "8627c470-0440-11e6-a1a6-29098b60dd65",
+                        "3fe55bc0-0441-11e6-a1a6-29098b60dd65",
+                        "3d960560-f674-11e6-a8f0-0b0b313c735c"
+                    ]
+                ],
+                "isActivated": true
+            }
+        ],
+        "type": "definitions"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "43a13321-b803-11e7-b9ac-2df9bc224c5b"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v3.6",
+    "dbVendor": "MongoDB",
+    "hideModelViews": true,
+    "appTarget": "MONGODB",
+    "creationTS": "2016-05-09T16:09:02.887Z",
+    "GUID": "53fc2360-128a-11e8-9f2d-819809faafb9",
+    "code": "",
+    "lastModifTS": "2021-04-01T12:50:35.271Z",
+    "persistenceSchemaVersion": "4",
+    "description": "Basic demo of a sales application data model, with denormalization of some master data\n",
+    "comments": "More comments here...",
+    "author": "John Doe",
+    "version": "0.2",
+    "validation": "MongoDB extension",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "4.3.14"
+    },
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "collectionId",
+                        "x": 30,
+                        "y": 30,
+                        "width": 280,
+                        "height": 150,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "collectionId22",
+                        "x": 720,
+                        "y": 380,
+                        "width": 230,
+                        "height": 130,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "collectionId33",
+                        "x": 300,
+                        "y": 400,
+                        "width": 220,
+                        "height": 100,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "collectionId4",
+                        "x": 500,
+                        "y": 30,
+                        "width": 250,
+                        "height": 200,
+                        "color": {
+                            "hsl": {
+                                "h": 14.454545454545455,
+                                "s": 0.990990990990991,
+                                "l": 0.5647058823529412,
+                                "a": 1
+                            },
+                            "hex": "#fe5722",
+                            "rgb": {
+                                "r": 254,
+                                "g": 87,
+                                "b": 34,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 14.454545454545455,
+                                "s": 0.8661417322834646,
+                                "v": 0.996078431372549,
+                                "a": 1
+                            },
+                            "oldHue": 14.454545454545455,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "94a62b20-e476-11e5-8d0b-1b53f33d738b",
+                        "x": 80,
+                        "y": 300,
+                        "width": 200,
+                        "height": 100,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                        "x": 34,
+                        "y": 41,
+                        "width": 280,
+                        "height": 424,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "527fcb00-f378-11e5-ae63-ed98875331f1",
+                        "x": 455,
+                        "y": 104,
+                        "width": 277,
+                        "height": 183,
+                        "color": {
+                            "hsl": {
+                                "h": 14.454545454545455,
+                                "s": 0.990990990990991,
+                                "l": 0.5647058823529412,
+                                "a": 1
+                            },
+                            "hex": "#fe5722",
+                            "rgb": {
+                                "r": 254,
+                                "g": 87,
+                                "b": 34,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 14.454545454545455,
+                                "s": 0.8661417322834646,
+                                "v": 0.996078431372549,
+                                "a": 1
+                            },
+                            "oldHue": 14.454545454545455,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+                        "x": 480,
+                        "y": 355,
+                        "width": 233,
+                        "height": 101,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+                        "x": 61,
+                        "y": 516,
+                        "width": 200,
+                        "height": 75,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "c2b2c8b0-f417-11e5-938a-bd54cc414623",
+                        "x": 429,
+                        "y": 472,
+                        "width": 200,
+                        "height": 100,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "4a014da0-f418-11e5-a6f2-dbf6571c2b51",
+                        "x": 422,
+                        "y": 485,
+                        "width": 200,
+                        "height": 100,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "8439e830-f41b-11e5-ad3f-7d283a6e1eb9",
+                        "x": 453.5,
+                        "y": 494,
+                        "width": 233,
+                        "height": 116,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "6e9a9cc0-f422-11e5-ab1e-4fda87c84016",
+                        "x": 431,
+                        "y": 485,
+                        "width": 314,
+                        "height": 204,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "166589b0-0440-11e6-a1a6-29098b60dd65",
+                        "x": 47,
+                        "y": 123,
+                        "width": 276,
+                        "height": 173,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+                        "x": 537,
+                        "y": 46,
+                        "width": 377,
+                        "height": 327,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+                        "x": 610,
+                        "y": 433.877618522602,
+                        "width": 231,
+                        "height": 89,
+                        "color": {
+                            "hsl": {
+                                "h": 290.8029197080292,
+                                "s": 0.631336405529954,
+                                "l": 0.42549019607843136,
+                                "a": 1
+                            },
+                            "hex": "#9c28b1",
+                            "rgb": {
+                                "r": 156,
+                                "g": 40,
+                                "b": 177,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 290.8029197080292,
+                                "s": 0.7740112994350282,
+                                "v": 0.6941176470588235,
+                                "a": 1
+                            },
+                            "oldHue": 261.2903225806451,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "090874c0-5206-11e7-8e65-9b1d6a151b1d",
+                        "x": 805.0000000000001,
+                        "y": 588,
+                        "width": 246,
+                        "height": 412,
+                        "color": {
+                            "hsl": {
+                                "h": 290.8029197080292,
+                                "s": 0.631336405529954,
+                                "l": 0.42549019607843136,
+                                "a": 1
+                            },
+                            "hex": "#9c28b1",
+                            "rgb": {
+                                "r": 156,
+                                "g": 40,
+                                "b": 177,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 290.8029197080292,
+                                "s": 0.7740112994350282,
+                                "v": 0.6941176470588235,
+                                "a": 1
+                            },
+                            "oldHue": 290.8029197080292,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "889580b1-00d6-11e7-94c9-270ac0401f9d",
+                        "x": 80,
+                        "y": 80,
+                        "width": 247,
+                        "height": 176,
+                        "color": {
+                            "hsl": {
+                                "h": 290.8029197080292,
+                                "s": 0.631336405529954,
+                                "l": 0.42549019607843136,
+                                "a": 1
+                            },
+                            "hex": "#9c28b1",
+                            "rgb": {
+                                "r": 156,
+                                "g": 40,
+                                "b": 177,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 290.8029197080292,
+                                "s": 0.7740112994350282,
+                                "v": 0.6941176470588235,
+                                "a": 1
+                            },
+                            "oldHue": 290.8029197080292,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "ac2700e1-2b1e-11e7-bde4-57d99ab8fafb",
+                        "x": 228,
+                        "y": 396,
+                        "width": 193,
+                        "height": 149,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "ac277619-2b1e-11e7-bde4-57d99ab8fafb",
+                        "x": 223,
+                        "y": 96,
+                        "width": 204,
+                        "height": 231,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "ac283961-2b1e-11e7-bde4-57d99ab8fafb",
+                        "x": 875,
+                        "y": 96,
+                        "width": 308,
+                        "height": 697,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "ac28aeaa-2b1e-11e7-bde4-57d99ab8fafb",
+                        "x": 534,
+                        "y": 396,
+                        "width": 224,
+                        "height": 382,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "ac2923c1-2b1e-11e7-bde4-57d99ab8fafb",
+                        "x": 529,
+                        "y": 96,
+                        "width": 234,
+                        "height": 245,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "1f8c0620-53f6-11e7-b1ef-ab0119d70e5d",
+                        "x": 390,
+                        "y": 190,
+                        "width": 192,
+                        "height": 139,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "1f8cc971-53f6-11e7-b1ef-ab0119d70e5d",
+                        "x": 640,
+                        "y": 90,
+                        "width": 203,
+                        "height": 207,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "1f8d8cc2-53f6-11e7-b1ef-ab0119d70e5d",
+                        "x": 390,
+                        "y": 390,
+                        "width": 307,
+                        "height": 674,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "1f8e01f1-53f6-11e7-b1ef-ab0119d70e5d",
+                        "x": 90,
+                        "y": 440,
+                        "width": 224,
+                        "height": 372,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "1f8e5012-53f6-11e7-b1ef-ab0119d70e5d",
+                        "x": 90,
+                        "y": 140,
+                        "width": 234,
+                        "height": 235,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "03b122bb-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 96,
+                        "y": 463,
+                        "width": 250,
+                        "height": 199,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "03b149c6-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1082,
+                        "y": 334,
+                        "width": 250,
+                        "height": 75,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "03b149ca-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 471,
+                        "y": 227,
+                        "width": 250,
+                        "height": 199,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "03b149d5-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 180,
+                        "y": 180,
+                        "width": 250,
+                        "height": 269,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "03b170de-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 200,
+                        "y": 200,
+                        "width": 250,
+                        "height": 129,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 828,
+                        "y": 685,
+                        "width": 250,
+                        "height": 87,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 828,
+                        "y": 119,
+                        "width": 250,
+                        "height": 199,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 58,
+                        "y": 119,
+                        "width": 248,
+                        "height": 272,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 58,
+                        "y": 629,
+                        "width": 250,
+                        "height": 199,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 828,
+                        "y": 359,
+                        "width": 250,
+                        "height": 75
+                    },
+                    {
+                        "GUID": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 453,
+                        "y": 640,
+                        "width": 250,
+                        "height": 177
+                    },
+                    {
+                        "GUID": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 453,
+                        "y": 119,
+                        "width": 251,
+                        "height": 234
+                    },
+                    {
+                        "GUID": "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 453,
+                        "y": 449,
+                        "width": 251,
+                        "height": 112
+                    },
+                    {
+                        "GUID": "5a3e1c60-56ec-11e7-b5ff-dd5e79dcd289",
+                        "x": 90,
+                        "y": 90,
+                        "width": 268,
+                        "height": 193
+                    },
+                    {
+                        "GUID": "3c82b5a0-9f62-11e7-8f9d-a5adc6ba5abd",
+                        "x": 858,
+                        "y": 1070,
+                        "width": 307,
+                        "height": 84,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "aa274b10-9f63-11e7-b93f-55801cb97e86",
+                        "x": 498,
+                        "y": 249,
+                        "width": 283,
+                        "height": 153,
+                        "color": {
+                            "hex": "#777777",
+                            "hsl": {
+                                "a": 1,
+                                "h": 0,
+                                "l": 0.4666666666666667,
+                                "s": 0
+                            },
+                            "hsv": {
+                                "a": 1,
+                                "h": 0,
+                                "s": 0,
+                                "v": 0.4666666666666667
+                            },
+                            "oldHue": 0,
+                            "rgb": {
+                                "a": 1,
+                                "b": 119,
+                                "g": 119,
+                                "r": 119
+                            },
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "b5745c10-9f63-11e7-b93f-55801cb97e86",
+                        "x": 867,
+                        "y": 247,
+                        "width": 285,
+                        "height": 194,
+                        "color": {
+                            "hex": "#777777",
+                            "hsl": {
+                                "a": 1,
+                                "h": 0,
+                                "l": 0.4666666666666667,
+                                "s": 0
+                            },
+                            "hsv": {
+                                "a": 1,
+                                "h": 0,
+                                "s": 0,
+                                "v": 0.4666666666666667
+                            },
+                            "oldHue": 0,
+                            "rgb": {
+                                "a": 1,
+                                "b": 119,
+                                "g": 119,
+                                "r": 119
+                            },
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "c00521f0-9f63-11e7-b93f-55801cb97e86",
+                        "x": 516,
+                        "y": 470,
+                        "width": 248,
+                        "height": 125,
+                        "color": {
+                            "hex": "#777777",
+                            "hsl": {
+                                "a": 1,
+                                "h": 0,
+                                "l": 0.4666666666666667,
+                                "s": 0
+                            },
+                            "hsv": {
+                                "a": 1,
+                                "h": 0,
+                                "s": 0,
+                                "v": 0.4666666666666667
+                            },
+                            "oldHue": 0,
+                            "rgb": {
+                                "a": 1,
+                                "b": 119,
+                                "g": 119,
+                                "r": 119
+                            },
+                            "source": "hex"
+                        }
+                    }
+                ],
+                "buckets": [],
+                "collapsedNodes": [
+                    "17a49b53-196e-11e7-8a00-7d16bdc1d762",
+                    "17a49b58-196e-11e7-8a00-7d16bdc1d762",
+                    "17a53756-196e-11e7-8a00-7d16bdc1d762",
+                    "17a53765-196e-11e7-8a00-7d16bdc1d762",
+                    "17a49b10-196e-11e7-8a00-7d16bdc1d762",
+                    "17a49b1e-196e-11e7-8a00-7d16bdc1d762",
+                    "17a47403-196e-11e7-8a00-7d16bdc1d762",
+                    "17a49b10-196e-11e7-8a00-7d16bdc1d762",
+                    "17a49b1e-196e-11e7-8a00-7d16bdc1d762",
+                    "17a49b43-196e-11e7-8a00-7d16bdc1d762",
+                    "17a49b48-196e-11e7-8a00-7d16bdc1d762",
+                    "17a49b41-196e-11e7-8a00-7d16bdc1d762",
+                    "17a49b53-196e-11e7-8a00-7d16bdc1d762"
+                ],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [
+                    "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+                    "166589b0-0440-11e6-a1a6-29098b60dd65"
+                ],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

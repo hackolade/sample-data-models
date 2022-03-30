@@ -1,0 +1,1812 @@
+{
+    "modelName": "JSON examples",
+    "collections": [
+        {
+            "collectionName": "example5",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "type": "string",
+                            "name": "header",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "f6a4a2d1-8263-11eb-aa82-6b7894d077f5",
+                            "required": true,
+                            "sample": "SVG Viewer",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "type": "array",
+                            "properties": [
+                                {
+                                    "type": "document",
+                                    "properties": [
+                                        {
+                                            "code": "",
+                                            "type": "string",
+                                            "name": "id",
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "GUID": "f6a4c9e0-8263-11eb-aa82-6b7894d077f5",
+                                            "required": true,
+                                            "sample": "About",
+                                            "error": {}
+                                        },
+                                        {
+                                            "code": "",
+                                            "type": "string",
+                                            "name": "label",
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "GUID": "f6a4c9e1-8263-11eb-aa82-6b7894d077f5",
+                                            "required": false,
+                                            "sample": "About Adobe CVG Viewer...",
+                                            "error": {}
+                                        }
+                                    ],
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "GUID": "f6bee190-8263-11eb-aa82-6b7894d077f5",
+                                    "arrayItem": true,
+                                    "arrayParentType": "array",
+                                    "error": {}
+                                },
+                                {
+                                    "type": "null",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "GUID": "f6bee191-8263-11eb-aa82-6b7894d077f5",
+                                    "arrayItem": true,
+                                    "arrayParentType": "array",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalItems": true,
+                            "name": "items",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "f6a4a2d2-8263-11eb-aa82-6b7894d077f5",
+                            "required": true,
+                            "error": {}
+                        }
+                    ],
+                    "name": "menu",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "f6a4a2d0-8263-11eb-aa82-6b7894d077f5",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "f6beba80-8263-11eb-aa82-6b7894d077f5",
+                "properties": []
+            },
+            "isActivated": true,
+            "GUID": "f6be9370-8263-11eb-aa82-6b7894d077f5",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "bucketId": "f6be4550-8263-11eb-aa82-6b7894d077f5"
+        },
+        {
+            "collectionName": "example4",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "type": "array",
+                            "properties": [
+                                {
+                                    "type": "document",
+                                    "properties": [
+                                        {
+                                            "code": "",
+                                            "type": "string",
+                                            "name": "servlet-name",
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "GUID": "f744da9c-8263-11eb-aa82-6b7894d077f5",
+                                            "required": true,
+                                            "sample": "cofaxTools",
+                                            "error": {}
+                                        },
+                                        {
+                                            "code": "",
+                                            "type": "string",
+                                            "name": "servlet-class",
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "GUID": "f744da9b-8263-11eb-aa82-6b7894d077f5",
+                                            "required": true,
+                                            "sample": "org.cofax.cms.CofaxToolsServlet",
+                                            "error": {}
+                                        },
+                                        {
+                                            "code": "",
+                                            "type": "document",
+                                            "properties": [
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "templatePath",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da97-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "sample": "toolstemplates/",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "log",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da88-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "sample": 1,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "logLocation",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da89-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "sample": "/usr/local/tomcat/logs/CofaxTools.log",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "logMaxSize",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da8a-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "sample": "",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "dataLog",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da74-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "sample": 1,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "dataLogLocation",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da75-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "sample": "/usr/local/tomcat/logs/dataLog.log",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "dataLogMaxSize",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da76-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "sample": "",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "removePageCache",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da90-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "sample": "/content/admin/remove?cache=pages&id=",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "removeTemplateCache",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da91-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "sample": "/content/admin/remove?cache=templates&id=",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "fileTransferFolder",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da85-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "sample": "/usr/local/tomcat/webapps/content/fileTransferFolder",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "lookInContext",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da8b-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "sample": 1,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "adminGroupID",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744b363-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "sample": 4,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "boolean",
+                                                    "name": "betaServer",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744b364-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "sample": true,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "jspFileTemplate",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da86-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "cachePackageTagsTrack",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744b367-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "cachePackageTagsStore",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744b366-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "cachePackageTagsRefresh",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744b365-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "cacheTemplatesTrack",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744b36e-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "cacheTemplatesStore",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744b36d-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "cacheTemplatesRefresh",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744b36c-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "cachePagesTrack",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744b36b-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "cachePagesStore",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744b36a-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "cachePagesRefresh",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744b369-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "cachePagesDirtyRead",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744b368-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "searchEngineListTemplate",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da93-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "searchEngineFileTemplate",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da92-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "searchEngineRobotsDb",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da94-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "boolean",
+                                                    "name": "useDataStore",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da99-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "dataStoreClass",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da77-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "redirectionClass",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da8f-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "dataStoreName",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da7e-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "dataStoreDriver",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da79-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "dataStoreUrl",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da81-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "dataStoreUser",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da82-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "dataStorePassword",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da7f-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "dataStoreTestQuery",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da80-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "dataStoreLogFile",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da7b-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "dataStoreInitConns",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da7a-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "dataStoreMaxConns",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da7d-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "dataStoreConnUsageLimit",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da78-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "dataStoreLogLevel",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da7c-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "numeric",
+                                                    "name": "maxUrlLength",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da8e-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "configGlossary:adminEmail",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744b36f-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "configGlossary:installationAt",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da70-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "configGlossary:poweredBy",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da71-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "configGlossary:poweredByIcon",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da72-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "configGlossary:staticPath",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da73-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "defaultFileTemplate",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da83-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "defaultListTemplate",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da84-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "jspListTemplate",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da87-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "mailHost",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da8c-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "mailHostOverride",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da8d-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "templateLoaderClass",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da95-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "templateOverridePath",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da96-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "templateProcessorClass",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da98-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "boolean",
+                                                    "name": "useJSP",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f744da9a-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": false,
+                                                    "error": {}
+                                                }
+                                            ],
+                                            "name": "init-param",
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "GUID": "f744b362-8263-11eb-aa82-6b7894d077f5",
+                                            "required": false,
+                                            "error": {}
+                                        }
+                                    ],
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "GUID": "f760edf0-8263-11eb-aa82-6b7894d077f5",
+                                    "arrayItem": true,
+                                    "arrayParentType": "array",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalItems": true,
+                            "name": "servlet",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "f744b361-8263-11eb-aa82-6b7894d077f5",
+                            "required": true,
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "cofaxCDS",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f744da9f-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "/",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "cofaxEmail",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f744daa0-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "/cofaxutil/aemail/*",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "cofaxAdmin",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f744da9e-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "/admin/*",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "fileServlet",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f744daa2-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "/static/*",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "cofaxTools",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f744daa1-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "/tools/*",
+                                    "error": {}
+                                }
+                            ],
+                            "name": "servlet-mapping",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "f744da9d-8263-11eb-aa82-6b7894d077f5",
+                            "required": true,
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "taglib-uri",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f744daa5-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "cofax.tld",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "taglib-location",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f744daa4-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "/WEB-INF/tlds/cofax.tld",
+                                    "error": {}
+                                }
+                            ],
+                            "name": "taglib",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "f744daa3-8263-11eb-aa82-6b7894d077f5",
+                            "required": true,
+                            "error": {}
+                        }
+                    ],
+                    "name": "web-app",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "f744b360-8263-11eb-aa82-6b7894d077f5",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "f7609fd1-8263-11eb-aa82-6b7894d077f5",
+                "properties": []
+            },
+            "isActivated": true,
+            "GUID": "f7609fd0-8263-11eb-aa82-6b7894d077f5",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "bucketId": "f76078c0-8263-11eb-aa82-6b7894d077f5"
+        },
+        {
+            "collectionName": "example3",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "type": "string",
+                            "name": "debug",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "f7ed7681-8263-11eb-aa82-6b7894d077f5",
+                            "required": true,
+                            "sample": "on",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "title",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed9d9b-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "Sample Konfabulator Widget",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "name",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed9d9a-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "main_window",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "numeric",
+                                    "name": "width",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed9d9c-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": 500,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "numeric",
+                                    "name": "height",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed9d99-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": 500,
+                                    "error": {}
+                                }
+                            ],
+                            "name": "window",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "f7ed9d98-8263-11eb-aa82-6b7894d077f5",
+                            "required": true,
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "src",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed7686-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "Images/Sun.png",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "name",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed7685-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "sun1",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "numeric",
+                                    "name": "hOffset",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed7684-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": 250,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "numeric",
+                                    "name": "vOffset",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed7687-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": 250,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "alignment",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed7683-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "center",
+                                    "error": {}
+                                }
+                            ],
+                            "name": "image",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "f7ed7682-8263-11eb-aa82-6b7894d077f5",
+                            "required": true,
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "data",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed9d91-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "Click Here",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "numeric",
+                                    "name": "size",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed9d95-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": 36,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "style",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed9d96-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "bold",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "name",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed9d93-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "text1",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "numeric",
+                                    "name": "hOffset",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed9d92-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": 250,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "numeric",
+                                    "name": "vOffset",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed9d97-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": 100,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "alignment",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed9d90-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "center",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "onMouseUp",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f7ed9d94-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "sun1.opacity = (sun1.opacity / 100) * 90;",
+                                    "error": {}
+                                }
+                            ],
+                            "name": "text",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "f7ed7688-8263-11eb-aa82-6b7894d077f5",
+                            "required": true,
+                            "error": {}
+                        }
+                    ],
+                    "name": "widget",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "f7ed7680-8263-11eb-aa82-6b7894d077f5",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "f8074010-8263-11eb-aa82-6b7894d077f5",
+                "properties": []
+            },
+            "isActivated": true,
+            "GUID": "f8071901-8263-11eb-aa82-6b7894d077f5",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "bucketId": "f8071900-8263-11eb-aa82-6b7894d077f5"
+        },
+        {
+            "collectionName": "example2",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "type": "string",
+                            "name": "id",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "f88374f1-8263-11eb-aa82-6b7894d077f5",
+                            "required": true,
+                            "sample": "file",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "type": "string",
+                            "name": "value",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "f88374f6-8263-11eb-aa82-6b7894d077f5",
+                            "required": true,
+                            "sample": "File",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "type": "array",
+                                    "properties": [
+                                        {
+                                            "type": "document",
+                                            "properties": [
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "value",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f88374f5-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": true,
+                                                    "sample": "Close",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "onclick",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f88374f4-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": true,
+                                                    "sample": "CloseDoc()",
+                                                    "error": {}
+                                                }
+                                            ],
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "GUID": "f89cc952-8263-11eb-aa82-6b7894d077f5",
+                                            "arrayItem": true,
+                                            "arrayParentType": "array",
+                                            "error": {}
+                                        }
+                                    ],
+                                    "additionalItems": true,
+                                    "name": "menuitem",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f88374f3-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "error": {}
+                                }
+                            ],
+                            "name": "popup",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "f88374f2-8263-11eb-aa82-6b7894d077f5",
+                            "required": true,
+                            "error": {}
+                        }
+                    ],
+                    "name": "menu",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "f88374f0-8263-11eb-aa82-6b7894d077f5",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "f89cc951-8263-11eb-aa82-6b7894d077f5",
+                "properties": []
+            },
+            "isActivated": true,
+            "GUID": "f89cc950-8263-11eb-aa82-6b7894d077f5",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "bucketId": "f89ca240-8263-11eb-aa82-6b7894d077f5"
+        },
+        {
+            "collectionName": "example1",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "type": "string",
+                            "name": "title",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "f918890e-8263-11eb-aa82-6b7894d077f5",
+                            "required": true,
+                            "sample": "example glossary",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "title",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f918890d-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "sample": "S",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "document",
+                                    "properties": [
+                                        {
+                                            "code": "",
+                                            "type": "document",
+                                            "properties": [
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "ID",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f918890b-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": true,
+                                                    "sample": "SGML",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "SortAs",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f918890c-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": true,
+                                                    "sample": "SGML",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "GlossTerm",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f918890a-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": true,
+                                                    "sample": "Standard Generalized Markup Language",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "Acronym",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f9188905-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": true,
+                                                    "sample": "SGML",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "Abbrev",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f9188904-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": true,
+                                                    "sample": "ISO 8879:1986",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "document",
+                                                    "properties": [
+                                                        {
+                                                            "code": "",
+                                                            "type": "string",
+                                                            "name": "para",
+                                                            "isActivated": true,
+                                                            "primaryKey": false,
+                                                            "GUID": "f9188908-8263-11eb-aa82-6b7894d077f5",
+                                                            "required": true,
+                                                            "sample": "A meta-markup language, used to create markup languages such as DocBook.",
+                                                            "error": {}
+                                                        },
+                                                        {
+                                                            "code": "",
+                                                            "type": "array",
+                                                            "properties": [
+                                                                {
+                                                                    "type": "string",
+                                                                    "hackoladeMeta": {},
+                                                                    "isActivated": true,
+                                                                    "GUID": "f9320470-8263-11eb-aa82-6b7894d077f5",
+                                                                    "arrayItem": true,
+                                                                    "arrayParentType": "array",
+                                                                    "sample": "GML",
+                                                                    "error": {}
+                                                                }
+                                                            ],
+                                                            "additionalItems": true,
+                                                            "name": "GlossSeeAlso",
+                                                            "isActivated": true,
+                                                            "primaryKey": false,
+                                                            "GUID": "f9188907-8263-11eb-aa82-6b7894d077f5",
+                                                            "required": true,
+                                                            "error": {}
+                                                        }
+                                                    ],
+                                                    "name": "GlossDef",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f9188906-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": true,
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "GlossSee",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "f9188909-8263-11eb-aa82-6b7894d077f5",
+                                                    "required": true,
+                                                    "sample": "markup",
+                                                    "error": {}
+                                                }
+                                            ],
+                                            "name": "GlossEntry",
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "GUID": "f9188903-8263-11eb-aa82-6b7894d077f5",
+                                            "required": true,
+                                            "error": {}
+                                        }
+                                    ],
+                                    "name": "GlossList",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "f9188902-8263-11eb-aa82-6b7894d077f5",
+                                    "required": true,
+                                    "error": {}
+                                }
+                            ],
+                            "name": "GlossDiv",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "f9188901-8263-11eb-aa82-6b7894d077f5",
+                            "required": true,
+                            "error": {}
+                        }
+                    ],
+                    "name": "glossary",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "f9188900-8263-11eb-aa82-6b7894d077f5",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "f931dd62-8263-11eb-aa82-6b7894d077f5",
+                "properties": []
+            },
+            "isActivated": true,
+            "GUID": "f931dd61-8263-11eb-aa82-6b7894d077f5",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "bucketId": "f931dd60-8263-11eb-aa82-6b7894d077f5"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "example5",
+            "type": "bucket",
+            "collectionIds": [
+                "f6be9370-8263-11eb-aa82-6b7894d077f5"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "f6be4550-8263-11eb-aa82-6b7894d077f5",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "name": "example4",
+            "type": "bucket",
+            "collectionIds": [
+                "f7609fd0-8263-11eb-aa82-6b7894d077f5"
+            ],
+            "backgroundColor": {
+                "r": 156,
+                "g": 40,
+                "b": 177,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "f76078c0-8263-11eb-aa82-6b7894d077f5",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "name": "example3",
+            "type": "bucket",
+            "collectionIds": [
+                "f8071901-8263-11eb-aa82-6b7894d077f5"
+            ],
+            "backgroundColor": {
+                "r": 63,
+                "g": 81,
+                "b": 181,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "f8071900-8263-11eb-aa82-6b7894d077f5",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "name": "example2",
+            "type": "bucket",
+            "collectionIds": [
+                "f89cc950-8263-11eb-aa82-6b7894d077f5"
+            ],
+            "backgroundColor": {
+                "r": 33,
+                "g": 150,
+                "b": 243,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "f89ca240-8263-11eb-aa82-6b7894d077f5",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "name": "example1",
+            "type": "bucket",
+            "collectionIds": [
+                "f931dd61-8263-11eb-aa82-6b7894d077f5"
+            ],
+            "backgroundColor": {
+                "r": 3,
+                "g": 169,
+                "b": 245,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "f931dd60-8263-11eb-aa82-6b7894d077f5",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "f6be4550-8263-11eb-aa82-6b7894d077f5": "example5",
+        "f6a4a2d0-8263-11eb-aa82-6b7894d077f5": "menu",
+        "f6a4a2d1-8263-11eb-aa82-6b7894d077f5": "header",
+        "f6a4a2d2-8263-11eb-aa82-6b7894d077f5": "items",
+        "f6a4c9e0-8263-11eb-aa82-6b7894d077f5": "id",
+        "f6a4c9e1-8263-11eb-aa82-6b7894d077f5": "label",
+        "f6be9370-8263-11eb-aa82-6b7894d077f5": "example5",
+        "f76078c0-8263-11eb-aa82-6b7894d077f5": "example4",
+        "f744b360-8263-11eb-aa82-6b7894d077f5": "web-app",
+        "f744b361-8263-11eb-aa82-6b7894d077f5": "servlet",
+        "f744da9c-8263-11eb-aa82-6b7894d077f5": "servlet-name",
+        "f744da9b-8263-11eb-aa82-6b7894d077f5": "servlet-class",
+        "f744b362-8263-11eb-aa82-6b7894d077f5": "init-param",
+        "f744da97-8263-11eb-aa82-6b7894d077f5": "templatePath",
+        "f744da88-8263-11eb-aa82-6b7894d077f5": "log",
+        "f744da89-8263-11eb-aa82-6b7894d077f5": "logLocation",
+        "f744da8a-8263-11eb-aa82-6b7894d077f5": "logMaxSize",
+        "f744da74-8263-11eb-aa82-6b7894d077f5": "dataLog",
+        "f744da75-8263-11eb-aa82-6b7894d077f5": "dataLogLocation",
+        "f744da76-8263-11eb-aa82-6b7894d077f5": "dataLogMaxSize",
+        "f744da90-8263-11eb-aa82-6b7894d077f5": "removePageCache",
+        "f744da91-8263-11eb-aa82-6b7894d077f5": "removeTemplateCache",
+        "f744da85-8263-11eb-aa82-6b7894d077f5": "fileTransferFolder",
+        "f744da8b-8263-11eb-aa82-6b7894d077f5": "lookInContext",
+        "f744b363-8263-11eb-aa82-6b7894d077f5": "adminGroupID",
+        "f744b364-8263-11eb-aa82-6b7894d077f5": "betaServer",
+        "f744da86-8263-11eb-aa82-6b7894d077f5": "jspFileTemplate",
+        "f744b367-8263-11eb-aa82-6b7894d077f5": "cachePackageTagsTrack",
+        "f744b366-8263-11eb-aa82-6b7894d077f5": "cachePackageTagsStore",
+        "f744b365-8263-11eb-aa82-6b7894d077f5": "cachePackageTagsRefresh",
+        "f744b36e-8263-11eb-aa82-6b7894d077f5": "cacheTemplatesTrack",
+        "f744b36d-8263-11eb-aa82-6b7894d077f5": "cacheTemplatesStore",
+        "f744b36c-8263-11eb-aa82-6b7894d077f5": "cacheTemplatesRefresh",
+        "f744b36b-8263-11eb-aa82-6b7894d077f5": "cachePagesTrack",
+        "f744b36a-8263-11eb-aa82-6b7894d077f5": "cachePagesStore",
+        "f744b369-8263-11eb-aa82-6b7894d077f5": "cachePagesRefresh",
+        "f744b368-8263-11eb-aa82-6b7894d077f5": "cachePagesDirtyRead",
+        "f744da93-8263-11eb-aa82-6b7894d077f5": "searchEngineListTemplate",
+        "f744da92-8263-11eb-aa82-6b7894d077f5": "searchEngineFileTemplate",
+        "f744da94-8263-11eb-aa82-6b7894d077f5": "searchEngineRobotsDb",
+        "f744da99-8263-11eb-aa82-6b7894d077f5": "useDataStore",
+        "f744da77-8263-11eb-aa82-6b7894d077f5": "dataStoreClass",
+        "f744da8f-8263-11eb-aa82-6b7894d077f5": "redirectionClass",
+        "f744da7e-8263-11eb-aa82-6b7894d077f5": "dataStoreName",
+        "f744da79-8263-11eb-aa82-6b7894d077f5": "dataStoreDriver",
+        "f744da81-8263-11eb-aa82-6b7894d077f5": "dataStoreUrl",
+        "f744da82-8263-11eb-aa82-6b7894d077f5": "dataStoreUser",
+        "f744da7f-8263-11eb-aa82-6b7894d077f5": "dataStorePassword",
+        "f744da80-8263-11eb-aa82-6b7894d077f5": "dataStoreTestQuery",
+        "f744da7b-8263-11eb-aa82-6b7894d077f5": "dataStoreLogFile",
+        "f744da7a-8263-11eb-aa82-6b7894d077f5": "dataStoreInitConns",
+        "f744da7d-8263-11eb-aa82-6b7894d077f5": "dataStoreMaxConns",
+        "f744da78-8263-11eb-aa82-6b7894d077f5": "dataStoreConnUsageLimit",
+        "f744da7c-8263-11eb-aa82-6b7894d077f5": "dataStoreLogLevel",
+        "f744da8e-8263-11eb-aa82-6b7894d077f5": "maxUrlLength",
+        "f744b36f-8263-11eb-aa82-6b7894d077f5": "configGlossary:adminEmail",
+        "f744da70-8263-11eb-aa82-6b7894d077f5": "configGlossary:installationAt",
+        "f744da71-8263-11eb-aa82-6b7894d077f5": "configGlossary:poweredBy",
+        "f744da72-8263-11eb-aa82-6b7894d077f5": "configGlossary:poweredByIcon",
+        "f744da73-8263-11eb-aa82-6b7894d077f5": "configGlossary:staticPath",
+        "f744da83-8263-11eb-aa82-6b7894d077f5": "defaultFileTemplate",
+        "f744da84-8263-11eb-aa82-6b7894d077f5": "defaultListTemplate",
+        "f744da87-8263-11eb-aa82-6b7894d077f5": "jspListTemplate",
+        "f744da8c-8263-11eb-aa82-6b7894d077f5": "mailHost",
+        "f744da8d-8263-11eb-aa82-6b7894d077f5": "mailHostOverride",
+        "f744da95-8263-11eb-aa82-6b7894d077f5": "templateLoaderClass",
+        "f744da96-8263-11eb-aa82-6b7894d077f5": "templateOverridePath",
+        "f744da98-8263-11eb-aa82-6b7894d077f5": "templateProcessorClass",
+        "f744da9a-8263-11eb-aa82-6b7894d077f5": "useJSP",
+        "f744da9d-8263-11eb-aa82-6b7894d077f5": "servlet-mapping",
+        "f744da9f-8263-11eb-aa82-6b7894d077f5": "cofaxCDS",
+        "f744daa0-8263-11eb-aa82-6b7894d077f5": "cofaxEmail",
+        "f744da9e-8263-11eb-aa82-6b7894d077f5": "cofaxAdmin",
+        "f744daa2-8263-11eb-aa82-6b7894d077f5": "fileServlet",
+        "f744daa1-8263-11eb-aa82-6b7894d077f5": "cofaxTools",
+        "f744daa3-8263-11eb-aa82-6b7894d077f5": "taglib",
+        "f744daa5-8263-11eb-aa82-6b7894d077f5": "taglib-uri",
+        "f744daa4-8263-11eb-aa82-6b7894d077f5": "taglib-location",
+        "f7609fd0-8263-11eb-aa82-6b7894d077f5": "example4",
+        "f8071900-8263-11eb-aa82-6b7894d077f5": "example3",
+        "f7ed7680-8263-11eb-aa82-6b7894d077f5": "widget",
+        "f7ed7681-8263-11eb-aa82-6b7894d077f5": "debug",
+        "f7ed9d98-8263-11eb-aa82-6b7894d077f5": "window",
+        "f7ed9d9b-8263-11eb-aa82-6b7894d077f5": "title",
+        "f7ed9d9a-8263-11eb-aa82-6b7894d077f5": "name",
+        "f7ed9d9c-8263-11eb-aa82-6b7894d077f5": "width",
+        "f7ed9d99-8263-11eb-aa82-6b7894d077f5": "height",
+        "f7ed7682-8263-11eb-aa82-6b7894d077f5": "image",
+        "f7ed7686-8263-11eb-aa82-6b7894d077f5": "src",
+        "f7ed7685-8263-11eb-aa82-6b7894d077f5": "name",
+        "f7ed7684-8263-11eb-aa82-6b7894d077f5": "hOffset",
+        "f7ed7687-8263-11eb-aa82-6b7894d077f5": "vOffset",
+        "f7ed7683-8263-11eb-aa82-6b7894d077f5": "alignment",
+        "f7ed7688-8263-11eb-aa82-6b7894d077f5": "text",
+        "f7ed9d91-8263-11eb-aa82-6b7894d077f5": "data",
+        "f7ed9d95-8263-11eb-aa82-6b7894d077f5": "size",
+        "f7ed9d96-8263-11eb-aa82-6b7894d077f5": "style",
+        "f7ed9d93-8263-11eb-aa82-6b7894d077f5": "name",
+        "f7ed9d92-8263-11eb-aa82-6b7894d077f5": "hOffset",
+        "f7ed9d97-8263-11eb-aa82-6b7894d077f5": "vOffset",
+        "f7ed9d90-8263-11eb-aa82-6b7894d077f5": "alignment",
+        "f7ed9d94-8263-11eb-aa82-6b7894d077f5": "onMouseUp",
+        "f8071901-8263-11eb-aa82-6b7894d077f5": "example3",
+        "f89ca240-8263-11eb-aa82-6b7894d077f5": "example2",
+        "f88374f0-8263-11eb-aa82-6b7894d077f5": "menu",
+        "f88374f1-8263-11eb-aa82-6b7894d077f5": "id",
+        "f88374f6-8263-11eb-aa82-6b7894d077f5": "value",
+        "f88374f2-8263-11eb-aa82-6b7894d077f5": "popup",
+        "f88374f3-8263-11eb-aa82-6b7894d077f5": "menuitem",
+        "f88374f5-8263-11eb-aa82-6b7894d077f5": "value",
+        "f88374f4-8263-11eb-aa82-6b7894d077f5": "onclick",
+        "f89cc950-8263-11eb-aa82-6b7894d077f5": "example2",
+        "f931dd60-8263-11eb-aa82-6b7894d077f5": "example1",
+        "f9188900-8263-11eb-aa82-6b7894d077f5": "glossary",
+        "f918890e-8263-11eb-aa82-6b7894d077f5": "title",
+        "f9188901-8263-11eb-aa82-6b7894d077f5": "GlossDiv",
+        "f918890d-8263-11eb-aa82-6b7894d077f5": "title",
+        "f9188902-8263-11eb-aa82-6b7894d077f5": "GlossList",
+        "f9188903-8263-11eb-aa82-6b7894d077f5": "GlossEntry",
+        "f918890b-8263-11eb-aa82-6b7894d077f5": "ID",
+        "f918890c-8263-11eb-aa82-6b7894d077f5": "SortAs",
+        "f918890a-8263-11eb-aa82-6b7894d077f5": "GlossTerm",
+        "f9188905-8263-11eb-aa82-6b7894d077f5": "Acronym",
+        "f9188904-8263-11eb-aa82-6b7894d077f5": "Abbrev",
+        "f9188906-8263-11eb-aa82-6b7894d077f5": "GlossDef",
+        "f9188908-8263-11eb-aa82-6b7894d077f5": "para",
+        "f9188907-8263-11eb-aa82-6b7894d077f5": "GlossSeeAlso",
+        "f9188909-8263-11eb-aa82-6b7894d077f5": "GlossSee",
+        "f931dd61-8263-11eb-aa82-6b7894d077f5": "example1"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "ebda7d71-8263-11eb-aa82-6b7894d077f5"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "ebda7d72-8263-11eb-aa82-6b7894d077f5"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "Plain JSON--no DB",
+    "appTarget": "JSON",
+    "creationTS": "2021-03-11T12:18:43.527Z",
+    "GUID": "ebda7d70-8263-11eb-aa82-6b7894d077f5",
+    "isLineageEnabled": false,
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        },
+        "customPropertiesUpdated": true
+    },
+    "description": "From https://json.org/example.html after reverse-engineering",
+    "lastModifTS": "2021-03-11T12:20:30.394Z",
+    "persistenceSchemaVersion": "4",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "4.3.11"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "f6be9370-8263-11eb-aa82-6b7894d077f5",
+                        "x": 874,
+                        "y": 674,
+                        "width": 227,
+                        "height": 127,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "f7609fd0-8263-11eb-aa82-6b7894d077f5",
+                        "x": 90,
+                        "y": 90,
+                        "width": 383,
+                        "height": 1000,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "f8071901-8263-11eb-aa82-6b7894d077f5",
+                        "x": 553,
+                        "y": 90,
+                        "width": 241,
+                        "height": 337,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "f89cc950-8263-11eb-aa82-6b7894d077f5",
+                        "x": 874,
+                        "y": 438,
+                        "width": 244,
+                        "height": 141,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "f931dd61-8263-11eb-aa82-6b7894d077f5",
+                        "x": 874,
+                        "y": 90,
+                        "width": 298,
+                        "height": 253,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 824,
+                        "y": 624,
+                        "GUID": "f6be4550-8263-11eb-aa82-6b7894d077f5"
+                    },
+                    {
+                        "x": 40,
+                        "y": 40,
+                        "GUID": "f76078c0-8263-11eb-aa82-6b7894d077f5"
+                    },
+                    {
+                        "x": 503,
+                        "y": 40,
+                        "GUID": "f8071900-8263-11eb-aa82-6b7894d077f5"
+                    },
+                    {
+                        "x": 824,
+                        "y": 388,
+                        "GUID": "f89ca240-8263-11eb-aa82-6b7894d077f5"
+                    },
+                    {
+                        "x": 824,
+                        "y": 40,
+                        "GUID": "f931dd60-8263-11eb-aa82-6b7894d077f5"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

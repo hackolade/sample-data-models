@@ -1,0 +1,900 @@
+{
+    "modelName": "The Graph of the Gods",
+    "collections": [
+        {
+            "collectionName": "god",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "669db770-8d59-11eb-9881-831ef2edb03d",
+                    "required": true,
+                    "sample": "jupiter"
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "name": "age",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "required": true,
+                    "GUID": "68bcedf0-8d59-11eb-9881-831ef2edb03d",
+                    "mode": "integer",
+                    "sample": 5000
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "5fe8f340-8d59-11eb-9881-831ef2edb03d"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "5fe21570-8d59-11eb-9881-831ef2edb03d",
+            "bucketId": "5facad90-8d59-11eb-9881-831ef2edb03d"
+        },
+        {
+            "collectionName": "monster",
+            "type": "object",
+            "properties": [],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "63be6540-8d59-11eb-9881-831ef2edb03d"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "63be3e30-8d59-11eb-9881-831ef2edb03d",
+            "bucketId": "5facad90-8d59-11eb-9881-831ef2edb03d"
+        },
+        {
+            "collectionName": "demigod",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "db0568f0-8d5a-11eb-9881-831ef2edb03d",
+                    "required": true,
+                    "sample": "hercules"
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "name": "age",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "required": true,
+                    "GUID": "db0568f1-8d5a-11eb-9881-831ef2edb03d",
+                    "mode": "integer",
+                    "sample": 30
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "db0568f2-8d5a-11eb-9881-831ef2edb03d"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "db036d20-8d5a-11eb-9881-831ef2edb03d",
+            "bucketId": "5facad90-8d59-11eb-9881-831ef2edb03d"
+        },
+        {
+            "collectionName": "titan",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "f3158920-8d5a-11eb-9881-831ef2edb03d",
+                    "required": true,
+                    "sample": "saturn"
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "name": "age",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "required": true,
+                    "GUID": "f3158921-8d5a-11eb-9881-831ef2edb03d",
+                    "mode": "integer",
+                    "sample": 10000
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "f3158922-8d5a-11eb-9881-831ef2edb03d"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "f313b460-8d5a-11eb-9881-831ef2edb03d",
+            "bucketId": "5facad90-8d59-11eb-9881-831ef2edb03d"
+        },
+        {
+            "collectionName": "human",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "fc696230-8d5a-11eb-9881-831ef2edb03d",
+                    "required": true,
+                    "sample": "alcmene"
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "name": "age",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "required": true,
+                    "GUID": "fc696231-8d5a-11eb-9881-831ef2edb03d",
+                    "mode": "integer",
+                    "sample": 45
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "fc696232-8d5a-11eb-9881-831ef2edb03d"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "fc667c00-8d5a-11eb-9881-831ef2edb03d",
+            "bucketId": "5facad90-8d59-11eb-9881-831ef2edb03d"
+        },
+        {
+            "collectionName": "location",
+            "type": "object",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "230b5e20-8d5b-11eb-9881-831ef2edb03d",
+                    "required": true,
+                    "sample": "sky"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "1d5f0940-8d5b-11eb-9881-831ef2edb03d"
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "1d5b38b0-8d5b-11eb-9881-831ef2edb03d",
+            "bucketId": "5facad90-8d59-11eb-9881-831ef2edb03d"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "GraphOfTheGodsFactory",
+            "type": "bucket",
+            "collectionIds": [
+                "5fe21570-8d59-11eb-9881-831ef2edb03d",
+                "63be3e30-8d59-11eb-9881-831ef2edb03d",
+                "db036d20-8d5a-11eb-9881-831ef2edb03d",
+                "f313b460-8d5a-11eb-9881-831ef2edb03d",
+                "fc667c00-8d5a-11eb-9881-831ef2edb03d",
+                "1d5b38b0-8d5b-11eb-9881-831ef2edb03d"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "traversalSource": "g",
+            "schema.default": "default",
+            "schema.constraints": true,
+            "indexes": [],
+            "GUID": "5facad90-8d59-11eb-9881-831ef2edb03d",
+            "compositeIndexes": [
+                {
+                    "GUID": "70e95e00-8d59-11eb-9881-831ef2edb03d",
+                    "name": "byNameComposite",
+                    "indexKey": [
+                        {
+                            "GUID": "a1dc8c80-8d5e-11eb-9881-831ef2edb03d",
+                            "path": [
+                                "5fe21570-8d59-11eb-9881-831ef2edb03d",
+                                "669db770-8d59-11eb-9881-831ef2edb03d"
+                            ]
+                        }
+                    ],
+                    "indexDescription": "to answer the following query:\n \ng.V().has('name', 'hercules')"
+                },
+                {
+                    "GUID": "abebc650-8d5e-11eb-9881-831ef2edb03d",
+                    "name": "byNameAndAgeComposite",
+                    "indexKey": [
+                        {
+                            "GUID": "b3067840-8d5e-11eb-9881-831ef2edb03d",
+                            "path": [
+                                "5fe21570-8d59-11eb-9881-831ef2edb03d",
+                                "669db770-8d59-11eb-9881-831ef2edb03d"
+                            ]
+                        },
+                        {
+                            "GUID": "b601ddf0-8d5e-11eb-9881-831ef2edb03d",
+                            "path": [
+                                "5fe21570-8d59-11eb-9881-831ef2edb03d",
+                                "68bcedf0-8d59-11eb-9881-831ef2edb03d"
+                            ]
+                        }
+                    ],
+                    "indexDescription": "to answer the following query:\n\ng.V().has('age', 30).has('name', 'hercules')"
+                },
+                {
+                    "GUID": "02167d90-8d5f-11eb-9881-831ef2edb03d",
+                    "name": "byNameUnique",
+                    "unique": true,
+                    "indexKey": [
+                        {
+                            "GUID": "070798c0-8d5f-11eb-9881-831ef2edb03d",
+                            "path": [
+                                "5fe21570-8d59-11eb-9881-831ef2edb03d",
+                                "669db770-8d59-11eb-9881-831ef2edb03d"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "GUID": "15e04180-8d5f-11eb-9881-831ef2edb03d",
+                    "name": "byNameAndLabel",
+                    "indexKey": [
+                        {
+                            "GUID": "1c606120-8d5f-11eb-9881-831ef2edb03d",
+                            "path": [
+                                "5fe21570-8d59-11eb-9881-831ef2edb03d",
+                                "669db770-8d59-11eb-9881-831ef2edb03d"
+                            ]
+                        }
+                    ],
+                    "IndexOnly": true
+                }
+            ],
+            "mixedIndexes": [
+                {
+                    "GUID": "504fb220-8ee4-11eb-8b46-2de57edb80f8",
+                    "name": "nameAndAge",
+                    "indexingBackend": "elasticsearch",
+                    "indexKey": [
+                        {
+                            "GUID": "63369020-8ee4-11eb-8b46-2de57edb80f8",
+                            "path": [
+                                "5fe21570-8d59-11eb-9881-831ef2edb03d",
+                                "68bcedf0-8d59-11eb-9881-831ef2edb03d"
+                            ],
+                            "type": "TEXT"
+                        }
+                    ]
+                }
+            ],
+            "vertexCentricIndexes": [
+                {
+                    "GUID": "6cd13630-8ee4-11eb-8b46-2de57edb80f8",
+                    "name": "battlesByRatingAndTime",
+                    "direction": "OUT",
+                    "indexKey": [
+                        {
+                            "GUID": "c198c180-bd27-11eb-96f6-dba236f4223a",
+                            "path": [
+                                "63beda70-8d59-11eb-9881-831ef2edb03d",
+                                "6e0b9270-8d59-11eb-9881-831ef2edb03d"
+                            ]
+                        },
+                        {
+                            "GUID": "c198c181-bd27-11eb-96f6-dba236f4223a",
+                            "path": [
+                                "63beda70-8d59-11eb-9881-831ef2edb03d",
+                                "95b0ed20-8ee4-11eb-8b46-2de57edb80f8"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "graphConfigurations": [
+                {
+                    "GUID": "83646ef0-be3a-11eb-bbb1-3da18161aded",
+                    "graphConfigurationKey": "gremlin.graph",
+                    "graphConfigurationValue": "org.janusgraph.core.JanusGraphFactory"
+                },
+                {
+                    "GUID": "87008170-be3a-11eb-bbb1-3da18161aded",
+                    "graphConfigurationKey": "storage.backend",
+                    "graphConfigurationValue": "berkeleyje"
+                },
+                {
+                    "GUID": "8cb84800-be3a-11eb-bbb1-3da18161aded",
+                    "graphConfigurationKey": "index.search.backend",
+                    "graphConfigurationValue": "lucene"
+                },
+                {
+                    "GUID": "93fe0190-be3a-11eb-bbb1-3da18161aded",
+                    "graphConfigurationKey": "storage.directory",
+                    "graphConfigurationValue": "/var/lib/janusgraph/data"
+                },
+                {
+                    "GUID": "97f887c0-be3a-11eb-bbb1-3da18161aded",
+                    "graphConfigurationKey": "index.search.directory",
+                    "graphConfigurationValue": "/var/lib/janusgraph/index"
+                }
+            ],
+            "graphFactory": "JanusGraphFactory",
+            "useConfiguration": true,
+            "schemaDefault": "default",
+            "schemaConstraints": true
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "battled",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "5fe21570-8d59-11eb-9881-831ef2edb03d",
+            "childCollection": "63be3e30-8d59-11eb-9881-831ef2edb03d",
+            "level": "entity",
+            "GUID": "63beda70-8d59-11eb-9881-831ef2edb03d",
+            "lineSize": 2,
+            "bucketId": "5facad90-8d59-11eb-9881-831ef2edb03d",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "time",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "6e0b9270-8d59-11eb-9881-831ef2edb03d",
+                    "sample": "12",
+                    "required": true
+                },
+                {
+                    "additionalProperties": false,
+                    "properties": [
+                        {
+                            "type": "array",
+                            "properties": [
+                                {
+                                    "exclusiveMinimum": false,
+                                    "exclusiveMaximum": false,
+                                    "primaryKey": false,
+                                    "childType": "number",
+                                    "type": "numeric",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "propCardinality": "single",
+                                    "GUID": "704bf4d1-ad7f-11eb-8352-990f0d9c6045",
+                                    "arrayItem": true,
+                                    "arrayParentType": "array",
+                                    "mode": "double",
+                                    "sample": 37.97
+                                },
+                                {
+                                    "exclusiveMinimum": false,
+                                    "exclusiveMaximum": false,
+                                    "primaryKey": false,
+                                    "childType": "number",
+                                    "type": "numeric",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "propCardinality": "single",
+                                    "GUID": "704c1be0-ad7f-11eb-8352-990f0d9c6045",
+                                    "arrayItem": true,
+                                    "arrayParentType": "array",
+                                    "mode": "double",
+                                    "sample": 23.72
+                                }
+                            ],
+                            "additionalItems": true,
+                            "name": "coordinates",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "propCardinality": "single",
+                            "GUID": "704bf4d0-ad7f-11eb-8352-990f0d9c6045"
+                        }
+                    ],
+                    "subType": "point",
+                    "subTypes": [
+                        {
+                            "name": "wkt",
+                            "snippet": "geoshape-wkt"
+                        },
+                        {
+                            "name": "point",
+                            "snippet": "geoshape-point"
+                        },
+                        {
+                            "name": "box",
+                            "snippet": "geoshape-box"
+                        },
+                        {
+                            "name": "circle",
+                            "snippet": "geoshape-circle"
+                        },
+                        {
+                            "name": "line",
+                            "snippet": "geoshape-line"
+                        },
+                        {
+                            "name": "polygon",
+                            "snippet": "geoshape-polygon"
+                        },
+                        {
+                            "name": "multipoint",
+                            "snippet": "geoshape-multipoint"
+                        },
+                        {
+                            "name": "multilinestring",
+                            "snippet": "geoshape-multilinestring"
+                        },
+                        {
+                            "name": "multipolygon",
+                            "snippet": "geoshape-multipolygon"
+                        },
+                        {
+                            "name": "geometrycollection",
+                            "snippet": "geoshape-geometrycollection"
+                        }
+                    ],
+                    "childType": "geoshape",
+                    "type": "document",
+                    "name": "place",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "6cad9860-ad7f-11eb-8352-990f0d9c6045",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "rating",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "95b0ed20-8ee4-11eb-8b46-2de57edb80f8",
+                    "error": {}
+                }
+            ]
+        },
+        {
+            "name": "pet",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "5fe21570-8d59-11eb-9881-831ef2edb03d",
+            "childCollection": "63be3e30-8d59-11eb-9881-831ef2edb03d",
+            "level": "entity",
+            "GUID": "0fa84b40-8d5b-11eb-9881-831ef2edb03d",
+            "lineSize": 2,
+            "bucketId": "5facad90-8d59-11eb-9881-831ef2edb03d",
+            "properties": []
+        },
+        {
+            "name": "lives",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "5fe21570-8d59-11eb-9881-831ef2edb03d",
+            "childCollection": "1d5b38b0-8d5b-11eb-9881-831ef2edb03d",
+            "level": "entity",
+            "GUID": "3054b450-8d5b-11eb-9881-831ef2edb03d",
+            "lineSize": 2,
+            "bucketId": "5facad90-8d59-11eb-9881-831ef2edb03d",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "reason",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "36316800-8d5b-11eb-9881-831ef2edb03d",
+                    "required": true,
+                    "sample": "loves fresh breeze"
+                }
+            ]
+        },
+        {
+            "name": "father",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "db036d20-8d5a-11eb-9881-831ef2edb03d",
+            "childCollection": "5fe21570-8d59-11eb-9881-831ef2edb03d",
+            "level": "entity",
+            "GUID": "c9557260-8d5c-11eb-9881-831ef2edb03d",
+            "lineSize": 2,
+            "bucketId": "5facad90-8d59-11eb-9881-831ef2edb03d",
+            "properties": []
+        },
+        {
+            "name": "mother",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "db036d20-8d5a-11eb-9881-831ef2edb03d",
+            "childCollection": "fc667c00-8d5a-11eb-9881-831ef2edb03d",
+            "level": "entity",
+            "GUID": "d6e01750-8d5c-11eb-9881-831ef2edb03d",
+            "lineSize": 2,
+            "bucketId": "5facad90-8d59-11eb-9881-831ef2edb03d",
+            "properties": []
+        },
+        {
+            "name": "brother",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "5fe21570-8d59-11eb-9881-831ef2edb03d",
+            "childCollection": "5fe21570-8d59-11eb-9881-831ef2edb03d",
+            "level": "entity",
+            "GUID": "75b47dd0-8d5d-11eb-9881-831ef2edb03d",
+            "lineSize": 2,
+            "bucketId": "5facad90-8d59-11eb-9881-831ef2edb03d",
+            "properties": []
+        },
+        {
+            "name": "father",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "5fe21570-8d59-11eb-9881-831ef2edb03d",
+            "childCollection": "f313b460-8d5a-11eb-9881-831ef2edb03d",
+            "level": "entity",
+            "GUID": "888562d0-8d5d-11eb-9881-831ef2edb03d",
+            "lineSize": 2,
+            "bucketId": "5facad90-8d59-11eb-9881-831ef2edb03d",
+            "properties": []
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "5facad90-8d59-11eb-9881-831ef2edb03d": "GraphOfTheGodsFactory",
+        "5fe21570-8d59-11eb-9881-831ef2edb03d": "god",
+        "63be3e30-8d59-11eb-9881-831ef2edb03d": "monster",
+        "63beda70-8d59-11eb-9881-831ef2edb03d": "battled",
+        "669db770-8d59-11eb-9881-831ef2edb03d": "name",
+        "68bcedf0-8d59-11eb-9881-831ef2edb03d": "age",
+        "6e0b9270-8d59-11eb-9881-831ef2edb03d": "time",
+        "db036d20-8d5a-11eb-9881-831ef2edb03d": "demigod",
+        "db0568f0-8d5a-11eb-9881-831ef2edb03d": "name",
+        "db0568f1-8d5a-11eb-9881-831ef2edb03d": "age",
+        "f313b460-8d5a-11eb-9881-831ef2edb03d": "titan",
+        "f3158920-8d5a-11eb-9881-831ef2edb03d": "name",
+        "f3158921-8d5a-11eb-9881-831ef2edb03d": "age",
+        "fc667c00-8d5a-11eb-9881-831ef2edb03d": "human",
+        "fc696230-8d5a-11eb-9881-831ef2edb03d": "name",
+        "fc696231-8d5a-11eb-9881-831ef2edb03d": "age",
+        "0fa84b40-8d5b-11eb-9881-831ef2edb03d": "pet",
+        "1d5b38b0-8d5b-11eb-9881-831ef2edb03d": "location",
+        "230b5e20-8d5b-11eb-9881-831ef2edb03d": "name",
+        "3054b450-8d5b-11eb-9881-831ef2edb03d": "lives",
+        "36316800-8d5b-11eb-9881-831ef2edb03d": "reason",
+        "c9557260-8d5c-11eb-9881-831ef2edb03d": "father",
+        "d6e01750-8d5c-11eb-9881-831ef2edb03d": "mother",
+        "75b47dd0-8d5d-11eb-9881-831ef2edb03d": "brother",
+        "888562d0-8d5d-11eb-9881-831ef2edb03d": "father",
+        "95b0ed20-8ee4-11eb-8b46-2de57edb80f8": "rating",
+        "6cad9860-ad7f-11eb-8352-990f0d9c6045": "place",
+        "704bf4d0-ad7f-11eb-8352-990f0d9c6045": "coordinates"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "5e98f3a1-8d59-11eb-9881-831ef2edb03d"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "5e98f3a2-8d59-11eb-9881-831ef2edb03d"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "0.5.x",
+    "dbVendor": "JanusGraph",
+    "appTarget": "JanusGraph",
+    "creationTS": "2021-03-25T11:00:54.362Z",
+    "GUID": "59b6e0b0-be3a-11eb-bbb1-3da18161aded",
+    "isLineageEnabled": false,
+    "hackoladeMeta": {
+        "validationErrors": {
+            "code": false
+        }
+    },
+    "description": "Derived from https://docs.janusgraph.org/getting-started/basic-usage/",
+    "lastModifTS": "2021-06-18T06:08:16.355Z",
+    "persistenceSchemaVersion": "5",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "JanusGraph",
+        "pluginVersion": "0.1.0",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "5.0.5"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "5fe21570-8d59-11eb-9881-831ef2edb03d",
+                        "x": 366,
+                        "y": 290,
+                        "width": 191,
+                        "height": 65,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "63be3e30-8d59-11eb-9881-831ef2edb03d",
+                        "x": 1246,
+                        "y": 257.5,
+                        "width": 171,
+                        "height": 30,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "63beda70-8d59-11eb-9881-831ef2edb03d",
+                        "x": 918,
+                        "y": 155,
+                        "width": 243,
+                        "height": 135,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "db036d20-8d5a-11eb-9881-831ef2edb03d",
+                        "x": 90,
+                        "y": 122.5,
+                        "width": 191,
+                        "height": 65,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "f313b460-8d5a-11eb-9881-831ef2edb03d",
+                        "x": 90,
+                        "y": 407.5,
+                        "width": 191,
+                        "height": 65,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "fc667c00-8d5a-11eb-9881-831ef2edb03d",
+                        "x": 642,
+                        "y": 90,
+                        "width": 191,
+                        "height": 65,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "0fa84b40-8d5b-11eb-9881-831ef2edb03d",
+                        "x": 964,
+                        "y": 360,
+                        "width": 151,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "1d5b38b0-8d5b-11eb-9881-831ef2edb03d",
+                        "x": 102,
+                        "y": 225,
+                        "width": 167,
+                        "height": 47,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "3054b450-8d5b-11eb-9881-831ef2edb03d",
+                        "x": 100,
+                        "y": 342,
+                        "width": 171,
+                        "height": 45,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "c9557260-8d5c-11eb-9881-831ef2edb03d",
+                        "x": 384,
+                        "y": 190,
+                        "width": 155,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "d6e01750-8d5c-11eb-9881-831ef2edb03d",
+                        "x": 380,
+                        "y": 90,
+                        "width": 163,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "75b47dd0-8d5d-11eb-9881-831ef2edb03d",
+                        "x": 656,
+                        "y": 295,
+                        "width": 163,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "888562d0-8d5d-11eb-9881-831ef2edb03d",
+                        "x": 384,
+                        "y": 425,
+                        "width": 155,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 50,
+                        "y": 50,
+                        "GUID": "5facad90-8d59-11eb-9881-831ef2edb03d"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "5fe21570-8d59-11eb-9881-831ef2edb03d",
+                            "size": 100,
+                            "x": 80,
+                            "y": 143.24832314262525
+                        },
+                        {
+                            "GUID": "63be3e30-8d59-11eb-9881-831ef2edb03d",
+                            "size": 100,
+                            "x": 80,
+                            "y": 443.68858003534314
+                        },
+                        {
+                            "GUID": "db036d20-8d5a-11eb-9881-831ef2edb03d",
+                            "size": 100,
+                            "x": 377.54121690336257,
+                            "y": 100
+                        },
+                        {
+                            "GUID": "f313b460-8d5a-11eb-9881-831ef2edb03d",
+                            "size": 100,
+                            "x": 350.5351585469094,
+                            "y": 273.5048378096857
+                        },
+                        {
+                            "GUID": "fc667c00-8d5a-11eb-9881-831ef2edb03d",
+                            "size": 100,
+                            "x": 677.9681343375454,
+                            "y": 100
+                        },
+                        {
+                            "GUID": "1d5b38b0-8d5b-11eb-9881-831ef2edb03d",
+                            "size": 100,
+                            "x": 203.44292880077217,
+                            "y": 417.05521653782694
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 40,
+                            "y": 60,
+                            "GUID": "5facad90-8d59-11eb-9881-831ef2edb03d"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false,
+            "dndHandles": true
+        }
+    }
+}

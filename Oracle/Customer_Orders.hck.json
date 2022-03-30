@@ -1,0 +1,2718 @@
+{
+    "modelName": "Customer Orders",
+    "collections": [
+        {
+            "collectionName": "CUSTOMERS",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "CUSTOMER_ID",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "synonym": "",
+                    "description": "Auto-incrementing primary key",
+                    "GUID": "d3ef43c0-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "childRelationships": [
+                        "d3f3b095-80e2-11ec-a640-596aedb199f8",
+                        "d3f3b098-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "EMAIL_ADDRESS",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "mode": "varchar2",
+                    "length": 255,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": true,
+                    "lengthSemantics": "char",
+                    "encryption": {
+                        "GUID": "d3ef6ad0-80e2-11ec-a640-596aedb199f8"
+                    },
+                    "default": "",
+                    "notNullConstraintName": "",
+                    "synonym": "",
+                    "description": "The email address the person uses to access the account",
+                    "GUID": "d3ef43c1-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "FULL_NAME",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar2",
+                    "length": 255,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "lengthSemantics": "char",
+                    "encryption": {
+                        "GUID": "d3ef91e0-80e2-11ec-a640-596aedb199f8"
+                    },
+                    "default": "",
+                    "notNullConstraintName": "",
+                    "synonym": "",
+                    "description": "What this customer is called",
+                    "GUID": "d3ef43c2-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "d3ef1cb0-80e2-11ec-a640-596aedb199f8",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "temporary": false,
+            "temporaryType": "global",
+            "sharded": false,
+            "duplicated": false,
+            "immutable": false,
+            "GUID": "d3eef5a0-80e2-11ec-a640-596aedb199f8",
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8",
+            "code": "",
+            "description": "Details of the people placing orders",
+            "primaryKey": [
+                {
+                    "GUID": "d3f31450-80e2-11ec-a640-596aedb199f8",
+                    "constraintName": "CUSTOMERS_PK",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "d3ef43c0-80e2-11ec-a640-596aedb199f8",
+                            "type": "ascending"
+                        }
+                    ]
+                }
+            ],
+            "storage": {
+                "organization": "heap",
+                "tablespace": "DATA",
+                "GUID": "d3f2ed40-80e2-11ec-a640-596aedb199f8"
+            },
+            "partitioning": [],
+            "uniqueKey": [
+                {
+                    "GUID": "d3f31451-80e2-11ec-a640-596aedb199f8",
+                    "constraintName": "CUSTOMERS_EMAIL_U",
+                    "compositeUniqueKey": [
+                        {
+                            "keyId": "d3ef43c1-80e2-11ec-a640-596aedb199f8",
+                            "type": "ascending"
+                        }
+                    ]
+                }
+            ],
+            "Indxs": [
+                {
+                    "isActivated": true,
+                    "logging_clause": "logging",
+                    "GUID": "d3f33b60-80e2-11ec-a640-596aedb199f8",
+                    "indxName": "CUSTOMERS_NAME_I",
+                    "indxKey": [
+                        {
+                            "keyId": "d3ef43c2-80e2-11ec-a640-596aedb199f8",
+                            "type": "asc"
+                        }
+                    ],
+                    "index_properties": "PCTFREE 10 INITRANS 20 MAXTRANS 255 COMPUTE STATISTICS \n  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645\n  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1\n  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)\n  TABLESPACE \"DATA\""
+                },
+                {
+                    "isActivated": true,
+                    "logging_clause": "logging",
+                    "GUID": "d3f33b61-80e2-11ec-a640-596aedb199f8",
+                    "indxName": "CUSTOMERS_EMAIL_U",
+                    "indxType": "unique",
+                    "indxKey": [
+                        {
+                            "keyId": "d3ef43c1-80e2-11ec-a640-596aedb199f8",
+                            "type": "asc"
+                        }
+                    ],
+                    "index_properties": "PCTFREE 10 INITRANS 20 MAXTRANS 255 COMPUTE STATISTICS \n  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645\n  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1\n  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)\n  TABLESPACE \"DATA\""
+                }
+            ],
+            "chkConstr": [],
+            "hackoladeMeta": {},
+            "ifNotExist": false
+        },
+        {
+            "collectionName": "INVENTORY",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "INVENTORY_ID",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "synonym": "",
+                    "description": "Auto-incrementing primary key",
+                    "GUID": "d3efe001-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "STORE_ID",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": true,
+                    "default": "",
+                    "synonym": "",
+                    "description": "Which location the goods are located at",
+                    "GUID": "d3efe002-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "d3f202e1-80e2-11ec-a640-596aedb199f8",
+                    "foreignField": [
+                        "d3f202e1-80e2-11ec-a640-596aedb199f8",
+                        "d3f229f0-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "parentRelationship": "d3f3b090-80e2-11ec-a640-596aedb199f8",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "PRODUCT_ID",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": true,
+                    "default": "",
+                    "synonym": "",
+                    "description": "Which item this stock is for",
+                    "GUID": "d3efe003-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "d3f0f170-80e2-11ec-a640-596aedb199f8",
+                    "foreignField": [
+                        "d3f0f170-80e2-11ec-a640-596aedb199f8",
+                        "d3f11881-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "parentRelationship": "d3f3b091-80e2-11ec-a640-596aedb199f8",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "PRODUCT_INVENTORY",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "default": "",
+                    "synonym": "",
+                    "description": "The current quantity in stock",
+                    "GUID": "d3efe004-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "d3efe000-80e2-11ec-a640-596aedb199f8",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "temporary": false,
+            "temporaryType": "global",
+            "sharded": false,
+            "duplicated": false,
+            "immutable": false,
+            "GUID": "d3efb8f0-80e2-11ec-a640-596aedb199f8",
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8",
+            "code": "",
+            "description": "Details of the quantity of stock available for products at each location",
+            "primaryKey": [
+                {
+                    "GUID": "d3f33b65-80e2-11ec-a640-596aedb199f8",
+                    "constraintName": "INVENTORY_PK",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "d3efe001-80e2-11ec-a640-596aedb199f8",
+                            "type": "ascending"
+                        }
+                    ]
+                }
+            ],
+            "storage": {
+                "organization": "heap",
+                "tablespace": "DATA",
+                "GUID": "d3f33b62-80e2-11ec-a640-596aedb199f8"
+            },
+            "partitioning": [],
+            "uniqueKey": [
+                {
+                    "GUID": "d3f33b66-80e2-11ec-a640-596aedb199f8",
+                    "constraintName": "INVENTORY_STORE_PRODUCT_U",
+                    "compositeUniqueKey": [
+                        {
+                            "keyId": "d3efe002-80e2-11ec-a640-596aedb199f8",
+                            "type": "ascending"
+                        },
+                        {
+                            "keyId": "d3efe003-80e2-11ec-a640-596aedb199f8",
+                            "type": "ascending"
+                        }
+                    ]
+                }
+            ],
+            "Indxs": [
+                {
+                    "isActivated": true,
+                    "logging_clause": "logging",
+                    "GUID": "d3f33b67-80e2-11ec-a640-596aedb199f8",
+                    "indxName": "INVENTORY_PRODUCT_ID_I",
+                    "indxKey": [
+                        {
+                            "keyId": "d3efe003-80e2-11ec-a640-596aedb199f8",
+                            "type": "asc"
+                        }
+                    ],
+                    "index_properties": "PCTFREE 10 INITRANS 20 MAXTRANS 255 COMPUTE STATISTICS \n  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645\n  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1\n  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)\n  TABLESPACE \"DATA\""
+                },
+                {
+                    "isActivated": true,
+                    "logging_clause": "logging",
+                    "GUID": "d3f33b68-80e2-11ec-a640-596aedb199f8",
+                    "indxName": "INVENTORY_STORE_PRODUCT_U",
+                    "indxType": "unique",
+                    "indxKey": [
+                        {
+                            "keyId": "d3efe002-80e2-11ec-a640-596aedb199f8",
+                            "type": "asc"
+                        },
+                        {
+                            "keyId": "d3efe003-80e2-11ec-a640-596aedb199f8",
+                            "type": "asc"
+                        }
+                    ],
+                    "index_properties": "PCTFREE 10 INITRANS 20 MAXTRANS 255 COMPUTE STATISTICS \n  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645\n  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1\n  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)\n  TABLESPACE \"DATA\""
+                }
+            ],
+            "chkConstr": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "ORDER_ITEMS",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "ORDER_ID",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": true,
+                    "default": "",
+                    "synonym": "",
+                    "description": "The order these products belong to",
+                    "GUID": "d3f02e22-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "d3f07c40-80e2-11ec-a640-596aedb199f8",
+                    "foreignField": [
+                        "d3f07c40-80e2-11ec-a640-596aedb199f8",
+                        "d3f0a351-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "parentRelationship": "d3f3b092-80e2-11ec-a640-596aedb199f8",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "LINE_ITEM_ID",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "default": "",
+                    "synonym": "",
+                    "description": "An incrementing number, starting at one for each order",
+                    "GUID": "d3f02e23-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "PRODUCT_ID",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": true,
+                    "default": "",
+                    "synonym": "",
+                    "description": "Which item was purchased",
+                    "GUID": "d3f02e24-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "d3f0f170-80e2-11ec-a640-596aedb199f8",
+                    "foreignField": [
+                        "d3f0f170-80e2-11ec-a640-596aedb199f8",
+                        "d3f11881-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "parentRelationship": "d3f3b094-80e2-11ec-a640-596aedb199f8",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "UNIT_PRICE",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "precision": 10,
+                    "scale": 2,
+                    "default": "",
+                    "synonym": "",
+                    "description": "How much the customer paid for one item of the product",
+                    "GUID": "d3f02e25-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "QUANTITY",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "default": "",
+                    "synonym": "",
+                    "description": "How many items of this product the customer purchased",
+                    "GUID": "d3f02e26-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "SHIPMENT_ID",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "default": "",
+                    "synonym": "",
+                    "description": "Where this product will be delivered",
+                    "GUID": "d3f02e27-80e2-11ec-a640-596aedb199f8",
+                    "required": false,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "d3f1b4c0-80e2-11ec-a640-596aedb199f8",
+                    "foreignField": [
+                        "d3f1b4c0-80e2-11ec-a640-596aedb199f8",
+                        "d3f1b4c2-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "parentRelationship": "d3f3b093-80e2-11ec-a640-596aedb199f8",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "d3f02e21-80e2-11ec-a640-596aedb199f8",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "temporary": false,
+            "temporaryType": "global",
+            "sharded": false,
+            "duplicated": false,
+            "immutable": false,
+            "GUID": "d3f02e20-80e2-11ec-a640-596aedb199f8",
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8",
+            "code": "",
+            "description": "Details of which products the customer has purchased in an order",
+            "primaryKey": [
+                {
+                    "GUID": "d3f33b6c-80e2-11ec-a640-596aedb199f8",
+                    "constraintName": "ORDER_ITEMS_PK",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "d3f02e22-80e2-11ec-a640-596aedb199f8",
+                            "type": "ascending"
+                        },
+                        {
+                            "keyId": "d3f02e23-80e2-11ec-a640-596aedb199f8",
+                            "type": "ascending"
+                        }
+                    ]
+                }
+            ],
+            "storage": {
+                "organization": "heap",
+                "tablespace": "DATA",
+                "GUID": "d3f33b69-80e2-11ec-a640-596aedb199f8"
+            },
+            "partitioning": [],
+            "uniqueKey": [
+                {
+                    "GUID": "d3f36270-80e2-11ec-a640-596aedb199f8",
+                    "constraintName": "ORDER_ITEMS_PRODUCT_U",
+                    "compositeUniqueKey": [
+                        {
+                            "keyId": "d3f02e24-80e2-11ec-a640-596aedb199f8",
+                            "type": "ascending"
+                        },
+                        {
+                            "keyId": "d3f02e22-80e2-11ec-a640-596aedb199f8",
+                            "type": "ascending"
+                        }
+                    ]
+                }
+            ],
+            "Indxs": [
+                {
+                    "isActivated": true,
+                    "logging_clause": "logging",
+                    "GUID": "d3f36271-80e2-11ec-a640-596aedb199f8",
+                    "indxName": "ORDER_ITEMS_SHIPMENT_ID_I",
+                    "indxKey": [
+                        {
+                            "keyId": "d3f02e27-80e2-11ec-a640-596aedb199f8",
+                            "type": "asc"
+                        }
+                    ],
+                    "index_properties": "PCTFREE 10 INITRANS 20 MAXTRANS 255 COMPUTE STATISTICS \n  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645\n  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1\n  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)\n  TABLESPACE \"DATA\""
+                },
+                {
+                    "isActivated": true,
+                    "logging_clause": "logging",
+                    "GUID": "d3f36272-80e2-11ec-a640-596aedb199f8",
+                    "indxName": "ORDER_ITEMS_PRODUCT_U",
+                    "indxType": "unique",
+                    "indxKey": [
+                        {
+                            "keyId": "d3f02e24-80e2-11ec-a640-596aedb199f8",
+                            "type": "asc"
+                        },
+                        {
+                            "keyId": "d3f02e22-80e2-11ec-a640-596aedb199f8",
+                            "type": "asc"
+                        }
+                    ],
+                    "index_properties": "PCTFREE 10 INITRANS 20 MAXTRANS 255 COMPUTE STATISTICS \n  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645\n  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1\n  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)\n  TABLESPACE \"DATA\""
+                }
+            ],
+            "chkConstr": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "ORDERS",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "ORDER_ID",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "synonym": "",
+                    "description": "Auto-incrementing primary key",
+                    "GUID": "d3f0a351-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "childRelationships": [
+                        "d3f3b092-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ORDER_DATETIME",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "timestamp",
+                    "childType": "datetime",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "fractSecPrecision": 6,
+                    "withTimeZone": false,
+                    "localTimeZone": false,
+                    "default": "",
+                    "description": "When the order was placed",
+                    "GUID": "d3f0a352-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CUSTOMER_ID",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "default": "",
+                    "synonym": "",
+                    "description": "Who placed this order",
+                    "GUID": "d3f0a353-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "d3eef5a0-80e2-11ec-a640-596aedb199f8",
+                    "foreignField": [
+                        "d3eef5a0-80e2-11ec-a640-596aedb199f8",
+                        "d3ef43c0-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "parentRelationship": "d3f3b095-80e2-11ec-a640-596aedb199f8",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ORDER_STATUS",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar2",
+                    "length": 10,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "lengthSemantics": "char",
+                    "encryption": {
+                        "GUID": "d3f0ca60-80e2-11ec-a640-596aedb199f8"
+                    },
+                    "default": "",
+                    "notNullConstraintName": "",
+                    "synonym": "",
+                    "description": "What state the order is in. Valid values are:\nOPEN - the order is in progress\nPAID - money has been received from the customer for this order\nSHIPPED - the products have been dispatched to the customer\nCOMPLETE - the customer has received the order\nCANCELLED - the customer has stopped the order\nREFUNDED - there has been an issue with the order and the money has been returned to the customer",
+                    "GUID": "d3f0a354-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "STORE_ID",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "default": "",
+                    "synonym": "",
+                    "description": "Where this order was placed",
+                    "GUID": "d3f0a355-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "d3f202e1-80e2-11ec-a640-596aedb199f8",
+                    "foreignField": [
+                        "d3f202e1-80e2-11ec-a640-596aedb199f8",
+                        "d3f229f0-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "parentRelationship": "d3f3b096-80e2-11ec-a640-596aedb199f8",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "d3f0a350-80e2-11ec-a640-596aedb199f8",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "temporary": false,
+            "temporaryType": "global",
+            "sharded": false,
+            "duplicated": false,
+            "immutable": false,
+            "GUID": "d3f07c40-80e2-11ec-a640-596aedb199f8",
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8",
+            "code": "",
+            "description": "Details of who made purchases where",
+            "primaryKey": [
+                {
+                    "GUID": "d3f36277-80e2-11ec-a640-596aedb199f8",
+                    "constraintName": "ORDERS_PK",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "d3f0a351-80e2-11ec-a640-596aedb199f8",
+                            "type": "ascending"
+                        }
+                    ]
+                }
+            ],
+            "storage": {
+                "organization": "heap",
+                "tablespace": "DATA",
+                "GUID": "d3f36273-80e2-11ec-a640-596aedb199f8"
+            },
+            "partitioning": [],
+            "uniqueKey": [],
+            "Indxs": [
+                {
+                    "isActivated": true,
+                    "logging_clause": "logging",
+                    "GUID": "d3f36278-80e2-11ec-a640-596aedb199f8",
+                    "indxName": "ORDERS_CUSTOMER_ID_I",
+                    "indxKey": [
+                        {
+                            "keyId": "d3f0a353-80e2-11ec-a640-596aedb199f8",
+                            "type": "asc"
+                        }
+                    ],
+                    "index_properties": "PCTFREE 10 INITRANS 20 MAXTRANS 255 COMPUTE STATISTICS \n  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645\n  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1\n  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)\n  TABLESPACE \"DATA\""
+                },
+                {
+                    "isActivated": true,
+                    "logging_clause": "logging",
+                    "GUID": "d3f36279-80e2-11ec-a640-596aedb199f8",
+                    "indxName": "ORDERS_STORE_ID_I",
+                    "indxKey": [
+                        {
+                            "keyId": "d3f0a355-80e2-11ec-a640-596aedb199f8",
+                            "type": "asc"
+                        }
+                    ],
+                    "index_properties": "PCTFREE 10 INITRANS 20 MAXTRANS 255 COMPUTE STATISTICS \n  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645\n  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1\n  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)\n  TABLESPACE \"DATA\""
+                }
+            ],
+            "chkConstr": [
+                {
+                    "GUID": "d3f3627a-80e2-11ec-a640-596aedb199f8",
+                    "chkConstrName": "ORDERS_STATUS_C",
+                    "constrExpression": "( order_status in \n                    ( 'CANCELLED','COMPLETE','OPEN','PAID','REFUNDED','SHIPPED'))"
+                }
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "PRODUCTS",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "PRODUCT_ID",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "synonym": "",
+                    "description": "Auto-incrementing primary key",
+                    "GUID": "d3f11881-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "childRelationships": [
+                        "d3f3b091-80e2-11ec-a640-596aedb199f8",
+                        "d3f3b094-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "PRODUCT_NAME",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar2",
+                    "length": 255,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "lengthSemantics": "char",
+                    "encryption": {
+                        "GUID": "d3f13f90-80e2-11ec-a640-596aedb199f8"
+                    },
+                    "default": "",
+                    "notNullConstraintName": "",
+                    "synonym": "",
+                    "description": "What a product is called",
+                    "GUID": "d3f11882-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "UNIT_PRICE",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "precision": 10,
+                    "scale": 2,
+                    "default": "",
+                    "synonym": "",
+                    "description": "The monetary value of one item of this product",
+                    "GUID": "d3f11883-80e2-11ec-a640-596aedb199f8",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "PRODUCT_DETAILS",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "blob",
+                    "subtype": "object",
+                    "childType": "lobs",
+                    "type": "jsonObject",
+                    "description": "Further details of the product stored in JSON format",
+                    "GUID": "d3f11884-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "brand",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "jsonString",
+                            "maxLength": 9,
+                            "GUID": "08379da0-811d-11ec-a640-596aedb199f8",
+                            "required": true,
+                            "sample": "OTHERSIDE",
+                            "error": {
+                                "name": false,
+                                "code": false
+                            },
+                            "hackoladeMeta": {},
+                            "foreignCollection": "",
+                            "foreignField": []
+                        },
+                        {
+                            "code": "",
+                            "name": "colour",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "jsonString",
+                            "maxLength": 5,
+                            "GUID": "08407740-811d-11ec-a640-596aedb199f8",
+                            "required": true,
+                            "sample": "red",
+                            "error": {
+                                "name": false,
+                                "code": false
+                            },
+                            "hackoladeMeta": {},
+                            "foreignCollection": "",
+                            "foreignField": []
+                        },
+                        {
+                            "code": "",
+                            "name": "description",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "jsonString",
+                            "maxLength": 210,
+                            "GUID": "08488d90-811d-11ec-a640-596aedb199f8",
+                            "required": true,
+                            "sample": "Lorem officia laborum deserunt veniam cillum anim adipisicing minim aute ad esse sint sit tempor. Magna enim proident eiusmod incididunt adipisicing duis deserunt pariatur sint officia occaecat est minim ipsum.",
+                            "error": {
+                                "name": false,
+                                "code": false
+                            },
+                            "hackoladeMeta": {},
+                            "foreignCollection": "",
+                            "foreignField": []
+                        },
+                        {
+                            "code": "",
+                            "name": "gender",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "jsonString",
+                            "maxLength": 7,
+                            "GUID": "085055c0-811d-11ec-a640-596aedb199f8",
+                            "required": true,
+                            "sample": "Girl's",
+                            "error": {
+                                "name": false,
+                                "code": false
+                            },
+                            "hackoladeMeta": {},
+                            "foreignCollection": "",
+                            "foreignField": []
+                        },
+                        {
+                            "code": "",
+                            "name": "reviews",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "jsonArray",
+                            "properties": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "type": "jsonObject",
+                                    "properties": [
+                                        {
+                                            "code": "",
+                                            "name": "rating",
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "type": "jsonNumber",
+                                            "GUID": "085781b1-811d-11ec-a640-596aedb199f8",
+                                            "required": true,
+                                            "error": {}
+                                        },
+                                        {
+                                            "code": "",
+                                            "name": "review",
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "unique": false,
+                                            "type": "jsonString",
+                                            "maxLength": 226,
+                                            "GUID": "085781b2-811d-11ec-a640-596aedb199f8",
+                                            "required": false,
+                                            "error": {}
+                                        }
+                                    ],
+                                    "additionalProperties": false,
+                                    "GUID": "085781b0-811d-11ec-a640-596aedb199f8",
+                                    "arrayItem": true,
+                                    "arrayParentType": "jsonArray",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalItems": true,
+                            "GUID": "08575aa0-811d-11ec-a640-596aedb199f8",
+                            "required": true,
+                            "error": {
+                                "name": false,
+                                "code": false
+                            },
+                            "hackoladeMeta": {},
+                            "foreignCollection": "",
+                            "foreignField": []
+                        },
+                        {
+                            "code": "",
+                            "name": "sizes",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "jsonArray",
+                            "properties": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "type": "jsonString",
+                                    "GUID": "085efbc0-811d-11ec-a640-596aedb199f8",
+                                    "arrayItem": true,
+                                    "arrayParentType": "jsonArray",
+                                    "sample": "1 Yr",
+                                    "error": {}
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "type": "jsonNumber",
+                                    "GUID": "085efbc1-811d-11ec-a640-596aedb199f8",
+                                    "arrayItem": true,
+                                    "arrayParentType": "jsonArray",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalItems": true,
+                            "GUID": "085ed4b0-811d-11ec-a640-596aedb199f8",
+                            "required": true,
+                            "error": {
+                                "name": false,
+                                "code": false
+                            },
+                            "hackoladeMeta": {},
+                            "foreignCollection": "",
+                            "foreignField": []
+                        }
+                    ],
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "PRODUCT_IMAGE",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "blob",
+                    "subtype": "string",
+                    "childType": "lobs",
+                    "type": "binary",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "description": "A picture of the product",
+                    "GUID": "d3f11885-80e2-11ec-a640-596aedb199f8",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "IMAGE_MIME_TYPE",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar2",
+                    "length": 512,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "lengthSemantics": "char",
+                    "encryption": {
+                        "GUID": "d3f166a0-80e2-11ec-a640-596aedb199f8"
+                    },
+                    "default": "",
+                    "synonym": "",
+                    "description": "The mime-type of the product image",
+                    "GUID": "d3f11886-80e2-11ec-a640-596aedb199f8",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "IMAGE_FILENAME",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar2",
+                    "length": 512,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "lengthSemantics": "char",
+                    "encryption": {
+                        "GUID": "d3f166a1-80e2-11ec-a640-596aedb199f8"
+                    },
+                    "default": "",
+                    "synonym": "",
+                    "description": "The name of the file loaded in the image column",
+                    "GUID": "d3f11887-80e2-11ec-a640-596aedb199f8",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "IMAGE_CHARSET",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar2",
+                    "length": 512,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "lengthSemantics": "char",
+                    "encryption": {
+                        "GUID": "d3f18db0-80e2-11ec-a640-596aedb199f8"
+                    },
+                    "default": "",
+                    "synonym": "",
+                    "description": "The character set used to encode the image",
+                    "GUID": "d3f11888-80e2-11ec-a640-596aedb199f8",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "IMAGE_LAST_UPDATED",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "date",
+                    "childType": "datetime",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "default": "",
+                    "description": "The date the image was last changed",
+                    "GUID": "d3f11889-80e2-11ec-a640-596aedb199f8",
+                    "required": false,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "d3f11880-80e2-11ec-a640-596aedb199f8",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "temporary": false,
+            "temporaryType": "global",
+            "sharded": false,
+            "duplicated": false,
+            "immutable": false,
+            "GUID": "d3f0f170-80e2-11ec-a640-596aedb199f8",
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8",
+            "code": "",
+            "description": "Details of goods that customers can purchase",
+            "primaryKey": [
+                {
+                    "GUID": "d3f3627d-80e2-11ec-a640-596aedb199f8",
+                    "constraintName": "PRODUCTS_PK",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "d3f11881-80e2-11ec-a640-596aedb199f8",
+                            "type": "ascending"
+                        }
+                    ]
+                }
+            ],
+            "storage": {
+                "organization": "heap",
+                "tablespace": "DATA",
+                "GUID": "d3f3627b-80e2-11ec-a640-596aedb199f8"
+            },
+            "partitioning": [],
+            "uniqueKey": [],
+            "chkConstr": [
+                {
+                    "GUID": "d3f3627e-80e2-11ec-a640-596aedb199f8",
+                    "chkConstrName": "PRODUCTS_JSON_C",
+                    "constrExpression": "( product_details is json )"
+                }
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "SHIPMENTS",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "SHIPMENT_ID",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "synonym": "",
+                    "description": "Auto-incrementing primary key",
+                    "GUID": "d3f1b4c2-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "childRelationships": [
+                        "d3f3b093-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "STORE_ID",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "default": "",
+                    "synonym": "",
+                    "description": "Which location the goods will be transported from",
+                    "GUID": "d3f1b4c3-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "d3f202e1-80e2-11ec-a640-596aedb199f8",
+                    "foreignField": [
+                        "d3f202e1-80e2-11ec-a640-596aedb199f8",
+                        "d3f229f0-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "parentRelationship": "d3f3b097-80e2-11ec-a640-596aedb199f8",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "CUSTOMER_ID",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "default": "",
+                    "synonym": "",
+                    "description": "Who this shipment is for",
+                    "GUID": "d3f1b4c4-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "d3eef5a0-80e2-11ec-a640-596aedb199f8",
+                    "foreignField": [
+                        "d3eef5a0-80e2-11ec-a640-596aedb199f8",
+                        "d3ef43c0-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "parentRelationship": "d3f3b098-80e2-11ec-a640-596aedb199f8",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "DELIVERY_ADDRESS",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar2",
+                    "length": 512,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "lengthSemantics": "char",
+                    "encryption": {
+                        "GUID": "d3f1dbd0-80e2-11ec-a640-596aedb199f8"
+                    },
+                    "default": "",
+                    "notNullConstraintName": "",
+                    "synonym": "",
+                    "description": "Where the goods will be transported to",
+                    "GUID": "d3f1b4c5-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "SHIPMENT_STATUS",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar2",
+                    "length": 100,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "lengthSemantics": "char",
+                    "encryption": {
+                        "GUID": "d3f202e0-80e2-11ec-a640-596aedb199f8"
+                    },
+                    "default": "",
+                    "notNullConstraintName": "",
+                    "synonym": "",
+                    "description": "The current status of the shipment. Valid values are: \nCREATED - the shipment is ready for order assignment\nSHIPPED - the goods have been dispatched\nIN-TRANSIT - the goods are en-route to their destination\nDELIVERED - the good have arrived at their destination",
+                    "GUID": "d3f1b4c6-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "d3f1b4c1-80e2-11ec-a640-596aedb199f8",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "temporary": false,
+            "temporaryType": "global",
+            "sharded": false,
+            "duplicated": false,
+            "immutable": false,
+            "GUID": "d3f1b4c0-80e2-11ec-a640-596aedb199f8",
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8",
+            "code": "",
+            "description": "Details of where ordered goods will be delivered",
+            "primaryKey": [
+                {
+                    "GUID": "d3f36283-80e2-11ec-a640-596aedb199f8",
+                    "constraintName": "SHIPMENTS_PK",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "d3f1b4c2-80e2-11ec-a640-596aedb199f8",
+                            "type": "ascending"
+                        }
+                    ]
+                }
+            ],
+            "storage": {
+                "organization": "heap",
+                "tablespace": "DATA",
+                "GUID": "d3f3627f-80e2-11ec-a640-596aedb199f8"
+            },
+            "partitioning": [],
+            "uniqueKey": [],
+            "Indxs": [
+                {
+                    "isActivated": true,
+                    "logging_clause": "logging",
+                    "GUID": "d3f36284-80e2-11ec-a640-596aedb199f8",
+                    "indxName": "SHIPMENTS_STORE_ID_I",
+                    "indxKey": [
+                        {
+                            "keyId": "d3f1b4c3-80e2-11ec-a640-596aedb199f8",
+                            "type": "asc"
+                        }
+                    ],
+                    "index_properties": "PCTFREE 10 INITRANS 20 MAXTRANS 255 COMPUTE STATISTICS \n  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645\n  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1\n  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)\n  TABLESPACE \"DATA\""
+                },
+                {
+                    "isActivated": true,
+                    "logging_clause": "logging",
+                    "GUID": "d3f38980-80e2-11ec-a640-596aedb199f8",
+                    "indxName": "SHIPMENTS_CUSTOMER_ID_I",
+                    "indxKey": [
+                        {
+                            "keyId": "d3f1b4c4-80e2-11ec-a640-596aedb199f8",
+                            "type": "asc"
+                        }
+                    ],
+                    "index_properties": "PCTFREE 10 INITRANS 20 MAXTRANS 255 COMPUTE STATISTICS \n  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645\n  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1\n  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)\n  TABLESPACE \"DATA\""
+                }
+            ],
+            "chkConstr": [
+                {
+                    "GUID": "d3f38981-80e2-11ec-a640-596aedb199f8",
+                    "chkConstrName": "SHIPMENT_STATUS_C",
+                    "constrExpression": "( shipment_status in \n                    ( 'CREATED', 'SHIPPED', 'IN-TRANSIT', 'DELIVERED'))"
+                }
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "STORES",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "STORE_ID",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "synonym": "",
+                    "description": "Auto-incrementing primary key",
+                    "GUID": "d3f229f0-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "childRelationships": [
+                        "d3f3b090-80e2-11ec-a640-596aedb199f8",
+                        "d3f3b096-80e2-11ec-a640-596aedb199f8",
+                        "d3f3b097-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "STORE_NAME",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "mode": "varchar2",
+                    "length": 255,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": true,
+                    "lengthSemantics": "char",
+                    "encryption": {
+                        "GUID": "d3f229fb-80e2-11ec-a640-596aedb199f8"
+                    },
+                    "default": "",
+                    "notNullConstraintName": "",
+                    "synonym": "",
+                    "description": "What the store is called",
+                    "GUID": "d3f229f1-80e2-11ec-a640-596aedb199f8",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "WEB_ADDRESS",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar2",
+                    "length": 100,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "lengthSemantics": "char",
+                    "encryption": {
+                        "GUID": "d3f25100-80e2-11ec-a640-596aedb199f8"
+                    },
+                    "default": "",
+                    "synonym": "",
+                    "description": "The URL of a virtual store",
+                    "GUID": "d3f229f2-80e2-11ec-a640-596aedb199f8",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "PHYSICAL_ADDRESS",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar2",
+                    "length": 512,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "lengthSemantics": "char",
+                    "encryption": {
+                        "GUID": "d3f25101-80e2-11ec-a640-596aedb199f8"
+                    },
+                    "default": "",
+                    "synonym": "",
+                    "description": "The postal address of this location",
+                    "GUID": "d3f229f3-80e2-11ec-a640-596aedb199f8",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "LATITUDE",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "default": "",
+                    "synonym": "",
+                    "description": "The north-south position of a physical store",
+                    "GUID": "d3f229f4-80e2-11ec-a640-596aedb199f8",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "LONGITUDE",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "number",
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "default": "",
+                    "synonym": "",
+                    "description": "The east-west position of a physical store",
+                    "GUID": "d3f229f5-80e2-11ec-a640-596aedb199f8",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "LOGO",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "blob",
+                    "subtype": "string",
+                    "childType": "lobs",
+                    "type": "binary",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "description": "An image used by this store",
+                    "GUID": "d3f229f6-80e2-11ec-a640-596aedb199f8",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "LOGO_MIME_TYPE",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar2",
+                    "length": 512,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "lengthSemantics": "char",
+                    "encryption": {
+                        "GUID": "d3f27810-80e2-11ec-a640-596aedb199f8"
+                    },
+                    "default": "",
+                    "synonym": "",
+                    "description": "The mime-type of the store logo",
+                    "GUID": "d3f229f7-80e2-11ec-a640-596aedb199f8",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "LOGO_FILENAME",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar2",
+                    "length": 512,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "lengthSemantics": "char",
+                    "encryption": {
+                        "GUID": "d3f29f20-80e2-11ec-a640-596aedb199f8"
+                    },
+                    "default": "",
+                    "synonym": "",
+                    "description": "The name of the file loaded in the image column",
+                    "GUID": "d3f229f8-80e2-11ec-a640-596aedb199f8",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "LOGO_CHARSET",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar2",
+                    "length": 512,
+                    "subtype": "string",
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "lengthSemantics": "char",
+                    "encryption": {
+                        "GUID": "d3f29f21-80e2-11ec-a640-596aedb199f8"
+                    },
+                    "default": "",
+                    "synonym": "",
+                    "description": "The character set used to encode the image",
+                    "GUID": "d3f229f9-80e2-11ec-a640-596aedb199f8",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "LOGO_LAST_UPDATED",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "date",
+                    "childType": "datetime",
+                    "type": "string",
+                    "compositeKey": [
+                        "partitionKey",
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "partitionKey": false,
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "default": "",
+                    "description": "The date the image was last changed",
+                    "GUID": "d3f229fa-80e2-11ec-a640-596aedb199f8",
+                    "required": false,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "d3f202e2-80e2-11ec-a640-596aedb199f8",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "temporary": false,
+            "temporaryType": "global",
+            "sharded": false,
+            "duplicated": false,
+            "immutable": false,
+            "GUID": "d3f202e1-80e2-11ec-a640-596aedb199f8",
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8",
+            "code": "",
+            "description": "Physical and virtual locations where people can purchase products",
+            "primaryKey": [
+                {
+                    "GUID": "d3f38985-80e2-11ec-a640-596aedb199f8",
+                    "constraintName": "STORES_PK",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "d3f229f0-80e2-11ec-a640-596aedb199f8",
+                            "type": "ascending"
+                        }
+                    ]
+                }
+            ],
+            "storage": {
+                "organization": "heap",
+                "tablespace": "DATA",
+                "GUID": "d3f38982-80e2-11ec-a640-596aedb199f8"
+            },
+            "partitioning": [],
+            "uniqueKey": [
+                {
+                    "GUID": "d3f38986-80e2-11ec-a640-596aedb199f8",
+                    "constraintName": "STORE_NAME_U",
+                    "compositeUniqueKey": [
+                        {
+                            "keyId": "d3f229f1-80e2-11ec-a640-596aedb199f8",
+                            "type": "ascending"
+                        }
+                    ]
+                }
+            ],
+            "Indxs": [
+                {
+                    "isActivated": true,
+                    "logging_clause": "logging",
+                    "GUID": "d3f38987-80e2-11ec-a640-596aedb199f8",
+                    "indxName": "STORE_NAME_U",
+                    "indxType": "unique",
+                    "indxKey": [
+                        {
+                            "keyId": "d3f229f1-80e2-11ec-a640-596aedb199f8",
+                            "type": "asc"
+                        }
+                    ],
+                    "index_properties": "PCTFREE 10 INITRANS 20 MAXTRANS 255 COMPUTE STATISTICS \n  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645\n  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1\n  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)\n  TABLESPACE \"DATA\""
+                }
+            ],
+            "chkConstr": [
+                {
+                    "GUID": "d3f38988-80e2-11ec-a640-596aedb199f8",
+                    "chkConstrName": "STORE_AT_LEAST_ONE_ADDRESS_C",
+                    "constrExpression": "( \n    web_address is not null or physical_address is not null\n  )"
+                }
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "name": "ADMIN",
+            "type": "bucket",
+            "collectionIds": [
+                "d3eef5a0-80e2-11ec-a640-596aedb199f8",
+                "d3efb8f0-80e2-11ec-a640-596aedb199f8",
+                "d3f02e20-80e2-11ec-a640-596aedb199f8",
+                "d3f07c40-80e2-11ec-a640-596aedb199f8",
+                "d3f0f170-80e2-11ec-a640-596aedb199f8",
+                "d3f1b4c0-80e2-11ec-a640-596aedb199f8",
+                "d3f202e1-80e2-11ec-a640-596aedb199f8"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "d3f3d7a0-80e2-11ec-a640-596aedb199f8",
+            "code": "",
+            "hackoladeMeta": {},
+            "addFieldsToBucket": true,
+            "isPlugin": true,
+            "ifNotExist": false
+        }
+    ],
+    "views": [
+        {
+            "name": "CUSTOMER_ORDER_PRODUCTS",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8",
+            "or_replace": true,
+            "force": true,
+            "editionable": true,
+            "editioning": false,
+            "selectStatement": "select o.order_id, o.order_datetime, o.order_status, \n\t         c.customer_id, c.email_address, c.full_name, \n\t         sum ( oi.quantity * oi.unit_price ) order_total,\n\t         listagg (\n\t           p.product_name, ', ' \n\t           on overflow truncate '...' with count\n\t         ) within group ( order by oi.line_item_id ) items\n\t  from   orders o\n\t  join   order_items oi\n\t  on     o.order_id = oi.order_id\n\t  join   customers c\n\t  on     o.customer_id = c.customer_id\n\t  join   products p\n\t  on     oi.product_id = p.product_id\n\t  group  by o.order_id, o.order_datetime, o.order_status, \n\t         c.customer_id, c.email_address, c.full_name",
+            "viewOn": "",
+            "type": "object",
+            "properties": [],
+            "GUID": "d5128e12-80e2-11ec-a640-596aedb199f8"
+        },
+        {
+            "name": "PRODUCT_ORDERS",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8",
+            "or_replace": true,
+            "force": true,
+            "editionable": true,
+            "editioning": false,
+            "selectStatement": "select p.product_name, o.order_status, \n\t         sum ( oi.quantity * oi.unit_price ) total_sales,\n\t         count (*) order_count\n\t  from   orders o\n\t  join   order_items oi\n\t  on     o.order_id = oi.order_id\n\t  join   customers c\n\t  on     o.customer_id = c.customer_id\n\t  join   products p\n\t  on     oi.product_id = p.product_id\n\t  group  by p.product_name, o.order_status",
+            "viewOn": "d3f07c40-80e2-11ec-a640-596aedb199f8",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "PRODUCT_NAME",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "reference",
+                    "refType": "collectionReference",
+                    "$ref": "#collection/definitions/PRODUCTS/PRODUCT_NAME",
+                    "GUID": "d51e74f5-80e2-11ec-a640-596aedb199f8",
+                    "refIdPath": [
+                        "d3f0f170-80e2-11ec-a640-596aedb199f8",
+                        "d3f11882-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "ref": "d3f11882-80e2-11ec-a640-596aedb199f8",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ORDER_STATUS",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "reference",
+                    "refType": "collectionReference",
+                    "$ref": "#collection/definitions/ORDERS/ORDER_STATUS",
+                    "GUID": "d51e74f6-80e2-11ec-a640-596aedb199f8",
+                    "refIdPath": [
+                        "d3f07c40-80e2-11ec-a640-596aedb199f8",
+                        "d3f0a354-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "ref": "d3f0a354-80e2-11ec-a640-596aedb199f8",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "TOTAL_SALES",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "reference",
+                    "refType": "collectionReference",
+                    "$ref": "#collection/definitions/ORDER_ITEMS/QUANTITY",
+                    "GUID": "d51e74f7-80e2-11ec-a640-596aedb199f8",
+                    "refIdPath": [
+                        "d3f02e20-80e2-11ec-a640-596aedb199f8",
+                        "d3f02e26-80e2-11ec-a640-596aedb199f8"
+                    ],
+                    "ref": "d3f02e26-80e2-11ec-a640-596aedb199f8",
+                    "error": {}
+                }
+            ],
+            "GUID": "d51e74f3-80e2-11ec-a640-596aedb199f8"
+        },
+        {
+            "name": "PRODUCT_REVIEWS",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8",
+            "or_replace": true,
+            "force": true,
+            "editionable": true,
+            "editioning": false,
+            "selectStatement": "select p.product_name, r.rating, \n\t         round ( \n\t           avg ( r.rating ) over (\n\t             partition by product_name\n\t           ),\n\t           2\n\t         ) avg_rating,\n\t         r.review\n\t  from   products p,\n\t         json_table (\n\t           p.product_details, '$'\n\t           columns ( \n\t             nested path '$.reviews[*]'\n\t             columns (\n\t               rating integer path '$.rating',\n\t               review varchar2(4000) path '$.review'\n\t             )\n\t           )\n\t         ) r",
+            "viewOn": "",
+            "type": "object",
+            "properties": [],
+            "GUID": "d54bc681-80e2-11ec-a640-596aedb199f8"
+        },
+        {
+            "name": "STORE_ORDERS",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8",
+            "or_replace": true,
+            "force": true,
+            "editionable": true,
+            "editioning": false,
+            "selectStatement": "select case\n\t           grouping_id ( store_name, order_status ) \n\t           when 1 then 'STORE TOTAL'\n\t           when 2 then 'STATUS TOTAL'\n\t           when 3 then 'GRAND TOTAL'\n\t         end total,\n\t         s.store_name, \n\t         coalesce ( s.web_address, s.physical_address ) address,\n\t         s.latitude, s.longitude,\n\t         o.order_status,\n\t         count ( distinct o.order_id ) order_count,\n\t         sum ( oi.quantity * oi.unit_price ) total_sales\n\t  from   stores s\n\t  join   orders o\n\t  on     s.store_id = o.store_id\n\t  join   order_items oi\n\t  on     o.order_id = oi.order_id\n\t  group  by grouping sets ( \n\t    ( s.store_name, coalesce ( s.web_address, s.physical_address ), s.latitude, s.longitude ),\n\t    ( s.store_name, coalesce ( s.web_address, s.physical_address ), s.latitude, s.longitude, o.order_status ),\n\t    o.order_status, \n\t    ()\n\t  )",
+            "viewOn": "",
+            "type": "object",
+            "properties": [],
+            "GUID": "d5bd4d01-80e2-11ec-a640-596aedb199f8"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "INVENTORY_STORE_ID_FK",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "d3f202e1-80e2-11ec-a640-596aedb199f8",
+                    "d3f229f0-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "d3efb8f0-80e2-11ec-a640-596aedb199f8",
+                    "d3efe002-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "GUID": "d3f3b090-80e2-11ec-a640-596aedb199f8",
+            "parentCollection": "d3f202e1-80e2-11ec-a640-596aedb199f8",
+            "childCollection": "d3efb8f0-80e2-11ec-a640-596aedb199f8",
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8"
+        },
+        {
+            "name": "INVENTORY_PRODUCT_ID_FK",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "d3f0f170-80e2-11ec-a640-596aedb199f8",
+                    "d3f11881-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "d3efb8f0-80e2-11ec-a640-596aedb199f8",
+                    "d3efe003-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "GUID": "d3f3b091-80e2-11ec-a640-596aedb199f8",
+            "parentCollection": "d3f0f170-80e2-11ec-a640-596aedb199f8",
+            "childCollection": "d3efb8f0-80e2-11ec-a640-596aedb199f8",
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8"
+        },
+        {
+            "name": "ORDER_ITEMS_ORDER_ID_FK",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "d3f07c40-80e2-11ec-a640-596aedb199f8",
+                    "d3f0a351-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "d3f02e20-80e2-11ec-a640-596aedb199f8",
+                    "d3f02e22-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "GUID": "d3f3b092-80e2-11ec-a640-596aedb199f8",
+            "parentCollection": "d3f07c40-80e2-11ec-a640-596aedb199f8",
+            "childCollection": "d3f02e20-80e2-11ec-a640-596aedb199f8",
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8"
+        },
+        {
+            "name": "ORDER_ITEMS_SHIPMENT_ID_FK",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "d3f1b4c0-80e2-11ec-a640-596aedb199f8",
+                    "d3f1b4c2-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "d3f02e20-80e2-11ec-a640-596aedb199f8",
+                    "d3f02e27-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "GUID": "d3f3b093-80e2-11ec-a640-596aedb199f8",
+            "parentCollection": "d3f1b4c0-80e2-11ec-a640-596aedb199f8",
+            "childCollection": "d3f02e20-80e2-11ec-a640-596aedb199f8",
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8"
+        },
+        {
+            "name": "ORDER_ITEMS_PRODUCT_ID_FK",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "d3f0f170-80e2-11ec-a640-596aedb199f8",
+                    "d3f11881-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "d3f02e20-80e2-11ec-a640-596aedb199f8",
+                    "d3f02e24-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "GUID": "d3f3b094-80e2-11ec-a640-596aedb199f8",
+            "parentCollection": "d3f0f170-80e2-11ec-a640-596aedb199f8",
+            "childCollection": "d3f02e20-80e2-11ec-a640-596aedb199f8",
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8"
+        },
+        {
+            "name": "ORDERS_CUSTOMER_ID_FK",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "d3eef5a0-80e2-11ec-a640-596aedb199f8",
+                    "d3ef43c0-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "d3f07c40-80e2-11ec-a640-596aedb199f8",
+                    "d3f0a353-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "GUID": "d3f3b095-80e2-11ec-a640-596aedb199f8",
+            "parentCollection": "d3eef5a0-80e2-11ec-a640-596aedb199f8",
+            "childCollection": "d3f07c40-80e2-11ec-a640-596aedb199f8",
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8"
+        },
+        {
+            "name": "ORDERS_STORE_ID_FK",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "d3f202e1-80e2-11ec-a640-596aedb199f8",
+                    "d3f229f0-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "d3f07c40-80e2-11ec-a640-596aedb199f8",
+                    "d3f0a355-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "GUID": "d3f3b096-80e2-11ec-a640-596aedb199f8",
+            "parentCollection": "d3f202e1-80e2-11ec-a640-596aedb199f8",
+            "childCollection": "d3f07c40-80e2-11ec-a640-596aedb199f8",
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8"
+        },
+        {
+            "name": "SHIPMENTS_STORE_ID_FK",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "d3f202e1-80e2-11ec-a640-596aedb199f8",
+                    "d3f229f0-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "d3f1b4c0-80e2-11ec-a640-596aedb199f8",
+                    "d3f1b4c3-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "GUID": "d3f3b097-80e2-11ec-a640-596aedb199f8",
+            "parentCollection": "d3f202e1-80e2-11ec-a640-596aedb199f8",
+            "childCollection": "d3f1b4c0-80e2-11ec-a640-596aedb199f8",
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8"
+        },
+        {
+            "name": "SHIPMENTS_CUSTOMER_ID_FK",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "d3eef5a0-80e2-11ec-a640-596aedb199f8",
+                    "d3ef43c0-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "d3f1b4c0-80e2-11ec-a640-596aedb199f8",
+                    "d3f1b4c4-80e2-11ec-a640-596aedb199f8"
+                ]
+            ],
+            "childCardinality": "1..n",
+            "GUID": "d3f3b098-80e2-11ec-a640-596aedb199f8",
+            "parentCollection": "d3eef5a0-80e2-11ec-a640-596aedb199f8",
+            "childCollection": "d3f1b4c0-80e2-11ec-a640-596aedb199f8",
+            "bucketId": "d3f3d7a0-80e2-11ec-a640-596aedb199f8"
+        }
+    ],
+    "users": [],
+    "diagramViews": [
+        {
+            "GUID": "0ef63ca0-874e-11ec-8457-b398c854a06e",
+            "name": "Orders",
+            "buckets": [
+                "d3f3d7a0-80e2-11ec-a640-596aedb199f8"
+            ],
+            "entities": [
+                "d3f02e20-80e2-11ec-a640-596aedb199f8",
+                "d3f07c40-80e2-11ec-a640-596aedb199f8",
+                "d3f0f170-80e2-11ec-a640-596aedb199f8"
+            ]
+        }
+    ],
+    "idToNameHashTable": {
+        "d3f3d7a0-80e2-11ec-a640-596aedb199f8": "ADMIN",
+        "d3ef43c0-80e2-11ec-a640-596aedb199f8": "CUSTOMER_ID",
+        "d3ef43c1-80e2-11ec-a640-596aedb199f8": "EMAIL_ADDRESS",
+        "d3ef43c2-80e2-11ec-a640-596aedb199f8": "FULL_NAME",
+        "d3eef5a0-80e2-11ec-a640-596aedb199f8": "CUSTOMERS",
+        "d3efe001-80e2-11ec-a640-596aedb199f8": "INVENTORY_ID",
+        "d3efe002-80e2-11ec-a640-596aedb199f8": "STORE_ID",
+        "d3efe003-80e2-11ec-a640-596aedb199f8": "PRODUCT_ID",
+        "d3efe004-80e2-11ec-a640-596aedb199f8": "PRODUCT_INVENTORY",
+        "d3efb8f0-80e2-11ec-a640-596aedb199f8": "INVENTORY",
+        "d3f02e22-80e2-11ec-a640-596aedb199f8": "ORDER_ID",
+        "d3f02e23-80e2-11ec-a640-596aedb199f8": "LINE_ITEM_ID",
+        "d3f02e24-80e2-11ec-a640-596aedb199f8": "PRODUCT_ID",
+        "d3f02e25-80e2-11ec-a640-596aedb199f8": "UNIT_PRICE",
+        "d3f02e26-80e2-11ec-a640-596aedb199f8": "QUANTITY",
+        "d3f02e27-80e2-11ec-a640-596aedb199f8": "SHIPMENT_ID",
+        "d3f02e20-80e2-11ec-a640-596aedb199f8": "ORDER_ITEMS",
+        "d3f0a351-80e2-11ec-a640-596aedb199f8": "ORDER_ID",
+        "d3f0a352-80e2-11ec-a640-596aedb199f8": "ORDER_DATETIME",
+        "d3f0a353-80e2-11ec-a640-596aedb199f8": "CUSTOMER_ID",
+        "d3f0a354-80e2-11ec-a640-596aedb199f8": "ORDER_STATUS",
+        "d3f0a355-80e2-11ec-a640-596aedb199f8": "STORE_ID",
+        "d3f07c40-80e2-11ec-a640-596aedb199f8": "ORDERS",
+        "d3f11881-80e2-11ec-a640-596aedb199f8": "PRODUCT_ID",
+        "d3f11882-80e2-11ec-a640-596aedb199f8": "PRODUCT_NAME",
+        "d3f11883-80e2-11ec-a640-596aedb199f8": "UNIT_PRICE",
+        "d3f11884-80e2-11ec-a640-596aedb199f8": "PRODUCT_DETAILS",
+        "d3f11885-80e2-11ec-a640-596aedb199f8": "PRODUCT_IMAGE",
+        "d3f11886-80e2-11ec-a640-596aedb199f8": "IMAGE_MIME_TYPE",
+        "d3f11887-80e2-11ec-a640-596aedb199f8": "IMAGE_FILENAME",
+        "d3f11888-80e2-11ec-a640-596aedb199f8": "IMAGE_CHARSET",
+        "d3f11889-80e2-11ec-a640-596aedb199f8": "IMAGE_LAST_UPDATED",
+        "d3f0f170-80e2-11ec-a640-596aedb199f8": "PRODUCTS",
+        "d3f1b4c2-80e2-11ec-a640-596aedb199f8": "SHIPMENT_ID",
+        "d3f1b4c3-80e2-11ec-a640-596aedb199f8": "STORE_ID",
+        "d3f1b4c4-80e2-11ec-a640-596aedb199f8": "CUSTOMER_ID",
+        "d3f1b4c5-80e2-11ec-a640-596aedb199f8": "DELIVERY_ADDRESS",
+        "d3f1b4c6-80e2-11ec-a640-596aedb199f8": "SHIPMENT_STATUS",
+        "d3f1b4c0-80e2-11ec-a640-596aedb199f8": "SHIPMENTS",
+        "d3f229f0-80e2-11ec-a640-596aedb199f8": "STORE_ID",
+        "d3f229f1-80e2-11ec-a640-596aedb199f8": "STORE_NAME",
+        "d3f229f2-80e2-11ec-a640-596aedb199f8": "WEB_ADDRESS",
+        "d3f229f3-80e2-11ec-a640-596aedb199f8": "PHYSICAL_ADDRESS",
+        "d3f229f4-80e2-11ec-a640-596aedb199f8": "LATITUDE",
+        "d3f229f5-80e2-11ec-a640-596aedb199f8": "LONGITUDE",
+        "d3f229f6-80e2-11ec-a640-596aedb199f8": "LOGO",
+        "d3f229f7-80e2-11ec-a640-596aedb199f8": "LOGO_MIME_TYPE",
+        "d3f229f8-80e2-11ec-a640-596aedb199f8": "LOGO_FILENAME",
+        "d3f229f9-80e2-11ec-a640-596aedb199f8": "LOGO_CHARSET",
+        "d3f229fa-80e2-11ec-a640-596aedb199f8": "LOGO_LAST_UPDATED",
+        "d3f202e1-80e2-11ec-a640-596aedb199f8": "STORES",
+        "d3f3b090-80e2-11ec-a640-596aedb199f8": "INVENTORY_STORE_ID_FK",
+        "d3f3b091-80e2-11ec-a640-596aedb199f8": "INVENTORY_PRODUCT_ID_FK",
+        "d3f3b092-80e2-11ec-a640-596aedb199f8": "ORDER_ITEMS_ORDER_ID_FK",
+        "d3f3b093-80e2-11ec-a640-596aedb199f8": "ORDER_ITEMS_SHIPMENT_ID_FK",
+        "d3f3b094-80e2-11ec-a640-596aedb199f8": "ORDER_ITEMS_PRODUCT_ID_FK",
+        "d3f3b095-80e2-11ec-a640-596aedb199f8": "ORDERS_CUSTOMER_ID_FK",
+        "d3f3b096-80e2-11ec-a640-596aedb199f8": "ORDERS_STORE_ID_FK",
+        "d3f3b097-80e2-11ec-a640-596aedb199f8": "SHIPMENTS_STORE_ID_FK",
+        "d3f3b098-80e2-11ec-a640-596aedb199f8": "SHIPMENTS_CUSTOMER_ID_FK",
+        "d5128e12-80e2-11ec-a640-596aedb199f8": "CUSTOMER_ORDER_PRODUCTS",
+        "d51e74f5-80e2-11ec-a640-596aedb199f8": "PRODUCT_NAME",
+        "d51e74f6-80e2-11ec-a640-596aedb199f8": "ORDER_STATUS",
+        "d51e74f7-80e2-11ec-a640-596aedb199f8": "TOTAL_SALES",
+        "d51e74f3-80e2-11ec-a640-596aedb199f8": "PRODUCT_ORDERS",
+        "d54bc681-80e2-11ec-a640-596aedb199f8": "PRODUCT_REVIEWS",
+        "d5bd4d01-80e2-11ec-a640-596aedb199f8": "STORE_ORDERS",
+        "08379da0-811d-11ec-a640-596aedb199f8": "brand",
+        "08407740-811d-11ec-a640-596aedb199f8": "colour",
+        "08488d90-811d-11ec-a640-596aedb199f8": "description",
+        "085055c0-811d-11ec-a640-596aedb199f8": "gender",
+        "08575aa0-811d-11ec-a640-596aedb199f8": "reviews",
+        "085781b1-811d-11ec-a640-596aedb199f8": "rating",
+        "085781b2-811d-11ec-a640-596aedb199f8": "review",
+        "085ed4b0-811d-11ec-a640-596aedb199f8": "sizes",
+        "0ef63ca0-874e-11ec-8457-b398c854a06e": "Orders"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "8d737101-80e2-11ec-a640-596aedb199f8"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "8d737103-80e2-11ec-a640-596aedb199f8"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "8d737102-80e2-11ec-a640-596aedb199f8"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "21c",
+    "dbVendor": "Oracle",
+    "appTarget": "Oracle",
+    "creationTS": "2022-01-29T09:05:06.575Z",
+    "GUID": "c42a3d60-811d-11ec-a640-596aedb199f8",
+    "isLineageEnabled": false,
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "description": "Inspired by https://docs.oracle.com/en/database/oracle/oracle-database/21/comsc/introduction-to-sample-schemas.html#GUID-BF7EBD46-7AF6-40C7-8B4E-7244169A07E8",
+    "lastModifTS": "2022-02-06T13:10:23.855Z",
+    "persistenceSchemaVersion": "5",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Oracle",
+        "pluginVersion": "0.1.0",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "5.4.3"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "d3eef5a0-80e2-11ec-a640-596aedb199f8",
+                        "x": 106.15778728780697,
+                        "y": 282.99566023497687,
+                        "width": 308,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "d3efb8f0-80e2-11ec-a640-596aedb199f8",
+                        "x": 88.15778728780697,
+                        "y": 898.5668754980833,
+                        "width": 343,
+                        "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "d3f02e20-80e2-11ec-a640-596aedb199f8",
+                        "x": 1101.157787287807,
+                        "y": 284.1588633697134,
+                        "width": 301,
+                        "height": 138,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "d3f07c40-80e2-11ec-a640-596aedb199f8",
+                        "x": 593.1577872878069,
+                        "y": 267.5283003850863,
+                        "width": 316,
+                        "height": 120,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "d3f0f170-80e2-11ec-a640-596aedb199f8",
+                        "x": 1094.157787287807,
+                        "y": 648.2790424342621,
+                        "width": 315,
+                        "height": 390,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "d3f1b4c0-80e2-11ec-a640-596aedb199f8",
+                        "x": 587.1577872878069,
+                        "y": 710.221178334255,
+                        "width": 327,
+                        "height": 120,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "d3f202e1-80e2-11ec-a640-596aedb199f8",
+                        "x": 580.1577872878069,
+                        "y": 454.5149477914755,
+                        "width": 342,
+                        "height": 228,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "d5128e12-80e2-11ec-a640-596aedb199f8",
+                        "x": 684.1577891951555,
+                        "y": 137.8561931370918,
+                        "width": 298,
+                        "height": 30,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "d51e74f3-80e2-11ec-a640-596aedb199f8",
+                        "x": 1126.157787287807,
+                        "y": 142.6855699874464,
+                        "width": 252,
+                        "height": 81,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "d54bc681-80e2-11ec-a640-596aedb199f8",
+                        "x": 389.1577882414813,
+                        "y": 137.8561931370918,
+                        "width": 231,
+                        "height": 30,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "d5bd4d01-80e2-11ec-a640-596aedb199f8",
+                        "x": 116.15778728780697,
+                        "y": 137.8561931370918,
+                        "width": 209,
+                        "height": 30,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 48.15778728780697,
+                        "y": 97.8561931370918,
+                        "GUID": "d3f3d7a0-80e2-11ec-a640-596aedb199f8"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [
+                    {
+                        "GUID": "0ef63ca0-874e-11ec-8457-b398c854a06e",
+                        "entities": [
+                            {
+                                "GUID": "d3f02e20-80e2-11ec-a640-596aedb199f8",
+                                "x": 147.16666666666663,
+                                "y": 535.9999990463257,
+                                "width": 301,
+                                "height": 138,
+                                "color": {}
+                            },
+                            {
+                                "GUID": "d3f07c40-80e2-11ec-a640-596aedb199f8",
+                                "x": 445,
+                                "y": 360,
+                                "width": 316,
+                                "height": 120,
+                                "color": {}
+                            },
+                            {
+                                "GUID": "d3f0f170-80e2-11ec-a640-596aedb199f8",
+                                "x": 90,
+                                "y": 90,
+                                "width": 315,
+                                "height": 390,
+                                "color": {}
+                            }
+                        ],
+                        "buckets": [
+                            {
+                                "x": 40,
+                                "y": 40,
+                                "GUID": "d3f3d7a0-80e2-11ec-a640-596aedb199f8"
+                            }
+                        ],
+                        "graphView": {
+                            "erd": [],
+                            "buckets": [],
+                            "decorativeSymbols": [],
+                            "forceLayout": true,
+                            "defaultLinkLength": 300
+                        }
+                    }
+                ],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

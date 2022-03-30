@@ -1,0 +1,393 @@
+{
+    "GUID": "ac939c50-edd6-11e9-a625-6b181646502d",
+    "modelName": "TheCrew",
+    "code": "",
+    "lastModifTS": "2019-10-13T16:31:05.523Z",
+    "persistenceSchemaVersion": "3",
+    "description": "Reverse-engineered from example http://tinkerpop.apache.org/docs/current/tutorials/the-gremlin-console/#toy-graphs",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "collections": [
+        {
+            "bucketId": "a7b9a280-eb2c-11e9-ad75-0752853282b4",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "name",
+                    "GUID": "a786aba0-eb2c-11e9-ad75-0752853282b4",
+                    "required": true,
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": "tinkergraph",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "propCardinality": "list"
+                }
+            ],
+            "type": "object",
+            "collectionName": "software",
+            "GUID": "a7891ca0-eb2c-11e9-ad75-0752853282b4",
+            "definitions": {
+                "GUID": "a78a5520-eb2c-11e9-ad75-0752853282b4",
+                "properties": [],
+                "type": "definitions"
+            },
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "a7b9a280-eb2c-11e9-ad75-0752853282b4",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "name",
+                    "GUID": "a786f9c1-eb2c-11e9-ad75-0752853282b4",
+                    "required": true,
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": "daniel",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "propCardinality": "list"
+                },
+                {
+                    "code": "",
+                    "type": "array",
+                    "primaryKey": false,
+                    "metaProperties": [
+                        {
+                            "metaPropName": "startTime",
+                            "metaPropType": "number"
+                        },
+                        {
+                            "metaPropName": "endTime",
+                            "metaPropType": "number"
+                        }
+                    ],
+                    "name": "location",
+                    "GUID": "a786f9c0-eb2c-11e9-ad75-0752853282b4",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "arrayItem": true,
+                            "GUID": "a78aca50-eb2c-11e9-ad75-0752853282b4",
+                            "primaryKey": false,
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "default": "",
+                            "enum": [],
+                            "sample": "",
+                            "compositeKey": [
+                                "compositeNodeKey"
+                            ],
+                            "compositeNodeKey": false,
+                            "description": "",
+                            "comments": "",
+                            "required": false,
+                            "id": "",
+                            "hackoladeMeta": {},
+                            "propCardinality": "list",
+                            "arrayParentType": "multi-property",
+                            "metaProperties": [
+                                {
+                                    "GUID": "d093b420-eb2c-11e9-ad75-0752853282b4",
+                                    "metaPropName": "startTime",
+                                    "metaPropType": "string"
+                                },
+                                {
+                                    "GUID": "d659ab80-eb2c-11e9-ad75-0752853282b4",
+                                    "metaPropName": "endTime",
+                                    "metaPropType": "string"
+                                }
+                            ],
+                            "error": {}
+                        }
+                    ],
+                    "childType": "multi-property",
+                    "additionalItems": true,
+                    "required": true,
+                    "minItems": "",
+                    "maxItems": "",
+                    "uniqueItems": false,
+                    "subtype": "no-multi",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "propCardinality": "list"
+                }
+            ],
+            "type": "object",
+            "collectionName": "person",
+            "GUID": "a78aa340-eb2c-11e9-ad75-0752853282b4",
+            "definitions": {
+                "GUID": "a78c9f10-eb2c-11e9-ad75-0752853282b4",
+                "properties": [],
+                "type": "definitions"
+            },
+            "hasCollation": false,
+            "collation": {}
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "a7b9a280-eb2c-11e9-ad75-0752853282b4",
+            "name": "g",
+            "code": "",
+            "type": "bucket",
+            "description": "",
+            "comments": "",
+            "collectionIds": [
+                "a7891ca0-eb2c-11e9-ad75-0752853282b4",
+                "a78aa340-eb2c-11e9-ad75-0752853282b4"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "traversalSource": "g",
+            "indexes": [
+                {
+                    "GUID": "b572d2b0-edb7-11e9-be4a-41c497257011",
+                    "name": "idx",
+                    "elementType": "Vertex",
+                    "propertyName": "name"
+                }
+            ],
+            "features": "\n> GraphFeatures\r\n>-- Computer: true\r\n>-- IoRead: true\r\n>-- IoWrite: true\r\n>-- Transactions: false\r\n>-- Persistence: true\r\n>-- ConcurrentAccess: false\r\n>-- ThreadedTransactions: false\r\n> VariableFeatures\r\n>-- Variables: true\r\n>-- MapValues: true\r\n>-- ByteValues: true\r\n>-- LongValues: true\r\n>-- LongArrayValues: true\r\n>-- BooleanArrayValues: true\r\n>-- ByteArrayValues: true\r\n>-- DoubleArrayValues: true\r\n>-- BooleanValues: true\r\n>-- StringArrayValues: true\r\n>-- StringValues: true\r\n>-- SerializableValues: true\r\n>-- FloatArrayValues: true\r\n>-- UniformListValues: true\r\n>-- DoubleValues: true\r\n>-- MixedListValues: true\r\n>-- FloatValues: true\r\n>-- IntegerValues: true\r\n>-- IntegerArrayValues: true\r\n> VertexFeatures\r\n>-- Upsert: false\r\n>-- MetaProperties: true\r\n>-- RemoveVertices: true\r\n>-- MultiProperties: true\r\n>-- AddVertices: true\r\n>-- DuplicateMultiProperties: true\r\n>-- UuidIds: true\r\n>-- NumericIds: true\r\n>-- StringIds: true\r\n>-- CustomIds: false\r\n>-- AnyIds: true\r\n>-- UserSuppliedIds: true\r\n>-- AddProperty: true\r\n>-- RemoveProperty: true\r\n> VertexPropertyFeatures\r\n>-- UuidIds: true\r\n>-- NumericIds: true\r\n>-- StringIds: true\r\n>-- CustomIds: false\r\n>-- AnyIds: true\r\n>-- UserSuppliedIds: true\r\n>-- RemoveProperty: true\r\n>-- Properties: true\r\n>-- MapValues: true\r\n>-- ByteValues: true\r\n>-- LongValues: true\r\n>-- LongArrayValues: true\r\n>-- BooleanArrayValues: true\r\n>-- ByteArrayValues: true\r\n>-- DoubleArrayValues: true\r\n>-- BooleanValues: true\r\n>-- StringArrayValues: true\r\n>-- StringValues: true\r\n>-- SerializableValues: true\r\n>-- FloatArrayValues: true\r\n>-- UniformListValues: true\r\n>-- DoubleValues: true\r\n>-- MixedListValues: true\r\n>-- FloatValues: true\r\n>-- IntegerValues: true\r\n>-- IntegerArrayValues: true\r\n> EdgeFeatures\r\n>-- Upsert: false\r\n>-- AddEdges: true\r\n>-- RemoveEdges: true\r\n>-- UuidIds: true\r\n>-- NumericIds: true\r\n>-- StringIds: true\r\n>-- CustomIds: false\r\n>-- AnyIds: true\r\n>-- UserSuppliedIds: true\r\n>-- AddProperty: true\r\n>-- RemoveProperty: true\r\n> EdgePropertyFeatures\r\n>-- Properties: true\r\n>-- MapValues: true\r\n>-- ByteValues: true\r\n>-- LongValues: true\r\n>-- LongArrayValues: true\r\n>-- BooleanArrayValues: true\r\n>-- ByteArrayValues: true\r\n>-- DoubleArrayValues: true\r\n>-- BooleanValues: true\r\n>-- StringArrayValues: true\r\n>-- StringValues: true\r\n>-- SerializableValues: true\r\n>-- FloatArrayValues: true\r\n>-- UniformListValues: true\r\n>-- DoubleValues: true\r\n>-- MixedListValues: true\r\n>-- FloatValues: true\r\n>-- IntegerValues: true\r\n>-- IntegerArrayValues: true\r\n",
+            "graphVariables": [
+                {
+                    "GUID": "a78ced30-eb2c-11e9-ad75-0752853282b4",
+                    "graphVariableKey": "creator",
+                    "GraphVariableValue": "marko"
+                },
+                {
+                    "GUID": "a78d1440-eb2c-11e9-ad75-0752853282b4",
+                    "graphVariableKey": "comment",
+                    "GraphVariableValue": "this graph was created to provide examples and test coverage for tinkerpop3 api advances"
+                },
+                {
+                    "GUID": "a78d1441-eb2c-11e9-ad75-0752853282b4",
+                    "graphVariableKey": "lastModified",
+                    "GraphVariableValue": "2014"
+                }
+            ],
+            "addFieldsToBucket": true,
+            "isPlugin": true
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "a78d3b50-eb2c-11e9-ad75-0752853282b4",
+            "name": "traverses",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "a7891ca0-eb2c-11e9-ad75-0752853282b4",
+            "parentCardinality": "1",
+            "childCollection": "a7891ca0-eb2c-11e9-ad75-0752853282b4",
+            "childCardinality": "1",
+            "bucketId": "a7b9a280-eb2c-11e9-ad75-0752853282b4",
+            "properties": []
+        },
+        {
+            "GUID": "a78d6262-eb2c-11e9-ad75-0752853282b4",
+            "name": "uses",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "a78aa340-eb2c-11e9-ad75-0752853282b4",
+            "parentCardinality": "1",
+            "childCollection": "a7891ca0-eb2c-11e9-ad75-0752853282b4",
+            "childCardinality": "1",
+            "bucketId": "a7b9a280-eb2c-11e9-ad75-0752853282b4",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "mode": "integer",
+                    "name": "skill",
+                    "GUID": "a787bd10-eb2c-11e9-ad75-0752853282b4",
+                    "childType": "number",
+                    "required": true,
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": 3,
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "propCardinality": "list"
+                }
+            ]
+        }
+    ],
+    "users": [],
+    "idToNameHashTable": {
+        "a786aba0-eb2c-11e9-ad75-0752853282b4": "name",
+        "a7891ca0-eb2c-11e9-ad75-0752853282b4": "software",
+        "a786f9c1-eb2c-11e9-ad75-0752853282b4": "name",
+        "a786f9c0-eb2c-11e9-ad75-0752853282b4": "location",
+        "a78aa340-eb2c-11e9-ad75-0752853282b4": "person",
+        "a78d3b50-eb2c-11e9-ad75-0752853282b4": "traverses",
+        "a78d6262-eb2c-11e9-ad75-0752853282b4": "uses",
+        "a7b9a280-eb2c-11e9-ad75-0752853282b4": "g"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "747c7641-eb22-11e9-9e9f-8b8f2a80b10e"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "747c7642-eb22-11e9-9e9f-8b8f2a80b10e"
+    },
+    "decorativeSymbols": [],
+    "dbVersion": "",
+    "dbVendor": "Apache TinkerPop",
+    "appTarget": "TinkerPop",
+    "creationTS": "2019-10-10T05:54:42.724Z",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "TinkerPop",
+        "pluginVersion": "0.0.1",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "3.5.0"
+    },
+    "hideModelViews": false,
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "a7891ca0-eb2c-11e9-ad75-0752853282b4",
+                        "x": 454.6922234684597,
+                        "y": 263.11485338887945,
+                        "width": 244,
+                        "height": 43,
+                        "color": {},
+                        "size": 100
+                    },
+                    {
+                        "GUID": "a78aa340-eb2c-11e9-ad75-0752853282b4",
+                        "x": 91,
+                        "y": 110,
+                        "width": 264,
+                        "height": 71,
+                        "color": {},
+                        "size": 100
+                    },
+                    {
+                        "GUID": "a78d3b50-eb2c-11e9-ad75-0752853282b4",
+                        "x": 484.65040858836664,
+                        "y": 112.21038295145009,
+                        "width": 152,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "a78d6262-eb2c-11e9-ad75-0752853282b4",
+                        "x": 104.59520910110584,
+                        "y": 269.7112642204768,
+                        "width": 242,
+                        "height": 41,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 51,
+                        "y": 40,
+                        "GUID": "a7b9a280-eb2c-11e9-ad75-0752853282b4"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "selectedCollections": [],
+                "decorativeSymbols": [],
+                "graphView": {
+                    "erd": [],
+                    "buckets": [
+                        {
+                            "x": 51,
+                            "y": 40,
+                            "GUID": "a7b9a280-eb2c-11e9-ad75-0752853282b4"
+                        }
+                    ],
+                    "showPropertiesBoxes": false
+                },
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "displayColorPicker": false,
+                "expandCollections": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false
+        }
+    }
+}

@@ -1,0 +1,726 @@
+{
+    "GUID": "45990760-b47c-11e6-a17a-856e9fc5f8c0",
+    "lastModifTS": "2016-11-30T18:57:20.617Z",
+    "persistenceSchemaVersion": "1",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "collections": [
+        {
+            "$schema": "",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "comments": "",
+            "description": "",
+            "indexes": [],
+            "properties": [
+                {
+                    "partitionKey": true,
+                    "sortKey": false,
+                    "type": "string",
+                    "name": "Name",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [
+                        "34712200-b47d-11e6-a17a-856e9fc5f8c0"
+                    ],
+                    "required": true,
+                    "GUID": "8edecf93-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "string",
+                    "name": "Category",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "8edecf91-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "numeric",
+                    "name": "Messages",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "8edecf92-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "numeric",
+                    "name": "Threads",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "8edecf94-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "numeric",
+                    "name": "Views",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "8edecf95-b47c-11e6-a17a-856e9fc5f8c0"
+                }
+            ],
+            "readCapacity": 5,
+            "type": "object",
+            "writeCapacity": 5,
+            "GUID": "8edecf90-b47c-11e6-a17a-856e9fc5f8c0",
+            "collectionName": "Forum"
+        },
+        {
+            "$schema": "",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "comments": "",
+            "description": "",
+            "indexes": [],
+            "properties": [
+                {
+                    "partitionKey": true,
+                    "sortKey": false,
+                    "type": "numeric",
+                    "name": "Id",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "8ee0081a-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "array",
+                    "name": "Authors",
+                    "primaryKey": false,
+                    "childType": "stringSet",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "properties": [
+                        {
+                            "arrayItem": true,
+                            "type": "string",
+                            "arrayParentType": "stringSet",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "GUID": "8ee00812-b47c-11e6-a17a-856e9fc5f8c0"
+                        }
+                    ],
+                    "required": false,
+                    "GUID": "8ee00811-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "string",
+                    "name": "BicycleType",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "8ee00813-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "string",
+                    "name": "Brand",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "8ee00814-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "array",
+                    "name": "Color",
+                    "primaryKey": false,
+                    "childType": "stringSet",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "properties": [
+                        {
+                            "arrayItem": true,
+                            "type": "string",
+                            "arrayParentType": "stringSet",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "GUID": "8ee00816-b47c-11e6-a17a-856e9fc5f8c0"
+                        }
+                    ],
+                    "required": false,
+                    "GUID": "8ee00815-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "string",
+                    "name": "Description",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "8ee00817-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "string",
+                    "name": "Dimensions",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "8ee00818-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "string",
+                    "name": "ISBN",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "8ee00819-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "boolean",
+                    "name": "InPublication",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "8ee0081b-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "numeric",
+                    "name": "PageCount",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "8ee0081c-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "numeric",
+                    "name": "Price",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "8ee0081d-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "string",
+                    "name": "ProductCategory",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "8ee0081e-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "string",
+                    "name": "Title",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "8ee0081f-b47c-11e6-a17a-856e9fc5f8c0"
+                }
+            ],
+            "readCapacity": 5,
+            "type": "object",
+            "writeCapacity": 5,
+            "GUID": "8ee00810-b47c-11e6-a17a-856e9fc5f8c0",
+            "collectionName": "ProductCatalog"
+        },
+        {
+            "$schema": "",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "comments": "",
+            "description": "",
+            "indexes": [
+                {
+                    "name": "PostedBy-Message-index",
+                    "GUID": "8ee14095-b47c-11e6-a17a-856e9fc5f8c0",
+                    "readCapacity": 5,
+                    "writeCapacity": 5,
+                    "partitionKey": {
+                        "value": "PostedBy",
+                        "GUID": "8ee14093-b47c-11e6-a17a-856e9fc5f8c0",
+                        "type": "string"
+                    },
+                    "sortKey": {
+                        "value": "Message",
+                        "include": true,
+                        "GUID": "8ee14092-b47c-11e6-a17a-856e9fc5f8c0",
+                        "type": "string"
+                    },
+                    "key": [
+                        "8ee14092-b47c-11e6-a17a-856e9fc5f8c0",
+                        "8ee14093-b47c-11e6-a17a-856e9fc5f8c0"
+                    ],
+                    "projectionType": "Include",
+                    "nonKeyAttributes": [
+                        "8ee14092-b47c-11e6-a17a-856e9fc5f8c0",
+                        "8ee14093-b47c-11e6-a17a-856e9fc5f8c0"
+                    ]
+                },
+                {
+                    "GUID": "e9478dc0-b4c0-11e6-9dbe-b7686392db83",
+                    "name": "New Index",
+                    "lsi": false,
+                    "sortKey": {
+                        "include": false
+                    },
+                    "projectionType": "All",
+                    "partitionKey": {},
+                    "readCapacity": 5,
+                    "writeCapacity": 5,
+                    "key": []
+                }
+            ],
+            "properties": [
+                {
+                    "partitionKey": true,
+                    "sortKey": false,
+                    "type": "string",
+                    "name": "Id",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "1e78e550-b47d-11e6-a17a-856e9fc5f8c0",
+                    "foreignCollection": "8ee27910-b47c-11e6-a17a-856e9fc5f8c0",
+                    "foreignField": [
+                        "8ee27910-b47c-11e6-a17a-856e9fc5f8c0",
+                        "8ee27912-b47c-11e6-a17a-856e9fc5f8c0"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "8ee14091-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "partitionKey": false,
+                    "sortKey": true,
+                    "type": "string",
+                    "name": "ReplyDateTime",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "8ee14094-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "string",
+                    "name": "Message",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "8ee14092-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "string",
+                    "name": "PostedBy",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "8ee14093-b47c-11e6-a17a-856e9fc5f8c0"
+                }
+            ],
+            "readCapacity": 5,
+            "type": "object",
+            "writeCapacity": 5,
+            "GUID": "8ee14090-b47c-11e6-a17a-856e9fc5f8c0",
+            "collectionName": "Reply"
+        },
+        {
+            "$schema": "",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "comments": "",
+            "description": "",
+            "indexes": [
+                {
+                    "name": "machin-index",
+                    "GUID": "8ee2791b-b47c-11e6-a17a-856e9fc5f8c0",
+                    "readCapacity": 5,
+                    "writeCapacity": 5,
+                    "partitionKey": {
+                        "value": "machin",
+                        "GUID": "8ee2791c-b47c-11e6-a17a-856e9fc5f8c0",
+                        "type": "string"
+                    }
+                }
+            ],
+            "properties": [
+                {
+                    "partitionKey": true,
+                    "sortKey": false,
+                    "type": "string",
+                    "name": "ForumName",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "34712200-b47d-11e6-a17a-856e9fc5f8c0",
+                    "foreignCollection": "8edecf90-b47c-11e6-a17a-856e9fc5f8c0",
+                    "foreignField": [
+                        "8edecf90-b47c-11e6-a17a-856e9fc5f8c0",
+                        "8edecf93-b47c-11e6-a17a-856e9fc5f8c0"
+                    ],
+                    "childRelationships": [
+                        "1e78e550-b47d-11e6-a17a-856e9fc5f8c0"
+                    ],
+                    "required": true,
+                    "GUID": "8ee27912-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "partitionKey": false,
+                    "sortKey": true,
+                    "type": "string",
+                    "name": "Subject",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "8ee27917-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "numeric",
+                    "name": "Answered",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "8ee27911-b47c-11e6-a17a-856e9fc5f8c0",
+                    "minimum": 12,
+                    "maximum": 57
+                },
+                {
+                    "type": "string",
+                    "name": "LastPostedBy",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "8ee27913-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "string",
+                    "name": "LastPostedDateTime",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "8ee27914-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "string",
+                    "name": "Message",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "8ee27915-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "numeric",
+                    "name": "Replies",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "8ee27916-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "array",
+                    "name": "Tags",
+                    "primaryKey": false,
+                    "childType": "stringSet",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "properties": [
+                        {
+                            "arrayItem": true,
+                            "type": "string",
+                            "arrayParentType": "stringSet",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "GUID": "8ee27919-b47c-11e6-a17a-856e9fc5f8c0"
+                        }
+                    ],
+                    "required": false,
+                    "GUID": "8ee27918-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "numeric",
+                    "name": "Views",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "8ee2791a-b47c-11e6-a17a-856e9fc5f8c0"
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "",
+                    "GUID": "8ee2791c-b47c-11e6-a17a-856e9fc5f8c0",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "machin"
+                }
+            ],
+            "readCapacity": 5,
+            "type": "object",
+            "writeCapacity": 5,
+            "GUID": "8ee27910-b47c-11e6-a17a-856e9fc5f8c0",
+            "collectionName": "Thread",
+            "streamEnabled": true,
+            "streamViewType": "New and old images"
+        }
+    ],
+    "relationships": [
+        {
+            "GUID": "1e78e550-b47d-11e6-a17a-856e9fc5f8c0",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "8ee27910-b47c-11e6-a17a-856e9fc5f8c0",
+            "parentField": [
+                "8ee27910-b47c-11e6-a17a-856e9fc5f8c0",
+                "8ee27912-b47c-11e6-a17a-856e9fc5f8c0"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "8ee14090-b47c-11e6-a17a-856e9fc5f8c0",
+            "childField": [
+                "8ee14090-b47c-11e6-a17a-856e9fc5f8c0",
+                "8ee14091-b47c-11e6-a17a-856e9fc5f8c0"
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "34712200-b47d-11e6-a17a-856e9fc5f8c0",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "8edecf90-b47c-11e6-a17a-856e9fc5f8c0",
+            "parentField": [
+                "8edecf90-b47c-11e6-a17a-856e9fc5f8c0",
+                "8edecf93-b47c-11e6-a17a-856e9fc5f8c0"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "8ee27910-b47c-11e6-a17a-856e9fc5f8c0",
+            "childField": [
+                "8ee27910-b47c-11e6-a17a-856e9fc5f8c0",
+                "8ee27912-b47c-11e6-a17a-856e9fc5f8c0"
+            ],
+            "childCardinality": "0..n"
+        }
+    ],
+    "users": [],
+    "idToNameHashTable": {
+        "8edecf93-b47c-11e6-a17a-856e9fc5f8c0": "Name",
+        "8edecf91-b47c-11e6-a17a-856e9fc5f8c0": "Category",
+        "8edecf92-b47c-11e6-a17a-856e9fc5f8c0": "Messages",
+        "8edecf94-b47c-11e6-a17a-856e9fc5f8c0": "Threads",
+        "8edecf95-b47c-11e6-a17a-856e9fc5f8c0": "Views",
+        "8edecf90-b47c-11e6-a17a-856e9fc5f8c0": "Forum",
+        "8ee0081a-b47c-11e6-a17a-856e9fc5f8c0": "Id",
+        "8ee00811-b47c-11e6-a17a-856e9fc5f8c0": "Authors",
+        "8ee00813-b47c-11e6-a17a-856e9fc5f8c0": "BicycleType",
+        "8ee00814-b47c-11e6-a17a-856e9fc5f8c0": "Brand",
+        "8ee00815-b47c-11e6-a17a-856e9fc5f8c0": "Color",
+        "8ee00817-b47c-11e6-a17a-856e9fc5f8c0": "Description",
+        "8ee00818-b47c-11e6-a17a-856e9fc5f8c0": "Dimensions",
+        "8ee00819-b47c-11e6-a17a-856e9fc5f8c0": "ISBN",
+        "8ee0081b-b47c-11e6-a17a-856e9fc5f8c0": "InPublication",
+        "8ee0081c-b47c-11e6-a17a-856e9fc5f8c0": "PageCount",
+        "8ee0081d-b47c-11e6-a17a-856e9fc5f8c0": "Price",
+        "8ee0081e-b47c-11e6-a17a-856e9fc5f8c0": "ProductCategory",
+        "8ee0081f-b47c-11e6-a17a-856e9fc5f8c0": "Title",
+        "8ee00810-b47c-11e6-a17a-856e9fc5f8c0": "ProductCatalog",
+        "8ee14091-b47c-11e6-a17a-856e9fc5f8c0": "Id",
+        "8ee14094-b47c-11e6-a17a-856e9fc5f8c0": "ReplyDateTime",
+        "8ee14092-b47c-11e6-a17a-856e9fc5f8c0": "Message",
+        "8ee14093-b47c-11e6-a17a-856e9fc5f8c0": "PostedBy",
+        "8ee14090-b47c-11e6-a17a-856e9fc5f8c0": "Reply",
+        "8ee27912-b47c-11e6-a17a-856e9fc5f8c0": "ForumName",
+        "8ee27917-b47c-11e6-a17a-856e9fc5f8c0": "Subject",
+        "8ee27911-b47c-11e6-a17a-856e9fc5f8c0": "Answered",
+        "8ee27913-b47c-11e6-a17a-856e9fc5f8c0": "LastPostedBy",
+        "8ee27914-b47c-11e6-a17a-856e9fc5f8c0": "LastPostedDateTime",
+        "8ee27915-b47c-11e6-a17a-856e9fc5f8c0": "Message",
+        "8ee27916-b47c-11e6-a17a-856e9fc5f8c0": "Replies",
+        "8ee27918-b47c-11e6-a17a-856e9fc5f8c0": "Tags",
+        "8ee2791a-b47c-11e6-a17a-856e9fc5f8c0": "Views",
+        "8ee2791c-b47c-11e6-a17a-856e9fc5f8c0": "machin",
+        "8ee27910-b47c-11e6-a17a-856e9fc5f8c0": "Thread"
+    },
+    "databaseName": "AWSalpha4",
+    "dbVendor": "AWS DynamoDB",
+    "appTarget": "DYNAMODB",
+    "creationTS": "2016-11-27T08:34:11.798Z",
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "8edecf90-b47c-11e6-a17a-856e9fc5f8c0",
+                        "x": 413,
+                        "y": 200,
+                        "width": 191,
+                        "height": 107
+                    },
+                    {
+                        "GUID": "8ee00810-b47c-11e6-a17a-856e9fc5f8c0",
+                        "x": 42,
+                        "y": 326,
+                        "width": 223,
+                        "height": 245
+                    },
+                    {
+                        "GUID": "8ee14090-b47c-11e6-a17a-856e9fc5f8c0",
+                        "x": 400,
+                        "y": 50,
+                        "width": 214,
+                        "height": 94
+                    },
+                    {
+                        "GUID": "8ee27910-b47c-11e6-a17a-856e9fc5f8c0",
+                        "x": 40,
+                        "y": 62,
+                        "width": 245,
+                        "height": 190
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "selectedCollections": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "nodes": [],
+            "details": true
+        }
+    }
+}

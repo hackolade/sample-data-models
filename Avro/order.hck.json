@@ -1,0 +1,359 @@
+{
+    "modelName": "Avro order",
+    "collections": [
+        {
+            "GUID": "fddb7b20-dc64-11e8-8b1b-d5a8e735dace",
+            "type": "object",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "name": "order_id",
+                    "type": "numeric",
+                    "mode": "long",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "GUID": "fddbc940-dc64-11e8-8b1b-d5a8e735dace",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "name": "customer_id",
+                    "type": "numeric",
+                    "mode": "long",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "GUID": "fddbf050-dc64-11e8-8b1b-d5a8e735dace",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "name": "total",
+                    "type": "numeric",
+                    "mode": "float",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "GUID": "fddbf051-dc64-11e8-8b1b-d5a8e735dace",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "name": "order_details",
+                    "type": "array",
+                    "primaryKey": false,
+                    "childType": "array",
+                    "additionalItems": true,
+                    "GUID": "fddbf052-dc64-11e8-8b1b-d5a8e735dace",
+                    "relationshipType": "",
+                    "required": true,
+                    "properties": [
+                        {
+                            "namespace": "com.hackolade.db.model.orderDetail",
+                            "name": "OrderDetail",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "quantity",
+                                    "type": "numeric",
+                                    "mode": "int",
+                                    "primaryKey": false,
+                                    "childType": "number",
+                                    "GUID": "fddbf054-dc64-11e8-8b1b-d5a8e735dace",
+                                    "relationshipType": "",
+                                    "required": true,
+                                    "isActivated": true
+                                },
+                                {
+                                    "name": "total",
+                                    "type": "numeric",
+                                    "mode": "float",
+                                    "primaryKey": false,
+                                    "childType": "number",
+                                    "GUID": "fddbf055-dc64-11e8-8b1b-d5a8e735dace",
+                                    "relationshipType": "",
+                                    "required": true,
+                                    "isActivated": true
+                                },
+                                {
+                                    "name": "product_detail",
+                                    "namespace": "com.hackolade.db.model.product",
+                                    "type": "document",
+                                    "properties": [
+                                        {
+                                            "name": "product_id",
+                                            "type": "numeric",
+                                            "mode": "long",
+                                            "primaryKey": false,
+                                            "childType": "number",
+                                            "GUID": "fddbf057-dc64-11e8-8b1b-d5a8e735dace",
+                                            "relationshipType": "",
+                                            "required": true,
+                                            "isActivated": true
+                                        },
+                                        {
+                                            "name": "product_name",
+                                            "type": "string",
+                                            "doc": "This is the name of the product",
+                                            "primaryKey": false,
+                                            "GUID": "fddc1760-dc64-11e8-8b1b-d5a8e735dace",
+                                            "relationshipType": "",
+                                            "required": true,
+                                            "isActivated": true
+                                        },
+                                        {
+                                            "name": "New_field",
+                                            "type": "multiple",
+                                            "properties": [],
+                                            "multipleTypes": [
+                                                {
+                                                    "type": "null",
+                                                    "id": "e142e991-8670-11eb-8318-378b02c75a97"
+                                                },
+                                                {
+                                                    "type": "string",
+                                                    "GUID": "fddc1761-dc64-11e8-8b1b-d5a8e735dace",
+                                                    "id": "e142e990-8670-11eb-8318-378b02c75a97"
+                                                }
+                                            ],
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "hackoladeMeta": {},
+                                            "relationshipType": "",
+                                            "default": null,
+                                            "doc": "This is the description of the product",
+                                            "GUID": "e142e992-8670-11eb-8318-378b02c75a97"
+                                        },
+                                        {
+                                            "name": "product_status",
+                                            "type": "string",
+                                            "symbols": [
+                                                "AVAILABLE",
+                                                "OUT_OF_STOCK",
+                                                "ONLY_FEW_LEFT"
+                                            ],
+                                            "primaryKey": false,
+                                            "childType": "enum",
+                                            "GUID": "fddc3e70-dc64-11e8-8b1b-d5a8e735dace",
+                                            "relationshipType": "",
+                                            "required": true,
+                                            "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                                            "isActivated": true
+                                        },
+                                        {
+                                            "name": "product_category",
+                                            "type": "array",
+                                            "doc": "This contains array of categories",
+                                            "primaryKey": false,
+                                            "childType": "array",
+                                            "additionalItems": true,
+                                            "GUID": "fddc3e71-dc64-11e8-8b1b-d5a8e735dace",
+                                            "relationshipType": "",
+                                            "required": true,
+                                            "properties": [
+                                                {
+                                                    "type": "string",
+                                                    "arrayItem": true,
+                                                    "arrayParentType": "array",
+                                                    "primaryKey": false,
+                                                    "GUID": "fddc3e72-dc64-11e8-8b1b-d5a8e735dace",
+                                                    "relationshipType": "",
+                                                    "required": true,
+                                                    "name": "New field",
+                                                    "displayName": "New field",
+                                                    "isActivated": true
+                                                }
+                                            ],
+                                            "isActivated": true
+                                        },
+                                        {
+                                            "name": "price",
+                                            "type": "numeric",
+                                            "mode": "float",
+                                            "primaryKey": false,
+                                            "childType": "number",
+                                            "GUID": "fddc3e73-dc64-11e8-8b1b-d5a8e735dace",
+                                            "relationshipType": "",
+                                            "required": true,
+                                            "isActivated": true
+                                        },
+                                        {
+                                            "name": "product_hash",
+                                            "type": "string",
+                                            "primaryKey": false,
+                                            "childType": "fixed",
+                                            "GUID": "fddc3e74-dc64-11e8-8b1b-d5a8e735dace",
+                                            "relationshipType": "",
+                                            "required": true,
+                                            "isActivated": true
+                                        }
+                                    ],
+                                    "primaryKey": false,
+                                    "childType": "record",
+                                    "GUID": "fddbf056-dc64-11e8-8b1b-d5a8e735dace",
+                                    "relationshipType": "",
+                                    "required": true,
+                                    "additionalProperties": false,
+                                    "isActivated": true
+                                }
+                            ],
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "primaryKey": false,
+                            "childType": "record",
+                            "GUID": "fddbf053-dc64-11e8-8b1b-d5a8e735dace",
+                            "relationshipType": "",
+                            "required": true,
+                            "additionalProperties": false,
+                            "displayName": "OrderDetail",
+                            "isActivated": true
+                        }
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "GUID": "fddc6580-dc64-11e8-8b1b-d5a8e735dace",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Order",
+            "collectionUsers": [],
+            "collation": {},
+            "doc": "This Schema describes about Order -- from http://www.treselle.com/blog/advanced-avro-schema-design-reuse/",
+            "bucketId": "fdece040-dc64-11e8-8b1b-d5a8e735dace",
+            "isActivated": true
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "fdece040-dc64-11e8-8b1b-d5a8e735dace",
+            "name": "com.hackolade.db.model.container",
+            "type": "bucket",
+            "collectionIds": [
+                "fddb7b20-dc64-11e8-8b1b-d5a8e735dace"
+            ],
+            "backgroundColor": {
+                "r": 0,
+                "g": 188,
+                "b": 213,
+                "a": 1
+            },
+            "show": true,
+            "indexes": [],
+            "isActivated": true
+        }
+    ],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "fdece040-dc64-11e8-8b1b-d5a8e735dace": "com.hackolade.db.model.container",
+        "fddbc940-dc64-11e8-8b1b-d5a8e735dace": "order_id",
+        "fddbf050-dc64-11e8-8b1b-d5a8e735dace": "customer_id",
+        "fddbf051-dc64-11e8-8b1b-d5a8e735dace": "total",
+        "fddbf052-dc64-11e8-8b1b-d5a8e735dace": "order_details",
+        "fddbf053-dc64-11e8-8b1b-d5a8e735dace": "OrderDetail",
+        "fddbf054-dc64-11e8-8b1b-d5a8e735dace": "quantity",
+        "fddbf055-dc64-11e8-8b1b-d5a8e735dace": "total",
+        "fddbf056-dc64-11e8-8b1b-d5a8e735dace": "product_detail",
+        "fddbf057-dc64-11e8-8b1b-d5a8e735dace": "product_id",
+        "fddc1760-dc64-11e8-8b1b-d5a8e735dace": "product_name",
+        "fddc1761-dc64-11e8-8b1b-d5a8e735dace": "product_description",
+        "fddc3e70-dc64-11e8-8b1b-d5a8e735dace": "product_status",
+        "fddc3e71-dc64-11e8-8b1b-d5a8e735dace": "product_category",
+        "fddc3e72-dc64-11e8-8b1b-d5a8e735dace": "New field",
+        "fddc3e73-dc64-11e8-8b1b-d5a8e735dace": "price",
+        "fddc3e74-dc64-11e8-8b1b-d5a8e735dace": "product_hash",
+        "fddb7b20-dc64-11e8-8b1b-d5a8e735dace": "Order"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "f8009c31-dc64-11e8-8b1b-d5a8e735dace"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "f8009c32-dc64-11e8-8b1b-d5a8e735dace"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "Avro",
+    "appTarget": "Avro",
+    "creationTS": "2018-10-30T16:58:05.043Z",
+    "GUID": "f8009c30-dc64-11e8-8b1b-d5a8e735dace",
+    "lastModifTS": "2021-03-16T16:01:36.156Z",
+    "persistenceSchemaVersion": "4",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "dbVersion": "",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Avro",
+        "pluginVersion": "0.1.56",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "hackoladeMeta": {},
+    "applicationInformation": {
+        "version": "4.3.12"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "fddb7b20-dc64-11e8-8b1b-d5a8e735dace",
+                        "x": 90,
+                        "y": 90,
+                        "width": 323,
+                        "height": 253,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 50,
+                        "y": 50,
+                        "GUID": "fdece040-dc64-11e8-8b1b-d5a8e735dace"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

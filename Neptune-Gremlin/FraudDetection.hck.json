@@ -1,0 +1,737 @@
+{
+    "modelName": "Fraud detection",
+    "collections": [
+        {
+            "collectionName": "Account",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "name": "account_number",
+                    "isActivated": true,
+                    "sample": "0017-5921-8604-6788",
+                    "GUID": "8ead7bf0-cd1a-11eb-b8a5-21f500645e7c",
+                    "required": true,
+                    "propCardinality": "single",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "name": "last_name",
+                    "isActivated": true,
+                    "sample": "Miller",
+                    "GUID": "8ead7bf2-cd1a-11eb-b8a5-21f500645e7c",
+                    "required": true,
+                    "propCardinality": "single",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "name": "first_name",
+                    "isActivated": true,
+                    "sample": "Tom",
+                    "GUID": "8ead7bf1-cd1a-11eb-b8a5-21f500645e7c",
+                    "required": true,
+                    "propCardinality": "single",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "8eaedb80-cd1a-11eb-b8a5-21f500645e7c",
+                "properties": []
+            },
+            "isActivated": true,
+            "GUID": "8eaeb470-cd1a-11eb-b8a5-21f500645e7c",
+            "bucketId": "8eb08933-cd1a-11eb-b8a5-21f500645e7c",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Address",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "name": "value",
+                    "isActivated": true,
+                    "sample": "Târgoviște, 001",
+                    "GUID": "8eada300-cd1a-11eb-b8a5-21f500645e7c",
+                    "required": true,
+                    "propCardinality": "single",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "8eaf77c1-cd1a-11eb-b8a5-21f500645e7c",
+                "properties": []
+            },
+            "isActivated": true,
+            "GUID": "8eaf77c0-cd1a-11eb-b8a5-21f500645e7c",
+            "bucketId": "8eb08933-cd1a-11eb-b8a5-21f500645e7c",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "DateOfBirth",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "name": "value",
+                    "isActivated": true,
+                    "sample": "1984-03-15 00:00:00",
+                    "GUID": "8eada301-cd1a-11eb-b8a5-21f500645e7c",
+                    "required": true,
+                    "propCardinality": "single",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "8eaf9ed1-cd1a-11eb-b8a5-21f500645e7c",
+                "properties": []
+            },
+            "isActivated": true,
+            "GUID": "8eaf9ed0-cd1a-11eb-b8a5-21f500645e7c",
+            "bucketId": "8eb08933-cd1a-11eb-b8a5-21f500645e7c",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "EmailAddress",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "name": "value",
+                    "isActivated": true,
+                    "sample": "Li24189255818526@gmail.com",
+                    "GUID": "8eadca10-cd1a-11eb-b8a5-21f500645e7c",
+                    "required": true,
+                    "propCardinality": "single",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "8eaf9ed3-cd1a-11eb-b8a5-21f500645e7c",
+                "properties": []
+            },
+            "isActivated": true,
+            "GUID": "8eaf9ed2-cd1a-11eb-b8a5-21f500645e7c",
+            "bucketId": "8eb08933-cd1a-11eb-b8a5-21f500645e7c",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "IpAddress",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "name": "value",
+                    "isActivated": true,
+                    "sample": "27.54.78.193",
+                    "GUID": "8eadca11-cd1a-11eb-b8a5-21f500645e7c",
+                    "required": true,
+                    "propCardinality": "single",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "8eafc5e1-cd1a-11eb-b8a5-21f500645e7c",
+                "properties": []
+            },
+            "isActivated": true,
+            "GUID": "8eafc5e0-cd1a-11eb-b8a5-21f500645e7c",
+            "bucketId": "8eb08933-cd1a-11eb-b8a5-21f500645e7c",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Merchant",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "name": "name",
+                    "isActivated": true,
+                    "sample": "Mali_Air",
+                    "GUID": "8eadca12-cd1a-11eb-b8a5-21f500645e7c",
+                    "required": true,
+                    "propCardinality": "single",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "8eafc5e3-cd1a-11eb-b8a5-21f500645e7c",
+                "properties": []
+            },
+            "isActivated": true,
+            "GUID": "8eafc5e2-cd1a-11eb-b8a5-21f500645e7c",
+            "bucketId": "8eb08933-cd1a-11eb-b8a5-21f500645e7c",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "PhoneNumber",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "name": "value",
+                    "isActivated": true,
+                    "sample": "+555771493491",
+                    "GUID": "8eadca13-cd1a-11eb-b8a5-21f500645e7c",
+                    "required": true,
+                    "propCardinality": "single",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "8eafecf1-cd1a-11eb-b8a5-21f500645e7c",
+                "properties": []
+            },
+            "isActivated": true,
+            "GUID": "8eafecf0-cd1a-11eb-b8a5-21f500645e7c",
+            "bucketId": "8eb08933-cd1a-11eb-b8a5-21f500645e7c",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Transaction",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "name": "amount",
+                    "isActivated": true,
+                    "sample": "471",
+                    "GUID": "8eadca14-cd1a-11eb-b8a5-21f500645e7c",
+                    "required": true,
+                    "propCardinality": "single",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "childType": "date",
+                    "type": "string",
+                    "name": "created",
+                    "isActivated": true,
+                    "sample": "2021-01-11T05:22:49.000Z",
+                    "GUID": "8eadca15-cd1a-11eb-b8a5-21f500645e7c",
+                    "required": true,
+                    "propCardinality": "single",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "8eafecf3-cd1a-11eb-b8a5-21f500645e7c",
+                "properties": []
+            },
+            "isActivated": true,
+            "GUID": "8eafecf2-cd1a-11eb-b8a5-21f500645e7c",
+            "bucketId": "8eb08933-cd1a-11eb-b8a5-21f500645e7c",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "name": "database-3",
+            "type": "bucket",
+            "collectionIds": [
+                "8eaeb470-cd1a-11eb-b8a5-21f500645e7c",
+                "8eaf77c0-cd1a-11eb-b8a5-21f500645e7c",
+                "8eaf9ed0-cd1a-11eb-b8a5-21f500645e7c",
+                "8eaf9ed2-cd1a-11eb-b8a5-21f500645e7c",
+                "8eafc5e0-cd1a-11eb-b8a5-21f500645e7c",
+                "8eafc5e2-cd1a-11eb-b8a5-21f500645e7c",
+                "8eafecf0-cd1a-11eb-b8a5-21f500645e7c",
+                "8eafecf2-cd1a-11eb-b8a5-21f500645e7c"
+            ],
+            "backgroundColor": {
+                "r": 156,
+                "g": 40,
+                "b": 177,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "port": 8182,
+            "dbParameterGroup": "default.neptune1",
+            "dbClusterParameterGroup": "default.neptune1",
+            "failover": "No preference",
+            "backupRetentionPeriod": "1 day",
+            "autoMinorVersionUpgrade": true,
+            "startDay": "Monday",
+            "startHour": "00",
+            "startMinute": "00",
+            "duration": "0.5",
+            "GUID": "8eb08933-cd1a-11eb-b8a5-21f500645e7c",
+            "source-region": "eu-west-3",
+            "dbInstances": [
+                {
+                    "dbInstanceRole": "Writer",
+                    "GUID": "8eb0b040-cd1a-11eb-b8a5-21f500645e7c",
+                    "dbInstanceIdentifier": "database-3-instance-1",
+                    "PromotionTier": "tier-1"
+                }
+            ],
+            "DBClusterArn": "arn:aws:rds:eu-west-3:609713334884:cluster:database-3",
+            "Endpoint": "database-3.cluster-cyzt6cqpqwwi.eu-west-3.neptune.amazonaws.com",
+            "ReaderEndpoint": "database-3.cluster-ro-cyzt6cqpqwwi.eu-west-3.neptune.amazonaws.com",
+            "MultiAZ": false,
+            "Port": 8182,
+            "DBParameterGroupName": "default-vpc-075b80b22cd62e341",
+            "DBClusterParameterGroup": "default.neptune1",
+            "DbClusterResourceId": "cluster-O4IIECIL7OIYKYP3MWON5R7PU4",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "StorageEncrypted": true,
+            "BackupRetentionPeriod": "1",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "addFieldsToBucket": true,
+            "isPlugin": true
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "FEATURE_OF_ACCOUNT",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "GUID": "8eb03b10-cd1a-11eb-b8a5-21f500645e7c",
+            "level": "entity",
+            "parentCollection": "8eaf77c0-cd1a-11eb-b8a5-21f500645e7c",
+            "childCollection": "8eaeb470-cd1a-11eb-b8a5-21f500645e7c",
+            "bucketId": "8eb08933-cd1a-11eb-b8a5-21f500645e7c",
+            "lineSize": 2,
+            "properties": []
+        },
+        {
+            "name": "FEATURE_OF_ACCOUNT",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "GUID": "8eb03b13-cd1a-11eb-b8a5-21f500645e7c",
+            "level": "entity",
+            "parentCollection": "8eaf9ed0-cd1a-11eb-b8a5-21f500645e7c",
+            "childCollection": "8eaeb470-cd1a-11eb-b8a5-21f500645e7c",
+            "bucketId": "8eb08933-cd1a-11eb-b8a5-21f500645e7c",
+            "lineSize": 2,
+            "properties": []
+        },
+        {
+            "name": "FEATURE_OF_ACCOUNT",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "GUID": "8eb06221-cd1a-11eb-b8a5-21f500645e7c",
+            "level": "entity",
+            "parentCollection": "8eaf9ed2-cd1a-11eb-b8a5-21f500645e7c",
+            "childCollection": "8eaeb470-cd1a-11eb-b8a5-21f500645e7c",
+            "bucketId": "8eb08933-cd1a-11eb-b8a5-21f500645e7c",
+            "lineSize": 2,
+            "properties": []
+        },
+        {
+            "name": "FEATURE_OF_TRANSACTION",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "GUID": "8eb06224-cd1a-11eb-b8a5-21f500645e7c",
+            "level": "entity",
+            "parentCollection": "8eafc5e0-cd1a-11eb-b8a5-21f500645e7c",
+            "childCollection": "8eafecf2-cd1a-11eb-b8a5-21f500645e7c",
+            "bucketId": "8eb08933-cd1a-11eb-b8a5-21f500645e7c",
+            "lineSize": 2,
+            "properties": []
+        },
+        {
+            "name": "FEATURE_OF_TRANSACTION",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "GUID": "8eb06227-cd1a-11eb-b8a5-21f500645e7c",
+            "level": "entity",
+            "parentCollection": "8eafecf0-cd1a-11eb-b8a5-21f500645e7c",
+            "childCollection": "8eafecf2-cd1a-11eb-b8a5-21f500645e7c",
+            "bucketId": "8eb08933-cd1a-11eb-b8a5-21f500645e7c",
+            "lineSize": 2,
+            "properties": []
+        },
+        {
+            "name": "MERCHANT",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "GUID": "8eb08930-cd1a-11eb-b8a5-21f500645e7c",
+            "level": "entity",
+            "parentCollection": "8eafecf2-cd1a-11eb-b8a5-21f500645e7c",
+            "childCollection": "8eafc5e2-cd1a-11eb-b8a5-21f500645e7c",
+            "bucketId": "8eb08933-cd1a-11eb-b8a5-21f500645e7c",
+            "lineSize": 2,
+            "properties": []
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "2e537630-cd0e-11eb-b8a5-21f500645e7c": "New property key",
+        "8eb08933-cd1a-11eb-b8a5-21f500645e7c": "database-3",
+        "8ead7bf0-cd1a-11eb-b8a5-21f500645e7c": "account_number",
+        "8ead7bf2-cd1a-11eb-b8a5-21f500645e7c": "last_name",
+        "8ead7bf1-cd1a-11eb-b8a5-21f500645e7c": "first_name",
+        "8eaeb470-cd1a-11eb-b8a5-21f500645e7c": "Account",
+        "8eada300-cd1a-11eb-b8a5-21f500645e7c": "value",
+        "8eaf77c0-cd1a-11eb-b8a5-21f500645e7c": "Address",
+        "8eada301-cd1a-11eb-b8a5-21f500645e7c": "value",
+        "8eaf9ed0-cd1a-11eb-b8a5-21f500645e7c": "DateOfBirth",
+        "8eadca10-cd1a-11eb-b8a5-21f500645e7c": "value",
+        "8eaf9ed2-cd1a-11eb-b8a5-21f500645e7c": "EmailAddress",
+        "8eadca11-cd1a-11eb-b8a5-21f500645e7c": "value",
+        "8eafc5e0-cd1a-11eb-b8a5-21f500645e7c": "IpAddress",
+        "8eadca12-cd1a-11eb-b8a5-21f500645e7c": "name",
+        "8eafc5e2-cd1a-11eb-b8a5-21f500645e7c": "Merchant",
+        "8eadca13-cd1a-11eb-b8a5-21f500645e7c": "value",
+        "8eafecf0-cd1a-11eb-b8a5-21f500645e7c": "PhoneNumber",
+        "8eadca14-cd1a-11eb-b8a5-21f500645e7c": "amount",
+        "8eadca15-cd1a-11eb-b8a5-21f500645e7c": "created",
+        "8eafecf2-cd1a-11eb-b8a5-21f500645e7c": "Transaction",
+        "8eb03b10-cd1a-11eb-b8a5-21f500645e7c": "FEATURE_OF_ACCOUNT",
+        "8eb03b13-cd1a-11eb-b8a5-21f500645e7c": "FEATURE_OF_ACCOUNT",
+        "8eb06221-cd1a-11eb-b8a5-21f500645e7c": "FEATURE_OF_ACCOUNT",
+        "8eb06224-cd1a-11eb-b8a5-21f500645e7c": "FEATURE_OF_TRANSACTION",
+        "8eb06227-cd1a-11eb-b8a5-21f500645e7c": "FEATURE_OF_TRANSACTION",
+        "8eb08930-cd1a-11eb-b8a5-21f500645e7c": "MERCHANT"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "204ac7a0-cd0e-11eb-b8a5-21f500645e7c"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "204ac7a1-cd0e-11eb-b8a5-21f500645e7c"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "Amazon Neptune",
+    "appTarget": "Neptune-Gremlin",
+    "creationTS": "2021-06-14T12:43:31.993Z",
+    "GUID": "204aa090-cd0e-11eb-b8a5-21f500645e7c",
+    "isLineageEnabled": false,
+    "hideModelViews": false,
+    "description": "Build from Sagemaker notebook according to https://aws.amazon.com/neptune/fraud-graphs-on-aws/",
+    "author": "Pascal",
+    "version": "0.1",
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "lastModifTS": "2021-06-16T10:15:42.459Z",
+    "persistenceSchemaVersion": "5",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Neptune-Gremlin",
+        "pluginVersion": "0.1.0",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "5.0.4"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "8eaeb470-cd1a-11eb-b8a5-21f500645e7c",
+                        "x": 657.390011890607,
+                        "y": 570.0630202140309,
+                        "width": 228,
+                        "height": 83,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "8eaf77c0-cd1a-11eb-b8a5-21f500645e7c",
+                        "x": 87.5600475624257,
+                        "y": 607.8632580261597,
+                        "width": 168,
+                        "height": 47,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "8eaf9ed0-cd1a-11eb-b8a5-21f500645e7c",
+                        "x": 668.8299643281816,
+                        "y": 860.8632580261594,
+                        "width": 190,
+                        "height": 47,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "8eaf9ed2-cd1a-11eb-b8a5-21f500645e7c",
+                        "x": 1326.1700356718197,
+                        "y": 566.2829964328182,
+                        "width": 199,
+                        "height": 47,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "8eafc5e0-cd1a-11eb-b8a5-21f500645e7c",
+                        "x": 680.5600475624257,
+                        "y": 411.94054696789544,
+                        "width": 179,
+                        "height": 47,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "8eafc5e2-cd1a-11eb-b8a5-21f500645e7c",
+                        "x": 97.5600475624257,
+                        "y": 176.94054696789541,
+                        "width": 177,
+                        "height": 47,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "8eafecf0-cd1a-11eb-b8a5-21f500645e7c",
+                        "x": 1356.5600475624258,
+                        "y": 176.94054696789541,
+                        "width": 206,
+                        "height": 47,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "8eafecf2-cd1a-11eb-b8a5-21f500645e7c",
+                        "x": 675.5600475624257,
+                        "y": 176.94054696789541,
+                        "width": 188,
+                        "height": 65,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "8eb03b10-cd1a-11eb-b8a5-21f500645e7c",
+                        "x": 335.6302021403088,
+                        "y": 600.3032104637339,
+                        "width": 254,
+                        "height": 30,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "8eb03b13-cd1a-11eb-b8a5-21f500645e7c",
+                        "x": 644.3900118906063,
+                        "y": 738.1831153388825,
+                        "width": 254,
+                        "height": 30,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "8eb06221-cd1a-11eb-b8a5-21f500645e7c",
+                        "x": 983.3900118906065,
+                        "y": 573.8430439952439,
+                        "width": 254,
+                        "height": 30,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "8eb06224-cd1a-11eb-b8a5-21f500645e7c",
+                        "x": 630.5600475624257,
+                        "y": 311.94054696789544,
+                        "width": 278,
+                        "height": 30,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "8eb06227-cd1a-11eb-b8a5-21f500645e7c",
+                        "x": 993.5600475624257,
+                        "y": 176.94054696789541,
+                        "width": 278,
+                        "height": 30,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "8eb08930-cd1a-11eb-b8a5-21f500645e7c",
+                        "x": 359.56004756242567,
+                        "y": 176.94054696789541,
+                        "width": 186,
+                        "height": 30,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 47.560047562425694,
+                        "y": 136.94054696789541,
+                        "GUID": "8eb08933-cd1a-11eb-b8a5-21f500645e7c"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "8eaeb470-cd1a-11eb-b8a5-21f500645e7c",
+                            "size": 100,
+                            "x": 343.5227507819467,
+                            "y": 259.90276211602065
+                        },
+                        {
+                            "GUID": "8eaf77c0-cd1a-11eb-b8a5-21f500645e7c",
+                            "size": 100,
+                            "x": 138.75146829851334,
+                            "y": 130.25046187103894
+                        },
+                        {
+                            "GUID": "8eaf9ed0-cd1a-11eb-b8a5-21f500645e7c",
+                            "size": 100,
+                            "x": 118.27371647419383,
+                            "y": 349.872444251932
+                        },
+                        {
+                            "GUID": "8eaf9ed2-cd1a-11eb-b8a5-21f500645e7c",
+                            "size": 100,
+                            "x": 541.2424114805627,
+                            "y": 119.96936397333273
+                        },
+                        {
+                            "GUID": "8eafc5e0-cd1a-11eb-b8a5-21f500645e7c",
+                            "size": 100,
+                            "x": 338.122044692768,
+                            "y": 776.0654042537975
+                        },
+                        {
+                            "GUID": "8eafc5e2-cd1a-11eb-b8a5-21f500645e7c",
+                            "size": 100,
+                            "x": 370.4339645085021,
+                            "y": 633.5774084999433
+                        },
+                        {
+                            "GUID": "8eafecf0-cd1a-11eb-b8a5-21f500645e7c",
+                            "size": 100,
+                            "x": 318.38323644252233,
+                            "y": 502.8101663330158
+                        },
+                        {
+                            "GUID": "8eafecf2-cd1a-11eb-b8a5-21f500645e7c",
+                            "size": 100,
+                            "x": 128.75948720106865,
+                            "y": 653.8623466623869
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 78.27371647419383,
+                            "y": 79.96936397333273,
+                            "GUID": "8eb08933-cd1a-11eb-b8a5-21f500645e7c"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 242
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false,
+            "dndHandles": true
+        }
+    }
+}

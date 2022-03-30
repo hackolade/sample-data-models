@@ -1,0 +1,690 @@
+{
+    "GUID": "2a1e91b0-ffec-11e6-bc11-bba283d07659",
+    "lastModifTS": "2017-03-04T11:18:41.260Z",
+    "persistenceSchemaVersion": "1",
+    "description": "games-sample application described in http://docs.couchbase.com/admin/admin/Misc/sample-bucket-game.html",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "collections": [
+        {
+            "bucketId": "35198b10-ffec-11e6-bc11-bba283d07659",
+            "properties": [
+                {
+                    "key": true,
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "KEY",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "350cb9d5-ffec-11e6-bc11-bba283d07659",
+                    "sample": "Axe_14e3ad7b-8469-444e-8057-ac5aefcdf89e"
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "documentKind": true,
+                    "name": "jsonType",
+                    "GUID": "350cb9d1-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": "item"
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "name",
+                    "GUID": "350cb9d2-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": "Axe_14e3ad7b-8469-444e-8057-ac5aefcdf89e"
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "uuid",
+                    "GUID": "350cb9d3-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": "14e3ad7b-8469-444e-8057-ac5aefcdf89e"
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "ownerId",
+                    "GUID": "350cb9d4-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "3d8722d0-ffec-11e6-bc11-bba283d07659",
+                    "foreignCollection": "350da431-ffec-11e6-bc11-bba283d07659",
+                    "foreignField": [
+                        "350da431-ffec-11e6-bc11-bba283d07659",
+                        "350da439-ffec-11e6-bc11-bba283d07659"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": "Benjamin2"
+                }
+            ],
+            "type": "object",
+            "GUID": "350cb9d0-ffec-11e6-bc11-bba283d07659",
+            "definitions": {
+                "GUID": "350c92c0-ffec-11e6-bc11-bba283d07659",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "item"
+        },
+        {
+            "bucketId": "35198b10-ffec-11e6-bc11-bba283d07659",
+            "properties": [
+                {
+                    "key": true,
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "KEY",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "350d2f0e-ffec-11e6-bc11-bba283d07659",
+                    "sample": "Bauchan0"
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "documentKind": true,
+                    "name": "jsonType",
+                    "GUID": "350d2f0b-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": "monster"
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "name": "experienceWhenKilled",
+                    "GUID": "350d2f08-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": 28,
+                    "mode": "integer32"
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "name": "hitpoints",
+                    "GUID": "350d2f09-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": 3755,
+                    "mode": "integer32"
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "name": "itemProbability",
+                    "GUID": "350d2f0a-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": 0.31149362634773436,
+                    "mode": "double"
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "name",
+                    "GUID": "350d2f0c-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": "Bauchan0"
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "uuid",
+                    "GUID": "350d2f0d-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": "0ca96555-7543-4497-b707-341c320b1ad6"
+                }
+            ],
+            "type": "object",
+            "GUID": "350d2f07-ffec-11e6-bc11-bba283d07659",
+            "definitions": {
+                "GUID": "350d2f06-ffec-11e6-bc11-bba283d07659",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "monster"
+        },
+        {
+            "bucketId": "35198b10-ffec-11e6-bc11-bba283d07659",
+            "properties": [
+                {
+                    "key": true,
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "KEY",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [
+                        "3d8722d0-ffec-11e6-bc11-bba283d07659"
+                    ],
+                    "required": false,
+                    "GUID": "350da439-ffec-11e6-bc11-bba283d07659",
+                    "sample": "Aaron0"
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "documentKind": true,
+                    "name": "jsonType",
+                    "GUID": "350da434-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": "player"
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "name": "experience",
+                    "GUID": "350da432-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": 14746,
+                    "mode": "integer32"
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "name": "hitpoints",
+                    "GUID": "350da433-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": 20210,
+                    "mode": "integer32"
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "name": "level",
+                    "GUID": "350da435-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": 146,
+                    "mode": "integer32"
+                },
+                {
+                    "type": "boolean",
+                    "primaryKey": false,
+                    "name": "loggedIn",
+                    "GUID": "350da436-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "name",
+                    "GUID": "350da437-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": "Aaron0"
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "uuid",
+                    "GUID": "350da438-ffec-11e6-bc11-bba283d07659",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "sample": "3b49dd18-1d56-478e-8ab1-fb38e31ce7e2"
+                }
+            ],
+            "type": "object",
+            "GUID": "350da431-ffec-11e6-bc11-bba283d07659",
+            "definitions": {
+                "GUID": "350da430-ffec-11e6-bc11-bba283d07659",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "player"
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "35198b10-ffec-11e6-bc11-bba283d07659",
+            "name": "gamesim-sample",
+            "type": "bucket",
+            "description": "",
+            "comments": "",
+            "collectionIds": [
+                "350cb9d0-ffec-11e6-bc11-bba283d07659",
+                "350d2f07-ffec-11e6-bc11-bba283d07659",
+                "350da431-ffec-11e6-bc11-bba283d07659"
+            ],
+            "backgroundColor": {
+                "r": 187,
+                "g": 187,
+                "b": 187,
+                "a": 1
+            },
+            "show": true,
+            "keyName": "KEY",
+            "keyType": "string",
+            "documentKindName": "jsonType",
+            "documentKindType": "string",
+            "bucketType": "Couchbase",
+            "ramQuota": 100,
+            "cacheMetadata": "Value ejection",
+            "accessControl": "Standart port",
+            "password": "123",
+            "conflictResolution": "Sequence number",
+            "replicasEnable": false,
+            "replicasNumber": 1,
+            "replicasViewIndex": false,
+            "bucketIOPriority": "Low (Default)",
+            "overrideDefault": false,
+            "setBucketFlushEnable": false
+        }
+    ],
+    "relationships": [
+        {
+            "GUID": "3d8722d0-ffec-11e6-bc11-bba283d07659",
+            "name": "fk player.KEY to item.ownerId",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "350da431-ffec-11e6-bc11-bba283d07659",
+            "parentField": [
+                "350da431-ffec-11e6-bc11-bba283d07659",
+                "350da439-ffec-11e6-bc11-bba283d07659"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "350cb9d0-ffec-11e6-bc11-bba283d07659",
+            "childField": [
+                "350cb9d0-ffec-11e6-bc11-bba283d07659",
+                "350cb9d4-ffec-11e6-bc11-bba283d07659"
+            ],
+            "childCardinality": "0..n"
+        }
+    ],
+    "users": [],
+    "idToNameHashTable": {
+        "350cb9d5-ffec-11e6-bc11-bba283d07659": "KEY",
+        "350cb9d1-ffec-11e6-bc11-bba283d07659": "jsonType",
+        "350cb9d2-ffec-11e6-bc11-bba283d07659": "name",
+        "350cb9d3-ffec-11e6-bc11-bba283d07659": "uuid",
+        "350cb9d4-ffec-11e6-bc11-bba283d07659": "ownerId",
+        "350cb9d0-ffec-11e6-bc11-bba283d07659": "item",
+        "350d2f0e-ffec-11e6-bc11-bba283d07659": "KEY",
+        "350d2f0b-ffec-11e6-bc11-bba283d07659": "jsonType",
+        "350d2f08-ffec-11e6-bc11-bba283d07659": "experienceWhenKilled",
+        "350d2f09-ffec-11e6-bc11-bba283d07659": "hitpoints",
+        "350d2f0a-ffec-11e6-bc11-bba283d07659": "itemProbability",
+        "350d2f0c-ffec-11e6-bc11-bba283d07659": "name",
+        "350d2f0d-ffec-11e6-bc11-bba283d07659": "uuid",
+        "350d2f07-ffec-11e6-bc11-bba283d07659": "monster",
+        "350da439-ffec-11e6-bc11-bba283d07659": "KEY",
+        "350da434-ffec-11e6-bc11-bba283d07659": "jsonType",
+        "350da432-ffec-11e6-bc11-bba283d07659": "experience",
+        "350da433-ffec-11e6-bc11-bba283d07659": "hitpoints",
+        "350da435-ffec-11e6-bc11-bba283d07659": "level",
+        "350da436-ffec-11e6-bc11-bba283d07659": "loggedIn",
+        "350da437-ffec-11e6-bc11-bba283d07659": "name",
+        "350da438-ffec-11e6-bc11-bba283d07659": "uuid",
+        "350da431-ffec-11e6-bc11-bba283d07659": "player",
+        "35198b10-ffec-11e6-bc11-bba283d07659": "gamesim-sample"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "2a1e91b1-ffec-11e6-bc11-bba283d07659"
+    },
+    "databaseName": "New Model",
+    "dbVendor": "Couchbase",
+    "dbVersion": "v4.6",
+    "appTarget": "COUCHBASE",
+    "creationTS": "2017-03-03T08:34:06.539Z",
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "ac2105a1-fac7-11e6-9f58-33155ddb31fb",
+                        "x": 101,
+                        "y": 235,
+                        "width": 193,
+                        "height": 135,
+                        "color": {
+                            "hsl": {
+                                "h": 3.789473684210526,
+                                "s": 0.904761904761905,
+                                "l": 0.5882352941176471,
+                                "a": 1
+                            },
+                            "hex": "#f54337",
+                            "rgb": {
+                                "r": 245,
+                                "g": 67,
+                                "b": 55,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 3.789473684210526,
+                                "s": 0.7755102040816326,
+                                "v": 0.9607843137254902,
+                                "a": 1
+                            },
+                            "oldHue": 3.789473684210526,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "ac21a1e1-fac7-11e6-9f58-33155ddb31fb",
+                        "x": 96,
+                        "y": 530,
+                        "width": 204,
+                        "height": 203,
+                        "color": {
+                            "hsl": {
+                                "h": 3.789473684210526,
+                                "s": 0.904761904761905,
+                                "l": 0.5882352941176471,
+                                "a": 1
+                            },
+                            "hex": "#f54337",
+                            "rgb": {
+                                "r": 245,
+                                "g": 67,
+                                "b": 55,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 3.789473684210526,
+                                "s": 0.7755102040816326,
+                                "v": 0.9607843137254902,
+                                "a": 1
+                            },
+                            "oldHue": 3.789473684210526,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "ac230171-fac7-11e6-9f58-33155ddb31fb",
+                        "x": 690,
+                        "y": 237,
+                        "width": 308,
+                        "height": 519
+                    },
+                    {
+                        "GUID": "ac23c4c1-fac7-11e6-9f58-33155ddb31fb",
+                        "x": 374,
+                        "y": 540,
+                        "width": 225,
+                        "height": 245
+                    },
+                    {
+                        "GUID": "ac2412e1-fac7-11e6-9f58-33155ddb31fb",
+                        "x": 370,
+                        "y": 235,
+                        "width": 234,
+                        "height": 245,
+                        "color": {
+                            "hsl": {
+                                "h": 3.789473684210526,
+                                "s": 0.904761904761905,
+                                "l": 0.5882352941176471,
+                                "a": 1
+                            },
+                            "hex": "#f54337",
+                            "rgb": {
+                                "r": 245,
+                                "g": 67,
+                                "b": 55,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 3.789473684210526,
+                                "s": 0.7755102040816326,
+                                "v": 0.9607843137254902,
+                                "a": 1
+                            },
+                            "oldHue": 3.789473684210526,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "350cb9d0-ffec-11e6-bc11-bba283d07659",
+                        "x": 240,
+                        "y": 290,
+                        "width": 193,
+                        "height": 107,
+                        "color": {
+                            "hsl": {
+                                "h": 3.789473684210526,
+                                "s": 0.904761904761905,
+                                "l": 0.5882352941176471,
+                                "a": 1
+                            },
+                            "hex": "#f54337",
+                            "rgb": {
+                                "r": 245,
+                                "g": 67,
+                                "b": 55,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 3.789473684210526,
+                                "s": 0.7755102040816326,
+                                "v": 0.9607843137254902,
+                                "a": 1
+                            },
+                            "oldHue": 3.789473684210526,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "350d2f07-ffec-11e6-bc11-bba283d07659",
+                        "x": 390,
+                        "y": 90,
+                        "width": 257,
+                        "height": 135,
+                        "color": {
+                            "hsl": {
+                                "h": 3.789473684210526,
+                                "s": 0.904761904761905,
+                                "l": 0.5882352941176471,
+                                "a": 1
+                            },
+                            "hex": "#f54337",
+                            "rgb": {
+                                "r": 245,
+                                "g": 67,
+                                "b": 55,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 3.789473684210526,
+                                "s": 0.7755102040816326,
+                                "v": 0.9607843137254902,
+                                "a": 1
+                            },
+                            "oldHue": 3.789473684210526,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "350da431-ffec-11e6-bc11-bba283d07659",
+                        "x": 90,
+                        "y": 90,
+                        "width": 194,
+                        "height": 149
+                    },
+                    {
+                        "GUID": "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+                        "x": 61,
+                        "y": 516,
+                        "width": 200,
+                        "height": 75
+                    },
+                    {
+                        "GUID": "c2b2c8b0-f417-11e5-938a-bd54cc414623",
+                        "x": 429,
+                        "y": 472,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "4a014da0-f418-11e5-a6f2-dbf6571c2b51",
+                        "x": 422,
+                        "y": 485,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "8439e830-f41b-11e5-ad3f-7d283a6e1eb9",
+                        "x": 453.5,
+                        "y": 494,
+                        "width": 233,
+                        "height": 116
+                    },
+                    {
+                        "GUID": "6e9a9cc0-f422-11e5-ab1e-4fda87c84016",
+                        "x": 431,
+                        "y": 485,
+                        "width": 314,
+                        "height": 204
+                    },
+                    {
+                        "GUID": "166589b0-0440-11e6-a1a6-29098b60dd65",
+                        "x": 87,
+                        "y": 133,
+                        "width": 234,
+                        "height": 166
+                    },
+                    {
+                        "GUID": "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+                        "x": 399,
+                        "y": 46,
+                        "width": 315,
+                        "height": 277
+                    },
+                    {
+                        "GUID": "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+                        "x": 459,
+                        "y": 438,
+                        "width": 200,
+                        "height": 100
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 40,
+                        "y": 40,
+                        "GUID": "85f04210-fac7-11e6-9f58-33155ddb31fb"
+                    },
+                    {
+                        "x": 80,
+                        "y": 80,
+                        "GUID": "2a1c47c0-ffec-11e6-bc11-bba283d07659"
+                    },
+                    {
+                        "x": 50,
+                        "y": 50,
+                        "GUID": "35198b10-ffec-11e6-bc11-bba283d07659"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "selectedCollections": [],
+                "displayColorPicker": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "nodes": [],
+            "details": true
+        }
+    }
+}

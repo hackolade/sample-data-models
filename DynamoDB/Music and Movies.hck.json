@@ -1,0 +1,557 @@
+{
+    "GUID": "b1ecd5a0-b7b9-11e6-8a51-79d8b0b6f669",
+    "lastModifTS": "2016-12-01T11:32:33.514Z",
+    "persistenceSchemaVersion": "1",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "collections": [
+        {
+            "$schema": "",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "comments": "",
+            "description": "",
+            "indexes": [],
+            "properties": [
+                {
+                    "partitionKey": true,
+                    "sortKey": false,
+                    "type": "numeric",
+                    "name": "year",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "be3f6fcf-b7b9-11e6-8a51-79d8b0b6f669"
+                },
+                {
+                    "partitionKey": false,
+                    "sortKey": true,
+                    "type": "string",
+                    "name": "title",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "be3f6fce-b7b9-11e6-8a51-79d8b0b6f669"
+                },
+                {
+                    "properties": [
+                        {
+                            "type": "array",
+                            "name": "actors",
+                            "primaryKey": false,
+                            "childType": "stringSet",
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "properties": [
+                                {
+                                    "arrayItem": true,
+                                    "type": "string",
+                                    "arrayParentType": "stringSet",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "childRelationships": [],
+                                    "GUID": "be3f6fc3-b7b9-11e6-8a51-79d8b0b6f669"
+                                }
+                            ],
+                            "GUID": "be3f6fc2-b7b9-11e6-8a51-79d8b0b6f669"
+                        },
+                        {
+                            "type": "array",
+                            "name": "directors",
+                            "primaryKey": false,
+                            "childType": "stringSet",
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "properties": [
+                                {
+                                    "arrayItem": true,
+                                    "type": "string",
+                                    "arrayParentType": "stringSet",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "childRelationships": [],
+                                    "GUID": "be3f6fc5-b7b9-11e6-8a51-79d8b0b6f669"
+                                }
+                            ],
+                            "GUID": "be3f6fc4-b7b9-11e6-8a51-79d8b0b6f669"
+                        },
+                        {
+                            "type": "array",
+                            "name": "genres",
+                            "primaryKey": false,
+                            "childType": "stringSet",
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "properties": [
+                                {
+                                    "arrayItem": true,
+                                    "type": "string",
+                                    "arrayParentType": "stringSet",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "childRelationships": [],
+                                    "GUID": "be3f6fc7-b7b9-11e6-8a51-79d8b0b6f669"
+                                }
+                            ],
+                            "GUID": "be3f6fc6-b7b9-11e6-8a51-79d8b0b6f669"
+                        },
+                        {
+                            "type": "string",
+                            "name": "image_url",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "GUID": "be3f6fc8-b7b9-11e6-8a51-79d8b0b6f669"
+                        },
+                        {
+                            "type": "string",
+                            "name": "plot",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "GUID": "be3f6fc9-b7b9-11e6-8a51-79d8b0b6f669"
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "rank",
+                            "primaryKey": false,
+                            "childType": "number",
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "GUID": "be3f6fca-b7b9-11e6-8a51-79d8b0b6f669"
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "rating",
+                            "primaryKey": false,
+                            "childType": "number",
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "GUID": "be3f6fcb-b7b9-11e6-8a51-79d8b0b6f669"
+                        },
+                        {
+                            "type": "string",
+                            "name": "release_date",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "GUID": "be3f6fcc-b7b9-11e6-8a51-79d8b0b6f669"
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "running_time_secs",
+                            "primaryKey": false,
+                            "childType": "number",
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "GUID": "be3f6fcd-b7b9-11e6-8a51-79d8b0b6f669"
+                        }
+                    ],
+                    "type": "document",
+                    "name": "info",
+                    "primaryKey": false,
+                    "childType": "map",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "be3f6fc1-b7b9-11e6-8a51-79d8b0b6f669"
+                }
+            ],
+            "readCapacity": 10,
+            "type": "object",
+            "writeCapacity": 10,
+            "GUID": "be3f6fc0-b7b9-11e6-8a51-79d8b0b6f669",
+            "collectionName": "Movies"
+        },
+        {
+            "$schema": "",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "comments": "",
+            "description": "",
+            "indexes": [],
+            "properties": [
+                {
+                    "partitionKey": true,
+                    "sortKey": false,
+                    "type": "string",
+                    "name": "Artist",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "be403312-b7b9-11e6-8a51-79d8b0b6f669"
+                },
+                {
+                    "partitionKey": false,
+                    "sortKey": true,
+                    "type": "string",
+                    "name": "SongTitle",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "be40331d-b7b9-11e6-8a51-79d8b0b6f669"
+                },
+                {
+                    "type": "string",
+                    "name": "AlbumTitle",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "be403311-b7b9-11e6-8a51-79d8b0b6f669"
+                },
+                {
+                    "type": "numeric",
+                    "name": "CriticRating",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "be403313-b7b9-11e6-8a51-79d8b0b6f669"
+                },
+                {
+                    "type": "string",
+                    "name": "Genre",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "GUID": "be403314-b7b9-11e6-8a51-79d8b0b6f669"
+                },
+                {
+                    "type": "numeric",
+                    "name": "Price",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "be403315-b7b9-11e6-8a51-79d8b0b6f669"
+                },
+                {
+                    "properties": [
+                        {
+                            "type": "array",
+                            "name": "RadioStationsPlaying",
+                            "primaryKey": false,
+                            "childType": "stringSet",
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "properties": [
+                                {
+                                    "arrayItem": true,
+                                    "type": "string",
+                                    "arrayParentType": "stringSet",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "childRelationships": [],
+                                    "GUID": "be403318-b7b9-11e6-8a51-79d8b0b6f669"
+                                }
+                            ],
+                            "GUID": "be403317-b7b9-11e6-8a51-79d8b0b6f669"
+                        },
+                        {
+                            "type": "string",
+                            "name": "Rotation",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "GUID": "be403319-b7b9-11e6-8a51-79d8b0b6f669"
+                        },
+                        {
+                            "properties": [
+                                {
+                                    "type": "string",
+                                    "name": "Cleveland",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "childRelationships": [],
+                                    "GUID": "be40331b-b7b9-11e6-8a51-79d8b0b6f669"
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "Seattle",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "childRelationships": [],
+                                    "GUID": "be40331c-b7b9-11e6-8a51-79d8b0b6f669"
+                                }
+                            ],
+                            "type": "document",
+                            "name": "TourDates",
+                            "primaryKey": false,
+                            "childType": "map",
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "GUID": "be40331a-b7b9-11e6-8a51-79d8b0b6f669"
+                        }
+                    ],
+                    "type": "document",
+                    "name": "PromotionInfo",
+                    "primaryKey": false,
+                    "childType": "map",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "be403316-b7b9-11e6-8a51-79d8b0b6f669"
+                },
+                {
+                    "properties": [
+                        {
+                            "type": "array",
+                            "name": "Composers",
+                            "primaryKey": false,
+                            "childType": "stringSet",
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "properties": [
+                                {
+                                    "arrayItem": true,
+                                    "type": "string",
+                                    "arrayParentType": "stringSet",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "childRelationships": [],
+                                    "GUID": "be403320-b7b9-11e6-8a51-79d8b0b6f669"
+                                }
+                            ],
+                            "GUID": "be40331f-b7b9-11e6-8a51-79d8b0b6f669"
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "LengthInSeconds",
+                            "primaryKey": false,
+                            "childType": "number",
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "GUID": "be403321-b7b9-11e6-8a51-79d8b0b6f669"
+                        }
+                    ],
+                    "type": "document",
+                    "name": "Tags",
+                    "primaryKey": false,
+                    "childType": "map",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "be40331e-b7b9-11e6-8a51-79d8b0b6f669"
+                },
+                {
+                    "type": "numeric",
+                    "name": "Year",
+                    "primaryKey": false,
+                    "childType": "number",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "GUID": "be403322-b7b9-11e6-8a51-79d8b0b6f669"
+                }
+            ],
+            "readCapacity": 1,
+            "type": "object",
+            "writeCapacity": 1,
+            "GUID": "be403310-b7b9-11e6-8a51-79d8b0b6f669",
+            "collectionName": "Music"
+        }
+    ],
+    "relationships": [],
+    "users": [],
+    "idToNameHashTable": {
+        "be3f6fcf-b7b9-11e6-8a51-79d8b0b6f669": "year",
+        "be3f6fce-b7b9-11e6-8a51-79d8b0b6f669": "title",
+        "be3f6fc1-b7b9-11e6-8a51-79d8b0b6f669": "info",
+        "be3f6fc2-b7b9-11e6-8a51-79d8b0b6f669": "actors",
+        "be3f6fc4-b7b9-11e6-8a51-79d8b0b6f669": "directors",
+        "be3f6fc6-b7b9-11e6-8a51-79d8b0b6f669": "genres",
+        "be3f6fc8-b7b9-11e6-8a51-79d8b0b6f669": "image_url",
+        "be3f6fc9-b7b9-11e6-8a51-79d8b0b6f669": "plot",
+        "be3f6fca-b7b9-11e6-8a51-79d8b0b6f669": "rank",
+        "be3f6fcb-b7b9-11e6-8a51-79d8b0b6f669": "rating",
+        "be3f6fcc-b7b9-11e6-8a51-79d8b0b6f669": "release_date",
+        "be3f6fcd-b7b9-11e6-8a51-79d8b0b6f669": "running_time_secs",
+        "be3f6fc0-b7b9-11e6-8a51-79d8b0b6f669": "Movies",
+        "be403312-b7b9-11e6-8a51-79d8b0b6f669": "Artist",
+        "be40331d-b7b9-11e6-8a51-79d8b0b6f669": "SongTitle",
+        "be403311-b7b9-11e6-8a51-79d8b0b6f669": "AlbumTitle",
+        "be403313-b7b9-11e6-8a51-79d8b0b6f669": "CriticRating",
+        "be403314-b7b9-11e6-8a51-79d8b0b6f669": "Genre",
+        "be403315-b7b9-11e6-8a51-79d8b0b6f669": "Price",
+        "be403316-b7b9-11e6-8a51-79d8b0b6f669": "PromotionInfo",
+        "be403317-b7b9-11e6-8a51-79d8b0b6f669": "RadioStationsPlaying",
+        "be403319-b7b9-11e6-8a51-79d8b0b6f669": "Rotation",
+        "be40331a-b7b9-11e6-8a51-79d8b0b6f669": "TourDates",
+        "be40331b-b7b9-11e6-8a51-79d8b0b6f669": "Cleveland",
+        "be40331c-b7b9-11e6-8a51-79d8b0b6f669": "Seattle",
+        "be40331e-b7b9-11e6-8a51-79d8b0b6f669": "Tags",
+        "be40331f-b7b9-11e6-8a51-79d8b0b6f669": "Composers",
+        "be403321-b7b9-11e6-8a51-79d8b0b6f669": "LengthInSeconds",
+        "be403322-b7b9-11e6-8a51-79d8b0b6f669": "Year",
+        "be403310-b7b9-11e6-8a51-79d8b0b6f669": "Music"
+    },
+    "databaseName": "New Model",
+    "dbVendor": "AWS DynamoDB",
+    "appTarget": "DYNAMODB",
+    "creationTS": "2016-12-01T11:31:26.330Z",
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "be3f6fc0-b7b9-11e6-8a51-79d8b0b6f669",
+                        "x": 51,
+                        "y": 363,
+                        "width": 253.5,
+                        "height": 245,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "be403310-b7b9-11e6-8a51-79d8b0b6f669",
+                        "x": 50,
+                        "y": 50,
+                        "width": 266.5,
+                        "height": 286
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "selectedCollections": [],
+                "displayColorPicker": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "nodes": [],
+            "details": true
+        }
+    }
+}

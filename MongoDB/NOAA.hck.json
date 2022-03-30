@@ -1,0 +1,477 @@
+{
+    "modelName": "NOAA",
+    "collections": [
+        {
+            "properties": [
+                {
+                    "type": "objectId",
+                    "name": "_id",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "required": true,
+                    "GUID": "a6333941-696f-11e6-bcf0-194926187780",
+                    "description": "Primary key, auto-generated",
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "name": "station_id",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "bbb35fc0-696f-11e6-bcf0-194926187780",
+                    "foreignCollection": "a5b04da0-696f-11e6-bcf0-194926187780",
+                    "foreignField": [
+                        "a5b04da0-696f-11e6-bcf0-194926187780",
+                        "a5b04da3-696f-11e6-bcf0-194926187780"
+                    ],
+                    "required": true,
+                    "GUID": "a6333942-696f-11e6-bcf0-194926187780",
+                    "description": "Foreign key to stations collection",
+                    "isActivated": true
+                },
+                {
+                    "type": "document",
+                    "properties": [
+                        {
+                            "type": "array",
+                            "name": "coordinates",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "properties": [
+                                {
+                                    "type": "numeric",
+                                    "arrayItem": true,
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "a6333945-696f-11e6-bcf0-194926187780",
+                                    "isActivated": true
+                                }
+                            ],
+                            "required": true,
+                            "GUID": "a6333944-696f-11e6-bcf0-194926187780",
+                            "isActivated": true
+                        },
+                        {
+                            "type": "string",
+                            "name": "type",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "required": true,
+                            "GUID": "a6333946-696f-11e6-bcf0-194926187780",
+                            "isActivated": true
+                        }
+                    ],
+                    "name": "loc",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "required": true,
+                    "GUID": "a6333943-696f-11e6-bcf0-194926187780",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "name": "name",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "required": true,
+                    "GUID": "a6333947-696f-11e6-bcf0-194926187780",
+                    "isActivated": true
+                },
+                {
+                    "type": "array",
+                    "name": "products",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "properties": [
+                        {
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "type": "string",
+                                    "name": "d",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "a633394a-696f-11e6-bcf0-194926187780",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "dr",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "a633394b-696f-11e6-bcf0-194926187780",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "f",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "a633394c-696f-11e6-bcf0-194926187780",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "g",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "a633394d-696f-11e6-bcf0-194926187780",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "name",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "required": true,
+                                    "GUID": "a633394e-696f-11e6-bcf0-194926187780",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "s",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "a633394f-696f-11e6-bcf0-194926187780",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "t",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "required": true,
+                                    "GUID": "a6333950-696f-11e6-bcf0-194926187780",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "numeric",
+                                    "name": "v",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "a6333951-696f-11e6-bcf0-194926187780",
+                                    "isActivated": true
+                                }
+                            ],
+                            "arrayItem": true,
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "GUID": "a6333949-696f-11e6-bcf0-194926187780",
+                            "isActivated": true
+                        }
+                    ],
+                    "required": true,
+                    "GUID": "a6333948-696f-11e6-bcf0-194926187780",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "name": "fetch_date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "required": true,
+                    "GUID": "a6333952-696f-11e6-bcf0-194926187780",
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "name": "id",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "required": true,
+                    "GUID": "a6333953-696f-11e6-bcf0-194926187780",
+                    "isActivated": true
+                }
+            ],
+            "type": "object",
+            "GUID": "a6333940-696f-11e6-bcf0-194926187780",
+            "collectionName": "ocean_data",
+            "definitions": {
+                "GUID": "714d1d11-92e4-11eb-8852-3d869fc674b7",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        },
+        {
+            "properties": [
+                {
+                    "type": "objectId",
+                    "name": "_id",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "required": true,
+                    "GUID": "a5b04da1-696f-11e6-bcf0-194926187780",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "name": "-name",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "required": true,
+                    "GUID": "a5b04da2-696f-11e6-bcf0-194926187780",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "a5b04da3-696f-11e6-bcf0-194926187780",
+                    "name": "-ID",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "bbb35fc0-696f-11e6-bcf0-194926187780"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "type": "document",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "name": "date_established",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "required": true,
+                            "GUID": "a5b04da5-696f-11e6-bcf0-194926187780",
+                            "isActivated": true
+                        },
+                        {
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "type": "string",
+                                    "name": "lat",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "required": true,
+                                    "GUID": "a5b04da7-696f-11e6-bcf0-194926187780",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "long",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "required": true,
+                                    "GUID": "a5b04da8-696f-11e6-bcf0-194926187780",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "state",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "a5b04da9-696f-11e6-bcf0-194926187780",
+                                    "isActivated": true
+                                }
+                            ],
+                            "name": "location",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "required": true,
+                            "GUID": "a5b04da6-696f-11e6-bcf0-194926187780",
+                            "isActivated": true
+                        }
+                    ],
+                    "name": "metadata",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "required": true,
+                    "GUID": "a5b04da4-696f-11e6-bcf0-194926187780",
+                    "isActivated": true
+                }
+            ],
+            "type": "object",
+            "GUID": "a5b04da0-696f-11e6-bcf0-194926187780",
+            "collectionName": "stations",
+            "definitions": {
+                "GUID": "714d1d12-92e4-11eb-8852-3d869fc674b7",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "bbb35fc0-696f-11e6-bcf0-194926187780",
+            "name": "stationsOceanData",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "a5b04da0-696f-11e6-bcf0-194926187780",
+            "parentField": [
+                [
+                    "a5b04da0-696f-11e6-bcf0-194926187780",
+                    "a5b04da3-696f-11e6-bcf0-194926187780"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "a6333940-696f-11e6-bcf0-194926187780",
+            "childField": [
+                [
+                    "a6333940-696f-11e6-bcf0-194926187780",
+                    "a6333942-696f-11e6-bcf0-194926187780"
+                ]
+            ],
+            "childCardinality": "0..n"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "a5b04da1-696f-11e6-bcf0-194926187780": "_id",
+        "a5b04da2-696f-11e6-bcf0-194926187780": "-name",
+        "a5b04da3-696f-11e6-bcf0-194926187780": "-ID",
+        "a5b04da4-696f-11e6-bcf0-194926187780": "metadata",
+        "a5b04da5-696f-11e6-bcf0-194926187780": "date_established",
+        "a5b04da6-696f-11e6-bcf0-194926187780": "location",
+        "a5b04da7-696f-11e6-bcf0-194926187780": "lat",
+        "a5b04da8-696f-11e6-bcf0-194926187780": "long",
+        "a5b04da9-696f-11e6-bcf0-194926187780": "state",
+        "a5b04da0-696f-11e6-bcf0-194926187780": "stations",
+        "a6333941-696f-11e6-bcf0-194926187780": "_id",
+        "a6333942-696f-11e6-bcf0-194926187780": "station_id",
+        "a6333943-696f-11e6-bcf0-194926187780": "loc",
+        "a6333944-696f-11e6-bcf0-194926187780": "coordinates",
+        "a6333946-696f-11e6-bcf0-194926187780": "type",
+        "a6333947-696f-11e6-bcf0-194926187780": "name",
+        "a6333948-696f-11e6-bcf0-194926187780": "products",
+        "a633394a-696f-11e6-bcf0-194926187780": "d",
+        "a633394b-696f-11e6-bcf0-194926187780": "dr",
+        "a633394c-696f-11e6-bcf0-194926187780": "f",
+        "a633394d-696f-11e6-bcf0-194926187780": "g",
+        "a633394e-696f-11e6-bcf0-194926187780": "name",
+        "a633394f-696f-11e6-bcf0-194926187780": "s",
+        "a6333950-696f-11e6-bcf0-194926187780": "t",
+        "a6333951-696f-11e6-bcf0-194926187780": "v",
+        "a6333952-696f-11e6-bcf0-194926187780": "fetch_date",
+        "a6333953-696f-11e6-bcf0-194926187780": "id",
+        "a6333940-696f-11e6-bcf0-194926187780": "ocean_data"
+    },
+    "definitions": {
+        "GUID": "714d1d10-92e4-11eb-8852-3d869fc674b7",
+        "properties": [],
+        "type": "definitions"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "71839662-92e4-11eb-8852-3d869fc674b7"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v3.2",
+    "dbVendor": "MongoDB",
+    "hideModelViews": true,
+    "appTarget": "MONGODB",
+    "creationTS": "2016-08-23T20:24:37.336Z",
+    "GUID": "9cbdf580-696f-11e6-bcf0-194926187780",
+    "lastModifTS": "2021-04-01T12:26:05.857Z",
+    "persistenceSchemaVersion": "4",
+    "description": "NOAA ocean weather buoys info",
+    "comments": "Don't understand why GeoJSON is used to store lat/long in one collection, and not the other??",
+    "author": "Pascal",
+    "version": "1",
+    "validation": "MongoDB extension",
+    "hackoladeMeta": {},
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "4.3.14"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "0d8cff20-2b24-11e6-b7e5-591297143e36",
+                        "x": 529,
+                        "y": 569,
+                        "width": 207,
+                        "height": 196
+                    },
+                    {
+                        "GUID": "0da2aa00-2b24-11e6-b7e5-591297143e36",
+                        "x": 524,
+                        "y": 304,
+                        "width": 217,
+                        "height": 209
+                    },
+                    {
+                        "GUID": "0dd7ead0-2b24-11e6-b7e5-591297143e36",
+                        "x": 51,
+                        "y": 98,
+                        "width": 339,
+                        "height": 734
+                    },
+                    {
+                        "GUID": "0de02830-2b24-11e6-b7e5-591297143e36",
+                        "x": 513,
+                        "y": 87,
+                        "width": 240,
+                        "height": 140
+                    },
+                    {
+                        "GUID": "0df0f110-2b24-11e6-b7e5-591297143e36",
+                        "x": 870,
+                        "y": 196,
+                        "width": 211,
+                        "height": 426
+                    },
+                    {
+                        "GUID": "a5b04da0-696f-11e6-bcf0-194926187780",
+                        "x": 40,
+                        "y": 111,
+                        "width": 260,
+                        "height": 159
+                    },
+                    {
+                        "GUID": "a6333940-696f-11e6-bcf0-194926187780",
+                        "x": 403,
+                        "y": 48,
+                        "width": 250,
+                        "height": 297
+                    }
+                ],
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

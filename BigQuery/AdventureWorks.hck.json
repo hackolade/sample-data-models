@@ -1,0 +1,2985 @@
+{
+    "modelName": "AdventureWorks derived from polyglot",
+    "collections": [
+        {
+            "collectionName": "Address",
+            "isActivated": true,
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "AddressID",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 9,
+                    "GUID": "61bd4a71-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "childRelationships": [
+                        "bbe8de70-03d9-11ec-b847-e1184f4ea812",
+                        "bbee5cb0-03d9-11ec-b847-e1184f4ea812",
+                        "bbf42910-03d9-11ec-b847-e1184f4ea812"
+                    ]
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "AddressLine1",
+                    "isActivated": true,
+                    "length": 60,
+                    "description": "This is for house number, street, and optional apt/suite",
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "8713 Yosemite Ct.",
+                    "GUID": "61bd4a72-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "AddressLine2",
+                    "isActivated": true,
+                    "length": 60,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": null,
+                    "GUID": "61bd4a73-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "City",
+                    "isActivated": true,
+                    "length": 30,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Bothell",
+                    "GUID": "61bd4a74-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "name": "StateProvince",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/Name",
+                    "refType": "model",
+                    "refIdPath": [
+                        "b1488830-03d9-11ec-b847-e1184f4ea812",
+                        "b1488831-03d9-11ec-b847-e1184f4ea812",
+                        "bb9d7d90-03d9-11ec-b847-e1184f4ea812"
+                    ],
+                    "ref": "bb9d7d90-03d9-11ec-b847-e1184f4ea812",
+                    "GUID": "61bd4a75-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "CountryRegion",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/Name",
+                    "refType": "model",
+                    "refIdPath": [
+                        "b1488830-03d9-11ec-b847-e1184f4ea812",
+                        "b1488831-03d9-11ec-b847-e1184f4ea812",
+                        "bb9d7d90-03d9-11ec-b847-e1184f4ea812"
+                    ],
+                    "ref": "bb9d7d90-03d9-11ec-b847-e1184f4ea812",
+                    "GUID": "61bd4a76-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "PostalCode",
+                    "isActivated": true,
+                    "length": 15,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "98011",
+                    "GUID": "61bd4a77-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "rowguid",
+                    "isActivated": true,
+                    "length": null,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": "(newid())",
+                    "sample": "268AF621-76D7-4C78-9441-144FD139821A",
+                    "GUID": "61bd4a78-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "childType": "datetime",
+                    "type": "string",
+                    "name": "ModifiedDate",
+                    "isActivated": true,
+                    "required": true,
+                    "default": "(getdate())",
+                    "sample": "2006-07-01T00:00:00.000Z",
+                    "GUID": "61bd4a79-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "61bd4a70-4b8d-11ec-ae71-d5c74b0d4990",
+                "properties": [],
+                "type": "definitions"
+            },
+            "type": "object",
+            "path": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "GUID": "bb784250-03d9-11ec-b847-e1184f4ea812",
+            "bucketId": "bbad5c10-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "collectionName": "Customer",
+            "isActivated": true,
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "CustomerID",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 1,
+                    "GUID": "61bed111-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "childRelationships": [
+                        "bbbb8ce0-03d9-11ec-b847-e1184f4ea812",
+                        "bbc15940-03d9-11ec-b847-e1184f4ea812"
+                    ]
+                },
+                {
+                    "name": "NameStyle",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/NameStyle",
+                    "refType": "model",
+                    "refIdPath": [
+                        "b1488830-03d9-11ec-b847-e1184f4ea812",
+                        "b1488831-03d9-11ec-b847-e1184f4ea812",
+                        "bb9f2b40-03d9-11ec-b847-e1184f4ea812"
+                    ],
+                    "ref": "bb9f2b40-03d9-11ec-b847-e1184f4ea812",
+                    "GUID": "61bed112-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "Title",
+                    "isActivated": true,
+                    "length": 8,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Mr.",
+                    "GUID": "61bed113-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "name": "FirstName",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/Name",
+                    "refType": "model",
+                    "refIdPath": [
+                        "b1488830-03d9-11ec-b847-e1184f4ea812",
+                        "b1488831-03d9-11ec-b847-e1184f4ea812",
+                        "bb9d7d90-03d9-11ec-b847-e1184f4ea812"
+                    ],
+                    "ref": "bb9d7d90-03d9-11ec-b847-e1184f4ea812",
+                    "GUID": "61bed114-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "MiddleName",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/Name",
+                    "refType": "model",
+                    "refIdPath": [
+                        "b1488830-03d9-11ec-b847-e1184f4ea812",
+                        "b1488831-03d9-11ec-b847-e1184f4ea812",
+                        "bb9d7d90-03d9-11ec-b847-e1184f4ea812"
+                    ],
+                    "ref": "bb9d7d90-03d9-11ec-b847-e1184f4ea812",
+                    "GUID": "61bed115-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "LastName",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/Name",
+                    "refType": "model",
+                    "refIdPath": [
+                        "b1488830-03d9-11ec-b847-e1184f4ea812",
+                        "b1488831-03d9-11ec-b847-e1184f4ea812",
+                        "bb9d7d90-03d9-11ec-b847-e1184f4ea812"
+                    ],
+                    "ref": "bb9d7d90-03d9-11ec-b847-e1184f4ea812",
+                    "GUID": "61bed116-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "Suffix",
+                    "isActivated": true,
+                    "length": 10,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": null,
+                    "GUID": "61bed117-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "CompanyName",
+                    "isActivated": true,
+                    "length": 128,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "A Bike Store",
+                    "GUID": "61bed118-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "SalesPerson",
+                    "isActivated": true,
+                    "length": 256,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "adventure-works\\pamela0",
+                    "GUID": "61bed119-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "EmailAddress",
+                    "isActivated": true,
+                    "length": 50,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "orlando0@adventure-works.com",
+                    "GUID": "61bed11a-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "name": "Phone",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/Phone",
+                    "refType": "model",
+                    "refIdPath": [
+                        "b1488830-03d9-11ec-b847-e1184f4ea812",
+                        "b1488831-03d9-11ec-b847-e1184f4ea812",
+                        "bba45b60-03d9-11ec-b847-e1184f4ea812"
+                    ],
+                    "ref": "bba45b60-03d9-11ec-b847-e1184f4ea812",
+                    "GUID": "61bed11b-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "PasswordHash",
+                    "isActivated": true,
+                    "length": 128,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "L/Rlwxzp4w7RWmEgXX+/A7cXaePEPcp+KwQhl2fJL7w=",
+                    "GUID": "61bed11c-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "PasswordSalt",
+                    "isActivated": true,
+                    "length": 10,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "1KjXYs4=",
+                    "GUID": "61bed11d-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "rowguid",
+                    "isActivated": true,
+                    "length": null,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": "(newid())",
+                    "sample": "3F5AE95E-B87D-4AED-95B4-C3797AFCB74F",
+                    "GUID": "61bed11e-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "childType": "datetime",
+                    "type": "string",
+                    "name": "ModifiedDate",
+                    "isActivated": true,
+                    "required": true,
+                    "default": "(getdate())",
+                    "sample": "2005-08-01T00:00:00.000Z",
+                    "GUID": "61bed11f-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "61bed110-4b8d-11ec-ae71-d5c74b0d4990",
+                "properties": [],
+                "type": "definitions"
+            },
+            "type": "object",
+            "path": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "GUID": "bb7b0170-03d9-11ec-b847-e1184f4ea812",
+            "bucketId": "bbad5c10-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "collectionName": "CustomerAddress",
+            "isActivated": true,
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "CustomerID",
+                    "isActivated": true,
+                    "required": true,
+                    "foreignCollection": "bb7b0170-03d9-11ec-b847-e1184f4ea812",
+                    "foreignField": [
+                        "bb7b0170-03d9-11ec-b847-e1184f4ea812",
+                        "61bed111-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "sample": 29485,
+                    "GUID": "61c030a0-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "parentRelationship": "bbbb8ce0-03d9-11ec-b847-e1184f4ea812"
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "AddressID",
+                    "isActivated": true,
+                    "required": true,
+                    "foreignCollection": "bb784250-03d9-11ec-b847-e1184f4ea812",
+                    "foreignField": [
+                        "bb784250-03d9-11ec-b847-e1184f4ea812",
+                        "61bd4a71-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "sample": 1086,
+                    "GUID": "61c030a1-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "parentRelationship": "bbe8de70-03d9-11ec-b847-e1184f4ea812"
+                },
+                {
+                    "name": "AddressType",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/Name",
+                    "refType": "model",
+                    "refIdPath": [
+                        "b1488830-03d9-11ec-b847-e1184f4ea812",
+                        "b1488831-03d9-11ec-b847-e1184f4ea812",
+                        "bb9d7d90-03d9-11ec-b847-e1184f4ea812"
+                    ],
+                    "ref": "bb9d7d90-03d9-11ec-b847-e1184f4ea812",
+                    "GUID": "61c030a2-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "rowguid",
+                    "isActivated": true,
+                    "length": null,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": "(newid())",
+                    "sample": "16765338-DBE4-4421-B5E9-3836B9278E63",
+                    "GUID": "61c030a3-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "childType": "datetime",
+                    "type": "string",
+                    "name": "ModifiedDate",
+                    "isActivated": true,
+                    "required": true,
+                    "default": "(getdate())",
+                    "sample": "2007-09-01T00:00:00.000Z",
+                    "GUID": "61c030a4-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "61c00990-4b8d-11ec-ae71-d5c74b0d4990",
+                "properties": [],
+                "type": "definitions"
+            },
+            "type": "object",
+            "path": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "GUID": "bb7d4b60-03d9-11ec-b847-e1184f4ea812",
+            "bucketId": "bbad5c10-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "collectionName": "Product",
+            "isActivated": true,
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "ProductID",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 680,
+                    "GUID": "61c25381-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "childRelationships": [
+                        "bbd83ca0-03d9-11ec-b847-e1184f4ea812"
+                    ]
+                },
+                {
+                    "name": "Name",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/Name",
+                    "refType": "model",
+                    "refIdPath": [
+                        "b1488830-03d9-11ec-b847-e1184f4ea812",
+                        "b1488831-03d9-11ec-b847-e1184f4ea812",
+                        "bb9d7d90-03d9-11ec-b847-e1184f4ea812"
+                    ],
+                    "ref": "bb9d7d90-03d9-11ec-b847-e1184f4ea812",
+                    "GUID": "61c25382-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "ProductNumber",
+                    "isActivated": true,
+                    "length": 25,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "FR-R92B-58",
+                    "GUID": "61c25383-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "Color",
+                    "isActivated": true,
+                    "length": 15,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Black",
+                    "GUID": "61c25384-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "StandardCost",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 1059.31,
+                    "GUID": "61c25385-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "ListPrice",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 1431.5,
+                    "GUID": "61c25386-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "Size",
+                    "isActivated": true,
+                    "length": 5,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "58",
+                    "GUID": "61c25387-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "Weight",
+                    "isActivated": true,
+                    "precision": 8,
+                    "scale": 2,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 1016.04,
+                    "GUID": "61c25388-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "ProductCategoryID",
+                    "isActivated": true,
+                    "required": true,
+                    "foreignCollection": "bb845040-03d9-11ec-b847-e1184f4ea812",
+                    "foreignField": [
+                        "bb845040-03d9-11ec-b847-e1184f4ea812",
+                        "61c33de1-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "sample": 18,
+                    "GUID": "61c25389-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "parentRelationship": "bbddbae0-03d9-11ec-b847-e1184f4ea812"
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "ProductModelID",
+                    "isActivated": true,
+                    "required": true,
+                    "foreignCollection": "bb895950-03d9-11ec-b847-e1184f4ea812",
+                    "foreignField": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c481-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "sample": 6,
+                    "GUID": "61c2538a-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "parentRelationship": "bbc6fe90-03d9-11ec-b847-e1184f4ea812"
+                },
+                {
+                    "childType": "datetime",
+                    "type": "string",
+                    "name": "SellStartDate",
+                    "isActivated": true,
+                    "required": true,
+                    "sample": "2002-06-01T00:00:00.000Z",
+                    "GUID": "61c2538b-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "childType": "datetime",
+                    "type": "string",
+                    "name": "SellEndDate",
+                    "isActivated": true,
+                    "required": true,
+                    "sample": null,
+                    "GUID": "61c2538c-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "childType": "datetime",
+                    "type": "string",
+                    "name": "DiscontinuedDate",
+                    "isActivated": true,
+                    "required": true,
+                    "sample": null,
+                    "GUID": "61c2538d-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "childType": "bytes",
+                    "type": "binary",
+                    "name": "ThumbNailPhoto",
+                    "isActivated": true,
+                    "required": true,
+                    "GUID": "61c2538e-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "ThumbnailPhotoFileName",
+                    "isActivated": true,
+                    "length": 50,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "no_image_available_small.gif",
+                    "GUID": "61c2538f-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "rowguid",
+                    "isActivated": true,
+                    "length": null,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": "(newid())",
+                    "sample": "43DD68D6-14A4-461F-9069-55309D90EA7E",
+                    "GUID": "61c25390-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "childType": "datetime",
+                    "type": "string",
+                    "name": "ModifiedDate",
+                    "isActivated": true,
+                    "required": true,
+                    "default": "(getdate())",
+                    "sample": "2008-03-11T10:01:36.826Z",
+                    "GUID": "61c25391-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "61c25380-4b8d-11ec-ae71-d5c74b0d4990",
+                "properties": [],
+                "type": "definitions"
+            },
+            "type": "object",
+            "path": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "GUID": "bb820650-03d9-11ec-b847-e1184f4ea812",
+            "bucketId": "bbad5c10-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "collectionName": "ProductCategory",
+            "isActivated": true,
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "ProductCategoryID",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 1,
+                    "GUID": "61c33de1-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "childRelationships": [
+                        "bbddbae0-03d9-11ec-b847-e1184f4ea812"
+                    ]
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "ParentProductCategoryID",
+                    "isActivated": true,
+                    "required": true,
+                    "foreignCollection": "9936b310-6a9d-11ea-a5ff-a16524f9bb05",
+                    "foreignField": [
+                        "9936b310-6a9d-11ea-a5ff-a16524f9bb05",
+                        "992f6014-6a9d-11ea-a5ff-a16524f9bb05"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "sample": null,
+                    "GUID": "61c33de2-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "name": "Name",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/Name",
+                    "refType": "model",
+                    "refIdPath": [
+                        "b1488830-03d9-11ec-b847-e1184f4ea812",
+                        "b1488831-03d9-11ec-b847-e1184f4ea812",
+                        "bb9d7d90-03d9-11ec-b847-e1184f4ea812"
+                    ],
+                    "ref": "bb9d7d90-03d9-11ec-b847-e1184f4ea812",
+                    "GUID": "61c33de3-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "rowguid",
+                    "isActivated": true,
+                    "length": null,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": "(newid())",
+                    "sample": "CFBDA25C-DF71-47A7-B81B-64EE161AA37C",
+                    "GUID": "61c33de4-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "childType": "datetime",
+                    "type": "string",
+                    "name": "ModifiedDate",
+                    "isActivated": true,
+                    "required": true,
+                    "default": "(getdate())",
+                    "sample": "2002-06-01T00:00:00.000Z",
+                    "GUID": "61c33de5-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "61c33de0-4b8d-11ec-ae71-d5c74b0d4990",
+                "properties": [],
+                "type": "definitions"
+            },
+            "type": "object",
+            "path": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "GUID": "bb845040-03d9-11ec-b847-e1184f4ea812",
+            "bucketId": "bbad5c10-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "collectionName": "ProductDescription",
+            "isActivated": true,
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "ProductDescriptionID",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 3,
+                    "GUID": "61c40131-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "childRelationships": [
+                        "bbd29750-03d9-11ec-b847-e1184f4ea812"
+                    ]
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "Description",
+                    "isActivated": true,
+                    "length": 400,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "Chromoly steel.",
+                    "GUID": "61c40132-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "rowguid",
+                    "isActivated": true,
+                    "length": null,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": "(newid())",
+                    "sample": "301EED3A-1A82-4855-99CB-2AFE8290D641",
+                    "GUID": "61c40133-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "childType": "datetime",
+                    "type": "string",
+                    "name": "ModifiedDate",
+                    "isActivated": true,
+                    "required": true,
+                    "default": "(getdate())",
+                    "sample": "2007-06-01T00:00:00.000Z",
+                    "GUID": "61c40134-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "61c40130-4b8d-11ec-ae71-d5c74b0d4990",
+                "properties": [],
+                "type": "definitions"
+            },
+            "type": "object",
+            "path": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "GUID": "bb86e850-03d9-11ec-b847-e1184f4ea812",
+            "bucketId": "bbad5c10-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "collectionName": "ProductModel",
+            "isActivated": true,
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "ProductModelID",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 1,
+                    "GUID": "61c4c481-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "childRelationships": [
+                        "bbc6fe90-03d9-11ec-b847-e1184f4ea812",
+                        "bbccf200-03d9-11ec-b847-e1184f4ea812"
+                    ]
+                },
+                {
+                    "name": "Name",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/Name",
+                    "refType": "model",
+                    "refIdPath": [
+                        "b1488830-03d9-11ec-b847-e1184f4ea812",
+                        "b1488831-03d9-11ec-b847-e1184f4ea812",
+                        "bb9d7d90-03d9-11ec-b847-e1184f4ea812"
+                    ],
+                    "ref": "bb9d7d90-03d9-11ec-b847-e1184f4ea812",
+                    "GUID": "61c4c482-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "childType": "bytes",
+                    "type": "binary",
+                    "name": "CatalogDescription",
+                    "isActivated": true,
+                    "required": true,
+                    "GUID": "61c4c483-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "rowguid",
+                    "isActivated": true,
+                    "length": null,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": "(newid())",
+                    "sample": "29321D47-1E4C-4AAC-887C-19634328C25E",
+                    "GUID": "61c4c484-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "childType": "datetime",
+                    "type": "string",
+                    "name": "ModifiedDate",
+                    "isActivated": true,
+                    "required": true,
+                    "default": "(getdate())",
+                    "sample": "2007-06-01T00:00:00.000Z",
+                    "GUID": "61c4c485-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "61c4c480-4b8d-11ec-ae71-d5c74b0d4990",
+                "properties": [],
+                "type": "definitions"
+            },
+            "type": "object",
+            "path": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "GUID": "bb895950-03d9-11ec-b847-e1184f4ea812",
+            "bucketId": "bbad5c10-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "collectionName": "ProductModelProductDescription",
+            "isActivated": true,
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "ProductModelID",
+                    "isActivated": true,
+                    "required": true,
+                    "foreignCollection": "bb895950-03d9-11ec-b847-e1184f4ea812",
+                    "foreignField": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c481-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "sample": 1,
+                    "GUID": "61c62411-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "parentRelationship": "bbccf200-03d9-11ec-b847-e1184f4ea812"
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "ProductDescriptionID",
+                    "isActivated": true,
+                    "required": true,
+                    "foreignCollection": "bb86e850-03d9-11ec-b847-e1184f4ea812",
+                    "foreignField": [
+                        "bb86e850-03d9-11ec-b847-e1184f4ea812",
+                        "61c40131-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "sample": 1199,
+                    "GUID": "61c62412-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "parentRelationship": "bbd29750-03d9-11ec-b847-e1184f4ea812"
+                },
+                {
+                    "primaryKey": true,
+                    "type": "string",
+                    "name": "Culture",
+                    "isActivated": true,
+                    "length": 6,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "en    ",
+                    "GUID": "61c62413-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "rowguid",
+                    "isActivated": true,
+                    "length": null,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": "(newid())",
+                    "sample": "4D00B649-027A-4F99-A380-F22A46EC8638",
+                    "GUID": "61c62414-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "childType": "datetime",
+                    "type": "string",
+                    "name": "ModifiedDate",
+                    "isActivated": true,
+                    "required": true,
+                    "default": "(getdate())",
+                    "sample": "2007-06-01T00:00:00.000Z",
+                    "GUID": "61c62415-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "61c62410-4b8d-11ec-ae71-d5c74b0d4990",
+                "properties": [],
+                "type": "definitions"
+            },
+            "type": "object",
+            "path": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "GUID": "bb8ba340-03d9-11ec-b847-e1184f4ea812",
+            "bucketId": "bbad5c10-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "collectionName": "SalesOrderDetail",
+            "isActivated": true,
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "SalesOrderID",
+                    "isActivated": true,
+                    "required": true,
+                    "foreignCollection": "bb90d360-03d9-11ec-b847-e1184f4ea812",
+                    "foreignField": [
+                        "bb90d360-03d9-11ec-b847-e1184f4ea812",
+                        "61c7d1c1-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "sample": 71774,
+                    "GUID": "61c70e71-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "parentRelationship": "bbfab8c0-03d9-11ec-b847-e1184f4ea812"
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "SalesOrderDetailID",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 110562,
+                    "GUID": "61c70e72-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "OrderQty",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 1,
+                    "GUID": "61c70e73-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "ProductID",
+                    "isActivated": true,
+                    "required": true,
+                    "foreignCollection": "bb820650-03d9-11ec-b847-e1184f4ea812",
+                    "foreignField": [
+                        "bb820650-03d9-11ec-b847-e1184f4ea812",
+                        "61c25381-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "sample": 836,
+                    "GUID": "61c70e74-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "parentRelationship": "bbd83ca0-03d9-11ec-b847-e1184f4ea812"
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "UnitPrice",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 356.898,
+                    "GUID": "61c70e75-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "UnitPriceDiscount",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": "((0.0))",
+                    "sample": 0,
+                    "GUID": "61c70e76-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "LineTotal",
+                    "isActivated": true,
+                    "precision": 38,
+                    "scale": 6,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 356.898,
+                    "GUID": "61c70e77-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "rowguid",
+                    "isActivated": true,
+                    "length": null,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": "(newid())",
+                    "sample": "E3A1994C-7A68-4CE8-96A3-77FDD3BBD730",
+                    "GUID": "61c70e78-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "childType": "datetime",
+                    "type": "string",
+                    "name": "ModifiedDate",
+                    "isActivated": true,
+                    "required": true,
+                    "default": "(getdate())",
+                    "sample": "2008-06-01T00:00:00.000Z",
+                    "GUID": "61c70e79-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "61c70e70-4b8d-11ec-ae71-d5c74b0d4990",
+                "properties": [],
+                "type": "definitions"
+            },
+            "type": "object",
+            "path": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "GUID": "bb8e3b50-03d9-11ec-b847-e1184f4ea812",
+            "bucketId": "bbad5c10-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "collectionName": "SalesOrderHeader",
+            "isActivated": true,
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": true,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "SalesOrderID",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": "(NEXT VALUE FOR [SalesLT].[SalesOrderNumber])",
+                    "sample": 71774,
+                    "GUID": "61c7d1c1-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "childRelationships": [
+                        "bbfab8c0-03d9-11ec-b847-e1184f4ea812"
+                    ]
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "RevisionNumber",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": "((0))",
+                    "sample": 2,
+                    "GUID": "61c7d1c2-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "childType": "datetime",
+                    "type": "string",
+                    "name": "OrderDate",
+                    "isActivated": true,
+                    "required": true,
+                    "default": "(getdate())",
+                    "sample": "2008-06-01T00:00:00.000Z",
+                    "GUID": "61c7d1c3-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "childType": "datetime",
+                    "type": "string",
+                    "name": "DueDate",
+                    "isActivated": true,
+                    "required": true,
+                    "sample": "2008-06-13T00:00:00.000Z",
+                    "GUID": "61c7d1c4-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "childType": "datetime",
+                    "type": "string",
+                    "name": "ShipDate",
+                    "isActivated": true,
+                    "required": true,
+                    "sample": "2008-06-08T00:00:00.000Z",
+                    "GUID": "61c7d1c5-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "Status",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": 1,
+                    "sample": 5,
+                    "GUID": "61c7d1c6-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "name": "OnlineOrderFlag",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/Flag",
+                    "refType": "model",
+                    "refIdPath": [
+                        "b1488830-03d9-11ec-b847-e1184f4ea812",
+                        "b1488831-03d9-11ec-b847-e1184f4ea812",
+                        "bba65730-03d9-11ec-b847-e1184f4ea812"
+                    ],
+                    "ref": "bba65730-03d9-11ec-b847-e1184f4ea812",
+                    "GUID": "61c7d1c7-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "SalesOrderNumber",
+                    "isActivated": true,
+                    "length": 25,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "SO71774",
+                    "GUID": "61c7d1c8-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "name": "PurchaseOrderNumber",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/OrderNumber",
+                    "refType": "model",
+                    "refIdPath": [
+                        "b1488830-03d9-11ec-b847-e1184f4ea812",
+                        "b1488831-03d9-11ec-b847-e1184f4ea812",
+                        "bba7ddd0-03d9-11ec-b847-e1184f4ea812"
+                    ],
+                    "ref": "bba7ddd0-03d9-11ec-b847-e1184f4ea812",
+                    "GUID": "61c7f8d0-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "AccountNumber",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#model/definitions/AccountNumber",
+                    "refType": "model",
+                    "refIdPath": [
+                        "b1488830-03d9-11ec-b847-e1184f4ea812",
+                        "b1488831-03d9-11ec-b847-e1184f4ea812",
+                        "bba93d60-03d9-11ec-b847-e1184f4ea812"
+                    ],
+                    "ref": "bba93d60-03d9-11ec-b847-e1184f4ea812",
+                    "GUID": "61c7f8d1-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "CustomerID",
+                    "isActivated": true,
+                    "required": true,
+                    "foreignCollection": "bb7b0170-03d9-11ec-b847-e1184f4ea812",
+                    "foreignField": [
+                        "bb7b0170-03d9-11ec-b847-e1184f4ea812",
+                        "61bed111-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "sample": 29847,
+                    "GUID": "61c7f8d2-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "parentRelationship": "bbc15940-03d9-11ec-b847-e1184f4ea812"
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "ShipToAddressID",
+                    "isActivated": true,
+                    "required": true,
+                    "foreignCollection": "bb784250-03d9-11ec-b847-e1184f4ea812",
+                    "foreignField": [
+                        "bb784250-03d9-11ec-b847-e1184f4ea812",
+                        "61bd4a71-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "sample": 1092,
+                    "GUID": "61c7f8d3-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "parentRelationship": "bbf42910-03d9-11ec-b847-e1184f4ea812"
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "BillToAddressID",
+                    "isActivated": true,
+                    "required": true,
+                    "foreignCollection": "bb784250-03d9-11ec-b847-e1184f4ea812",
+                    "foreignField": [
+                        "bb784250-03d9-11ec-b847-e1184f4ea812",
+                        "61bd4a71-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "sample": 1092,
+                    "GUID": "61c7f8d4-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {},
+                    "parentRelationship": "bbee5cb0-03d9-11ec-b847-e1184f4ea812"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "ShipMethod",
+                    "isActivated": true,
+                    "length": 50,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": "CARGO TRANSPORT 5",
+                    "GUID": "61c7f8d5-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "CreditCardApprovalCode",
+                    "isActivated": true,
+                    "length": 15,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": null,
+                    "GUID": "61c7f8d6-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "SubTotal",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": "((0.00))",
+                    "sample": 880.3484,
+                    "GUID": "61c7f8d7-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "TaxAmt",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": "((0.00))",
+                    "sample": 70.4279,
+                    "GUID": "61c7f8d8-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "Freight",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": "((0.00))",
+                    "sample": 22.0087,
+                    "GUID": "61c7f8d9-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "name": "TotalDue",
+                    "isActivated": true,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": 972.785,
+                    "GUID": "61c7f8da-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "Comment",
+                    "isActivated": true,
+                    "length": -1,
+                    "required": true,
+                    "relationshipType": "",
+                    "sample": null,
+                    "GUID": "61c7f8db-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "rowguid",
+                    "isActivated": true,
+                    "length": null,
+                    "required": true,
+                    "relationshipType": "",
+                    "default": "(newid())",
+                    "sample": "89E42CDC-8506-48A2-B89B-EB3E64E3554E",
+                    "GUID": "61c7f8dc-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "childType": "datetime",
+                    "type": "string",
+                    "name": "ModifiedDate",
+                    "isActivated": true,
+                    "required": true,
+                    "default": "(getdate())",
+                    "sample": "2008-06-08T00:00:00.000Z",
+                    "GUID": "61c7f8dd-4b8d-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "GUID": "61c7d1c0-4b8d-11ec-ae71-d5c74b0d4990",
+                "properties": [],
+                "type": "definitions"
+            },
+            "type": "object",
+            "path": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "GUID": "bb90d360-03d9-11ec-b847-e1184f4ea812",
+            "bucketId": "bbad5c10-03d9-11ec-b847-e1184f4ea812"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "SalesLT",
+            "isActivated": true,
+            "backgroundColor": {
+                "r": 187,
+                "g": 187,
+                "b": 187,
+                "a": 1
+            },
+            "type": "bucket",
+            "show": true,
+            "path": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "GUID": "bbad5c10-03d9-11ec-b847-e1184f4ea812",
+            "collectionIds": [
+                "bb784250-03d9-11ec-b847-e1184f4ea812",
+                "bb7b0170-03d9-11ec-b847-e1184f4ea812",
+                "bb7d4b60-03d9-11ec-b847-e1184f4ea812",
+                "bb820650-03d9-11ec-b847-e1184f4ea812",
+                "bb845040-03d9-11ec-b847-e1184f4ea812",
+                "bb86e850-03d9-11ec-b847-e1184f4ea812",
+                "bb895950-03d9-11ec-b847-e1184f4ea812",
+                "bb8ba340-03d9-11ec-b847-e1184f4ea812",
+                "bb8e3b50-03d9-11ec-b847-e1184f4ea812",
+                "bb90d360-03d9-11ec-b847-e1184f4ea812"
+            ]
+        }
+    ],
+    "views": [
+        {
+            "name": "vProductAndDescription",
+            "isActivated": true,
+            "viewOn": "bb820650-03d9-11ec-b847-e1184f4ea812",
+            "pipeline": "[\n    {\n        \"$project\": {\n            \"Culture\": 1,\n            \"Description\": 1,\n            \"Name\": 1,\n            \"ProductID\": 1,\n            \"ProductModel\": \"$Name\"\n        }\n    }\n]",
+            "properties": [
+                {
+                    "name": "Culture",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModelProductDescription/Culture",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb8ba340-03d9-11ec-b847-e1184f4ea812",
+                        "61c62413-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8729-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bc8720-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "Description",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductDescription/Description",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb86e850-03d9-11ec-b847-e1184f4ea812",
+                        "61c40132-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8720-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bc8721-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "Name",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/Product/Name",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb820650-03d9-11ec-b847-e1184f4ea812",
+                        "61c25382-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f3904-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bc8722-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "ProductID",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/Product/ProductID",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb820650-03d9-11ec-b847-e1184f4ea812",
+                        "61c25381-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f3906-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bc8723-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "ProductModel",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/Name",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c482-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8726-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bc8724-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                }
+            ],
+            "type": "object",
+            "path": [],
+            "GUID": "bb936b70-03d9-11ec-b847-e1184f4ea812",
+            "bucketId": "bbad5c10-03d9-11ec-b847-e1184f4ea812",
+            "definitions": {
+                "properties": []
+            }
+        },
+        {
+            "name": "vGetAllCategories",
+            "isActivated": true,
+            "viewOn": "bb845040-03d9-11ec-b847-e1184f4ea812",
+            "pipeline": "[\n    {\n        \"$project\": {\n            \"ParentProductCategoryName\": \"$Name\",\n            \"ProductCategoryID\": \"$Name\",\n            \"ProductCategoryName\": \"$Name\"\n        }\n    }\n]",
+            "properties": [
+                {
+                    "name": "ParentProductCategoryName",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductCategory/Name",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb845040-03d9-11ec-b847-e1184f4ea812",
+                        "61c33de3-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f6012-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcd540-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "ProductCategoryID",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductCategory/Name",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb845040-03d9-11ec-b847-e1184f4ea812",
+                        "61c33de3-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f6012-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcd541-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "ProductCategoryName",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductCategory/Name",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb845040-03d9-11ec-b847-e1184f4ea812",
+                        "61c33de3-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f6012-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcd542-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                }
+            ],
+            "type": "object",
+            "path": [],
+            "GUID": "bb969fc0-03d9-11ec-b847-e1184f4ea812",
+            "bucketId": "bbad5c10-03d9-11ec-b847-e1184f4ea812",
+            "definitions": {
+                "properties": []
+            }
+        },
+        {
+            "name": "vProductModelCatalogDescription",
+            "isActivated": true,
+            "viewOn": "bb895950-03d9-11ec-b847-e1184f4ea812",
+            "pipeline": "[\n    {\n        \"$project\": {\n            \"BikeFrame\": \"$CatalogDescription\",\n            \"Color\": \"$CatalogDescription\",\n            \"Copyright\": \"$CatalogDescription\",\n            \"Crankset\": \"$CatalogDescription\",\n            \"MaintenanceDescription\": \"$CatalogDescription\",\n            \"Manufacturer\": \"$CatalogDescription\",\n            \"Material\": \"$CatalogDescription\",\n            \"ModifiedDate\": 1,\n            \"Name\": 1,\n            \"NoOfYears\": \"$CatalogDescription\",\n            \"Pedal\": \"$CatalogDescription\",\n            \"PictureAngle\": \"$CatalogDescription\",\n            \"PictureSize\": \"$CatalogDescription\",\n            \"ProductLine\": \"$CatalogDescription\",\n            \"ProductModelID\": 1,\n            \"ProductPhotoID\": \"$CatalogDescription\",\n            \"ProductURL\": \"$CatalogDescription\",\n            \"RiderExperience\": \"$CatalogDescription\",\n            \"Saddle\": \"$CatalogDescription\",\n            \"Style\": \"$CatalogDescription\",\n            \"Summary\": \"$CatalogDescription\",\n            \"WarrantyDescription\": \"$CatalogDescription\",\n            \"WarrantyPeriod\": \"$CatalogDescription\",\n            \"Wheel\": \"$CatalogDescription\",\n            \"rowguid\": 1\n        }\n    }\n]",
+            "properties": [
+                {
+                    "name": "BikeFrame",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc50-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "Color",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc51-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "Copyright",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc52-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "Crankset",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc53-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "MaintenanceDescription",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc54-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "Manufacturer",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc55-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "Material",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc56-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "ModifiedDate",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/ModifiedDate",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c485-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8725-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc57-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "Name",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/Name",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c482-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8726-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc58-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "NoOfYears",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc59-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "Pedal",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc5a-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "PictureAngle",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc5b-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "PictureSize",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc5c-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "ProductLine",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc5d-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "ProductModelID",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/ProductModelID",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c481-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8727-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc5e-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "ProductPhotoID",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc5f-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "ProductURL",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc60-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "RiderExperience",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc61-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "Saddle",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc62-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "Style",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc63-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "Summary",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc64-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "WarrantyDescription",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc65-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "WarrantyPeriod",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc66-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "Wheel",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/CatalogDescription",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8724-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc67-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                },
+                {
+                    "name": "rowguid",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#collection/definitions/ProductModel/rowguid",
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c484-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "ref": "992f8728-6a9d-11ea-a5ff-a16524f9bb05",
+                    "GUID": "61bcfc68-4b8d-11ec-ae71-d5c74b0d4990",
+                    "type": "reference",
+                    "hackoladeMeta": {},
+                    "error": {}
+                }
+            ],
+            "type": "object",
+            "path": [],
+            "GUID": "bb9a2230-03d9-11ec-b847-e1184f4ea812",
+            "bucketId": "bbad5c10-03d9-11ec-b847-e1184f4ea812",
+            "definitions": {
+                "properties": []
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "name": "FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID",
+            "description": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "bb90d360-03d9-11ec-b847-e1184f4ea812",
+            "parentField": [
+                [
+                    "bb90d360-03d9-11ec-b847-e1184f4ea812",
+                    "61c7d1c1-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "bb8e3b50-03d9-11ec-b847-e1184f4ea812",
+            "childField": [
+                [
+                    "bb8e3b50-03d9-11ec-b847-e1184f4ea812",
+                    "61c70e71-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "path": [],
+            "GUID": "bbfab8c0-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "name": "FK_ProductModelProductDescription_ProductModel_ProductModelID",
+            "description": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "bb895950-03d9-11ec-b847-e1184f4ea812",
+            "parentField": [
+                [
+                    "bb895950-03d9-11ec-b847-e1184f4ea812",
+                    "61c4c481-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "bb8ba340-03d9-11ec-b847-e1184f4ea812",
+            "childField": [
+                [
+                    "bb8ba340-03d9-11ec-b847-e1184f4ea812",
+                    "61c62411-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "path": [],
+            "GUID": "bbccf200-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "name": "FK_ProductModelProductDescription_ProductDescription_ProductDescriptionID",
+            "description": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "bb86e850-03d9-11ec-b847-e1184f4ea812",
+            "parentField": [
+                [
+                    "bb86e850-03d9-11ec-b847-e1184f4ea812",
+                    "61c40131-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "bb8ba340-03d9-11ec-b847-e1184f4ea812",
+            "childField": [
+                [
+                    "bb8ba340-03d9-11ec-b847-e1184f4ea812",
+                    "61c62412-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "path": [],
+            "GUID": "bbd29750-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "name": "FK_ProductCategory_ProductCategory_ParentProductCategoryID_ProductCategoryID",
+            "description": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "bb845040-03d9-11ec-b847-e1184f4ea812",
+            "parentField": [
+                [
+                    "bb845040-03d9-11ec-b847-e1184f4ea812",
+                    "61c33de1-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "bb845040-03d9-11ec-b847-e1184f4ea812",
+            "childField": [
+                [
+                    "bb845040-03d9-11ec-b847-e1184f4ea812",
+                    "61c33de2-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "path": [],
+            "GUID": "bbe36030-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "name": "FK_Product_ProductModel_ProductModelID",
+            "description": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "bb895950-03d9-11ec-b847-e1184f4ea812",
+            "parentField": [
+                [
+                    "bb895950-03d9-11ec-b847-e1184f4ea812",
+                    "61c4c481-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "bb820650-03d9-11ec-b847-e1184f4ea812",
+            "childField": [
+                [
+                    "bb820650-03d9-11ec-b847-e1184f4ea812",
+                    "61c2538a-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "path": [],
+            "GUID": "bbc6fe90-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "name": "FK_SalesOrderDetail_Product_ProductID",
+            "description": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "bb820650-03d9-11ec-b847-e1184f4ea812",
+            "parentField": [
+                [
+                    "bb820650-03d9-11ec-b847-e1184f4ea812",
+                    "61c25381-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "bb8e3b50-03d9-11ec-b847-e1184f4ea812",
+            "childField": [
+                [
+                    "bb8e3b50-03d9-11ec-b847-e1184f4ea812",
+                    "61c70e74-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "path": [],
+            "GUID": "bbd83ca0-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "name": "FK_Product_ProductCategory_ProductCategoryID",
+            "description": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "bb845040-03d9-11ec-b847-e1184f4ea812",
+            "parentField": [
+                [
+                    "bb845040-03d9-11ec-b847-e1184f4ea812",
+                    "61c33de1-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "bb820650-03d9-11ec-b847-e1184f4ea812",
+            "childField": [
+                [
+                    "bb820650-03d9-11ec-b847-e1184f4ea812",
+                    "61c25389-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "path": [],
+            "GUID": "bbddbae0-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "name": "FK_CustomerAddress_Customer_CustomerID",
+            "description": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "bb7b0170-03d9-11ec-b847-e1184f4ea812",
+            "parentField": [
+                [
+                    "bb7b0170-03d9-11ec-b847-e1184f4ea812",
+                    "61bed111-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "bb7d4b60-03d9-11ec-b847-e1184f4ea812",
+            "childField": [
+                [
+                    "bb7d4b60-03d9-11ec-b847-e1184f4ea812",
+                    "61c030a0-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "path": [],
+            "GUID": "bbbb8ce0-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "name": "FK_SalesOrderHeader_Customer_CustomerID",
+            "description": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "bb7b0170-03d9-11ec-b847-e1184f4ea812",
+            "parentField": [
+                [
+                    "bb7b0170-03d9-11ec-b847-e1184f4ea812",
+                    "61bed111-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "bb90d360-03d9-11ec-b847-e1184f4ea812",
+            "childField": [
+                [
+                    "bb90d360-03d9-11ec-b847-e1184f4ea812",
+                    "61c7f8d2-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "path": [],
+            "GUID": "bbc15940-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "name": "FK_CustomerAddress_Address_AddressID",
+            "description": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "bb784250-03d9-11ec-b847-e1184f4ea812",
+            "parentField": [
+                [
+                    "bb784250-03d9-11ec-b847-e1184f4ea812",
+                    "61bd4a71-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "bb7d4b60-03d9-11ec-b847-e1184f4ea812",
+            "childField": [
+                [
+                    "bb7d4b60-03d9-11ec-b847-e1184f4ea812",
+                    "61c030a1-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "path": [],
+            "GUID": "bbe8de70-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "name": "FK_SalesOrderHeader_Address_BillTo_AddressID",
+            "description": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "bb784250-03d9-11ec-b847-e1184f4ea812",
+            "parentField": [
+                [
+                    "bb784250-03d9-11ec-b847-e1184f4ea812",
+                    "61bd4a71-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "bb90d360-03d9-11ec-b847-e1184f4ea812",
+            "childField": [
+                [
+                    "bb90d360-03d9-11ec-b847-e1184f4ea812",
+                    "61c7f8d4-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "path": [],
+            "GUID": "bbee5cb0-03d9-11ec-b847-e1184f4ea812"
+        },
+        {
+            "name": "FK_SalesOrderHeader_Address_ShipTo_AddressID",
+            "description": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "bb784250-03d9-11ec-b847-e1184f4ea812",
+            "parentField": [
+                [
+                    "bb784250-03d9-11ec-b847-e1184f4ea812",
+                    "61bd4a71-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "bb90d360-03d9-11ec-b847-e1184f4ea812",
+            "childField": [
+                [
+                    "bb90d360-03d9-11ec-b847-e1184f4ea812",
+                    "61c7f8d3-4b8d-11ec-ae71-d5c74b0d4990"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "comments": "",
+            "path": [],
+            "GUID": "bbf42910-03d9-11ec-b847-e1184f4ea812"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "bb784250-03d9-11ec-b847-e1184f4ea812": "Address",
+        "bb7b0170-03d9-11ec-b847-e1184f4ea812": "Customer",
+        "bb7d4b60-03d9-11ec-b847-e1184f4ea812": "CustomerAddress",
+        "bb820650-03d9-11ec-b847-e1184f4ea812": "Product",
+        "bb845040-03d9-11ec-b847-e1184f4ea812": "ProductCategory",
+        "bb86e850-03d9-11ec-b847-e1184f4ea812": "ProductDescription",
+        "bb895950-03d9-11ec-b847-e1184f4ea812": "ProductModel",
+        "bb8ba340-03d9-11ec-b847-e1184f4ea812": "ProductModelProductDescription",
+        "bb8e3b50-03d9-11ec-b847-e1184f4ea812": "SalesOrderDetail",
+        "bb90d360-03d9-11ec-b847-e1184f4ea812": "SalesOrderHeader",
+        "bb936b70-03d9-11ec-b847-e1184f4ea812": "vProductAndDescription",
+        "bb969fc0-03d9-11ec-b847-e1184f4ea812": "vGetAllCategories",
+        "bb9a2230-03d9-11ec-b847-e1184f4ea812": "vProductModelCatalogDescription",
+        "bb9d7d90-03d9-11ec-b847-e1184f4ea812": "Name",
+        "bb9f2b40-03d9-11ec-b847-e1184f4ea812": "NameStyle",
+        "bba45b60-03d9-11ec-b847-e1184f4ea812": "Phone",
+        "bba65730-03d9-11ec-b847-e1184f4ea812": "Flag",
+        "bba7ddd0-03d9-11ec-b847-e1184f4ea812": "OrderNumber",
+        "bba93d60-03d9-11ec-b847-e1184f4ea812": "AccountNumber",
+        "bbad5c10-03d9-11ec-b847-e1184f4ea812": "SalesLT",
+        "bbbb8ce0-03d9-11ec-b847-e1184f4ea812": "FK_CustomerAddress_Customer_CustomerID",
+        "bbc15940-03d9-11ec-b847-e1184f4ea812": "FK_SalesOrderHeader_Customer_CustomerID",
+        "bbc6fe90-03d9-11ec-b847-e1184f4ea812": "FK_Product_ProductModel_ProductModelID",
+        "bbccf200-03d9-11ec-b847-e1184f4ea812": "FK_ProductModelProductDescription_ProductModel_ProductModelID",
+        "bbd29750-03d9-11ec-b847-e1184f4ea812": "FK_ProductModelProductDescription_ProductDescription_ProductDescriptionID",
+        "bbd83ca0-03d9-11ec-b847-e1184f4ea812": "FK_SalesOrderDetail_Product_ProductID",
+        "bbddbae0-03d9-11ec-b847-e1184f4ea812": "FK_Product_ProductCategory_ProductCategoryID",
+        "bbe36030-03d9-11ec-b847-e1184f4ea812": "FK_ProductCategory_ProductCategory_ParentProductCategoryID_ProductCategoryID",
+        "bbe8de70-03d9-11ec-b847-e1184f4ea812": "FK_CustomerAddress_Address_AddressID",
+        "bbee5cb0-03d9-11ec-b847-e1184f4ea812": "FK_SalesOrderHeader_Address_BillTo_AddressID",
+        "bbf42910-03d9-11ec-b847-e1184f4ea812": "FK_SalesOrderHeader_Address_ShipTo_AddressID",
+        "bbfab8c0-03d9-11ec-b847-e1184f4ea812": "FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID",
+        "61bc8720-4b8d-11ec-ae71-d5c74b0d4990": "Culture",
+        "61bc8721-4b8d-11ec-ae71-d5c74b0d4990": "Description",
+        "61bc8722-4b8d-11ec-ae71-d5c74b0d4990": "Name",
+        "61bc8723-4b8d-11ec-ae71-d5c74b0d4990": "ProductID",
+        "61bc8724-4b8d-11ec-ae71-d5c74b0d4990": "ProductModel",
+        "61bcd540-4b8d-11ec-ae71-d5c74b0d4990": "ParentProductCategoryName",
+        "61bcd541-4b8d-11ec-ae71-d5c74b0d4990": "ProductCategoryID",
+        "61bcd542-4b8d-11ec-ae71-d5c74b0d4990": "ProductCategoryName",
+        "61bcfc50-4b8d-11ec-ae71-d5c74b0d4990": "BikeFrame",
+        "61bcfc51-4b8d-11ec-ae71-d5c74b0d4990": "Color",
+        "61bcfc52-4b8d-11ec-ae71-d5c74b0d4990": "Copyright",
+        "61bcfc53-4b8d-11ec-ae71-d5c74b0d4990": "Crankset",
+        "61bcfc54-4b8d-11ec-ae71-d5c74b0d4990": "MaintenanceDescription",
+        "61bcfc55-4b8d-11ec-ae71-d5c74b0d4990": "Manufacturer",
+        "61bcfc56-4b8d-11ec-ae71-d5c74b0d4990": "Material",
+        "61bcfc57-4b8d-11ec-ae71-d5c74b0d4990": "ModifiedDate",
+        "61bcfc58-4b8d-11ec-ae71-d5c74b0d4990": "Name",
+        "61bcfc59-4b8d-11ec-ae71-d5c74b0d4990": "NoOfYears",
+        "61bcfc5a-4b8d-11ec-ae71-d5c74b0d4990": "Pedal",
+        "61bcfc5b-4b8d-11ec-ae71-d5c74b0d4990": "PictureAngle",
+        "61bcfc5c-4b8d-11ec-ae71-d5c74b0d4990": "PictureSize",
+        "61bcfc5d-4b8d-11ec-ae71-d5c74b0d4990": "ProductLine",
+        "61bcfc5e-4b8d-11ec-ae71-d5c74b0d4990": "ProductModelID",
+        "61bcfc5f-4b8d-11ec-ae71-d5c74b0d4990": "ProductPhotoID",
+        "61bcfc60-4b8d-11ec-ae71-d5c74b0d4990": "ProductURL",
+        "61bcfc61-4b8d-11ec-ae71-d5c74b0d4990": "RiderExperience",
+        "61bcfc62-4b8d-11ec-ae71-d5c74b0d4990": "Saddle",
+        "61bcfc63-4b8d-11ec-ae71-d5c74b0d4990": "Style",
+        "61bcfc64-4b8d-11ec-ae71-d5c74b0d4990": "Summary",
+        "61bcfc65-4b8d-11ec-ae71-d5c74b0d4990": "WarrantyDescription",
+        "61bcfc66-4b8d-11ec-ae71-d5c74b0d4990": "WarrantyPeriod",
+        "61bcfc67-4b8d-11ec-ae71-d5c74b0d4990": "Wheel",
+        "61bcfc68-4b8d-11ec-ae71-d5c74b0d4990": "rowguid",
+        "61bd4a71-4b8d-11ec-ae71-d5c74b0d4990": "AddressID",
+        "61bd4a72-4b8d-11ec-ae71-d5c74b0d4990": "AddressLine1",
+        "61bd4a73-4b8d-11ec-ae71-d5c74b0d4990": "AddressLine2",
+        "61bd4a74-4b8d-11ec-ae71-d5c74b0d4990": "City",
+        "61bd4a75-4b8d-11ec-ae71-d5c74b0d4990": "StateProvince",
+        "61bd4a76-4b8d-11ec-ae71-d5c74b0d4990": "CountryRegion",
+        "61bd4a77-4b8d-11ec-ae71-d5c74b0d4990": "PostalCode",
+        "61bd4a78-4b8d-11ec-ae71-d5c74b0d4990": "rowguid",
+        "61bd4a79-4b8d-11ec-ae71-d5c74b0d4990": "ModifiedDate",
+        "61bed111-4b8d-11ec-ae71-d5c74b0d4990": "CustomerID",
+        "61bed112-4b8d-11ec-ae71-d5c74b0d4990": "NameStyle",
+        "61bed113-4b8d-11ec-ae71-d5c74b0d4990": "Title",
+        "61bed114-4b8d-11ec-ae71-d5c74b0d4990": "FirstName",
+        "61bed115-4b8d-11ec-ae71-d5c74b0d4990": "MiddleName",
+        "61bed116-4b8d-11ec-ae71-d5c74b0d4990": "LastName",
+        "61bed117-4b8d-11ec-ae71-d5c74b0d4990": "Suffix",
+        "61bed118-4b8d-11ec-ae71-d5c74b0d4990": "CompanyName",
+        "61bed119-4b8d-11ec-ae71-d5c74b0d4990": "SalesPerson",
+        "61bed11a-4b8d-11ec-ae71-d5c74b0d4990": "EmailAddress",
+        "61bed11b-4b8d-11ec-ae71-d5c74b0d4990": "Phone",
+        "61bed11c-4b8d-11ec-ae71-d5c74b0d4990": "PasswordHash",
+        "61bed11d-4b8d-11ec-ae71-d5c74b0d4990": "PasswordSalt",
+        "61bed11e-4b8d-11ec-ae71-d5c74b0d4990": "rowguid",
+        "61bed11f-4b8d-11ec-ae71-d5c74b0d4990": "ModifiedDate",
+        "61c030a0-4b8d-11ec-ae71-d5c74b0d4990": "CustomerID",
+        "61c030a1-4b8d-11ec-ae71-d5c74b0d4990": "AddressID",
+        "61c030a2-4b8d-11ec-ae71-d5c74b0d4990": "AddressType",
+        "61c030a3-4b8d-11ec-ae71-d5c74b0d4990": "rowguid",
+        "61c030a4-4b8d-11ec-ae71-d5c74b0d4990": "ModifiedDate",
+        "61c25381-4b8d-11ec-ae71-d5c74b0d4990": "ProductID",
+        "61c25382-4b8d-11ec-ae71-d5c74b0d4990": "Name",
+        "61c25383-4b8d-11ec-ae71-d5c74b0d4990": "ProductNumber",
+        "61c25384-4b8d-11ec-ae71-d5c74b0d4990": "Color",
+        "61c25385-4b8d-11ec-ae71-d5c74b0d4990": "StandardCost",
+        "61c25386-4b8d-11ec-ae71-d5c74b0d4990": "ListPrice",
+        "61c25387-4b8d-11ec-ae71-d5c74b0d4990": "Size",
+        "61c25388-4b8d-11ec-ae71-d5c74b0d4990": "Weight",
+        "61c25389-4b8d-11ec-ae71-d5c74b0d4990": "ProductCategoryID",
+        "61c2538a-4b8d-11ec-ae71-d5c74b0d4990": "ProductModelID",
+        "61c2538b-4b8d-11ec-ae71-d5c74b0d4990": "SellStartDate",
+        "61c2538c-4b8d-11ec-ae71-d5c74b0d4990": "SellEndDate",
+        "61c2538d-4b8d-11ec-ae71-d5c74b0d4990": "DiscontinuedDate",
+        "61c2538e-4b8d-11ec-ae71-d5c74b0d4990": "ThumbNailPhoto",
+        "61c2538f-4b8d-11ec-ae71-d5c74b0d4990": "ThumbnailPhotoFileName",
+        "61c25390-4b8d-11ec-ae71-d5c74b0d4990": "rowguid",
+        "61c25391-4b8d-11ec-ae71-d5c74b0d4990": "ModifiedDate",
+        "61c33de1-4b8d-11ec-ae71-d5c74b0d4990": "ProductCategoryID",
+        "61c33de2-4b8d-11ec-ae71-d5c74b0d4990": "ParentProductCategoryID",
+        "61c33de3-4b8d-11ec-ae71-d5c74b0d4990": "Name",
+        "61c33de4-4b8d-11ec-ae71-d5c74b0d4990": "rowguid",
+        "61c33de5-4b8d-11ec-ae71-d5c74b0d4990": "ModifiedDate",
+        "61c40131-4b8d-11ec-ae71-d5c74b0d4990": "ProductDescriptionID",
+        "61c40132-4b8d-11ec-ae71-d5c74b0d4990": "Description",
+        "61c40133-4b8d-11ec-ae71-d5c74b0d4990": "rowguid",
+        "61c40134-4b8d-11ec-ae71-d5c74b0d4990": "ModifiedDate",
+        "61c4c481-4b8d-11ec-ae71-d5c74b0d4990": "ProductModelID",
+        "61c4c482-4b8d-11ec-ae71-d5c74b0d4990": "Name",
+        "61c4c483-4b8d-11ec-ae71-d5c74b0d4990": "CatalogDescription",
+        "61c4c484-4b8d-11ec-ae71-d5c74b0d4990": "rowguid",
+        "61c4c485-4b8d-11ec-ae71-d5c74b0d4990": "ModifiedDate",
+        "61c62411-4b8d-11ec-ae71-d5c74b0d4990": "ProductModelID",
+        "61c62412-4b8d-11ec-ae71-d5c74b0d4990": "ProductDescriptionID",
+        "61c62413-4b8d-11ec-ae71-d5c74b0d4990": "Culture",
+        "61c62414-4b8d-11ec-ae71-d5c74b0d4990": "rowguid",
+        "61c62415-4b8d-11ec-ae71-d5c74b0d4990": "ModifiedDate",
+        "61c70e71-4b8d-11ec-ae71-d5c74b0d4990": "SalesOrderID",
+        "61c70e72-4b8d-11ec-ae71-d5c74b0d4990": "SalesOrderDetailID",
+        "61c70e73-4b8d-11ec-ae71-d5c74b0d4990": "OrderQty",
+        "61c70e74-4b8d-11ec-ae71-d5c74b0d4990": "ProductID",
+        "61c70e75-4b8d-11ec-ae71-d5c74b0d4990": "UnitPrice",
+        "61c70e76-4b8d-11ec-ae71-d5c74b0d4990": "UnitPriceDiscount",
+        "61c70e77-4b8d-11ec-ae71-d5c74b0d4990": "LineTotal",
+        "61c70e78-4b8d-11ec-ae71-d5c74b0d4990": "rowguid",
+        "61c70e79-4b8d-11ec-ae71-d5c74b0d4990": "ModifiedDate",
+        "61c7d1c1-4b8d-11ec-ae71-d5c74b0d4990": "SalesOrderID",
+        "61c7d1c2-4b8d-11ec-ae71-d5c74b0d4990": "RevisionNumber",
+        "61c7d1c3-4b8d-11ec-ae71-d5c74b0d4990": "OrderDate",
+        "61c7d1c4-4b8d-11ec-ae71-d5c74b0d4990": "DueDate",
+        "61c7d1c5-4b8d-11ec-ae71-d5c74b0d4990": "ShipDate",
+        "61c7d1c6-4b8d-11ec-ae71-d5c74b0d4990": "Status",
+        "61c7d1c7-4b8d-11ec-ae71-d5c74b0d4990": "OnlineOrderFlag",
+        "61c7d1c8-4b8d-11ec-ae71-d5c74b0d4990": "SalesOrderNumber",
+        "61c7f8d0-4b8d-11ec-ae71-d5c74b0d4990": "PurchaseOrderNumber",
+        "61c7f8d1-4b8d-11ec-ae71-d5c74b0d4990": "AccountNumber",
+        "61c7f8d2-4b8d-11ec-ae71-d5c74b0d4990": "CustomerID",
+        "61c7f8d3-4b8d-11ec-ae71-d5c74b0d4990": "ShipToAddressID",
+        "61c7f8d4-4b8d-11ec-ae71-d5c74b0d4990": "BillToAddressID",
+        "61c7f8d5-4b8d-11ec-ae71-d5c74b0d4990": "ShipMethod",
+        "61c7f8d6-4b8d-11ec-ae71-d5c74b0d4990": "CreditCardApprovalCode",
+        "61c7f8d7-4b8d-11ec-ae71-d5c74b0d4990": "SubTotal",
+        "61c7f8d8-4b8d-11ec-ae71-d5c74b0d4990": "TaxAmt",
+        "61c7f8d9-4b8d-11ec-ae71-d5c74b0d4990": "Freight",
+        "61c7f8da-4b8d-11ec-ae71-d5c74b0d4990": "TotalDue",
+        "61c7f8db-4b8d-11ec-ae71-d5c74b0d4990": "Comment",
+        "61c7f8dc-4b8d-11ec-ae71-d5c74b0d4990": "rowguid",
+        "61c7f8dd-4b8d-11ec-ae71-d5c74b0d4990": "ModifiedDate"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [
+            {
+                "primaryKey": false,
+                "type": "string",
+                "required": true,
+                "length": 50,
+                "name": "Name",
+                "isActivated": true,
+                "path": [],
+                "error": {},
+                "GUID": "bb9d7d90-03d9-11ec-b847-e1184f4ea812",
+                "parentRelationship": "",
+                "childRelationships": [],
+                "hackoladeMeta": {},
+                "definitionRefs": [
+                    [
+                        "bb784250-03d9-11ec-b847-e1184f4ea812",
+                        "61bd4a75-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    [
+                        "bb784250-03d9-11ec-b847-e1184f4ea812",
+                        "61bd4a76-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    [
+                        "bb7b0170-03d9-11ec-b847-e1184f4ea812",
+                        "61bed114-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    [
+                        "bb7b0170-03d9-11ec-b847-e1184f4ea812",
+                        "61bed115-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    [
+                        "bb7b0170-03d9-11ec-b847-e1184f4ea812",
+                        "61bed116-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    [
+                        "bb7d4b60-03d9-11ec-b847-e1184f4ea812",
+                        "61c030a2-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    [
+                        "bb820650-03d9-11ec-b847-e1184f4ea812",
+                        "61c25382-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    [
+                        "bb845040-03d9-11ec-b847-e1184f4ea812",
+                        "61c33de3-4b8d-11ec-ae71-d5c74b0d4990"
+                    ],
+                    [
+                        "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "61c4c482-4b8d-11ec-ae71-d5c74b0d4990"
+                    ]
+                ],
+                "properties": []
+            },
+            {
+                "exclusiveMinimum": false,
+                "exclusiveMaximum": false,
+                "primaryKey": false,
+                "childType": "numeric",
+                "type": "numeric",
+                "default": "((0))",
+                "required": true,
+                "precision": null,
+                "scale": null,
+                "name": "NameStyle",
+                "isActivated": true,
+                "path": [],
+                "error": {},
+                "GUID": "bb9f2b40-03d9-11ec-b847-e1184f4ea812",
+                "parentRelationship": "",
+                "childRelationships": [],
+                "hackoladeMeta": {},
+                "definitionRefs": [
+                    [
+                        "bb7b0170-03d9-11ec-b847-e1184f4ea812",
+                        "61bed112-4b8d-11ec-ae71-d5c74b0d4990"
+                    ]
+                ],
+                "properties": []
+            },
+            {
+                "primaryKey": false,
+                "type": "string",
+                "length": 25,
+                "name": "Phone",
+                "isActivated": true,
+                "path": [],
+                "error": {},
+                "GUID": "bba45b60-03d9-11ec-b847-e1184f4ea812",
+                "parentRelationship": "",
+                "childRelationships": [],
+                "hackoladeMeta": {},
+                "definitionRefs": [
+                    [
+                        "bb7b0170-03d9-11ec-b847-e1184f4ea812",
+                        "61bed11b-4b8d-11ec-ae71-d5c74b0d4990"
+                    ]
+                ],
+                "properties": []
+            },
+            {
+                "exclusiveMinimum": false,
+                "exclusiveMaximum": false,
+                "primaryKey": false,
+                "childType": "numeric",
+                "type": "numeric",
+                "default": 1,
+                "required": true,
+                "precision": null,
+                "scale": null,
+                "name": "Flag",
+                "isActivated": true,
+                "path": [],
+                "error": {},
+                "GUID": "bba65730-03d9-11ec-b847-e1184f4ea812",
+                "parentRelationship": "",
+                "childRelationships": [],
+                "hackoladeMeta": {},
+                "definitionRefs": [
+                    [
+                        "bb90d360-03d9-11ec-b847-e1184f4ea812",
+                        "61c7d1c7-4b8d-11ec-ae71-d5c74b0d4990"
+                    ]
+                ],
+                "properties": []
+            },
+            {
+                "primaryKey": false,
+                "type": "string",
+                "length": 25,
+                "name": "OrderNumber",
+                "isActivated": true,
+                "path": [],
+                "error": {},
+                "GUID": "bba7ddd0-03d9-11ec-b847-e1184f4ea812",
+                "parentRelationship": "",
+                "childRelationships": [],
+                "hackoladeMeta": {},
+                "definitionRefs": [
+                    [
+                        "bb90d360-03d9-11ec-b847-e1184f4ea812",
+                        "61c7f8d0-4b8d-11ec-ae71-d5c74b0d4990"
+                    ]
+                ],
+                "properties": []
+            },
+            {
+                "primaryKey": false,
+                "type": "string",
+                "length": 15,
+                "name": "AccountNumber",
+                "isActivated": true,
+                "path": [],
+                "error": {},
+                "GUID": "bba93d60-03d9-11ec-b847-e1184f4ea812",
+                "parentRelationship": "",
+                "childRelationships": [],
+                "hackoladeMeta": {},
+                "definitionRefs": [
+                    [
+                        "bb90d360-03d9-11ec-b847-e1184f4ea812",
+                        "61c7f8d1-4b8d-11ec-ae71-d5c74b0d4990"
+                    ]
+                ],
+                "properties": []
+            }
+        ],
+        "GUID": "b1488831-03d9-11ec-b847-e1184f4ea812"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "b1488833-03d9-11ec-b847-e1184f4ea812"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "b1488832-03d9-11ec-b847-e1184f4ea812"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v2",
+    "dbVendor": "BigQuery",
+    "appTarget": "BigQuery",
+    "creationTS": "2021-08-23T06:16:45.875Z",
+    "GUID": "900f8190-4b8d-11ec-ae71-d5c74b0d4990",
+    "isLineageEnabled": false,
+    "polyglotModelPaths": [],
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "lastModifTS": "2021-11-22T12:13:12.107Z",
+    "persistenceSchemaVersion": "5",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "BigQuery",
+        "pluginVersion": "0.1.0",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "5.2.11"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "bb784250-03d9-11ec-b847-e1184f4ea812",
+                        "x": 192.52730938900586,
+                        "y": 211.31246202748991,
+                        "width": 277,
+                        "height": 195,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bb7b0170-03d9-11ec-b847-e1184f4ea812",
+                        "x": 629.9015948451236,
+                        "y": 478.52850973689686,
+                        "width": 288,
+                        "height": 303,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bb7d4b60-03d9-11ec-b847-e1184f4ea812",
+                        "x": 643.9340816462964,
+                        "y": 239.7065717503445,
+                        "width": 269,
+                        "height": 123,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bb820650-03d9-11ec-b847-e1184f4ea812",
+                        "x": 1178.133847240573,
+                        "y": 471.10369640293953,
+                        "width": 356,
+                        "height": 339,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bb845040-03d9-11ec-b847-e1184f4ea812",
+                        "x": 1024.2952370820533,
+                        "y": 236.1260410717453,
+                        "width": 337,
+                        "height": 123,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bb86e850-03d9-11ec-b847-e1184f4ea812",
+                        "x": 1781.295236128379,
+                        "y": 243.1260410717453,
+                        "width": 292,
+                        "height": 105,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bb895950-03d9-11ec-b847-e1184f4ea812",
+                        "x": 1429.295236128379,
+                        "y": 236.1260410717453,
+                        "width": 300,
+                        "height": 123,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bb8ba340-03d9-11ec-b847-e1184f4ea812",
+                        "x": 1686.0570210483747,
+                        "y": 482.126040118071,
+                        "width": 310,
+                        "height": 123,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bb8e3b50-03d9-11ec-b847-e1184f4ea812",
+                        "x": 632.4316185112706,
+                        "y": 839.8806329653187,
+                        "width": 294,
+                        "height": 195,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bb90d360-03d9-11ec-b847-e1184f4ea812",
+                        "x": 171.52730938900586,
+                        "y": 485.3124610738156,
+                        "width": 337,
+                        "height": 429,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bb936b70-03d9-11ec-b847-e1184f4ea812",
+                        "x": 1703.4645381512123,
+                        "y": 826.1612805359434,
+                        "width": 259,
+                        "height": 123,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bb969fc0-03d9-11ec-b847-e1184f4ea812",
+                        "x": 1718.0178391257743,
+                        "y": 1033.6760368121631,
+                        "width": 304,
+                        "height": 87,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bb9a2230-03d9-11ec-b847-e1184f4ea812",
+                        "x": 1208.8805399362525,
+                        "y": 862.634052047546,
+                        "width": 314,
+                        "height": 483,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 131.52730938900586,
+                        "y": 171.31246202748991,
+                        "GUID": "bbad5c10-03d9-11ec-b847-e1184f4ea812"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

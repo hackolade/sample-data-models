@@ -1,0 +1,1118 @@
+{
+    "modelName": "socialNetwork",
+    "collections": [
+        {
+            "type": "object",
+            "description": "Transaction collection of friendships",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "GUID": "49f97120-f3e6-11e5-9c39-49b275bf0df4",
+                    "description": "Mongo-generated ID for friendship",
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "name": "_id",
+                    "required": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "d6a35371-31ad-11e6-bfd8-019a140b8dcc"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "65522ca0-f3e6-11e5-9c39-49b275bf0df4",
+                    "description": "Array of invitor and invitee",
+                    "type": "array",
+                    "primaryKey": false,
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "name": "friendship",
+                    "relationshipType": "",
+                    "properties": [
+                        {
+                            "GUID": "ac884eb0-f3e6-11e5-9c39-49b275bf0df4",
+                            "description": "Invitor",
+                            "type": "string",
+                            "minLength": 5,
+                            "maxLength": 20,
+                            "pattern": "^[a-z0-9_-]{5,20}$",
+                            "arrayItem": true,
+                            "primaryKey": false,
+                            "relationshipType": "Foreign Key",
+                            "parentRelationship": "e324b710-f3e6-11e5-9c39-49b275bf0df4",
+                            "foreignCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                            "foreignField": [
+                                "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                                "ce8b8e40-f36f-11e5-adc0-8541c508aaa8"
+                            ],
+                            "isActivated": true
+                        },
+                        {
+                            "GUID": "b07c4530-f3e6-11e5-9c39-49b275bf0df4",
+                            "description": "Invitee",
+                            "type": "string",
+                            "minLength": 5,
+                            "maxLength": 20,
+                            "pattern": "^[a-z0-9_-]{5,20}$",
+                            "arrayItem": true,
+                            "primaryKey": false,
+                            "relationshipType": "Foreign Key",
+                            "parentRelationship": "81538ec0-f3e7-11e5-938a-bd54cc414623",
+                            "foreignCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                            "foreignField": [
+                                "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                                "ce8b8e40-f36f-11e5-adc0-8541c508aaa8"
+                            ],
+                            "isActivated": true
+                        }
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "472c4000-f3e9-11e5-938a-bd54cc414623",
+                    "description": "Status of friendship",
+                    "type": "string",
+                    "primaryKey": false,
+                    "enum": [
+                        "uninvitation",
+                        "friends"
+                    ],
+                    "name": "friendshipStatus",
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "de7fcec1-31ad-11e6-bfd8-019a140b8dcc"
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "collectionName": "friendships",
+            "GUID": "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+            "indexes": [],
+            "definitions": {
+                "id": "c65be2c1-bc10-11e9-980c-11e55127ccf6",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        },
+        {
+            "description": "Master collection of skills",
+            "properties": [
+                {
+                    "GUID": "c30c51d0-f400-11e5-938a-bd54cc414623",
+                    "description": "Mongo-generated ID for skills",
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "childRelationships": [
+                        "6cceb960-f401-11e5-938a-bd54cc414623"
+                    ],
+                    "name": "_id",
+                    "properties": [],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "eafe2650-f400-11e5-938a-bd54cc414623",
+                    "type": "string",
+                    "primaryKey": false,
+                    "childRelationships": [
+                        "bcabd2b0-f401-11e5-938a-bd54cc414623"
+                    ],
+                    "name": "description",
+                    "properties": [],
+                    "isActivated": true
+                }
+            ],
+            "additionalProperties": false,
+            "type": "object",
+            "GUID": "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+            "collectionName": "skills",
+            "indexes": [],
+            "definitions": {
+                "id": "c65be2c2-bc10-11e9-980c-11e55127ccf6",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        },
+        {
+            "type": "object",
+            "description": "Collection of one-way friend relationships.  ",
+            "comments": "Both sides are recorded.  For sharding purposes, it may be required to split into 2 collections.",
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "GUID": "a17ac1b0-f378-11e5-ae63-ed98875331f1",
+                    "description": "Primary key of this colleciton, while being foreign key to username field in userProfiles collection",
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "name": "_id",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "ee8978c0-f378-11e5-ae63-ed98875331f1",
+                    "foreignCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                    "foreignField": [
+                        "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                        "ce8b8e40-f36f-11e5-adc0-8541c508aaa8"
+                    ],
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "GUID": "e5b9f570-f379-11e5-ae63-ed98875331f1",
+                    "description": "All friends of this user",
+                    "type": "document",
+                    "primaryKey": false,
+                    "properties": [
+                        {
+                            "GUID": "ce1ba400-31ad-11e6-bfd8-019a140b8dcc",
+                            "description": "Pattern field made of a document",
+                            "type": "document",
+                            "primaryKey": false,
+                            "properties": [
+                                {
+                                    "GUID": "d6a35370-31ad-11e6-bfd8-019a140b8dcc",
+                                    "description": "Foreign key to friendships collection",
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "sample": "ObjectId(\"507f1f77bcf86cd799439011\")",
+                                    "name": "friendshipId",
+                                    "relationshipType": "Foreign Key",
+                                    "parentRelationship": "d6a35371-31ad-11e6-bfd8-019a140b8dcc",
+                                    "foreignCollection": "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+                                    "foreignField": [
+                                        "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+                                        "49f97120-f3e6-11e5-9c39-49b275bf0df4"
+                                    ],
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "de7fcec0-31ad-11e6-bfd8-019a140b8dcc",
+                                    "description": "Status of friendship",
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "enum": [
+                                        "uninvitation",
+                                        "friends",
+                                        "invitation"
+                                    ],
+                                    "sample": "invitation",
+                                    "name": "friendshipStatus",
+                                    "relationshipType": "Foreign Master",
+                                    "parentRelationship": "de7fcec1-31ad-11e6-bfd8-019a140b8dcc",
+                                    "foreignCollection": "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+                                    "foreignField": [
+                                        "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+                                        "472c4000-f3e9-11e5-938a-bd54cc414623"
+                                    ],
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "e6ecf150-31ad-11e6-bfd8-019a140b8dcc",
+                                    "description": "Full name of user, from userProfiles collection",
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "sample": "James Bond",
+                                    "name": "userFullName",
+                                    "relationshipType": "Foreign Master",
+                                    "parentRelationship": "e6ecf151-31ad-11e6-bfd8-019a140b8dcc",
+                                    "foreignCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                                    "foreignField": [
+                                        "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                                        "59a72a50-f37c-11e5-ae63-ed98875331f1"
+                                    ],
+                                    "isActivated": true
+                                }
+                            ],
+                            "minProperties": 3,
+                            "maxProperties": 3,
+                            "additionalProperties": false,
+                            "sampleName": "johndoe",
+                            "name": "^[a-z0-9_-]{5,20}$",
+                            "isPatternField": true,
+                            "relationshipType": "Foreign Key",
+                            "parentRelationship": "12a20f60-31ae-11e6-bfd8-019a140b8dcc",
+                            "foreignCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                            "foreignField": [
+                                "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                                "ce8b8e40-f36f-11e5-adc0-8541c508aaa8"
+                            ],
+                            "isActivated": true
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "name": "friends",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "GUID": "429d5df0-f379-11e5-ae63-ed98875331f1",
+                    "description": "Info object about user stats",
+                    "type": "document",
+                    "primaryKey": false,
+                    "properties": [
+                        {
+                            "GUID": "84159ef0-f379-11e5-ae63-ed98875331f1",
+                            "description": "Number of activities",
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "sample": 57,
+                            "name": "userActivityCount",
+                            "mode": "double",
+                            "relationshipType": "Foreign Master",
+                            "parentRelationship": "087809e0-3217-11e6-bc05-2bb400ec3751",
+                            "foreignCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                            "foreignField": [
+                                "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                                "c4842a60-f374-11e5-a4af-ebcc6a2c834f",
+                                "d043d350-f374-11e5-a4af-ebcc6a2c834f"
+                            ],
+                            "isActivated": true
+                        },
+                        {
+                            "GUID": "c53d7600-f379-11e5-ae63-ed98875331f1",
+                            "description": "Number of friends",
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "sample": 235,
+                            "name": "userFriendCount",
+                            "mode": "integer64",
+                            "relationshipType": "Foreign Master",
+                            "parentRelationship": "13c43080-3217-11e6-bc05-2bb400ec3751",
+                            "foreignCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                            "foreignField": [
+                                "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                                "c4842a60-f374-11e5-a4af-ebcc6a2c834f",
+                                "2e4b2cf0-f375-11e5-a4af-ebcc6a2c834f"
+                            ],
+                            "isActivated": true
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "name": "userStats",
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "d0b09f70-f3e3-11e5-9c39-49b275bf0df4",
+                    "description": "For future needs -- array of blocked username's by this user",
+                    "type": "array",
+                    "primaryKey": false,
+                    "name": "blockedUsers",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "01871070-f3e4-11e5-9c39-49b275bf0df4",
+                    "foreignCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                    "foreignField": [
+                        "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                        "ce8b8e40-f36f-11e5-adc0-8541c508aaa8"
+                    ],
+                    "properties": [
+                        {
+                            "GUID": "eb7901d0-f3e3-11e5-9c39-49b275bf0df4",
+                            "description": "Foreign key to userProfiles collection",
+                            "type": "string",
+                            "minLength": 5,
+                            "maxLength": 20,
+                            "pattern": "[a-z0-9_-]{5,20}$",
+                            "arrayItem": true,
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "isActivated": true
+                        }
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "collectionName": "userFriends",
+            "GUID": "527fcb00-f378-11e5-ae63-ed98875331f1",
+            "indexes": [
+                {
+                    "GUID": "da7477e0-71a4-11e6-a79e-0b28214cceb7",
+                    "name": "friendsIndex",
+                    "key": "friends",
+                    "unique": true,
+                    "dropDuplicates": false,
+                    "ttlIndex": "",
+                    "backgroundIndexing": true,
+                    "languageOverride": false,
+                    "weights": "",
+                    "defaultLanguage": "french"
+                }
+            ],
+            "definitions": {
+                "id": "c65be2c3-bc10-11e9-980c-11e55127ccf6",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        },
+        {
+            "type": "object",
+            "GUID": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+            "description": "Master collection of user profiles",
+            "comments": "Hello",
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "GUID": "759533e0-f36f-11e5-adc0-8541c508aaa8",
+                    "description": "Mongo-generated ID for user",
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "sample": "ObjectId(\"56bdcfb7c71a376135eaf0aa\")",
+                    "name": "_id",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "GUID": "ce8b8e40-f36f-11e5-adc0-8541c508aaa8",
+                    "description": "Chosen unique name for the user, to be used in URL.  Must be lowercase with no space, punctuation or special_characters",
+                    "type": "string",
+                    "minLength": 5,
+                    "maxLength": 20,
+                    "pattern": "^[a-z0-9_-]{5,20}$",
+                    "primaryKey": false,
+                    "childRelationships": [
+                        "ee8978c0-f378-11e5-ae63-ed98875331f1",
+                        "01871070-f3e4-11e5-9c39-49b275bf0df4",
+                        "e324b710-f3e6-11e5-9c39-49b275bf0df4",
+                        "81538ec0-f3e7-11e5-938a-bd54cc414623",
+                        "12a20f60-31ae-11e6-bfd8-019a140b8dcc"
+                    ],
+                    "sample": "pdesmarets",
+                    "name": "username",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "636bbd00-f370-11e5-a4af-ebcc6a2c834f",
+                    "description": "One-way encrypted string.  Min 6 max 20 characters.  Must have at least an uppercase, a digit and a special character",
+                    "type": "string",
+                    "pattern": "^((?=.*\\\\d)(?=.*[a-zA-Z])[a-zA-Z0-9!@#$%&*\\u00C0-\\u017F]{6,20})$",
+                    "primaryKey": false,
+                    "sample": "Machin1!",
+                    "name": "password",
+                    "error": {
+                        "sample": true
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "cfd61a30-f370-11e5-a4af-ebcc6a2c834f",
+                    "description": "User email, used for login and notification purposes",
+                    "type": "string",
+                    "format": "email",
+                    "primaryKey": false,
+                    "sample": "pascal@desmarets.org",
+                    "name": "primaryEmail",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "01916cf0-f371-11e5-a4af-ebcc6a2c834f",
+                    "description": "Up to 2 secondary email addresses",
+                    "type": "array",
+                    "primaryKey": false,
+                    "maxItems": 3,
+                    "name": "secondaryEmails",
+                    "properties": [
+                        {
+                            "GUID": "319301c0-f371-11e5-a4af-ebcc6a2c834f",
+                            "description": "Up to 2 secondary email addresses",
+                            "type": "string",
+                            "format": "email",
+                            "sample": "pdesmarets@gmail.com",
+                            "arrayItem": true,
+                            "primaryKey": false,
+                            "isActivated": true
+                        }
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "8494dab0-f371-11e5-a4af-ebcc6a2c834f",
+                    "type": "string",
+                    "primaryKey": false,
+                    "sample": "Pascal",
+                    "name": "firstName",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "91657e70-f371-11e5-a4af-ebcc6a2c834f",
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "middleName",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "b56e0ad0-f371-11e5-a4af-ebcc6a2c834f",
+                    "type": "string",
+                    "primaryKey": false,
+                    "sample": "Desmarets",
+                    "name": "lastName",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "59a72a50-f37c-11e5-ae63-ed98875331f1",
+                    "description": "Concatenation of firstName and lastName",
+                    "type": "string",
+                    "primaryKey": false,
+                    "childRelationships": [
+                        "e6ecf151-31ad-11e6-bfd8-019a140b8dcc"
+                    ],
+                    "name": "fullName",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "d8d6d4c0-f371-11e5-a4af-ebcc6a2c834f",
+                    "type": "date",
+                    "primaryKey": false,
+                    "name": "birthdate",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "23a5d500-f372-11e5-a4af-ebcc6a2c834f",
+                    "type": "boolean",
+                    "default": false,
+                    "primaryKey": false,
+                    "name": "gender",
+                    "isActivated": true,
+                    "error": {}
+                },
+                {
+                    "GUID": "4a849660-f373-11e5-a4af-ebcc6a2c834f",
+                    "type": "string",
+                    "primaryKey": false,
+                    "sample": "Brussels",
+                    "name": "city",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "0f272380-f373-11e5-a4af-ebcc6a2c834f",
+                    "type": "string",
+                    "primaryKey": false,
+                    "sample": "Brabant",
+                    "name": "stateProvince",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "2a024a90-f373-11e5-a4af-ebcc6a2c834f",
+                    "type": "string",
+                    "primaryKey": false,
+                    "sample": "1000",
+                    "name": "postalCode",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "553f2b60-f373-11e5-a4af-ebcc6a2c834f",
+                    "type": "string",
+                    "primaryKey": false,
+                    "sample": "Belgium",
+                    "name": "country",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "8ecb1d20-f374-11e5-a4af-ebcc6a2c834f",
+                    "type": "timestamp",
+                    "primaryKey": false,
+                    "name": "creationTS",
+                    "isActivated": true,
+                    "error": {}
+                },
+                {
+                    "GUID": "0037b610-f381-11e5-9c39-49b275bf0df4",
+                    "type": "timestamp",
+                    "primaryKey": false,
+                    "name": "lastModifTS",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "43b5eb20-f37f-11e5-9c39-49b275bf0df4",
+                    "type": "string",
+                    "format": "uri",
+                    "primaryKey": false,
+                    "name": "userThumbnailPath",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c4842a60-f374-11e5-a4af-ebcc6a2c834f",
+                    "description": "Info object about activity and friend statistics",
+                    "type": "document",
+                    "primaryKey": false,
+                    "properties": [
+                        {
+                            "GUID": "d043d350-f374-11e5-a4af-ebcc6a2c834f",
+                            "description": "Number of activities",
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "name": "activityCount",
+                            "mode": "number",
+                            "childRelationships": [
+                                "087809e0-3217-11e6-bc05-2bb400ec3751"
+                            ],
+                            "sample": 57,
+                            "isActivated": true
+                        },
+                        {
+                            "GUID": "2e4b2cf0-f375-11e5-a4af-ebcc6a2c834f",
+                            "description": "Number of friends",
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "name": "friendCount",
+                            "mode": "number",
+                            "childRelationships": [
+                                "13c43080-3217-11e6-bc05-2bb400ec3751"
+                            ],
+                            "sample": 235,
+                            "isActivated": true
+                        }
+                    ],
+                    "minProperties": 2,
+                    "maxProperties": 2,
+                    "additionalProperties": false,
+                    "name": "stats",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "1bf866b0-f377-11e5-ae63-ed98875331f1",
+                    "description": "Optional array of skills",
+                    "type": "array",
+                    "primaryKey": false,
+                    "name": "skills",
+                    "properties": [
+                        {
+                            "GUID": "5f2f95c0-f377-11e5-ae63-ed98875331f1",
+                            "description": "Info object about user skills",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "GUID": "784f2a20-f377-11e5-ae63-ed98875331f1",
+                                    "description": "Foreign key to skills collection",
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "Foreign Key",
+                                    "parentRelationship": "6cceb960-f401-11e5-938a-bd54cc414623",
+                                    "foreignCollection": "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+                                    "foreignField": [
+                                        "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+                                        "c30c51d0-f400-11e5-938a-bd54cc414623"
+                                    ],
+                                    "name": "skillID",
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "cc529490-f377-11e5-ae63-ed98875331f1",
+                                    "description": "Skill description from user_skills collection.",
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "Foreign Master",
+                                    "parentRelationship": "bcabd2b0-f401-11e5-938a-bd54cc414623",
+                                    "foreignCollection": "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+                                    "foreignField": [
+                                        "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+                                        "eafe2650-f400-11e5-938a-bd54cc414623"
+                                    ],
+                                    "name": "skillDescription",
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "ea673bc0-f377-11e5-ae63-ed98875331f1",
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "name": "skillActivityCount",
+                                    "mode": "number",
+                                    "isActivated": true
+                                }
+                            ],
+                            "minProperties": 2,
+                            "maxProperties": 3,
+                            "additionalProperties": false,
+                            "arrayItem": true,
+                            "primaryKey": false,
+                            "isActivated": true
+                        }
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "collectionName": "userProfiles",
+            "indexes": [],
+            "definitions": {
+                "id": "c65be2c4-bc10-11e9-980c-11e55127ccf6",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "ee8978c0-f378-11e5-ae63-ed98875331f1",
+            "name": "fk of username",
+            "description": "Relationship linking username document in userFriends to existing username in userProfiles collection.",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+            "parentField": [
+                [
+                    "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                    "ce8b8e40-f36f-11e5-adc0-8541c508aaa8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "527fcb00-f378-11e5-ae63-ed98875331f1",
+            "childField": [
+                [
+                    "527fcb00-f378-11e5-ae63-ed98875331f1",
+                    "a17ac1b0-f378-11e5-ae63-ed98875331f1"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "01871070-f3e4-11e5-9c39-49b275bf0df4",
+            "name": "fk of blockedUsers' username",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+            "parentField": [
+                [
+                    "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                    "ce8b8e40-f36f-11e5-adc0-8541c508aaa8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "527fcb00-f378-11e5-ae63-ed98875331f1",
+            "childField": [
+                [
+                    "527fcb00-f378-11e5-ae63-ed98875331f1",
+                    "d0b09f70-f3e3-11e5-9c39-49b275bf0df4"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "6cceb960-f401-11e5-938a-bd54cc414623",
+            "name": "fk of skills",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+            "parentField": [
+                [
+                    "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+                    "c30c51d0-f400-11e5-938a-bd54cc414623"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+            "childField": [
+                [
+                    "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                    "1bf866b0-f377-11e5-ae63-ed98875331f1",
+                    "5f2f95c0-f377-11e5-ae63-ed98875331f1",
+                    "784f2a20-f377-11e5-ae63-ed98875331f1"
+                ]
+            ],
+            "childCardinality": "1..n"
+        },
+        {
+            "GUID": "13c43080-3217-11e6-bc05-2bb400ec3751",
+            "name": "New Relationship(4)",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Master",
+            "parentCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+            "parentField": [
+                [
+                    "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                    "c4842a60-f374-11e5-a4af-ebcc6a2c834f",
+                    "2e4b2cf0-f375-11e5-a4af-ebcc6a2c834f"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "527fcb00-f378-11e5-ae63-ed98875331f1",
+            "childField": [
+                [
+                    "527fcb00-f378-11e5-ae63-ed98875331f1",
+                    "429d5df0-f379-11e5-ae63-ed98875331f1",
+                    "c53d7600-f379-11e5-ae63-ed98875331f1"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "e6ecf151-31ad-11e6-bfd8-019a140b8dcc",
+            "name": "New Relationship(2)",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Master",
+            "parentCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+            "parentField": [
+                [
+                    "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                    "59a72a50-f37c-11e5-ae63-ed98875331f1"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "527fcb00-f378-11e5-ae63-ed98875331f1",
+            "childField": [
+                [
+                    "527fcb00-f378-11e5-ae63-ed98875331f1",
+                    "e5b9f570-f379-11e5-ae63-ed98875331f1",
+                    "ce1ba400-31ad-11e6-bfd8-019a140b8dcc",
+                    "e6ecf150-31ad-11e6-bfd8-019a140b8dcc"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "12a20f60-31ae-11e6-bfd8-019a140b8dcc",
+            "name": "fk of friends' username",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+            "parentField": [
+                [
+                    "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                    "ce8b8e40-f36f-11e5-adc0-8541c508aaa8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "527fcb00-f378-11e5-ae63-ed98875331f1",
+            "childField": [
+                [
+                    "527fcb00-f378-11e5-ae63-ed98875331f1",
+                    "e5b9f570-f379-11e5-ae63-ed98875331f1",
+                    "ce1ba400-31ad-11e6-bfd8-019a140b8dcc"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "087809e0-3217-11e6-bc05-2bb400ec3751",
+            "name": "New Relationship(3)",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Master",
+            "parentCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+            "parentField": [
+                [
+                    "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                    "c4842a60-f374-11e5-a4af-ebcc6a2c834f",
+                    "d043d350-f374-11e5-a4af-ebcc6a2c834f"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "527fcb00-f378-11e5-ae63-ed98875331f1",
+            "childField": [
+                [
+                    "527fcb00-f378-11e5-ae63-ed98875331f1",
+                    "429d5df0-f379-11e5-ae63-ed98875331f1",
+                    "84159ef0-f379-11e5-ae63-ed98875331f1"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "81538ec0-f3e7-11e5-938a-bd54cc414623",
+            "name": "fk of invitee's username",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+            "parentField": [
+                [
+                    "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                    "ce8b8e40-f36f-11e5-adc0-8541c508aaa8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+            "childField": [
+                [
+                    "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+                    "65522ca0-f3e6-11e5-9c39-49b275bf0df4",
+                    "b07c4530-f3e6-11e5-9c39-49b275bf0df4"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "bcabd2b0-f401-11e5-938a-bd54cc414623",
+            "name": "fm of skillDescription",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Master",
+            "parentCollection": "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+            "parentField": [
+                [
+                    "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+                    "eafe2650-f400-11e5-938a-bd54cc414623"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+            "childField": [
+                [
+                    "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                    "1bf866b0-f377-11e5-ae63-ed98875331f1",
+                    "5f2f95c0-f377-11e5-ae63-ed98875331f1",
+                    "cc529490-f377-11e5-ae63-ed98875331f1"
+                ]
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "e324b710-f3e6-11e5-9c39-49b275bf0df4",
+            "name": "fk of invitor's username",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+            "parentField": [
+                [
+                    "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                    "ce8b8e40-f36f-11e5-adc0-8541c508aaa8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+            "childField": [
+                [
+                    "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+                    "65522ca0-f3e6-11e5-9c39-49b275bf0df4",
+                    "ac884eb0-f3e6-11e5-9c39-49b275bf0df4"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "d6a35371-31ad-11e6-bfd8-019a140b8dcc",
+            "name": "New Relationship",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+            "parentField": [
+                [
+                    "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+                    "49f97120-f3e6-11e5-9c39-49b275bf0df4"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "527fcb00-f378-11e5-ae63-ed98875331f1",
+            "childField": [
+                [
+                    "527fcb00-f378-11e5-ae63-ed98875331f1",
+                    "e5b9f570-f379-11e5-ae63-ed98875331f1",
+                    "ce1ba400-31ad-11e6-bfd8-019a140b8dcc",
+                    "d6a35370-31ad-11e6-bfd8-019a140b8dcc"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "de7fcec1-31ad-11e6-bfd8-019a140b8dcc",
+            "name": "New Relationship(1)",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Master",
+            "parentCollection": "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+            "parentField": [
+                [
+                    "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+                    "472c4000-f3e9-11e5-938a-bd54cc414623"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "527fcb00-f378-11e5-ae63-ed98875331f1",
+            "childField": [
+                [
+                    "527fcb00-f378-11e5-ae63-ed98875331f1",
+                    "e5b9f570-f379-11e5-ae63-ed98875331f1",
+                    "ce1ba400-31ad-11e6-bfd8-019a140b8dcc",
+                    "de7fcec0-31ad-11e6-bfd8-019a140b8dcc"
+                ]
+            ],
+            "childCardinality": "0..n"
+        }
+    ],
+    "users": [
+        {
+            "GUID": "bfd823f0-f373-11e5-a4af-ebcc6a2c834f",
+            "name": "pascal",
+            "read": true,
+            "readWrite": true,
+            "dbAdmin": false,
+            "userAdmin": false,
+            "clusterAdmin": false,
+            "readAnyDatabase": false,
+            "readWriteAnyDatabase": false,
+            "userAdminAnyDatabase": false,
+            "dbAnyDatabase": false
+        },
+        {
+            "GUID": "c832a8e0-f373-11e5-a4af-ebcc6a2c834f",
+            "name": "admin",
+            "read": true,
+            "readWrite": true,
+            "dbAdmin": true,
+            "userAdmin": true,
+            "clusterAdmin": true,
+            "readAnyDatabase": true,
+            "readWriteAnyDatabase": true,
+            "userAdminAnyDatabase": true,
+            "dbAnyDatabase": true
+        }
+    ],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "4a349e70-f36f-11e5-adc0-8541c508aaa8": "userProfiles",
+        "759533e0-f36f-11e5-adc0-8541c508aaa8": "_id",
+        "ce8b8e40-f36f-11e5-adc0-8541c508aaa8": "username",
+        "636bbd00-f370-11e5-a4af-ebcc6a2c834f": "password",
+        "cfd61a30-f370-11e5-a4af-ebcc6a2c834f": "primaryEmail",
+        "01916cf0-f371-11e5-a4af-ebcc6a2c834f": "secondaryEmails",
+        "8494dab0-f371-11e5-a4af-ebcc6a2c834f": "firstName",
+        "91657e70-f371-11e5-a4af-ebcc6a2c834f": "middleName",
+        "b56e0ad0-f371-11e5-a4af-ebcc6a2c834f": "lastName",
+        "d8d6d4c0-f371-11e5-a4af-ebcc6a2c834f": "birthdate",
+        "23a5d500-f372-11e5-a4af-ebcc6a2c834f": "gender",
+        "6894ed40-f372-11e5-a4af-ebcc6a2c834f": "city",
+        "0f272380-f373-11e5-a4af-ebcc6a2c834f": "stateProvince",
+        "2a024a90-f373-11e5-a4af-ebcc6a2c834f": "postalCode",
+        "4a849660-f373-11e5-a4af-ebcc6a2c834f": "city",
+        "553f2b60-f373-11e5-a4af-ebcc6a2c834f": "country",
+        "8ecb1d20-f374-11e5-a4af-ebcc6a2c834f": "creationTS",
+        "c4842a60-f374-11e5-a4af-ebcc6a2c834f": "stats",
+        "d043d350-f374-11e5-a4af-ebcc6a2c834f": "activityCount",
+        "2e4b2cf0-f375-11e5-a4af-ebcc6a2c834f": "friendCount",
+        "1bf866b0-f377-11e5-ae63-ed98875331f1": "skills",
+        "784f2a20-f377-11e5-ae63-ed98875331f1": "skillID",
+        "cc529490-f377-11e5-ae63-ed98875331f1": "skillDescription",
+        "ea673bc0-f377-11e5-ae63-ed98875331f1": "skillActivityCount",
+        "527fcb00-f378-11e5-ae63-ed98875331f1": "userFriends",
+        "a17ac1b0-f378-11e5-ae63-ed98875331f1": "_id",
+        "429d5df0-f379-11e5-ae63-ed98875331f1": "userStats",
+        "84159ef0-f379-11e5-ae63-ed98875331f1": "userActivityCount",
+        "c53d7600-f379-11e5-ae63-ed98875331f1": "userFriendCount",
+        "e5b9f570-f379-11e5-ae63-ed98875331f1": "friends",
+        "59a72a50-f37c-11e5-ae63-ed98875331f1": "fullName",
+        "43b5eb20-f37f-11e5-9c39-49b275bf0df4": "userThumbnailPath",
+        "0037b610-f381-11e5-9c39-49b275bf0df4": "lastModifTS",
+        "d0b09f70-f3e3-11e5-9c39-49b275bf0df4": "blockedUsers",
+        "2e5777a0-f3e6-11e5-9c39-49b275bf0df4": "friendships",
+        "49f97120-f3e6-11e5-9c39-49b275bf0df4": "_id",
+        "65522ca0-f3e6-11e5-9c39-49b275bf0df4": "friendship",
+        "472c4000-f3e9-11e5-938a-bd54cc414623": "friendshipStatus",
+        "4a8e3c70-f3f9-11e5-938a-bd54cc414623": "skills",
+        "c30c51d0-f400-11e5-938a-bd54cc414623": "_id",
+        "eafe2650-f400-11e5-938a-bd54cc414623": "description",
+        "ce1ba400-31ad-11e6-bfd8-019a140b8dcc": "^[a-z0-9_-]{5,20}$",
+        "d6a35370-31ad-11e6-bfd8-019a140b8dcc": "friendshipId",
+        "de7fcec0-31ad-11e6-bfd8-019a140b8dcc": "friendshipStatus",
+        "e6ecf150-31ad-11e6-bfd8-019a140b8dcc": "userFullName"
+    },
+    "definitions": {
+        "id": "c65be2c0-bc10-11e9-980c-11e55127ccf6",
+        "properties": [],
+        "type": "definitions"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "c68f75e1-bc10-11e9-980c-11e55127ccf6"
+    },
+    "decorativeSymbols": [],
+    "dbVersion": "v3.2",
+    "dbVendor": "MongoDB",
+    "hideModelViews": true,
+    "appTarget": "MONGODB",
+    "creationTS": "2016-04-28T08:11:26.118Z",
+    "GUID": "8b6c2620-112d-11e6-9f2c-e978a8d7cc1e",
+    "code": "",
+    "lastModifTS": "2021-01-15T10:34:11.397Z",
+    "persistenceSchemaVersion": "4",
+    "description": "Social network to showcase Hackolade capabilities",
+    "comments": "One feature of particular interest is in the userFriends collection.  We have there a 'pattern field' for which the key a variable with a regular expression format.  This is useful to leverage the 'dot notation' of MongoDB.",
+    "author": "John",
+    "version": "5",
+    "validation": "MongoDB extension",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "4.3.3"
+    },
+    "hackoladeMeta": {},
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                        "x": 41,
+                        "y": 40,
+                        "width": 307,
+                        "height": 408
+                    },
+                    {
+                        "GUID": "527fcb00-f378-11e5-ae63-ed98875331f1",
+                        "x": 518,
+                        "y": 97,
+                        "width": 301,
+                        "height": 184
+                    },
+                    {
+                        "GUID": "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+                        "x": 536,
+                        "y": 348,
+                        "width": 264,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+                        "x": 71,
+                        "y": 518,
+                        "width": 244,
+                        "height": 58
+                    }
+                ],
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "changed": true
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

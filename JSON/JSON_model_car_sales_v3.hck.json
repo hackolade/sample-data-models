@@ -1,0 +1,832 @@
+{
+    "modelName": "car_sales_v2",
+    "collections": [
+        {
+            "collectionName": "car_sales",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "string",
+                    "name": "cust_date",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "format": "date",
+                    "GUID": "1dbd63f0-5d9a-11eb-ba6c-471f1286dd5d",
+                    "required": true,
+                    "sample": "2017-04-28",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "type": "array",
+                    "properties": [
+                        {
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "type": "string",
+                                    "name": "id",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "GUID": "df07ade0-8202-11eb-8147-91e16025b928",
+                                    "error": {},
+                                    "relationshipType": "Foreign Key",
+                                    "foreignCollection": "c6b0c0b0-8202-11eb-8147-91e16025b928",
+                                    "foreignField": [
+                                        "c6b0c0b0-8202-11eb-8147-91e16025b928",
+                                        "d14a1210-8202-11eb-8147-91e16025b928"
+                                    ],
+                                    "parentRelationship": "e2bb8e20-8202-11eb-8147-91e16025b928"
+                                },
+                                {
+                                    "code": "",
+                                    "name": "driversLicence",
+                                    "isActivated": true,
+                                    "type": "multiple",
+                                    "primaryKey": false,
+                                    "multipleTypes": [
+                                        {
+                                            "type": "string",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "GUID": "24ed4b90-5d9a-11eb-ba6c-471f1286dd5d",
+                                            "primaryKey": false
+                                        },
+                                        {
+                                            "type": "null",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "GUID": "24ed72a0-5d9a-11eb-ba6c-471f1286dd5d",
+                                            "primaryKey": false
+                                        }
+                                    ],
+                                    "GUID": "1dbd8b00-5d9a-11eb-ba6c-471f1286dd5d",
+                                    "required": false,
+                                    "sample": null,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "address",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "1dbd63f2-5d9a-11eb-ba6c-471f1286dd5d",
+                                    "required": true,
+                                    "sample": "SanFrancisco,CA",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "name",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "1dbd8b01-5d9a-11eb-ba6c-471f1286dd5d",
+                                    "required": true,
+                                    "sample": "JoyceRidgely",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "phone",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "1dbd8b02-5d9a-11eb-ba6c-471f1286dd5d",
+                                    "required": true,
+                                    "sample": "16504378889",
+                                    "description": "Added description"
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "email",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "GUID": "8eec7520-5d9a-11eb-ba6c-471f1286dd5d",
+                                    "format": "email"
+                                }
+                            ],
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "GUID": "24ec6130-5d9a-11eb-ba6c-471f1286dd5d",
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "name": "customer",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "1dbd63f1-5d9a-11eb-ba6c-471f1286dd5d",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "name": "dealership",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "1dbd8b03-5d9a-11eb-ba6c-471f1286dd5d",
+                    "required": true,
+                    "sample": "PaulMillerToyota",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "type": "string",
+                            "name": "id",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "1dbd8b05-5d9a-11eb-ba6c-471f1286dd5d",
+                            "required": true,
+                            "sample": "274",
+                            "error": {},
+                            "relationshipType": "Foreign Key",
+                            "foreignCollection": "c6b0c0b0-8202-11eb-8147-91e16025b928",
+                            "foreignField": [
+                                "c6b0c0b0-8202-11eb-8147-91e16025b928",
+                                "d14a1210-8202-11eb-8147-91e16025b928"
+                            ],
+                            "parentRelationship": "e8111070-8202-11eb-8147-91e16025b928"
+                        },
+                        {
+                            "type": "string",
+                            "name": "firstName",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "GUID": "a3185640-5d9a-11eb-ba6c-471f1286dd5d",
+                            "error": {}
+                        },
+                        {
+                            "type": "string",
+                            "name": "lastName",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "GUID": "a84f7b20-5d9a-11eb-ba6c-471f1286dd5d",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "phone",
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "GUID": "1dbd8b07-5d9a-11eb-ba6c-471f1286dd5d",
+                            "required": false,
+                            "sample": "+18889991010",
+                            "error": {},
+                            "hackoladeMeta": {},
+                            "default": ""
+                        }
+                    ],
+                    "name": "salesperson",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "1dbd8b04-5d9a-11eb-ba6c-471f1286dd5d",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "type": "array",
+                    "properties": [
+                        {
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "type": "array",
+                                    "properties": [
+                                        {
+                                            "type": "string",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "GUID": "24ecaf52-5d9a-11eb-ba6c-471f1286dd5d",
+                                            "arrayItem": true,
+                                            "arrayParentType": "array",
+                                            "sample": "extwarranty",
+                                            "error": {}
+                                        }
+                                    ],
+                                    "additionalItems": true,
+                                    "name": "extras",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "1dbd8b09-5d9a-11eb-ba6c-471f1286dd5d",
+                                    "required": true,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "make",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "1dbd8b10-5d9a-11eb-ba6c-471f1286dd5d",
+                                    "required": true,
+                                    "sample": "Honda",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "model",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "1dbd8b11-5d9a-11eb-ba6c-471f1286dd5d",
+                                    "required": true,
+                                    "sample": "Civic",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "price",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "1dbd8b12-5d9a-11eb-ba6c-471f1286dd5d",
+                                    "required": true,
+                                    "sample": "20275",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "year",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "1dbd8b13-5d9a-11eb-ba6c-471f1286dd5d",
+                                    "required": true,
+                                    "sample": "2017",
+                                    "error": {}
+                                },
+                                {
+                                    "type": "choice",
+                                    "properties": [
+                                        {
+                                            "type": "subschema",
+                                            "properties": [
+                                                {
+                                                    "code": "",
+                                                    "type": "null",
+                                                    "name": "insurance",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "1dbd8b0b-5d9a-11eb-ba6c-471f1286dd5d",
+                                                    "error": {}
+                                                }
+                                            ],
+                                            "isActivated": true,
+                                            "GUID": "1dbd8b0a-5d9a-11eb-ba6c-471f1286dd5d",
+                                            "additionalProperties": true,
+                                            "error": {}
+                                        },
+                                        {
+                                            "type": "subschema",
+                                            "properties": [
+                                                {
+                                                    "code": "",
+                                                    "type": "document",
+                                                    "properties": [
+                                                        {
+                                                            "code": "",
+                                                            "type": "array",
+                                                            "properties": [
+                                                                {
+                                                                    "type": "string",
+                                                                    "hackoladeMeta": {},
+                                                                    "isActivated": true,
+                                                                    "GUID": "24ecd660-5d9a-11eb-ba6c-471f1286dd5d",
+                                                                    "arrayItem": true,
+                                                                    "arrayParentType": "array",
+                                                                    "error": {}
+                                                                }
+                                                            ],
+                                                            "additionalItems": true,
+                                                            "name": "Auto",
+                                                            "isActivated": true,
+                                                            "primaryKey": false,
+                                                            "GUID": "1dbd8b0e-5d9a-11eb-ba6c-471f1286dd5d",
+                                                            "required": true,
+                                                            "error": {}
+                                                        },
+                                                        {
+                                                            "code": "",
+                                                            "type": "string",
+                                                            "name": "Health",
+                                                            "isActivated": true,
+                                                            "primaryKey": false,
+                                                            "GUID": "1dbd8b0f-5d9a-11eb-ba6c-471f1286dd5d",
+                                                            "required": true,
+                                                            "error": {}
+                                                        }
+                                                    ],
+                                                    "name": "insurance",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "1dbd8b0d-5d9a-11eb-ba6c-471f1286dd5d",
+                                                    "error": {}
+                                                }
+                                            ],
+                                            "isActivated": true,
+                                            "GUID": "1dbd8b0c-5d9a-11eb-ba6c-471f1286dd5d",
+                                            "additionalProperties": true,
+                                            "error": {}
+                                        }
+                                    ],
+                                    "isActivated": true,
+                                    "choice": "oneOf",
+                                    "GUID": "24ecaf51-5d9a-11eb-ba6c-471f1286dd5d",
+                                    "required": false,
+                                    "error": {}
+                                }
+                            ],
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "GUID": "24ecaf50-5d9a-11eb-ba6c-471f1286dd5d",
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "additionalProperties": true,
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "name": "vehicle",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "1dbd8b08-5d9a-11eb-ba6c-471f1286dd5d",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "24ebec00-5d9a-11eb-ba6c-471f1286dd5d",
+                "properties": []
+            },
+            "isActivated": true,
+            "GUID": "24ebc4f0-5d9a-11eb-ba6c-471f1286dd5d",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "bucketId": "24eb28b0-5d9a-11eb-ba6c-471f1286dd5d"
+        },
+        {
+            "code": "",
+            "collectionName": "people",
+            "type": "object",
+            "properties": [
+                {
+                    "type": "string",
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "GUID": "d14a1210-8202-11eb-8147-91e16025b928",
+                    "error": {},
+                    "childRelationships": [
+                        "e2bb8e20-8202-11eb-8147-91e16025b928",
+                        "e8111070-8202-11eb-8147-91e16025b928"
+                    ]
+                },
+                {
+                    "code": "",
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "type": "numeric",
+                            "name": "age",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "c6b18401-8202-11eb-8147-91e16025b928",
+                            "required": true,
+                            "sample": 24,
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "type": "string",
+                            "name": "gender",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "c6b18402-8202-11eb-8147-91e16025b928",
+                            "required": true,
+                            "sample": "F",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "first",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "c6b18404-8202-11eb-8147-91e16025b928",
+                                    "required": true,
+                                    "sample": "Jane",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "last",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "c6b18405-8202-11eb-8147-91e16025b928",
+                                    "required": true,
+                                    "sample": "Roberts",
+                                    "error": {}
+                                }
+                            ],
+                            "name": "name",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "GUID": "c6b18403-8202-11eb-8147-91e16025b928",
+                            "required": true,
+                            "error": {}
+                        }
+                    ],
+                    "name": "personal",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "c6b18400-8202-11eb-8147-91e16025b928",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "type": "array",
+                    "properties": [
+                        {
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "type",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "c6b18408-8202-11eb-8147-91e16025b928",
+                                    "required": true,
+                                    "sample": "car",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "string",
+                                    "name": "model",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "c6b18409-8202-11eb-8147-91e16025b928",
+                                    "required": true,
+                                    "sample": "Honda Accord",
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "document",
+                                    "properties": [
+                                        {
+                                            "code": "",
+                                            "type": "string",
+                                            "name": "company",
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "GUID": "c6b1840b-8202-11eb-8147-91e16025b928",
+                                            "required": true,
+                                            "sample": "Car Insurance",
+                                            "error": {}
+                                        },
+                                        {
+                                            "code": "",
+                                            "type": "string",
+                                            "name": "policy_num",
+                                            "isActivated": true,
+                                            "primaryKey": false,
+                                            "GUID": "c6b1840c-8202-11eb-8147-91e16025b928",
+                                            "required": true,
+                                            "sample": "98765",
+                                            "error": {}
+                                        }
+                                    ],
+                                    "name": "insurance",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "c6b1840a-8202-11eb-8147-91e16025b928",
+                                    "required": true,
+                                    "error": {}
+                                },
+                                {
+                                    "code": "",
+                                    "type": "array",
+                                    "properties": [
+                                        {
+                                            "type": "document",
+                                            "properties": [
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "date",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "c6b1840f-8202-11eb-8147-91e16025b928",
+                                                    "required": true,
+                                                    "sample": "01-13-2018",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "code": "",
+                                                    "type": "string",
+                                                    "name": "desc",
+                                                    "isActivated": true,
+                                                    "primaryKey": false,
+                                                    "GUID": "c6b18410-8202-11eb-8147-91e16025b928",
+                                                    "required": true,
+                                                    "sample": "new brakes",
+                                                    "error": {}
+                                                }
+                                            ],
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "GUID": "c6b1840e-8202-11eb-8147-91e16025b928",
+                                            "arrayItem": true,
+                                            "arrayParentType": "array",
+                                            "error": {}
+                                        }
+                                    ],
+                                    "additionalItems": true,
+                                    "name": "maintenance",
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "c6b1840d-8202-11eb-8147-91e16025b928",
+                                    "required": true,
+                                    "error": {}
+                                }
+                            ],
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "GUID": "c6b18407-8202-11eb-8147-91e16025b928",
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "name": "vehicles",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "c6b18406-8202-11eb-8147-91e16025b928",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "name": "source",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "c6b18411-8202-11eb-8147-91e16025b928",
+                    "required": true,
+                    "sample": "phone",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "c6b18412-8202-11eb-8147-91e16025b928",
+                "properties": []
+            },
+            "isActivated": true,
+            "GUID": "c6b0c0b0-8202-11eb-8147-91e16025b928",
+            "hackoladeMeta": {},
+            "bucketId": "24eb28b0-5d9a-11eb-ba6c-471f1286dd5d"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "car_sales",
+            "type": "bucket",
+            "collectionIds": [
+                "24ebc4f0-5d9a-11eb-ba6c-471f1286dd5d",
+                "c6b0c0b0-8202-11eb-8147-91e16025b928"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "24eb28b0-5d9a-11eb-ba6c-471f1286dd5d",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk people.id to car_sales.customer.[0].id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "c6b0c0b0-8202-11eb-8147-91e16025b928",
+                    "d14a1210-8202-11eb-8147-91e16025b928"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "24ebc4f0-5d9a-11eb-ba6c-471f1286dd5d",
+                    "1dbd63f1-5d9a-11eb-ba6c-471f1286dd5d",
+                    "24ec6130-5d9a-11eb-ba6c-471f1286dd5d",
+                    "df07ade0-8202-11eb-8147-91e16025b928"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "parentCollection": "c6b0c0b0-8202-11eb-8147-91e16025b928",
+            "childCollection": "24ebc4f0-5d9a-11eb-ba6c-471f1286dd5d",
+            "GUID": "e2bb8e20-8202-11eb-8147-91e16025b928"
+        },
+        {
+            "name": "fk people.id to car_sales.salesperson.id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "c6b0c0b0-8202-11eb-8147-91e16025b928",
+                    "d14a1210-8202-11eb-8147-91e16025b928"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "24ebc4f0-5d9a-11eb-ba6c-471f1286dd5d",
+                    "1dbd8b04-5d9a-11eb-ba6c-471f1286dd5d",
+                    "1dbd8b05-5d9a-11eb-ba6c-471f1286dd5d"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "parentCollection": "c6b0c0b0-8202-11eb-8147-91e16025b928",
+            "childCollection": "24ebc4f0-5d9a-11eb-ba6c-471f1286dd5d",
+            "GUID": "e8111070-8202-11eb-8147-91e16025b928"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "24eb28b0-5d9a-11eb-ba6c-471f1286dd5d": "car_sales",
+        "1dbd63f0-5d9a-11eb-ba6c-471f1286dd5d": "cust_date",
+        "1dbd63f1-5d9a-11eb-ba6c-471f1286dd5d": "customer",
+        "1dbd63f2-5d9a-11eb-ba6c-471f1286dd5d": "address",
+        "1dbd8b00-5d9a-11eb-ba6c-471f1286dd5d": "driversLicence",
+        "1dbd8b01-5d9a-11eb-ba6c-471f1286dd5d": "name",
+        "1dbd8b02-5d9a-11eb-ba6c-471f1286dd5d": "phone",
+        "1dbd8b03-5d9a-11eb-ba6c-471f1286dd5d": "dealership",
+        "1dbd8b04-5d9a-11eb-ba6c-471f1286dd5d": "salesperson",
+        "1dbd8b05-5d9a-11eb-ba6c-471f1286dd5d": "id",
+        "1dbd8b07-5d9a-11eb-ba6c-471f1286dd5d": "phone",
+        "1dbd8b08-5d9a-11eb-ba6c-471f1286dd5d": "vehicle",
+        "1dbd8b09-5d9a-11eb-ba6c-471f1286dd5d": "extras",
+        "1dbd8b10-5d9a-11eb-ba6c-471f1286dd5d": "make",
+        "1dbd8b11-5d9a-11eb-ba6c-471f1286dd5d": "model",
+        "1dbd8b12-5d9a-11eb-ba6c-471f1286dd5d": "price",
+        "1dbd8b13-5d9a-11eb-ba6c-471f1286dd5d": "year",
+        "1dbd8b0b-5d9a-11eb-ba6c-471f1286dd5d": "insurance",
+        "1dbd8b0d-5d9a-11eb-ba6c-471f1286dd5d": "insurance",
+        "1dbd8b0e-5d9a-11eb-ba6c-471f1286dd5d": "Auto",
+        "1dbd8b0f-5d9a-11eb-ba6c-471f1286dd5d": "Health",
+        "24ebc4f0-5d9a-11eb-ba6c-471f1286dd5d": "car_sales",
+        "8eec7520-5d9a-11eb-ba6c-471f1286dd5d": "email",
+        "a3185640-5d9a-11eb-ba6c-471f1286dd5d": "firstName",
+        "a84f7b20-5d9a-11eb-ba6c-471f1286dd5d": "lastName",
+        "c6b18400-8202-11eb-8147-91e16025b928": "personal",
+        "c6b18401-8202-11eb-8147-91e16025b928": "age",
+        "c6b18402-8202-11eb-8147-91e16025b928": "gender",
+        "c6b18403-8202-11eb-8147-91e16025b928": "name",
+        "c6b18404-8202-11eb-8147-91e16025b928": "first",
+        "c6b18405-8202-11eb-8147-91e16025b928": "last",
+        "c6b18406-8202-11eb-8147-91e16025b928": "vehicles",
+        "c6b18408-8202-11eb-8147-91e16025b928": "type",
+        "c6b18409-8202-11eb-8147-91e16025b928": "model",
+        "c6b1840a-8202-11eb-8147-91e16025b928": "insurance",
+        "c6b1840b-8202-11eb-8147-91e16025b928": "company",
+        "c6b1840c-8202-11eb-8147-91e16025b928": "policy_num",
+        "c6b1840d-8202-11eb-8147-91e16025b928": "maintenance",
+        "c6b1840f-8202-11eb-8147-91e16025b928": "date",
+        "c6b18410-8202-11eb-8147-91e16025b928": "desc",
+        "c6b18411-8202-11eb-8147-91e16025b928": "source",
+        "c6b0c0b0-8202-11eb-8147-91e16025b928": "people",
+        "d14a1210-8202-11eb-8147-91e16025b928": "id",
+        "df07ade0-8202-11eb-8147-91e16025b928": "id",
+        "e2bb8e20-8202-11eb-8147-91e16025b928": "fk people.id to car_sales.customer.[0].id",
+        "e8111070-8202-11eb-8147-91e16025b928": "fk people.id to car_sales.salesperson.id"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "0d25a611-5d9a-11eb-ba6c-471f1286dd5d"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "0d25a612-5d9a-11eb-ba6c-471f1286dd5d"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "Plain JSON--no DB",
+    "appTarget": "JSON",
+    "creationTS": "2021-01-23T16:42:59.185Z",
+    "GUID": "f88567d0-8202-11eb-8147-91e16025b928",
+    "lastModifTS": "2021-03-11T00:46:38.237Z",
+    "persistenceSchemaVersion": "4",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "4.3.11"
+    },
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true,
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "description": "With a description",
+    "author": "Pascal",
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "24ebc4f0-5d9a-11eb-ba6c-471f1286dd5d",
+                        "x": 90,
+                        "y": 90,
+                        "width": 293,
+                        "height": 467,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "c6b0c0b0-8202-11eb-8147-91e16025b928",
+                        "x": 515,
+                        "y": 174,
+                        "width": 267,
+                        "height": 299,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 50,
+                        "y": 50,
+                        "GUID": "24eb28b0-5d9a-11eb-ba6c-471f1286dd5d"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

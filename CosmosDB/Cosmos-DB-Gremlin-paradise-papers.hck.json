@@ -1,0 +1,2251 @@
+{
+    "modelName": "Paradise Papers",
+    "collections": [
+        {
+            "collectionName": "Address",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "00358d20-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "Paradise Papers - Appleby",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "0035b430-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "Appleby data is current through 2014",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "address",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "0035b431-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "3rd Floor",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "additionalItems": true,
+                    "uniqueItems": false,
+                    "subtype": "no-multi",
+                    "childType": "list",
+                    "type": "array",
+                    "name": "labels(n)",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "0035b432-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "hackoladeMeta": {},
+                    "properties": [
+                        {
+                            "primaryKey": false,
+                            "type": "string",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "propCardinality": "single",
+                            "GUID": "0035b437-816d-11eb-adda-352b12f01521",
+                            "arrayItem": true,
+                            "arrayParentType": "list",
+                            "sample": "Address"
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "0035b433-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "3rd Floor; Jubilee Buildings; Victoria Street; Douglas; Isle of Man IM1 2LR",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "country_codes",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "0035b434-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "IMN",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "countries",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "0035b435-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "Isle of Man",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "name": "node_id",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "0035b436-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "00356610-816d-11eb-adda-352b12f01521",
+                "properties": []
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "00353f00-816d-11eb-adda-352b12f01521",
+            "code": "",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521"
+        },
+        {
+            "collectionName": "Entity",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "00ffbaf2-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "Paradise Papers - Appleby",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "jurisdiction",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "00ffbaf3-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "KY",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "service_provider",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "00ffbaf4-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "Appleby",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "countries",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "00ffbaf5-816d-11eb-adda-352b12f01521",
+                    "required": false,
+                    "sample": "Cayman Islands",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "jurisdiction_description",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "00ffbaf6-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "Cayman Islands",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "type",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "00ffbaf7-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "CE",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "00ffbaf8-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "Appleby data is current through 2014",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "name": "ibcRUC",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "type": "multiple",
+                    "multipleTypes": [
+                        {
+                            "exclusiveMinimum": false,
+                            "exclusiveMaximum": false,
+                            "primaryKey": false,
+                            "childType": "number",
+                            "type": "numeric",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "propCardinality": "single",
+                            "GUID": "01000910-816d-11eb-adda-352b12f01521"
+                        },
+                        {
+                            "primaryKey": false,
+                            "type": "string",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "propCardinality": "single",
+                            "GUID": "01003020-816d-11eb-adda-352b12f01521"
+                        }
+                    ],
+                    "GUID": "00ffbaf9-816d-11eb-adda-352b12f01521",
+                    "required": false,
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "additionalItems": true,
+                    "uniqueItems": false,
+                    "subtype": "no-multi",
+                    "childType": "list",
+                    "type": "array",
+                    "name": "labels(n)",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "00ffbafa-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "hackoladeMeta": {},
+                    "properties": [
+                        {
+                            "primaryKey": false,
+                            "type": "string",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "propCardinality": "single",
+                            "GUID": "00ffe200-816d-11eb-adda-352b12f01521",
+                            "arrayItem": true,
+                            "arrayParentType": "list",
+                            "sample": "Entity"
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "00ffbafb-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "Akanthos Arbitrage Fund, Ltd.",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "country_codes",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "00ffbafc-816d-11eb-adda-352b12f01521",
+                    "required": false,
+                    "sample": "CYM",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "incorporation_date",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "00ffbafd-816d-11eb-adda-352b12f01521",
+                    "required": false,
+                    "sample": "2002-Aug-15",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "name": "node_id",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "00ffbafe-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": 82010924,
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "closed_date",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "00ffbaff-816d-11eb-adda-352b12f01521",
+                    "required": false,
+                    "sample": "2013-Jun-14",
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "00ffbaf1-816d-11eb-adda-352b12f01521",
+                "properties": []
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "00ffbaf0-816d-11eb-adda-352b12f01521",
+            "code": "",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521"
+        },
+        {
+            "collectionName": "Intermediary",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "01c0c100-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "Econergy International Plc",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "01c0c101-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "Appleby data is current through 2014",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "01c0c102-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "additionalItems": true,
+                    "uniqueItems": false,
+                    "subtype": "no-multi",
+                    "childType": "list",
+                    "type": "array",
+                    "name": "labels(n)",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "01c0c103-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "hackoladeMeta": {},
+                    "properties": [
+                        {
+                            "primaryKey": false,
+                            "type": "string",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "propCardinality": "single",
+                            "GUID": "01c0c105-816d-11eb-adda-352b12f01521",
+                            "arrayItem": true,
+                            "arrayParentType": "list",
+                            "sample": "80010572"
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "name": "node_id",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "01c0c104-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "01c099f1-816d-11eb-adda-352b12f01521",
+                "properties": []
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "01c099f0-816d-11eb-adda-352b12f01521",
+            "code": "",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521"
+        },
+        {
+            "collectionName": "Officer",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "027f2f02-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "Appleby data is current through 2014",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "027f2f03-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "additionalItems": true,
+                    "uniqueItems": false,
+                    "subtype": "no-multi",
+                    "childType": "list",
+                    "type": "array",
+                    "name": "labels(n)",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "027f2f04-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "hackoladeMeta": {},
+                    "properties": [
+                        {
+                            "primaryKey": false,
+                            "type": "string",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "propCardinality": "single",
+                            "GUID": "027f2f0a-816d-11eb-adda-352b12f01521",
+                            "arrayItem": true,
+                            "arrayParentType": "list",
+                            "sample": "Rathbone Investment Management International"
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "027f2f05-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "GBR",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "country_codes",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "027f2f06-816d-11eb-adda-352b12f01521",
+                    "required": false,
+                    "sample": "United Kingdom",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "countries",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "027f2f07-816d-11eb-adda-352b12f01521",
+                    "required": false,
+                    "sample": "80115894",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "name": "node_id",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "027f2f08-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "note",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "027f2f09-816d-11eb-adda-352b12f01521",
+                    "required": false,
+                    "sample": "Paradise Papers - Appleby",
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "027f2f01-816d-11eb-adda-352b12f01521",
+                "properties": []
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "027f2f00-816d-11eb-adda-352b12f01521",
+            "code": "",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521"
+        },
+        {
+            "collectionName": "Other",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "03414682-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "Zheng - Paul",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "name",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "03414683-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "sample": "Appleby data is current through 2014",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "03414684-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "additionalItems": true,
+                    "uniqueItems": false,
+                    "subtype": "no-multi",
+                    "childType": "list",
+                    "type": "array",
+                    "name": "labels(n)",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "03414685-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "hackoladeMeta": {},
+                    "properties": [
+                        {
+                            "primaryKey": false,
+                            "type": "string",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "propCardinality": "single",
+                            "GUID": "03416d90-816d-11eb-adda-352b12f01521",
+                            "arrayItem": true,
+                            "arrayParentType": "list",
+                            "sample": "80148939"
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "name": "node_id",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "03414686-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "country_codes",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "03414687-816d-11eb-adda-352b12f01521",
+                    "required": false,
+                    "sample": "China",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "countries",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "03414688-816d-11eb-adda-352b12f01521",
+                    "required": false,
+                    "sample": "BAH",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "jurisdiction",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "03414689-816d-11eb-adda-352b12f01521",
+                    "required": false,
+                    "sample": "Bahamas",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "jurisdiction_description",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "0341468a-816d-11eb-adda-352b12f01521",
+                    "required": false,
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "status",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "0341468b-816d-11eb-adda-352b12f01521",
+                    "required": false,
+                    "sample": "Not all beneficiaries are aware of offshore trusts in which they are named because the settlor may select beneficiaries without their knowledge.",
+                    "hackoladeMeta": {}
+                },
+                {
+                    "code": "",
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "note",
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "0341468c-816d-11eb-adda-352b12f01521",
+                    "required": false,
+                    "hackoladeMeta": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "03414681-816d-11eb-adda-352b12f01521",
+                "properties": []
+            },
+            "isActivated": true,
+            "collectionUsers": [],
+            "GUID": "03414680-816d-11eb-adda-352b12f01521",
+            "code": "",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "Paradise Papers",
+            "type": "bucket",
+            "collectionIds": [
+                "00353f00-816d-11eb-adda-352b12f01521",
+                "00ffbaf0-816d-11eb-adda-352b12f01521",
+                "01c099f0-816d-11eb-adda-352b12f01521",
+                "027f2f00-816d-11eb-adda-352b12f01521",
+                "03414680-816d-11eb-adda-352b12f01521"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "traversalSource": "g",
+            "indexes": [],
+            "autopilot": false,
+            "GUID": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "hackoladeMeta": {
+                "namingConvention": ""
+            },
+            "partitionKey": [
+                {
+                    "GUID": "0e1aa8f0-817f-11eb-adda-352b12f01521",
+                    "path": [
+                        "00ffbaf0-816d-11eb-adda-352b12f01521",
+                        "00ffbaf2-816d-11eb-adda-352b12f01521"
+                    ]
+                }
+            ],
+            "dbId": "paradise_papers",
+            "indexingMode": "Consistent",
+            "indexingAutomatic": "true",
+            "includedPaths": [
+                {
+                    "GUID": "ef469bd0-819e-11eb-9e71-991ce22353de",
+                    "name": "stdIdx",
+                    "indexIncludedPath": [
+                        {
+                            "GUID": "f829b1b0-819e-11eb-9e71-991ce22353de",
+                            "path": [
+                                "0034f0e0-816d-11eb-adda-352b12f01521"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "GUID": "0f467130-819f-11eb-9e71-991ce22353de",
+                    "name": "nameIdx",
+                    "indexIncludedPath": [
+                        {
+                            "GUID": "1b9a91f0-819f-11eb-9e71-991ce22353de",
+                            "path": [
+                                "00353f00-816d-11eb-adda-352b12f01521",
+                                "0035b433-816d-11eb-adda-352b12f01521"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "GUID": "1f7b4e90-819f-11eb-9e71-991ce22353de",
+                    "name": "countriesIdx",
+                    "indexIncludedPath": [
+                        {
+                            "GUID": "28ea02a0-819f-11eb-9e71-991ce22353de",
+                            "path": [
+                                "00ffbaf0-816d-11eb-adda-352b12f01521",
+                                "00ffbaf5-816d-11eb-adda-352b12f01521"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "excludedPaths": [
+                {
+                    "GUID": "03485fb0-819f-11eb-9e71-991ce22353de",
+                    "name": "stdIdx2",
+                    "indexExcludedPath": [
+                        {
+                            "GUID": "0cdb64a0-819f-11eb-9e71-991ce22353de",
+                            "name": "/_etag/?"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "OFFICER_OF",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "03414680-816d-11eb-adda-352b12f01521",
+            "childCollection": "01c099f0-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "1fa57e90-816d-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": []
+        },
+        {
+            "name": "SAME_NAME_AS",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "027f2f00-816d-11eb-adda-352b12f01521",
+            "childCollection": "027f2f00-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "31f6ac40-816d-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "356f3130-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Appleby data is current through 2014"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "4053bc60-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "BARBADOS_CORPORATE_REGISTRY_DATA_IS_CURRENT_THROUGH_2016"
+                }
+            ]
+        },
+        {
+            "name": "OFFICE_OF",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "027f2f00-816d-11eb-adda-352b12f01521",
+            "childCollection": "027f2f00-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "72df3060-816d-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "7cd69c70-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Appleby data is current through 2014"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "end_date",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "83edf300-816d-11eb-adda-352b12f01521",
+                    "code": "",
+                    "sample": "2013OCT29"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "8f1812b0-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014"
+                },
+                {
+                    "name": "start_date",
+                    "type": "multiple",
+                    "multipleTypes": [
+                        {
+                            "type": "string",
+                            "propCardinality": "single",
+                            "GUID": "a79832c0-816d-11eb-adda-352b12f01521"
+                        },
+                        {
+                            "exclusiveMinimum": false,
+                            "exclusiveMaximum": false,
+                            "childType": "number",
+                            "type": "numeric",
+                            "propCardinality": "single",
+                            "GUID": "a79859d0-816d-11eb-adda-352b12f01521"
+                        }
+                    ],
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "969d9460-816d-11eb-adda-352b12f01521",
+                    "hackoladeMeta": {},
+                    "required": true,
+                    "code": "",
+                    "properties": []
+                }
+            ]
+        },
+        {
+            "name": "SAME_ID_AS",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "027f2f00-816d-11eb-adda-352b12f01521",
+            "childCollection": "027f2f00-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "d0571b40-816d-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "soureID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "d84a2bd0-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Appleby data is current through 2014"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "e46a1d30-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "2007JUL07"
+                }
+            ]
+        },
+        {
+            "name": "REGISTERED_ADDRESS",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "027f2f00-816d-11eb-adda-352b12f01521",
+            "childCollection": "00353f00-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "f2a57480-816d-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "f75c1ec0-816d-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Appleby data is current through 2014"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "02d45e70-816e-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": ""
+                }
+            ]
+        },
+        {
+            "name": "OFFICER_OF",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "027f2f00-816d-11eb-adda-352b12f01521",
+            "childCollection": "01c099f0-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "1573fa40-816e-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "26ce92f0-816e-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Appleby data is current through 2014"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "end_date",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "331e6df0-816e-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "2014JAN02"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "39fe87e0-816e-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "start_date",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "3cacdf00-816e-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "2014MAR10"
+                }
+            ]
+        },
+        {
+            "name": "SAME_NAME_AS",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "01c099f0-816d-11eb-adda-352b12f01521",
+            "childCollection": "027f2f00-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "46a6e320-816e-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": []
+        },
+        {
+            "name": "REGISTERED_ADDRESS",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "03414680-816d-11eb-adda-352b12f01521",
+            "childCollection": "00353f00-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "743cfc90-8176-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "7d4dd930-8176-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Zheng - Paul"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "94486ab0-8176-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014"
+                }
+            ]
+        },
+        {
+            "name": "REGISTERED_ADDRESS",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "00ffbaf0-816d-11eb-adda-352b12f01521",
+            "childCollection": "00353f00-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "a3b2a510-8176-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "aa693e00-8176-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Paradise Papers - Appleby"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "af1cdb00-8176-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014"
+                }
+            ]
+        },
+        {
+            "name": "SAME_NAME_AS",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "01c099f0-816d-11eb-adda-352b12f01521",
+            "childCollection": "00ffbaf0-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "c1c94810-8176-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "c7a6e620-8176-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Econergy International Plc"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "cc6f43a0-8176-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014"
+                }
+            ]
+        },
+        {
+            "name": "CONNECTED_TO",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "01c099f0-816d-11eb-adda-352b12f01521",
+            "childCollection": "00ffbaf0-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "dcfbddf0-8176-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "e1298210-8176-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Econergy International Plc"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "e72b7100-8176-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "MALTA_CORPORATE_REGISTRY_DATA_IS_CURRENT_THROUGH_2016"
+                }
+            ]
+        },
+        {
+            "name": "OFFICER_OF",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "00ffbaf0-816d-11eb-adda-352b12f01521",
+            "childCollection": "01c099f0-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "f6e7ea10-8176-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": []
+        },
+        {
+            "name": "OFFICER_OF",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "03414680-816d-11eb-adda-352b12f01521",
+            "childCollection": "027f2f00-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "05ada710-8177-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": []
+        },
+        {
+            "name": "OFFICER_OF",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "03414680-816d-11eb-adda-352b12f01521",
+            "childCollection": "00ffbaf0-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "10dbbe60-8177-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": []
+        },
+        {
+            "name": "OFFICER_OF",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "00ffbaf0-816d-11eb-adda-352b12f01521",
+            "childCollection": "027f2f00-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "27afdc20-8177-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "390b5f30-8177-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Paradise Papers - Appleby"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "end_date",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "3f6f1d30-8177-11eb-adda-352b12f01521",
+                    "code": "",
+                    "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "4232aa00-8177-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "PARADISE_PAPERS_APPLEBY"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "start_date",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "4802b380-8177-11eb-adda-352b12f01521",
+                    "code": "",
+                    "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014"
+                }
+            ]
+        },
+        {
+            "name": "OFFICER_OF",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "027f2f00-816d-11eb-adda-352b12f01521",
+            "childCollection": "00ffbaf0-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "2bd542e0-8177-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "55f987c0-8177-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Appleby data is current through 2014"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "end_date",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "5cf455a0-8177-11eb-adda-352b12f01521",
+                    "code": "",
+                    "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "5f6be550-8177-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "PARADISE_PAPERS_APPLEBY"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "start_date",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "65df33b0-8177-11eb-adda-352b12f01521",
+                    "code": "",
+                    "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014"
+                }
+            ]
+        },
+        {
+            "name": "CONNECTED_TO",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "027f2f00-816d-11eb-adda-352b12f01521",
+            "childCollection": "00ffbaf0-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "78356a70-8177-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "7ab1b510-8177-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Appleby data is current through 2014"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "8246ee30-8177-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014"
+                }
+            ]
+        },
+        {
+            "name": "SAME_NAME_AS",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "027f2f00-816d-11eb-adda-352b12f01521",
+            "childCollection": "03414680-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "971550e0-8177-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": []
+        },
+        {
+            "name": "SAME_NAME_AS",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "027f2f00-816d-11eb-adda-352b12f01521",
+            "childCollection": "00ffbaf0-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "ae646b00-8177-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "b1f16250-8177-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Appleby data is current through 2014"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "b63d3cd0-8177-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014"
+                }
+            ]
+        },
+        {
+            "name": "SAME_NAME_AS",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "00ffbaf0-816d-11eb-adda-352b12f01521",
+            "childCollection": "027f2f00-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "bcf13db0-8177-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "bf528640-8177-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Paradise Papers - Appleby"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "c30db980-8177-11eb-adda-352b12f01521",
+                    "code": "",
+                    "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014"
+                }
+            ]
+        },
+        {
+            "name": "CONNECTED_TO",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "03414680-816d-11eb-adda-352b12f01521",
+            "childCollection": "00ffbaf0-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "db1c04f0-8177-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "dd805ac0-8177-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Zheng - Paul"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "e104c690-8177-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014"
+                }
+            ]
+        },
+        {
+            "name": "INTERMEDIARY_OF",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "03414680-816d-11eb-adda-352b12f01521",
+            "childCollection": "00ffbaf0-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "eedec400-8177-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "f1204f90-8177-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Zheng - Paul"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "f56bdbf0-8177-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "BARBADOS_CORPORATE_REGISTRY_DATA_IS_CURRENT_THROUGH_2016"
+                }
+            ]
+        },
+        {
+            "name": "SAME_NAME_AS",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "03414680-816d-11eb-adda-352b12f01521",
+            "childCollection": "00ffbaf0-816d-11eb-adda-352b12f01521",
+            "level": "entity",
+            "GUID": "0b37ff90-8178-11eb-adda-352b12f01521",
+            "lineSize": 2,
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "properties": [
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "sourceID",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "0e866740-8178-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "Zheng - Paul"
+                },
+                {
+                    "primaryKey": false,
+                    "type": "string",
+                    "name": "valid_until",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "propCardinality": "single",
+                    "GUID": "11a2e980-8178-11eb-adda-352b12f01521",
+                    "required": true,
+                    "code": "",
+                    "sample": "BARBADOS_CORPORATE_REGISTRY_DATA_IS_CURRENT_THROUGH_2016"
+                }
+            ]
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "0034f0e0-816d-11eb-adda-352b12f01521": "Paradise Papers",
+        "00358d20-816d-11eb-adda-352b12f01521": "sourceID",
+        "0035b430-816d-11eb-adda-352b12f01521": "valid_until",
+        "0035b431-816d-11eb-adda-352b12f01521": "address",
+        "0035b432-816d-11eb-adda-352b12f01521": "labels(n)",
+        "0035b433-816d-11eb-adda-352b12f01521": "name",
+        "0035b434-816d-11eb-adda-352b12f01521": "country_codes",
+        "0035b435-816d-11eb-adda-352b12f01521": "countries",
+        "0035b436-816d-11eb-adda-352b12f01521": "node_id",
+        "00353f00-816d-11eb-adda-352b12f01521": "Address",
+        "00ffbaf2-816d-11eb-adda-352b12f01521": "sourceID",
+        "00ffbaf3-816d-11eb-adda-352b12f01521": "jurisdiction",
+        "00ffbaf4-816d-11eb-adda-352b12f01521": "service_provider",
+        "00ffbaf5-816d-11eb-adda-352b12f01521": "countries",
+        "00ffbaf6-816d-11eb-adda-352b12f01521": "jurisdiction_description",
+        "00ffbaf7-816d-11eb-adda-352b12f01521": "type",
+        "00ffbaf8-816d-11eb-adda-352b12f01521": "valid_until",
+        "00ffbaf9-816d-11eb-adda-352b12f01521": "ibcRUC",
+        "00ffbafa-816d-11eb-adda-352b12f01521": "labels(n)",
+        "00ffbafb-816d-11eb-adda-352b12f01521": "name",
+        "00ffbafc-816d-11eb-adda-352b12f01521": "country_codes",
+        "00ffbafd-816d-11eb-adda-352b12f01521": "incorporation_date",
+        "00ffbafe-816d-11eb-adda-352b12f01521": "node_id",
+        "00ffbaff-816d-11eb-adda-352b12f01521": "closed_date",
+        "00ffbaf0-816d-11eb-adda-352b12f01521": "Entity",
+        "01c0c100-816d-11eb-adda-352b12f01521": "sourceID",
+        "01c0c101-816d-11eb-adda-352b12f01521": "name",
+        "01c0c102-816d-11eb-adda-352b12f01521": "valid_until",
+        "01c0c103-816d-11eb-adda-352b12f01521": "labels(n)",
+        "01c0c104-816d-11eb-adda-352b12f01521": "node_id",
+        "01c099f0-816d-11eb-adda-352b12f01521": "Intermediary",
+        "027f2f02-816d-11eb-adda-352b12f01521": "sourceID",
+        "027f2f03-816d-11eb-adda-352b12f01521": "valid_until",
+        "027f2f04-816d-11eb-adda-352b12f01521": "labels(n)",
+        "027f2f05-816d-11eb-adda-352b12f01521": "name",
+        "027f2f06-816d-11eb-adda-352b12f01521": "country_codes",
+        "027f2f07-816d-11eb-adda-352b12f01521": "countries",
+        "027f2f08-816d-11eb-adda-352b12f01521": "node_id",
+        "027f2f09-816d-11eb-adda-352b12f01521": "note",
+        "027f2f00-816d-11eb-adda-352b12f01521": "Officer",
+        "03414682-816d-11eb-adda-352b12f01521": "sourceID",
+        "03414683-816d-11eb-adda-352b12f01521": "name",
+        "03414684-816d-11eb-adda-352b12f01521": "valid_until",
+        "03414685-816d-11eb-adda-352b12f01521": "labels(n)",
+        "03414686-816d-11eb-adda-352b12f01521": "node_id",
+        "03414687-816d-11eb-adda-352b12f01521": "country_codes",
+        "03414688-816d-11eb-adda-352b12f01521": "countries",
+        "03414689-816d-11eb-adda-352b12f01521": "jurisdiction",
+        "0341468a-816d-11eb-adda-352b12f01521": "jurisdiction_description",
+        "0341468b-816d-11eb-adda-352b12f01521": "status",
+        "0341468c-816d-11eb-adda-352b12f01521": "note",
+        "03414680-816d-11eb-adda-352b12f01521": "Other",
+        "1fa57e90-816d-11eb-adda-352b12f01521": "OFFICER_OF",
+        "31f6ac40-816d-11eb-adda-352b12f01521": "SAME_NAME_AS",
+        "356f3130-816d-11eb-adda-352b12f01521": "sourceID",
+        "4053bc60-816d-11eb-adda-352b12f01521": "valid_until",
+        "72df3060-816d-11eb-adda-352b12f01521": "OFFICE_OF",
+        "7cd69c70-816d-11eb-adda-352b12f01521": "sourceID",
+        "83edf300-816d-11eb-adda-352b12f01521": "end_date",
+        "8f1812b0-816d-11eb-adda-352b12f01521": "valid_until",
+        "969d9460-816d-11eb-adda-352b12f01521": "start_date",
+        "d0571b40-816d-11eb-adda-352b12f01521": "SAME_ID_AS",
+        "d84a2bd0-816d-11eb-adda-352b12f01521": "soureID",
+        "e46a1d30-816d-11eb-adda-352b12f01521": "valid_until",
+        "f2a57480-816d-11eb-adda-352b12f01521": "REGISTERED_ADDRESS",
+        "f75c1ec0-816d-11eb-adda-352b12f01521": "sourceID",
+        "02d45e70-816e-11eb-adda-352b12f01521": "valid_until",
+        "1573fa40-816e-11eb-adda-352b12f01521": "OFFICER_OF",
+        "26ce92f0-816e-11eb-adda-352b12f01521": "sourceID",
+        "331e6df0-816e-11eb-adda-352b12f01521": "end_date",
+        "39fe87e0-816e-11eb-adda-352b12f01521": "valid_until",
+        "3cacdf00-816e-11eb-adda-352b12f01521": "start_date",
+        "46a6e320-816e-11eb-adda-352b12f01521": "SAME_NAME_AS",
+        "743cfc90-8176-11eb-adda-352b12f01521": "REGISTERED_ADDRESS",
+        "7d4dd930-8176-11eb-adda-352b12f01521": "sourceID",
+        "94486ab0-8176-11eb-adda-352b12f01521": "valid_until",
+        "a3b2a510-8176-11eb-adda-352b12f01521": "REGISTERED_ADDRESS",
+        "aa693e00-8176-11eb-adda-352b12f01521": "sourceID",
+        "af1cdb00-8176-11eb-adda-352b12f01521": "valid_until",
+        "c1c94810-8176-11eb-adda-352b12f01521": "SAME_NAME_AS",
+        "c7a6e620-8176-11eb-adda-352b12f01521": "sourceID",
+        "cc6f43a0-8176-11eb-adda-352b12f01521": "valid_until",
+        "dcfbddf0-8176-11eb-adda-352b12f01521": "CONNECTED_TO",
+        "e1298210-8176-11eb-adda-352b12f01521": "sourceID",
+        "e72b7100-8176-11eb-adda-352b12f01521": "valid_until",
+        "f6e7ea10-8176-11eb-adda-352b12f01521": "OFFICER_OF",
+        "05ada710-8177-11eb-adda-352b12f01521": "OFFICER_OF",
+        "10dbbe60-8177-11eb-adda-352b12f01521": "OFFICER_OF",
+        "27afdc20-8177-11eb-adda-352b12f01521": "OFFICER_OF",
+        "2bd542e0-8177-11eb-adda-352b12f01521": "OFFICER_OF",
+        "390b5f30-8177-11eb-adda-352b12f01521": "sourceID",
+        "3f6f1d30-8177-11eb-adda-352b12f01521": "end_date",
+        "4232aa00-8177-11eb-adda-352b12f01521": "valid_until",
+        "4802b380-8177-11eb-adda-352b12f01521": "start_date",
+        "55f987c0-8177-11eb-adda-352b12f01521": "sourceID",
+        "5cf455a0-8177-11eb-adda-352b12f01521": "end_date",
+        "5f6be550-8177-11eb-adda-352b12f01521": "valid_until",
+        "65df33b0-8177-11eb-adda-352b12f01521": "start_date",
+        "78356a70-8177-11eb-adda-352b12f01521": "CONNECTED_TO",
+        "7ab1b510-8177-11eb-adda-352b12f01521": "sourceID",
+        "8246ee30-8177-11eb-adda-352b12f01521": "valid_until",
+        "971550e0-8177-11eb-adda-352b12f01521": "SAME_NAME_AS",
+        "ae646b00-8177-11eb-adda-352b12f01521": "SAME_NAME_AS",
+        "b1f16250-8177-11eb-adda-352b12f01521": "sourceID",
+        "b63d3cd0-8177-11eb-adda-352b12f01521": "valid_until",
+        "bcf13db0-8177-11eb-adda-352b12f01521": "SAME_NAME_AS",
+        "bf528640-8177-11eb-adda-352b12f01521": "sourceID",
+        "c30db980-8177-11eb-adda-352b12f01521": "valid_until",
+        "db1c04f0-8177-11eb-adda-352b12f01521": "CONNECTED_TO",
+        "dd805ac0-8177-11eb-adda-352b12f01521": "sourceID",
+        "e104c690-8177-11eb-adda-352b12f01521": "valid_until",
+        "eedec400-8177-11eb-adda-352b12f01521": "INTERMEDIARY_OF",
+        "f1204f90-8177-11eb-adda-352b12f01521": "sourceID",
+        "f56bdbf0-8177-11eb-adda-352b12f01521": "valid_until",
+        "0b37ff90-8178-11eb-adda-352b12f01521": "SAME_NAME_AS",
+        "0e866740-8178-11eb-adda-352b12f01521": "sourceID",
+        "11a2e980-8178-11eb-adda-352b12f01521": "valid_until"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "e54ef461-816c-11eb-adda-352b12f01521"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "e54ef462-816c-11eb-adda-352b12f01521"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "CosmosDB",
+    "apiExperience": "Gremlin API",
+    "transactionalDataStored": 10,
+    "itemSize": 1,
+    "readsPerSecPerRegion": 100,
+    "writesPerSecPerRegion": 100,
+    "appTarget": "COSMOSDB-GREMLIN",
+    "creationTS": "2021-03-10T06:50:26.854Z",
+    "GUID": "e54ef460-816c-11eb-adda-352b12f01521",
+    "isLineageEnabled": false,
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "lastModifTS": "2021-03-10T12:59:38.625Z",
+    "persistenceSchemaVersion": "4",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "CosmosDB-with-Gremlin-API",
+        "pluginVersion": "0.1.9",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "4.3.11"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "00353f00-816d-11eb-adda-352b12f01521",
+                        "x": 112,
+                        "y": 871,
+                        "width": 204,
+                        "height": 155,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "00ffbaf0-816d-11eb-adda-352b12f01521",
+                        "x": 1677,
+                        "y": 273,
+                        "width": 265,
+                        "height": 239,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "01c099f0-816d-11eb-adda-352b12f01521",
+                        "x": 2623,
+                        "y": 300,
+                        "width": 195,
+                        "height": 113,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "027f2f00-816d-11eb-adda-352b12f01521",
+                        "x": 423,
+                        "y": 343,
+                        "width": 204,
+                        "height": 155,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "03414680-816d-11eb-adda-352b12f01521",
+                        "x": 1683,
+                        "y": 892,
+                        "width": 253,
+                        "height": 197,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "1fa57e90-816d-11eb-adda-352b12f01521",
+                        "x": 2337,
+                        "y": 440,
+                        "width": 189,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "31f6ac40-816d-11eb-adda-352b12f01521",
+                        "x": 108,
+                        "y": 496,
+                        "width": 212,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "72df3060-816d-11eb-adda-352b12f01521",
+                        "x": 119,
+                        "y": 343,
+                        "width": 190,
+                        "height": 83,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "d0571b40-816d-11eb-adda-352b12f01521",
+                        "x": 119,
+                        "y": 621,
+                        "width": 190,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "f2a57480-816d-11eb-adda-352b12f01521",
+                        "x": 90,
+                        "y": 746,
+                        "width": 248,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "1573fa40-816e-11eb-adda-352b12f01521",
+                        "x": 742,
+                        "y": 593,
+                        "width": 189,
+                        "height": 83,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "46a6e320-816e-11eb-adda-352b12f01521",
+                        "x": 730,
+                        "y": 243,
+                        "width": 212,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "743cfc90-8176-11eb-adda-352b12f01521",
+                        "x": 1344,
+                        "y": 608,
+                        "width": 248,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "a3b2a510-8176-11eb-adda-352b12f01521",
+                        "x": 712,
+                        "y": 1024,
+                        "width": 248,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "c1c94810-8176-11eb-adda-352b12f01521",
+                        "x": 2325,
+                        "y": 215,
+                        "width": 212,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "dcfbddf0-8176-11eb-adda-352b12f01521",
+                        "x": 2324,
+                        "y": 90,
+                        "width": 214,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "f6e7ea10-8176-11eb-adda-352b12f01521",
+                        "x": 2337,
+                        "y": 340,
+                        "width": 189,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "05ada710-8177-11eb-adda-352b12f01521",
+                        "x": 742,
+                        "y": 1249,
+                        "width": 189,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "10dbbe60-8177-11eb-adda-352b12f01521",
+                        "x": 1715,
+                        "y": 652,
+                        "width": 189,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "27afdc20-8177-11eb-adda-352b12f01521",
+                        "x": 742,
+                        "y": 90,
+                        "width": 189,
+                        "height": 83,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "2bd542e0-8177-11eb-adda-352b12f01521",
+                        "x": 742,
+                        "y": 746,
+                        "width": 189,
+                        "height": 83,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "78356a70-8177-11eb-adda-352b12f01521",
+                        "x": 729,
+                        "y": 468,
+                        "width": 214,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "971550e0-8177-11eb-adda-352b12f01521",
+                        "x": 730,
+                        "y": 1149,
+                        "width": 212,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "ae646b00-8177-11eb-adda-352b12f01521",
+                        "x": 730,
+                        "y": 899,
+                        "width": 212,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "bcf13db0-8177-11eb-adda-352b12f01521",
+                        "x": 730,
+                        "y": 343,
+                        "width": 212,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "db1c04f0-8177-11eb-adda-352b12f01521",
+                        "x": 1045,
+                        "y": 343,
+                        "width": 214,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "eedec400-8177-11eb-adda-352b12f01521",
+                        "x": 1355,
+                        "y": 343,
+                        "width": 226,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "0b37ff90-8178-11eb-adda-352b12f01521",
+                        "x": 2027,
+                        "y": 343,
+                        "width": 212,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 50,
+                        "y": 50,
+                        "GUID": "0034f0e0-816d-11eb-adda-352b12f01521"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "00353f00-816d-11eb-adda-352b12f01521",
+                            "size": 100,
+                            "x": 743.3549224900577,
+                            "y": 612
+                        },
+                        {
+                            "GUID": "00ffbaf0-816d-11eb-adda-352b12f01521",
+                            "size": 100,
+                            "x": 437.7885085522258,
+                            "y": 356.0460259906881
+                        },
+                        {
+                            "GUID": "01c099f0-816d-11eb-adda-352b12f01521",
+                            "size": 100,
+                            "x": 116.35492249005767,
+                            "y": 120
+                        },
+                        {
+                            "GUID": "027f2f00-816d-11eb-adda-352b12f01521",
+                            "size": 100,
+                            "x": 116.35492249005767,
+                            "y": 612
+                        },
+                        {
+                            "GUID": "03414680-816d-11eb-adda-352b12f01521",
+                            "size": 100,
+                            "x": 743.3549224900577,
+                            "y": 120
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 76.35492249005767,
+                            "y": 80,
+                            "GUID": "0034f0e0-816d-11eb-adda-352b12f01521"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": true,
+                    "forceLayout": false,
+                    "defaultLinkLength": 400
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

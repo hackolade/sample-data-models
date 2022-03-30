@@ -1,0 +1,1055 @@
+{
+    "GUID": "ab348c20-6dc6-11e8-977e-574156f5cc39",
+    "lastModifTS": "2018-06-19T19:35:24.186Z",
+    "persistenceSchemaVersion": "2",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "collections": [
+        {
+            "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "unique": true,
+                    "name": "name",
+                    "GUID": "bd40f333-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": " Mady Correll"
+                }
+            ],
+            "type": "object",
+            "GUID": "bd40f332-6dc7-11e8-977e-574156f5cc39",
+            "definitions": {
+                "GUID": "bd40f331-6dc7-11e8-977e-574156f5cc39",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Actor",
+            "constraint": [],
+            "index": [
+                {
+                    "GUID": "bd4d0120-6dc7-11e8-977e-574156f5cc39",
+                    "name": ":Actor.[name]",
+                    "key": [
+                        {
+                            "keyId": "bd40f333-6dc7-11e8-977e-574156f5cc39",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_unique_property",
+                    "provider": "",
+                    "description": "",
+                    "storedProcComments": ""
+                }
+            ],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "unique": true,
+                    "name": "name",
+                    "GUID": "bd436432-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "Noel Black"
+                }
+            ],
+            "type": "object",
+            "GUID": "bd436431-6dc7-11e8-977e-574156f5cc39",
+            "definitions": {
+                "GUID": "bd436430-6dc7-11e8-977e-574156f5cc39",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Director",
+            "constraint": [],
+            "index": [
+                {
+                    "GUID": "bd4d0121-6dc7-11e8-977e-574156f5cc39",
+                    "name": ":Director.[name]",
+                    "key": [
+                        {
+                            "keyId": "bd436432-6dc7-11e8-977e-574156f5cc39",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_unique_property",
+                    "provider": "",
+                    "description": "",
+                    "storedProcComments": ""
+                }
+            ],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "unique": true,
+                    "name": "name",
+                    "GUID": "bd4cda13-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "(no genres listed)"
+                }
+            ],
+            "type": "object",
+            "GUID": "bd4cda12-6dc7-11e8-977e-574156f5cc39",
+            "definitions": {
+                "GUID": "bd4cda11-6dc7-11e8-977e-574156f5cc39",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Genre",
+            "constraint": [],
+            "index": [
+                {
+                    "GUID": "bd4d2831-6dc7-11e8-977e-574156f5cc39",
+                    "name": ":Genre.[name]",
+                    "key": [
+                        {
+                            "keyId": "bd4cda13-6dc7-11e8-977e-574156f5cc39",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_unique_property",
+                    "provider": "",
+                    "description": "",
+                    "storedProcComments": ""
+                }
+            ],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
+            "properties": [
+                {
+                    "type": "array",
+                    "primaryKey": false,
+                    "name": "languages",
+                    "childType": "list",
+                    "additionalItems": true,
+                    "GUID": "bd47d102-6dc7-11e8-977e-574156f5cc39",
+                    "properties": [
+                        {
+                            "GUID": "bd47d103-6dc7-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "comments": "",
+                            "required": false,
+                            "id": "",
+                            "unit": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "default": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "mode": "",
+                            "sample": "",
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric",
+                            "compositeKey": [
+                                "compositeNodeKey"
+                            ],
+                            "compositeNodeKey": false,
+                            "arrayItem": true,
+                            "arrayParentType": "list"
+                        }
+                    ],
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minItems": "",
+                    "maxItems": "",
+                    "uniqueItems": false,
+                    "unique": false
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "year",
+                    "childType": "number",
+                    "GUID": "bd47d104-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 1990,
+                    "unique": false
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "imdbId",
+                    "GUID": "bd47d105-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "0100150",
+                    "unique": false
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "runtime",
+                    "childType": "number",
+                    "GUID": "bd47d106-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 115,
+                    "unique": false
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "imdbRating",
+                    "childType": "number",
+                    "GUID": "bd47d107-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 7.9,
+                    "unique": false
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "unique": true,
+                    "name": "movieId",
+                    "childType": "number",
+                    "GUID": "bd47d108-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 1245,
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": true
+                },
+                {
+                    "type": "array",
+                    "primaryKey": false,
+                    "name": "countries",
+                    "childType": "list",
+                    "additionalItems": true,
+                    "GUID": "bd47d109-6dc7-11e8-977e-574156f5cc39",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "arrayItem": true,
+                            "arrayParentType": "list",
+                            "primaryKey": false,
+                            "GUID": "bd47d10a-6dc7-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "comments": "",
+                            "dependencies": [],
+                            "required": false,
+                            "id": "",
+                            "name": "New property key",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "default": "",
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "sample": "USA",
+                            "unique": false
+                        }
+                    ],
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minItems": "",
+                    "maxItems": "",
+                    "uniqueItems": false,
+                    "unique": false
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "imdbVotes",
+                    "childType": "number",
+                    "GUID": "bd47d10b-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 101410,
+                    "unique": false
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "title",
+                    "GUID": "bd47d10c-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "Miller's Crossing",
+                    "unique": false
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "tmdbId",
+                    "childType": "number",
+                    "GUID": "bd47d10d-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 379,
+                    "unique": false
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "plot",
+                    "GUID": "bd47d10e-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "Tom Regan, an advisor to a Prohibition-era crime boss, tries to keep the peace between warring mobs but gets caught in divided loyalties.",
+                    "unique": false
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "poster",
+                    "GUID": "bd47d10f-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "http://ia.media-imdb.com/images/M/MV5BMTY2Njk3MTAzM15BMl5BanBnXkFtZTgwMTY5Mzk4NjE@._V1_SX300.jpg",
+                    "unique": false
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "released",
+                    "GUID": "bd47d110-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "1990-10-05",
+                    "unique": false
+                }
+            ],
+            "type": "object",
+            "GUID": "bd47d101-6dc7-11e8-977e-574156f5cc39",
+            "definitions": {
+                "GUID": "bd47d100-6dc7-11e8-977e-574156f5cc39",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Movie",
+            "constraint": [
+                {
+                    "GUID": "0aacd1c0-7223-11e8-8ba2-adbf9f9d0ad7",
+                    "name": "movieId",
+                    "key": [
+                        {
+                            "keyId": "bd47d108-6dc7-11e8-977e-574156f5cc39",
+                            "type": ""
+                        }
+                    ],
+                    "constraintId": "",
+                    "description": "",
+                    "storedProcComments": "",
+                    "compositeNodeKey": [
+                        {
+                            "keyId": "bd47d108-6dc7-11e8-977e-574156f5cc39",
+                            "type": ""
+                        }
+                    ]
+                }
+            ],
+            "index": [
+                {
+                    "GUID": "bd4d0124-6dc7-11e8-977e-574156f5cc39",
+                    "name": "imdb+movie",
+                    "key": [
+                        {
+                            "keyId": "bd47d105-6dc7-11e8-977e-574156f5cc39",
+                            "type": ""
+                        },
+                        {
+                            "keyId": "bd47d108-6dc7-11e8-977e-574156f5cc39",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_label_property",
+                    "provider": "",
+                    "description": "",
+                    "storedProcComments": ""
+                },
+                {
+                    "GUID": "bd4d2830-6dc7-11e8-977e-574156f5cc39",
+                    "name": "Movie.[movieId]",
+                    "key": [
+                        {
+                            "keyId": "bd47d108-6dc7-11e8-977e-574156f5cc39",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_unique_property",
+                    "provider": "",
+                    "description": "",
+                    "storedProcComments": ""
+                }
+            ],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "name",
+                    "GUID": "bd4511e2-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "Michelle Taylor",
+                    "unique": false
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "unique": true,
+                    "name": "userId",
+                    "childType": "number",
+                    "GUID": "bd4511e3-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 671
+                }
+            ],
+            "type": "object",
+            "GUID": "bd4511e1-6dc7-11e8-977e-574156f5cc39",
+            "definitions": {
+                "GUID": "bd4511e0-6dc7-11e8-977e-574156f5cc39",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "User",
+            "constraint": [],
+            "index": [
+                {
+                    "GUID": "bd4d0122-6dc7-11e8-977e-574156f5cc39",
+                    "name": ":User.[name]",
+                    "key": [
+                        {
+                            "keyId": "bd4511e2-6dc7-11e8-977e-574156f5cc39",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_label_property",
+                    "provider": "",
+                    "description": "",
+                    "storedProcComments": ""
+                },
+                {
+                    "GUID": "bd4d0123-6dc7-11e8-977e-574156f5cc39",
+                    "name": ":User.[userId]",
+                    "key": [
+                        {
+                            "keyId": "bd4511e3-6dc7-11e8-977e-574156f5cc39",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_unique_property",
+                    "provider": "",
+                    "description": "",
+                    "storedProcComments": ""
+                }
+            ],
+            "hasCollation": false,
+            "collation": {}
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
+            "name": "recommendations.db",
+            "type": "bucket",
+            "description": "",
+            "comments": "",
+            "collectionIds": [
+                "bd40f332-6dc7-11e8-977e-574156f5cc39",
+                "bd436431-6dc7-11e8-977e-574156f5cc39",
+                "bd4511e1-6dc7-11e8-977e-574156f5cc39",
+                "bd47d101-6dc7-11e8-977e-574156f5cc39",
+                "bd4cda12-6dc7-11e8-977e-574156f5cc39"
+            ],
+            "backgroundColor": {
+                "r": 3,
+                "g": 169,
+                "b": 245,
+                "a": 1
+            },
+            "show": true,
+            "indexes": [],
+            "addFieldsToBucket": true,
+            "isPlugin": true
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "bd6989d1-6dc7-11e8-977e-574156f5cc39",
+            "name": "ACTED_IN",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "bd40f332-6dc7-11e8-977e-574156f5cc39",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "bd47d101-6dc7-11e8-977e-574156f5cc39",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
+            "properties": []
+        },
+        {
+            "GUID": "bd6989d2-6dc7-11e8-977e-574156f5cc39",
+            "name": "RATED",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "bd4511e1-6dc7-11e8-977e-574156f5cc39",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "bd47d101-6dc7-11e8-977e-574156f5cc39",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
+            "properties": [
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "rating",
+                    "childType": "number",
+                    "GUID": "bd4e87c2-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 1,
+                    "unique": false
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "timestamp",
+                    "childType": "number",
+                    "GUID": "bd4e87c3-6dc7-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 1349048081,
+                    "unique": false
+                }
+            ]
+        },
+        {
+            "GUID": "bd6989d3-6dc7-11e8-977e-574156f5cc39",
+            "name": "IN_GENRE",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "bd47d101-6dc7-11e8-977e-574156f5cc39",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "bd4cda12-6dc7-11e8-977e-574156f5cc39",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
+            "properties": []
+        },
+        {
+            "GUID": "bd6989d4-6dc7-11e8-977e-574156f5cc39",
+            "name": "DIRECTED",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "bd436431-6dc7-11e8-977e-574156f5cc39",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "bd47d101-6dc7-11e8-977e-574156f5cc39",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
+            "properties": []
+        }
+    ],
+    "users": [],
+    "idToNameHashTable": {
+        "bd40f333-6dc7-11e8-977e-574156f5cc39": "name",
+        "bd40f332-6dc7-11e8-977e-574156f5cc39": "Actor",
+        "bd436432-6dc7-11e8-977e-574156f5cc39": "name",
+        "bd436431-6dc7-11e8-977e-574156f5cc39": "Director",
+        "bd4511e2-6dc7-11e8-977e-574156f5cc39": "name",
+        "bd4511e3-6dc7-11e8-977e-574156f5cc39": "userId",
+        "bd4511e1-6dc7-11e8-977e-574156f5cc39": "User",
+        "bd47d102-6dc7-11e8-977e-574156f5cc39": "languages",
+        "bd47d103-6dc7-11e8-977e-574156f5cc39": "New property key",
+        "bd47d104-6dc7-11e8-977e-574156f5cc39": "year",
+        "bd47d105-6dc7-11e8-977e-574156f5cc39": "imdbId",
+        "bd47d106-6dc7-11e8-977e-574156f5cc39": "runtime",
+        "bd47d107-6dc7-11e8-977e-574156f5cc39": "imdbRating",
+        "bd47d108-6dc7-11e8-977e-574156f5cc39": "movieId",
+        "bd47d109-6dc7-11e8-977e-574156f5cc39": "countries",
+        "bd47d10a-6dc7-11e8-977e-574156f5cc39": "New property key",
+        "bd47d10b-6dc7-11e8-977e-574156f5cc39": "imdbVotes",
+        "bd47d10c-6dc7-11e8-977e-574156f5cc39": "title",
+        "bd47d10d-6dc7-11e8-977e-574156f5cc39": "tmdbId",
+        "bd47d10e-6dc7-11e8-977e-574156f5cc39": "plot",
+        "bd47d10f-6dc7-11e8-977e-574156f5cc39": "poster",
+        "bd47d110-6dc7-11e8-977e-574156f5cc39": "released",
+        "bd47d101-6dc7-11e8-977e-574156f5cc39": "Movie",
+        "bd4cda13-6dc7-11e8-977e-574156f5cc39": "name",
+        "bd4cda12-6dc7-11e8-977e-574156f5cc39": "Genre",
+        "bd6989d1-6dc7-11e8-977e-574156f5cc39": "ACTED_IN",
+        "bd6989d2-6dc7-11e8-977e-574156f5cc39": "RATED",
+        "bd6989d3-6dc7-11e8-977e-574156f5cc39": "IN_GENRE",
+        "bd6989d4-6dc7-11e8-977e-574156f5cc39": "DIRECTED",
+        "bd6989d0-6dc7-11e8-977e-574156f5cc39": "recommendations.db",
+        "e28fc770-73f7-11e8-958a-476ba8247fd9": "x",
+        "e28fee80-73f7-11e8-958a-476ba8247fd9": "y",
+        "e28fee81-73f7-11e8-958a-476ba8247fd9": "z"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "ab348c21-6dc6-11e8-977e-574156f5cc39"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "ab348c22-6dc6-11e8-977e-574156f5cc39"
+    },
+    "modelName": "recommendations",
+    "dbVersion": "3.x",
+    "dbVendor": "Neo4j",
+    "appTarget": "NEO4J",
+    "creationTS": "2018-06-11T22:27:47.810Z",
+    "hideModelViews": false,
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginVersion": "0.1.1",
+        "pluginName": "Neo4j",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "bd40f332-6dc7-11e8-977e-574156f5cc39",
+                        "x": 817,
+                        "y": 150,
+                        "width": 243,
+                        "height": 43,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bd436431-6dc7-11e8-977e-574156f5cc39",
+                        "x": 1121,
+                        "y": 487,
+                        "width": 243,
+                        "height": 43,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bd4511e1-6dc7-11e8-977e-574156f5cc39",
+                        "x": 488,
+                        "y": 480,
+                        "width": 243,
+                        "height": 57,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bd47d101-6dc7-11e8-977e-574156f5cc39",
+                        "x": 807,
+                        "y": 333,
+                        "width": 263,
+                        "height": 239,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bd4cda12-6dc7-11e8-977e-574156f5cc39",
+                        "x": 817,
+                        "y": 718,
+                        "width": 243,
+                        "height": 43,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "bd6989d1-6dc7-11e8-977e-574156f5cc39",
+                        "x": 863,
+                        "y": 249,
+                        "width": 151,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "bd6989d2-6dc7-11e8-977e-574156f5cc39",
+                        "x": 489,
+                        "y": 373,
+                        "width": 241,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "bd6989d3-6dc7-11e8-977e-574156f5cc39",
+                        "x": 863,
+                        "y": 628,
+                        "width": 151,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "bd6989d4-6dc7-11e8-977e-574156f5cc39",
+                        "x": 1167,
+                        "y": 373,
+                        "width": 151,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 448,
+                        "y": 80,
+                        "GUID": "bd6989d0-6dc7-11e8-977e-574156f5cc39"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "selectedCollections": [],
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "displayColorPicker": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true
+        }
+    }
+}

@@ -1,0 +1,772 @@
+{
+    "modelName": "Kansas City Fountains",
+    "collections": [
+        {
+            "GUID": "21aa8f30-8ecb-11e6-9a2f-37f1efd6553e",
+            "collectionName": "donations",
+            "type": "object",
+            "description": "The schema for this collection features:\n- denormalization of the donors schema\n- a sub-document for donations that\n- an array of fountains in that donations sub-document\n- a de,ormalization of the fountains schema within an array itself within a sub-document.\n\n",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "type": "choice",
+                    "properties": [
+                        {
+                            "GUID": "f8ca7831-8ecc-11e6-9a2f-37f1efd6553e",
+                            "type": "subschema",
+                            "properties": [
+                                {
+                                    "GUID": "f8ca7832-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "name": "donorSSN",
+                                    "required": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "Foreign Key",
+                                    "parentRelationship": "28642370-8ecd-11e6-9a2f-37f1efd6553e",
+                                    "foreignCollection": "8d2b3330-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "foreignField": [
+                                        "8d2b3330-8ecc-11e6-9a2f-37f1efd6553e",
+                                        "a427c080-8ecc-11e6-9a2f-37f1efd6553e",
+                                        "a8322530-8ecc-11e6-9a2f-37f1efd6553e",
+                                        "b32d93c0-8ecc-11e6-9a2f-37f1efd6553e"
+                                    ],
+                                    "sample": "4839-02",
+                                    "error": {
+                                        "sample": false
+                                    },
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "f8ca7833-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "name": "donorFirstName",
+                                    "required": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "sample": "Steve",
+                                    "error": {
+                                        "sample": false
+                                    },
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "f8ca7834-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "name": "donorLastName",
+                                    "required": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "sample": "Hanson",
+                                    "error": {
+                                        "sample": false
+                                    },
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "f8ca7835-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "name": "donorBirthDate",
+                                    "required": true,
+                                    "type": "date",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "sample": "ISODate(\"1968-05-17\")",
+                                    "error": {
+                                        "sample": false
+                                    },
+                                    "isActivated": true
+                                }
+                            ],
+                            "description": "private donor sub-schema",
+                            "isActivated": true
+                        },
+                        {
+                            "GUID": "f8ca7836-8ecc-11e6-9a2f-37f1efd6553e",
+                            "type": "subschema",
+                            "properties": [
+                                {
+                                    "GUID": "f8ca7837-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "name": "donorTaxID",
+                                    "required": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "Foreign Key",
+                                    "parentRelationship": "30efca80-8ecd-11e6-9a2f-37f1efd6553e",
+                                    "foreignCollection": "8d2b3330-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "foreignField": [
+                                        "8d2b3330-8ecc-11e6-9a2f-37f1efd6553e",
+                                        "a427c080-8ecc-11e6-9a2f-37f1efd6553e",
+                                        "d1d52c20-8ecc-11e6-9a2f-37f1efd6553e",
+                                        "d7f6ff20-8ecc-11e6-9a2f-37f1efd6553e"
+                                    ],
+                                    "sample": "1235-039",
+                                    "error": {
+                                        "sample": false
+                                    },
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "f8ca7838-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "name": "companyName",
+                                    "required": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "sample": "Acme Explosives",
+                                    "error": {
+                                        "sample": false
+                                    },
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "f8ca7839-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "name": "contactName",
+                                    "required": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "sample": "Joe Dynamite",
+                                    "error": {
+                                        "sample": false
+                                    },
+                                    "isActivated": true
+                                }
+                            ],
+                            "description": "corporate donor sub-schema",
+                            "isActivated": true
+                        }
+                    ],
+                    "choice": "oneOf",
+                    "GUID": "f8ca7830-8ecc-11e6-9a2f-37f1efd6553e",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "666fd850-8ecb-11e6-9a2f-37f1efd6553e",
+                    "name": "donorAddressLine1Text",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "10 Main St",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "7aa0e990-8ecb-11e6-9a2f-37f1efd6553e",
+                    "name": "donorCityName",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "Denville",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "84577c10-8ecb-11e6-9a2f-37f1efd6553e",
+                    "name": "donorStateProvindeCode",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "NJ",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "964490c0-8ecb-11e6-9a2f-37f1efd6553e",
+                    "name": "donorCountry",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "United States",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "9dbbe1a0-8ecb-11e6-9a2f-37f1efd6553e",
+                    "name": "donorPostalCode",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "07834",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "41065f90-8ecf-11e6-9a2f-37f1efd6553e",
+                    "name": "donation",
+                    "required": true,
+                    "type": "document",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "properties": [
+                        {
+                            "GUID": "4f3fbb10-8ecf-11e6-9a2f-37f1efd6553e",
+                            "name": "donationAmount",
+                            "required": true,
+                            "type": "numeric",
+                            "mode": "integer32",
+                            "unit": "dollars",
+                            "minimum": 1000,
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "sample": 5000,
+                            "isActivated": true
+                        },
+                        {
+                            "GUID": "52fa7920-8ecf-11e6-9a2f-37f1efd6553e",
+                            "name": "donationDate",
+                            "required": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "sample": "ISODate(\"2014-05-17\")",
+                            "isActivated": true
+                        },
+                        {
+                            "GUID": "5f761f10-8ecf-11e6-9a2f-37f1efd6553e",
+                            "name": "fountains",
+                            "required": true,
+                            "type": "array",
+                            "properties": [
+                                {
+                                    "GUID": "5f761f11-8ecf-11e6-9a2f-37f1efd6553e",
+                                    "description": "fountains",
+                                    "required": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "Foreign Key",
+                                    "parentRelationship": "5f761f12-8ecf-11e6-9a2f-37f1efd6553e",
+                                    "foreignCollection": "0f5bdd10-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "foreignField": [
+                                        "0f5bdd10-8ecc-11e6-9a2f-37f1efd6553e",
+                                        "27d79050-8ecc-11e6-9a2f-37f1efd6553e"
+                                    ],
+                                    "sample": "J.C. Nichols Memorial Fountain",
+                                    "arrayItem": true,
+                                    "isActivated": true
+                                }
+                            ],
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "isActivated": true
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "isActivated": true
+                },
+                {
+                    "GUID": "85b270d0-8ece-11e6-9a2f-37f1efd6553e",
+                    "name": "totalAmountReceivedFromDonator",
+                    "required": true,
+                    "type": "numeric",
+                    "mode": "integer32",
+                    "unit": "dollars",
+                    "minimum": 1,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": 67500,
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "id": "c6583931-596d-11eb-abd9-032680bfc303",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        },
+        {
+            "GUID": "8d2b3330-8ecc-11e6-9a2f-37f1efd6553e",
+            "collectionName": "donors",
+            "type": "object",
+            "description": "In this donors master collection, there's a choice of 2 sub-schemas, one for each type of donor: private or corporate.  We make use of the JSON Schema oneOf keywork.",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "type": "choice",
+                    "properties": [
+                        {
+                            "GUID": "a8322530-8ecc-11e6-9a2f-37f1efd6553e",
+                            "type": "subschema",
+                            "properties": [
+                                {
+                                    "GUID": "b32d93c0-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "name": "donorSSN",
+                                    "required": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "childRelationships": [
+                                        "28642370-8ecd-11e6-9a2f-37f1efd6553e"
+                                    ],
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "ba2135b0-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "name": "donorFirstName",
+                                    "required": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "c34c5110-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "name": "donorLastName",
+                                    "required": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "ca2c9210-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "name": "donorBirthDate",
+                                    "required": true,
+                                    "type": "date",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "isActivated": true
+                                }
+                            ],
+                            "description": "private donor sub-schema",
+                            "isActivated": true
+                        },
+                        {
+                            "GUID": "d1d52c20-8ecc-11e6-9a2f-37f1efd6553e",
+                            "type": "subschema",
+                            "properties": [
+                                {
+                                    "GUID": "d7f6ff20-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "name": "donorTaxID",
+                                    "required": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "childRelationships": [
+                                        "30efca80-8ecd-11e6-9a2f-37f1efd6553e"
+                                    ],
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "dd0edc30-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "name": "companyName",
+                                    "required": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "e959ae20-8ecc-11e6-9a2f-37f1efd6553e",
+                                    "name": "contactName",
+                                    "required": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "isActivated": true
+                                }
+                            ],
+                            "description": "corporate donor sub-schema",
+                            "isActivated": true
+                        }
+                    ],
+                    "choice": "oneOf",
+                    "GUID": "a427c080-8ecc-11e6-9a2f-37f1efd6553e",
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "id": "c6583932-596d-11eb-abd9-032680bfc303",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        },
+        {
+            "GUID": "0f5bdd10-8ecc-11e6-9a2f-37f1efd6553e",
+            "collectionName": "fountains",
+            "type": "object",
+            "description": "Master collection of fountains of Kansas City.  Flat.  Notice that the unique key is the fountain name.  Not ideal...",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "27d79050-8ecc-11e6-9a2f-37f1efd6553e",
+                    "name": "name",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "7568bdd0-8ecc-11e6-9a2f-37f1efd6553e",
+                        "6d7b8ec2-8ece-11e6-9a2f-37f1efd6553e",
+                        "5f761f12-8ecf-11e6-9a2f-37f1efd6553e"
+                    ],
+                    "sample": "Kansas City Fountain",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "2fdacd80-8ecc-11e6-9a2f-37f1efd6553e",
+                    "name": "artist",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "John Doe",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "3564a640-8ecc-11e6-9a2f-37f1efd6553e",
+                    "name": "fountainAddressLine1Text",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "123 Main Street",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "6440cde0-8ecc-11e6-9a2f-37f1efd6553e",
+                    "name": "description",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "Beautiful old fountain, but needs restoration",
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "id": "c6583933-596d-11eb-abd9-032680bfc303",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "28642370-8ecd-11e6-9a2f-37f1efd6553e",
+            "name": "fk_privateDonor",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "8d2b3330-8ecc-11e6-9a2f-37f1efd6553e",
+            "parentField": [
+                [
+                    "8d2b3330-8ecc-11e6-9a2f-37f1efd6553e",
+                    "a427c080-8ecc-11e6-9a2f-37f1efd6553e",
+                    "a8322530-8ecc-11e6-9a2f-37f1efd6553e",
+                    "b32d93c0-8ecc-11e6-9a2f-37f1efd6553e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "21aa8f30-8ecb-11e6-9a2f-37f1efd6553e",
+            "childField": [
+                [
+                    "21aa8f30-8ecb-11e6-9a2f-37f1efd6553e",
+                    "f8ca7830-8ecc-11e6-9a2f-37f1efd6553e",
+                    "f8ca7831-8ecc-11e6-9a2f-37f1efd6553e",
+                    "f8ca7832-8ecc-11e6-9a2f-37f1efd6553e"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "30efca80-8ecd-11e6-9a2f-37f1efd6553e",
+            "name": "fk_corporateDonor",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "8d2b3330-8ecc-11e6-9a2f-37f1efd6553e",
+            "parentField": [
+                [
+                    "8d2b3330-8ecc-11e6-9a2f-37f1efd6553e",
+                    "a427c080-8ecc-11e6-9a2f-37f1efd6553e",
+                    "d1d52c20-8ecc-11e6-9a2f-37f1efd6553e",
+                    "d7f6ff20-8ecc-11e6-9a2f-37f1efd6553e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "21aa8f30-8ecb-11e6-9a2f-37f1efd6553e",
+            "childField": [
+                [
+                    "21aa8f30-8ecb-11e6-9a2f-37f1efd6553e",
+                    "f8ca7830-8ecc-11e6-9a2f-37f1efd6553e",
+                    "f8ca7836-8ecc-11e6-9a2f-37f1efd6553e",
+                    "f8ca7837-8ecc-11e6-9a2f-37f1efd6553e"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "5f761f12-8ecf-11e6-9a2f-37f1efd6553e",
+            "name": "fk_donationFountains",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "0f5bdd10-8ecc-11e6-9a2f-37f1efd6553e",
+            "parentField": [
+                [
+                    "0f5bdd10-8ecc-11e6-9a2f-37f1efd6553e",
+                    "27d79050-8ecc-11e6-9a2f-37f1efd6553e"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "21aa8f30-8ecb-11e6-9a2f-37f1efd6553e",
+            "childField": [
+                [
+                    "21aa8f30-8ecb-11e6-9a2f-37f1efd6553e",
+                    "41065f90-8ecf-11e6-9a2f-37f1efd6553e",
+                    "5f761f10-8ecf-11e6-9a2f-37f1efd6553e",
+                    "5f761f11-8ecf-11e6-9a2f-37f1efd6553e"
+                ]
+            ],
+            "childCardinality": "0..n"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "21aa8f30-8ecb-11e6-9a2f-37f1efd6553e": "donations",
+        "666fd850-8ecb-11e6-9a2f-37f1efd6553e": "donorAddressLine1Text",
+        "7aa0e990-8ecb-11e6-9a2f-37f1efd6553e": "donorCityName",
+        "84577c10-8ecb-11e6-9a2f-37f1efd6553e": "donorStateProvindeCode",
+        "964490c0-8ecb-11e6-9a2f-37f1efd6553e": "donorCountry",
+        "9dbbe1a0-8ecb-11e6-9a2f-37f1efd6553e": "donorPostalCode",
+        "0f5bdd10-8ecc-11e6-9a2f-37f1efd6553e": "fountains",
+        "27d79050-8ecc-11e6-9a2f-37f1efd6553e": "name",
+        "2fdacd80-8ecc-11e6-9a2f-37f1efd6553e": "artist",
+        "3564a640-8ecc-11e6-9a2f-37f1efd6553e": "fountainAddressLine1Text",
+        "6440cde0-8ecc-11e6-9a2f-37f1efd6553e": "description",
+        "8d2b3330-8ecc-11e6-9a2f-37f1efd6553e": "donors",
+        "b32d93c0-8ecc-11e6-9a2f-37f1efd6553e": "donorSSN",
+        "ba2135b0-8ecc-11e6-9a2f-37f1efd6553e": "donorFirstName",
+        "c34c5110-8ecc-11e6-9a2f-37f1efd6553e": "donorLastName",
+        "ca2c9210-8ecc-11e6-9a2f-37f1efd6553e": "donorBirthDate",
+        "d7f6ff20-8ecc-11e6-9a2f-37f1efd6553e": "donorTaxID",
+        "dd0edc30-8ecc-11e6-9a2f-37f1efd6553e": "companyName",
+        "e959ae20-8ecc-11e6-9a2f-37f1efd6553e": "contactName",
+        "85b270d0-8ece-11e6-9a2f-37f1efd6553e": "totalAmountReceivedFromDonator",
+        "41065f90-8ecf-11e6-9a2f-37f1efd6553e": "donation",
+        "4f3fbb10-8ecf-11e6-9a2f-37f1efd6553e": "donationAmount",
+        "52fa7920-8ecf-11e6-9a2f-37f1efd6553e": "donationDate",
+        "5f761f10-8ecf-11e6-9a2f-37f1efd6553e": "fountains"
+    },
+    "definitions": {
+        "id": "c6583930-596d-11eb-abd9-032680bfc303",
+        "properties": [],
+        "type": "definitions"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "c6707c22-596d-11eb-abd9-032680bfc303"
+    },
+    "decorativeSymbols": [],
+    "dbVersion": "v3.2",
+    "dbVendor": "MongoDB",
+    "hideModelViews": true,
+    "appTarget": "MONGODB",
+    "creationTS": "2016-10-10T09:22:33.357Z",
+    "GUID": "133bf2e0-8ecb-11e6-9a2f-37f1efd6553e",
+    "lastModifTS": "2021-01-18T09:15:59.876Z",
+    "persistenceSchemaVersion": "4",
+    "description": "This model is drawn from an exercise in Steve Hoberman's class on 'Advanced modeling for NoSQL'.  It is asked to model donations where the donor can either be an individual or a corporation, each requiring deffirent fields.",
+    "comments": "This example is interesting because it features physical sub-types in the form of a oneOf choice between the individual and the corporate donor.  It shows the power of JSON and NoSQL documents.  And the power of Hackolade modeling...",
+    "author": "Pascal",
+    "version": "1",
+    "validation": "MongoDB extension",
+    "hackoladeMeta": {},
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "4.3.3"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "collectionId",
+                        "x": 30,
+                        "y": 30,
+                        "width": 280,
+                        "height": 150
+                    },
+                    {
+                        "GUID": "collectionId22",
+                        "x": 720,
+                        "y": 380,
+                        "width": 230,
+                        "height": 130
+                    },
+                    {
+                        "GUID": "collectionId33",
+                        "x": 300,
+                        "y": 400,
+                        "width": 220,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "collectionId4",
+                        "x": 500,
+                        "y": 30,
+                        "width": 250,
+                        "height": 200
+                    },
+                    {
+                        "GUID": "94a62b20-e476-11e5-8d0b-1b53f33d738b",
+                        "x": 80,
+                        "y": 300,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                        "x": 34,
+                        "y": 41,
+                        "width": 280,
+                        "height": 424
+                    },
+                    {
+                        "GUID": "527fcb00-f378-11e5-ae63-ed98875331f1",
+                        "x": 455,
+                        "y": 104,
+                        "width": 277,
+                        "height": 183
+                    },
+                    {
+                        "GUID": "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+                        "x": 480,
+                        "y": 355,
+                        "width": 233,
+                        "height": 101
+                    },
+                    {
+                        "GUID": "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+                        "x": 61,
+                        "y": 516,
+                        "width": 200,
+                        "height": 75
+                    },
+                    {
+                        "GUID": "c2b2c8b0-f417-11e5-938a-bd54cc414623",
+                        "x": 429,
+                        "y": 472,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "4a014da0-f418-11e5-a6f2-dbf6571c2b51",
+                        "x": 422,
+                        "y": 485,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "8439e830-f41b-11e5-ad3f-7d283a6e1eb9",
+                        "x": 453.5,
+                        "y": 494,
+                        "width": 233,
+                        "height": 116
+                    },
+                    {
+                        "GUID": "6e9a9cc0-f422-11e5-ab1e-4fda87c84016",
+                        "x": 431,
+                        "y": 485,
+                        "width": 314,
+                        "height": 204
+                    },
+                    {
+                        "GUID": "166589b0-0440-11e6-a1a6-29098b60dd65",
+                        "x": 102,
+                        "y": 93,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+                        "x": 375,
+                        "y": 41,
+                        "width": 313,
+                        "height": 203
+                    },
+                    {
+                        "GUID": "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+                        "x": 431,
+                        "y": 338,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "21aa8f30-8ecb-11e6-9a2f-37f1efd6553e",
+                        "x": 429,
+                        "y": 75,
+                        "width": 308,
+                        "height": 335
+                    },
+                    {
+                        "GUID": "0f5bdd10-8ecc-11e6-9a2f-37f1efd6553e",
+                        "x": 442,
+                        "y": 480,
+                        "width": 282,
+                        "height": 93
+                    },
+                    {
+                        "GUID": "8d2b3330-8ecc-11e6-9a2f-37f1efd6553e",
+                        "x": 49,
+                        "y": 153,
+                        "width": 287,
+                        "height": 179
+                    }
+                ],
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

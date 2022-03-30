@@ -1,0 +1,543 @@
+{
+    "modelName": "aws.glue@GlueDataCatalogTableStateChange",
+    "collections": [],
+    "buckets": [],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "05d42bb0-d27c-11ea-a67d-2523550081c5": "schemas",
+        "05d479d0-d27c-11ea-a67d-2523550081c5": "responses",
+        "05d4a0e0-d27c-11ea-a67d-2523550081c5": "parameters",
+        "05d4c7f0-d27c-11ea-a67d-2523550081c5": "examples",
+        "05d51610-d27c-11ea-a67d-2523550081c5": "requestBodies",
+        "05d53d20-d27c-11ea-a67d-2523550081c5": "headers",
+        "05d56430-d27c-11ea-a67d-2523550081c5": "securitySchemes",
+        "05d58b40-d27c-11ea-a67d-2523550081c5": "links",
+        "05d5b250-d27c-11ea-a67d-2523550081c5": "callbacks",
+        "05d5b251-d27c-11ea-a67d-2523550081c5": "Specification Extensions",
+        "50b665d0-d27c-11ea-a67d-2523550081c5": "AWSEvent",
+        "50b6db03-d27c-11ea-a67d-2523550081c5": "account",
+        "50b6db04-d27c-11ea-a67d-2523550081c5": "detail",
+        "50b6db05-d27c-11ea-a67d-2523550081c5": "detail-type",
+        "50b6db06-d27c-11ea-a67d-2523550081c5": "id",
+        "50b6db07-d27c-11ea-a67d-2523550081c5": "region",
+        "50b6db08-d27c-11ea-a67d-2523550081c5": "resources",
+        "50b6db09-d27c-11ea-a67d-2523550081c5": "source",
+        "50b6db0a-d27c-11ea-a67d-2523550081c5": "time",
+        "50b6db0b-d27c-11ea-a67d-2523550081c5": "version",
+        "50b68ce0-d27c-11ea-a67d-2523550081c5": "GlueDataCatalogTableStateChange",
+        "50b7c560-d27c-11ea-a67d-2523550081c5": "changedPartitions",
+        "50b7c561-d27c-11ea-a67d-2523550081c5": "databaseName",
+        "50b7c562-d27c-11ea-a67d-2523550081c5": "tableName",
+        "50b7c563-d27c-11ea-a67d-2523550081c5": "typeOfChange"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [
+            {
+                "type": "document",
+                "subtype": "schema",
+                "structureType": true,
+                "properties": [
+                    {
+                        "code": "",
+                        "properties": [
+                            {
+                                "code": "",
+                                "type": "string",
+                                "name": "account",
+                                "GUID": "50b6db03-d27c-11ea-a67d-2523550081c5",
+                                "primaryKey": false,
+                                "required": true,
+                                "schemeType": "apiKey",
+                                "isActivated": true
+                            },
+                            {
+                                "code": "",
+                                "$ref": "#model/definitions/schemas/GlueDataCatalogTableStateChange",
+                                "name": "detail",
+                                "GUID": "50b6db04-d27c-11ea-a67d-2523550081c5",
+                                "primaryKey": false,
+                                "type": "reference",
+                                "refType": "model",
+                                "refIdPath": [
+                                    "05d3dd90-d27c-11ea-a67d-2523550081c5",
+                                    "05d3dd91-d27c-11ea-a67d-2523550081c5",
+                                    "05d42bb0-d27c-11ea-a67d-2523550081c5",
+                                    "50b68ce0-d27c-11ea-a67d-2523550081c5"
+                                ],
+                                "ref": "50b68ce0-d27c-11ea-a67d-2523550081c5",
+                                "required": true,
+                                "schemeType": "apiKey",
+                                "isActivated": true
+                            },
+                            {
+                                "code": "",
+                                "type": "string",
+                                "name": "detail-type",
+                                "GUID": "50b6db05-d27c-11ea-a67d-2523550081c5",
+                                "primaryKey": false,
+                                "required": true,
+                                "schemeType": "apiKey",
+                                "isActivated": true
+                            },
+                            {
+                                "code": "",
+                                "type": "string",
+                                "name": "id",
+                                "GUID": "50b6db06-d27c-11ea-a67d-2523550081c5",
+                                "primaryKey": false,
+                                "required": true,
+                                "schemeType": "apiKey",
+                                "isActivated": true
+                            },
+                            {
+                                "code": "",
+                                "type": "string",
+                                "name": "region",
+                                "GUID": "50b6db07-d27c-11ea-a67d-2523550081c5",
+                                "primaryKey": false,
+                                "required": true,
+                                "schemeType": "apiKey",
+                                "isActivated": true
+                            },
+                            {
+                                "code": "",
+                                "type": "array",
+                                "name": "resources",
+                                "GUID": "50b6db08-d27c-11ea-a67d-2523550081c5",
+                                "properties": [
+                                    {
+                                        "type": "string",
+                                        "arrayItem": true,
+                                        "GUID": "50b75030-d27c-11ea-a67d-2523550081c5",
+                                        "primaryKey": false,
+                                        "hackoladeMeta": {},
+                                        "schemeType": "apiKey",
+                                        "arrayParentType": "array",
+                                        "isActivated": true
+                                    }
+                                ],
+                                "primaryKey": false,
+                                "childType": "array",
+                                "additionalItems": true,
+                                "required": true,
+                                "subtype": "schema",
+                                "schemeType": "apiKey",
+                                "isActivated": true
+                            },
+                            {
+                                "code": "",
+                                "type": "string",
+                                "name": "source",
+                                "GUID": "50b6db09-d27c-11ea-a67d-2523550081c5",
+                                "primaryKey": false,
+                                "required": true,
+                                "schemeType": "apiKey",
+                                "isActivated": true
+                            },
+                            {
+                                "code": "",
+                                "format": "date-time",
+                                "type": "string",
+                                "name": "time",
+                                "GUID": "50b6db0a-d27c-11ea-a67d-2523550081c5",
+                                "primaryKey": false,
+                                "required": true,
+                                "schemeType": "apiKey",
+                                "isActivated": true
+                            },
+                            {
+                                "code": "",
+                                "type": "string",
+                                "name": "version",
+                                "GUID": "50b6db0b-d27c-11ea-a67d-2523550081c5",
+                                "primaryKey": false,
+                                "required": true,
+                                "schemeType": "apiKey",
+                                "isActivated": true
+                            }
+                        ],
+                        "type": "document",
+                        "x-amazon-events-detail-type": "Glue Data Catalog Table State Change",
+                        "x-amazon-events-source": "aws.glue",
+                        "name": "AWSEvent",
+                        "GUID": "50b665d0-d27c-11ea-a67d-2523550081c5",
+                        "primaryKey": false,
+                        "childType": "object",
+                        "additionalProperties": false,
+                        "additionalPropControl": "Boolean",
+                        "additionalPropertiesObjectType": "integer",
+                        "additionalPropertiesIntegerFormat": "int32",
+                        "subtype": "schema",
+                        "schemeType": "apiKey",
+                        "isActivated": true
+                    },
+                    {
+                        "code": "",
+                        "properties": [
+                            {
+                                "code": "",
+                                "type": "array",
+                                "name": "changedPartitions",
+                                "GUID": "50b7c560-d27c-11ea-a67d-2523550081c5",
+                                "properties": [
+                                    {
+                                        "type": "string",
+                                        "arrayItem": true,
+                                        "GUID": "50b7c564-d27c-11ea-a67d-2523550081c5",
+                                        "primaryKey": false,
+                                        "hackoladeMeta": {},
+                                        "schemeType": "apiKey",
+                                        "arrayParentType": "array",
+                                        "isActivated": true
+                                    }
+                                ],
+                                "primaryKey": false,
+                                "childType": "array",
+                                "additionalItems": true,
+                                "required": true,
+                                "subtype": "schema",
+                                "schemeType": "apiKey",
+                                "isActivated": true
+                            },
+                            {
+                                "code": "",
+                                "type": "string",
+                                "name": "databaseName",
+                                "GUID": "50b7c561-d27c-11ea-a67d-2523550081c5",
+                                "primaryKey": false,
+                                "required": true,
+                                "schemeType": "apiKey",
+                                "isActivated": true
+                            },
+                            {
+                                "code": "",
+                                "type": "string",
+                                "name": "tableName",
+                                "GUID": "50b7c562-d27c-11ea-a67d-2523550081c5",
+                                "primaryKey": false,
+                                "required": true,
+                                "schemeType": "apiKey",
+                                "isActivated": true
+                            },
+                            {
+                                "code": "",
+                                "type": "string",
+                                "name": "typeOfChange",
+                                "GUID": "50b7c563-d27c-11ea-a67d-2523550081c5",
+                                "primaryKey": false,
+                                "required": true,
+                                "schemeType": "apiKey",
+                                "isActivated": true
+                            }
+                        ],
+                        "type": "document",
+                        "name": "GlueDataCatalogTableStateChange",
+                        "GUID": "50b68ce0-d27c-11ea-a67d-2523550081c5",
+                        "primaryKey": false,
+                        "childType": "object",
+                        "additionalProperties": false,
+                        "additionalPropControl": "Boolean",
+                        "additionalPropertiesObjectType": "integer",
+                        "additionalPropertiesIntegerFormat": "int32",
+                        "subtype": "schema",
+                        "schemeType": "apiKey",
+                        "isActivated": true
+                    }
+                ],
+                "name": "schemas",
+                "GUID": "05d42bb0-d27c-11ea-a67d-2523550081c5",
+                "primaryKey": false,
+                "childType": "componentObject",
+                "ignore_z_value": true,
+                "additionalProperties": false,
+                "hackoladeMeta": {
+                    "disableAdd": false,
+                    "disableDelete": true,
+                    "disableAppend": true,
+                    "disableChoices": true,
+                    "source": true
+                },
+                "schemeType": "apiKey",
+                "code": "",
+                "isActivated": true
+            },
+            {
+                "type": "document",
+                "subtype": "response",
+                "structureType": true,
+                "properties": [],
+                "name": "responses",
+                "GUID": "05d479d0-d27c-11ea-a67d-2523550081c5",
+                "primaryKey": false,
+                "childType": "componentObject",
+                "ignore_z_value": true,
+                "additionalProperties": false,
+                "hackoladeMeta": {
+                    "disableAdd": false,
+                    "disableDelete": true,
+                    "disableAppend": true,
+                    "disableChoices": true
+                },
+                "schemeType": "apiKey",
+                "code": "",
+                "isActivated": true
+            },
+            {
+                "type": "document",
+                "subtype": "anyParameter",
+                "structureType": true,
+                "properties": [],
+                "name": "parameters",
+                "GUID": "05d4a0e0-d27c-11ea-a67d-2523550081c5",
+                "primaryKey": false,
+                "childType": "componentObject",
+                "ignore_z_value": true,
+                "additionalProperties": false,
+                "hackoladeMeta": {
+                    "disableAdd": false,
+                    "disableDelete": true,
+                    "disableAppend": true,
+                    "disableChoices": true
+                },
+                "schemeType": "apiKey",
+                "code": "",
+                "isActivated": true
+            },
+            {
+                "type": "document",
+                "subtype": "example",
+                "structureType": true,
+                "properties": [],
+                "name": "examples",
+                "GUID": "05d4c7f0-d27c-11ea-a67d-2523550081c5",
+                "primaryKey": false,
+                "childType": "componentObject",
+                "ignore_z_value": true,
+                "additionalProperties": false,
+                "hackoladeMeta": {
+                    "disableAdd": false,
+                    "disableDelete": true,
+                    "disableAppend": true,
+                    "disableChoices": true
+                },
+                "schemeType": "apiKey",
+                "code": "",
+                "isActivated": true
+            },
+            {
+                "type": "document",
+                "subtype": "request",
+                "structureType": true,
+                "properties": [],
+                "name": "requestBodies",
+                "GUID": "05d51610-d27c-11ea-a67d-2523550081c5",
+                "primaryKey": false,
+                "childType": "componentObject",
+                "ignore_z_value": true,
+                "additionalProperties": false,
+                "hackoladeMeta": {
+                    "disableAdd": false,
+                    "disableDelete": true,
+                    "disableAppend": true,
+                    "disableChoices": true
+                },
+                "schemeType": "apiKey",
+                "code": "",
+                "isActivated": true
+            },
+            {
+                "type": "document",
+                "subtype": "header",
+                "structureType": true,
+                "properties": [],
+                "name": "headers",
+                "GUID": "05d53d20-d27c-11ea-a67d-2523550081c5",
+                "primaryKey": false,
+                "childType": "componentObject",
+                "ignore_z_value": true,
+                "additionalProperties": false,
+                "hackoladeMeta": {
+                    "disableAdd": false,
+                    "disableDelete": true,
+                    "disableAppend": true,
+                    "disableChoices": true
+                },
+                "schemeType": "apiKey",
+                "code": "",
+                "isActivated": true
+            },
+            {
+                "type": "document",
+                "subtype": "securityScheme",
+                "structureType": true,
+                "properties": [],
+                "name": "securitySchemes",
+                "GUID": "05d56430-d27c-11ea-a67d-2523550081c5",
+                "primaryKey": false,
+                "childType": "componentObject",
+                "ignore_z_value": true,
+                "additionalProperties": false,
+                "hackoladeMeta": {
+                    "disableAdd": false,
+                    "disableDelete": true,
+                    "disableAppend": true,
+                    "disableChoices": true
+                },
+                "schemeType": "apiKey",
+                "code": "",
+                "isActivated": true
+            },
+            {
+                "type": "document",
+                "subtype": "link",
+                "structureType": true,
+                "properties": [],
+                "name": "links",
+                "GUID": "05d58b40-d27c-11ea-a67d-2523550081c5",
+                "primaryKey": false,
+                "childType": "componentObject",
+                "ignore_z_value": true,
+                "additionalProperties": false,
+                "hackoladeMeta": {
+                    "disableAdd": false,
+                    "disableDelete": true,
+                    "disableAppend": true,
+                    "disableChoices": true
+                },
+                "schemeType": "apiKey",
+                "code": "",
+                "isActivated": true
+            },
+            {
+                "type": "document",
+                "subtype": "callback",
+                "structureType": true,
+                "properties": [],
+                "name": "callbacks",
+                "GUID": "05d5b250-d27c-11ea-a67d-2523550081c5",
+                "primaryKey": false,
+                "childType": "componentObject",
+                "ignore_z_value": true,
+                "additionalProperties": false,
+                "hackoladeMeta": {
+                    "disableAdd": false,
+                    "disableDelete": true,
+                    "disableAppend": true,
+                    "disableChoices": true
+                },
+                "schemeType": "apiKey",
+                "code": "",
+                "isActivated": true
+            },
+            {
+                "type": "document",
+                "structureType": true,
+                "name": "Specification Extensions",
+                "GUID": "05d5b251-d27c-11ea-a67d-2523550081c5",
+                "primaryKey": false,
+                "childType": "extensions",
+                "ignore_z_value": true,
+                "subtype": "snippetChildrenOnly",
+                "additionalProperties": false,
+                "hackoladeMeta": {
+                    "disableAdd": true,
+                    "disableReference": true,
+                    "disableDelete": true,
+                    "disableAppend": true
+                },
+                "schemeType": "apiKey",
+                "properties": [],
+                "code": "",
+                "isActivated": true
+            }
+        ],
+        "GUID": "05d3dd91-d27c-11ea-a67d-2523550081c5"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "05d3dd92-d27c-11ea-a67d-2523550081c5"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "EventBridge",
+    "EBSRschemaType": "OpenApi3",
+    "appTarget": "EventBridge",
+    "creationTS": "2020-07-30T15:47:50.377Z",
+    "GUID": "05d3dd90-d27c-11ea-a67d-2523550081c5",
+    "code": "",
+    "lastModifTS": "2021-03-06T16:42:41.184Z",
+    "persistenceSchemaVersion": "4",
+    "description": "OpenAPI definition for aws.glue@GlueDataCatalogTableStateChange API",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "dbVersion": "3.0.0",
+    "scopesExtensions": [],
+    "modelVersion": "1.0.0",
+    "title": "GlueDataCatalogTableStateChange",
+    "infoExtensions": [],
+    "ESBRregistry": "aws.events",
+    "EBSRregistryDescription": "Registry for managing schemas supported by EventBridge. Schemas and associated code bindings under this registry are readonly.\n\n",
+    "EBSRschemaDescription": "Schema for event type GlueDataCatalogTableStateChange, published by AWS service aws.glue",
+    "ESBRschemaARN": "",
+    "EBSRschemaVersion": "1",
+    "EBSRRegistryTags": [],
+    "EBSRSchemaTags": [],
+    "EBSRversionCreatedDate": "2019-12-01T00:31:56.000Z",
+    "EBSRlastModified": "2019-12-01T00:31:56.000Z",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "EventBridge",
+        "pluginVersion": "0.1.5",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "4.3.10"
+    },
+    "hackoladeMeta": {
+        "validationErrors": {}
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [],
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

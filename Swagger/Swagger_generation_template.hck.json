@@ -1,0 +1,335 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "0.1",
+    "title": "Entities API",
+    "description": "This API provides access to Entity data.",
+    "contact": {
+      "email": "info@hackolade.com",
+      "name": "Pascal",
+      "url": "https://hackolade.com"
+    }
+  },
+  "host": "www.prod.com",
+  "basePath": "/data/0.1",
+  "securityDefinitions": {
+    "auth": {
+      "type": "basic"
+    }
+  },
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/entities": {
+      "post": {
+        "description": "Create a new entity resource.",
+        "summary": "Create entity.",
+        "tags": [
+          "Entity resource"
+        ],
+        "operationId": "Createentity.",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "Required input.",
+            "schema": {
+              "$ref": "#/definitions/Entity"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/EntitiesResponse"
+            },
+            "headers": {}
+          },
+          "400": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          },
+          "401": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          },
+          "403": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          },
+          "500": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          }
+        }
+      }
+    },
+    "/entities/{id}": {
+      "get": {
+        "description": "Retrieve all the data for the template resource.",
+        "summary": "Retrieve entity.",
+        "tags": [
+          "Entity resource"
+        ],
+        "operationId": "Retrieveentity.",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The id of the template to retrieve"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/EntitiesResponse"
+            },
+            "headers": {}
+          },
+          "401": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          },
+          "403": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          },
+          "404": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          },
+          "500": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          }
+        }
+      },
+      "put": {
+        "description": "Create a new or update an existing template resource.",
+        "summary": "Create or Update entity.",
+        "tags": [
+          "Entity resource"
+        ],
+        "operationId": "CreateorUpdateentity.",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The id of the template to create/update"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "Required input.",
+            "schema": {
+              "$ref": "#/definitions/Entity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/EntitiesResponse"
+            },
+            "headers": {}
+          },
+          "400": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          },
+          "401": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          },
+          "403": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          },
+          "404": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          },
+          "500": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete the template resource.",
+        "summary": "Delete entity.",
+        "tags": [
+          "Entity resource"
+        ],
+        "operationId": "Deleteentity.",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The id of the template to delete"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "",
+            "headers": {}
+          },
+          "401": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          },
+          "403": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          },
+          "404": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          },
+          "500": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Entities500Error"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Entity": {
+      "title": "Entity",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "description": "name of entity",
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "Error": {
+      "title": "Error",
+      "type": "object",
+      "properties": {
+        "code": {
+          "description": "Error code",
+          "example": "500",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the error",
+          "example": "A downstream system is not responding correctly.",
+          "type": "string"
+        }
+      }
+    },
+    "Entities500Error": {
+      "title": "Entities500Error",
+      "type": "object",
+      "properties": {
+        "Error": {
+          "$ref": "#/definitions/Error"
+        }
+      }
+    },
+    "EntitiesResponse": {
+      "title": "EntitiesResponse",
+      "type": "object",
+      "properties": {
+        "Entity": {
+          "$ref": "#/definitions/Entity"
+        }
+      }
+    }
+  },
+  "security": [
+    {
+      "auth": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "Entity resource template",
+      "description": "CRUD to manage the Entity resources."
+    },
+    {
+      "name": "Entity resource",
+      "description": ""
+    }
+  ]
+}

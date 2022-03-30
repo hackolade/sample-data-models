@@ -1,0 +1,2709 @@
+{
+    "modelName": "Flight bookings",
+    "collections": [
+        {
+            "collectionName": "aircrafts_data",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "aircraft_code",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "mode": "char",
+                    "length": 3,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "maxLength": 3,
+                    "udt_name": "bpchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Aircraft code, IATA",
+                    "timePrecision": "",
+                    "GUID": "7dfff5fa-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "sample": "CR2",
+                    "childRelationships": [
+                        "daa2ff41-4b68-11ec-ae71-d5c74b0d4990",
+                        "daa32652-4b68-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "model",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "additionalProperties": false,
+                    "mode": "jsonb",
+                    "subtype": "object",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "en",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "jsonString",
+                            "maxLength": 19,
+                            "length": 19,
+                            "GUID": "7dfff5fc-37f3-11ec-8866-8b7656a20503",
+                            "required": true,
+                            "sample": "Bombardier CRJ-200",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "ru",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "jsonString",
+                            "maxLength": 19,
+                            "length": 19,
+                            "GUID": "7dfff5fd-37f3-11ec-8866-8b7656a20503",
+                            "required": true,
+                            "sample": "Бомбардье CRJ-200",
+                            "error": {}
+                        }
+                    ],
+                    "childType": "json",
+                    "type": "jsonObject",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "udt_name": "jsonb",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Aircraft model",
+                    "timePrecision": "",
+                    "GUID": "7dfff5fb-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "range",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "integer",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "precision": 32,
+                    "scale": 0,
+                    "udt_name": "int4",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Maximal flying distance, km",
+                    "timePrecision": "",
+                    "GUID": "7dfff5fe-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "sample": 11100,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "7e05c253-37f3-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "memory_optimized": false,
+            "collectionUsers": [],
+            "ifNotExist": true,
+            "on_commit": "PRESERVE ROWS",
+            "table_tablespace_name": "pg_default",
+            "GUID": "7e05c252-37f3-11ec-8866-8b7656a20503",
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503",
+            "code": "",
+            "description": "Aircrafts (internal data)",
+            "temporary": false,
+            "unlogged": false,
+            "inherits": [],
+            "storage_parameter": {
+                "GUID": "daa2b120-4b68-11ec-ae71-d5c74b0d4990"
+            },
+            "primaryKey": [
+                {
+                    "GUID": "daa2b124-4b68-11ec-ae71-d5c74b0d4990",
+                    "constraintName": "aircrafts_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "da79a550-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "Indxs": [
+                {
+                    "isActivated": true,
+                    "index_method": "btree",
+                    "ifNotExist": true,
+                    "only": true,
+                    "index_tablespace_name": "",
+                    "GUID": "daa2b125-4b68-11ec-ae71-d5c74b0d4990",
+                    "indxName": "aircrafts_pkey",
+                    "unique": true,
+                    "columns": [
+                        {
+                            "keyId": "da79a550-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": "pg_catalog.\"default\"",
+                            "opclass": "pg_catalog.bpchar_ops"
+                        }
+                    ],
+                    "include": [],
+                    "where": ""
+                }
+            ],
+            "chkConstr": [
+                {
+                    "GUID": "daa2b126-4b68-11ec-ae71-d5c74b0d4990",
+                    "chkConstrName": "aircrafts_range_check",
+                    "constrDescription": null,
+                    "constrExpression": "(range > 0)",
+                    "noInherit": false
+                }
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "airports_data",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "airport_code",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "mode": "char",
+                    "length": 3,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "maxLength": 3,
+                    "udt_name": "bpchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Airport code",
+                    "timePrecision": "",
+                    "GUID": "7dffcee0-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "sample": "CNN",
+                    "childRelationships": [
+                        "daa32650-4b68-11ec-ae71-d5c74b0d4990",
+                        "daa32651-4b68-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "airport_name",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "additionalProperties": false,
+                    "mode": "jsonb",
+                    "subtype": "object",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "en",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "jsonString",
+                            "maxLength": 46,
+                            "length": 46,
+                            "GUID": "7dfff5f1-37f3-11ec-8866-8b7656a20503",
+                            "required": true,
+                            "sample": "Chulman Airport",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "ru",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "jsonString",
+                            "maxLength": 20,
+                            "length": 20,
+                            "GUID": "7dfff5f2-37f3-11ec-8866-8b7656a20503",
+                            "required": true,
+                            "sample": "Чульман",
+                            "error": {}
+                        }
+                    ],
+                    "childType": "json",
+                    "type": "jsonObject",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "udt_name": "jsonb",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Airport name",
+                    "timePrecision": "",
+                    "GUID": "7dfff5f0-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "city",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "additionalProperties": false,
+                    "mode": "jsonb",
+                    "subtype": "object",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "en",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "jsonString",
+                            "maxLength": 18,
+                            "length": 18,
+                            "GUID": "7dfff5f4-37f3-11ec-8866-8b7656a20503",
+                            "required": true,
+                            "sample": "Neryungri",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "ru",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "jsonString",
+                            "maxLength": 24,
+                            "length": 24,
+                            "GUID": "7dfff5f5-37f3-11ec-8866-8b7656a20503",
+                            "required": true,
+                            "sample": "Нерюнгри",
+                            "error": {}
+                        }
+                    ],
+                    "childType": "json",
+                    "type": "jsonObject",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "udt_name": "jsonb",
+                    "numberOfArrayDimensions": 0,
+                    "description": "City",
+                    "timePrecision": "",
+                    "GUID": "7dfff5f3-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "coordinates",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "additionalProperties": false,
+                    "childType": "geometry",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "udt_name": "point",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Airport coordinates (longitude and latitude)",
+                    "timePrecision": "",
+                    "mode": "point",
+                    "GUID": "7dfff5f6-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "timezone",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "text",
+                    "length": 18,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "maxLength": 18,
+                    "udt_name": "text",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Airport time zone",
+                    "timePrecision": "",
+                    "GUID": "7dfff5f9-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "sample": "Asia/Yakutsk",
+                    "uniqueKeyOptions": [],
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "7e052613-37f3-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "memory_optimized": false,
+            "collectionUsers": [],
+            "ifNotExist": true,
+            "on_commit": "PRESERVE ROWS",
+            "table_tablespace_name": "pg_default",
+            "GUID": "7e052612-37f3-11ec-8866-8b7656a20503",
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503",
+            "code": "",
+            "description": "Airports (internal data)",
+            "temporary": false,
+            "unlogged": false,
+            "inherits": [],
+            "storage_parameter": {
+                "GUID": "daa23bf0-4b68-11ec-ae71-d5c74b0d4990"
+            },
+            "primaryKey": [
+                {
+                    "GUID": "daa23bf3-4b68-11ec-ae71-d5c74b0d4990",
+                    "constraintName": "airports_data_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "da795730-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "Indxs": [
+                {
+                    "isActivated": true,
+                    "index_method": "btree",
+                    "ifNotExist": true,
+                    "only": true,
+                    "index_tablespace_name": "",
+                    "GUID": "daa28a10-4b68-11ec-ae71-d5c74b0d4990",
+                    "indxName": "airports_data_pkey",
+                    "unique": true,
+                    "columns": [
+                        {
+                            "keyId": "da795730-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": "pg_catalog.\"default\"",
+                            "opclass": "pg_catalog.bpchar_ops"
+                        }
+                    ],
+                    "include": [],
+                    "where": ""
+                }
+            ],
+            "chkConstr": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "boarding_passes",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "ticket_no",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "mode": "char",
+                    "length": 13,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "udt_name": "bpchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Ticket number",
+                    "timePrecision": "",
+                    "GUID": "7e04d7f2-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "da9a9ad0-4b68-11ec-ae71-d5c74b0d4990",
+                    "foreignField": [
+                        "da9a9ad0-4b68-11ec-ae71-d5c74b0d4990",
+                        "da9a9ad2-4b68-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "parentRelationship": "daa2ff40-4b68-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "flight_id",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "integer",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": true,
+                    "precision": 32,
+                    "scale": 0,
+                    "udt_name": "int4",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Flight ID",
+                    "timePrecision": "",
+                    "GUID": "7e04d7f3-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "da9a9ad0-4b68-11ec-ae71-d5c74b0d4990",
+                    "foreignField": [
+                        "da9a9ad0-4b68-11ec-ae71-d5c74b0d4990",
+                        "da9a9ad3-4b68-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "parentRelationship": "daa2ff40-4b68-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "boarding_no",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "integer",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": true,
+                    "precision": 32,
+                    "scale": 0,
+                    "udt_name": "int4",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Boarding pass number",
+                    "timePrecision": "",
+                    "GUID": "7e04d7f4-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "seat_no",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "mode": "varchar",
+                    "length": 4,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": true,
+                    "udt_name": "varchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Seat number",
+                    "timePrecision": "",
+                    "GUID": "7e04d7f5-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "7e04d7f1-37f3-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "memory_optimized": false,
+            "collectionUsers": [],
+            "ifNotExist": true,
+            "on_commit": "PRESERVE ROWS",
+            "table_tablespace_name": "pg_default",
+            "GUID": "7e04d7f0-37f3-11ec-8866-8b7656a20503",
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503",
+            "code": "",
+            "description": "Boarding passes",
+            "temporary": false,
+            "unlogged": false,
+            "inherits": [],
+            "primaryKey": [
+                {
+                    "GUID": "daa1c6c6-4b68-11ec-ae71-d5c74b0d4990",
+                    "constraintName": "boarding_passes_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "da9d8104-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        },
+                        {
+                            "keyId": "da9d8105-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [
+                {
+                    "GUID": "daa1c6c7-4b68-11ec-ae71-d5c74b0d4990",
+                    "constraintName": "boarding_passes_flight_id_boarding_no_key",
+                    "compositeUniqueKey": [
+                        {
+                            "keyId": "da9d8105-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        },
+                        {
+                            "keyId": "da9d8106-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null,
+                    "indexComment": null
+                },
+                {
+                    "GUID": "daa1edd0-4b68-11ec-ae71-d5c74b0d4990",
+                    "constraintName": "boarding_passes_flight_id_seat_no_key",
+                    "compositeUniqueKey": [
+                        {
+                            "keyId": "da9d8105-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        },
+                        {
+                            "keyId": "da9d8107-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null,
+                    "indexComment": null
+                }
+            ],
+            "Indxs": [
+                {
+                    "isActivated": true,
+                    "index_method": "btree",
+                    "ifNotExist": true,
+                    "only": true,
+                    "index_tablespace_name": "",
+                    "GUID": "daa1edd1-4b68-11ec-ae71-d5c74b0d4990",
+                    "indxName": "boarding_passes_flight_id_boarding_no_key",
+                    "unique": true,
+                    "columns": [
+                        {
+                            "keyId": "da9d8105-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": null,
+                            "opclass": "pg_catalog.int4_ops"
+                        },
+                        {
+                            "keyId": "da9d8106-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": null,
+                            "opclass": "pg_catalog.int4_ops"
+                        }
+                    ],
+                    "include": [],
+                    "where": ""
+                },
+                {
+                    "isActivated": true,
+                    "index_method": "btree",
+                    "ifNotExist": true,
+                    "only": true,
+                    "index_tablespace_name": "",
+                    "GUID": "daa214e0-4b68-11ec-ae71-d5c74b0d4990",
+                    "indxName": "boarding_passes_flight_id_seat_no_key",
+                    "unique": true,
+                    "columns": [
+                        {
+                            "keyId": "da9d8105-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": null,
+                            "opclass": "pg_catalog.int4_ops"
+                        },
+                        {
+                            "keyId": "da9d8107-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": "pg_catalog.\"default\"",
+                            "opclass": "pg_catalog.text_ops"
+                        }
+                    ],
+                    "include": [],
+                    "where": ""
+                },
+                {
+                    "isActivated": true,
+                    "index_method": "btree",
+                    "ifNotExist": true,
+                    "only": true,
+                    "index_tablespace_name": "",
+                    "GUID": "daa214e1-4b68-11ec-ae71-d5c74b0d4990",
+                    "indxName": "boarding_passes_pkey",
+                    "unique": true,
+                    "columns": [
+                        {
+                            "keyId": "da9d8104-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": "pg_catalog.\"default\"",
+                            "opclass": "pg_catalog.bpchar_ops"
+                        },
+                        {
+                            "keyId": "da9d8105-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": null,
+                            "opclass": "pg_catalog.int4_ops"
+                        }
+                    ],
+                    "include": [],
+                    "where": ""
+                }
+            ],
+            "chkConstr": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "bookings",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "book_ref",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "mode": "char",
+                    "length": 6,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "udt_name": "bpchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Booking number",
+                    "timePrecision": "",
+                    "GUID": "7e0462c1-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "childRelationships": [
+                        "daa32655-4b68-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "book_date",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "timestamp",
+                    "scale": 7,
+                    "childType": "datetime",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "timePrecision": "",
+                    "udt_name": "timestamptz",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Booking date",
+                    "timezone": "WITH TIME ZONE",
+                    "GUID": "7e0462c2-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "total_amount",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "numeric",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "precision": 10,
+                    "scale": 2,
+                    "udt_name": "numeric",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Total booking cost",
+                    "timePrecision": "",
+                    "GUID": "7e0462c3-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "7e0462c0-37f3-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "memory_optimized": false,
+            "collectionUsers": [],
+            "ifNotExist": true,
+            "on_commit": "PRESERVE ROWS",
+            "table_tablespace_name": "pg_default",
+            "GUID": "7e043bb2-37f3-11ec-8866-8b7656a20503",
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503",
+            "code": "",
+            "description": "Bookings",
+            "temporary": false,
+            "unlogged": false,
+            "inherits": [],
+            "primaryKey": [
+                {
+                    "GUID": "daa19fb4-4b68-11ec-ae71-d5c74b0d4990",
+                    "constraintName": "bookings_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "da9d32e2-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "Indxs": [
+                {
+                    "isActivated": true,
+                    "index_method": "btree",
+                    "ifNotExist": true,
+                    "only": true,
+                    "index_tablespace_name": "",
+                    "GUID": "daa19fb5-4b68-11ec-ae71-d5c74b0d4990",
+                    "indxName": "bookings_pkey",
+                    "unique": true,
+                    "columns": [
+                        {
+                            "keyId": "da9d32e2-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": "pg_catalog.\"default\"",
+                            "opclass": "pg_catalog.bpchar_ops"
+                        }
+                    ],
+                    "include": [],
+                    "where": ""
+                }
+            ],
+            "chkConstr": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "flights",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "flight_id",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "integer",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "default": null,
+                    "precision": 32,
+                    "scale": 0,
+                    "udt_name": "int4",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Flight ID",
+                    "timePrecision": "",
+                    "GUID": "7e037864-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "childRelationships": [
+                        "daa32653-4b68-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "flight_no",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "mode": "char",
+                    "length": 6,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": true,
+                    "udt_name": "bpchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Flight number",
+                    "timePrecision": "",
+                    "GUID": "7e037865-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "scheduled_departure",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "mode": "timestamp",
+                    "scale": 7,
+                    "childType": "datetime",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": true,
+                    "timePrecision": "",
+                    "udt_name": "timestamptz",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Scheduled departure time",
+                    "timezone": "WITH TIME ZONE",
+                    "GUID": "7e037866-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "scheduled_arrival",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "timestamp",
+                    "scale": 7,
+                    "childType": "datetime",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "timePrecision": "",
+                    "udt_name": "timestamptz",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Scheduled arrival time",
+                    "timezone": "WITH TIME ZONE",
+                    "GUID": "7e037867-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "departure_airport",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "char",
+                    "length": 3,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "udt_name": "bpchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Airport of departure",
+                    "timePrecision": "",
+                    "GUID": "7e037868-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "da9df632-4b68-11ec-ae71-d5c74b0d4990",
+                    "foreignField": [
+                        "da9df632-4b68-11ec-ae71-d5c74b0d4990",
+                        "da795730-4b68-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "parentRelationship": "daa32651-4b68-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "arrival_airport",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "char",
+                    "length": 3,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "udt_name": "bpchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Airport of arrival",
+                    "timePrecision": "",
+                    "GUID": "7e037869-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "da9df632-4b68-11ec-ae71-d5c74b0d4990",
+                    "foreignField": [
+                        "da9df632-4b68-11ec-ae71-d5c74b0d4990",
+                        "da795730-4b68-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "parentRelationship": "daa32650-4b68-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "status",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar",
+                    "length": 20,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "udt_name": "varchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Flight status",
+                    "timePrecision": "",
+                    "GUID": "7e03786a-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "aircraft_code",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "char",
+                    "length": 3,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "udt_name": "bpchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Aircraft code, IATA",
+                    "timePrecision": "",
+                    "GUID": "7e03786b-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "da9ee090-4b68-11ec-ae71-d5c74b0d4990",
+                    "foreignField": [
+                        "da9ee090-4b68-11ec-ae71-d5c74b0d4990",
+                        "da79a550-4b68-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "parentRelationship": "daa2ff41-4b68-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "actual_departure",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "timestamp",
+                    "scale": 7,
+                    "childType": "datetime",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "timePrecision": "",
+                    "udt_name": "timestamptz",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Actual departure time",
+                    "timezone": "WITH TIME ZONE",
+                    "GUID": "7e03786c-37f3-11ec-8866-8b7656a20503",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "actual_arrival",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "timestamp",
+                    "scale": 7,
+                    "childType": "datetime",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "timePrecision": "",
+                    "udt_name": "timestamptz",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Actual arrival time",
+                    "timezone": "WITH TIME ZONE",
+                    "GUID": "7e03786d-37f3-11ec-8866-8b7656a20503",
+                    "required": false,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "7e037863-37f3-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "memory_optimized": false,
+            "collectionUsers": [],
+            "ifNotExist": true,
+            "on_commit": "PRESERVE ROWS",
+            "table_tablespace_name": "pg_default",
+            "GUID": "7e037862-37f3-11ec-8866-8b7656a20503",
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503",
+            "code": "",
+            "description": "Flights",
+            "temporary": false,
+            "unlogged": false,
+            "inherits": [],
+            "primaryKey": [
+                {
+                    "GUID": "daa12a88-4b68-11ec-ae71-d5c74b0d4990",
+                    "constraintName": "flights_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "da9bd353-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [
+                {
+                    "GUID": "daa15190-4b68-11ec-ae71-d5c74b0d4990",
+                    "constraintName": "flights_flight_no_scheduled_departure_key",
+                    "compositeUniqueKey": [
+                        {
+                            "keyId": "da9bd354-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        },
+                        {
+                            "keyId": "da9bd355-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null,
+                    "indexComment": null
+                }
+            ],
+            "Indxs": [
+                {
+                    "isActivated": true,
+                    "index_method": "btree",
+                    "ifNotExist": true,
+                    "only": true,
+                    "index_tablespace_name": "",
+                    "GUID": "daa15191-4b68-11ec-ae71-d5c74b0d4990",
+                    "indxName": "flights_flight_no_scheduled_departure_key",
+                    "unique": true,
+                    "columns": [
+                        {
+                            "keyId": "da9bd354-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": "pg_catalog.\"default\"",
+                            "opclass": "pg_catalog.bpchar_ops"
+                        },
+                        {
+                            "keyId": "da9bd355-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": null,
+                            "opclass": "pg_catalog.timestamptz_ops"
+                        }
+                    ],
+                    "include": [],
+                    "where": ""
+                },
+                {
+                    "isActivated": true,
+                    "index_method": "btree",
+                    "ifNotExist": true,
+                    "only": true,
+                    "index_tablespace_name": "",
+                    "GUID": "daa178a0-4b68-11ec-ae71-d5c74b0d4990",
+                    "indxName": "flights_pkey",
+                    "unique": true,
+                    "columns": [
+                        {
+                            "keyId": "da9bd353-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": null,
+                            "opclass": "pg_catalog.int4_ops"
+                        }
+                    ],
+                    "include": [],
+                    "where": ""
+                }
+            ],
+            "chkConstr": [
+                {
+                    "GUID": "daa178a1-4b68-11ec-ae71-d5c74b0d4990",
+                    "chkConstrName": "flights_check",
+                    "constrDescription": null,
+                    "constrExpression": "(scheduled_arrival > scheduled_departure)",
+                    "noInherit": false
+                },
+                {
+                    "GUID": "daa19fb0-4b68-11ec-ae71-d5c74b0d4990",
+                    "chkConstrName": "flights_check1",
+                    "constrDescription": null,
+                    "constrExpression": "((actual_arrival IS NULL) OR ((actual_departure IS NOT NULL) AND (actual_arrival IS NOT NULL) AND (actual_arrival > actual_departure)))",
+                    "noInherit": false
+                },
+                {
+                    "GUID": "daa19fb1-4b68-11ec-ae71-d5c74b0d4990",
+                    "chkConstrName": "flights_status_check",
+                    "constrDescription": null,
+                    "constrExpression": "((status)::text = ANY (ARRAY[('On Time'::character varying)::text, ('Delayed'::character varying)::text, ('Departed'::character varying)::text, ('Arrived'::character varying)::text, ('Scheduled'::character varying)::text, ('Cancelled'::character varying)::text]))",
+                    "noInherit": false
+                }
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "seats",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "aircraft_code",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "mode": "char",
+                    "length": 3,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "udt_name": "bpchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Aircraft code, IATA",
+                    "timePrecision": "",
+                    "GUID": "7e032a44-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "da9ee090-4b68-11ec-ae71-d5c74b0d4990",
+                    "foreignField": [
+                        "da9ee090-4b68-11ec-ae71-d5c74b0d4990",
+                        "da79a550-4b68-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "parentRelationship": "daa32652-4b68-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "seat_no",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "mode": "varchar",
+                    "length": 4,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "udt_name": "varchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Seat number",
+                    "timePrecision": "",
+                    "GUID": "7e032a45-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "fare_conditions",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar",
+                    "length": 10,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "udt_name": "varchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Travel class",
+                    "timePrecision": "",
+                    "GUID": "7e032a46-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "7e032a43-37f3-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "memory_optimized": false,
+            "collectionUsers": [],
+            "ifNotExist": true,
+            "on_commit": "PRESERVE ROWS",
+            "table_tablespace_name": "pg_default",
+            "GUID": "7e032a42-37f3-11ec-8866-8b7656a20503",
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503",
+            "code": "",
+            "description": "Seats",
+            "temporary": false,
+            "unlogged": false,
+            "inherits": [],
+            "primaryKey": [
+                {
+                    "GUID": "daa10374-4b68-11ec-ae71-d5c74b0d4990",
+                    "constraintName": "seats_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "da9b5e20-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        },
+                        {
+                            "keyId": "da9b5e21-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "Indxs": [
+                {
+                    "isActivated": true,
+                    "index_method": "btree",
+                    "ifNotExist": true,
+                    "only": true,
+                    "index_tablespace_name": "",
+                    "GUID": "daa10375-4b68-11ec-ae71-d5c74b0d4990",
+                    "indxName": "seats_pkey",
+                    "unique": true,
+                    "columns": [
+                        {
+                            "keyId": "da9b5e20-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": "pg_catalog.\"default\"",
+                            "opclass": "pg_catalog.bpchar_ops"
+                        },
+                        {
+                            "keyId": "da9b5e21-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": "pg_catalog.\"default\"",
+                            "opclass": "pg_catalog.text_ops"
+                        }
+                    ],
+                    "include": [],
+                    "where": ""
+                }
+            ],
+            "chkConstr": [
+                {
+                    "GUID": "daa12a80-4b68-11ec-ae71-d5c74b0d4990",
+                    "chkConstrName": "seats_fare_conditions_check",
+                    "constrDescription": null,
+                    "constrExpression": "((fare_conditions)::text = ANY (ARRAY[('Economy'::character varying)::text, ('Comfort'::character varying)::text, ('Business'::character varying)::text]))",
+                    "noInherit": false
+                }
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "ticket_flights",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "ticket_no",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "mode": "char",
+                    "length": 13,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "udt_name": "bpchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Ticket number",
+                    "timePrecision": "",
+                    "GUID": "7e02b512-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "childRelationships": [
+                        "daa2ff40-4b68-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "da7b5300-4b68-11ec-ae71-d5c74b0d4990",
+                    "foreignField": [
+                        "da7b5300-4b68-11ec-ae71-d5c74b0d4990",
+                        "da77d090-4b68-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "parentRelationship": "daa32654-4b68-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "flight_id",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "integer",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "precision": 32,
+                    "scale": 0,
+                    "udt_name": "int4",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Flight ID",
+                    "timePrecision": "",
+                    "GUID": "7e02b513-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "childRelationships": [
+                        "daa2ff40-4b68-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "da9bd351-4b68-11ec-ae71-d5c74b0d4990",
+                    "foreignField": [
+                        "da9bd351-4b68-11ec-ae71-d5c74b0d4990",
+                        "da9bd353-4b68-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "parentRelationship": "daa32653-4b68-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "fare_conditions",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar",
+                    "length": 10,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "udt_name": "varchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Travel class",
+                    "timePrecision": "",
+                    "GUID": "7e02b514-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "amount",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "mode": "numeric",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "precision": 10,
+                    "scale": 2,
+                    "udt_name": "numeric",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Travel cost",
+                    "timePrecision": "",
+                    "GUID": "7e02b515-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "7e02b511-37f3-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "memory_optimized": false,
+            "collectionUsers": [],
+            "ifNotExist": true,
+            "on_commit": "PRESERVE ROWS",
+            "table_tablespace_name": "pg_default",
+            "GUID": "7e02b510-37f3-11ec-8866-8b7656a20503",
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503",
+            "code": "",
+            "description": "Flight segment",
+            "temporary": false,
+            "unlogged": false,
+            "inherits": [],
+            "primaryKey": [
+                {
+                    "GUID": "daa0b554-4b68-11ec-ae71-d5c74b0d4990",
+                    "constraintName": "ticket_flights_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "da9a9ad2-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        },
+                        {
+                            "keyId": "da9a9ad3-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "Indxs": [
+                {
+                    "isActivated": true,
+                    "index_method": "btree",
+                    "ifNotExist": true,
+                    "only": true,
+                    "index_tablespace_name": "",
+                    "GUID": "daa0dc60-4b68-11ec-ae71-d5c74b0d4990",
+                    "indxName": "ticket_flights_pkey",
+                    "unique": true,
+                    "columns": [
+                        {
+                            "keyId": "da9a9ad2-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": "pg_catalog.\"default\"",
+                            "opclass": "pg_catalog.bpchar_ops"
+                        },
+                        {
+                            "keyId": "da9a9ad3-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": null,
+                            "opclass": "pg_catalog.int4_ops"
+                        }
+                    ],
+                    "include": [],
+                    "where": ""
+                }
+            ],
+            "chkConstr": [
+                {
+                    "GUID": "daa0dc61-4b68-11ec-ae71-d5c74b0d4990",
+                    "chkConstrName": "ticket_flights_amount_check",
+                    "constrDescription": null,
+                    "constrExpression": "(amount >= (0)::numeric)",
+                    "noInherit": false
+                },
+                {
+                    "GUID": "daa10370-4b68-11ec-ae71-d5c74b0d4990",
+                    "chkConstrName": "ticket_flights_fare_conditions_check",
+                    "constrDescription": null,
+                    "constrExpression": "((fare_conditions)::text = ANY (ARRAY[('Economy'::character varying)::text, ('Comfort'::character varying)::text, ('Business'::character varying)::text]))",
+                    "noInherit": false
+                }
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "tickets",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "book_ref",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "char",
+                    "length": 6,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "maxLength": 6,
+                    "udt_name": "bpchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Booking number",
+                    "timePrecision": "",
+                    "GUID": "7dfebd70-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "sample": "6A6A3A",
+                    "relationshipType": "Foreign Key",
+                    "foreignField": [],
+                    "parentRelationship": "fcc6c610-4b68-11ec-ae71-d5c74b0d4990",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "contact_data",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "additionalProperties": false,
+                    "mode": "jsonb",
+                    "subtype": "object",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "email",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "jsonString",
+                            "maxLength": 43,
+                            "length": 42,
+                            "GUID": "7dfee480-37f3-11ec-8866-8b7656a20503",
+                            "required": false,
+                            "sample": "n_smirnova_12121964@postgrespro.ru",
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "phone",
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "jsonString",
+                            "maxLength": 12,
+                            "length": 12,
+                            "GUID": "7dfee481-37f3-11ec-8866-8b7656a20503",
+                            "required": true,
+                            "sample": "+70020906588",
+                            "error": {}
+                        },
+                        {
+                            "name": "address",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "primaryKey": false,
+                            "unique": false,
+                            "type": "jsonObject",
+                            "physicalType": "json",
+                            "properties": [
+                                {
+                                    "name": "houseNum",
+                                    "type": "multiple",
+                                    "properties": [],
+                                    "multipleTypes": [
+                                        {
+                                            "unique": false,
+                                            "type": "jsonString",
+                                            "GUID": "152aab90-4b69-11ec-ae71-d5c74b0d4990",
+                                            "error": {
+                                                "name": false,
+                                                "code": false
+                                            }
+                                        },
+                                        {
+                                            "isActivated": true,
+                                            "unique": false,
+                                            "type": "jsonNumber",
+                                            "GUID": "1ceff560-4b69-11ec-ae71-d5c74b0d4990"
+                                        }
+                                    ],
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "GUID": "10cc5a80-4b69-11ec-ae71-d5c74b0d4990",
+                                    "hackoladeMeta": {},
+                                    "required": true
+                                },
+                                {
+                                    "name": "street",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "type": "jsonString",
+                                    "GUID": "1fd19180-4b69-11ec-ae71-d5c74b0d4990",
+                                    "required": true
+                                },
+                                {
+                                    "name": "city",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "type": "jsonString",
+                                    "GUID": "22ac9df0-4b69-11ec-ae71-d5c74b0d4990",
+                                    "required": true
+                                },
+                                {
+                                    "name": "state",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "type": "jsonString",
+                                    "GUID": "255bb860-4b69-11ec-ae71-d5c74b0d4990",
+                                    "required": true
+                                },
+                                {
+                                    "name": "zip",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "primaryKey": false,
+                                    "unique": false,
+                                    "type": "jsonString",
+                                    "GUID": "27074580-4b69-11ec-ae71-d5c74b0d4990",
+                                    "required": true
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "GUID": "082deec0-4b69-11ec-ae71-d5c74b0d4990",
+                            "required": false
+                        }
+                    ],
+                    "childType": "json",
+                    "type": "jsonObject",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "udt_name": "jsonb",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Passenger contact information",
+                    "timePrecision": "",
+                    "GUID": "7dfebd71-37f3-11ec-8866-8b7656a20503",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "passenger_id",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "varchar",
+                    "length": 20,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "maxLength": 11,
+                    "udt_name": "varchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Passenger ID",
+                    "timePrecision": "",
+                    "GUID": "7dfee482-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "sample": "1314 605120",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "passenger_name",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "mode": "text",
+                    "length": 20,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": false,
+                    "compositeUniqueKey": false,
+                    "maxLength": 20,
+                    "udt_name": "text",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Passenger name",
+                    "timePrecision": "",
+                    "GUID": "7dfee483-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "sample": "LARISA FILIPPOVA",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ticket_no",
+                    "isActivated": true,
+                    "primaryKey": true,
+                    "unique": false,
+                    "mode": "char",
+                    "length": 13,
+                    "childType": "char",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositePrimaryKey",
+                        "compositeUniqueKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositePrimaryKey": true,
+                    "compositeUniqueKey": false,
+                    "maxLength": 13,
+                    "udt_name": "bpchar",
+                    "numberOfArrayDimensions": 0,
+                    "description": "Ticket number",
+                    "timePrecision": "",
+                    "GUID": "7dfee484-37f3-11ec-8866-8b7656a20503",
+                    "required": true,
+                    "sample": "0005432034512",
+                    "childRelationships": [
+                        "daa32654-4b68-11ec-ae71-d5c74b0d4990"
+                    ],
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "7e015581-37f3-11ec-8866-8b7656a20503",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "memory_optimized": false,
+            "collectionUsers": [],
+            "ifNotExist": true,
+            "on_commit": "PRESERVE ROWS",
+            "table_tablespace_name": "pg_default",
+            "GUID": "7e015580-37f3-11ec-8866-8b7656a20503",
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503",
+            "code": "",
+            "description": "Tickets",
+            "temporary": false,
+            "unlogged": false,
+            "inherits": [],
+            "storage_parameter": {
+                "GUID": "fcc69f02-4b68-11ec-ae71-d5c74b0d4990"
+            },
+            "primaryKey": [
+                {
+                    "GUID": "fcc69f05-4b68-11ec-ae71-d5c74b0d4990",
+                    "constraintName": "tickets_pkey",
+                    "compositePrimaryKey": [
+                        {
+                            "keyId": "fcc53f71-4b68-11ec-ae71-d5c74b0d4990",
+                            "type": ""
+                        }
+                    ],
+                    "indexStorageParameters": "",
+                    "indexTablespace": null
+                }
+            ],
+            "uniqueKey": [],
+            "Indxs": [
+                {
+                    "isActivated": true,
+                    "index_method": "btree",
+                    "ifNotExist": true,
+                    "only": true,
+                    "index_tablespace_name": "",
+                    "GUID": "fcc69f06-4b68-11ec-ae71-d5c74b0d4990",
+                    "indxName": "tickets_pkey",
+                    "unique": true,
+                    "columns": [
+                        {
+                            "keyId": "fcc53f71-4b68-11ec-ae71-d5c74b0d4990",
+                            "sortOrder": "ASC",
+                            "nullsOrder": "NULLS LAST",
+                            "collation": "pg_catalog.\"default\"",
+                            "opclass": "pg_catalog.bpchar_ops"
+                        }
+                    ],
+                    "include": [],
+                    "where": ""
+                }
+            ],
+            "chkConstr": [],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "name": "bookings",
+            "type": "bucket",
+            "collectionIds": [
+                "7e015580-37f3-11ec-8866-8b7656a20503",
+                "7e02b510-37f3-11ec-8866-8b7656a20503",
+                "7e032a42-37f3-11ec-8866-8b7656a20503",
+                "7e037862-37f3-11ec-8866-8b7656a20503",
+                "7e043bb2-37f3-11ec-8866-8b7656a20503",
+                "7e04d7f0-37f3-11ec-8866-8b7656a20503",
+                "7e052612-37f3-11ec-8866-8b7656a20503",
+                "7e05c252-37f3-11ec-8866-8b7656a20503"
+            ],
+            "backgroundColor": {
+                "r": 51,
+                "g": 51,
+                "b": 51,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "ifNotExist": true,
+            "GUID": "7e079710-37f3-11ec-8866-8b7656a20503",
+            "UDFs": [
+                {
+                    "functionLanguage": "plpgsql",
+                    "functionVolatility": "STABLE",
+                    "functionNullArgs": "CALLED ON NULL INPUT",
+                    "functionSqlSecurity": "INVOKER",
+                    "functionParallel": "",
+                    "GUID": "7e07be20-37f3-11ec-8866-8b7656a20503",
+                    "name": "lang",
+                    "functionDescription": null,
+                    "functionArguments": [],
+                    "functionReturnsSetOf": false,
+                    "functionReturnType": "text",
+                    "functionBody": "\nBEGIN\n  RETURN current_setting('bookings.lang');\nEXCEPTION\n  WHEN undefined_object THEN\n    RETURN NULL;\nEND;\n",
+                    "functionLeakProof": false
+                },
+                {
+                    "functionLanguage": "sql",
+                    "functionVolatility": "IMMUTABLE",
+                    "functionNullArgs": "CALLED ON NULL INPUT",
+                    "functionSqlSecurity": "INVOKER",
+                    "functionParallel": "",
+                    "GUID": "7e07be21-37f3-11ec-8866-8b7656a20503",
+                    "name": "now",
+                    "functionDescription": "Point in time according to which the data are generated",
+                    "functionArguments": [],
+                    "functionReturnsSetOf": false,
+                    "functionReturnType": "timestamptz",
+                    "functionBody": "SELECT '2017-08-15 18:00:00'::TIMESTAMP AT TIME ZONE 'Europe/Moscow';",
+                    "functionLeakProof": false
+                },
+                {
+                    "functionLanguage": "plpgsql",
+                    "functionVolatility": "STABLE",
+                    "functionNullArgs": "CALLED ON NULL INPUT",
+                    "functionSqlSecurity": "INVOKER",
+                    "functionParallel": "",
+                    "GUID": "daa37471-4b68-11ec-ae71-d5c74b0d4990",
+                    "name": "lang",
+                    "functionDescription": null,
+                    "functionArguments": [],
+                    "functionReturnsSetOf": false,
+                    "functionReturnType": "text",
+                    "functionBody": "\nBEGIN\n  RETURN current_setting('bookings.lang');\nEXCEPTION\n  WHEN undefined_object THEN\n    RETURN NULL;\nEND;\n",
+                    "functionLeakProof": false
+                },
+                {
+                    "functionLanguage": "sql",
+                    "functionVolatility": "IMMUTABLE",
+                    "functionNullArgs": "CALLED ON NULL INPUT",
+                    "functionSqlSecurity": "INVOKER",
+                    "functionParallel": "",
+                    "GUID": "daa37472-4b68-11ec-ae71-d5c74b0d4990",
+                    "name": "now",
+                    "functionDescription": "Point in time according to which the data are generated",
+                    "functionArguments": [],
+                    "functionReturnsSetOf": false,
+                    "functionReturnType": "timestamptz",
+                    "functionBody": "SELECT '2017-08-15 18:00:00'::TIMESTAMP AT TIME ZONE 'Europe/Moscow';",
+                    "functionLeakProof": false
+                },
+                {
+                    "functionLanguage": "plpgsql",
+                    "functionVolatility": "STABLE",
+                    "functionNullArgs": "CALLED ON NULL INPUT",
+                    "functionSqlSecurity": "INVOKER",
+                    "functionParallel": "",
+                    "GUID": "fcc6c612-4b68-11ec-ae71-d5c74b0d4990",
+                    "name": "lang",
+                    "functionDescription": null,
+                    "functionArguments": [],
+                    "functionReturnsSetOf": false,
+                    "functionReturnType": "text",
+                    "functionBody": "\nBEGIN\n  RETURN current_setting('bookings.lang');\nEXCEPTION\n  WHEN undefined_object THEN\n    RETURN NULL;\nEND;\n",
+                    "functionLeakProof": false
+                },
+                {
+                    "functionLanguage": "sql",
+                    "functionVolatility": "IMMUTABLE",
+                    "functionNullArgs": "CALLED ON NULL INPUT",
+                    "functionSqlSecurity": "INVOKER",
+                    "functionParallel": "",
+                    "GUID": "fcc6c613-4b68-11ec-ae71-d5c74b0d4990",
+                    "name": "now",
+                    "functionDescription": "Point in time according to which the data are generated",
+                    "functionArguments": [],
+                    "functionReturnsSetOf": false,
+                    "functionReturnType": "timestamptz",
+                    "functionBody": "SELECT '2017-08-15 18:00:00'::TIMESTAMP AT TIME ZONE 'Europe/Moscow';",
+                    "functionLeakProof": false
+                }
+            ],
+            "Procedures": [],
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "addFieldsToBucket": true,
+            "isPlugin": true
+        }
+    ],
+    "views": [
+        {
+            "name": "aircrafts",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503",
+            "description": "Aircrafts",
+            "orReplace": false,
+            "temporary": false,
+            "recursive": false,
+            "viewOptions": {
+                "GUID": "7e0a5630-37f3-11ec-8866-8b7656a20503"
+            },
+            "selectStatement": "SELECT ml.aircraft_code,\n    (ml.model ->> lang()) AS model,\n    ml.range\n   FROM aircrafts_data ml;",
+            "withCheckOption": false,
+            "viewOn": "",
+            "type": "object",
+            "properties": [],
+            "GUID": "7e0a2f20-37f3-11ec-8866-8b7656a20503"
+        },
+        {
+            "name": "airports",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503",
+            "description": "Airports",
+            "orReplace": false,
+            "temporary": false,
+            "recursive": false,
+            "viewOptions": {
+                "GUID": "7e0aa452-37f3-11ec-8866-8b7656a20503"
+            },
+            "selectStatement": "SELECT ml.airport_code,\n    (ml.airport_name ->> lang()) AS airport_name,\n    (ml.city ->> lang()) AS city,\n    ml.coordinates,\n    ml.timezone\n   FROM airports_data ml;",
+            "withCheckOption": false,
+            "viewOn": "",
+            "type": "object",
+            "properties": [],
+            "GUID": "7e0aa450-37f3-11ec-8866-8b7656a20503"
+        },
+        {
+            "name": "flights_v",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503",
+            "description": "Flights (extended)",
+            "orReplace": false,
+            "temporary": false,
+            "recursive": false,
+            "viewOptions": {
+                "GUID": "7e0b4092-37f3-11ec-8866-8b7656a20503"
+            },
+            "selectStatement": "SELECT f.flight_id,\n    f.flight_no,\n    f.scheduled_departure,\n    timezone(dep.timezone, f.scheduled_departure) AS scheduled_departure_local,\n    f.scheduled_arrival,\n    timezone(arr.timezone, f.scheduled_arrival) AS scheduled_arrival_local,\n    (f.scheduled_arrival - f.scheduled_departure) AS scheduled_duration,\n    f.departure_airport,\n    dep.airport_name AS departure_airport_name,\n    dep.city AS departure_city,\n    f.arrival_airport,\n    arr.airport_name AS arrival_airport_name,\n    arr.city AS arrival_city,\n    f.status,\n    f.aircraft_code,\n    f.actual_departure,\n    timezone(dep.timezone, f.actual_departure) AS actual_departure_local,\n    f.actual_arrival,\n    timezone(arr.timezone, f.actual_arrival) AS actual_arrival_local,\n    (f.actual_arrival - f.actual_departure) AS actual_duration\n   FROM flights f,\n    airports dep,\n    airports arr\n  WHERE ((f.departure_airport = dep.airport_code) AND (f.arrival_airport = arr.airport_code));",
+            "withCheckOption": false,
+            "viewOn": "",
+            "type": "object",
+            "properties": [],
+            "GUID": "7e0b4090-37f3-11ec-8866-8b7656a20503"
+        },
+        {
+            "name": "routes",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503",
+            "description": "Routes",
+            "orReplace": false,
+            "temporary": false,
+            "recursive": false,
+            "viewOptions": {
+                "GUID": "7e0b8eb2-37f3-11ec-8866-8b7656a20503"
+            },
+            "selectStatement": "WITH f3 AS (\n         SELECT f2.flight_no,\n            f2.departure_airport,\n            f2.arrival_airport,\n            f2.aircraft_code,\n            f2.duration,\n            array_agg(f2.days_of_week) AS days_of_week\n           FROM ( SELECT f1.flight_no,\n                    f1.departure_airport,\n                    f1.arrival_airport,\n                    f1.aircraft_code,\n                    f1.duration,\n                    f1.days_of_week\n                   FROM ( SELECT flights.flight_no,\n                            flights.departure_airport,\n                            flights.arrival_airport,\n                            flights.aircraft_code,\n                            (flights.scheduled_arrival - flights.scheduled_departure) AS duration,\n                            (to_char(flights.scheduled_departure, 'ID'::text))::integer AS days_of_week\n                           FROM flights) f1\n                  GROUP BY f1.flight_no, f1.departure_airport, f1.arrival_airport, f1.aircraft_code, f1.duration, f1.days_of_week\n                  ORDER BY f1.flight_no, f1.departure_airport, f1.arrival_airport, f1.aircraft_code, f1.duration, f1.days_of_week) f2\n          GROUP BY f2.flight_no, f2.departure_airport, f2.arrival_airport, f2.aircraft_code, f2.duration\n        )\n SELECT f3.flight_no,\n    f3.departure_airport,\n    dep.airport_name AS departure_airport_name,\n    dep.city AS departure_city,\n    f3.arrival_airport,\n    arr.airport_name AS arrival_airport_name,\n    arr.city AS arrival_city,\n    f3.aircraft_code,\n    f3.duration,\n    f3.days_of_week\n   FROM f3,\n    airports dep,\n    airports arr\n  WHERE ((f3.departure_airport = dep.airport_code) AND (f3.arrival_airport = arr.airport_code));",
+            "withCheckOption": false,
+            "viewOn": "",
+            "type": "object",
+            "properties": [],
+            "GUID": "7e0b8eb0-37f3-11ec-8866-8b7656a20503"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "boarding_passes_ticket_no_fkey",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7e02b510-37f3-11ec-8866-8b7656a20503",
+                    "7e02b512-37f3-11ec-8866-8b7656a20503"
+                ],
+                [
+                    "7e02b510-37f3-11ec-8866-8b7656a20503",
+                    "7e02b513-37f3-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "7e04d7f0-37f3-11ec-8866-8b7656a20503",
+                    "7e04d7f2-37f3-11ec-8866-8b7656a20503"
+                ],
+                [
+                    "7e04d7f0-37f3-11ec-8866-8b7656a20503",
+                    "7e04d7f3-37f3-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "GUID": "7e0748f0-37f3-11ec-8866-8b7656a20503",
+            "parentCollection": "7e02b510-37f3-11ec-8866-8b7656a20503",
+            "childCollection": "7e04d7f0-37f3-11ec-8866-8b7656a20503",
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503"
+        },
+        {
+            "name": "flights_aircraft_code_fkey",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7e05c252-37f3-11ec-8866-8b7656a20503",
+                    "7dfff5fa-37f3-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "7e037862-37f3-11ec-8866-8b7656a20503",
+                    "7e03786b-37f3-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "GUID": "7e077000-37f3-11ec-8866-8b7656a20503",
+            "parentCollection": "7e05c252-37f3-11ec-8866-8b7656a20503",
+            "childCollection": "7e037862-37f3-11ec-8866-8b7656a20503",
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503"
+        },
+        {
+            "name": "flights_arrival_airport_fkey",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7e052612-37f3-11ec-8866-8b7656a20503",
+                    "7dffcee0-37f3-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "7e037862-37f3-11ec-8866-8b7656a20503",
+                    "7e037869-37f3-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "GUID": "7e077001-37f3-11ec-8866-8b7656a20503",
+            "parentCollection": "7e052612-37f3-11ec-8866-8b7656a20503",
+            "childCollection": "7e037862-37f3-11ec-8866-8b7656a20503",
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503"
+        },
+        {
+            "name": "flights_departure_airport_fkey",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7e052612-37f3-11ec-8866-8b7656a20503",
+                    "7dffcee0-37f3-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "7e037862-37f3-11ec-8866-8b7656a20503",
+                    "7e037868-37f3-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "GUID": "7e077002-37f3-11ec-8866-8b7656a20503",
+            "parentCollection": "7e052612-37f3-11ec-8866-8b7656a20503",
+            "childCollection": "7e037862-37f3-11ec-8866-8b7656a20503",
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503"
+        },
+        {
+            "name": "seats_aircraft_code_fkey",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7e05c252-37f3-11ec-8866-8b7656a20503",
+                    "7dfff5fa-37f3-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "7e032a42-37f3-11ec-8866-8b7656a20503",
+                    "7e032a44-37f3-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "GUID": "7e077003-37f3-11ec-8866-8b7656a20503",
+            "parentCollection": "7e05c252-37f3-11ec-8866-8b7656a20503",
+            "childCollection": "7e032a42-37f3-11ec-8866-8b7656a20503",
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503"
+        },
+        {
+            "name": "ticket_flights_flight_id_fkey",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7e037862-37f3-11ec-8866-8b7656a20503",
+                    "7e037864-37f3-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "7e02b510-37f3-11ec-8866-8b7656a20503",
+                    "7e02b513-37f3-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "GUID": "7e077004-37f3-11ec-8866-8b7656a20503",
+            "parentCollection": "7e037862-37f3-11ec-8866-8b7656a20503",
+            "childCollection": "7e02b510-37f3-11ec-8866-8b7656a20503",
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503"
+        },
+        {
+            "name": "ticket_flights_ticket_no_fkey",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7e015580-37f3-11ec-8866-8b7656a20503",
+                    "7dfee484-37f3-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "7e02b510-37f3-11ec-8866-8b7656a20503",
+                    "7e02b512-37f3-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "GUID": "7e077005-37f3-11ec-8866-8b7656a20503",
+            "parentCollection": "7e015580-37f3-11ec-8866-8b7656a20503",
+            "childCollection": "7e02b510-37f3-11ec-8866-8b7656a20503",
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503"
+        },
+        {
+            "name": "tickets_book_ref_fkey",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7e043bb2-37f3-11ec-8866-8b7656a20503",
+                    "7e0462c1-37f3-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "7e015580-37f3-11ec-8866-8b7656a20503",
+                    "7dfebd70-37f3-11ec-8866-8b7656a20503"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "GUID": "7e077006-37f3-11ec-8866-8b7656a20503",
+            "parentCollection": "7e043bb2-37f3-11ec-8866-8b7656a20503",
+            "childCollection": "7e015580-37f3-11ec-8866-8b7656a20503",
+            "bucketId": "7e079710-37f3-11ec-8866-8b7656a20503"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "7e079710-37f3-11ec-8866-8b7656a20503": "bookings",
+        "7dfebd70-37f3-11ec-8866-8b7656a20503": "book_ref",
+        "7dfebd71-37f3-11ec-8866-8b7656a20503": "contact_data",
+        "7dfee480-37f3-11ec-8866-8b7656a20503": "email",
+        "7dfee481-37f3-11ec-8866-8b7656a20503": "phone",
+        "7dfee482-37f3-11ec-8866-8b7656a20503": "passenger_id",
+        "7dfee483-37f3-11ec-8866-8b7656a20503": "passenger_name",
+        "7dfee484-37f3-11ec-8866-8b7656a20503": "ticket_no",
+        "7e015580-37f3-11ec-8866-8b7656a20503": "tickets",
+        "7e02b512-37f3-11ec-8866-8b7656a20503": "ticket_no",
+        "7e02b513-37f3-11ec-8866-8b7656a20503": "flight_id",
+        "7e02b514-37f3-11ec-8866-8b7656a20503": "fare_conditions",
+        "7e02b515-37f3-11ec-8866-8b7656a20503": "amount",
+        "7e02b510-37f3-11ec-8866-8b7656a20503": "ticket_flights",
+        "7e032a44-37f3-11ec-8866-8b7656a20503": "aircraft_code",
+        "7e032a45-37f3-11ec-8866-8b7656a20503": "seat_no",
+        "7e032a46-37f3-11ec-8866-8b7656a20503": "fare_conditions",
+        "7e032a42-37f3-11ec-8866-8b7656a20503": "seats",
+        "7e037864-37f3-11ec-8866-8b7656a20503": "flight_id",
+        "7e037865-37f3-11ec-8866-8b7656a20503": "flight_no",
+        "7e037866-37f3-11ec-8866-8b7656a20503": "scheduled_departure",
+        "7e037867-37f3-11ec-8866-8b7656a20503": "scheduled_arrival",
+        "7e037868-37f3-11ec-8866-8b7656a20503": "departure_airport",
+        "7e037869-37f3-11ec-8866-8b7656a20503": "arrival_airport",
+        "7e03786a-37f3-11ec-8866-8b7656a20503": "status",
+        "7e03786b-37f3-11ec-8866-8b7656a20503": "aircraft_code",
+        "7e03786c-37f3-11ec-8866-8b7656a20503": "actual_departure",
+        "7e03786d-37f3-11ec-8866-8b7656a20503": "actual_arrival",
+        "7e037862-37f3-11ec-8866-8b7656a20503": "flights",
+        "7e0462c1-37f3-11ec-8866-8b7656a20503": "book_ref",
+        "7e0462c2-37f3-11ec-8866-8b7656a20503": "book_date",
+        "7e0462c3-37f3-11ec-8866-8b7656a20503": "total_amount",
+        "7e043bb2-37f3-11ec-8866-8b7656a20503": "bookings",
+        "7e04d7f2-37f3-11ec-8866-8b7656a20503": "ticket_no",
+        "7e04d7f3-37f3-11ec-8866-8b7656a20503": "flight_id",
+        "7e04d7f4-37f3-11ec-8866-8b7656a20503": "boarding_no",
+        "7e04d7f5-37f3-11ec-8866-8b7656a20503": "seat_no",
+        "7e04d7f0-37f3-11ec-8866-8b7656a20503": "boarding_passes",
+        "7dffcee0-37f3-11ec-8866-8b7656a20503": "airport_code",
+        "7dfff5f0-37f3-11ec-8866-8b7656a20503": "airport_name",
+        "7dfff5f1-37f3-11ec-8866-8b7656a20503": "en",
+        "7dfff5f2-37f3-11ec-8866-8b7656a20503": "ru",
+        "7dfff5f3-37f3-11ec-8866-8b7656a20503": "city",
+        "7dfff5f4-37f3-11ec-8866-8b7656a20503": "en",
+        "7dfff5f5-37f3-11ec-8866-8b7656a20503": "ru",
+        "7dfff5f6-37f3-11ec-8866-8b7656a20503": "coordinates",
+        "7dfff5f9-37f3-11ec-8866-8b7656a20503": "timezone",
+        "7e052612-37f3-11ec-8866-8b7656a20503": "airports_data",
+        "7dfff5fa-37f3-11ec-8866-8b7656a20503": "aircraft_code",
+        "7dfff5fb-37f3-11ec-8866-8b7656a20503": "model",
+        "7dfff5fc-37f3-11ec-8866-8b7656a20503": "en",
+        "7dfff5fd-37f3-11ec-8866-8b7656a20503": "ru",
+        "7dfff5fe-37f3-11ec-8866-8b7656a20503": "range",
+        "7e05c252-37f3-11ec-8866-8b7656a20503": "aircrafts_data",
+        "7e0748f0-37f3-11ec-8866-8b7656a20503": "boarding_passes_ticket_no_fkey",
+        "7e077000-37f3-11ec-8866-8b7656a20503": "flights_aircraft_code_fkey",
+        "7e077001-37f3-11ec-8866-8b7656a20503": "flights_arrival_airport_fkey",
+        "7e077002-37f3-11ec-8866-8b7656a20503": "flights_departure_airport_fkey",
+        "7e077003-37f3-11ec-8866-8b7656a20503": "seats_aircraft_code_fkey",
+        "7e077004-37f3-11ec-8866-8b7656a20503": "ticket_flights_flight_id_fkey",
+        "7e077005-37f3-11ec-8866-8b7656a20503": "ticket_flights_ticket_no_fkey",
+        "7e077006-37f3-11ec-8866-8b7656a20503": "tickets_book_ref_fkey",
+        "7e0a2f20-37f3-11ec-8866-8b7656a20503": "aircrafts",
+        "7e0aa450-37f3-11ec-8866-8b7656a20503": "airports",
+        "7e0b4090-37f3-11ec-8866-8b7656a20503": "flights_v",
+        "7e0b8eb0-37f3-11ec-8866-8b7656a20503": "routes",
+        "082deec0-4b69-11ec-ae71-d5c74b0d4990": "address",
+        "10cc5a80-4b69-11ec-ae71-d5c74b0d4990": "houseNum",
+        "1fd19180-4b69-11ec-ae71-d5c74b0d4990": "street",
+        "22ac9df0-4b69-11ec-ae71-d5c74b0d4990": "city",
+        "255bb860-4b69-11ec-ae71-d5c74b0d4990": "state",
+        "27074580-4b69-11ec-ae71-d5c74b0d4990": "zip"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "73944440-37f3-11ec-8866-8b7656a20503"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "73944442-37f3-11ec-8866-8b7656a20503"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "73944441-37f3-11ec-8866-8b7656a20503"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v13.x",
+    "dbVendor": "PostgreSQL",
+    "tablespace_name": "pg_default",
+    "encoding": "UTF8",
+    "appTarget": "PostgreSQL",
+    "creationTS": "2021-10-28T13:32:09.731Z",
+    "GUID": "5ffde4c0-3895-11ec-a983-f7b51df66362",
+    "isLineageEnabled": false,
+    "database_name": "demo",
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "description": "Derived from https://postgrespro.com/education/demodb",
+    "lastModifTS": "2021-11-22T09:00:28.476Z",
+    "persistenceSchemaVersion": "5",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "PostgreSQL",
+        "pluginVersion": "0.1.4",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "5.2.11"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "7e015580-37f3-11ec-8866-8b7656a20503",
+                        "x": 102,
+                        "y": 357,
+                        "width": 295,
+                        "height": 267,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7e02b510-37f3-11ec-8866-8b7656a20503",
+                        "x": 82,
+                        "y": 698,
+                        "width": 335,
+                        "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7e032a42-37f3-11ec-8866-8b7656a20503",
+                        "x": 828.75,
+                        "y": 432,
+                        "width": 301,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7e037862-37f3-11ec-8866-8b7656a20503",
+                        "x": 441.75,
+                        "y": 432,
+                        "width": 347,
+                        "height": 210,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7e043bb2-37f3-11ec-8866-8b7656a20503",
+                        "x": 96,
+                        "y": 198.03547200929285,
+                        "width": 308,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7e04d7f0-37f3-11ec-8866-8b7656a20503",
+                        "x": 545.6666666666664,
+                        "y": 697.3333323796587,
+                        "width": 362,
+                        "height": 102,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7e052612-37f3-11ec-8866-8b7656a20503",
+                        "x": 439.5,
+                        "y": 184.00000095367432,
+                        "width": 267,
+                        "height": 192,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7e05c252-37f3-11ec-8866-8b7656a20503",
+                        "x": 802.5833333333334,
+                        "y": 256.0000009536743,
+                        "width": 265,
+                        "height": 120,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7e0a2f20-37f3-11ec-8866-8b7656a20503",
+                        "x": 540.0000019073486,
+                        "y": 90,
+                        "width": 167,
+                        "height": 30,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7e0aa450-37f3-11ec-8866-8b7656a20503",
+                        "x": 311.0000009536743,
+                        "y": 90,
+                        "width": 165,
+                        "height": 30,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7e0b4090-37f3-11ec-8866-8b7656a20503",
+                        "x": 771.000002861023,
+                        "y": 90,
+                        "width": 167,
+                        "height": 30,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7e0b8eb0-37f3-11ec-8866-8b7656a20503",
+                        "x": 90,
+                        "y": 90,
+                        "width": 157,
+                        "height": 30,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 42,
+                        "y": 50,
+                        "GUID": "7e079710-37f3-11ec-8866-8b7656a20503"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

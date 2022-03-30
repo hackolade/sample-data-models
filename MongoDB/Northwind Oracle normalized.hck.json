@@ -1,0 +1,1698 @@
+{
+    "modelName": "NorthwindOracle",
+    "collections": [
+        {
+            "GUID": "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+            "collectionName": "categories",
+            "type": "object",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "05f996a0-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "category_id",
+                    "description": "number automatically assigned to a new category.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "05f92171-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 2
+                },
+                {
+                    "GUID": "05f9e4c0-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "category_name",
+                    "description": "name of food category.",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Beverages"
+                },
+                {
+                    "GUID": "05f9e4c1-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "description",
+                    "type": "string",
+                    "maxLength": 2000,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Soft drinks, coffees, teas, beers, and ales"
+                },
+                {
+                    "GUID": "05f9e4c2-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "picture",
+                    "description": "a picture representing the food category.",
+                    "type": "string",
+                    "maxLength": 255,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "beverages.gif"
+                }
+            ],
+            "definitions": {
+                "GUID": "186c47c1-e5f0-11e6-88d2-2d3300b4e17f",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true,
+            "bucketId": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1"
+        },
+        {
+            "GUID": "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+            "collectionName": "customers",
+            "type": "object",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "05f9e4c4-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "customer_id",
+                    "description": "unique five-character code based on customer name.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "05f92173-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 10
+                },
+                {
+                    "GUID": "05f9e4c5-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "customer_code",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 5,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "BOTTM"
+                },
+                {
+                    "GUID": "05f9e4c6-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "company_name",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 40,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Bottom-Dollar Markets"
+                },
+                {
+                    "GUID": "05f9e4c7-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "contact_name",
+                    "type": "string",
+                    "maxLength": 30,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Elizabeth Lincoln"
+                },
+                {
+                    "GUID": "05f9e4c8-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "contact_title",
+                    "type": "string",
+                    "maxLength": 30,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Accounting Manager"
+                },
+                {
+                    "GUID": "05f9e4c9-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "address",
+                    "description": "street or post-office box.",
+                    "type": "string",
+                    "maxLength": 60,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "23 Tsawassen Blvd."
+                },
+                {
+                    "GUID": "05f9e4ca-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "city",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Tsawassen"
+                },
+                {
+                    "GUID": "05f9e4cb-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "region",
+                    "description": "state or province.",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "BC"
+                },
+                {
+                    "GUID": "05f9e4cc-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "postal_code",
+                    "type": "string",
+                    "maxLength": 10,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "T2F 8M4"
+                },
+                {
+                    "GUID": "05f9e4cd-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "country",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Canada"
+                },
+                {
+                    "GUID": "05fa0bd0-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "phone",
+                    "description": "phone number includes country code or area code.",
+                    "type": "string",
+                    "maxLength": 24,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "(604) 555-4729"
+                },
+                {
+                    "GUID": "05fa0bd1-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "fax",
+                    "description": "phone number includes country code or area code.",
+                    "type": "string",
+                    "maxLength": 24,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "(604) 555-3745"
+                }
+            ],
+            "definitions": {
+                "GUID": "186c47c2-e5f0-11e6-88d2-2d3300b4e17f",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true,
+            "bucketId": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1"
+        },
+        {
+            "GUID": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+            "collectionName": "employees",
+            "type": "object",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "05fa0bd3-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "employee_id",
+                    "description": "number automatically assigned to new employee.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "05f92170-899e-11e6-a8d7-35e2bcca9f8c",
+                        "05f92174-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa0bd4-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "lastname",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 20,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa0bd5-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "firstname",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 10,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa0bd6-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "title",
+                    "description": "employee",
+                    "type": "string",
+                    "maxLength": 30,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa0bd7-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "title_of_courtesy",
+                    "description": "title used in salutations.",
+                    "type": "string",
+                    "maxLength": 25,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa0bd8-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "birthdate",
+                    "type": "date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa0bd9-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "hiredate",
+                    "type": "date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa0bda-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "address",
+                    "description": "street or post-office box.",
+                    "type": "string",
+                    "maxLength": 60,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa0bdb-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "city",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa0bdc-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "region",
+                    "description": "state or province.",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa32e0-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "postal_code",
+                    "type": "string",
+                    "maxLength": 10,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa32e1-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "country",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa32e2-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "home_phone",
+                    "description": "phone number includes country code or area code.",
+                    "type": "string",
+                    "maxLength": 24,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa59f0-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "extension",
+                    "description": "internal telephone extension number.",
+                    "type": "string",
+                    "maxLength": 4,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa59f1-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "photo",
+                    "description": "picture of employee.",
+                    "type": "string",
+                    "maxLength": 255,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa59f2-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "notes",
+                    "description": "general information about employee",
+                    "type": "string",
+                    "maxLength": 2000,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa59f3-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "reports_to",
+                    "description": "employee",
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "05f92170-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignCollection": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignField": [
+                        "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                        "05fa0bd3-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "GUID": "186c47c3-e5f0-11e6-88d2-2d3300b4e17f",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true,
+            "bucketId": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1"
+        },
+        {
+            "GUID": "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
+            "collectionName": "order_details",
+            "type": "object",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "05faa816-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "order_id",
+                    "description": "same as order id in orders table.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "90bc1010-c4a6-11e9-bfa6-8fc6304606d9",
+                    "foreignCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignField": [
+                        "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                        "05fa5a11-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 10440
+                },
+                {
+                    "GUID": "05faa817-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "product_id",
+                    "description": "same as product id in products table.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "05f92177-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignField": [
+                        "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                        "05fa5a06-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 8
+                },
+                {
+                    "GUID": "05faa818-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "unit_price",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": 35.1
+                },
+                {
+                    "GUID": "05faa819-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "quantity",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": 15
+                },
+                {
+                    "GUID": "05faa81a-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "discount",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": 0.25
+                }
+            ],
+            "definitions": {
+                "GUID": "186c47c4-e5f0-11e6-88d2-2d3300b4e17f",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true,
+            "bucketId": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1"
+        },
+        {
+            "GUID": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "collectionName": "orders",
+            "type": "object",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "05fa5a11-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "order_id",
+                    "description": "unique order number.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "90bc1010-c4a6-11e9-bfa6-8fc6304606d9"
+                    ],
+                    "isActivated": true,
+                    "sample": 10440
+                },
+                {
+                    "GUID": "05fa5a12-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "customer_id",
+                    "description": "same entry as in customers table.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "05f92173-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignCollection": "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignField": [
+                        "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+                        "05f9e4c4-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 10
+                },
+                {
+                    "GUID": "05fa5a13-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "employee_id",
+                    "description": "same entry as in employees table.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "05f92174-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignCollection": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignField": [
+                        "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                        "05fa0bd3-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 4
+                },
+                {
+                    "GUID": "05fa5a14-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "order_date",
+                    "required": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "02/10/1997 00:00:00",
+                    "error": {
+                        "sample": true
+                    }
+                },
+                {
+                    "GUID": "05fa5a15-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "required_date",
+                    "type": "date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "03/10/1997 00:00:00",
+                    "error": {
+                        "sample": true
+                    }
+                },
+                {
+                    "GUID": "05fa5a16-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "shipped_date",
+                    "type": "date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "02/28/1997 00:00:00",
+                    "error": {
+                        "sample": true
+                    }
+                },
+                {
+                    "GUID": "05fa5a17-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "ship_via",
+                    "description": "same as shipper id in shippers table.",
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "05f92175-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignCollection": "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignField": [
+                        "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+                        "05fa5a02-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 2
+                },
+                {
+                    "GUID": "05fa5a18-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "freight",
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": 86.53
+                },
+                {
+                    "GUID": "05fa5a19-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "ship_name",
+                    "description": "name of person or company to receive the shipment.",
+                    "type": "string",
+                    "maxLength": 40,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Save-a-lot Markets"
+                },
+                {
+                    "GUID": "05faa810-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "ship_address",
+                    "description": "street address only -- no post-office box allowed.",
+                    "type": "string",
+                    "maxLength": 60,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "187 Suffolk Ln."
+                },
+                {
+                    "GUID": "05faa811-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "ship_city",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Boise"
+                },
+                {
+                    "GUID": "05faa812-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "ship_region",
+                    "description": "state or province.",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "ID"
+                },
+                {
+                    "GUID": "05faa813-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "ship_postal_code",
+                    "type": "string",
+                    "maxLength": 10,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "83720"
+                },
+                {
+                    "GUID": "05faa814-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "ship_country",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "USA"
+                }
+            ],
+            "definitions": {
+                "GUID": "186c47c5-e5f0-11e6-88d2-2d3300b4e17f",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true,
+            "bucketId": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1"
+        },
+        {
+            "GUID": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "collectionName": "products",
+            "type": "object",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "05fa5a06-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "product_id",
+                    "description": "number automatically assigned to new product.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "05f92177-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 8
+                },
+                {
+                    "GUID": "05fa5a07-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "product_name",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 40,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "Northwoods Cranberry Sauce"
+                },
+                {
+                    "GUID": "05fa5a08-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "supplier_id",
+                    "description": "same entry as in suppliers table.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "05f92172-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignCollection": "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignField": [
+                        "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+                        "05fa59f5-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 3
+                },
+                {
+                    "GUID": "05fa5a09-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "category_id",
+                    "description": "same entry as in categories table.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "05f92171-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignCollection": "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+                    "foreignField": [
+                        "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+                        "05f996a0-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true,
+                    "sample": 2
+                },
+                {
+                    "GUID": "05fa5a0a-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "quantity_per_unit",
+                    "description": "(e.g., 24-count case, 1-liter bottle).",
+                    "type": "string",
+                    "maxLength": 20,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "12 - 12 oz jars"
+                },
+                {
+                    "GUID": "05fa5a0b-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "unit_price",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": 40
+                },
+                {
+                    "GUID": "05fa5a0c-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "units_in_stock",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": 6
+                },
+                {
+                    "GUID": "05fa5a0d-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "units_on_order",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": 0
+                },
+                {
+                    "GUID": "05fa5a0e-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "reorder_level",
+                    "description": "minimum units to maintain in stock.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": 0
+                },
+                {
+                    "GUID": "05fa5a0f-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "discontinued",
+                    "description": "yes means item is no longer available.",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 1,
+                    "default": "n",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true,
+                    "sample": "N"
+                }
+            ],
+            "definitions": {
+                "GUID": "186c47c6-e5f0-11e6-88d2-2d3300b4e17f",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true,
+            "bucketId": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1"
+        },
+        {
+            "GUID": "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+            "collectionName": "shippers",
+            "type": "object",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "05fa5a02-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "shipper_id",
+                    "description": "number automatically assigned to new shipper.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "05f92175-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa5a03-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "company_name",
+                    "description": "name of shipping company.",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 40,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa5a04-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "phone",
+                    "description": "phone number includes country code or area code.",
+                    "type": "string",
+                    "maxLength": 24,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "GUID": "186c47c7-e5f0-11e6-88d2-2d3300b4e17f",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true,
+            "bucketId": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1"
+        },
+        {
+            "GUID": "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+            "collectionName": "suppliers",
+            "type": "object",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "05fa59f5-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "supplier_id",
+                    "description": "number automatically assigned to new supplier.",
+                    "required": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "05f92172-899e-11e6-a8d7-35e2bcca9f8c"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa59f6-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "company_name",
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 40,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa59f7-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "contact_name",
+                    "type": "string",
+                    "maxLength": 30,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa59f8-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "contact_title",
+                    "type": "string",
+                    "maxLength": 30,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa59f9-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "address",
+                    "description": "street or post-office box.",
+                    "type": "string",
+                    "maxLength": 60,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa59fa-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "city",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa59fb-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "region",
+                    "description": "state or province.",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa59fc-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "postal_code",
+                    "type": "string",
+                    "maxLength": 10,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa59fd-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "country",
+                    "type": "string",
+                    "maxLength": 15,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa59fe-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "phone",
+                    "description": "phone number includes country code or area code.",
+                    "type": "string",
+                    "maxLength": 24,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa59ff-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "fax",
+                    "description": "phone number includes country code or area code.",
+                    "type": "string",
+                    "maxLength": 24,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05fa5a00-899e-11e6-a8d7-35e2bcca9f8c",
+                    "name": "home_page",
+                    "description": "supplier",
+                    "type": "string",
+                    "maxLength": 500,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "GUID": "186c47c8-e5f0-11e6-88d2-2d3300b4e17f",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true,
+            "bucketId": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "Northwind",
+            "type": "bucket",
+            "collectionIds": [
+                "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+                "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+                "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+                "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
+                "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1"
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "05f92170-899e-11e6-a8d7-35e2bcca9f8c",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa0bd3-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa59f3-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "name": "fk_reports_to",
+            "description": "",
+            "comments": "",
+            "parentCollection": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c"
+        },
+        {
+            "GUID": "05f92171-899e-11e6-a8d7-35e2bcca9f8c",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05f996a0-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a09-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "name": "fk_category_id",
+            "description": "",
+            "comments": "",
+            "parentCollection": "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c"
+        },
+        {
+            "GUID": "05f92172-899e-11e6-a8d7-35e2bcca9f8c",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa59f5-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a08-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "name": "fk_supplier_id",
+            "description": "",
+            "comments": "",
+            "parentCollection": "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c"
+        },
+        {
+            "GUID": "05f92173-899e-11e6-a8d7-35e2bcca9f8c",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05f9e4c4-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a12-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "name": "fk_customer_id",
+            "description": "",
+            "comments": "",
+            "parentCollection": "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c"
+        },
+        {
+            "GUID": "05f92174-899e-11e6-a8d7-35e2bcca9f8c",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa0bd3-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a13-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "name": "fk_employee_id",
+            "description": "",
+            "comments": "",
+            "parentCollection": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c"
+        },
+        {
+            "GUID": "05f92175-899e-11e6-a8d7-35e2bcca9f8c",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a02-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a17-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "name": "fk_shipper_id",
+            "description": "",
+            "comments": "",
+            "parentCollection": "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c"
+        },
+        {
+            "GUID": "05f92177-899e-11e6-a8d7-35e2bcca9f8c",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a06-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05faa817-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "childCardinality": "0..n",
+            "name": "fk_product_id",
+            "description": "",
+            "comments": "",
+            "parentCollection": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+            "childCollection": "05faa815-899e-11e6-a8d7-35e2bcca9f8c"
+        },
+        {
+            "GUID": "90bc1010-c4a6-11e9-bfa6-8fc6304606d9",
+            "name": "fk orders.order_id to order_details.order_id",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+            "parentField": [
+                [
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a11-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
+            "childField": [
+                [
+                    "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05faa816-899e-11e6-a8d7-35e2bcca9f8c"
+                ]
+            ],
+            "childCardinality": "0..n"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "05f996a0-899e-11e6-a8d7-35e2bcca9f8c": "category_id",
+        "05f9e4c0-899e-11e6-a8d7-35e2bcca9f8c": "category_name",
+        "05f9e4c1-899e-11e6-a8d7-35e2bcca9f8c": "description",
+        "05f9e4c2-899e-11e6-a8d7-35e2bcca9f8c": "picture",
+        "05f96f90-899e-11e6-a8d7-35e2bcca9f8c": "categories",
+        "05f9e4c4-899e-11e6-a8d7-35e2bcca9f8c": "customer_id",
+        "05f9e4c5-899e-11e6-a8d7-35e2bcca9f8c": "customer_code",
+        "05f9e4c6-899e-11e6-a8d7-35e2bcca9f8c": "company_name",
+        "05f9e4c7-899e-11e6-a8d7-35e2bcca9f8c": "contact_name",
+        "05f9e4c8-899e-11e6-a8d7-35e2bcca9f8c": "contact_title",
+        "05f9e4c9-899e-11e6-a8d7-35e2bcca9f8c": "address",
+        "05f9e4ca-899e-11e6-a8d7-35e2bcca9f8c": "city",
+        "05f9e4cb-899e-11e6-a8d7-35e2bcca9f8c": "region",
+        "05f9e4cc-899e-11e6-a8d7-35e2bcca9f8c": "postal_code",
+        "05f9e4cd-899e-11e6-a8d7-35e2bcca9f8c": "country",
+        "05fa0bd0-899e-11e6-a8d7-35e2bcca9f8c": "phone",
+        "05fa0bd1-899e-11e6-a8d7-35e2bcca9f8c": "fax",
+        "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c": "customers",
+        "05fa0bd3-899e-11e6-a8d7-35e2bcca9f8c": "employee_id",
+        "05fa0bd4-899e-11e6-a8d7-35e2bcca9f8c": "lastname",
+        "05fa0bd5-899e-11e6-a8d7-35e2bcca9f8c": "firstname",
+        "05fa0bd6-899e-11e6-a8d7-35e2bcca9f8c": "title",
+        "05fa0bd7-899e-11e6-a8d7-35e2bcca9f8c": "title_of_courtesy",
+        "05fa0bd8-899e-11e6-a8d7-35e2bcca9f8c": "birthdate",
+        "05fa0bd9-899e-11e6-a8d7-35e2bcca9f8c": "hiredate",
+        "05fa0bda-899e-11e6-a8d7-35e2bcca9f8c": "address",
+        "05fa0bdb-899e-11e6-a8d7-35e2bcca9f8c": "city",
+        "05fa0bdc-899e-11e6-a8d7-35e2bcca9f8c": "region",
+        "05fa32e0-899e-11e6-a8d7-35e2bcca9f8c": "postal_code",
+        "05fa32e1-899e-11e6-a8d7-35e2bcca9f8c": "country",
+        "05fa32e2-899e-11e6-a8d7-35e2bcca9f8c": "home_phone",
+        "05fa59f0-899e-11e6-a8d7-35e2bcca9f8c": "extension",
+        "05fa59f1-899e-11e6-a8d7-35e2bcca9f8c": "photo",
+        "05fa59f2-899e-11e6-a8d7-35e2bcca9f8c": "notes",
+        "05fa59f3-899e-11e6-a8d7-35e2bcca9f8c": "reports_to",
+        "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c": "employees",
+        "05fa59f5-899e-11e6-a8d7-35e2bcca9f8c": "supplier_id",
+        "05fa59f6-899e-11e6-a8d7-35e2bcca9f8c": "company_name",
+        "05fa59f7-899e-11e6-a8d7-35e2bcca9f8c": "contact_name",
+        "05fa59f8-899e-11e6-a8d7-35e2bcca9f8c": "contact_title",
+        "05fa59f9-899e-11e6-a8d7-35e2bcca9f8c": "address",
+        "05fa59fa-899e-11e6-a8d7-35e2bcca9f8c": "city",
+        "05fa59fb-899e-11e6-a8d7-35e2bcca9f8c": "region",
+        "05fa59fc-899e-11e6-a8d7-35e2bcca9f8c": "postal_code",
+        "05fa59fd-899e-11e6-a8d7-35e2bcca9f8c": "country",
+        "05fa59fe-899e-11e6-a8d7-35e2bcca9f8c": "phone",
+        "05fa59ff-899e-11e6-a8d7-35e2bcca9f8c": "fax",
+        "05fa5a00-899e-11e6-a8d7-35e2bcca9f8c": "home_page",
+        "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c": "suppliers",
+        "05fa5a02-899e-11e6-a8d7-35e2bcca9f8c": "shipper_id",
+        "05fa5a03-899e-11e6-a8d7-35e2bcca9f8c": "company_name",
+        "05fa5a04-899e-11e6-a8d7-35e2bcca9f8c": "phone",
+        "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c": "shippers",
+        "05fa5a06-899e-11e6-a8d7-35e2bcca9f8c": "product_id",
+        "05fa5a07-899e-11e6-a8d7-35e2bcca9f8c": "product_name",
+        "05fa5a08-899e-11e6-a8d7-35e2bcca9f8c": "supplier_id",
+        "05fa5a09-899e-11e6-a8d7-35e2bcca9f8c": "category_id",
+        "05fa5a0a-899e-11e6-a8d7-35e2bcca9f8c": "quantity_per_unit",
+        "05fa5a0b-899e-11e6-a8d7-35e2bcca9f8c": "unit_price",
+        "05fa5a0c-899e-11e6-a8d7-35e2bcca9f8c": "units_in_stock",
+        "05fa5a0d-899e-11e6-a8d7-35e2bcca9f8c": "units_on_order",
+        "05fa5a0e-899e-11e6-a8d7-35e2bcca9f8c": "reorder_level",
+        "05fa5a0f-899e-11e6-a8d7-35e2bcca9f8c": "discontinued",
+        "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c": "products",
+        "05fa5a11-899e-11e6-a8d7-35e2bcca9f8c": "order_id",
+        "05fa5a12-899e-11e6-a8d7-35e2bcca9f8c": "customer_id",
+        "05fa5a13-899e-11e6-a8d7-35e2bcca9f8c": "employee_id",
+        "05fa5a14-899e-11e6-a8d7-35e2bcca9f8c": "order_date",
+        "05fa5a15-899e-11e6-a8d7-35e2bcca9f8c": "required_date",
+        "05fa5a16-899e-11e6-a8d7-35e2bcca9f8c": "shipped_date",
+        "05fa5a17-899e-11e6-a8d7-35e2bcca9f8c": "ship_via",
+        "05fa5a18-899e-11e6-a8d7-35e2bcca9f8c": "freight",
+        "05fa5a19-899e-11e6-a8d7-35e2bcca9f8c": "ship_name",
+        "05faa810-899e-11e6-a8d7-35e2bcca9f8c": "ship_address",
+        "05faa811-899e-11e6-a8d7-35e2bcca9f8c": "ship_city",
+        "05faa812-899e-11e6-a8d7-35e2bcca9f8c": "ship_region",
+        "05faa813-899e-11e6-a8d7-35e2bcca9f8c": "ship_postal_code",
+        "05faa814-899e-11e6-a8d7-35e2bcca9f8c": "ship_country",
+        "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c": "orders",
+        "05faa816-899e-11e6-a8d7-35e2bcca9f8c": "order_id",
+        "05faa817-899e-11e6-a8d7-35e2bcca9f8c": "product_id",
+        "05faa818-899e-11e6-a8d7-35e2bcca9f8c": "unit_price",
+        "05faa819-899e-11e6-a8d7-35e2bcca9f8c": "quantity",
+        "05faa81a-899e-11e6-a8d7-35e2bcca9f8c": "discount",
+        "05faa815-899e-11e6-a8d7-35e2bcca9f8c": "order_details",
+        "90bc1010-c4a6-11e9-bfa6-8fc6304606d9": "fk orders.order_id to order_details.order_id",
+        "085c2ff0-7ff0-11eb-b777-bbe0d63270e1": "Northwind"
+    },
+    "definitions": {
+        "GUID": "186c47c0-e5f0-11e6-88d2-2d3300b4e17f",
+        "properties": [],
+        "type": "definitions"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "465b6202-c4a6-11e9-bfa6-8fc6304606d9"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v4.4",
+    "dbVendor": "MongoDB",
+    "hideModelViews": true,
+    "appTarget": "MONGODB",
+    "creationTS": "2016-10-03T19:11:11.926Z",
+    "GUID": "25d97d60-899d-11e6-a8d7-35e2bcca9f8c",
+    "code": "",
+    "lastModifTS": "2021-03-08T09:26:42.899Z",
+    "persistenceSchemaVersion": "4",
+    "description": "The famous Microsoft Access example, imported from an Oracle DDL at http://www.geeksengine.com/article/northwind-oracle-2.html",
+    "comments": "More comments here",
+    "author": "John Doe",
+    "version": "1.0",
+    "validation": "MongoDB extension",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "4.3.10"
+    },
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
+    "hideForeignMaster": true,
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "collectionId",
+                        "x": 30,
+                        "y": 30,
+                        "width": 280,
+                        "height": 150
+                    },
+                    {
+                        "GUID": "collectionId22",
+                        "x": 720,
+                        "y": 380,
+                        "width": 230,
+                        "height": 130
+                    },
+                    {
+                        "GUID": "collectionId33",
+                        "x": 300,
+                        "y": 400,
+                        "width": 220,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "collectionId4",
+                        "x": 500,
+                        "y": 30,
+                        "width": 250,
+                        "height": 200
+                    },
+                    {
+                        "GUID": "94a62b20-e476-11e5-8d0b-1b53f33d738b",
+                        "x": 80,
+                        "y": 300,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                        "x": 34,
+                        "y": 41,
+                        "width": 280,
+                        "height": 424
+                    },
+                    {
+                        "GUID": "527fcb00-f378-11e5-ae63-ed98875331f1",
+                        "x": 455,
+                        "y": 104,
+                        "width": 277,
+                        "height": 183
+                    },
+                    {
+                        "GUID": "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+                        "x": 480,
+                        "y": 355,
+                        "width": 233,
+                        "height": 101
+                    },
+                    {
+                        "GUID": "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+                        "x": 61,
+                        "y": 516,
+                        "width": 200,
+                        "height": 75
+                    },
+                    {
+                        "GUID": "c2b2c8b0-f417-11e5-938a-bd54cc414623",
+                        "x": 429,
+                        "y": 472,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "4a014da0-f418-11e5-a6f2-dbf6571c2b51",
+                        "x": 422,
+                        "y": 485,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "8439e830-f41b-11e5-ad3f-7d283a6e1eb9",
+                        "x": 453.5,
+                        "y": 494,
+                        "width": 233,
+                        "height": 116
+                    },
+                    {
+                        "GUID": "6e9a9cc0-f422-11e5-ab1e-4fda87c84016",
+                        "x": 431,
+                        "y": 485,
+                        "width": 314,
+                        "height": 204
+                    },
+                    {
+                        "GUID": "166589b0-0440-11e6-a1a6-29098b60dd65",
+                        "x": 102,
+                        "y": 93,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+                        "x": 375,
+                        "y": 41,
+                        "width": 313,
+                        "height": 203
+                    },
+                    {
+                        "GUID": "2305d290-04d8-11e6-bc70-8be66314121e",
+                        "x": 140,
+                        "y": 772,
+                        "width": 200,
+                        "height": 79
+                    },
+                    {
+                        "GUID": "7c86e720-04e0-11e6-aab4-09e21d1bb332",
+                        "x": 447,
+                        "y": 781,
+                        "width": 252,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+                        "x": 431,
+                        "y": 338,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "c6350b08-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 361,
+                        "y": 43,
+                        "width": 250,
+                        "height": 87
+                    },
+                    {
+                        "GUID": "c6353214-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1071,
+                        "y": 548,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "c6355929-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 41,
+                        "y": 393,
+                        "width": 250,
+                        "height": 283
+                    },
+                    {
+                        "GUID": "c6358032-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 40,
+                        "y": 40,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "c635a748-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1067,
+                        "y": 431,
+                        "width": 250,
+                        "height": 75
+                    },
+                    {
+                        "GUID": "c635a74c-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 361,
+                        "y": 191,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "c635a757-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 690,
+                        "y": 448,
+                        "width": 250,
+                        "height": 269
+                    },
+                    {
+                        "GUID": "c635ce57-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 692,
+                        "y": 164,
+                        "width": 250,
+                        "height": 280
+                    },
+                    {
+                        "GUID": "03b0ad80-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 516,
+                        "y": 80,
+                        "width": 250,
+                        "height": 87
+                    },
+                    {
+                        "GUID": "03b0d493-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1270,
+                        "y": 476,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "03b0fbab-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 100,
+                        "y": 100,
+                        "width": 250,
+                        "height": 283
+                    },
+                    {
+                        "GUID": "03b122bb-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 96,
+                        "y": 463,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "03b149c6-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1082,
+                        "y": 334,
+                        "width": 250,
+                        "height": 75
+                    },
+                    {
+                        "GUID": "03b149ca-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 471,
+                        "y": 227,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "03b149d5-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 180,
+                        "y": 180,
+                        "width": 250,
+                        "height": 269
+                    },
+                    {
+                        "GUID": "03b170de-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 200,
+                        "y": 200,
+                        "width": 250,
+                        "height": 129
+                    },
+                    {
+                        "GUID": "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 850,
+                        "y": 646,
+                        "width": 250,
+                        "height": 87
+                    },
+                    {
+                        "GUID": "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 850,
+                        "y": 80,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 80,
+                        "y": 80,
+                        "width": 248,
+                        "height": 272
+                    },
+                    {
+                        "GUID": "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 80,
+                        "y": 590,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 850,
+                        "y": 320,
+                        "width": 250,
+                        "height": 75
+                    },
+                    {
+                        "GUID": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 482,
+                        "y": 601,
+                        "width": 250,
+                        "height": 177
+                    },
+                    {
+                        "GUID": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 475,
+                        "y": 80,
+                        "width": 264,
+                        "height": 226
+                    },
+                    {
+                        "GUID": "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 500,
+                        "y": 410,
+                        "width": 213,
+                        "height": 103
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 40,
+                        "y": 40,
+                        "GUID": "085c2ff0-7ff0-11eb-b777-bbe0d63270e1"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

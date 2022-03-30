@@ -1,0 +1,447 @@
+{
+    "modelName": "geoSpatial",
+    "collections": [
+        {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "sample": "International",
+                    "name": "type",
+                    "GUID": "41608ef0-0592-11e6-9ab4-6381ce276726",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "description": "unique id",
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "name": "_id",
+                    "GUID": "7e8a4840-0590-11e6-9ab4-6381ce276726",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "document",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "primaryKey": false,
+                            "sample": "Point",
+                            "enum": [
+                                "Point",
+                                "Line",
+                                "Polygon"
+                            ],
+                            "name": "type",
+                            "GUID": "3d5c8850-0591-11e6-9ab4-6381ce276726",
+                            "relationshipType": "",
+                            "required": true,
+                            "isActivated": true
+                        },
+                        {
+                            "type": "array",
+                            "primaryKey": false,
+                            "name": "coordinates",
+                            "GUID": "9b185a00-0591-11e6-9ab4-6381ce276726",
+                            "relationshipType": "",
+                            "properties": [
+                                {
+                                    "description": "longitude",
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "sample": -73.778889,
+                                    "arrayItem": true,
+                                    "mode": "double",
+                                    "GUID": "d04309f0-0591-11e6-9ab4-6381ce276726",
+                                    "relationshipType": "",
+                                    "isActivated": true
+                                },
+                                {
+                                    "description": "latitude",
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "sample": 40.639722,
+                                    "arrayItem": true,
+                                    "mode": "double",
+                                    "GUID": "f80c47d0-0591-11e6-9ab4-6381ce276726",
+                                    "relationshipType": "",
+                                    "isActivated": true
+                                }
+                            ],
+                            "required": true,
+                            "isActivated": true
+                        }
+                    ],
+                    "primaryKey": false,
+                    "name": "loc",
+                    "GUID": "2023c230-0591-11e6-9ab4-6381ce276726",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "sample": "John F Kennedy Intl",
+                    "name": "name",
+                    "GUID": "2c872fc0-0592-11e6-9ab4-6381ce276726",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "sample": "JFK",
+                    "name": "code",
+                    "GUID": "4fcb5ab0-0592-11e6-9ab4-6381ce276726",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "document",
+                    "additionalProperties": false,
+                    "properties": [
+                        {
+                            "type": "objectId",
+                            "primaryKey": false,
+                            "name": "state_id",
+                            "GUID": "3ecbf8e0-9733-11e6-9010-056a22b35869",
+                            "relationshipType": "Foreign Key",
+                            "parentRelationship": "4a5e9e60-9733-11e6-9010-056a22b35869",
+                            "foreignCollection": "9417f160-0592-11e6-9ab4-6381ce276726",
+                            "foreignField": [
+                                "9417f160-0592-11e6-9ab4-6381ce276726",
+                                "a70956b0-0592-11e6-9ab4-6381ce276726"
+                            ],
+                            "required": true,
+                            "isActivated": true
+                        },
+                        {
+                            "type": "string",
+                            "primaryKey": false,
+                            "name": "stateCode",
+                            "GUID": "4c7681e0-9733-11e6-9010-056a22b35869",
+                            "relationshipType": "Foreign Master",
+                            "parentRelationship": "57fb6bc0-9733-11e6-9010-056a22b35869",
+                            "foreignCollection": "9417f160-0592-11e6-9ab4-6381ce276726",
+                            "foreignField": [
+                                "9417f160-0592-11e6-9ab4-6381ce276726",
+                                "17c6ba50-0593-11e6-9ab4-6381ce276726"
+                            ],
+                            "required": true,
+                            "isActivated": true
+                        }
+                    ],
+                    "primaryKey": false,
+                    "name": "state",
+                    "GUID": "33b16990-9733-11e6-9010-056a22b35869",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                }
+            ],
+            "collectionName": "airports",
+            "GUID": "70be5490-0590-11e6-9ab4-6381ce276726",
+            "indexes": [],
+            "definitions": {
+                "id": "ce0c4d91-564f-11eb-8e96-9d5fd1bf930a",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        },
+        {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "name": "_id",
+                    "GUID": "a70956b0-0592-11e6-9ab4-6381ce276726",
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "4a5e9e60-9733-11e6-9010-056a22b35869"
+                    ],
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "document",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "primaryKey": false,
+                            "sample": "Polygon",
+                            "name": "type",
+                            "GUID": "4ea84201-0593-11e6-9ab4-6381ce276726",
+                            "relationshipType": "",
+                            "required": true,
+                            "enum": [
+                                "Point",
+                                "Line",
+                                "Polygon"
+                            ],
+                            "error": {
+                                "enum": false,
+                                "enums": [
+                                    false,
+                                    false,
+                                    false
+                                ]
+                            },
+                            "isActivated": true
+                        },
+                        {
+                            "type": "array",
+                            "primaryKey": false,
+                            "name": "coordinates",
+                            "GUID": "4ea84202-0593-11e6-9ab4-6381ce276726",
+                            "relationshipType": "",
+                            "properties": [
+                                {
+                                    "type": "array",
+                                    "primaryKey": false,
+                                    "arrayItem": true,
+                                    "GUID": "7f7c1af0-0593-11e6-9ab4-6381ce276726",
+                                    "relationshipType": "",
+                                    "properties": [
+                                        {
+                                            "description": "longitude",
+                                            "type": "numeric",
+                                            "primaryKey": false,
+                                            "sample": -109.043488,
+                                            "arrayItem": true,
+                                            "GUID": "913b8ff0-0593-11e6-9ab4-6381ce276726",
+                                            "relationshipType": "",
+                                            "isActivated": true
+                                        },
+                                        {
+                                            "description": "latitude",
+                                            "type": "numeric",
+                                            "primaryKey": false,
+                                            "sample": 37.484684,
+                                            "arrayItem": true,
+                                            "GUID": "9b99fb30-0593-11e6-9ab4-6381ce276726",
+                                            "relationshipType": "",
+                                            "isActivated": true
+                                        }
+                                    ],
+                                    "isActivated": true
+                                }
+                            ],
+                            "required": true,
+                            "isActivated": true
+                        }
+                    ],
+                    "primaryKey": false,
+                    "name": "loc",
+                    "GUID": "4ea84200-0593-11e6-9ab4-6381ce276726",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "sample": "Colorado",
+                    "name": "name",
+                    "GUID": "b46dfd10-0592-11e6-9ab4-6381ce276726",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "sample": "CO",
+                    "name": "code",
+                    "GUID": "17c6ba50-0593-11e6-9ab4-6381ce276726",
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "57fb6bc0-9733-11e6-9010-056a22b35869"
+                    ],
+                    "required": true,
+                    "isActivated": true
+                }
+            ],
+            "collectionName": "states",
+            "GUID": "9417f160-0592-11e6-9ab4-6381ce276726",
+            "indexes": [],
+            "definitions": {
+                "id": "ce0c4d92-564f-11eb-8e96-9d5fd1bf930a",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "4a5e9e60-9733-11e6-9010-056a22b35869",
+            "name": "fk_airportsStatesId",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "9417f160-0592-11e6-9ab4-6381ce276726",
+            "parentField": [
+                [
+                    "9417f160-0592-11e6-9ab4-6381ce276726",
+                    "a70956b0-0592-11e6-9ab4-6381ce276726"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "70be5490-0590-11e6-9ab4-6381ce276726",
+            "childField": [
+                [
+                    "70be5490-0590-11e6-9ab4-6381ce276726",
+                    "33b16990-9733-11e6-9010-056a22b35869",
+                    "3ecbf8e0-9733-11e6-9010-056a22b35869"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "57fb6bc0-9733-11e6-9010-056a22b35869",
+            "name": "fm_airportsStatesCode",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Master",
+            "parentCollection": "9417f160-0592-11e6-9ab4-6381ce276726",
+            "parentField": [
+                [
+                    "9417f160-0592-11e6-9ab4-6381ce276726",
+                    "17c6ba50-0593-11e6-9ab4-6381ce276726"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "70be5490-0590-11e6-9ab4-6381ce276726",
+            "childField": [
+                [
+                    "70be5490-0590-11e6-9ab4-6381ce276726",
+                    "33b16990-9733-11e6-9010-056a22b35869",
+                    "4c7681e0-9733-11e6-9010-056a22b35869"
+                ]
+            ],
+            "childCardinality": "0..n"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "70be5490-0590-11e6-9ab4-6381ce276726": "airports",
+        "7e8a4840-0590-11e6-9ab4-6381ce276726": "_id",
+        "2023c230-0591-11e6-9ab4-6381ce276726": "loc",
+        "3d5c8850-0591-11e6-9ab4-6381ce276726": "type",
+        "9b185a00-0591-11e6-9ab4-6381ce276726": "coordinates",
+        "2c872fc0-0592-11e6-9ab4-6381ce276726": "name",
+        "41608ef0-0592-11e6-9ab4-6381ce276726": "type",
+        "4fcb5ab0-0592-11e6-9ab4-6381ce276726": "code",
+        "9417f160-0592-11e6-9ab4-6381ce276726": "states",
+        "a70956b0-0592-11e6-9ab4-6381ce276726": "_id",
+        "b46dfd10-0592-11e6-9ab4-6381ce276726": "name",
+        "17c6ba50-0593-11e6-9ab4-6381ce276726": "code",
+        "4ea84200-0593-11e6-9ab4-6381ce276726": "loc",
+        "4ea84201-0593-11e6-9ab4-6381ce276726": "type",
+        "9b99fb30-0593-11e6-9ab4-6381ce276726": "undefined(1)",
+        "33b16990-9733-11e6-9010-056a22b35869": "state",
+        "3ecbf8e0-9733-11e6-9010-056a22b35869": "state_id",
+        "4c7681e0-9733-11e6-9010-056a22b35869": "stateCode"
+    },
+    "definitions": {
+        "id": "ce0c4d90-564f-11eb-8e96-9d5fd1bf930a",
+        "properties": [],
+        "type": "definitions"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "ce330f72-564f-11eb-8e96-9d5fd1bf930a"
+    },
+    "decorativeSymbols": [],
+    "dbVersion": "v3.2",
+    "dbVendor": "MongoDB",
+    "hideModelViews": true,
+    "appTarget": "MONGODB",
+    "creationTS": "2016-10-21T01:59:41.953Z",
+    "GUID": "07fc8f10-9732-11e6-9010-056a22b35869",
+    "lastModifTS": "2021-01-14T10:03:56.228Z",
+    "persistenceSchemaVersion": "4",
+    "description": "Introduction to MongoDB Geospatial feature from\nhttp://tugdualgrall.blogspot.com/2014/08/introduction-to-mongodb-geospatial.html\n\n",
+    "comments": "The relationship to states was added manually.  Otherwise, no way to link the 2 collections...\n",
+    "author": "Pascal",
+    "version": "",
+    "validation": "MongoDB extension",
+    "hackoladeMeta": {},
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "4.3.2"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "70be5490-0590-11e6-9ab4-6381ce276726",
+                        "x": 360,
+                        "y": 50,
+                        "width": 216,
+                        "height": 193
+                    },
+                    {
+                        "GUID": "9417f160-0592-11e6-9ab4-6381ce276726",
+                        "x": 50,
+                        "y": 68,
+                        "width": 247,
+                        "height": 157
+                    }
+                ],
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

@@ -1,0 +1,1050 @@
+{
+    "modelName": "videodb",
+    "collections": [
+        {
+            "bucketId": "3aa06440-a230-11e8-a073-4d93be1f0ee6",
+            "properties": [
+                {
+                    "type": "jsonObject",
+                    "primaryKey": true,
+                    "code": "event",
+                    "mode": "text",
+                    "physicalType": "char",
+                    "name": "event",
+                    "GUID": "3a98ea30-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "required": true,
+                    "additionalProperties": false,
+                    "sample": "start",
+                    "compositeKey": [
+                        "compositeClusteringKey"
+                    ],
+                    "compositeClusteringKey": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": true,
+                    "code": "event_timestamp",
+                    "jsonType": "object",
+                    "name": "event_timestamp",
+                    "childType": "char",
+                    "GUID": "3a98ea31-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "required": true,
+                    "sample": "b23ce430-9289-11e8-950c-9dafdeb1ed87",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositeClusteringKey": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "jsonObject",
+                    "primaryKey": true,
+                    "code": "username",
+                    "mode": "text",
+                    "physicalType": "char",
+                    "name": "username",
+                    "GUID": "3a98ea32-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "65441ce0-a231-11e8-a073-4d93be1f0ee6",
+                    "foreignCollection": "3a99ad80-a230-11e8-a073-4d93be1f0ee6",
+                    "foreignField": [
+                        "3a99ad80-a230-11e8-a073-4d93be1f0ee6",
+                        "3a99114d-a230-11e8-a073-4d93be1f0ee6"
+                    ],
+                    "required": true,
+                    "additionalProperties": false,
+                    "sample": "cdate",
+                    "compositeKey": [
+                        "compositePartitionKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "code": "video_timestamp",
+                    "jsonType": "object",
+                    "mode": "bigint",
+                    "name": "video_timestamp",
+                    "childType": "numeric",
+                    "GUID": "3a98ea33-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "required": true,
+                    "sample": 0,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": true,
+                    "code": "videoid",
+                    "jsonType": "object",
+                    "name": "videoid",
+                    "childType": "char",
+                    "GUID": "3a98ea34-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "6c5531e0-a231-11e8-a073-4d93be1f0ee6",
+                    "foreignCollection": "3a9a22b0-a230-11e8-a073-4d93be1f0ee6",
+                    "foreignField": [
+                        "3a9a22b0-a230-11e8-a073-4d93be1f0ee6",
+                        "3a991154-a230-11e8-a073-4d93be1f0ee6"
+                    ],
+                    "required": true,
+                    "sample": "b3a76c6b-7c7f-4af6-964f-803a9283c401",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "isActivated": true
+                }
+            ],
+            "type": "object",
+            "GUID": "3a995f60-a230-11e8-a073-4d93be1f0ee6",
+            "definitions": {
+                "GUID": "3a995f61-a230-11e8-a073-4d93be1f0ee6",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "video_event",
+            "code": "video_event",
+            "compositePartitionKey": [
+                {
+                    "keyId": "3a98ea34-a230-11e8-a073-4d93be1f0ee6",
+                    "type": ""
+                },
+                {
+                    "keyId": "3a98ea32-a230-11e8-a073-4d93be1f0ee6",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "keyId": "3a98ea31-a230-11e8-a073-4d93be1f0ee6",
+                    "type": "descending"
+                },
+                {
+                    "keyId": "3a98ea30-a230-11e8-a073-4d93be1f0ee6",
+                    "type": "ascending"
+                }
+            ],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "GUID": "dee08370-9240-11eb-a1cd-2b20d40ce8aa",
+                    "keys": "ALL",
+                    "rowsPerPartition": "NONE"
+                },
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'chunk_length_in_kb':'64','class':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'max_threshold':'32','min_threshold':'4'}",
+                "GUID": "dee08371-9240-11eb-a1cd-2b20d40ce8aa"
+            },
+            "collation": {},
+            "isActivated": true
+        },
+        {
+            "bucketId": "3aa06440-a230-11e8-a073-4d93be1f0ee6",
+            "properties": [
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "code": "rating_counter",
+                    "jsonType": "object",
+                    "mode": "counter",
+                    "name": "rating_counter",
+                    "childType": "numeric",
+                    "GUID": "3a98ea35-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "required": true,
+                    "sample": 1,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "code": "rating_total",
+                    "jsonType": "object",
+                    "mode": "counter",
+                    "name": "rating_total",
+                    "childType": "numeric",
+                    "GUID": "3a98ea36-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "required": true,
+                    "sample": 5,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": true,
+                    "code": "videoid",
+                    "jsonType": "object",
+                    "name": "videoid",
+                    "childType": "char",
+                    "GUID": "3a98ea37-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "71d01680-a231-11e8-a073-4d93be1f0ee6",
+                    "foreignCollection": "3a9a22b0-a230-11e8-a073-4d93be1f0ee6",
+                    "foreignField": [
+                        "3a9a22b0-a230-11e8-a073-4d93be1f0ee6",
+                        "3a991154-a230-11e8-a073-4d93be1f0ee6"
+                    ],
+                    "required": true,
+                    "sample": "b3a76c6b-7c7f-4af6-964f-803a9283c401",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "isActivated": true
+                }
+            ],
+            "type": "object",
+            "GUID": "3a995f62-a230-11e8-a073-4d93be1f0ee6",
+            "definitions": {
+                "GUID": "3a998670-a230-11e8-a073-4d93be1f0ee6",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "video_rating",
+            "code": "video_rating",
+            "compositePartitionKey": [
+                {
+                    "keyId": "3a98ea37-a230-11e8-a073-4d93be1f0ee6",
+                    "type": ""
+                }
+            ],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "GUID": "dee08372-9240-11eb-a1cd-2b20d40ce8aa",
+                    "keys": "ALL",
+                    "rowsPerPartition": "NONE"
+                },
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'chunk_length_in_kb':'64','class':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'max_threshold':'32','min_threshold':'4'}",
+                "GUID": "dee08373-9240-11eb-a1cd-2b20d40ce8aa"
+            },
+            "collation": {},
+            "isActivated": true
+        },
+        {
+            "bucketId": "3aa06440-a230-11e8-a073-4d93be1f0ee6",
+            "properties": [
+                {
+                    "GUID": "3a991140-a230-11e8-a073-4d93be1f0ee6",
+                    "type": "reference",
+                    "name": "address",
+                    "$ref": "#model/definitions/address",
+                    "refType": "model",
+                    "ref": "3a9abef9-a230-11e8-a073-4d93be1f0ee6",
+                    "refIdPath": [
+                        "34558570-a230-11e8-a073-4d93be1f0ee6",
+                        "34558571-a230-11e8-a073-4d93be1f0ee6",
+                        "3a9abef9-a230-11e8-a073-4d93be1f0ee6"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "code": "created_date",
+                    "jsonType": "object",
+                    "name": "created_date",
+                    "childType": "char",
+                    "GUID": "3a991148-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "required": true,
+                    "sample": "2017-01-01T07:00:00.000Z",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "type": "array",
+                    "primaryKey": false,
+                    "code": "email",
+                    "jsonType": "array",
+                    "subtype": "list<str>",
+                    "name": "email",
+                    "childType": "tuple",
+                    "additionalItems": true,
+                    "GUID": "3a991149-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "arrayItem": true,
+                            "arrayParentType": "list",
+                            "primaryKey": false,
+                            "childType": "char",
+                            "GUID": "3a99fba0-a230-11e8-a073-4d93be1f0ee6",
+                            "relationshipType": "",
+                            "sample": "ronald.boyce@gmail.com",
+                            "mode": "text",
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositeClusteringKey"
+                            ],
+                            "name": "New column",
+                            "isActivated": true
+                        },
+                        {
+                            "mode": "text",
+                            "type": "string",
+                            "arrayItem": true,
+                            "arrayParentType": "list",
+                            "primaryKey": false,
+                            "childType": "char",
+                            "GUID": "3a99fba1-a230-11e8-a073-4d93be1f0ee6",
+                            "relationshipType": "",
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositeClusteringKey"
+                            ],
+                            "name": "New column",
+                            "isActivated": true
+                        }
+                    ],
+                    "required": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "type": "jsonObject",
+                    "primaryKey": false,
+                    "code": "firstname",
+                    "mode": "text",
+                    "physicalType": "char",
+                    "name": "firstname",
+                    "GUID": "3a99114a-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "required": true,
+                    "additionalProperties": false,
+                    "sample": "Raymond",
+                    "isActivated": true
+                },
+                {
+                    "type": "jsonObject",
+                    "primaryKey": false,
+                    "code": "lastname",
+                    "mode": "text",
+                    "physicalType": "char",
+                    "name": "lastname",
+                    "GUID": "3a99114b-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "required": true,
+                    "additionalProperties": false,
+                    "sample": "Boyce",
+                    "isActivated": true
+                },
+                {
+                    "type": "jsonObject",
+                    "primaryKey": false,
+                    "code": "password",
+                    "mode": "text",
+                    "physicalType": "char",
+                    "name": "password",
+                    "GUID": "3a99114c-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "required": true,
+                    "additionalProperties": false,
+                    "sample": "7f4dcc3b5aa765d61d8327deb882cf66",
+                    "isActivated": true
+                },
+                {
+                    "type": "jsonObject",
+                    "primaryKey": true,
+                    "code": "username",
+                    "mode": "text",
+                    "physicalType": "char",
+                    "name": "username",
+                    "GUID": "3a99114d-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "65441ce0-a231-11e8-a073-4d93be1f0ee6"
+                    ],
+                    "required": true,
+                    "additionalProperties": false,
+                    "sample": "rboyce",
+                    "compositeKey": [
+                        "compositePartitionKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "isActivated": true
+                }
+            ],
+            "type": "object",
+            "GUID": "3a99ad80-a230-11e8-a073-4d93be1f0ee6",
+            "definitions": {
+                "GUID": "3a99fba2-a230-11e8-a073-4d93be1f0ee6",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "video_users",
+            "code": "video_users",
+            "compositePartitionKey": [
+                {
+                    "keyId": "3a99114d-a230-11e8-a073-4d93be1f0ee6",
+                    "type": ""
+                }
+            ],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "GUID": "dee0aa80-9240-11eb-a1cd-2b20d40ce8aa",
+                    "keys": "ALL",
+                    "rowsPerPartition": "NONE"
+                },
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'chunk_length_in_kb':'64','class':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'max_threshold':'32','min_threshold':'4'}",
+                "GUID": "dee0aa81-9240-11eb-a1cd-2b20d40ce8aa"
+            },
+            "collation": {},
+            "isActivated": true
+        },
+        {
+            "bucketId": "3aa06440-a230-11e8-a073-4d93be1f0ee6",
+            "properties": [
+                {
+                    "type": "jsonObject",
+                    "primaryKey": false,
+                    "code": "description",
+                    "mode": "text",
+                    "physicalType": "char",
+                    "name": "description",
+                    "GUID": "3a99114e-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "required": true,
+                    "additionalProperties": false,
+                    "sample": "My dog learned to play the piano because of the cat.",
+                    "isActivated": true
+                },
+                {
+                    "type": "document",
+                    "primaryKey": false,
+                    "properties": [],
+                    "code": "location",
+                    "jsonType": "object",
+                    "subtype": "map<str>",
+                    "name": "location",
+                    "childType": "map",
+                    "GUID": "3a99114f-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "required": true,
+                    "keyType": "char",
+                    "additionalProperties": false,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "type": "array",
+                    "primaryKey": false,
+                    "code": "tags",
+                    "jsonType": "array",
+                    "subtype": "set<str>",
+                    "name": "tags",
+                    "childType": "tuple",
+                    "additionalItems": true,
+                    "GUID": "3a991151-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "arrayItem": true,
+                            "arrayParentType": "set",
+                            "primaryKey": false,
+                            "childType": "char",
+                            "GUID": "3a9a22b1-a230-11e8-a073-4d93be1f0ee6",
+                            "relationshipType": "",
+                            "sample": "cats",
+                            "mode": "text",
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositeClusteringKey"
+                            ],
+                            "name": "New column",
+                            "isActivated": true
+                        },
+                        {
+                            "mode": "text",
+                            "type": "string",
+                            "arrayItem": true,
+                            "arrayParentType": "set",
+                            "primaryKey": false,
+                            "childType": "char",
+                            "GUID": "3a9a22b2-a230-11e8-a073-4d93be1f0ee6",
+                            "relationshipType": "",
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositeClusteringKey"
+                            ],
+                            "name": "New column",
+                            "isActivated": true
+                        }
+                    ],
+                    "required": true,
+                    "additionalProperties": false,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "code": "upload_date",
+                    "jsonType": "object",
+                    "name": "upload_date",
+                    "childType": "char",
+                    "GUID": "3a991152-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "required": true,
+                    "sample": "2012-08-30T14:50:00.000Z",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "type": "jsonObject",
+                    "primaryKey": false,
+                    "code": "username",
+                    "mode": "text",
+                    "physicalType": "char",
+                    "name": "username",
+                    "GUID": "3a991153-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "required": true,
+                    "additionalProperties": false,
+                    "sample": "tcodd",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": true,
+                    "code": "videoid",
+                    "jsonType": "object",
+                    "name": "videoid",
+                    "childType": "char",
+                    "GUID": "3a991154-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "6c5531e0-a231-11e8-a073-4d93be1f0ee6",
+                        "71d01680-a231-11e8-a073-4d93be1f0ee6"
+                    ],
+                    "required": true,
+                    "sample": "b3a76c6b-7c7f-4af6-964f-803a9283c401",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "jsonObject",
+                    "primaryKey": false,
+                    "code": "videoname",
+                    "mode": "text",
+                    "physicalType": "char",
+                    "name": "videoname",
+                    "GUID": "3a991155-a230-11e8-a073-4d93be1f0ee6",
+                    "relationshipType": "",
+                    "required": true,
+                    "additionalProperties": false,
+                    "sample": "Now my dog plays piano!",
+                    "isActivated": true
+                }
+            ],
+            "type": "object",
+            "GUID": "3a9a22b0-a230-11e8-a073-4d93be1f0ee6",
+            "definitions": {
+                "GUID": "3a9a22b3-a230-11e8-a073-4d93be1f0ee6",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "videos",
+            "code": "videos",
+            "compositePartitionKey": [
+                {
+                    "keyId": "3a991154-a230-11e8-a073-4d93be1f0ee6",
+                    "type": ""
+                }
+            ],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "GUID": "dee0aa82-9240-11eb-a1cd-2b20d40ce8aa",
+                    "keys": "ALL",
+                    "rowsPerPartition": "NONE"
+                },
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'chunk_length_in_kb':'64','class':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'max_threshold':'32','min_threshold':'4'}",
+                "GUID": "dee0aa83-9240-11eb-a1cd-2b20d40ce8aa"
+            },
+            "collation": {},
+            "isActivated": true
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "3aa06440-a230-11e8-a073-4d93be1f0ee6",
+            "name": "videodb",
+            "type": "bucket",
+            "collectionIds": [
+                "3a995f60-a230-11e8-a073-4d93be1f0ee6",
+                "3a995f62-a230-11e8-a073-4d93be1f0ee6",
+                "3a99ad80-a230-11e8-a073-4d93be1f0ee6",
+                "3a9a22b0-a230-11e8-a073-4d93be1f0ee6"
+            ],
+            "backgroundColor": {
+                "r": 0,
+                "g": 138,
+                "b": 0,
+                "a": 1
+            },
+            "show": true,
+            "indexes": [],
+            "replStrategy": "SimpleStrategy",
+            "addFieldsToBucket": true,
+            "isPlugin": true,
+            "code": "videodb",
+            "replFactor": "1",
+            "durableWrites": true,
+            "UDFs": [
+                {
+                    "GUID": "3a9b0d10-a230-11e8-a073-4d93be1f0ee6",
+                    "name": "avgfinal",
+                    "UDFID": "",
+                    "functionDescription": "",
+                    "functionBody": "CREATE OR REPLACE FUNCTION avgfinal ( state frozen<tuple<int, bigint>> )\n\t\t\tCALLED ON NULL INPUT\n\t\t\tRETURNS double   \n\t\t\tLANGUAGE java AS\n\t\t\t$$ double r = 0; if (state.getInt(0) == 0) return null; r = state.getLong(1); r/= state.getInt(0); return Double.valueOf(r); $$ ;",
+                    "functionComments": ""
+                },
+                {
+                    "GUID": "3a9b0d11-a230-11e8-a073-4d93be1f0ee6",
+                    "name": "avgstate",
+                    "UDFID": "",
+                    "functionDescription": "",
+                    "functionBody": "CREATE OR REPLACE FUNCTION avgstate ( state frozen<tuple<int, bigint>>, val int )\n\t\t\tCALLED ON NULL INPUT\n\t\t\tRETURNS frozen<tuple<int, bigint>>   \n\t\t\tLANGUAGE java AS\n\t\t\t$$ if (val !=null) { state.setInt(0, state.getInt(0)+1); state.setLong(1, state.getLong(1)+val.intValue()); } return state; $$ ;",
+                    "functionComments": ""
+                }
+            ],
+            "UDAs": [
+                {
+                    "GUID": "3a9b0d12-a230-11e8-a073-4d93be1f0ee6",
+                    "name": "average",
+                    "UDAID": "",
+                    "storedProcDescription": "",
+                    "storedProcFunction": "CREATE AGGREGATE  average (int)\n\t\t\tSFUNC avgstate\n\t\t\tSTYPE frozen<tuple<int, bigint>>\n\t\t\tFINALFUNC avgfinal\n\t\t\tINITCOND (0, 0)\n\t\t\t;",
+                    "storedProcComments": ""
+                }
+            ],
+            "addToCqlScript": true,
+            "isActivated": true
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "65441ce0-a231-11e8-a073-4d93be1f0ee6",
+            "name": "fk video_users.username to video_event.username",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "3a99ad80-a230-11e8-a073-4d93be1f0ee6",
+            "parentField": [
+                [
+                    "3a99ad80-a230-11e8-a073-4d93be1f0ee6",
+                    "3a99114d-a230-11e8-a073-4d93be1f0ee6"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "3a995f60-a230-11e8-a073-4d93be1f0ee6",
+            "childField": [
+                [
+                    "3a995f60-a230-11e8-a073-4d93be1f0ee6",
+                    "3a98ea32-a230-11e8-a073-4d93be1f0ee6"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "6c5531e0-a231-11e8-a073-4d93be1f0ee6",
+            "name": "fk videos.videoid to video_event.videoid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "3a9a22b0-a230-11e8-a073-4d93be1f0ee6",
+            "parentField": [
+                [
+                    "3a9a22b0-a230-11e8-a073-4d93be1f0ee6",
+                    "3a991154-a230-11e8-a073-4d93be1f0ee6"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "3a995f60-a230-11e8-a073-4d93be1f0ee6",
+            "childField": [
+                [
+                    "3a995f60-a230-11e8-a073-4d93be1f0ee6",
+                    "3a98ea34-a230-11e8-a073-4d93be1f0ee6"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "71d01680-a231-11e8-a073-4d93be1f0ee6",
+            "name": "fk videos.videoid to video_rating.videoid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "3a9a22b0-a230-11e8-a073-4d93be1f0ee6",
+            "parentField": [
+                [
+                    "3a9a22b0-a230-11e8-a073-4d93be1f0ee6",
+                    "3a991154-a230-11e8-a073-4d93be1f0ee6"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "3a995f62-a230-11e8-a073-4d93be1f0ee6",
+            "childField": [
+                [
+                    "3a995f62-a230-11e8-a073-4d93be1f0ee6",
+                    "3a98ea37-a230-11e8-a073-4d93be1f0ee6"
+                ]
+            ],
+            "childCardinality": "0..n"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "3a9abef9-a230-11e8-a073-4d93be1f0ee6": "address",
+        "3a9abefa-a230-11e8-a073-4d93be1f0ee6": "city",
+        "3a9ae600-a230-11e8-a073-4d93be1f0ee6": "location",
+        "3a9ae601-a230-11e8-a073-4d93be1f0ee6": "phones",
+        "3a9ae602-a230-11e8-a073-4d93be1f0ee6": "New column",
+        "3a9ae603-a230-11e8-a073-4d93be1f0ee6": "street",
+        "3a9ae604-a230-11e8-a073-4d93be1f0ee6": "zip",
+        "3a98ea30-a230-11e8-a073-4d93be1f0ee6": "event",
+        "3a98ea31-a230-11e8-a073-4d93be1f0ee6": "event_timestamp",
+        "3a98ea32-a230-11e8-a073-4d93be1f0ee6": "username",
+        "3a98ea33-a230-11e8-a073-4d93be1f0ee6": "video_timestamp",
+        "3a98ea34-a230-11e8-a073-4d93be1f0ee6": "videoid",
+        "3a995f60-a230-11e8-a073-4d93be1f0ee6": "video_event",
+        "3a98ea35-a230-11e8-a073-4d93be1f0ee6": "rating_counter",
+        "3a98ea36-a230-11e8-a073-4d93be1f0ee6": "rating_total",
+        "3a98ea37-a230-11e8-a073-4d93be1f0ee6": "videoid",
+        "3a995f62-a230-11e8-a073-4d93be1f0ee6": "video_rating",
+        "3a991140-a230-11e8-a073-4d93be1f0ee6": "address",
+        "3a991148-a230-11e8-a073-4d93be1f0ee6": "created_date",
+        "3a991149-a230-11e8-a073-4d93be1f0ee6": "email",
+        "3a99fba0-a230-11e8-a073-4d93be1f0ee6": "New column",
+        "3a99fba1-a230-11e8-a073-4d93be1f0ee6": "New column",
+        "3a99114a-a230-11e8-a073-4d93be1f0ee6": "firstname",
+        "3a99114b-a230-11e8-a073-4d93be1f0ee6": "lastname",
+        "3a99114c-a230-11e8-a073-4d93be1f0ee6": "password",
+        "3a99114d-a230-11e8-a073-4d93be1f0ee6": "username",
+        "3a99ad80-a230-11e8-a073-4d93be1f0ee6": "video_users",
+        "3a99114e-a230-11e8-a073-4d93be1f0ee6": "description",
+        "3a99114f-a230-11e8-a073-4d93be1f0ee6": "location",
+        "3a991151-a230-11e8-a073-4d93be1f0ee6": "tags",
+        "3a9a22b1-a230-11e8-a073-4d93be1f0ee6": "New column",
+        "3a9a22b2-a230-11e8-a073-4d93be1f0ee6": "New column",
+        "3a991152-a230-11e8-a073-4d93be1f0ee6": "upload_date",
+        "3a991153-a230-11e8-a073-4d93be1f0ee6": "username",
+        "3a991154-a230-11e8-a073-4d93be1f0ee6": "videoid",
+        "3a991155-a230-11e8-a073-4d93be1f0ee6": "videoname",
+        "3a9a22b0-a230-11e8-a073-4d93be1f0ee6": "videos",
+        "3aa06440-a230-11e8-a073-4d93be1f0ee6": "videodb",
+        "65441ce0-a231-11e8-a073-4d93be1f0ee6": "fk video_users.username to video_event.username",
+        "6c5531e0-a231-11e8-a073-4d93be1f0ee6": "fk videos.videoid to video_event.videoid",
+        "71d01680-a231-11e8-a073-4d93be1f0ee6": "fk videos.videoid to video_rating.videoid"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [
+            {
+                "properties": [
+                    {
+                        "code": "city",
+                        "mode": "text",
+                        "type": "string",
+                        "name": "city",
+                        "primaryKey": false,
+                        "childType": "char",
+                        "GUID": "3a9abefa-a230-11e8-a073-4d93be1f0ee6",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "isActivated": true
+                    },
+                    {
+                        "code": "location",
+                        "frozen": true,
+                        "type": "array",
+                        "name": "location",
+                        "primaryKey": false,
+                        "childType": "tuple",
+                        "additionalItems": true,
+                        "GUID": "3a9ae600-a230-11e8-a073-4d93be1f0ee6",
+                        "properties": [],
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "isActivated": true
+                    },
+                    {
+                        "code": "phones",
+                        "frozen": true,
+                        "subtype": "set<str>",
+                        "type": "array",
+                        "name": "phones",
+                        "primaryKey": false,
+                        "childType": "tuple",
+                        "additionalItems": true,
+                        "GUID": "3a9ae601-a230-11e8-a073-4d93be1f0ee6",
+                        "properties": [
+                            {
+                                "type": "string",
+                                "arrayItem": true,
+                                "arrayParentType": "set",
+                                "primaryKey": false,
+                                "childType": "char",
+                                "GUID": "3a9ae602-a230-11e8-a073-4d93be1f0ee6",
+                                "mode": "text",
+                                "compositeKey": [
+                                    "compositePartitionKey",
+                                    "compositeClusteringKey"
+                                ],
+                                "name": "New column",
+                                "isActivated": true
+                            }
+                        ],
+                        "additionalProperties": false,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "isActivated": true
+                    },
+                    {
+                        "code": "street",
+                        "mode": "text",
+                        "type": "string",
+                        "name": "street",
+                        "primaryKey": false,
+                        "childType": "char",
+                        "GUID": "3a9ae603-a230-11e8-a073-4d93be1f0ee6",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "isActivated": true
+                    },
+                    {
+                        "code": "zip",
+                        "mode": "int",
+                        "type": "numeric",
+                        "name": "zip",
+                        "primaryKey": false,
+                        "childType": "numeric",
+                        "GUID": "3a9ae604-a230-11e8-a073-4d93be1f0ee6",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "isActivated": true
+                    }
+                ],
+                "type": "document",
+                "name": "address",
+                "primaryKey": false,
+                "childType": "udt",
+                "GUID": "3a9abef9-a230-11e8-a073-4d93be1f0ee6",
+                "additionalProperties": false,
+                "compositeKey": [
+                    "compositePartitionKey",
+                    "compositeClusteringKey"
+                ],
+                "definitionRefs": [
+                    [
+                        "3a99ad80-a230-11e8-a073-4d93be1f0ee6",
+                        "3a991140-a230-11e8-a073-4d93be1f0ee6"
+                    ]
+                ],
+                "frozen": true,
+                "isActivated": true
+            }
+        ],
+        "GUID": "34558571-a230-11e8-a073-4d93be1f0ee6"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "34558572-a230-11e8-a073-4d93be1f0ee6"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "DSE 6.0.x",
+    "dbVendor": "Cassandra",
+    "appTarget": "CASSANDRA",
+    "creationTS": "2018-08-17T15:14:15.495Z",
+    "GUID": "34558570-a230-11e8-a073-4d93be1f0ee6",
+    "lastModifTS": "2021-03-31T16:48:51.101Z",
+    "persistenceSchemaVersion": "4",
+    "description": "From https://github.com/jbisso/cassandra-samples/blob/master/java/videodb-tutorial/src/main/resources/videodb.cql",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "hideModelViews": false,
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Cassandra",
+        "pluginVersion": "0.1.71",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "hackoladeMeta": {},
+    "applicationInformation": {
+        "version": "4.3.14"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "3a995f60-a230-11e8-a073-4d93be1f0ee6",
+                        "x": 99,
+                        "y": 162,
+                        "width": 303,
+                        "height": 103,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "3a995f62-a230-11e8-a073-4d93be1f0ee6",
+                        "x": 472,
+                        "y": 415,
+                        "width": 300,
+                        "height": 75,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "3a99ad80-a230-11e8-a073-4d93be1f0ee6",
+                        "x": 480,
+                        "y": 150,
+                        "width": 283,
+                        "height": 240,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "3a9a22b0-a230-11e8-a073-4d93be1f0ee6",
+                        "x": 100,
+                        "y": 318,
+                        "width": 301,
+                        "height": 159,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 59,
+                        "y": 110,
+                        "GUID": "3aa06440-a230-11e8-a073-4d93be1f0ee6"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [
+                    "3a99ad80-a230-11e8-a073-4d93be1f0ee6",
+                    "3a995f62-a230-11e8-a073-4d93be1f0ee6"
+                ],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

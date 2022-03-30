@@ -1,0 +1,1493 @@
+{
+    "GUID": "ffc3eda0-b8e9-11e6-8089-6f1f31218a06",
+    "lastModifTS": "2018-05-19T09:07:22.644Z",
+    "persistenceSchemaVersion": "1",
+    "description": "DAT-401 YouTube video https://www.youtube.com/watch?v=ggDIat_FZtA&t=3s by Rick Houlihan, Principal Solutions Architect",
+    "comments": "",
+    "author": "Pascal",
+    "version": "0.1",
+    "collections": [
+        {
+            "GUID": "3e7daae0-b8ea-11e6-8089-6f1f31218a06",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": true,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "e0e75700-f86d-11e6-afef-f1bdcc5dc5f7",
+                    "childRelationships": [],
+                    "foreignCollection": "158d2b10-b8ea-11e6-8089-6f1f31218a06",
+                    "foreignField": [
+                        "158d2b10-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e4-b8ea-11e6-8089-6f1f31218a06"
+                    ],
+                    "enum": [],
+                    "sample": "",
+                    "GUID": "c233ede0-b8ea-11e6-8089-6f1f31218a06",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "msgId",
+                    "partitionKey": true,
+                    "sortKey": false
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "Blablabla",
+                    "GUID": "3e812d54-b8ea-11e6-8089-6f1f31218a06",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "body",
+                    "error": {}
+                },
+                {
+                    "type": "array",
+                    "childType": "list",
+                    "properties": [
+                        {
+                            "type": "binary",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "default": "",
+                            "gridFS": "",
+                            "enum": [],
+                            "sample": "",
+                            "GUID": "3e812d56-b8ea-11e6-8089-6f1f31218a06",
+                            "description": "",
+                            "comments": "",
+                            "required": false,
+                            "id": "",
+                            "arrayItem": true,
+                            "arrayParentType": "list"
+                        }
+                    ],
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "additionalItems": false,
+                    "minItems": "",
+                    "maxItems": "",
+                    "uniqueItems": false,
+                    "enum": [],
+                    "GUID": "3e812d55-b8ea-11e6-8089-6f1f31218a06",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "attachments"
+                }
+            ],
+            "collectionName": "messageBody",
+            "collectionUsers": [],
+            "indexes": [],
+            "readCapacity": 5,
+            "writeCapacity": 5,
+            "streamEnabled": false,
+            "streamViewType": "Keys only",
+            "definitions": {
+                "GUID": "32754a11-f86d-11e6-afef-f1bdcc5dc5f7",
+                "properties": [],
+                "type": "definitions"
+            },
+            "bucketId": "8641c3e0-0640-11e7-8ad3-83453b80bb7b"
+        },
+        {
+            "GUID": "158d2b10-b8ea-11e6-8089-6f1f31218a06",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "2014-10-02",
+                    "GUID": "158f26e1-b8ea-11e6-8089-6f1f31218a06",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "date",
+                    "sortKey": false,
+                    "error": {}
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "f561f460-f86d-11e6-afef-f1bdcc5dc5f7",
+                    "childRelationships": [],
+                    "foreignCollection": "24436570-b8ef-11e6-8089-6f1f31218a06",
+                    "foreignField": [
+                        "24436570-b8ef-11e6-8089-6f1f31218a06",
+                        "244958e0-b8ef-11e6-8089-6f1f31218a06"
+                    ],
+                    "enum": [],
+                    "sample": "David",
+                    "GUID": "158f26e0-b8ea-11e6-8089-6f1f31218a06",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "recipient",
+                    "partitionKey": false,
+                    "error": {}
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "eda07b20-f86d-11e6-afef-f1bdcc5dc5f7",
+                    "childRelationships": [],
+                    "foreignCollection": "24436570-b8ef-11e6-8089-6f1f31218a06",
+                    "foreignField": [
+                        "24436570-b8ef-11e6-8089-6f1f31218a06",
+                        "244958e0-b8ef-11e6-8089-6f1f31218a06"
+                    ],
+                    "enum": [],
+                    "sample": "Bob",
+                    "GUID": "158f26e2-b8ea-11e6-8089-6f1f31218a06",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "sender",
+                    "error": {}
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "",
+                    "GUID": "158f26e3-b8ea-11e6-8089-6f1f31218a06",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "subject"
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "e0e75700-f86d-11e6-afef-f1bdcc5dc5f7"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "Blablabla",
+                    "GUID": "158f26e4-b8ea-11e6-8089-6f1f31218a06",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "msgId",
+                    "error": {},
+                    "partitionKey": true,
+                    "sortKey": false
+                }
+            ],
+            "collectionName": "messageHeaders",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "GUID": "d5127200-b8eb-11e6-8089-6f1f31218a06",
+                    "name": "inboxGSI",
+                    "lsi": false,
+                    "sortKey": {
+                        "include": true,
+                        "GUID": "158f26e1-b8ea-11e6-8089-6f1f31218a06",
+                        "value": "date"
+                    },
+                    "projectionType": "Include",
+                    "partitionKey": {
+                        "GUID": "158f26e0-b8ea-11e6-8089-6f1f31218a06",
+                        "value": "recipient"
+                    },
+                    "readCapacity": 5,
+                    "writeCapacity": 5,
+                    "key": [
+                        "158f26e4-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e0-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e1-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e3-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e2-b8ea-11e6-8089-6f1f31218a06"
+                    ],
+                    "nonKeyAttributes": [
+                        "158f26e4-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e0-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e1-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e3-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e2-b8ea-11e6-8089-6f1f31218a06"
+                    ]
+                },
+                {
+                    "GUID": "c18684f0-b8ec-11e6-8089-6f1f31218a06",
+                    "name": "outboxGSi",
+                    "lsi": false,
+                    "sortKey": {
+                        "include": true,
+                        "GUID": "158f26e1-b8ea-11e6-8089-6f1f31218a06",
+                        "value": "date"
+                    },
+                    "projectionType": "Include",
+                    "partitionKey": {
+                        "GUID": "158f26e2-b8ea-11e6-8089-6f1f31218a06",
+                        "value": "sender"
+                    },
+                    "readCapacity": 5,
+                    "writeCapacity": 5,
+                    "key": [
+                        "158f26e4-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e0-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e1-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e3-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e2-b8ea-11e6-8089-6f1f31218a06"
+                    ],
+                    "nonKeyAttributes": [
+                        "158f26e4-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e0-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e1-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e3-b8ea-11e6-8089-6f1f31218a06",
+                        "158f26e2-b8ea-11e6-8089-6f1f31218a06"
+                    ]
+                }
+            ],
+            "readCapacity": 5,
+            "writeCapacity": 5,
+            "streamEnabled": false,
+            "streamViewType": "Keys only",
+            "definitions": {
+                "GUID": "32754a12-f86d-11e6-afef-f1bdcc5dc5f7",
+                "properties": [],
+                "type": "definitions"
+            },
+            "bucketId": "8641c3e0-0640-11e7-8ad3-83453b80bb7b"
+        },
+        {
+            "GUID": "00dbed50-b8ea-11e6-8089-6f1f31218a06",
+            "type": "object",
+            "description": "Problem is that it ends up costing 1600 RCU to read 50 messages, with formula:\n\nItems evaluated by query * Avg item size * Conversion ratio * Consistent/Eventually consistent reads = # of RCU\n\n50 * 256kb * (1 RCU /4kb) * (1/2) = 1600 RCU\n",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": true,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "d43d7520-f86d-11e6-afef-f1bdcc5dc5f7",
+                    "childRelationships": [],
+                    "foreignCollection": "24436570-b8ef-11e6-8089-6f1f31218a06",
+                    "foreignField": [
+                        "24436570-b8ef-11e6-8089-6f1f31218a06",
+                        "244958e0-b8ef-11e6-8089-6f1f31218a06"
+                    ],
+                    "enum": [],
+                    "sample": "David",
+                    "GUID": "00e89780-b8ea-11e6-8089-6f1f31218a06",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "recipient",
+                    "partitionKey": true,
+                    "error": {}
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "2014-10-02",
+                    "GUID": "00e89782-b8ea-11e6-8089-6f1f31218a06",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "date",
+                    "sortKey": true,
+                    "error": {}
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "c64fc8a0-f86d-11e6-afef-f1bdcc5dc5f7",
+                    "childRelationships": [],
+                    "foreignCollection": "24436570-b8ef-11e6-8089-6f1f31218a06",
+                    "foreignField": [
+                        "24436570-b8ef-11e6-8089-6f1f31218a06",
+                        "244958e0-b8ef-11e6-8089-6f1f31218a06"
+                    ],
+                    "enum": [],
+                    "sample": "Bob",
+                    "GUID": "00e8be90-b8ea-11e6-8089-6f1f31218a06",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "sender",
+                    "error": {}
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "",
+                    "GUID": "00e8be92-b8ea-11e6-8089-6f1f31218a06",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "subject"
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "Blablabla",
+                    "GUID": "00e8be93-b8ea-11e6-8089-6f1f31218a06",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "body",
+                    "error": {}
+                },
+                {
+                    "type": "array",
+                    "childType": "list",
+                    "properties": [
+                        {
+                            "type": "binary",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "default": "",
+                            "gridFS": "",
+                            "enum": [],
+                            "sample": "",
+                            "GUID": "00e8be95-b8ea-11e6-8089-6f1f31218a06",
+                            "description": "",
+                            "comments": "",
+                            "required": false,
+                            "id": "",
+                            "arrayItem": true,
+                            "arrayParentType": "list"
+                        }
+                    ],
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "additionalItems": false,
+                    "minItems": "",
+                    "maxItems": "",
+                    "uniqueItems": false,
+                    "enum": [],
+                    "GUID": "00e8be94-b8ea-11e6-8089-6f1f31218a06",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "attachments"
+                }
+            ],
+            "collectionName": "messagesEmbedded",
+            "collectionUsers": [],
+            "indexes": [],
+            "readCapacity": 5,
+            "writeCapacity": 5,
+            "streamEnabled": false,
+            "streamViewType": "Keys only",
+            "definitions": {
+                "GUID": "32754a13-f86d-11e6-afef-f1bdcc5dc5f7",
+                "properties": [],
+                "type": "definitions"
+            },
+            "bucketId": "8641c3e0-0640-11e7-8ad3-83453b80bb7b"
+        },
+        {
+            "GUID": "24436570-b8ef-11e6-8089-6f1f31218a06",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "c64fc8a0-f86d-11e6-afef-f1bdcc5dc5f7",
+                        "d43d7520-f86d-11e6-afef-f1bdcc5dc5f7",
+                        "eda07b20-f86d-11e6-afef-f1bdcc5dc5f7",
+                        "f561f460-f86d-11e6-afef-f1bdcc5dc5f7"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "Bob",
+                    "GUID": "244958e0-b8ef-11e6-8089-6f1f31218a06",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "user",
+                    "partitionKey": true
+                },
+                {
+                    "type": "array",
+                    "childType": "list",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "format": "",
+                            "default": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "sample": "Rob",
+                            "GUID": "244958e2-b8ef-11e6-8089-6f1f31218a06",
+                            "description": "",
+                            "comments": "",
+                            "required": false,
+                            "id": "",
+                            "arrayItem": true,
+                            "arrayParentType": "list"
+                        }
+                    ],
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "additionalItems": false,
+                    "minItems": "",
+                    "maxItems": "",
+                    "uniqueItems": false,
+                    "enum": [],
+                    "GUID": "244958e1-b8ef-11e6-8089-6f1f31218a06",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "nicknames"
+                }
+            ],
+            "collectionName": "users",
+            "collectionUsers": [],
+            "indexes": [],
+            "readCapacity": 5,
+            "writeCapacity": 5,
+            "streamEnabled": false,
+            "streamViewType": "Keys only",
+            "definitions": {
+                "GUID": "32754a14-f86d-11e6-afef-f1bdcc5dc5f7",
+                "properties": [],
+                "type": "definitions"
+            },
+            "bucketId": "8641c3e0-0640-11e7-8ad3-83453b80bb7b"
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "8641c3e0-0640-11e7-8ad3-83453b80bb7b",
+            "name": "eu-west-1",
+            "type": "bucket",
+            "description": "",
+            "comments": "",
+            "collectionIds": [
+                "00dbed50-b8ea-11e6-8089-6f1f31218a06",
+                "24436570-b8ef-11e6-8089-6f1f31218a06",
+                "158d2b10-b8ea-11e6-8089-6f1f31218a06",
+                "3e7daae0-b8ea-11e6-8089-6f1f31218a06"
+            ],
+            "backgroundColor": {
+                "r": 0,
+                "g": 188,
+                "b": 213,
+                "a": 1
+            },
+            "show": true
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "c64fc8a0-f86d-11e6-afef-f1bdcc5dc5f7",
+            "name": "fk users.user to messagesEmbedded.sender",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "24436570-b8ef-11e6-8089-6f1f31218a06",
+            "parentField": [
+                "24436570-b8ef-11e6-8089-6f1f31218a06",
+                "244958e0-b8ef-11e6-8089-6f1f31218a06"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "00dbed50-b8ea-11e6-8089-6f1f31218a06",
+            "childField": [
+                "00dbed50-b8ea-11e6-8089-6f1f31218a06",
+                "00e8be90-b8ea-11e6-8089-6f1f31218a06"
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "d43d7520-f86d-11e6-afef-f1bdcc5dc5f7",
+            "name": "fk users.user to messagesEmbedded.recipient",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "24436570-b8ef-11e6-8089-6f1f31218a06",
+            "parentField": [
+                "24436570-b8ef-11e6-8089-6f1f31218a06",
+                "244958e0-b8ef-11e6-8089-6f1f31218a06"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "00dbed50-b8ea-11e6-8089-6f1f31218a06",
+            "childField": [
+                "00dbed50-b8ea-11e6-8089-6f1f31218a06",
+                "00e89780-b8ea-11e6-8089-6f1f31218a06"
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "e0e75700-f86d-11e6-afef-f1bdcc5dc5f7",
+            "name": "fk messageHeaders.msgId to messageBody.msgId",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "158d2b10-b8ea-11e6-8089-6f1f31218a06",
+            "parentField": [
+                "158d2b10-b8ea-11e6-8089-6f1f31218a06",
+                "158f26e4-b8ea-11e6-8089-6f1f31218a06"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "3e7daae0-b8ea-11e6-8089-6f1f31218a06",
+            "childField": [
+                "3e7daae0-b8ea-11e6-8089-6f1f31218a06",
+                "c233ede0-b8ea-11e6-8089-6f1f31218a06"
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "eda07b20-f86d-11e6-afef-f1bdcc5dc5f7",
+            "name": "fk users.user to messageHeaders.sender",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "24436570-b8ef-11e6-8089-6f1f31218a06",
+            "parentField": [
+                "24436570-b8ef-11e6-8089-6f1f31218a06",
+                "244958e0-b8ef-11e6-8089-6f1f31218a06"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "158d2b10-b8ea-11e6-8089-6f1f31218a06",
+            "childField": [
+                "158d2b10-b8ea-11e6-8089-6f1f31218a06",
+                "158f26e2-b8ea-11e6-8089-6f1f31218a06"
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "f561f460-f86d-11e6-afef-f1bdcc5dc5f7",
+            "name": "fk users.user to messageHeaders.recipient",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "24436570-b8ef-11e6-8089-6f1f31218a06",
+            "parentField": [
+                "24436570-b8ef-11e6-8089-6f1f31218a06",
+                "244958e0-b8ef-11e6-8089-6f1f31218a06"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "158d2b10-b8ea-11e6-8089-6f1f31218a06",
+            "childField": [
+                "158d2b10-b8ea-11e6-8089-6f1f31218a06",
+                "158f26e0-b8ea-11e6-8089-6f1f31218a06"
+            ],
+            "childCardinality": "0..n"
+        }
+    ],
+    "users": [],
+    "idToNameHashTable": {
+        "00e89780-b8ea-11e6-8089-6f1f31218a06": "recipient",
+        "00e89782-b8ea-11e6-8089-6f1f31218a06": "date",
+        "00e8be90-b8ea-11e6-8089-6f1f31218a06": "sender",
+        "00e8be92-b8ea-11e6-8089-6f1f31218a06": "subject",
+        "00e8be93-b8ea-11e6-8089-6f1f31218a06": "body",
+        "00e8be94-b8ea-11e6-8089-6f1f31218a06": "attachments",
+        "00dbed50-b8ea-11e6-8089-6f1f31218a06": "messagesEmbedded",
+        "158f26e0-b8ea-11e6-8089-6f1f31218a06": "recipient",
+        "158f26e1-b8ea-11e6-8089-6f1f31218a06": "date",
+        "158f26e2-b8ea-11e6-8089-6f1f31218a06": "sender",
+        "158f26e3-b8ea-11e6-8089-6f1f31218a06": "subject",
+        "158f26e4-b8ea-11e6-8089-6f1f31218a06": "msgId",
+        "158d2b10-b8ea-11e6-8089-6f1f31218a06": "messageHeaders",
+        "3e812d54-b8ea-11e6-8089-6f1f31218a06": "body",
+        "3e812d55-b8ea-11e6-8089-6f1f31218a06": "attachments",
+        "3e7daae0-b8ea-11e6-8089-6f1f31218a06": "messageBody",
+        "c233ede0-b8ea-11e6-8089-6f1f31218a06": "msgId",
+        "244958e0-b8ef-11e6-8089-6f1f31218a06": "user",
+        "244958e1-b8ef-11e6-8089-6f1f31218a06": "nicknames",
+        "24436570-b8ef-11e6-8089-6f1f31218a06": "users",
+        "8641c3e0-0640-11e7-8ad3-83453b80bb7b": "eu-west-1"
+    },
+    "definitions": {
+        "GUID": "32754a10-f86d-11e6-afef-f1bdcc5dc5f7",
+        "properties": [],
+        "type": "definitions"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "f5c5d682-5b43-11e8-9c3f-1d376af9020b"
+    },
+    "modelName": "Messaging",
+    "dbVendor": "AWS DynamoDB",
+    "appTarget": "DYNAMODB",
+    "creationTS": "2016-12-02T23:49:43.930Z",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginVersion": "0.1.3",
+        "pluginName": "Firebase",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "00dbed50-b8ea-11e6-8089-6f1f31218a06",
+                        "x": 90,
+                        "y": 80,
+                        "width": 264,
+                        "height": 128,
+                        "color": {
+                            "hsl": {
+                                "h": 3.789473684210526,
+                                "s": 0.904761904761905,
+                                "l": 0.5882352941176471,
+                                "a": 1
+                            },
+                            "hex": "#f54337",
+                            "rgb": {
+                                "r": 245,
+                                "g": 67,
+                                "b": 55,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 3.789473684210526,
+                                "s": 0.7755102040816326,
+                                "v": 0.9607843137254902,
+                                "a": 1
+                            },
+                            "oldHue": 3.789473684210526,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "158d2b10-b8ea-11e6-8089-6f1f31218a06",
+                        "x": 100,
+                        "y": 446,
+                        "width": 244,
+                        "height": 100,
+                        "color": {
+                            "hsl": {
+                                "h": 3.789473684210526,
+                                "s": 0.904761904761905,
+                                "l": 0.5882352941176471,
+                                "a": 1
+                            },
+                            "hex": "#f54337",
+                            "rgb": {
+                                "r": 245,
+                                "g": 67,
+                                "b": 55,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 3.789473684210526,
+                                "s": 0.7755102040816326,
+                                "v": 0.9607843137254902,
+                                "a": 1
+                            },
+                            "oldHue": 3.789473684210526,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "3e7daae0-b8ea-11e6-8089-6f1f31218a06",
+                        "x": 419.00000000000006,
+                        "y": 453,
+                        "width": 264,
+                        "height": 86,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "24436570-b8ef-11e6-8089-6f1f31218a06",
+                        "x": 90,
+                        "y": 288,
+                        "width": 264,
+                        "height": 75,
+                        "color": {
+                            "hsl": {
+                                "h": 206.57142857142858,
+                                "s": 0.8974358974358974,
+                                "l": 0.5411764705882353,
+                                "a": 1
+                            },
+                            "hex": "#2196f3",
+                            "rgb": {
+                                "r": 33,
+                                "g": 150,
+                                "b": 243,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 206.57142857142858,
+                                "s": 0.8641975308641976,
+                                "v": 0.9529411764705882,
+                                "a": 1
+                            },
+                            "oldHue": 206.57142857142858,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "b4bf9770-b8e7-11e6-8089-6f1f31218a06",
+                        "x": 40,
+                        "y": 66.00000000000001,
+                        "width": 203,
+                        "height": 135,
+                        "color": {
+                            "hsl": {
+                                "h": 3.789473684210526,
+                                "s": 0.904761904761905,
+                                "l": 0.5882352941176471,
+                                "a": 1
+                            },
+                            "hex": "#f54337",
+                            "rgb": {
+                                "r": 245,
+                                "g": 67,
+                                "b": 55,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 3.789473684210526,
+                                "s": 0.7755102040816326,
+                                "v": 0.9607843137254902,
+                                "a": 1
+                            },
+                            "oldHue": 3.789473684210526,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "350cb9d0-ffec-11e6-bc11-bba283d07659",
+                        "x": 240,
+                        "y": 290,
+                        "width": 193,
+                        "height": 107,
+                        "color": {
+                            "hsl": {
+                                "h": 3.789473684210526,
+                                "s": 0.904761904761905,
+                                "l": 0.5882352941176471,
+                                "a": 1
+                            },
+                            "hex": "#f54337",
+                            "rgb": {
+                                "r": 245,
+                                "g": 67,
+                                "b": 55,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 3.789473684210526,
+                                "s": 0.7755102040816326,
+                                "v": 0.9607843137254902,
+                                "a": 1
+                            },
+                            "oldHue": 3.789473684210526,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "350d2f07-ffec-11e6-bc11-bba283d07659",
+                        "x": 390,
+                        "y": 90,
+                        "width": 257,
+                        "height": 135,
+                        "color": {
+                            "hsl": {
+                                "h": 3.789473684210526,
+                                "s": 0.904761904761905,
+                                "l": 0.5882352941176471,
+                                "a": 1
+                            },
+                            "hex": "#f54337",
+                            "rgb": {
+                                "r": 245,
+                                "g": 67,
+                                "b": 55,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 3.789473684210526,
+                                "s": 0.7755102040816326,
+                                "v": 0.9607843137254902,
+                                "a": 1
+                            },
+                            "oldHue": 3.789473684210526,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "350da431-ffec-11e6-bc11-bba283d07659",
+                        "x": 90,
+                        "y": 90,
+                        "width": 194,
+                        "height": 149,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+                        "x": 61,
+                        "y": 516,
+                        "width": 200,
+                        "height": 75,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "c2b2c8b0-f417-11e5-938a-bd54cc414623",
+                        "x": 429,
+                        "y": 472,
+                        "width": 200,
+                        "height": 100,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "4a014da0-f418-11e5-a6f2-dbf6571c2b51",
+                        "x": 422,
+                        "y": 485,
+                        "width": 200,
+                        "height": 100,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "8439e830-f41b-11e5-ad3f-7d283a6e1eb9",
+                        "x": 453.5,
+                        "y": 494,
+                        "width": 233,
+                        "height": 116,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "6e9a9cc0-f422-11e5-ab1e-4fda87c84016",
+                        "x": 431,
+                        "y": 485,
+                        "width": 314,
+                        "height": 204,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "166589b0-0440-11e6-a1a6-29098b60dd65",
+                        "x": 87,
+                        "y": 133,
+                        "width": 234,
+                        "height": 166,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+                        "x": 399,
+                        "y": 46,
+                        "width": 315,
+                        "height": 277,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+                        "x": 459,
+                        "y": 438,
+                        "width": 200,
+                        "height": 100,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "88944830-00d6-11e7-94c9-270ac0401f9d",
+                        "x": 410,
+                        "y": 212,
+                        "width": 193,
+                        "height": 107,
+                        "color": {
+                            "hsl": {
+                                "h": 290.8029197080292,
+                                "s": 0.631336405529954,
+                                "l": 0.42549019607843136,
+                                "a": 1
+                            },
+                            "hex": "#9c28b1",
+                            "rgb": {
+                                "r": 156,
+                                "g": 40,
+                                "b": 177,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 290.8029197080292,
+                                "s": 0.7740112994350282,
+                                "v": 0.6941176470588235,
+                                "a": 1
+                            },
+                            "oldHue": 261.2903225806451,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "8894e471-00d6-11e7-94c9-270ac0401f9d",
+                        "x": 395,
+                        "y": 81,
+                        "width": 216,
+                        "height": 94,
+                        "color": {
+                            "hsl": {
+                                "h": 290.8029197080292,
+                                "s": 0.631336405529954,
+                                "l": 0.42549019607843136,
+                                "a": 1
+                            },
+                            "hex": "#9c28b1",
+                            "rgb": {
+                                "r": 156,
+                                "g": 40,
+                                "b": 177,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 290.8029197080292,
+                                "s": 0.7740112994350282,
+                                "v": 0.6941176470588235,
+                                "a": 1
+                            },
+                            "oldHue": 290.8029197080292,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "889580b1-00d6-11e7-94c9-270ac0401f9d",
+                        "x": 80,
+                        "y": 80,
+                        "width": 247,
+                        "height": 176,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "ac2700e1-2b1e-11e7-bde4-57d99ab8fafb",
+                        "x": 228,
+                        "y": 396,
+                        "width": 244,
+                        "height": 142,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "ac277619-2b1e-11e7-bde4-57d99ab8fafb",
+                        "x": 223,
+                        "y": 96,
+                        "width": 264,
+                        "height": 226,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "ac283961-2b1e-11e7-bde4-57d99ab8fafb",
+                        "x": 883.9999999999999,
+                        "y": 110,
+                        "width": 308,
+                        "height": 697,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "ac28aeaa-2b1e-11e7-bde4-57d99ab8fafb",
+                        "x": 551,
+                        "y": 402,
+                        "width": 264,
+                        "height": 380,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "ac2923c1-2b1e-11e7-bde4-57d99ab8fafb",
+                        "x": 544,
+                        "y": 112,
+                        "width": 284,
+                        "height": 240,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "c635a757-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 690,
+                        "y": 448,
+                        "width": 250,
+                        "height": 269,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "c635ce57-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 692,
+                        "y": 164,
+                        "width": 250,
+                        "height": 280,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "03b0ad80-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 516,
+                        "y": 80,
+                        "width": 250,
+                        "height": 87,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "03b0d493-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1270,
+                        "y": 476,
+                        "width": 250,
+                        "height": 199,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "03b0fbab-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 100,
+                        "y": 100,
+                        "width": 250,
+                        "height": 283,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "03b122bb-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 96,
+                        "y": 463,
+                        "width": 250,
+                        "height": 199,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "03b149c6-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1082,
+                        "y": 334,
+                        "width": 250,
+                        "height": 75,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "03b149ca-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 471,
+                        "y": 227,
+                        "width": 250,
+                        "height": 199,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "03b149d5-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 180,
+                        "y": 180,
+                        "width": 250,
+                        "height": 269,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "03b170de-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 200,
+                        "y": 200,
+                        "width": 250,
+                        "height": 129,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 828,
+                        "y": 685,
+                        "width": 250,
+                        "height": 87,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 828,
+                        "y": 119,
+                        "width": 250,
+                        "height": 199,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 58,
+                        "y": 119,
+                        "width": 248,
+                        "height": 272,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 58,
+                        "y": 629,
+                        "width": 250,
+                        "height": 199,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 828,
+                        "y": 359,
+                        "width": 250,
+                        "height": 75
+                    },
+                    {
+                        "GUID": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 453,
+                        "y": 640,
+                        "width": 250,
+                        "height": 177
+                    },
+                    {
+                        "GUID": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 453,
+                        "y": 119,
+                        "width": 304,
+                        "height": 394
+                    },
+                    {
+                        "GUID": "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 453,
+                        "y": 449,
+                        "width": 251,
+                        "height": 112
+                    },
+                    {
+                        "GUID": "5a3e1c60-56ec-11e7-b5ff-dd5e79dcd289",
+                        "x": 90,
+                        "y": 90,
+                        "width": 268,
+                        "height": 193
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 40,
+                        "y": 40,
+                        "GUID": "85f04210-fac7-11e6-9f58-33155ddb31fb"
+                    },
+                    {
+                        "x": 60,
+                        "y": 103,
+                        "GUID": "ac31ce80-fac7-11e6-9f58-33155ddb31fb"
+                    },
+                    {
+                        "x": 762,
+                        "y": 40,
+                        "GUID": ""
+                    },
+                    {
+                        "x": 87,
+                        "y": 44,
+                        "GUID": "dbb0e310-02ad-11e7-86f4-b37d72813e2e"
+                    },
+                    {
+                        "x": 50,
+                        "y": 10,
+                        "GUID": "8641c3e0-0640-11e7-8ad3-83453b80bb7b"
+                    },
+                    {
+                        "x": 60,
+                        "y": 80,
+                        "GUID": "e43995f0-00d6-11e7-94c9-270ac0401f9d"
+                    },
+                    {
+                        "x": 160,
+                        "y": 160,
+                        "GUID": "9b213ef0-2b1e-11e7-bde4-57d99ab8fafb"
+                    },
+                    {
+                        "x": 183,
+                        "y": 26,
+                        "GUID": "ac3be870-2b1e-11e7-bde4-57d99ab8fafb"
+                    },
+                    {
+                        "x": 200,
+                        "y": 200,
+                        "GUID": "9509cd70-53f5-11e7-b1ef-ab0119d70e5d"
+                    },
+                    {
+                        "x": 50,
+                        "y": 20,
+                        "GUID": "1fa0c6a0-53f6-11e7-b1ef-ab0119d70e5d"
+                    },
+                    {
+                        "x": 50,
+                        "y": 20,
+                        "GUID": "97bb9010-1ed1-11e8-bfff-af9e00eabe08"
+                    }
+                ],
+                "collapsedNodes": [
+                    "17a49b53-196e-11e7-8a00-7d16bdc1d762",
+                    "17a49b58-196e-11e7-8a00-7d16bdc1d762",
+                    "17a53756-196e-11e7-8a00-7d16bdc1d762",
+                    "17a53765-196e-11e7-8a00-7d16bdc1d762",
+                    "17a49b10-196e-11e7-8a00-7d16bdc1d762",
+                    "17a49b1e-196e-11e7-8a00-7d16bdc1d762"
+                ],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true
+        }
+    }
+}

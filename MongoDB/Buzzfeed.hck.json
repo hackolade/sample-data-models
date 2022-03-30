@@ -1,0 +1,853 @@
+{
+    "modelName": "Buzzfeed",
+    "collections": [
+        {
+            "collectionName": "feed",
+            "type": "object",
+            "GUID": "78055a60-02e2-11e6-a6da-47e48d71d0e8",
+            "description": "Feed collection",
+            "additionalProperties": false,
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "0f6926c0-02e3-11e6-a6da-47e48d71d0e8",
+                    "name": "_id",
+                    "required": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "3ac1ac70-0310-11e6-a6da-47e48d71d0e8",
+                        "d6559120-0314-11e6-a6da-47e48d71d0e8"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "3e51aa70-02e3-11e6-a6da-47e48d71d0e8",
+                    "name": "requiresAuthentication",
+                    "required": true,
+                    "type": "boolean",
+                    "default": false,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": false,
+                    "isActivated": true
+                },
+                {
+                    "GUID": "d3213760-02e3-11e6-a6da-47e48d71d0e8",
+                    "name": "modifiedDate",
+                    "required": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "d51b21e0-02ff-11e6-a6da-47e48d71d0e8",
+                    "name": "permanentlyRemoved",
+                    "required": true,
+                    "type": "boolean",
+                    "default": false,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": false,
+                    "isActivated": true
+                },
+                {
+                    "GUID": "e425b010-02ff-11e6-a6da-47e48d71d0e8",
+                    "name": "feedURL",
+                    "required": true,
+                    "type": "string",
+                    "format": "uri",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "http://feeds.feedburner.com/eater/nyc",
+                    "error": {
+                        "sample": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "05282860-0300-11e6-a6da-47e48d71d0e8",
+                    "name": "title",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "Eater NY",
+                    "error": {
+                        "sample": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "16a42bc0-0300-11e6-a6da-47e48d71d0e8",
+                    "name": "bozoBitSet",
+                    "required": true,
+                    "type": "boolean",
+                    "default": false,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": false,
+                    "isActivated": true
+                },
+                {
+                    "GUID": "1e40def0-0300-11e6-a6da-47e48d71d0e8",
+                    "name": "enabled",
+                    "description": "Flag showing whether the feed to enabled or disabled",
+                    "comments": "This field is updated by the feedEnabling API",
+                    "required": true,
+                    "type": "boolean",
+                    "default": "true",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "true",
+                    "error": {
+                        "sample": false,
+                        "default": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "333bf6f0-0300-11e6-a6da-47e48d71d0e8",
+                    "name": "etag",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "4bL78iLSZud2iXd/vd10mYC32BE",
+                    "error": {
+                        "sample": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "db765ef0-0300-11e6-a6da-47e48d71d0e8",
+                    "name": "link",
+                    "required": true,
+                    "type": "string",
+                    "format": "uri",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "http://ny.eater.com/",
+                    "error": {
+                        "sample": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "af999f30-0301-11e6-a6da-47e48d71d0e8",
+                    "name": "permanentRedirectURL",
+                    "required": true,
+                    "type": "null",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "bc7d07a0-0301-11e6-a6da-47e48d71d0e8",
+                    "name": "description",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "The New York City Restaurant, Bar, and Nightlife Blog",
+                    "error": {
+                        "sample": false
+                    },
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "id": "81f21771-bb5d-11e9-980c-11e55127ccf6",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        },
+        {
+            "collectionName": "feedEntries",
+            "type": "object",
+            "GUID": "8f9ec3f0-02e2-11e6-a6da-47e48d71d0e8",
+            "description": "Feed entry collection",
+            "additionalProperties": false,
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "8fbe55e0-030e-11e6-a6da-47e48d71d0e8",
+                    "name": "_id",
+                    "required": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "dddbd620-0314-11e6-a6da-47e48d71d0e8"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "9ec5fde0-030e-11e6-a6da-47e48d71d0e8",
+                    "name": "description",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "Buzzfeed asked a bunch of people...",
+                    "error": {
+                        "sample": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "15e1c850-030f-11e6-a6da-47e48d71d0e8",
+                    "name": "title",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "Cronut Mania: Buzzfeed asked a bunch of people...",
+                    "error": {
+                        "sample": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "208d1b10-030f-11e6-a6da-47e48d71d0e8",
+                    "name": "summary",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "Buzzfeed asked a bunch of people that were...",
+                    "error": {
+                        "sample": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "2d1dcfa0-030f-11e6-a6da-47e48d71d0e8",
+                    "name": "content",
+                    "required": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "GUID": "42eefc50-030f-11e6-a6da-47e48d71d0e8",
+                            "name": "",
+                            "required": true,
+                            "type": "document",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "properties": [
+                                {
+                                    "GUID": "4c711150-030f-11e6-a6da-47e48d71d0e8",
+                                    "name": "base",
+                                    "required": true,
+                                    "type": "string",
+                                    "format": "uri",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "sample": "http://ny.eater.com/",
+                                    "error": {
+                                        "sample": false
+                                    },
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "5c79ae90-030f-11e6-a6da-47e48d71d0e8",
+                                    "name": "type",
+                                    "required": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "sample": "text/html",
+                                    "error": {
+                                        "sample": false
+                                    },
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "694ee630-030f-11e6-a6da-47e48d71d0e8",
+                                    "name": "value",
+                                    "required": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "sample": "LOTS OF HTML HERE ",
+                                    "error": {
+                                        "sample": false
+                                    },
+                                    "isActivated": true
+                                },
+                                {
+                                    "GUID": "75cf4710-030f-11e6-a6da-47e48d71d0e8",
+                                    "name": "language",
+                                    "required": true,
+                                    "type": "string",
+                                    "minLength": 2,
+                                    "maxLength": 3,
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "enumeration": [
+                                        "en",
+                                        "fr"
+                                    ],
+                                    "sample": "en",
+                                    "isActivated": true
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "arrayItem": true,
+                            "isActivated": true
+                        }
+                    ],
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "d92e45e0-030f-11e6-a6da-47e48d71d0e8",
+                    "name": "entryID",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "tag:ny.eater.com,2013://4.560508",
+                    "error": {
+                        "sample": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "e6a22e80-030f-11e6-a6da-47e48d71d0e8",
+                    "name": "publishedDate",
+                    "required": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "f3d58bb0-030f-11e6-a6da-47e48d71d0e8",
+                    "name": "link",
+                    "required": true,
+                    "type": "string",
+                    "format": "uri",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "http://ny.eater.com/archives/2013/09/cronut_mania_41.php",
+                    "error": {
+                        "sample": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "0030b150-0310-11e6-a6da-47e48d71d0e8",
+                    "name": "feedID",
+                    "required": true,
+                    "type": "objectId",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "3ac1ac70-0310-11e6-a6da-47e48d71d0e8",
+                    "foreignCollection": "78055a60-02e2-11e6-a6da-47e48d71d0e8",
+                    "foreignField": [
+                        "78055a60-02e2-11e6-a6da-47e48d71d0e8",
+                        "0f6926c0-02e3-11e6-a6da-47e48d71d0e8"
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "id": "81f21772-bb5d-11e9-980c-11e55127ccf6",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        },
+        {
+            "collectionName": "userFeedEntry",
+            "type": "object",
+            "GUID": "eec26300-02e2-11e6-a6da-47e48d71d0e8",
+            "description": "User-Feed-Entry collection",
+            "additionalProperties": false,
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "6c6dc020-0314-11e6-a6da-47e48d71d0e8",
+                    "name": "_id",
+                    "required": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "900b0790-0314-11e6-a6da-47e48d71d0e8",
+                    "name": "read",
+                    "required": true,
+                    "type": "boolean",
+                    "default": "true",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "true",
+                    "error": {
+                        "default": false,
+                        "sample": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "a048e5a0-0314-11e6-a6da-47e48d71d0e8",
+                    "name": "user_id",
+                    "required": true,
+                    "type": "objectId",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "4981d1e0-0315-11e6-a6da-47e48d71d0e8",
+                    "foreignCollection": "9cff72b0-02e2-11e6-a6da-47e48d71d0e8",
+                    "foreignField": [
+                        "9cff72b0-02e2-11e6-a6da-47e48d71d0e8",
+                        "b8eba5b0-0310-11e6-a6da-47e48d71d0e8"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "a8766720-0314-11e6-a6da-47e48d71d0e8",
+                    "name": "feed_entry_id",
+                    "required": true,
+                    "type": "objectId",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "dddbd620-0314-11e6-a6da-47e48d71d0e8",
+                    "foreignCollection": "8f9ec3f0-02e2-11e6-a6da-47e48d71d0e8",
+                    "foreignField": [
+                        "8f9ec3f0-02e2-11e6-a6da-47e48d71d0e8",
+                        "8fbe55e0-030e-11e6-a6da-47e48d71d0e8"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "b2e1f1c0-0314-11e6-a6da-47e48d71d0e8",
+                    "name": "feed_id",
+                    "required": true,
+                    "type": "objectId",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "d6559120-0314-11e6-a6da-47e48d71d0e8",
+                    "foreignCollection": "78055a60-02e2-11e6-a6da-47e48d71d0e8",
+                    "foreignField": [
+                        "78055a60-02e2-11e6-a6da-47e48d71d0e8",
+                        "0f6926c0-02e3-11e6-a6da-47e48d71d0e8"
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "id": "81f21773-bb5d-11e9-980c-11e55127ccf6",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        },
+        {
+            "collectionName": "users",
+            "type": "object",
+            "GUID": "9cff72b0-02e2-11e6-a6da-47e48d71d0e8",
+            "description": "Master collection of users",
+            "additionalProperties": false,
+            "indexes": [],
+            "properties": [
+                {
+                    "GUID": "b8eba5b0-0310-11e6-a6da-47e48d71d0e8",
+                    "name": "_id",
+                    "required": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "childRelationships": [
+                        "4981d1e0-0315-11e6-a6da-47e48d71d0e8"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c0678a70-0310-11e6-a6da-47e48d71d0e8",
+                    "name": "active",
+                    "required": true,
+                    "type": "boolean",
+                    "default": false,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "foreignCollection": "8f9ec3f0-02e2-11e6-a6da-47e48d71d0e8",
+                    "sample": "true",
+                    "error": {
+                        "sample": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "d40a6570-0310-11e6-a6da-47e48d71d0e8",
+                    "name": "email",
+                    "required": true,
+                    "type": "string",
+                    "format": "email",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "testuser1@example.com",
+                    "error": {
+                        "sample": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "e16c4cb0-0310-11e6-a6da-47e48d71d0e8",
+                    "name": "firstName",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "Test",
+                    "error": {
+                        "sample": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "ea6f94c0-0310-11e6-a6da-47e48d71d0e8",
+                    "name": "lastName",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "User1",
+                    "error": {
+                        "sample": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "68b47390-0312-11e6-a6da-47e48d71d0e8",
+                    "name": "sp_api_key_id",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "6YQB0A8VXM0X8RVDPPLRHBI7J",
+                    "error": {
+                        "sample": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "74b0fe70-0312-11e6-a6da-47e48d71d0e8",
+                    "name": "sp_api_key_secret",
+                    "required": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "YFx56Dl0bbiVEpvbjF",
+                    "error": {
+                        "sample": false
+                    },
+                    "isActivated": true
+                },
+                {
+                    "GUID": "7e16fff0-0312-11e6-a6da-47e48d71d0e8",
+                    "name": "lastLogin",
+                    "required": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "ca8e31f0-0312-11e6-a6da-47e48d71d0e8",
+                    "name": "created",
+                    "required": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "d28f7350-0312-11e6-a6da-47e48d71d0e8",
+                    "name": "subs",
+                    "required": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "GUID": "f2c35100-0312-11e6-a6da-47e48d71d0e8",
+                            "required": true,
+                            "type": "objectId",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "arrayItem": true,
+                            "isActivated": true
+                        },
+                        {
+                            "GUID": "e565e120-0313-11e6-a6da-47e48d71d0e8",
+                            "name": "",
+                            "required": true,
+                            "type": "objectId",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "arrayItem": true,
+                            "isActivated": true
+                        }
+                    ],
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "id": "81f21774-bb5d-11e9-980c-11e55127ccf6",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "3ac1ac70-0310-11e6-a6da-47e48d71d0e8",
+            "name": "feedID to _id of feed",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "78055a60-02e2-11e6-a6da-47e48d71d0e8",
+            "parentField": [
+                [
+                    "78055a60-02e2-11e6-a6da-47e48d71d0e8",
+                    "0f6926c0-02e3-11e6-a6da-47e48d71d0e8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "8f9ec3f0-02e2-11e6-a6da-47e48d71d0e8",
+            "childField": [
+                [
+                    "8f9ec3f0-02e2-11e6-a6da-47e48d71d0e8",
+                    "0030b150-0310-11e6-a6da-47e48d71d0e8"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "d6559120-0314-11e6-a6da-47e48d71d0e8",
+            "name": "feed_id to _id of feed",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "78055a60-02e2-11e6-a6da-47e48d71d0e8",
+            "parentField": [
+                [
+                    "78055a60-02e2-11e6-a6da-47e48d71d0e8",
+                    "0f6926c0-02e3-11e6-a6da-47e48d71d0e8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "eec26300-02e2-11e6-a6da-47e48d71d0e8",
+            "childField": [
+                [
+                    "eec26300-02e2-11e6-a6da-47e48d71d0e8",
+                    "b2e1f1c0-0314-11e6-a6da-47e48d71d0e8"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "dddbd620-0314-11e6-a6da-47e48d71d0e8",
+            "name": "feed_entry_id to _id of feedEntries",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "8f9ec3f0-02e2-11e6-a6da-47e48d71d0e8",
+            "parentField": [
+                [
+                    "8f9ec3f0-02e2-11e6-a6da-47e48d71d0e8",
+                    "8fbe55e0-030e-11e6-a6da-47e48d71d0e8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "eec26300-02e2-11e6-a6da-47e48d71d0e8",
+            "childField": [
+                [
+                    "eec26300-02e2-11e6-a6da-47e48d71d0e8",
+                    "a8766720-0314-11e6-a6da-47e48d71d0e8"
+                ]
+            ],
+            "childCardinality": "0..n"
+        },
+        {
+            "GUID": "4981d1e0-0315-11e6-a6da-47e48d71d0e8",
+            "name": "user_id to _id of usersS",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "9cff72b0-02e2-11e6-a6da-47e48d71d0e8",
+            "parentField": [
+                [
+                    "9cff72b0-02e2-11e6-a6da-47e48d71d0e8",
+                    "b8eba5b0-0310-11e6-a6da-47e48d71d0e8"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childCollection": "eec26300-02e2-11e6-a6da-47e48d71d0e8",
+            "childField": [
+                [
+                    "eec26300-02e2-11e6-a6da-47e48d71d0e8",
+                    "a048e5a0-0314-11e6-a6da-47e48d71d0e8"
+                ]
+            ],
+            "childCardinality": "0..n"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "78055a60-02e2-11e6-a6da-47e48d71d0e8": "feed",
+        "8f9ec3f0-02e2-11e6-a6da-47e48d71d0e8": "feedEntries",
+        "9cff72b0-02e2-11e6-a6da-47e48d71d0e8": "users",
+        "eec26300-02e2-11e6-a6da-47e48d71d0e8": "userFeedEntry",
+        "0f6926c0-02e3-11e6-a6da-47e48d71d0e8": "_id",
+        "3e51aa70-02e3-11e6-a6da-47e48d71d0e8": "requiresAuthentication",
+        "d3213760-02e3-11e6-a6da-47e48d71d0e8": "modifiedDate",
+        "d51b21e0-02ff-11e6-a6da-47e48d71d0e8": "permanentlyRemoved",
+        "e425b010-02ff-11e6-a6da-47e48d71d0e8": "feedURL",
+        "05282860-0300-11e6-a6da-47e48d71d0e8": "title",
+        "16a42bc0-0300-11e6-a6da-47e48d71d0e8": "bozoBitSet",
+        "1e40def0-0300-11e6-a6da-47e48d71d0e8": "enabled",
+        "333bf6f0-0300-11e6-a6da-47e48d71d0e8": "etag",
+        "db765ef0-0300-11e6-a6da-47e48d71d0e8": "link",
+        "af999f30-0301-11e6-a6da-47e48d71d0e8": "permanentRedirectURL",
+        "bc7d07a0-0301-11e6-a6da-47e48d71d0e8": "description",
+        "8fbe55e0-030e-11e6-a6da-47e48d71d0e8": "_id",
+        "9ec5fde0-030e-11e6-a6da-47e48d71d0e8": "description",
+        "15e1c850-030f-11e6-a6da-47e48d71d0e8": "title",
+        "208d1b10-030f-11e6-a6da-47e48d71d0e8": "summary",
+        "2d1dcfa0-030f-11e6-a6da-47e48d71d0e8": "content",
+        "4c711150-030f-11e6-a6da-47e48d71d0e8": "base",
+        "5c79ae90-030f-11e6-a6da-47e48d71d0e8": "type",
+        "694ee630-030f-11e6-a6da-47e48d71d0e8": "value",
+        "75cf4710-030f-11e6-a6da-47e48d71d0e8": "language",
+        "d92e45e0-030f-11e6-a6da-47e48d71d0e8": "entryID",
+        "e6a22e80-030f-11e6-a6da-47e48d71d0e8": "publishedDate",
+        "f3d58bb0-030f-11e6-a6da-47e48d71d0e8": "link",
+        "0030b150-0310-11e6-a6da-47e48d71d0e8": "feedID",
+        "b8eba5b0-0310-11e6-a6da-47e48d71d0e8": "_id",
+        "c0678a70-0310-11e6-a6da-47e48d71d0e8": "active",
+        "d40a6570-0310-11e6-a6da-47e48d71d0e8": "email",
+        "e16c4cb0-0310-11e6-a6da-47e48d71d0e8": "firstName",
+        "ea6f94c0-0310-11e6-a6da-47e48d71d0e8": "lastName",
+        "68b47390-0312-11e6-a6da-47e48d71d0e8": "sp_api_key_id",
+        "74b0fe70-0312-11e6-a6da-47e48d71d0e8": "sp_api_key_secret",
+        "7e16fff0-0312-11e6-a6da-47e48d71d0e8": "lastLogin",
+        "ca8e31f0-0312-11e6-a6da-47e48d71d0e8": "created",
+        "d28f7350-0312-11e6-a6da-47e48d71d0e8": "subs",
+        "6c6dc020-0314-11e6-a6da-47e48d71d0e8": "_id",
+        "900b0790-0314-11e6-a6da-47e48d71d0e8": "read",
+        "a048e5a0-0314-11e6-a6da-47e48d71d0e8": "user_id",
+        "a8766720-0314-11e6-a6da-47e48d71d0e8": "feed_entry_id",
+        "b2e1f1c0-0314-11e6-a6da-47e48d71d0e8": "feed_id"
+    },
+    "definitions": {
+        "id": "81f21770-bb5d-11e9-980c-11e55127ccf6",
+        "properties": [],
+        "type": "definitions"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "82207a72-bb5d-11e9-980c-11e55127ccf6"
+    },
+    "decorativeSymbols": [],
+    "dbVersion": "v3.2",
+    "dbVendor": "MongoDB",
+    "hideModelViews": true,
+    "appTarget": "MONGODB",
+    "creationTS": "2016-10-21T01:57:47.887Z",
+    "GUID": "c3ff77f0-9731-11e6-9010-056a22b35869",
+    "code": "",
+    "lastModifTS": "2021-01-15T09:20:59.757Z",
+    "persistenceSchemaVersion": "4",
+    "description": "Model derived from article: https://www.mongodb.com/blog/post/building-your-first-application-mongodb-creating-rest-api-using-mean-stack-part-1, a blog series on how to use MongoDB, Mongoose Object Data Mapping (ODM) with Express.js and Node.js.  \n\nThe  article describes hte steps required to build an RSS Aggregator application, similar to Google Reader.",
+    "comments": "",
+    "author": "Norberto Leite",
+    "version": "0.1",
+    "validation": "MongoDB extension",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "4.3.3"
+    },
+    "hackoladeMeta": {},
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "78055a60-02e2-11e6-a6da-47e48d71d0e8",
+                        "x": 100,
+                        "y": 82,
+                        "width": 300,
+                        "height": 198
+                    },
+                    {
+                        "GUID": "8f9ec3f0-02e2-11e6-a6da-47e48d71d0e8",
+                        "x": 504,
+                        "y": 83,
+                        "width": 284,
+                        "height": 226
+                    },
+                    {
+                        "GUID": "9cff72b0-02e2-11e6-a6da-47e48d71d0e8",
+                        "x": 116,
+                        "y": 366,
+                        "width": 268,
+                        "height": 198
+                    },
+                    {
+                        "GUID": "eec26300-02e2-11e6-a6da-47e48d71d0e8",
+                        "x": 524,
+                        "y": 399,
+                        "width": 244,
+                        "height": 100
+                    }
+                ],
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

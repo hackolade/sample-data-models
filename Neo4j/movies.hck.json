@@ -1,0 +1,529 @@
+{
+    "GUID": "2b5d5b10-6da5-11e8-977e-574156f5cc39",
+    "lastModifTS": "2018-06-17T11:38:50.908Z",
+    "persistenceSchemaVersion": "2",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "collections": [
+        {
+            "bucketId": "575b9aa0-6da6-11e8-977e-574156f5cc39",
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "title",
+                    "GUID": "57450562-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "A League of Their Own",
+                    "unique": false
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "tagline",
+                    "GUID": "57450563-6da6-11e8-977e-574156f5cc39",
+                    "required": false,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "Once in a lifetime you get a chance to do something different.",
+                    "unique": false
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "released",
+                    "childType": "number",
+                    "GUID": "57450564-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 1992,
+                    "unique": false
+                }
+            ],
+            "type": "object",
+            "GUID": "57450561-6da6-11e8-977e-574156f5cc39",
+            "definitions": {
+                "GUID": "57450560-6da6-11e8-977e-574156f5cc39",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Movie",
+            "constraint": [],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "575b9aa0-6da6-11e8-977e-574156f5cc39",
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "name",
+                    "GUID": "57455383-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "James Thompson",
+                    "unique": false
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "born",
+                    "childType": "number",
+                    "GUID": "57455384-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 1943,
+                    "unique": false
+                }
+            ],
+            "type": "object",
+            "GUID": "57455382-6da6-11e8-977e-574156f5cc39",
+            "definitions": {
+                "GUID": "57455381-6da6-11e8-977e-574156f5cc39",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Person",
+            "constraint": [],
+            "hasCollation": false,
+            "collation": {}
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "575b9aa0-6da6-11e8-977e-574156f5cc39",
+            "name": "graph.db",
+            "type": "bucket",
+            "description": "",
+            "comments": "",
+            "collectionIds": [
+                "57450561-6da6-11e8-977e-574156f5cc39",
+                "57455382-6da6-11e8-977e-574156f5cc39"
+            ],
+            "backgroundColor": {
+                "r": 255,
+                "g": 152,
+                "b": 1,
+                "a": 1
+            },
+            "show": true,
+            "indexes": [],
+            "addFieldsToBucket": true,
+            "isPlugin": true
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "575be8c0-6da6-11e8-977e-574156f5cc39",
+            "name": "ACTED_IN",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "57455382-6da6-11e8-977e-574156f5cc39",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "57450561-6da6-11e8-977e-574156f5cc39",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "575b9aa0-6da6-11e8-977e-574156f5cc39",
+            "properties": [
+                {
+                    "type": "array",
+                    "primaryKey": false,
+                    "name": "roles",
+                    "childType": "list",
+                    "additionalItems": true,
+                    "GUID": "57472842-6da6-11e8-977e-574156f5cc39",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "arrayItem": true,
+                            "arrayParentType": "list",
+                            "primaryKey": false,
+                            "GUID": "57472843-6da6-11e8-977e-574156f5cc39",
+                            "description": "",
+                            "comments": "",
+                            "dependencies": [],
+                            "required": false,
+                            "id": "",
+                            "name": "New property key",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "default": "",
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "sample": "Emil",
+                            "unique": false
+                        }
+                    ],
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minItems": "",
+                    "maxItems": "",
+                    "uniqueItems": false,
+                    "unique": false
+                }
+            ]
+        },
+        {
+            "GUID": "575be8c1-6da6-11e8-977e-574156f5cc39",
+            "name": "REVIEWED",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "57455382-6da6-11e8-977e-574156f5cc39",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "57450561-6da6-11e8-977e-574156f5cc39",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "575b9aa0-6da6-11e8-977e-574156f5cc39",
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "summary",
+                    "GUID": "5748d5f2-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "A solid romp",
+                    "unique": false
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "rating",
+                    "childType": "number",
+                    "GUID": "5748d5f3-6da6-11e8-977e-574156f5cc39",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 68,
+                    "unique": false
+                }
+            ]
+        },
+        {
+            "GUID": "575be8c2-6da6-11e8-977e-574156f5cc39",
+            "name": "PRODUCED",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "57455382-6da6-11e8-977e-574156f5cc39",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "57450561-6da6-11e8-977e-574156f5cc39",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "575b9aa0-6da6-11e8-977e-574156f5cc39",
+            "properties": []
+        },
+        {
+            "GUID": "575be8c3-6da6-11e8-977e-574156f5cc39",
+            "name": "WROTE",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "57455382-6da6-11e8-977e-574156f5cc39",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "57450561-6da6-11e8-977e-574156f5cc39",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "575b9aa0-6da6-11e8-977e-574156f5cc39",
+            "properties": []
+        },
+        {
+            "GUID": "575be8c4-6da6-11e8-977e-574156f5cc39",
+            "name": "FOLLOWS",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "57455382-6da6-11e8-977e-574156f5cc39",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "57455382-6da6-11e8-977e-574156f5cc39",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "575b9aa0-6da6-11e8-977e-574156f5cc39",
+            "properties": []
+        },
+        {
+            "GUID": "575be8c5-6da6-11e8-977e-574156f5cc39",
+            "name": "DIRECTED",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "57455382-6da6-11e8-977e-574156f5cc39",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "57450561-6da6-11e8-977e-574156f5cc39",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "575b9aa0-6da6-11e8-977e-574156f5cc39",
+            "properties": []
+        }
+    ],
+    "users": [],
+    "idToNameHashTable": {
+        "57450562-6da6-11e8-977e-574156f5cc39": "title",
+        "57450563-6da6-11e8-977e-574156f5cc39": "tagline",
+        "57450564-6da6-11e8-977e-574156f5cc39": "released",
+        "57450561-6da6-11e8-977e-574156f5cc39": "Movie",
+        "57455383-6da6-11e8-977e-574156f5cc39": "name",
+        "57455384-6da6-11e8-977e-574156f5cc39": "born",
+        "57455382-6da6-11e8-977e-574156f5cc39": "Person",
+        "575be8c0-6da6-11e8-977e-574156f5cc39": "ACTED_IN",
+        "575be8c1-6da6-11e8-977e-574156f5cc39": "REVIEWED",
+        "575be8c2-6da6-11e8-977e-574156f5cc39": "PRODUCED",
+        "575be8c3-6da6-11e8-977e-574156f5cc39": "WROTE",
+        "575be8c4-6da6-11e8-977e-574156f5cc39": "FOLLOWS",
+        "575be8c5-6da6-11e8-977e-574156f5cc39": "DIRECTED",
+        "575b9aa0-6da6-11e8-977e-574156f5cc39": "graph.db"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "2b5d8220-6da5-11e8-977e-574156f5cc39"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "2b5d8221-6da5-11e8-977e-574156f5cc39"
+    },
+    "modelName": "New model",
+    "dbVersion": "3.x",
+    "dbVendor": "Neo4j",
+    "appTarget": "NEO4J",
+    "creationTS": "2018-06-11T18:27:59.937Z",
+    "hideModelViews": false,
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginVersion": "",
+        "pluginName": "",
+        "pluginLink": "",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "57450561-6da6-11e8-977e-574156f5cc39",
+                        "x": 90,
+                        "y": 340,
+                        "width": 243,
+                        "height": 71,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "57455382-6da6-11e8-977e-574156f5cc39",
+                        "x": 764,
+                        "y": 340,
+                        "width": 243,
+                        "height": 57,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "575be8c0-6da6-11e8-977e-574156f5cc39",
+                        "x": 418,
+                        "y": 90,
+                        "width": 261,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "575be8c1-6da6-11e8-977e-574156f5cc39",
+                        "x": 428,
+                        "y": 215,
+                        "width": 241,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "575be8c2-6da6-11e8-977e-574156f5cc39",
+                        "x": 473,
+                        "y": 340,
+                        "width": 151,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "575be8c3-6da6-11e8-977e-574156f5cc39",
+                        "x": 473,
+                        "y": 440,
+                        "width": 151,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "575be8c4-6da6-11e8-977e-574156f5cc39",
+                        "x": 815,
+                        "y": 234,
+                        "width": 151,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "575be8c5-6da6-11e8-977e-574156f5cc39",
+                        "x": 473,
+                        "y": 540,
+                        "width": 151,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 50,
+                        "y": 20,
+                        "GUID": "575b9aa0-6da6-11e8-977e-574156f5cc39"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "selectedCollections": [],
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "displayColorPicker": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true
+        }
+    }
+}

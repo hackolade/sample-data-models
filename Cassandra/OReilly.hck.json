@@ -1,0 +1,1813 @@
+{
+    "modelName": "OReilly",
+    "collections": [
+        {
+            "GUID": "c599fa60-a231-11e8-a82b-ab38db90b078",
+            "type": "object",
+            "code": "amenities_by_room",
+            "comments": "Q5. Find amenities for a room",
+            "bucketId": "c5a43390-a231-11e8-a82b-ab38db90b078",
+            "collation": {},
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "GUID": "c572a800-9240-11eb-a1cd-2b20d40ce8aa",
+                    "keys": "ALL",
+                    "rowsPerPartition": "NONE"
+                },
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'chunk_length_in_kb':'64','class':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'max_threshold':'32','min_threshold':'4', 'class':'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy'}",
+                "GUID": "c572a801-9240-11eb-a1cd-2b20d40ce8aa"
+            },
+            "collectionName": "amenities_by_room",
+            "definitions": {
+                "GUID": "c59a96a0-a231-11e8-a82b-ab38db90b078",
+                "type": "definitions",
+                "properties": []
+            },
+            "properties": [
+                {
+                    "GUID": "c59a4880-a231-11e8-a82b-ab38db90b078",
+                    "code": "amenity_name",
+                    "mode": "text",
+                    "name": "amenity_name",
+                    "type": "string",
+                    "required": true,
+                    "childType": "char",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "compositeClusteringKey": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59a6f90-a231-11e8-a82b-ab38db90b078",
+                    "type": "string",
+                    "name": "description",
+                    "mode": "text",
+                    "code": "description",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59a6f91-a231-11e8-a82b-ab38db90b078",
+                    "type": "string",
+                    "name": "hotel_id",
+                    "mode": "text",
+                    "code": "hotel_id",
+                    "required": true,
+                    "childType": "char",
+                    "primaryKey": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                    "parentRelationship": "18f40570-a232-11e8-a82b-ab38db90b078",
+                    "compositePartitionKey": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "foreignField": [
+                        "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                        "c59ae4c2-a231-11e8-a82b-ab38db90b078"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59a6f92-a231-11e8-a82b-ab38db90b078",
+                    "code": "room_number",
+                    "mode": "smallint",
+                    "name": "room_number",
+                    "type": "numeric",
+                    "required": true,
+                    "childType": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "compositePartitionKey": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "compositePartitionKey": [
+                {
+                    "type": "",
+                    "keyId": "c59a6f91-a231-11e8-a82b-ab38db90b078"
+                },
+                {
+                    "type": "",
+                    "keyId": "c59a6f92-a231-11e8-a82b-ab38db90b078"
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "type": "ascending",
+                    "keyId": "c59a4880-a231-11e8-a82b-ab38db90b078"
+                }
+            ],
+            "isActivated": true
+        },
+        {
+            "GUID": "c59abdb0-a231-11e8-a82b-ab38db90b078",
+            "code": "available_rooms_by_hotel_date",
+            "type": "object",
+            "bucketId": "c5a43390-a231-11e8-a82b-ab38db90b078",
+            "comments": "Q4. Find available rooms by hotel / date",
+            "collation": {},
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "GUID": "c572a802-9240-11eb-a1cd-2b20d40ce8aa",
+                    "keys": "ALL",
+                    "rowsPerPartition": "NONE"
+                },
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'chunk_length_in_kb':'64','class':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'max_threshold':'32','min_threshold':'4', 'class':'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy'}",
+                "GUID": "c572a803-9240-11eb-a1cd-2b20d40ce8aa"
+            },
+            "collectionName": "available_rooms_by_hotel_date",
+            "definitions": {
+                "GUID": "c59abdb5-a231-11e8-a82b-ab38db90b078",
+                "type": "definitions",
+                "properties": []
+            },
+            "properties": [
+                {
+                    "GUID": "c59abdb1-a231-11e8-a82b-ab38db90b078",
+                    "type": "string",
+                    "name": "date",
+                    "code": "date",
+                    "required": true,
+                    "childType": "char",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "compositeClusteringKey": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59abdb2-a231-11e8-a82b-ab38db90b078",
+                    "type": "string",
+                    "name": "hotel_id",
+                    "mode": "text",
+                    "code": "hotel_id",
+                    "required": true,
+                    "childType": "char",
+                    "primaryKey": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                    "parentRelationship": "4a00c8b0-a232-11e8-a82b-ab38db90b078",
+                    "compositePartitionKey": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "foreignField": [
+                        "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                        "c59ae4c2-a231-11e8-a82b-ab38db90b078"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59abdb3-a231-11e8-a82b-ab38db90b078",
+                    "type": "bool",
+                    "name": "is_available",
+                    "code": "is_available",
+                    "childType": "bool",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59abdb4-a231-11e8-a82b-ab38db90b078",
+                    "type": "numeric",
+                    "name": "room_number",
+                    "mode": "smallint",
+                    "code": "room_number",
+                    "required": true,
+                    "childType": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "compositeClusteringKey": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "compositePartitionKey": [
+                {
+                    "type": "",
+                    "keyId": "c59abdb2-a231-11e8-a82b-ab38db90b078"
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "type": "ascending",
+                    "keyId": "c59abdb1-a231-11e8-a82b-ab38db90b078"
+                },
+                {
+                    "type": "ascending",
+                    "keyId": "c59abdb4-a231-11e8-a82b-ab38db90b078"
+                }
+            ],
+            "isActivated": true
+        },
+        {
+            "GUID": "c59b0bd9-a231-11e8-a82b-ab38db90b078",
+            "code": "guests",
+            "type": "object",
+            "comments": "Q9. Find guest by ID",
+            "bucketId": "c5a481b0-a231-11e8-a82b-ab38db90b078",
+            "collation": {},
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "GUID": "c572a804-9240-11eb-a1cd-2b20d40ce8aa",
+                    "keys": "ALL",
+                    "rowsPerPartition": "NONE"
+                },
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'chunk_length_in_kb':'64','class':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'max_threshold':'32','min_threshold':'4', 'class':'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy'}",
+                "GUID": "c572a805-9240-11eb-a1cd-2b20d40ce8aa"
+            },
+            "collectionName": "guests",
+            "definitions": {
+                "GUID": "c59b0be4-a231-11e8-a82b-ab38db90b078",
+                "type": "definitions",
+                "properties": []
+            },
+            "properties": [
+                {
+                    "GUID": "c59b0bda-a231-11e8-a82b-ab38db90b078",
+                    "type": "document",
+                    "name": "addresses",
+                    "code": "addresses",
+                    "subtype": "map<str>",
+                    "keyType": "char",
+                    "childType": "map",
+                    "primaryKey": false,
+                    "properties": [],
+                    "relationshipType": "",
+                    "additionalProperties": false,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b0bdb-a231-11e8-a82b-ab38db90b078",
+                    "type": "string",
+                    "name": "confirm_number",
+                    "mode": "text",
+                    "code": "confirm_number",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b0bdc-a231-11e8-a82b-ab38db90b078",
+                    "code": "emails",
+                    "type": "array",
+                    "name": "emails",
+                    "subtype": "set<str>",
+                    "childType": "tuple",
+                    "primaryKey": false,
+                    "additionalItems": true,
+                    "relationshipType": "",
+                    "additionalProperties": false,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "properties": [
+                        {
+                            "GUID": "c59b0bdd-a231-11e8-a82b-ab38db90b078",
+                            "mode": "text",
+                            "name": "New column",
+                            "type": "string",
+                            "arrayItem": true,
+                            "childType": "char",
+                            "primaryKey": false,
+                            "arrayParentType": "set",
+                            "relationshipType": "",
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositeClusteringKey"
+                            ],
+                            "isActivated": true
+                        }
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b0bde-a231-11e8-a82b-ab38db90b078",
+                    "code": "first_name",
+                    "mode": "text",
+                    "name": "first_name",
+                    "type": "string",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b0bdf-a231-11e8-a82b-ab38db90b078",
+                    "code": "guest_id",
+                    "name": "guest_id",
+                    "type": "string",
+                    "required": true,
+                    "childType": "char",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "compositePartitionKey": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "childRelationships": [
+                        "868bbf10-a232-11e8-a82b-ab38db90b078",
+                        "8e58d110-a232-11e8-a82b-ab38db90b078"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b0be0-a231-11e8-a82b-ab38db90b078",
+                    "code": "last_name",
+                    "mode": "text",
+                    "name": "last_name",
+                    "type": "string",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b0be1-a231-11e8-a82b-ab38db90b078",
+                    "code": "phone_numbers",
+                    "name": "phone_numbers",
+                    "type": "array",
+                    "subtype": "list<str>",
+                    "childType": "tuple",
+                    "primaryKey": false,
+                    "additionalItems": true,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "properties": [
+                        {
+                            "GUID": "c59b0be2-a231-11e8-a82b-ab38db90b078",
+                            "type": "string",
+                            "name": "New column",
+                            "mode": "text",
+                            "childType": "char",
+                            "arrayItem": true,
+                            "primaryKey": false,
+                            "arrayParentType": "list",
+                            "relationshipType": "",
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositeClusteringKey"
+                            ],
+                            "isActivated": true
+                        }
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b0be3-a231-11e8-a82b-ab38db90b078",
+                    "code": "title",
+                    "mode": "text",
+                    "name": "title",
+                    "type": "string",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "compositePartitionKey": [
+                {
+                    "type": "",
+                    "keyId": "c59b0bdf-a231-11e8-a82b-ab38db90b078"
+                }
+            ],
+            "isActivated": true
+        },
+        {
+            "GUID": "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+            "type": "object",
+            "code": "hotels",
+            "SecIndxs": [
+                {
+                    "GUID": "260d2000-7c90-11e9-b725-b30aac080070",
+                    "name": "nam_idx",
+                    "SecIndxKey": [
+                        {
+                            "keyId": "c59ae4c3-a231-11e8-a82b-ab38db90b078",
+                            "type": "ascending"
+                        }
+                    ],
+                    "SecIndxID": "",
+                    "SecIndxDescription": "",
+                    "SecIndxFunction": "",
+                    "SecIndxComments": ""
+                }
+            ],
+            "bucketId": "c5a43390-a231-11e8-a82b-ab38db90b078",
+            "comments": "Q2. Find information about a hotel",
+            "collation": {},
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "GUID": "c572cf10-9240-11eb-a1cd-2b20d40ce8aa",
+                    "keys": "ALL",
+                    "rowsPerPartition": "NONE"
+                },
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'chunk_length_in_kb':'64','class':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'max_threshold':'32','min_threshold':'4', 'class':'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy'}",
+                "GUID": "c572cf11-9240-11eb-a1cd-2b20d40ce8aa"
+            },
+            "collectionName": "hotels",
+            "definitions": {
+                "GUID": "c59ae4c7-a231-11e8-a82b-ab38db90b078",
+                "type": "definitions",
+                "properties": []
+            },
+            "properties": [
+                {
+                    "GUID": "c59ae4c1-a231-11e8-a82b-ab38db90b078",
+                    "ref": "c59ba812-a231-11e8-a82b-ab38db90b078",
+                    "$ref": "#model/definitions/address",
+                    "name": "address",
+                    "type": "reference",
+                    "refType": "model",
+                    "refIdPath": [
+                        "be8059e0-a231-11e8-a82b-ab38db90b078",
+                        "be8059e1-a231-11e8-a82b-ab38db90b078",
+                        "c59ba812-a231-11e8-a82b-ab38db90b078"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59ae4c2-a231-11e8-a82b-ab38db90b078",
+                    "code": "id",
+                    "mode": "text",
+                    "name": "id",
+                    "type": "string",
+                    "required": true,
+                    "childType": "char",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "compositePartitionKey": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "childRelationships": [
+                        "18f40570-a232-11e8-a82b-ab38db90b078",
+                        "31231f50-a232-11e8-a82b-ab38db90b078",
+                        "41656a30-a232-11e8-a82b-ab38db90b078",
+                        "4a00c8b0-a232-11e8-a82b-ab38db90b078",
+                        "bc587b60-a232-11e8-a82b-ab38db90b078",
+                        "eb75f1c0-a232-11e8-a82b-ab38db90b078"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59ae4c3-a231-11e8-a82b-ab38db90b078",
+                    "type": "string",
+                    "code": "name",
+                    "name": "name",
+                    "mode": "text",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59ae4c4-a231-11e8-a82b-ab38db90b078",
+                    "type": "string",
+                    "name": "phone",
+                    "mode": "text",
+                    "code": "phone",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59ae4c5-a231-11e8-a82b-ab38db90b078",
+                    "type": "array",
+                    "name": "pois",
+                    "code": "pois",
+                    "subtype": "set<str>",
+                    "childType": "tuple",
+                    "primaryKey": false,
+                    "additionalItems": true,
+                    "relationshipType": "",
+                    "additionalProperties": false,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "properties": [
+                        {
+                            "GUID": "c59ae4c6-a231-11e8-a82b-ab38db90b078",
+                            "type": "string",
+                            "name": "New column",
+                            "mode": "text",
+                            "childType": "char",
+                            "arrayItem": true,
+                            "primaryKey": false,
+                            "arrayParentType": "set",
+                            "relationshipType": "",
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositeClusteringKey"
+                            ],
+                            "isActivated": true
+                        }
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "compositePartitionKey": [
+                {
+                    "type": "",
+                    "keyId": "c59ae4c2-a231-11e8-a82b-ab38db90b078"
+                }
+            ],
+            "isActivated": true
+        },
+        {
+            "GUID": "c59ae4c8-a231-11e8-a82b-ab38db90b078",
+            "code": "hotels_by_poi",
+            "type": "object",
+            "comments": "Q1. Find hotels near given poi",
+            "bucketId": "c5a43390-a231-11e8-a82b-ab38db90b078",
+            "collation": {},
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "GUID": "c572cf12-9240-11eb-a1cd-2b20d40ce8aa",
+                    "keys": "ALL",
+                    "rowsPerPartition": "NONE"
+                },
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'chunk_length_in_kb':'64','class':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'max_threshold':'32','min_threshold':'4', 'class':'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy'}",
+                "GUID": "c572cf13-9240-11eb-a1cd-2b20d40ce8aa"
+            },
+            "collectionName": "hotels_by_poi",
+            "definitions": {
+                "GUID": "c59b0bd3-a231-11e8-a82b-ab38db90b078",
+                "type": "definitions",
+                "properties": []
+            },
+            "properties": [
+                {
+                    "GUID": "c59ae4c9-a231-11e8-a82b-ab38db90b078",
+                    "ref": "c59ba812-a231-11e8-a82b-ab38db90b078",
+                    "type": "reference",
+                    "name": "address",
+                    "$ref": "#model/definitions/address",
+                    "refType": "model",
+                    "refIdPath": [
+                        "be8059e0-a231-11e8-a82b-ab38db90b078",
+                        "be8059e1-a231-11e8-a82b-ab38db90b078",
+                        "c59ba812-a231-11e8-a82b-ab38db90b078"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59ae4ca-a231-11e8-a82b-ab38db90b078",
+                    "type": "string",
+                    "name": "hotel_id",
+                    "mode": "text",
+                    "code": "hotel_id",
+                    "required": true,
+                    "childType": "char",
+                    "primaryKey": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                    "parentRelationship": "31231f50-a232-11e8-a82b-ab38db90b078",
+                    "compositeClusteringKey": true,
+                    "foreignField": [
+                        "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                        "c59ae4c2-a231-11e8-a82b-ab38db90b078"
+                    ],
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b0bd0-a231-11e8-a82b-ab38db90b078",
+                    "code": "name",
+                    "mode": "text",
+                    "name": "name",
+                    "type": "string",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b0bd1-a231-11e8-a82b-ab38db90b078",
+                    "code": "phone",
+                    "mode": "text",
+                    "name": "phone",
+                    "type": "string",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b0bd2-a231-11e8-a82b-ab38db90b078",
+                    "code": "poi_name",
+                    "mode": "text",
+                    "name": "poi_name",
+                    "type": "string",
+                    "required": true,
+                    "childType": "char",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "compositePartitionKey": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "childRelationships": [
+                        "57c84f90-a232-11e8-a82b-ab38db90b078"
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "compositePartitionKey": [
+                {
+                    "type": "",
+                    "keyId": "c59b0bd2-a231-11e8-a82b-ab38db90b078"
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "type": "ascending",
+                    "keyId": "c59ae4ca-a231-11e8-a82b-ab38db90b078"
+                }
+            ],
+            "isActivated": true
+        },
+        {
+            "GUID": "c59b0bd4-a231-11e8-a82b-ab38db90b078",
+            "type": "object",
+            "code": "pois_by_hotel",
+            "comments": "Q3. Find pois near a hotel",
+            "bucketId": "c5a43390-a231-11e8-a82b-ab38db90b078",
+            "collation": {},
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "GUID": "c572cf14-9240-11eb-a1cd-2b20d40ce8aa",
+                    "keys": "ALL",
+                    "rowsPerPartition": "NONE"
+                },
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'chunk_length_in_kb':'64','class':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'max_threshold':'32','min_threshold':'4', 'class':'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy'}",
+                "GUID": "c572cf15-9240-11eb-a1cd-2b20d40ce8aa"
+            },
+            "collectionName": "pois_by_hotel",
+            "definitions": {
+                "GUID": "c59b0bd8-a231-11e8-a82b-ab38db90b078",
+                "type": "definitions",
+                "properties": []
+            },
+            "properties": [
+                {
+                    "GUID": "c59b0bd5-a231-11e8-a82b-ab38db90b078",
+                    "type": "string",
+                    "name": "description",
+                    "mode": "text",
+                    "code": "description",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b0bd6-a231-11e8-a82b-ab38db90b078",
+                    "type": "string",
+                    "name": "hotel_id",
+                    "mode": "text",
+                    "code": "hotel_id",
+                    "required": true,
+                    "childType": "char",
+                    "primaryKey": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                    "parentRelationship": "41656a30-a232-11e8-a82b-ab38db90b078",
+                    "compositePartitionKey": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "foreignField": [
+                        "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                        "c59ae4c2-a231-11e8-a82b-ab38db90b078"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b0bd7-a231-11e8-a82b-ab38db90b078",
+                    "type": "string",
+                    "name": "poi_name",
+                    "mode": "text",
+                    "code": "poi_name",
+                    "required": true,
+                    "childType": "char",
+                    "primaryKey": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "c59ae4c8-a231-11e8-a82b-ab38db90b078",
+                    "parentRelationship": "57c84f90-a232-11e8-a82b-ab38db90b078",
+                    "compositeClusteringKey": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "foreignField": [
+                        "c59ae4c8-a231-11e8-a82b-ab38db90b078",
+                        "c59b0bd2-a231-11e8-a82b-ab38db90b078"
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "compositePartitionKey": [
+                {
+                    "type": "",
+                    "keyId": "c59b0bd6-a231-11e8-a82b-ab38db90b078"
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "type": "ascending",
+                    "keyId": "c59b0bd7-a231-11e8-a82b-ab38db90b078"
+                }
+            ],
+            "isActivated": true
+        },
+        {
+            "GUID": "c59b32e8-a231-11e8-a82b-ab38db90b078",
+            "code": "reservations_by_hotel_date",
+            "type": "object",
+            "bucketId": "c5a481b0-a231-11e8-a82b-ab38db90b078",
+            "comments": "Q7. Find reservations by hotel and date",
+            "collation": {},
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "GUID": "c572cf16-9240-11eb-a1cd-2b20d40ce8aa",
+                    "keys": "ALL",
+                    "rowsPerPartition": "NONE"
+                },
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'chunk_length_in_kb':'64','class':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'max_threshold':'32','min_threshold':'4', 'class':'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy'}",
+                "GUID": "c572cf17-9240-11eb-a1cd-2b20d40ce8aa"
+            },
+            "collectionName": "Reservations By Hotel Date",
+            "definitions": {
+                "GUID": "c59b32ef-a231-11e8-a82b-ab38db90b078",
+                "type": "definitions",
+                "properties": []
+            },
+            "hackoladeMeta": {
+                "namingConvention": "collectionName"
+            },
+            "properties": [
+                {
+                    "GUID": "c59b32e9-a231-11e8-a82b-ab38db90b078",
+                    "type": "string",
+                    "name": "confirm_number",
+                    "mode": "text",
+                    "code": "confirm_number",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b32ea-a231-11e8-a82b-ab38db90b078",
+                    "type": "string",
+                    "name": "end_date",
+                    "code": "end_date",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b32eb-a231-11e8-a82b-ab38db90b078",
+                    "name": "guest_id",
+                    "code": "guest_id",
+                    "type": "string",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "c59b0bd9-a231-11e8-a82b-ab38db90b078",
+                    "parentRelationship": "8e58d110-a232-11e8-a82b-ab38db90b078",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "foreignField": [
+                        "c59b0bd9-a231-11e8-a82b-ab38db90b078",
+                        "c59b0bdf-a231-11e8-a82b-ab38db90b078"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b32ec-a231-11e8-a82b-ab38db90b078",
+                    "code": "hotel_id",
+                    "mode": "text",
+                    "name": "hotel_id",
+                    "type": "string",
+                    "required": true,
+                    "childType": "char",
+                    "primaryKey": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                    "parentRelationship": "bc587b60-a232-11e8-a82b-ab38db90b078",
+                    "compositePartitionKey": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "foreignField": [
+                        "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                        "c59ae4c2-a231-11e8-a82b-ab38db90b078"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b32ed-a231-11e8-a82b-ab38db90b078",
+                    "code": "room_number",
+                    "mode": "smallint",
+                    "name": "room_number",
+                    "type": "numeric",
+                    "required": true,
+                    "childType": "numeric",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "compositeClusteringKey": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b32ee-a231-11e8-a82b-ab38db90b078",
+                    "code": "start_date",
+                    "type": "string",
+                    "name": "start_date",
+                    "required": true,
+                    "childType": "char",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "compositePartitionKey": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "compositePartitionKey": [
+                {
+                    "type": "",
+                    "keyId": "c59b32ec-a231-11e8-a82b-ab38db90b078"
+                },
+                {
+                    "type": "",
+                    "keyId": "c59b32ee-a231-11e8-a82b-ab38db90b078"
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "type": "ascending",
+                    "keyId": "c59b32ed-a231-11e8-a82b-ab38db90b078"
+                }
+            ],
+            "isActivated": true
+        },
+        {
+            "GUID": "c59b0be5-a231-11e8-a82b-ab38db90b078",
+            "type": "object",
+            "code": "reservations_by_guest",
+            "bucketId": "c5a481b0-a231-11e8-a82b-ab38db90b078",
+            "comments": "Q8. Find reservations by guest name",
+            "collation": {},
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "GUID": "c572cf18-9240-11eb-a1cd-2b20d40ce8aa",
+                    "keys": "ALL",
+                    "rowsPerPartition": "NONE"
+                },
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'chunk_length_in_kb':'64','class':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'max_threshold':'32','min_threshold':'4', 'class':'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy'}",
+                "GUID": "c572cf19-9240-11eb-a1cd-2b20d40ce8aa"
+            },
+            "collectionName": "reservations_by_guest",
+            "definitions": {
+                "GUID": "c59b32e7-a231-11e8-a82b-ab38db90b078",
+                "type": "definitions",
+                "properties": []
+            },
+            "properties": [
+                {
+                    "GUID": "c59b32e0-a231-11e8-a82b-ab38db90b078",
+                    "name": "confirm_number",
+                    "mode": "text",
+                    "code": "confirm_number",
+                    "type": "string",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b32e1-a231-11e8-a82b-ab38db90b078",
+                    "code": "end_date",
+                    "name": "end_date",
+                    "type": "string",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b32e2-a231-11e8-a82b-ab38db90b078",
+                    "code": "guest_id",
+                    "name": "guest_id",
+                    "type": "string",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "c59b0bd9-a231-11e8-a82b-ab38db90b078",
+                    "parentRelationship": "868bbf10-a232-11e8-a82b-ab38db90b078",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "foreignField": [
+                        "c59b0bd9-a231-11e8-a82b-ab38db90b078",
+                        "c59b0bdf-a231-11e8-a82b-ab38db90b078"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b32e3-a231-11e8-a82b-ab38db90b078",
+                    "code": "guest_last_name",
+                    "mode": "text",
+                    "name": "guest_last_name",
+                    "type": "string",
+                    "required": true,
+                    "childType": "char",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "compositePartitionKey": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b32e4-a231-11e8-a82b-ab38db90b078",
+                    "code": "hotel_id",
+                    "mode": "text",
+                    "name": "hotel_id",
+                    "type": "string",
+                    "required": true,
+                    "childType": "char",
+                    "primaryKey": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                    "parentRelationship": "eb75f1c0-a232-11e8-a82b-ab38db90b078",
+                    "compositeClusteringKey": true,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "foreignField": [
+                        "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                        "c59ae4c2-a231-11e8-a82b-ab38db90b078"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b32e5-a231-11e8-a82b-ab38db90b078",
+                    "type": "numeric",
+                    "name": "room_number",
+                    "mode": "smallint",
+                    "code": "room_number",
+                    "childType": "numeric",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c59b32e6-a231-11e8-a82b-ab38db90b078",
+                    "type": "string",
+                    "name": "start_date",
+                    "code": "start_date",
+                    "childType": "char",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "compositePartitionKey": [
+                {
+                    "type": "",
+                    "keyId": "c59b32e3-a231-11e8-a82b-ab38db90b078"
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "type": "ascending",
+                    "keyId": "c59b32e4-a231-11e8-a82b-ab38db90b078"
+                }
+            ],
+            "isActivated": true
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "c5a43390-a231-11e8-a82b-ab38db90b078",
+            "code": "hotel",
+            "type": "bucket",
+            "show": true,
+            "name": "hotel",
+            "indexes": [],
+            "isPlugin": true,
+            "replFactor": "3",
+            "replStrategy": "SimpleStrategy",
+            "durableWrites": true,
+            "addFieldsToBucket": true,
+            "collectionIds": [
+                "c599fa60-a231-11e8-a82b-ab38db90b078",
+                "c59abdb0-a231-11e8-a82b-ab38db90b078",
+                "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                "c59ae4c8-a231-11e8-a82b-ab38db90b078",
+                "c59b0bd4-a231-11e8-a82b-ab38db90b078"
+            ],
+            "backgroundColor": {
+                "r": 254,
+                "g": 193,
+                "b": 7,
+                "a": 1
+            },
+            "UDFs": [
+                {
+                    "GUID": "c59ba824-a231-11e8-a82b-ab38db90b078",
+                    "name": "count_if_true",
+                    "UDFID": "",
+                    "functionComments": "",
+                    "functionBody": "CREATE OR REPLACE FUNCTION count_if_true ( input boolean )\n\t\t\tRETURNS NULL ON NULL INPUT\n\t\t\tRETURNS int   \n\t\t\tLANGUAGE java AS\n\t\t\t$$ if (input) return 1; else return 0; $$ ;",
+                    "functionDescription": ""
+                },
+                {
+                    "GUID": "c59ba825-a231-11e8-a82b-ab38db90b078",
+                    "name": "state_count_if_true",
+                    "UDFID": "",
+                    "functionComments": "",
+                    "functionBody": "CREATE OR REPLACE FUNCTION state_count_if_true ( total int, input boolean )\n\t\t\tRETURNS NULL ON NULL INPUT\n\t\t\tRETURNS int   \n\t\t\tLANGUAGE java AS\n\t\t\t$$ if (input) return total+1; else return total; $$ ;",
+                    "functionDescription": ""
+                }
+            ],
+            "UDAs": [
+                {
+                    "GUID": "c59ba826-a231-11e8-a82b-ab38db90b078",
+                    "name": "total_available",
+                    "UDAID": "",
+                    "storedProcComments": "",
+                    "storedProcFunction": "CREATE AGGREGATE  total_available (boolean)\n\t\t\tSFUNC state_count_if_true\n\t\t\tSTYPE int\n\t\t\tINITCOND 0\n\t\t\t;",
+                    "storedProcDescription": ""
+                }
+            ],
+            "addToCqlScript": true,
+            "isActivated": true
+        },
+        {
+            "GUID": "c5a481b0-a231-11e8-a82b-ab38db90b078",
+            "name": "reservation",
+            "code": "reservation",
+            "show": true,
+            "type": "bucket",
+            "indexes": [],
+            "isPlugin": true,
+            "replFactor": "3",
+            "replStrategy": "SimpleStrategy",
+            "durableWrites": true,
+            "addFieldsToBucket": true,
+            "collectionIds": [
+                "c59b0bd9-a231-11e8-a82b-ab38db90b078",
+                "c59b0be5-a231-11e8-a82b-ab38db90b078",
+                "c59b32e8-a231-11e8-a82b-ab38db90b078"
+            ],
+            "backgroundColor": {
+                "a": 1,
+                "b": 245,
+                "g": 169,
+                "r": 3
+            },
+            "addToCqlScript": true,
+            "isActivated": true
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "18f40570-a232-11e8-a82b-ab38db90b078",
+            "name": "fk hotels.id to amenities_by_room.hotel_id",
+            "comments": "",
+            "description": "",
+            "childCollection": "c599fa60-a231-11e8-a82b-ab38db90b078",
+            "childCardinality": "0..n",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "c599fa60-a231-11e8-a82b-ab38db90b078",
+                    "c59a6f91-a231-11e8-a82b-ab38db90b078"
+                ]
+            ],
+            "parentField": [
+                [
+                    "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                    "c59ae4c2-a231-11e8-a82b-ab38db90b078"
+                ]
+            ]
+        },
+        {
+            "GUID": "31231f50-a232-11e8-a82b-ab38db90b078",
+            "name": "fk hotels.id to hotels_by_poi.hotel_id",
+            "comments": "",
+            "description": "",
+            "childCollection": "c59ae4c8-a231-11e8-a82b-ab38db90b078",
+            "childCardinality": "0..n",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "c59ae4c8-a231-11e8-a82b-ab38db90b078",
+                    "c59ae4ca-a231-11e8-a82b-ab38db90b078"
+                ]
+            ],
+            "parentField": [
+                [
+                    "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                    "c59ae4c2-a231-11e8-a82b-ab38db90b078"
+                ]
+            ]
+        },
+        {
+            "GUID": "41656a30-a232-11e8-a82b-ab38db90b078",
+            "name": "fk hotels.id to pois_by_hotel.hotel_id",
+            "comments": "",
+            "description": "",
+            "childCollection": "c59b0bd4-a231-11e8-a82b-ab38db90b078",
+            "relationshipType": "Foreign Key",
+            "childCardinality": "0..n",
+            "parentCollection": "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "c59b0bd4-a231-11e8-a82b-ab38db90b078",
+                    "c59b0bd6-a231-11e8-a82b-ab38db90b078"
+                ]
+            ],
+            "parentField": [
+                [
+                    "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                    "c59ae4c2-a231-11e8-a82b-ab38db90b078"
+                ]
+            ]
+        },
+        {
+            "GUID": "4a00c8b0-a232-11e8-a82b-ab38db90b078",
+            "name": "fk hotels.id to available_rooms_by_hotel_date.hotel_id",
+            "comments": "",
+            "description": "",
+            "childCollection": "c59abdb0-a231-11e8-a82b-ab38db90b078",
+            "childCardinality": "0..n",
+            "parentCollection": "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "c59abdb0-a231-11e8-a82b-ab38db90b078",
+                    "c59abdb2-a231-11e8-a82b-ab38db90b078"
+                ]
+            ],
+            "parentField": [
+                [
+                    "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                    "c59ae4c2-a231-11e8-a82b-ab38db90b078"
+                ]
+            ]
+        },
+        {
+            "GUID": "57c84f90-a232-11e8-a82b-ab38db90b078",
+            "name": "fk hotels_by_poi.poi_name to pois_by_hotel.poi_name",
+            "comments": "",
+            "description": "",
+            "childCollection": "c59b0bd4-a231-11e8-a82b-ab38db90b078",
+            "relationshipType": "Foreign Key",
+            "childCardinality": "0..n",
+            "parentCollection": "c59ae4c8-a231-11e8-a82b-ab38db90b078",
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "c59b0bd4-a231-11e8-a82b-ab38db90b078",
+                    "c59b0bd7-a231-11e8-a82b-ab38db90b078"
+                ]
+            ],
+            "parentField": [
+                [
+                    "c59ae4c8-a231-11e8-a82b-ab38db90b078",
+                    "c59b0bd2-a231-11e8-a82b-ab38db90b078"
+                ]
+            ]
+        },
+        {
+            "GUID": "868bbf10-a232-11e8-a82b-ab38db90b078",
+            "name": "fk guests.guest_id to reservations_by_guest.guest_id",
+            "comments": "",
+            "description": "",
+            "childCollection": "c59b0be5-a231-11e8-a82b-ab38db90b078",
+            "childCardinality": "0..n",
+            "parentCollection": "c59b0bd9-a231-11e8-a82b-ab38db90b078",
+            "relationshipType": "Foreign Key",
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "c59b0be5-a231-11e8-a82b-ab38db90b078",
+                    "c59b32e2-a231-11e8-a82b-ab38db90b078"
+                ]
+            ],
+            "parentField": [
+                [
+                    "c59b0bd9-a231-11e8-a82b-ab38db90b078",
+                    "c59b0bdf-a231-11e8-a82b-ab38db90b078"
+                ]
+            ]
+        },
+        {
+            "GUID": "8e58d110-a232-11e8-a82b-ab38db90b078",
+            "name": "fk guests.guest_id to reservations_by_hotel_date.guest_id",
+            "comments": "",
+            "description": "",
+            "childCollection": "c59b32e8-a231-11e8-a82b-ab38db90b078",
+            "relationshipType": "Foreign Key",
+            "childCardinality": "0..n",
+            "parentCollection": "c59b0bd9-a231-11e8-a82b-ab38db90b078",
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "c59b32e8-a231-11e8-a82b-ab38db90b078",
+                    "c59b32eb-a231-11e8-a82b-ab38db90b078"
+                ]
+            ],
+            "parentField": [
+                [
+                    "c59b0bd9-a231-11e8-a82b-ab38db90b078",
+                    "c59b0bdf-a231-11e8-a82b-ab38db90b078"
+                ]
+            ]
+        },
+        {
+            "GUID": "bc587b60-a232-11e8-a82b-ab38db90b078",
+            "name": "fk hotels.id to reservations_by_hotel_date.hotel_id",
+            "comments": "",
+            "description": "",
+            "childCollection": "c59b32e8-a231-11e8-a82b-ab38db90b078",
+            "parentCollection": "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+            "relationshipType": "Foreign Key",
+            "childCardinality": "0..n",
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "c59b32e8-a231-11e8-a82b-ab38db90b078",
+                    "c59b32ec-a231-11e8-a82b-ab38db90b078"
+                ]
+            ],
+            "parentField": [
+                [
+                    "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                    "c59ae4c2-a231-11e8-a82b-ab38db90b078"
+                ]
+            ]
+        },
+        {
+            "GUID": "eb75f1c0-a232-11e8-a82b-ab38db90b078",
+            "name": "fk hotels.id to reservations_by_guest.hotel_id",
+            "comments": "",
+            "description": "",
+            "childCollection": "c59b0be5-a231-11e8-a82b-ab38db90b078",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+            "childCardinality": "0..n",
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "c59b0be5-a231-11e8-a82b-ab38db90b078",
+                    "c59b32e4-a231-11e8-a82b-ab38db90b078"
+                ]
+            ],
+            "parentField": [
+                [
+                    "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                    "c59ae4c2-a231-11e8-a82b-ab38db90b078"
+                ]
+            ]
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "c59b0bd9-a231-11e8-a82b-ab38db90b078": "guests",
+        "c59b0bd7-a231-11e8-a82b-ab38db90b078": "poi_name",
+        "c59b0bdd-a231-11e8-a82b-ab38db90b078": "New column",
+        "c59ba815-a231-11e8-a82b-ab38db90b078": "postal_code",
+        "c59a6f92-a231-11e8-a82b-ab38db90b078": "room_number",
+        "c59b0bd6-a231-11e8-a82b-ab38db90b078": "hotel_id",
+        "c59b0bd5-a231-11e8-a82b-ab38db90b078": "description",
+        "c59b0bd4-a231-11e8-a82b-ab38db90b078": "pois_by_hotel",
+        "c59b32e4-a231-11e8-a82b-ab38db90b078": "hotel_id",
+        "c59abdb3-a231-11e8-a82b-ab38db90b078": "is_available",
+        "c59b0bd2-a231-11e8-a82b-ab38db90b078": "poi_name",
+        "c59b32e5-a231-11e8-a82b-ab38db90b078": "room_number",
+        "c59b0bd1-a231-11e8-a82b-ab38db90b078": "phone",
+        "c59ba816-a231-11e8-a82b-ab38db90b078": "state_or_province",
+        "c59b0bdc-a231-11e8-a82b-ab38db90b078": "emails",
+        "c59b0bd0-a231-11e8-a82b-ab38db90b078": "name",
+        "c59a6f91-a231-11e8-a82b-ab38db90b078": "hotel_id",
+        "c59ae4ca-a231-11e8-a82b-ab38db90b078": "hotel_id",
+        "c59b0be1-a231-11e8-a82b-ab38db90b078": "phone_numbers",
+        "c59b0be2-a231-11e8-a82b-ab38db90b078": "New column",
+        "c59ae4c9-a231-11e8-a82b-ab38db90b078": "address",
+        "c59ae4c8-a231-11e8-a82b-ab38db90b078": "hotels_by_poi",
+        "c59ae4c6-a231-11e8-a82b-ab38db90b078": "New column",
+        "c59ae4c5-a231-11e8-a82b-ab38db90b078": "pois",
+        "c59ba812-a231-11e8-a82b-ab38db90b078": "address",
+        "c59b0be3-a231-11e8-a82b-ab38db90b078": "title",
+        "c59ba813-a231-11e8-a82b-ab38db90b078": "city",
+        "c59ae4c4-a231-11e8-a82b-ab38db90b078": "phone",
+        "c59ba817-a231-11e8-a82b-ab38db90b078": "street",
+        "c5a43390-a231-11e8-a82b-ab38db90b078": "hotel",
+        "c59b0bde-a231-11e8-a82b-ab38db90b078": "first_name",
+        "c5a481b0-a231-11e8-a82b-ab38db90b078": "reservation",
+        "c59ae4c3-a231-11e8-a82b-ab38db90b078": "name",
+        "c59ba814-a231-11e8-a82b-ab38db90b078": "country",
+        "c59ae4c1-a231-11e8-a82b-ab38db90b078": "address",
+        "c59b0be5-a231-11e8-a82b-ab38db90b078": "reservations_by_guest",
+        "c59b32e0-a231-11e8-a82b-ab38db90b078": "confirm_number",
+        "c59b32e1-a231-11e8-a82b-ab38db90b078": "end_date",
+        "c59b32e2-a231-11e8-a82b-ab38db90b078": "guest_id",
+        "c59ae4c2-a231-11e8-a82b-ab38db90b078": "id",
+        "c59a6f90-a231-11e8-a82b-ab38db90b078": "description",
+        "c59abdb2-a231-11e8-a82b-ab38db90b078": "hotel_id",
+        "18f40570-a232-11e8-a82b-ab38db90b078": "fk hotels.id to amenities_by_room.hotel_id",
+        "c59b32e6-a231-11e8-a82b-ab38db90b078": "start_date",
+        "31231f50-a232-11e8-a82b-ab38db90b078": "fk hotels.id to hotels_by_poi.hotel_id",
+        "41656a30-a232-11e8-a82b-ab38db90b078": "fk hotels.id to pois_by_hotel.hotel_id",
+        "4a00c8b0-a232-11e8-a82b-ab38db90b078": "fk hotels.id to available_rooms_by_hotel_date.hotel_id",
+        "57c84f90-a232-11e8-a82b-ab38db90b078": "fk hotels_by_poi.poi_name to pois_by_hotel.poi_name",
+        "868bbf10-a232-11e8-a82b-ab38db90b078": "fk guests.guest_id to reservations_by_guest.guest_id",
+        "c59b32eb-a231-11e8-a82b-ab38db90b078": "guest_id",
+        "c59b0be0-a231-11e8-a82b-ab38db90b078": "last_name",
+        "c59b32e8-a231-11e8-a82b-ab38db90b078": "Reservations By Hotel Date",
+        "eb75f1c0-a232-11e8-a82b-ab38db90b078": "fk hotels.id to reservations_by_guest.hotel_id",
+        "c59b32ec-a231-11e8-a82b-ab38db90b078": "hotel_id",
+        "c59a4880-a231-11e8-a82b-ab38db90b078": "amenity_name",
+        "c59b0bdf-a231-11e8-a82b-ab38db90b078": "guest_id",
+        "c59b32e3-a231-11e8-a82b-ab38db90b078": "guest_last_name",
+        "c59abdb1-a231-11e8-a82b-ab38db90b078": "date",
+        "c59b32e9-a231-11e8-a82b-ab38db90b078": "confirm_number",
+        "c59b32ed-a231-11e8-a82b-ab38db90b078": "room_number",
+        "c59b32ee-a231-11e8-a82b-ab38db90b078": "start_date",
+        "c59abdb4-a231-11e8-a82b-ab38db90b078": "room_number",
+        "c59b0bdb-a231-11e8-a82b-ab38db90b078": "confirm_number",
+        "c59abdb0-a231-11e8-a82b-ab38db90b078": "available_rooms_by_hotel_date",
+        "c59b32ea-a231-11e8-a82b-ab38db90b078": "end_date",
+        "c59b0bda-a231-11e8-a82b-ab38db90b078": "addresses",
+        "8e58d110-a232-11e8-a82b-ab38db90b078": "fk guests.guest_id to reservations_by_hotel_date.guest_id",
+        "bc587b60-a232-11e8-a82b-ab38db90b078": "fk hotels.id to reservations_by_hotel_date.hotel_id",
+        "c599fa60-a231-11e8-a82b-ab38db90b078": "amenities_by_room",
+        "c59ae4c0-a231-11e8-a82b-ab38db90b078": "hotels"
+    },
+    "definitions": {
+        "GUID": "be8059e1-a231-11e8-a82b-ab38db90b078",
+        "type": "definitions",
+        "properties": [
+            {
+                "GUID": "c59ba812-a231-11e8-a82b-ab38db90b078",
+                "type": "document",
+                "name": "address",
+                "frozen": true,
+                "childType": "udt",
+                "primaryKey": false,
+                "additionalProperties": false,
+                "compositeKey": [
+                    "compositePartitionKey",
+                    "compositeClusteringKey"
+                ],
+                "properties": [
+                    {
+                        "GUID": "c59ba813-a231-11e8-a82b-ab38db90b078",
+                        "name": "city",
+                        "type": "string",
+                        "code": "city",
+                        "mode": "text",
+                        "childType": "char",
+                        "primaryKey": false,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "isActivated": true
+                    },
+                    {
+                        "GUID": "c59ba814-a231-11e8-a82b-ab38db90b078",
+                        "type": "string",
+                        "name": "country",
+                        "mode": "text",
+                        "code": "country",
+                        "childType": "char",
+                        "primaryKey": false,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "isActivated": true
+                    },
+                    {
+                        "GUID": "c59ba815-a231-11e8-a82b-ab38db90b078",
+                        "code": "postal_code",
+                        "mode": "text",
+                        "name": "postal_code",
+                        "type": "string",
+                        "childType": "char",
+                        "primaryKey": false,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "isActivated": true
+                    },
+                    {
+                        "GUID": "c59ba816-a231-11e8-a82b-ab38db90b078",
+                        "type": "string",
+                        "name": "state_or_province",
+                        "mode": "text",
+                        "code": "state_or_province",
+                        "childType": "char",
+                        "primaryKey": false,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "isActivated": true
+                    },
+                    {
+                        "GUID": "c59ba817-a231-11e8-a82b-ab38db90b078",
+                        "name": "street",
+                        "type": "string",
+                        "mode": "text",
+                        "code": "street",
+                        "childType": "char",
+                        "primaryKey": false,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "isActivated": true
+                    }
+                ],
+                "definitionRefs": [
+                    [
+                        "c59ae4c8-a231-11e8-a82b-ab38db90b078",
+                        "c59ae4c9-a231-11e8-a82b-ab38db90b078"
+                    ]
+                ],
+                "isActivated": true
+            }
+        ]
+    },
+    "externalDefinitions": {
+        "GUID": "be8059e2-a231-11e8-a82b-ab38db90b078",
+        "type": "externalDefinitions",
+        "properties": []
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "DSE 6.0.x",
+    "dbVendor": "Cassandra",
+    "appTarget": "CASSANDRA",
+    "creationTS": "2018-08-17T15:25:16.798Z",
+    "GUID": "be8059e0-a231-11e8-a82b-ab38db90b078",
+    "code": "",
+    "lastModifTS": "2021-03-31T16:47:48.958Z",
+    "persistenceSchemaVersion": "4",
+    "description": "Based on https://www.oreilly.com/ideas/cassandra-data-modeling\nDesigning data models for Cassandra\nBy Jeff Carpenter and Eben Hewitt February 22, 2016\nFrom Chapter 5 of \"Cassandra: the Definitive Guide\"\n\nCode from:\nhttps://github.com/jeffreyscarpenter/cassandra-guide/blob/master/resources/hotel.cql\nhttps://github.com/jeffreyscarpenter/cassandra-guide/blob/master/resources/reservation.cql",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "hideModelViews": false,
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Cassandra",
+        "pluginVersion": "0.1.71",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "4.3.14"
+    },
+    "hackoladeMeta": {},
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "c599fa60-a231-11e8-a82b-ab38db90b078",
+                        "x": 496.752225519288,
+                        "y": 126.5786350148368,
+                        "width": 255,
+                        "height": 86,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "c59abdb0-a231-11e8-a82b-ab38db90b078",
+                        "x": 128.752225519288,
+                        "y": 464.5786350148368,
+                        "width": 258,
+                        "height": 86,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "c59ae4c0-a231-11e8-a82b-ab38db90b078",
+                        "x": 459.752225519288,
+                        "y": 273.5786350148368,
+                        "width": 329,
+                        "height": 184,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "c59ae4c8-a231-11e8-a82b-ab38db90b078",
+                        "x": 111.752225519288,
+                        "y": 123.5786350148368,
+                        "width": 291,
+                        "height": 170,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "c59b0bd4-a231-11e8-a82b-ab38db90b078",
+                        "x": 135.752225519288,
+                        "y": 357.5786350148368,
+                        "width": 244,
+                        "height": 72,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "c59b0bd9-a231-11e8-a82b-ab38db90b078",
+                        "x": 781.2373887240354,
+                        "y": 863.6439169139469,
+                        "width": 266,
+                        "height": 170,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "c59b0be5-a231-11e8-a82b-ab38db90b078",
+                        "x": 615.2373887240354,
+                        "y": 665.6439169139469,
+                        "width": 266,
+                        "height": 128,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "c59b32e8-a231-11e8-a82b-ab38db90b078",
+                        "x": 935.2373887240354,
+                        "y": 662.6439169139469,
+                        "width": 266,
+                        "height": 114,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 71.75222551928778,
+                        "y": 53.5786350148368,
+                        "GUID": "c5a43390-a231-11e8-a82b-ab38db90b078"
+                    },
+                    {
+                        "x": 575.2373887240354,
+                        "y": 592.6439169139468,
+                        "GUID": "c5a481b0-a231-11e8-a82b-ab38db90b078"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [
+                        {
+                            "x": 272,
+                            "y": 81,
+                            "GUID": "c5a43390-a231-11e8-a82b-ab38db90b078"
+                        },
+                        {
+                            "x": 386,
+                            "y": 648,
+                            "GUID": "c5a481b0-a231-11e8-a82b-ab38db90b078"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

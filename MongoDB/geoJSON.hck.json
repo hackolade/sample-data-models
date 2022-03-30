@@ -1,0 +1,1122 @@
+{
+    "GUID": "2bd1d210-57f3-11e7-b5ff-dd5e79dcd289",
+    "lastModifTS": "2017-10-02T15:06:06.154Z",
+    "persistenceSchemaVersion": "1",
+    "description": "Re-usable external refernce model with geoJSON possibilities\nRef: https://tools.ietf.org/html/rfc7946#appendix-A",
+    "comments": "",
+    "author": "Pascal",
+    "version": "0.1",
+    "collections": [
+        {
+            "GUID": "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+            "type": "object",
+            "description": "One geometry as defined by GeoJSON: https://tools.ietf.org/html/rfc7946#appendix-A\n\n",
+            "comments": "",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "choice",
+                    "choice": "oneOf",
+                    "properties": [
+                        {
+                            "title": "Point",
+                            "properties": [
+                                {
+                                    "type": "document",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "properties": [
+                                        {
+                                            "enum": [
+                                                "Point"
+                                            ],
+                                            "GUID": "791c9770-663b-11e7-8624-0dc6c9140dad",
+                                            "name": "type",
+                                            "primaryKey": false,
+                                            "type": "string"
+                                        },
+                                        {
+                                            "GUID": "80cc3660-663b-11e7-8624-0dc6c9140dad",
+                                            "type": "reference",
+                                            "name": "coordinates",
+                                            "$ref": "#/definitions/position",
+                                            "refType": "internal",
+                                            "ref": "a45eca01-5846-11e7-b5ff-dd5e79dcd289",
+                                            "refIdPath": [
+                                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                                "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                                "a45eca01-5846-11e7-b5ff-dd5e79dcd289"
+                                            ]
+                                        }
+                                    ],
+                                    "dependencies": [],
+                                    "minProperties": "",
+                                    "maxProperties": "",
+                                    "additionalProperties": false,
+                                    "enum": [],
+                                    "GUID": "6c8c3100-663b-11e7-8624-0dc6c9140dad",
+                                    "description": "",
+                                    "comments": "",
+                                    "required": false,
+                                    "id": "",
+                                    "name": "Point"
+                                }
+                            ],
+                            "type": "subschema",
+                            "primaryKey": false,
+                            "GUID": "a4622562-5846-11e7-b5ff-dd5e79dcd289"
+                        },
+                        {
+                            "title": "MultiPoint",
+                            "properties": [
+                                {
+                                    "type": "document",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "properties": [
+                                        {
+                                            "enum": [
+                                                "MultiPoint"
+                                            ],
+                                            "GUID": "f5ce6fa0-663b-11e7-8624-0dc6c9140dad",
+                                            "name": "type",
+                                            "primaryKey": false,
+                                            "type": "string"
+                                        },
+                                        {
+                                            "GUID": "fc591690-663b-11e7-8624-0dc6c9140dad",
+                                            "type": "reference",
+                                            "name": "positionArray",
+                                            "$ref": "#/definitions/positionArray",
+                                            "refType": "internal",
+                                            "ref": "a45f3f32-5846-11e7-b5ff-dd5e79dcd289",
+                                            "refIdPath": [
+                                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                                "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                                "a45f3f32-5846-11e7-b5ff-dd5e79dcd289"
+                                            ]
+                                        }
+                                    ],
+                                    "dependencies": [],
+                                    "minProperties": "",
+                                    "maxProperties": "",
+                                    "additionalProperties": false,
+                                    "enum": [],
+                                    "GUID": "e940ef60-663b-11e7-8624-0dc6c9140dad",
+                                    "description": "",
+                                    "comments": "",
+                                    "required": false,
+                                    "id": "",
+                                    "name": "MultiPoint"
+                                }
+                            ],
+                            "type": "subschema",
+                            "primaryKey": false,
+                            "GUID": "a4622565-5846-11e7-b5ff-dd5e79dcd289"
+                        },
+                        {
+                            "title": "LineString",
+                            "properties": [
+                                {
+                                    "type": "document",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "properties": [
+                                        {
+                                            "enum": [
+                                                "LineString"
+                                            ],
+                                            "GUID": "7816cac0-663c-11e7-8624-0dc6c9140dad",
+                                            "name": "type",
+                                            "primaryKey": false,
+                                            "type": "string"
+                                        },
+                                        {
+                                            "GUID": "6e4f2140-663c-11e7-8624-0dc6c9140dad",
+                                            "type": "reference",
+                                            "name": "lineString",
+                                            "$ref": "#/definitions/lineString",
+                                            "refType": "internal",
+                                            "ref": "a45f8d50-5846-11e7-b5ff-dd5e79dcd289",
+                                            "refIdPath": [
+                                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                                "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                                "a45f8d50-5846-11e7-b5ff-dd5e79dcd289"
+                                            ]
+                                        }
+                                    ],
+                                    "dependencies": [],
+                                    "minProperties": "",
+                                    "maxProperties": "",
+                                    "additionalProperties": false,
+                                    "enum": [],
+                                    "GUID": "1846bf10-663c-11e7-8624-0dc6c9140dad",
+                                    "description": "",
+                                    "comments": "",
+                                    "required": false,
+                                    "id": "",
+                                    "name": "LineString"
+                                }
+                            ],
+                            "type": "subschema",
+                            "primaryKey": false,
+                            "GUID": "a4622568-5846-11e7-b5ff-dd5e79dcd289"
+                        },
+                        {
+                            "title": "MultiLineString",
+                            "properties": [
+                                {
+                                    "type": "document",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "properties": [
+                                        {
+                                            "enum": [
+                                                "MultiLineString"
+                                            ],
+                                            "GUID": "a8c0ad80-663c-11e7-8624-0dc6c9140dad",
+                                            "name": "type",
+                                            "primaryKey": false,
+                                            "type": "string"
+                                        },
+                                        {
+                                            "additionalItems": true,
+                                            "childRelationships": [],
+                                            "foreignCollection": "",
+                                            "foreignField": [],
+                                            "GUID": "9d2e0800-663c-11e7-8624-0dc6c9140dad",
+                                            "name": "coordinates",
+                                            "parentRelationship": "",
+                                            "primaryKey": false,
+                                            "properties": [
+                                                {
+                                                    "$ref": "#/definitions/lineString",
+                                                    "arrayItem": true,
+                                                    "GUID": "9d2e0801-663c-11e7-8624-0dc6c9140dad",
+                                                    "primaryKey": false,
+                                                    "ref": "a45f8d50-5846-11e7-b5ff-dd5e79dcd289",
+                                                    "refIdPath": [
+                                                        "a45e2dc0-5846-11e7-b5ff-dd5e79dcd289",
+                                                        "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                                        "a45f8d50-5846-11e7-b5ff-dd5e79dcd289"
+                                                    ],
+                                                    "refType": "internal",
+                                                    "type": "reference"
+                                                }
+                                            ],
+                                            "relationshipType": "",
+                                            "type": "array"
+                                        }
+                                    ],
+                                    "dependencies": [],
+                                    "minProperties": "",
+                                    "maxProperties": "",
+                                    "additionalProperties": false,
+                                    "enum": [],
+                                    "GUID": "26a9c2a0-663c-11e7-8624-0dc6c9140dad",
+                                    "description": "",
+                                    "comments": "",
+                                    "required": false,
+                                    "id": "",
+                                    "name": "MultiLineString"
+                                }
+                            ],
+                            "type": "subschema",
+                            "primaryKey": false,
+                            "GUID": "a462256b-5846-11e7-b5ff-dd5e79dcd289"
+                        },
+                        {
+                            "title": "Polygon",
+                            "properties": [
+                                {
+                                    "type": "document",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "properties": [
+                                        {
+                                            "enum": [
+                                                "Polygon"
+                                            ],
+                                            "GUID": "fde428c0-664e-11e7-8624-0dc6c9140dad",
+                                            "name": "type",
+                                            "primaryKey": false,
+                                            "type": "string"
+                                        },
+                                        {
+                                            "GUID": "e63b07c0-664e-11e7-8624-0dc6c9140dad",
+                                            "type": "reference",
+                                            "name": "coodinates",
+                                            "$ref": "#/definitions/polygon",
+                                            "refType": "internal",
+                                            "ref": "a45fb461-5846-11e7-b5ff-dd5e79dcd289",
+                                            "refIdPath": [
+                                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                                "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                                "a45fb461-5846-11e7-b5ff-dd5e79dcd289"
+                                            ]
+                                        }
+                                    ],
+                                    "dependencies": [],
+                                    "minProperties": "",
+                                    "maxProperties": "",
+                                    "additionalProperties": false,
+                                    "enum": [],
+                                    "GUID": "38ed34b0-663c-11e7-8624-0dc6c9140dad",
+                                    "description": "",
+                                    "comments": "",
+                                    "required": false,
+                                    "id": "",
+                                    "name": "Polygon"
+                                }
+                            ],
+                            "type": "subschema",
+                            "primaryKey": false,
+                            "GUID": "a462256f-5846-11e7-b5ff-dd5e79dcd289"
+                        },
+                        {
+                            "title": "MultiPolygon",
+                            "properties": [
+                                {
+                                    "type": "document",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "properties": [
+                                        {
+                                            "enum": [
+                                                "MultiPolygon"
+                                            ],
+                                            "GUID": "3fa53290-664f-11e7-8624-0dc6c9140dad",
+                                            "name": "type",
+                                            "primaryKey": false,
+                                            "type": "string"
+                                        },
+                                        {
+                                            "additionalItems": true,
+                                            "childRelationships": [],
+                                            "foreignCollection": "",
+                                            "foreignField": [],
+                                            "GUID": "3a323d30-664f-11e7-8624-0dc6c9140dad",
+                                            "name": "coordinates",
+                                            "parentRelationship": "",
+                                            "primaryKey": false,
+                                            "properties": [
+                                                {
+                                                    "$ref": "#/definitions/polygon",
+                                                    "arrayItem": true,
+                                                    "GUID": "3a323d31-664f-11e7-8624-0dc6c9140dad",
+                                                    "primaryKey": false,
+                                                    "ref": "a45fb461-5846-11e7-b5ff-dd5e79dcd289",
+                                                    "refIdPath": [
+                                                        "a45e2dc0-5846-11e7-b5ff-dd5e79dcd289",
+                                                        "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                                        "a45fb461-5846-11e7-b5ff-dd5e79dcd289"
+                                                    ],
+                                                    "refType": "internal",
+                                                    "type": "reference"
+                                                }
+                                            ],
+                                            "relationshipType": "",
+                                            "type": "array"
+                                        }
+                                    ],
+                                    "dependencies": [],
+                                    "minProperties": "",
+                                    "maxProperties": "",
+                                    "additionalProperties": false,
+                                    "enum": [],
+                                    "GUID": "57391880-663c-11e7-8624-0dc6c9140dad",
+                                    "description": "",
+                                    "comments": "",
+                                    "required": false,
+                                    "id": "",
+                                    "name": "MultiPolygons"
+                                }
+                            ],
+                            "type": "subschema",
+                            "primaryKey": false,
+                            "GUID": "a4622572-5846-11e7-b5ff-dd5e79dcd289"
+                        }
+                    ],
+                    "primaryKey": false,
+                    "GUID": "a4622561-5846-11e7-b5ff-dd5e79dcd289",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [
+                    {
+                        "description": "A single position",
+                        "type": "array",
+                        "minItems": 2,
+                        "additionalItems": false,
+                        "name": "position",
+                        "primaryKey": false,
+                        "GUID": "a45eca01-5846-11e7-b5ff-dd5e79dcd289",
+                        "relationshipType": "",
+                        "parentRelationship": "",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "childRelationships": [],
+                        "properties": [
+                            {
+                                "type": "numeric",
+                                "arrayItem": true,
+                                "primaryKey": false,
+                                "GUID": "a45f3f30-5846-11e7-b5ff-dd5e79dcd289",
+                                "relationshipType": "",
+                                "parentRelationship": "",
+                                "foreignCollection": "",
+                                "foreignField": [],
+                                "childRelationships": [],
+                                "properties": [],
+                                "description": "Longitude in decimal degrees",
+                                "error": {
+                                    "minimum": true
+                                },
+                                "minimum": "-180.0",
+                                "mode": "double",
+                                "maximum": 180,
+                                "sample": 4.3328727,
+                                "unit": "Decimal degrees"
+                            },
+                            {
+                                "type": "numeric",
+                                "arrayItem": true,
+                                "primaryKey": false,
+                                "GUID": "a45f3f31-5846-11e7-b5ff-dd5e79dcd289",
+                                "relationshipType": "",
+                                "parentRelationship": "",
+                                "foreignCollection": "",
+                                "foreignField": [],
+                                "childRelationships": [],
+                                "properties": [],
+                                "sample": 50.7636859,
+                                "error": {
+                                    "minimum": true
+                                },
+                                "description": "Latitude in decimal degrees",
+                                "mode": "double",
+                                "unit": "Decimal degrees",
+                                "minimum": "-90.0",
+                                "maximum": 90
+                            }
+                        ],
+                        "definitionRefs": [
+                            [
+                                "a45e2dc0-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb464-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb465-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb468-5846-11e7-b5ff-dd5e79dcd289"
+                            ],
+                            [
+                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                "a4622561-5846-11e7-b5ff-dd5e79dcd289",
+                                "a4622562-5846-11e7-b5ff-dd5e79dcd289",
+                                "6c8c3100-663b-11e7-8624-0dc6c9140dad",
+                                "80cc3660-663b-11e7-8624-0dc6c9140dad"
+                            ]
+                        ]
+                    },
+                    {
+                        "description": "An array of positions",
+                        "type": "array",
+                        "name": "positionArray",
+                        "primaryKey": false,
+                        "additionalItems": true,
+                        "GUID": "a45f3f32-5846-11e7-b5ff-dd5e79dcd289",
+                        "relationshipType": "",
+                        "parentRelationship": "",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "childRelationships": [],
+                        "properties": [
+                            {
+                                "$ref": "#/definitions/position",
+                                "arrayItem": true,
+                                "primaryKey": false,
+                                "GUID": "a45f6641-5846-11e7-b5ff-dd5e79dcd289",
+                                "type": "reference",
+                                "refType": "internal",
+                                "refIdPath": [
+                                    "a45e2dc0-5846-11e7-b5ff-dd5e79dcd289",
+                                    "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                    "a45eca01-5846-11e7-b5ff-dd5e79dcd289"
+                                ],
+                                "ref": "a45eca01-5846-11e7-b5ff-dd5e79dcd289",
+                                "properties": []
+                            }
+                        ],
+                        "definitionRefs": [
+                            [
+                                "a45e2dc0-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb464-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb469-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb46c-5846-11e7-b5ff-dd5e79dcd289"
+                            ],
+                            [
+                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                "a4622561-5846-11e7-b5ff-dd5e79dcd289",
+                                "a4622565-5846-11e7-b5ff-dd5e79dcd289",
+                                "e940ef60-663b-11e7-8624-0dc6c9140dad",
+                                "fc591690-663b-11e7-8624-0dc6c9140dad"
+                            ]
+                        ]
+                    },
+                    {
+                        "description": "An array of two or more positions",
+                        "type": "array",
+                        "name": "lineString",
+                        "primaryKey": false,
+                        "additionalItems": true,
+                        "GUID": "a45f8d50-5846-11e7-b5ff-dd5e79dcd289",
+                        "relationshipType": "",
+                        "parentRelationship": "",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "childRelationships": [],
+                        "properties": [
+                            {
+                                "type": "choice",
+                                "choice": "allOf",
+                                "properties": [
+                                    {
+                                        "$ref": "#/definitions/positionArray",
+                                        "type": "reference",
+                                        "primaryKey": false,
+                                        "GUID": "a45f8d53-5846-11e7-b5ff-dd5e79dcd289",
+                                        "refType": "internal",
+                                        "refIdPath": [
+                                            "a45e2dc0-5846-11e7-b5ff-dd5e79dcd289",
+                                            "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                            "a45f3f32-5846-11e7-b5ff-dd5e79dcd289"
+                                        ],
+                                        "ref": "a45f3f32-5846-11e7-b5ff-dd5e79dcd289",
+                                        "properties": []
+                                    },
+                                    {
+                                        "minItems": 2,
+                                        "type": "subschema",
+                                        "primaryKey": false,
+                                        "GUID": "a45f8d54-5846-11e7-b5ff-dd5e79dcd289",
+                                        "properties": []
+                                    }
+                                ],
+                                "primaryKey": false,
+                                "GUID": "a45f8d51-5846-11e7-b5ff-dd5e79dcd289",
+                                "relationshipType": "",
+                                "parentRelationship": "",
+                                "foreignCollection": "",
+                                "foreignField": [],
+                                "childRelationships": []
+                            }
+                        ],
+                        "definitionRefs": [
+                            [
+                                "a45e2dc0-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb464-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb46d-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb470-5846-11e7-b5ff-dd5e79dcd289"
+                            ],
+                            [
+                                "a45e2dc0-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb464-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb471-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb473-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb475-5846-11e7-b5ff-dd5e79dcd289"
+                            ],
+                            [
+                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                "a4622561-5846-11e7-b5ff-dd5e79dcd289",
+                                "a4622568-5846-11e7-b5ff-dd5e79dcd289",
+                                "1846bf10-663c-11e7-8624-0dc6c9140dad",
+                                "6e4f2140-663c-11e7-8624-0dc6c9140dad"
+                            ]
+                        ]
+                    },
+                    {
+                        "description": "An array of four positions where the first equals the last",
+                        "type": "array",
+                        "name": "linearRing",
+                        "primaryKey": false,
+                        "additionalItems": true,
+                        "GUID": "a45f8d55-5846-11e7-b5ff-dd5e79dcd289",
+                        "relationshipType": "",
+                        "parentRelationship": "",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "childRelationships": [],
+                        "properties": [
+                            {
+                                "type": "choice",
+                                "choice": "allOf",
+                                "properties": [
+                                    {
+                                        "$ref": "#/definitions/positionArray",
+                                        "type": "reference",
+                                        "primaryKey": false,
+                                        "GUID": "a45f8d58-5846-11e7-b5ff-dd5e79dcd289",
+                                        "refType": "internal",
+                                        "refIdPath": [
+                                            "a45e2dc0-5846-11e7-b5ff-dd5e79dcd289",
+                                            "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                            "a45f3f32-5846-11e7-b5ff-dd5e79dcd289"
+                                        ],
+                                        "ref": "a45f3f32-5846-11e7-b5ff-dd5e79dcd289",
+                                        "properties": []
+                                    },
+                                    {
+                                        "minItems": 4,
+                                        "type": "subschema",
+                                        "primaryKey": false,
+                                        "GUID": "a45f8d59-5846-11e7-b5ff-dd5e79dcd289",
+                                        "properties": []
+                                    },
+                                    {
+                                        "maxItems": 4,
+                                        "type": "subschema",
+                                        "primaryKey": false,
+                                        "GUID": "a45fb460-5846-11e7-b5ff-dd5e79dcd289",
+                                        "properties": []
+                                    }
+                                ],
+                                "primaryKey": false,
+                                "GUID": "a45f8d56-5846-11e7-b5ff-dd5e79dcd289",
+                                "relationshipType": "",
+                                "parentRelationship": "",
+                                "foreignCollection": "",
+                                "foreignField": [],
+                                "childRelationships": []
+                            }
+                        ],
+                        "definitionRefs": []
+                    },
+                    {
+                        "description": "An array of linear rings",
+                        "type": "array",
+                        "name": "polygon",
+                        "primaryKey": false,
+                        "additionalItems": true,
+                        "GUID": "a45fb461-5846-11e7-b5ff-dd5e79dcd289",
+                        "relationshipType": "",
+                        "parentRelationship": "",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "childRelationships": [],
+                        "properties": [
+                            {
+                                "$ref": "#/definitions/linearRing",
+                                "arrayItem": true,
+                                "primaryKey": false,
+                                "GUID": "a45fb463-5846-11e7-b5ff-dd5e79dcd289",
+                                "type": "reference",
+                                "refType": "internal",
+                                "refIdPath": [
+                                    "a45e2dc0-5846-11e7-b5ff-dd5e79dcd289",
+                                    "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
+                                    "a45f8d55-5846-11e7-b5ff-dd5e79dcd289"
+                                ],
+                                "ref": "a45f8d55-5846-11e7-b5ff-dd5e79dcd289",
+                                "properties": []
+                            }
+                        ],
+                        "definitionRefs": [
+                            [
+                                "a45e2dc0-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb464-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb476-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb479-5846-11e7-b5ff-dd5e79dcd289"
+                            ],
+                            [
+                                "a45e2dc0-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb464-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb47a-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fb47c-5846-11e7-b5ff-dd5e79dcd289",
+                                "a45fdb71-5846-11e7-b5ff-dd5e79dcd289"
+                            ],
+                            [
+                                "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                                "a4622561-5846-11e7-b5ff-dd5e79dcd289",
+                                "a462256f-5846-11e7-b5ff-dd5e79dcd289",
+                                "38ed34b0-663c-11e7-8624-0dc6c9140dad",
+                                "e63b07c0-664e-11e7-8624-0dc6c9140dad"
+                            ]
+                        ]
+                    }
+                ],
+                "GUID": "a45eca00-5846-11e7-b5ff-dd5e79dcd289"
+            },
+            "collectionName": "geoJSON",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "key": "",
+                "hashed": false,
+                "unique": true,
+                "numInitialChunks": "",
+                "collation": "null",
+                "zone": "",
+                "comments": ""
+            },
+            "id": "http://json-schema.org/geojson/geometry.json#",
+            "bucketId": "a47ba0d0-5846-11e7-b5ff-dd5e79dcd289"
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "a47ba0d0-5846-11e7-b5ff-dd5e79dcd289",
+            "name": "geoJSON Schema",
+            "type": "bucket",
+            "description": "",
+            "comments": "",
+            "collectionIds": [
+                "a4622560-5846-11e7-b5ff-dd5e79dcd289"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true
+        }
+    ],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "idToNameHashTable": {
+        "3fa53290-664f-11e7-8624-0dc6c9140dad": "type",
+        "3a323d30-664f-11e7-8624-0dc6c9140dad": "coordinates",
+        "fde428c0-664e-11e7-8624-0dc6c9140dad": "type",
+        "a8c0ad80-663c-11e7-8624-0dc6c9140dad": "type",
+        "9d2e0800-663c-11e7-8624-0dc6c9140dad": "coordinates",
+        "7816cac0-663c-11e7-8624-0dc6c9140dad": "type",
+        "f5ce6fa0-663b-11e7-8624-0dc6c9140dad": "type",
+        "791c9770-663b-11e7-8624-0dc6c9140dad": "type",
+        "f2f52060-5823-11e7-b5ff-dd5e79dcd289": "geoJSON JSON Schema",
+        "66ce6d30-5828-11e7-b5ff-dd5e79dcd289": "geoJSON Schema",
+        "49bee480-5829-11e7-b5ff-dd5e79dcd289": "geoJSON Schema",
+        "c0e50f30-5829-11e7-b5ff-dd5e79dcd289": "geoJSON Schema",
+        "a47ba0d0-5846-11e7-b5ff-dd5e79dcd289": "geoJSON Schema",
+        "a4622560-5846-11e7-b5ff-dd5e79dcd289": "geoJSON",
+        "6c8c3100-663b-11e7-8624-0dc6c9140dad": "Point",
+        "80cc3660-663b-11e7-8624-0dc6c9140dad": "coordinates",
+        "e940ef60-663b-11e7-8624-0dc6c9140dad": "MultiPoint",
+        "fc591690-663b-11e7-8624-0dc6c9140dad": "positionArray",
+        "1846bf10-663c-11e7-8624-0dc6c9140dad": "LineString",
+        "26a9c2a0-663c-11e7-8624-0dc6c9140dad": "MultiLineString",
+        "38ed34b0-663c-11e7-8624-0dc6c9140dad": "Polygon",
+        "57391880-663c-11e7-8624-0dc6c9140dad": "MultiPolygons",
+        "6e4f2140-663c-11e7-8624-0dc6c9140dad": "lineString",
+        "e63b07c0-664e-11e7-8624-0dc6c9140dad": "coodinates"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "2bd1d211-57f3-11e7-b5ff-dd5e79dcd289"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "2bd1d212-57f3-11e7-b5ff-dd5e79dcd289"
+    },
+    "modelName": "geoJSON",
+    "dbVersion": "v3.4",
+    "dbVendor": "MongoDB",
+    "hideModelViews": true,
+    "appTarget": "MONGODB",
+    "creationTS": "2017-06-23T09:05:58.193Z",
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "collectionId",
+                        "x": 30,
+                        "y": 30,
+                        "width": 280,
+                        "height": 150,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "collectionId22",
+                        "x": 720,
+                        "y": 380,
+                        "width": 230,
+                        "height": 130
+                    },
+                    {
+                        "GUID": "collectionId33",
+                        "x": 300,
+                        "y": 400,
+                        "width": 220,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "collectionId4",
+                        "x": 500,
+                        "y": 30,
+                        "width": 250,
+                        "height": 200
+                    },
+                    {
+                        "GUID": "94a62b20-e476-11e5-8d0b-1b53f33d738b",
+                        "x": 80,
+                        "y": 300,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
+                        "x": 34,
+                        "y": 41,
+                        "width": 280,
+                        "height": 424
+                    },
+                    {
+                        "GUID": "527fcb00-f378-11e5-ae63-ed98875331f1",
+                        "x": 455,
+                        "y": 104,
+                        "width": 277,
+                        "height": 183
+                    },
+                    {
+                        "GUID": "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
+                        "x": 480,
+                        "y": 355,
+                        "width": 233,
+                        "height": 101
+                    },
+                    {
+                        "GUID": "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+                        "x": 61,
+                        "y": 516,
+                        "width": 200,
+                        "height": 75
+                    },
+                    {
+                        "GUID": "c2b2c8b0-f417-11e5-938a-bd54cc414623",
+                        "x": 429,
+                        "y": 472,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "4a014da0-f418-11e5-a6f2-dbf6571c2b51",
+                        "x": 422,
+                        "y": 485,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "8439e830-f41b-11e5-ad3f-7d283a6e1eb9",
+                        "x": 453.5,
+                        "y": 494,
+                        "width": 233,
+                        "height": 116
+                    },
+                    {
+                        "GUID": "6e9a9cc0-f422-11e5-ab1e-4fda87c84016",
+                        "x": 431,
+                        "y": 485,
+                        "width": 314,
+                        "height": 204
+                    },
+                    {
+                        "GUID": "166589b0-0440-11e6-a1a6-29098b60dd65",
+                        "x": 102,
+                        "y": 93,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+                        "x": 375,
+                        "y": 41,
+                        "width": 313,
+                        "height": 203
+                    },
+                    {
+                        "GUID": "2305d290-04d8-11e6-bc70-8be66314121e",
+                        "x": 140,
+                        "y": 772,
+                        "width": 200,
+                        "height": 79
+                    },
+                    {
+                        "GUID": "7c86e720-04e0-11e6-aab4-09e21d1bb332",
+                        "x": 447,
+                        "y": 781,
+                        "width": 252,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+                        "x": 431,
+                        "y": 338,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "c6350b08-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 361,
+                        "y": 43,
+                        "width": 250,
+                        "height": 87
+                    },
+                    {
+                        "GUID": "c6353214-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1071,
+                        "y": 548,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "c6355929-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 41,
+                        "y": 393,
+                        "width": 250,
+                        "height": 283
+                    },
+                    {
+                        "GUID": "c6358032-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 40,
+                        "y": 40,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "c635a748-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1067,
+                        "y": 431,
+                        "width": 250,
+                        "height": 75
+                    },
+                    {
+                        "GUID": "c635a74c-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 361,
+                        "y": 191,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "c635a757-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 690,
+                        "y": 448,
+                        "width": 250,
+                        "height": 269
+                    },
+                    {
+                        "GUID": "c635ce57-899b-11e6-a8d7-35e2bcca9f8c",
+                        "x": 692,
+                        "y": 164,
+                        "width": 250,
+                        "height": 280
+                    },
+                    {
+                        "GUID": "03b0ad80-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 516,
+                        "y": 80,
+                        "width": 250,
+                        "height": 87
+                    },
+                    {
+                        "GUID": "03b0d493-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1270,
+                        "y": 476,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "03b0fbab-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 100,
+                        "y": 100,
+                        "width": 250,
+                        "height": 283
+                    },
+                    {
+                        "GUID": "03b122bb-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 96,
+                        "y": 463,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "03b149c6-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1082,
+                        "y": 334,
+                        "width": 250,
+                        "height": 75
+                    },
+                    {
+                        "GUID": "03b149ca-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 471,
+                        "y": 227,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "03b149d5-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 180,
+                        "y": 180,
+                        "width": 250,
+                        "height": 269
+                    },
+                    {
+                        "GUID": "03b170de-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 200,
+                        "y": 200,
+                        "width": 250,
+                        "height": 129
+                    },
+                    {
+                        "GUID": "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 828,
+                        "y": 685,
+                        "width": 250,
+                        "height": 87
+                    },
+                    {
+                        "GUID": "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 828,
+                        "y": 119,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 58,
+                        "y": 119,
+                        "width": 248,
+                        "height": 272
+                    },
+                    {
+                        "GUID": "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 58,
+                        "y": 629,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 828,
+                        "y": 359,
+                        "width": 250,
+                        "height": 75
+                    },
+                    {
+                        "GUID": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 453,
+                        "y": 640,
+                        "width": 250,
+                        "height": 177
+                    },
+                    {
+                        "GUID": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 453,
+                        "y": 119,
+                        "width": 251,
+                        "height": 234
+                    },
+                    {
+                        "GUID": "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 453,
+                        "y": 449,
+                        "width": 251,
+                        "height": 112
+                    },
+                    {
+                        "GUID": "a4622560-5846-11e7-b5ff-dd5e79dcd289",
+                        "x": 90,
+                        "y": 90,
+                        "width": 328,
+                        "height": 851
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 427,
+                        "y": 40,
+                        "GUID": ""
+                    },
+                    {
+                        "x": 50,
+                        "y": 20,
+                        "GUID": "f2f52060-5823-11e7-b5ff-dd5e79dcd289"
+                    },
+                    {
+                        "x": 50,
+                        "y": 20,
+                        "GUID": "66ce6d30-5828-11e7-b5ff-dd5e79dcd289"
+                    },
+                    {
+                        "x": 50,
+                        "y": 20,
+                        "GUID": "49bee480-5829-11e7-b5ff-dd5e79dcd289"
+                    },
+                    {
+                        "x": 50,
+                        "y": 20,
+                        "GUID": "c0e50f30-5829-11e7-b5ff-dd5e79dcd289"
+                    },
+                    {
+                        "x": 50,
+                        "y": 20,
+                        "GUID": "a47ba0d0-5846-11e7-b5ff-dd5e79dcd289"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true
+        }
+    }
+}

@@ -1,0 +1,278 @@
+{
+    "modelName": "USDA Nutrition",
+    "collections": [
+        {
+            "properties": [
+                {
+                    "type": "string",
+                    "name": "_id",
+                    "required": true,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "518a9271-4d05-11e6-a27e-c76d090b5c5d",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "name": "description",
+                    "required": true,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "518a9272-4d05-11e6-a27e-c76d090b5c5d",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "name": "foodGroup",
+                    "required": true,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "518a9273-4d05-11e6-a27e-c76d090b5c5d",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "name": "manufacturer",
+                    "required": true,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "518a9274-4d05-11e6-a27e-c76d090b5c5d",
+                    "isActivated": true
+                },
+                {
+                    "type": "array",
+                    "name": "nutrients",
+                    "required": true,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "properties": [
+                        {
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "type": "string",
+                                    "name": "_id",
+                                    "required": true,
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "518a9277-4d05-11e6-a27e-c76d090b5c5d",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "numeric",
+                                    "name": "amountPer100G",
+                                    "required": true,
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "518a9278-4d05-11e6-a27e-c76d090b5c5d",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "description",
+                                    "required": true,
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "518a9279-4d05-11e6-a27e-c76d090b5c5d",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "tagname",
+                                    "required": true,
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "518a927a-4d05-11e6-a27e-c76d090b5c5d",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "units",
+                                    "required": true,
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "518a927b-4d05-11e6-a27e-c76d090b5c5d",
+                                    "isActivated": true
+                                }
+                            ],
+                            "arrayItem": true,
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "GUID": "518a9276-4d05-11e6-a27e-c76d090b5c5d",
+                            "isActivated": true
+                        }
+                    ],
+                    "GUID": "518a9275-4d05-11e6-a27e-c76d090b5c5d",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "name": "survey",
+                    "required": true,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "GUID": "518a927c-4d05-11e6-a27e-c76d090b5c5d",
+                    "isActivated": true
+                },
+                {
+                    "type": "array",
+                    "name": "weights",
+                    "required": true,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "properties": [
+                        {
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "type": "numeric",
+                                    "name": "amount",
+                                    "required": true,
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "518a927f-4d05-11e6-a27e-c76d090b5c5d",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "numeric",
+                                    "name": "grams",
+                                    "required": true,
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "518a9280-4d05-11e6-a27e-c76d090b5c5d",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "unit",
+                                    "required": true,
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "518a9281-4d05-11e6-a27e-c76d090b5c5d",
+                                    "isActivated": true
+                                }
+                            ],
+                            "arrayItem": true,
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "GUID": "518a927e-4d05-11e6-a27e-c76d090b5c5d",
+                            "isActivated": true
+                        }
+                    ],
+                    "GUID": "518a927d-4d05-11e6-a27e-c76d090b5c5d",
+                    "isActivated": true
+                }
+            ],
+            "type": "object",
+            "GUID": "518a9270-4d05-11e6-a27e-c76d090b5c5d",
+            "collectionName": "nutrition",
+            "definitions": {
+                "id": "81d10231-5646-11eb-b149-5b5457684d69",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "518a9271-4d05-11e6-a27e-c76d090b5c5d": "_id",
+        "518a9272-4d05-11e6-a27e-c76d090b5c5d": "description",
+        "518a9273-4d05-11e6-a27e-c76d090b5c5d": "foodGroup",
+        "518a9274-4d05-11e6-a27e-c76d090b5c5d": "manufacturer",
+        "518a9275-4d05-11e6-a27e-c76d090b5c5d": "nutrients",
+        "518a9277-4d05-11e6-a27e-c76d090b5c5d": "_id",
+        "518a9278-4d05-11e6-a27e-c76d090b5c5d": "amountPer100G",
+        "518a9279-4d05-11e6-a27e-c76d090b5c5d": "description",
+        "518a927a-4d05-11e6-a27e-c76d090b5c5d": "tagname",
+        "518a927b-4d05-11e6-a27e-c76d090b5c5d": "units",
+        "518a927c-4d05-11e6-a27e-c76d090b5c5d": "survey",
+        "518a927d-4d05-11e6-a27e-c76d090b5c5d": "weights",
+        "518a927f-4d05-11e6-a27e-c76d090b5c5d": "amount",
+        "518a9280-4d05-11e6-a27e-c76d090b5c5d": "grams",
+        "518a9281-4d05-11e6-a27e-c76d090b5c5d": "unit",
+        "518a9270-4d05-11e6-a27e-c76d090b5c5d": "nutrition"
+    },
+    "definitions": {
+        "id": "81d10230-5646-11eb-b149-5b5457684d69",
+        "properties": [],
+        "type": "definitions"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "81edd902-5646-11eb-b149-5b5457684d69"
+    },
+    "decorativeSymbols": [],
+    "dbVersion": "v3.2",
+    "dbVendor": "MongoDB",
+    "hideModelViews": true,
+    "appTarget": "MONGODB",
+    "creationTS": "2016-07-18T16:32:50.822Z",
+    "GUID": "44f15260-4d05-11e6-a27e-c76d090b5c5d",
+    "lastModifTS": "2021-01-14T08:57:22.554Z",
+    "persistenceSchemaVersion": "4",
+    "description": "Single collection model of the USDA nutrition DB",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "validation": "MongoDB extension",
+    "hackoladeMeta": {},
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "4.3.2"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "518a9270-4d05-11e6-a27e-c76d090b5c5d",
+                        "x": 40,
+                        "y": 40,
+                        "width": 291,
+                        "height": 269
+                    }
+                ],
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

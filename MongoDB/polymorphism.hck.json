@@ -1,0 +1,1436 @@
+{
+    "modelName": "polymorphism",
+    "collections": [
+        {
+            "GUID": "daab40a0-fdd0-11e6-b0cf-c9b29ac2191f",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "sample": "ji22jd",
+                    "GUID": "e522b220-fdd0-11e6-b0cf-c9b29ac2191f",
+                    "required": true,
+                    "name": "uid",
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "sample": "Ann",
+                    "GUID": "0a64a8e0-fdd1-11e6-b0cf-c9b29ac2191f",
+                    "required": true,
+                    "name": "customer",
+                    "isActivated": true
+                },
+                {
+                    "type": "array",
+                    "properties": [
+                        {
+                            "type": "document",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "properties": [
+                                {
+                                    "type": "string",
+                                    "minLength": 10,
+                                    "maxLength": 10,
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "sample": "0321293533",
+                                    "GUID": "2c34d170-fdd1-11e6-b0cf-c9b29ac2191f",
+                                    "required": true,
+                                    "name": "sku",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "numeric",
+                                    "mode": "integer32",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "sample": 3,
+                                    "GUID": "41d04820-fdd1-11e6-b0cf-c9b29ac2191f",
+                                    "required": true,
+                                    "name": "quan",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "numeric",
+                                    "mode": "double",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "sample": 48,
+                                    "GUID": "58c6baf0-fdd1-11e6-b0cf-c9b29ac2191f",
+                                    "required": true,
+                                    "name": "unit_price",
+                                    "isActivated": true
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "GUID": "17747880-fdd1-11e6-b0cf-c9b29ac2191f",
+                            "name": "New Field",
+                            "arrayItem": true,
+                            "isActivated": true
+                        }
+                    ],
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "additionalItems": true,
+                    "GUID": "1245df20-fdd1-11e6-b0cf-c9b29ac2191f",
+                    "required": true,
+                    "name": "line_items",
+                    "isActivated": true
+                },
+                {
+                    "type": "document",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "enum": [
+                                "Visa",
+                                "MasterCard",
+                                "Amex",
+                                "Diner's Club"
+                            ],
+                            "sample": "Amex",
+                            "GUID": "76e74900-fdd1-11e6-b0cf-c9b29ac2191f",
+                            "required": true,
+                            "name": "type",
+                            "error": {
+                                "enum": false,
+                                "enums": [
+                                    false,
+                                    false,
+                                    false,
+                                    false
+                                ]
+                            },
+                            "isActivated": true
+                        },
+                        {
+                            "type": "string",
+                            "pattern": "^(0[1-9]{1}|1[0-2]{1})/\\d{4}$",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "sample": "04/2001",
+                            "GUID": "93ae3a80-fdd1-11e6-b0cf-c9b29ac2191f",
+                            "required": true,
+                            "name": "expiry",
+                            "isActivated": true
+                        },
+                        {
+                            "type": "string",
+                            "minLength": 5,
+                            "maxLength": 5,
+                            "pattern": "^[0-9]*$",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "sample": "12345",
+                            "GUID": "3a38a890-fdd2-11e6-b0cf-c9b29ac2191f",
+                            "required": true,
+                            "name": "last5",
+                            "isActivated": true
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "6d1454e0-fdd1-11e6-b0cf-c9b29ac2191f",
+                    "required": true,
+                    "name": "payment",
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "daae74f0-fdd0-11e6-b0cf-c9b29ac2191f"
+            },
+            "collectionName": "embedding",
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "collectionUsers": [],
+            "indexes": [],
+            "isActivated": true
+        },
+        {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "name": "_id",
+                    "GUID": "51219610-baa3-11e6-92fc-ef23eb4f82b1",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "docType",
+                    "GUID": "591542e0-baa3-11e6-92fc-ef23eb4f82b1",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "firstName",
+                    "GUID": "5f142490-baa3-11e6-92fc-ef23eb4f82b1",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "lastName",
+                    "GUID": "69c25d80-baa3-11e6-92fc-ef23eb4f82b1",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "document",
+                    "additionalProperties": true,
+                    "properties": [
+                        {
+                            "primaryKey": false,
+                            "$ref": "#/definitions/address",
+                            "name": "billing",
+                            "GUID": "7e25d592-5b66-11e7-8385-2500b1597ba4",
+                            "type": "reference",
+                            "refType": "internal",
+                            "refIdPath": [
+                                "49a5ff70-baa3-11e6-92fc-ef23eb4f82b1",
+                                "7e25ae80-5b66-11e7-8385-2500b1597ba4",
+                                "7f3ba630-baa3-11e6-92fc-ef23eb4f82b1"
+                            ],
+                            "ref": "7f3ba630-baa3-11e6-92fc-ef23eb4f82b1",
+                            "isActivated": true
+                        },
+                        {
+                            "type": "choice",
+                            "choice": "oneOf",
+                            "properties": [
+                                {
+                                    "type": "subschema",
+                                    "properties": [
+                                        {
+                                            "type": "string",
+                                            "primaryKey": false,
+                                            "name": "shipping",
+                                            "GUID": "a46d7050-baa3-11e6-92fc-ef23eb4f82b1",
+                                            "relationshipType": "",
+                                            "isActivated": true
+                                        }
+                                    ],
+                                    "primaryKey": false,
+                                    "GUID": "9bdbd5d0-baa3-11e6-92fc-ef23eb4f82b1",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "subschema",
+                                    "additionalProperties": true,
+                                    "properties": [
+                                        {
+                                            "primaryKey": false,
+                                            "$ref": "#/definitions/address",
+                                            "name": "shipping",
+                                            "GUID": "7e25d594-5b66-11e7-8385-2500b1597ba4",
+                                            "type": "reference",
+                                            "refType": "internal",
+                                            "refIdPath": [
+                                                "49a5ff70-baa3-11e6-92fc-ef23eb4f82b1",
+                                                "7e25ae80-5b66-11e7-8385-2500b1597ba4",
+                                                "7f3ba630-baa3-11e6-92fc-ef23eb4f82b1"
+                                            ],
+                                            "ref": "7f3ba630-baa3-11e6-92fc-ef23eb4f82b1",
+                                            "isActivated": true
+                                        }
+                                    ],
+                                    "primaryKey": false,
+                                    "GUID": "5d8245a0-57c2-11e7-b5ff-dd5e79dcd289",
+                                    "isActivated": true
+                                }
+                            ],
+                            "primaryKey": false,
+                            "GUID": "7e25d590-5b66-11e7-8385-2500b1597ba4",
+                            "relationshipType": "",
+                            "isActivated": true
+                        }
+                    ],
+                    "primaryKey": false,
+                    "name": "addresses",
+                    "GUID": "6fc5fa20-baa3-11e6-92fc-ef23eb4f82b1",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                }
+            ],
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "definitions": {
+                "type": "definitions",
+                "properties": [
+                    {
+                        "type": "document",
+                        "additionalProperties": false,
+                        "properties": [
+                            {
+                                "type": "string",
+                                "primaryKey": false,
+                                "name": "housenum",
+                                "GUID": "000095f0-57f2-11e7-b5ff-dd5e79dcd289",
+                                "required": true,
+                                "isActivated": true
+                            },
+                            {
+                                "type": "string",
+                                "primaryKey": false,
+                                "name": "streetname",
+                                "GUID": "f7d7cf60-57f1-11e7-b5ff-dd5e79dcd289",
+                                "required": true,
+                                "isActivated": true
+                            },
+                            {
+                                "type": "string",
+                                "primaryKey": false,
+                                "name": "city",
+                                "GUID": "8a9d2990-baa3-11e6-92fc-ef23eb4f82b1",
+                                "required": true,
+                                "isActivated": true
+                            },
+                            {
+                                "type": "string",
+                                "primaryKey": false,
+                                "name": "state",
+                                "GUID": "8ff39640-baa3-11e6-92fc-ef23eb4f82b1",
+                                "required": true,
+                                "isActivated": true
+                            },
+                            {
+                                "type": "string",
+                                "pattern": "^\\d{5}(?:[-\\s]\\d{4})?$",
+                                "primaryKey": false,
+                                "sample": "90024-0041",
+                                "GUID": "92491580-23d9-11ea-aa7a-432909273784",
+                                "name": "zipCode",
+                                "code": "",
+                                "required": true,
+                                "hackoladeMeta": {},
+                                "error": {
+                                    "name": false
+                                },
+                                "isActivated": true
+                            }
+                        ],
+                        "primaryKey": false,
+                        "name": "addressUS",
+                        "GUID": "7f3ba630-baa3-11e6-92fc-ef23eb4f82b1",
+                        "definitionRefs": [
+                            [
+                                "49a5ff70-baa3-11e6-92fc-ef23eb4f82b1",
+                                "6fc5fa20-baa3-11e6-92fc-ef23eb4f82b1",
+                                "7e25d592-5b66-11e7-8385-2500b1597ba4"
+                            ],
+                            [
+                                "49a5ff70-baa3-11e6-92fc-ef23eb4f82b1",
+                                "6fc5fa20-baa3-11e6-92fc-ef23eb4f82b1",
+                                "7e25d590-5b66-11e7-8385-2500b1597ba4",
+                                "5d8245a0-57c2-11e7-b5ff-dd5e79dcd289",
+                                "7e25d594-5b66-11e7-8385-2500b1597ba4"
+                            ]
+                        ],
+                        "error": {
+                            "name": false
+                        },
+                        "isActivated": true
+                    },
+                    {
+                        "type": "document",
+                        "additionalProperties": false,
+                        "properties": [
+                            {
+                                "type": "string",
+                                "primaryKey": false,
+                                "name": "streetname",
+                                "GUID": "f31a4810-23da-11ea-aa7a-432909273784",
+                                "properties": [],
+                                "required": true,
+                                "isActivated": true
+                            },
+                            {
+                                "type": "string",
+                                "primaryKey": false,
+                                "name": "housenum",
+                                "GUID": "f31a4811-23da-11ea-aa7a-432909273784",
+                                "properties": [],
+                                "required": true,
+                                "isActivated": true
+                            },
+                            {
+                                "type": "string",
+                                "pattern": "^\\d{4}$",
+                                "primaryKey": false,
+                                "sample": "1000",
+                                "GUID": "f31a4814-23da-11ea-aa7a-432909273784",
+                                "name": "zipCode",
+                                "code": "",
+                                "required": true,
+                                "hackoladeMeta": {},
+                                "isActivated": true
+                            },
+                            {
+                                "type": "string",
+                                "primaryKey": false,
+                                "name": "city",
+                                "GUID": "f31a4812-23da-11ea-aa7a-432909273784",
+                                "properties": [],
+                                "required": true,
+                                "isActivated": true
+                            }
+                        ],
+                        "primaryKey": false,
+                        "name": "addressBE",
+                        "GUID": "f317fe20-23da-11ea-aa7a-432909273784",
+                        "hackoladeMeta": {},
+                        "isActivated": true
+                    }
+                ],
+                "GUID": "7e25ae80-5b66-11e7-8385-2500b1597ba4"
+            },
+            "GUID": "49a5ff70-baa3-11e6-92fc-ef23eb4f82b1",
+            "collectionName": "polymorphism",
+            "collectionUsers": [],
+            "indexes": [],
+            "isActivated": true
+        },
+        {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "name": "_id",
+                    "GUID": "e96b6140-23db-11ea-aa7a-432909273784",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "docType",
+                    "GUID": "e96b6141-23db-11ea-aa7a-432909273784",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "firstName",
+                    "GUID": "e96b6142-23db-11ea-aa7a-432909273784",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "lastName",
+                    "GUID": "e96b6143-23db-11ea-aa7a-432909273784",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                },
+                {
+                    "type": "document",
+                    "additionalProperties": true,
+                    "properties": [
+                        {
+                            "type": "choice",
+                            "choice": "oneOf",
+                            "properties": [
+                                {
+                                    "type": "subschema",
+                                    "properties": [
+                                        {
+                                            "GUID": "06442d10-23dc-11ea-aa7a-432909273784",
+                                            "type": "reference",
+                                            "name": "BEaddress",
+                                            "$ref": "#/definitions/addressBE",
+                                            "refType": "internal",
+                                            "ref": "e96b6152-23db-11ea-aa7a-432909273784",
+                                            "refIdPath": [
+                                                "e9682cf0-23db-11ea-aa7a-432909273784",
+                                                "e96b614b-23db-11ea-aa7a-432909273784",
+                                                "e96b6152-23db-11ea-aa7a-432909273784"
+                                            ],
+                                            "primaryKey": false,
+                                            "relationshipType": "",
+                                            "error": {
+                                                "name": false
+                                            },
+                                            "isActivated": true
+                                        }
+                                    ],
+                                    "primaryKey": false,
+                                    "GUID": "e96b6147-23db-11ea-aa7a-432909273784",
+                                    "relationshipType": "",
+                                    "isActivated": true
+                                },
+                                {
+                                    "type": "subschema",
+                                    "additionalProperties": true,
+                                    "properties": [
+                                        {
+                                            "primaryKey": false,
+                                            "$ref": "#/definitions/address",
+                                            "name": "USaddress",
+                                            "GUID": "e96b614a-23db-11ea-aa7a-432909273784",
+                                            "type": "reference",
+                                            "refType": "internal",
+                                            "refIdPath": [
+                                                "e9682cf0-23db-11ea-aa7a-432909273784",
+                                                "e96b614b-23db-11ea-aa7a-432909273784",
+                                                "e96b614c-23db-11ea-aa7a-432909273784"
+                                            ],
+                                            "ref": "e96b614c-23db-11ea-aa7a-432909273784",
+                                            "relationshipType": "",
+                                            "error": {
+                                                "name": false
+                                            },
+                                            "isActivated": true
+                                        }
+                                    ],
+                                    "primaryKey": false,
+                                    "GUID": "e96b6149-23db-11ea-aa7a-432909273784",
+                                    "relationshipType": "",
+                                    "isActivated": true
+                                }
+                            ],
+                            "primaryKey": false,
+                            "GUID": "e96b6146-23db-11ea-aa7a-432909273784",
+                            "relationshipType": "",
+                            "isActivated": true
+                        }
+                    ],
+                    "primaryKey": false,
+                    "name": "addresses",
+                    "GUID": "e96b6144-23db-11ea-aa7a-432909273784",
+                    "relationshipType": "",
+                    "required": true,
+                    "isActivated": true
+                }
+            ],
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "definitions": {
+                "type": "definitions",
+                "properties": [
+                    {
+                        "type": "document",
+                        "additionalProperties": false,
+                        "properties": [
+                            {
+                                "type": "string",
+                                "primaryKey": false,
+                                "name": "housenum",
+                                "GUID": "e96b614d-23db-11ea-aa7a-432909273784",
+                                "required": true,
+                                "isActivated": true
+                            },
+                            {
+                                "type": "string",
+                                "primaryKey": false,
+                                "name": "streetname",
+                                "GUID": "e96b614e-23db-11ea-aa7a-432909273784",
+                                "required": true,
+                                "isActivated": true
+                            },
+                            {
+                                "type": "string",
+                                "primaryKey": false,
+                                "name": "city",
+                                "GUID": "e96b614f-23db-11ea-aa7a-432909273784",
+                                "required": true,
+                                "isActivated": true
+                            },
+                            {
+                                "type": "string",
+                                "primaryKey": false,
+                                "name": "state",
+                                "GUID": "e96b6150-23db-11ea-aa7a-432909273784",
+                                "required": true,
+                                "isActivated": true
+                            },
+                            {
+                                "type": "string",
+                                "pattern": "^\\d{5}(?:[-\\s]\\d{4})?$",
+                                "primaryKey": false,
+                                "sample": "90024-0041",
+                                "GUID": "e96b6151-23db-11ea-aa7a-432909273784",
+                                "name": "postalCode",
+                                "code": "zipCode",
+                                "required": true,
+                                "hackoladeMeta": {},
+                                "isActivated": true
+                            }
+                        ],
+                        "primaryKey": false,
+                        "name": "addressUS",
+                        "GUID": "e96b614c-23db-11ea-aa7a-432909273784",
+                        "definitionRefs": [
+                            [
+                                "e9682cf0-23db-11ea-aa7a-432909273784",
+                                "e96b6144-23db-11ea-aa7a-432909273784",
+                                "e96b6146-23db-11ea-aa7a-432909273784",
+                                "e96b6149-23db-11ea-aa7a-432909273784",
+                                "e96b614a-23db-11ea-aa7a-432909273784"
+                            ]
+                        ],
+                        "error": {
+                            "name": false
+                        },
+                        "isActivated": true
+                    },
+                    {
+                        "type": "document",
+                        "additionalProperties": false,
+                        "properties": [
+                            {
+                                "type": "string",
+                                "primaryKey": false,
+                                "name": "streetname",
+                                "GUID": "e96b6153-23db-11ea-aa7a-432909273784",
+                                "required": true,
+                                "isActivated": true
+                            },
+                            {
+                                "type": "string",
+                                "primaryKey": false,
+                                "name": "housenum",
+                                "GUID": "e96b6154-23db-11ea-aa7a-432909273784",
+                                "required": true,
+                                "isActivated": true
+                            },
+                            {
+                                "type": "string",
+                                "pattern": "^\\d{4}$",
+                                "primaryKey": false,
+                                "sample": "1000",
+                                "GUID": "e96b6155-23db-11ea-aa7a-432909273784",
+                                "name": "postalCode",
+                                "code": "",
+                                "required": true,
+                                "hackoladeMeta": {},
+                                "isActivated": true
+                            },
+                            {
+                                "type": "string",
+                                "primaryKey": false,
+                                "name": "city",
+                                "GUID": "e96b6156-23db-11ea-aa7a-432909273784",
+                                "required": true,
+                                "isActivated": true
+                            }
+                        ],
+                        "primaryKey": false,
+                        "name": "addressBE",
+                        "GUID": "e96b6152-23db-11ea-aa7a-432909273784",
+                        "hackoladeMeta": {},
+                        "definitionRefs": [
+                            [
+                                "e9682cf0-23db-11ea-aa7a-432909273784",
+                                "e96b6144-23db-11ea-aa7a-432909273784",
+                                "e96b6146-23db-11ea-aa7a-432909273784",
+                                "e96b6147-23db-11ea-aa7a-432909273784",
+                                "06442d10-23dc-11ea-aa7a-432909273784"
+                            ]
+                        ],
+                        "isActivated": true
+                    }
+                ],
+                "GUID": "e96b614b-23db-11ea-aa7a-432909273784"
+            },
+            "GUID": "e9682cf0-23db-11ea-aa7a-432909273784",
+            "collectionName": "polymorphismAddress",
+            "collectionUsers": [],
+            "indexes": [],
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "collectionName": false
+                }
+            },
+            "isActivated": true
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "397ec180-57f2-11e7-b5ff-dd5e79dcd289": "shipping",
+        "49a5ff70-baa3-11e6-92fc-ef23eb4f82b1": "polymorphism",
+        "51219610-baa3-11e6-92fc-ef23eb4f82b1": "_id",
+        "591542e0-baa3-11e6-92fc-ef23eb4f82b1": "docType",
+        "5f142490-baa3-11e6-92fc-ef23eb4f82b1": "firstName",
+        "69c25d80-baa3-11e6-92fc-ef23eb4f82b1": "lastName",
+        "6fc5fa20-baa3-11e6-92fc-ef23eb4f82b1": "addresses",
+        "9bdbd5d0-baa3-11e6-92fc-ef23eb4f82b1": "Schema",
+        "a46d7050-baa3-11e6-92fc-ef23eb4f82b1": "shipping",
+        "daab40a0-fdd0-11e6-b0cf-c9b29ac2191f": "embedding",
+        "e522b220-fdd0-11e6-b0cf-c9b29ac2191f": "uid",
+        "0a64a8e0-fdd1-11e6-b0cf-c9b29ac2191f": "customer",
+        "1245df20-fdd1-11e6-b0cf-c9b29ac2191f": "line_items",
+        "2c34d170-fdd1-11e6-b0cf-c9b29ac2191f": "sku",
+        "41d04820-fdd1-11e6-b0cf-c9b29ac2191f": "quan",
+        "58c6baf0-fdd1-11e6-b0cf-c9b29ac2191f": "unit_price",
+        "6d1454e0-fdd1-11e6-b0cf-c9b29ac2191f": "payment",
+        "76e74900-fdd1-11e6-b0cf-c9b29ac2191f": "type",
+        "93ae3a80-fdd1-11e6-b0cf-c9b29ac2191f": "expiry",
+        "3a38a890-fdd2-11e6-b0cf-c9b29ac2191f": "last5",
+        "192385b0-57f2-11e7-b5ff-dd5e79dcd289": "billing",
+        "7f3ba630-baa3-11e6-92fc-ef23eb4f82b1": "addressUS",
+        "0824db5a-23d9-11ea-a5bd-d78695504513": "address",
+        "0824db5b-23d9-11ea-a5bd-d78695504513": "streetname",
+        "0824db5c-23d9-11ea-a5bd-d78695504513": "housenum",
+        "0824db5d-23d9-11ea-a5bd-d78695504513": "city",
+        "0824db5e-23d9-11ea-a5bd-d78695504513": "state",
+        "92491580-23d9-11ea-aa7a-432909273784": "zipCode",
+        "f317fe20-23da-11ea-aa7a-432909273784": "addressBE",
+        "f31a4810-23da-11ea-aa7a-432909273784": "streetname",
+        "f31a4811-23da-11ea-aa7a-432909273784": "housenum",
+        "f31a4812-23da-11ea-aa7a-432909273784": "city",
+        "f31a4814-23da-11ea-aa7a-432909273784": "zipCode",
+        "e96b6140-23db-11ea-aa7a-432909273784": "_id",
+        "e96b6141-23db-11ea-aa7a-432909273784": "docType",
+        "e96b6142-23db-11ea-aa7a-432909273784": "firstName",
+        "e96b6143-23db-11ea-aa7a-432909273784": "lastName",
+        "e96b6144-23db-11ea-aa7a-432909273784": "addresses",
+        "e96b614a-23db-11ea-aa7a-432909273784": "USaddress",
+        "e9682cf0-23db-11ea-aa7a-432909273784": "polymorphismAddress",
+        "e96b614c-23db-11ea-aa7a-432909273784": "addressUS",
+        "e96b614d-23db-11ea-aa7a-432909273784": "housenum",
+        "e96b614e-23db-11ea-aa7a-432909273784": "streetname",
+        "e96b614f-23db-11ea-aa7a-432909273784": "city",
+        "e96b6150-23db-11ea-aa7a-432909273784": "state",
+        "e96b6151-23db-11ea-aa7a-432909273784": "postalCode",
+        "e96b6152-23db-11ea-aa7a-432909273784": "addressBE",
+        "e96b6153-23db-11ea-aa7a-432909273784": "streetname",
+        "e96b6154-23db-11ea-aa7a-432909273784": "housenum",
+        "e96b6155-23db-11ea-aa7a-432909273784": "postalCode",
+        "e96b6156-23db-11ea-aa7a-432909273784": "city",
+        "06442d10-23dc-11ea-aa7a-432909273784": "BEaddress"
+    },
+    "definitions": {
+        "GUID": "1329a4e0-fdd0-11e6-b0cf-c9b29ac2191f",
+        "properties": [],
+        "type": "definitions"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "55828ae2-57c2-11e7-b5ff-dd5e79dcd289"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v3.6",
+    "dbVendor": "MongoDB",
+    "hideModelViews": true,
+    "appTarget": "MONGODB",
+    "creationTS": "2016-12-05T04:28:24.022Z",
+    "GUID": "081f8ee0-5b1b-11e7-9388-d7359d07943d",
+    "code": "",
+    "lastModifTS": "2021-03-31T15:47:46.911Z",
+    "persistenceSchemaVersion": "4",
+    "description": "",
+    "comments": "",
+    "version": "",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "4.3.14"
+    },
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "49a5ff70-baa3-11e6-92fc-ef23eb4f82b1",
+                        "x": 53,
+                        "y": 70,
+                        "width": 343,
+                        "height": 324,
+                        "color": {
+                            "hsl": {
+                                "h": 206.57142857142858,
+                                "s": 0.8974358974358974,
+                                "l": 0.5411764705882353,
+                                "a": 1
+                            },
+                            "hex": "#2196f3",
+                            "rgb": {
+                                "r": 33,
+                                "g": 150,
+                                "b": 243,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 206.57142857142858,
+                                "s": 0.8641975308641976,
+                                "v": 0.9529411764705882,
+                                "a": 1
+                            },
+                            "oldHue": 230.84745762711864,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "daab40a0-fdd0-11e6-b0cf-c9b29ac2191f",
+                        "x": 54,
+                        "y": 410,
+                        "width": 284,
+                        "height": 184,
+                        "color": {
+                            "hsl": {
+                                "h": 3.789473684210526,
+                                "s": 0.904761904761905,
+                                "l": 0.5882352941176471,
+                                "a": 1
+                            },
+                            "hex": "#f54337",
+                            "rgb": {
+                                "r": 245,
+                                "g": 67,
+                                "b": 55,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 3.789473684210526,
+                                "s": 0.7755102040816326,
+                                "v": 0.9607843137254902,
+                                "a": 1
+                            },
+                            "oldHue": 3.789473684210526,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "ac230171-fac7-11e6-9f58-33155ddb31fb",
+                        "x": 690,
+                        "y": 237,
+                        "width": 308,
+                        "height": 519,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "ac23c4c1-fac7-11e6-9f58-33155ddb31fb",
+                        "x": 374,
+                        "y": 540,
+                        "width": 225,
+                        "height": 245,
+                        "color": {
+                            "hsl": {
+                                "h": 206.57142857142858,
+                                "s": 0.8974358974358974,
+                                "l": 0.5411764705882353,
+                                "a": 1
+                            },
+                            "hex": "#2196f3",
+                            "rgb": {
+                                "r": 33,
+                                "g": 150,
+                                "b": 243,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 206.57142857142858,
+                                "s": 0.8641975308641976,
+                                "v": 0.9529411764705882,
+                                "a": 1
+                            },
+                            "oldHue": 206.57142857142858,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "ac2412e1-fac7-11e6-9f58-33155ddb31fb",
+                        "x": 370,
+                        "y": 235,
+                        "width": 234,
+                        "height": 245,
+                        "color": {
+                            "hsl": {
+                                "h": 3.789473684210526,
+                                "s": 0.904761904761905,
+                                "l": 0.5882352941176471,
+                                "a": 1
+                            },
+                            "hex": "#f54337",
+                            "rgb": {
+                                "r": 245,
+                                "g": 67,
+                                "b": 55,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 3.789473684210526,
+                                "s": 0.7755102040816326,
+                                "v": 0.9607843137254902,
+                                "a": 1
+                            },
+                            "oldHue": 3.789473684210526,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "350cb9d0-ffec-11e6-bc11-bba283d07659",
+                        "x": 1206,
+                        "y": 834.5,
+                        "width": 192,
+                        "height": 107,
+                        "color": {
+                            "hsl": {
+                                "h": 3.789473684210526,
+                                "s": 0.904761904761905,
+                                "l": 0.5882352941176471,
+                                "a": 1
+                            },
+                            "hex": "#f54337",
+                            "rgb": {
+                                "r": 245,
+                                "g": 67,
+                                "b": 55,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 3.789473684210526,
+                                "s": 0.7755102040816326,
+                                "v": 0.9607843137254902,
+                                "a": 1
+                            },
+                            "oldHue": 3.789473684210526,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "350d2f07-ffec-11e6-bc11-bba283d07659",
+                        "x": 1053,
+                        "y": 632.5,
+                        "width": 257,
+                        "height": 135,
+                        "color": {
+                            "hsl": {
+                                "h": 3.789473684210526,
+                                "s": 0.904761904761905,
+                                "l": 0.5882352941176471,
+                                "a": 1
+                            },
+                            "hex": "#f54337",
+                            "rgb": {
+                                "r": 245,
+                                "g": 67,
+                                "b": 55,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 3.789473684210526,
+                                "s": 0.7755102040816326,
+                                "v": 0.9607843137254902,
+                                "a": 1
+                            },
+                            "oldHue": 3.789473684210526,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "350da431-ffec-11e6-bc11-bba283d07659",
+                        "x": 928,
+                        "y": 830.5,
+                        "width": 194,
+                        "height": 149
+                    },
+                    {
+                        "GUID": "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
+                        "x": 61,
+                        "y": 516,
+                        "width": 200,
+                        "height": 75
+                    },
+                    {
+                        "GUID": "c2b2c8b0-f417-11e5-938a-bd54cc414623",
+                        "x": 429,
+                        "y": 472,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "4a014da0-f418-11e5-a6f2-dbf6571c2b51",
+                        "x": 422,
+                        "y": 485,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "8439e830-f41b-11e5-ad3f-7d283a6e1eb9",
+                        "x": 453.5,
+                        "y": 494,
+                        "width": 233,
+                        "height": 116
+                    },
+                    {
+                        "GUID": "6e9a9cc0-f422-11e5-ab1e-4fda87c84016",
+                        "x": 431,
+                        "y": 485,
+                        "width": 314,
+                        "height": 204
+                    },
+                    {
+                        "GUID": "166589b0-0440-11e6-a1a6-29098b60dd65",
+                        "x": 87,
+                        "y": 133,
+                        "width": 234,
+                        "height": 166
+                    },
+                    {
+                        "GUID": "46aed5e0-0440-11e6-a1a6-29098b60dd65",
+                        "x": 399,
+                        "y": 46,
+                        "width": 315,
+                        "height": 277
+                    },
+                    {
+                        "GUID": "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
+                        "x": 459,
+                        "y": 438,
+                        "width": 200,
+                        "height": 100
+                    },
+                    {
+                        "GUID": "748f9af0-00d2-11e7-94c9-270ac0401f9d",
+                        "x": 1200,
+                        "y": 268,
+                        "width": 195,
+                        "height": 203,
+                        "color": {
+                            "hsl": {
+                                "h": 290.8029197080292,
+                                "s": 0.631336405529954,
+                                "l": 0.42549019607843136,
+                                "a": 1
+                            },
+                            "hex": "#9c28b1",
+                            "rgb": {
+                                "r": 156,
+                                "g": 40,
+                                "b": 177,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 290.8029197080292,
+                                "s": 0.7740112994350282,
+                                "v": 0.6941176470588235,
+                                "a": 1
+                            },
+                            "oldHue": 261.2903225806451,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "749407c1-00d2-11e7-94c9-270ac0401f9d",
+                        "x": 928,
+                        "y": 267,
+                        "width": 201,
+                        "height": 272,
+                        "color": {
+                            "hsl": {
+                                "h": 290.8029197080292,
+                                "s": 0.631336405529954,
+                                "l": 0.42549019607843136,
+                                "a": 1
+                            },
+                            "hex": "#9c28b1",
+                            "rgb": {
+                                "r": 156,
+                                "g": 40,
+                                "b": 177,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 290.8029197080292,
+                                "s": 0.7740112994350282,
+                                "v": 0.6941176470588235,
+                                "a": 1
+                            },
+                            "oldHue": 290.8029197080292,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "74956751-00d2-11e7-94c9-270ac0401f9d",
+                        "x": 100,
+                        "y": 272,
+                        "width": 192,
+                        "height": 149
+                    },
+                    {
+                        "GUID": "74971501-00d2-11e7-94c9-270ac0401f9d",
+                        "x": 100,
+                        "y": 490,
+                        "width": 203,
+                        "height": 217,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "7499fb31-00d2-11e7-94c9-270ac0401f9d",
+                        "x": 626,
+                        "y": 268,
+                        "width": 212,
+                        "height": 491,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "749bf701-00d2-11e7-94c9-270ac0401f9d",
+                        "x": 367,
+                        "y": 514,
+                        "width": 224,
+                        "height": 382
+                    },
+                    {
+                        "GUID": "749e19e1-00d2-11e7-94c9-270ac0401f9d",
+                        "x": 354,
+                        "y": 270,
+                        "width": 234,
+                        "height": 203
+                    },
+                    {
+                        "GUID": "ac2923c1-2b1e-11e7-bde4-57d99ab8fafb",
+                        "x": 529,
+                        "y": 96,
+                        "width": 234,
+                        "height": 245,
+                        "color": {
+                            "hsl": {
+                                "h": 339.7058823529412,
+                                "s": 0.8292682926829267,
+                                "l": 0.5176470588235293,
+                                "a": 1
+                            },
+                            "hex": "#ea1e63",
+                            "rgb": {
+                                "r": 234,
+                                "g": 30,
+                                "b": 99,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 339.7058823529412,
+                                "s": 0.8717948717948718,
+                                "v": 0.9176470588235294,
+                                "a": 1
+                            },
+                            "oldHue": 339.7058823529412,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "1f8c0620-53f6-11e7-b1ef-ab0119d70e5d",
+                        "x": 390,
+                        "y": 190,
+                        "width": 192,
+                        "height": 139
+                    },
+                    {
+                        "GUID": "1f8cc971-53f6-11e7-b1ef-ab0119d70e5d",
+                        "x": 640,
+                        "y": 90,
+                        "width": 203,
+                        "height": 207
+                    },
+                    {
+                        "GUID": "1f8d8cc2-53f6-11e7-b1ef-ab0119d70e5d",
+                        "x": 390,
+                        "y": 390,
+                        "width": 307,
+                        "height": 674
+                    },
+                    {
+                        "GUID": "1f8e01f1-53f6-11e7-b1ef-ab0119d70e5d",
+                        "x": 90,
+                        "y": 440,
+                        "width": 224,
+                        "height": 372
+                    },
+                    {
+                        "GUID": "1f8e5012-53f6-11e7-b1ef-ab0119d70e5d",
+                        "x": 90,
+                        "y": 140,
+                        "width": 234,
+                        "height": 235
+                    },
+                    {
+                        "GUID": "03b122bb-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 96,
+                        "y": 463,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "03b149c6-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 1082,
+                        "y": 334,
+                        "width": 250,
+                        "height": 75
+                    },
+                    {
+                        "GUID": "03b149ca-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 471,
+                        "y": 227,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "03b149d5-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 180,
+                        "y": 180,
+                        "width": 250,
+                        "height": 269
+                    },
+                    {
+                        "GUID": "03b170de-899d-11e6-a8d7-35e2bcca9f8c",
+                        "x": 200,
+                        "y": 200,
+                        "width": 250,
+                        "height": 129
+                    },
+                    {
+                        "GUID": "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 828,
+                        "y": 685,
+                        "width": 250,
+                        "height": 87
+                    },
+                    {
+                        "GUID": "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 828,
+                        "y": 119,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 58,
+                        "y": 119,
+                        "width": 248,
+                        "height": 272
+                    },
+                    {
+                        "GUID": "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 58,
+                        "y": 629,
+                        "width": 250,
+                        "height": 199
+                    },
+                    {
+                        "GUID": "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 828,
+                        "y": 359,
+                        "width": 250,
+                        "height": 75
+                    },
+                    {
+                        "GUID": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 453,
+                        "y": 640,
+                        "width": 250,
+                        "height": 177
+                    },
+                    {
+                        "GUID": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 453,
+                        "y": 119,
+                        "width": 251,
+                        "height": 234
+                    },
+                    {
+                        "GUID": "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
+                        "x": 453,
+                        "y": 449,
+                        "width": 251,
+                        "height": 112
+                    },
+                    {
+                        "GUID": "5a3e1c60-56ec-11e7-b5ff-dd5e79dcd289",
+                        "x": 90,
+                        "y": 90,
+                        "width": 268,
+                        "height": 193
+                    },
+                    {
+                        "GUID": "e9682cf0-23db-11ea-aa7a-432909273784",
+                        "x": 439.5,
+                        "y": 70,
+                        "width": 343,
+                        "height": 296,
+                        "color": {
+                            "hsl": {
+                                "h": 206.57142857142858,
+                                "s": 0.8974358974358974,
+                                "l": 0.5411764705882353,
+                                "a": 1
+                            },
+                            "hex": "#2196f3",
+                            "rgb": {
+                                "r": 33,
+                                "g": 150,
+                                "b": 243,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 206.57142857142858,
+                                "s": 0.8641975308641976,
+                                "v": 0.9529411764705882,
+                                "a": 1
+                            },
+                            "oldHue": 230.84745762711864,
+                            "source": "hex"
+                        }
+                    }
+                ],
+                "buckets": [],
+                "collapsedNodes": [
+                    "17a49b53-196e-11e7-8a00-7d16bdc1d762",
+                    "17a49b58-196e-11e7-8a00-7d16bdc1d762",
+                    "17a53756-196e-11e7-8a00-7d16bdc1d762",
+                    "17a53765-196e-11e7-8a00-7d16bdc1d762",
+                    "17a49b10-196e-11e7-8a00-7d16bdc1d762",
+                    "17a49b1e-196e-11e7-8a00-7d16bdc1d762"
+                ],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [
+                [
+                    "49a5ff70-baa3-11e6-92fc-ef23eb4f82b1",
+                    "6fc5fa20-baa3-11e6-92fc-ef23eb4f82b1",
+                    "97d3bb10-baa3-11e6-92fc-ef23eb4f82b1",
+                    "5d8245a0-57c2-11e7-b5ff-dd5e79dcd289",
+                    "397ec180-57f2-11e7-b5ff-dd5e79dcd289",
+                    "7f3ba630-baa3-11e6-92fc-ef23eb4f82b1"
+                ]
+            ],
+            "details": true,
+            "hideErdDetails": false,
+            "shouldDistributeCollections": false
+        }
+    }
+}

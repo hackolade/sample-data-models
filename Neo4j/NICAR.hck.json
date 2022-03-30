@@ -1,0 +1,1348 @@
+{
+    "GUID": "656db8e0-6dc3-11e8-977e-574156f5cc39",
+    "lastModifTS": "2018-06-19T11:11:24.018Z",
+    "persistenceSchemaVersion": "2",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "collections": [
+        {
+            "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "unique": true,
+                    "name": "fecID",
+                    "GUID": "0d59e6b2-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "H2MI05119"
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "district",
+                    "childType": "number",
+                    "GUID": "0d59e6b3-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 5,
+                    "unique": false
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "name",
+                    "GUID": "0d59e6b4-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "KILDEE, DANIEL T.",
+                    "unique": false
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "office",
+                    "GUID": "0d59e6b5-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "H",
+                    "unique": false
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "state",
+                    "GUID": "0d59e6b6-739f-11e8-9291-1b091dee6fcb",
+                    "required": false,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "MI",
+                    "unique": false
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "election_year",
+                    "childType": "number",
+                    "GUID": "0d59e6b7-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 2016,
+                    "unique": false
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "party",
+                    "GUID": "0d59e6b8-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "DEM",
+                    "unique": false
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "incumbent",
+                    "GUID": "0d59e6b9-739f-11e8-9291-1b091dee6fcb",
+                    "required": false,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "I",
+                    "unique": false
+                }
+            ],
+            "type": "object",
+            "GUID": "0d59e6b1-739f-11e8-9291-1b091dee6fcb",
+            "definitions": {
+                "GUID": "0d59e6b0-739f-11e8-9291-1b091dee6fcb",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Candidate",
+            "constraint": [],
+            "index": [
+                {
+                    "GUID": "0d5ea1a0-739f-11e8-9291-1b091dee6fcb",
+                    "name": ":Candidate.[fecID]",
+                    "key": [
+                        {
+                            "keyId": "0d59e6b2-739f-11e8-9291-1b091dee6fcb",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_unique_property",
+                    "provider": "",
+                    "description": "",
+                    "storedProcComments": ""
+                }
+            ],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "properties": [
+                {
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "properties": [],
+                    "name": "date",
+                    "GUID": "0d5bbb72-739f-11e8-9291-1b091dee6fcb",
+                    "multipleTypes": [
+                        {
+                            "GUID": "0d5b9461-739f-11e8-9291-1b091dee6fcb",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "unit": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "mode": "",
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric"
+                        },
+                        {
+                            "GUID": "0d5b9462-739f-11e8-9291-1b091dee6fcb",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "unique": false,
+                            "type": "string"
+                        }
+                    ],
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "amount",
+                    "childType": "number",
+                    "GUID": "0d5bbb73-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 500,
+                    "unique": false
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "unique": true,
+                    "name": "sub_id",
+                    "childType": "number",
+                    "GUID": "0d5bbb74-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 2120920161357130000
+                }
+            ],
+            "type": "object",
+            "GUID": "0d5bbb71-739f-11e8-9291-1b091dee6fcb",
+            "definitions": {
+                "GUID": "0d5bbb70-739f-11e8-9291-1b091dee6fcb",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Contribution",
+            "constraint": [],
+            "index": [
+                {
+                    "GUID": "0d5ec8b0-739f-11e8-9291-1b091dee6fcb",
+                    "name": ":Contribution.[sub_id]",
+                    "key": [
+                        {
+                            "keyId": "0d5bbb74-739f-11e8-9291-1b091dee6fcb",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_unique_property",
+                    "provider": "",
+                    "description": "",
+                    "storedProcComments": ""
+                }
+            ],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "name",
+                    "GUID": "0d5e2c75-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "KOPEC, JOHN R",
+                    "unique": false
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "unique": true,
+                    "name": "namezip",
+                    "GUID": "0d5e2c76-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "KOPEC, JOHN R628964192"
+                },
+                {
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "properties": [],
+                    "name": "zip_code",
+                    "GUID": "0d5e2c77-739f-11e8-9291-1b091dee6fcb",
+                    "multipleTypes": [
+                        {
+                            "GUID": "0d5e2c71-739f-11e8-9291-1b091dee6fcb",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "unit": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "mode": "",
+                            "unique": false,
+                            "childType": "number",
+                            "type": "numeric"
+                        },
+                        {
+                            "GUID": "0d5e2c72-739f-11e8-9291-1b091dee6fcb",
+                            "description": "",
+                            "dependencies": [],
+                            "id": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "unique": false,
+                            "type": "string"
+                        }
+                    ],
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "type": "object",
+            "GUID": "0d5e2c74-739f-11e8-9291-1b091dee6fcb",
+            "definitions": {
+                "GUID": "0d5e2c73-739f-11e8-9291-1b091dee6fcb",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Contributor",
+            "constraint": [],
+            "index": [
+                {
+                    "GUID": "0d5ec8b3-739f-11e8-9291-1b091dee6fcb",
+                    "name": ":Contributor.[namezip]",
+                    "key": [
+                        {
+                            "keyId": "0d5e2c76-739f-11e8-9291-1b091dee6fcb",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_unique_property",
+                    "provider": "",
+                    "description": "",
+                    "storedProcComments": ""
+                }
+            ],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "unique": true,
+                    "name": "name",
+                    "GUID": "0d5ca5d3-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "NGL SUPPLY COMPANY"
+                }
+            ],
+            "type": "object",
+            "GUID": "0d5ca5d2-739f-11e8-9291-1b091dee6fcb",
+            "definitions": {
+                "GUID": "0d5ca5d1-739f-11e8-9291-1b091dee6fcb",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Employer",
+            "constraint": [],
+            "index": [
+                {
+                    "GUID": "0d5ec8b1-739f-11e8-9291-1b091dee6fcb",
+                    "name": ":Employer.[name]",
+                    "key": [
+                        {
+                            "keyId": "0d5ca5d3-739f-11e8-9291-1b091dee6fcb",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_unique_property",
+                    "provider": "",
+                    "description": "",
+                    "storedProcComments": ""
+                }
+            ],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "name",
+                    "GUID": "0d5d4212-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "MDU RESOURCES GROUP GOOD GOVERNMENT FUND",
+                    "unique": false
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "designation",
+                    "GUID": "0d5d4213-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "U",
+                    "unique": false
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "category",
+                    "GUID": "0d5d4214-739f-11e8-9291-1b091dee6fcb",
+                    "required": false,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "C",
+                    "unique": false
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "committee_party",
+                    "GUID": "0d5d4215-739f-11e8-9291-1b091dee6fcb",
+                    "required": false,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "DEM",
+                    "unique": false
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "unique": true,
+                    "name": "committee_id",
+                    "GUID": "0d5d4216-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "C00163253"
+                },
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "name": "committee_type",
+                    "GUID": "0d5d4217-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "Q",
+                    "unique": false
+                }
+            ],
+            "type": "object",
+            "GUID": "0d5d4211-739f-11e8-9291-1b091dee6fcb",
+            "definitions": {
+                "GUID": "0d5d4210-739f-11e8-9291-1b091dee6fcb",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "FECCommittee",
+            "constraint": [],
+            "index": [
+                {
+                    "GUID": "0d5ec8b2-739f-11e8-9291-1b091dee6fcb",
+                    "name": ":FECCommittee.[committee_id]",
+                    "key": [
+                        {
+                            "keyId": "0d5d4216-739f-11e8-9291-1b091dee6fcb",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_unique_property",
+                    "provider": "",
+                    "description": "",
+                    "storedProcComments": ""
+                }
+            ],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "unique": true,
+                    "name": "name",
+                    "GUID": "0d5ad117-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "PHYSICAL THERAPY"
+                }
+            ],
+            "type": "object",
+            "GUID": "0d5ad116-739f-11e8-9291-1b091dee6fcb",
+            "definitions": {
+                "GUID": "0d5ad115-739f-11e8-9291-1b091dee6fcb",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Occupation",
+            "constraint": [],
+            "index": [
+                {
+                    "GUID": "0d5ea1a2-739f-11e8-9291-1b091dee6fcb",
+                    "name": ":Occupation.[name]",
+                    "key": [
+                        {
+                            "keyId": "0d5ad117-739f-11e8-9291-1b091dee6fcb",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_unique_property",
+                    "provider": "",
+                    "description": "",
+                    "storedProcComments": ""
+                }
+            ],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "unique": true,
+                    "name": "name",
+                    "GUID": "0d5b4643-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "NATIONAL PAWNBROKERS ASSOCIATION INC"
+                }
+            ],
+            "type": "object",
+            "GUID": "0d5b4642-739f-11e8-9291-1b091dee6fcb",
+            "definitions": {
+                "GUID": "0d5b4641-739f-11e8-9291-1b091dee6fcb",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "Organization",
+            "constraint": [],
+            "index": [
+                {
+                    "GUID": "0d5ea1a3-739f-11e8-9291-1b091dee6fcb",
+                    "name": ":Organization.[name]",
+                    "key": [
+                        {
+                            "keyId": "0d5b4643-739f-11e8-9291-1b091dee6fcb",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_unique_property",
+                    "provider": "",
+                    "description": "",
+                    "storedProcComments": ""
+                }
+            ],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "properties": [
+                {
+                    "type": "string",
+                    "primaryKey": false,
+                    "unique": true,
+                    "name": "code",
+                    "GUID": "0d5ad113-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "AS"
+                }
+            ],
+            "type": "object",
+            "GUID": "0d5ad112-739f-11e8-9291-1b091dee6fcb",
+            "definitions": {
+                "GUID": "0d5ad111-739f-11e8-9291-1b091dee6fcb",
+                "properties": [],
+                "type": "definitions"
+            },
+            "collectionName": "State",
+            "constraint": [],
+            "index": [
+                {
+                    "GUID": "0d5ea1a1-739f-11e8-9291-1b091dee6fcb",
+                    "name": ":State.[code]",
+                    "key": [
+                        {
+                            "keyId": "0d5ad113-739f-11e8-9291-1b091dee6fcb",
+                            "type": ""
+                        }
+                    ],
+                    "state": "ONLINE",
+                    "type": "node_unique_property",
+                    "provider": "",
+                    "description": "",
+                    "storedProcComments": ""
+                }
+            ],
+            "hasCollation": false,
+            "collation": {}
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "name": "nicar.db",
+            "type": "bucket",
+            "description": "",
+            "comments": "",
+            "collectionIds": [
+                "0d59e6b1-739f-11e8-9291-1b091dee6fcb",
+                "0d5ad112-739f-11e8-9291-1b091dee6fcb",
+                "0d5ad116-739f-11e8-9291-1b091dee6fcb",
+                "0d5b4642-739f-11e8-9291-1b091dee6fcb",
+                "0d5bbb71-739f-11e8-9291-1b091dee6fcb",
+                "0d5ca5d2-739f-11e8-9291-1b091dee6fcb",
+                "0d5d4211-739f-11e8-9291-1b091dee6fcb",
+                "0d5e2c74-739f-11e8-9291-1b091dee6fcb"
+            ],
+            "backgroundColor": {
+                "r": 33,
+                "g": 150,
+                "b": 243,
+                "a": 1
+            },
+            "show": true,
+            "indexes": [],
+            "addFieldsToBucket": true,
+            "isPlugin": true
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "0d688cb1-739f-11e8-9291-1b091dee6fcb",
+            "name": "MADE_CONTRIBUTION",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "0d5e2c74-739f-11e8-9291-1b091dee6fcb",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "0d5bbb71-739f-11e8-9291-1b091dee6fcb",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "properties": []
+        },
+        {
+            "GUID": "0d688cb2-739f-11e8-9291-1b091dee6fcb",
+            "name": "LIVES_IN",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "0d5e2c74-739f-11e8-9291-1b091dee6fcb",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "0d5ad112-739f-11e8-9291-1b091dee6fcb",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "properties": []
+        },
+        {
+            "GUID": "0d688cb3-739f-11e8-9291-1b091dee6fcb",
+            "name": "WORKS_FOR",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "0d5e2c74-739f-11e8-9291-1b091dee6fcb",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "0d5ca5d2-739f-11e8-9291-1b091dee6fcb",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "properties": []
+        },
+        {
+            "GUID": "0d68b3c0-739f-11e8-9291-1b091dee6fcb",
+            "name": "FUNDS",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "0d5d4211-739f-11e8-9291-1b091dee6fcb",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "0d59e6b1-739f-11e8-9291-1b091dee6fcb",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "properties": [
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "fec_year",
+                    "childType": "number",
+                    "GUID": "0d6112a2-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 2016,
+                    "unique": false
+                },
+                {
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "name": "cand_year",
+                    "childType": "number",
+                    "GUID": "0d6112a3-739f-11e8-9291-1b091dee6fcb",
+                    "required": true,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": "",
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "",
+                    "sample": 2012,
+                    "unique": false
+                }
+            ]
+        },
+        {
+            "GUID": "0d68b3c1-739f-11e8-9291-1b091dee6fcb",
+            "name": "MADE_TO",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "0d5bbb71-739f-11e8-9291-1b091dee6fcb",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "0d5d4211-739f-11e8-9291-1b091dee6fcb",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "properties": []
+        },
+        {
+            "GUID": "0d68b3c2-739f-11e8-9291-1b091dee6fcb",
+            "name": "CONNECTED_ORG",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "0d5d4211-739f-11e8-9291-1b091dee6fcb",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "0d5b4642-739f-11e8-9291-1b091dee6fcb",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "properties": []
+        },
+        {
+            "GUID": "0d68b3c3-739f-11e8-9291-1b091dee6fcb",
+            "name": "HAS_OCCUPATION",
+            "description": "",
+            "comments": "",
+            "relationshipType": "",
+            "parentCollection": "0d5e2c74-739f-11e8-9291-1b091dee6fcb",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childCollection": "0d5ad116-739f-11e8-9291-1b091dee6fcb",
+            "childField": [],
+            "childCardinality": "1",
+            "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "properties": []
+        }
+    ],
+    "users": [],
+    "idToNameHashTable": {
+        "95a774b0-6dc3-11e8-977e-574156f5cc39": "nicar.db",
+        "0d59e6b2-739f-11e8-9291-1b091dee6fcb": "fecID",
+        "0d59e6b3-739f-11e8-9291-1b091dee6fcb": "district",
+        "0d59e6b4-739f-11e8-9291-1b091dee6fcb": "name",
+        "0d59e6b5-739f-11e8-9291-1b091dee6fcb": "office",
+        "0d59e6b6-739f-11e8-9291-1b091dee6fcb": "state",
+        "0d59e6b7-739f-11e8-9291-1b091dee6fcb": "election_year",
+        "0d59e6b8-739f-11e8-9291-1b091dee6fcb": "party",
+        "0d59e6b9-739f-11e8-9291-1b091dee6fcb": "incumbent",
+        "0d59e6b1-739f-11e8-9291-1b091dee6fcb": "Candidate",
+        "0d5ad113-739f-11e8-9291-1b091dee6fcb": "code",
+        "0d5ad112-739f-11e8-9291-1b091dee6fcb": "State",
+        "0d5ad117-739f-11e8-9291-1b091dee6fcb": "name",
+        "0d5ad116-739f-11e8-9291-1b091dee6fcb": "Occupation",
+        "0d5b4643-739f-11e8-9291-1b091dee6fcb": "name",
+        "0d5b4642-739f-11e8-9291-1b091dee6fcb": "Organization",
+        "0d5bbb72-739f-11e8-9291-1b091dee6fcb": "date",
+        "0d5bbb73-739f-11e8-9291-1b091dee6fcb": "amount",
+        "0d5bbb74-739f-11e8-9291-1b091dee6fcb": "sub_id",
+        "0d5bbb71-739f-11e8-9291-1b091dee6fcb": "Contribution",
+        "0d5ca5d3-739f-11e8-9291-1b091dee6fcb": "name",
+        "0d5ca5d2-739f-11e8-9291-1b091dee6fcb": "Employer",
+        "0d5d4212-739f-11e8-9291-1b091dee6fcb": "name",
+        "0d5d4213-739f-11e8-9291-1b091dee6fcb": "designation",
+        "0d5d4214-739f-11e8-9291-1b091dee6fcb": "category",
+        "0d5d4215-739f-11e8-9291-1b091dee6fcb": "committee_party",
+        "0d5d4216-739f-11e8-9291-1b091dee6fcb": "committee_id",
+        "0d5d4217-739f-11e8-9291-1b091dee6fcb": "committee_type",
+        "0d5d4211-739f-11e8-9291-1b091dee6fcb": "FECCommittee",
+        "0d5e2c75-739f-11e8-9291-1b091dee6fcb": "name",
+        "0d5e2c76-739f-11e8-9291-1b091dee6fcb": "namezip",
+        "0d5e2c77-739f-11e8-9291-1b091dee6fcb": "zip_code",
+        "0d5e2c74-739f-11e8-9291-1b091dee6fcb": "Contributor",
+        "0d688cb1-739f-11e8-9291-1b091dee6fcb": "MADE_CONTRIBUTION",
+        "0d688cb2-739f-11e8-9291-1b091dee6fcb": "LIVES_IN",
+        "0d688cb3-739f-11e8-9291-1b091dee6fcb": "WORKS_FOR",
+        "0d68b3c0-739f-11e8-9291-1b091dee6fcb": "FUNDS",
+        "0d68b3c1-739f-11e8-9291-1b091dee6fcb": "MADE_TO",
+        "0d68b3c2-739f-11e8-9291-1b091dee6fcb": "CONNECTED_ORG",
+        "0d68b3c3-739f-11e8-9291-1b091dee6fcb": "HAS_OCCUPATION",
+        "0d688cb0-739f-11e8-9291-1b091dee6fcb": "nicar.db"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "656db8e1-6dc3-11e8-977e-574156f5cc39"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "656db8e2-6dc3-11e8-977e-574156f5cc39"
+    },
+    "modelName": "New model",
+    "dbVersion": "3.x",
+    "dbVendor": "Neo4j",
+    "appTarget": "NEO4J",
+    "creationTS": "2018-06-11T22:04:22.254Z",
+    "hideModelViews": false,
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginVersion": "",
+        "pluginName": "",
+        "pluginLink": "",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "0d59e6b1-739f-11e8-9291-1b091dee6fcb",
+                        "x": 100,
+                        "y": 221,
+                        "width": 243,
+                        "height": 141,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "0d5ad112-739f-11e8-9291-1b091dee6fcb",
+                        "x": 100,
+                        "y": 745,
+                        "width": 243,
+                        "height": 43,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "0d5ad116-739f-11e8-9291-1b091dee6fcb",
+                        "x": 1084,
+                        "y": 534,
+                        "width": 243,
+                        "height": 43,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "0d5b4642-739f-11e8-9291-1b091dee6fcb",
+                        "x": 1084,
+                        "y": 221,
+                        "width": 243,
+                        "height": 43,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "0d5bbb71-739f-11e8-9291-1b091dee6fcb",
+                        "x": 428,
+                        "y": 221,
+                        "width": 243,
+                        "height": 71,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "0d5ca5d2-739f-11e8-9291-1b091dee6fcb",
+                        "x": 100,
+                        "y": 432,
+                        "width": 243,
+                        "height": 43,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "0d5d4211-739f-11e8-9291-1b091dee6fcb",
+                        "x": 756,
+                        "y": 346,
+                        "width": 243,
+                        "height": 113,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "0d5e2c74-739f-11e8-9291-1b091dee6fcb",
+                        "x": 428,
+                        "y": 562,
+                        "width": 243,
+                        "height": 71,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "0d688cb1-739f-11e8-9291-1b091dee6fcb",
+                        "x": 423,
+                        "y": 464,
+                        "width": 208,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "0d688cb2-739f-11e8-9291-1b091dee6fcb",
+                        "x": 474,
+                        "y": 703,
+                        "width": 151,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "0d688cb3-739f-11e8-9291-1b091dee6fcb",
+                        "x": 146,
+                        "y": 645,
+                        "width": 151,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "0d68b3c0-739f-11e8-9291-1b091dee6fcb",
+                        "x": 757,
+                        "y": 221,
+                        "width": 241,
+                        "height": 55,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "0d68b3c1-739f-11e8-9291-1b091dee6fcb",
+                        "x": 538,
+                        "y": 358,
+                        "width": 151,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "0d68b3c2-739f-11e8-9291-1b091dee6fcb",
+                        "x": 1114,
+                        "y": 334,
+                        "width": 183,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "0d68b3c3-739f-11e8-9291-1b091dee6fcb",
+                        "x": 785,
+                        "y": 629,
+                        "width": 186,
+                        "height": 30,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 50,
+                        "y": 20,
+                        "GUID": "95a774b0-6dc3-11e8-977e-574156f5cc39"
+                    },
+                    {
+                        "x": 60,
+                        "y": 151,
+                        "GUID": "0d688cb0-739f-11e8-9291-1b091dee6fcb"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "0d688cb1-739f-11e8-9291-1b091dee6fcb",
+                "selectedCollections": [],
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "displayColorPicker": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true
+        }
+    }
+}

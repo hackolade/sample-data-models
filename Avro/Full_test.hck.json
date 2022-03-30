@@ -1,0 +1,927 @@
+{
+    "modelName": "New model",
+    "collections": [
+        {
+            "GUID": "38e85a30-cbed-11e9-ae66-f7db59c7febc",
+            "collectionName": "New_record",
+            "code": "",
+            "type": "object",
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "required": true,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "type": "string",
+                    "GUID": "707bfd60-cbf9-11e9-ae66-f7db59c7febc",
+                    "name": "Identifier",
+                    "code": "",
+                    "hackoladeMeta": {},
+                    "isActivated": true
+                },
+                {
+                    "required": true,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "type": "string",
+                    "GUID": "7f18d5a0-cbf9-11e9-ae66-f7db59c7febc",
+                    "name": "Name",
+                    "code": "",
+                    "hackoladeMeta": {},
+                    "isActivated": true
+                },
+                {
+                    "GUID": "88219bf0-cbf9-11e9-ae66-f7db59c7febc",
+                    "name": "Description",
+                    "code": "",
+                    "type": "multiple",
+                    "properties": [],
+                    "multipleTypes": [
+                        {
+                            "type": "null",
+                            "format": "",
+                            "GUID": "9237b390-cbf9-11e9-ae66-f7db59c7febc",
+                            "error": {}
+                        },
+                        {
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "enum": [],
+                            "sample": "",
+                            "type": "string",
+                            "GUID": "9237b391-cbf9-11e9-ae66-f7db59c7febc"
+                        }
+                    ],
+                    "relationshipType": "",
+                    "primaryKey": false,
+                    "hackoladeMeta": {},
+                    "default": "null",
+                    "isActivated": true
+                },
+                {
+                    "type": "choice",
+                    "properties": [
+                        {
+                            "GUID": "b633e3e0-cbf9-11e9-ae66-f7db59c7febc",
+                            "name": "subschema",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "required": true,
+                                    "type": "null",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "c3c1bd20-cbf9-11e9-ae66-f7db59c7febc",
+                                    "name": "PersonRecord",
+                                    "code": "",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "displayName": "subschema",
+                            "isActivated": true,
+                            "subschema": true,
+                            "childType": "record"
+                        },
+                        {
+                            "GUID": "bb821330-cbf9-11e9-ae66-f7db59c7febc",
+                            "name": "subschema",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "GUID": "fb544550-cbf9-11e9-ae66-f7db59c7febc",
+                                    "type": "reference",
+                                    "name": "PersonRecord",
+                                    "$ref": "#/definitions/PersonRecord",
+                                    "refType": "internal",
+                                    "ref": "ce20c4a0-cbf9-11e9-ae66-f7db59c7febc",
+                                    "refIdPath": [
+                                        "38e85a30-cbed-11e9-ae66-f7db59c7febc",
+                                        "38eb1950-cbed-11e9-ae66-f7db59c7febc",
+                                        "ce20c4a0-cbf9-11e9-ae66-f7db59c7febc"
+                                    ],
+                                    "code": "",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "displayName": "subschema",
+                            "isActivated": true,
+                            "subschema": true,
+                            "childType": "record"
+                        }
+                    ],
+                    "choice": "oneOf",
+                    "GUID": "b5beb3e0-cbf9-11e9-ae66-f7db59c7febc",
+                    "isActivated": true
+                },
+                {
+                    "type": "choice",
+                    "properties": [
+                        {
+                            "GUID": "39101a90-cbfa-11e9-ae66-f7db59c7febc",
+                            "name": "subschema",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "required": true,
+                                    "type": "null",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "447ce890-cbfa-11e9-ae66-f7db59c7febc",
+                                    "name": "VendorRecord",
+                                    "code": "",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "displayName": "subschema",
+                            "isActivated": true,
+                            "subschema": true,
+                            "childType": "record"
+                        },
+                        {
+                            "GUID": "3cdefce0-cbfa-11e9-ae66-f7db59c7febc",
+                            "name": "subschema",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "GUID": "20229d40-cbfb-11e9-ae66-f7db59c7febc",
+                                    "type": "reference",
+                                    "name": "VendorRecord",
+                                    "$ref": "#/definitions/VendorRecord",
+                                    "refType": "internal",
+                                    "ref": "f6007b40-cbfa-11e9-ae66-f7db59c7febc",
+                                    "refIdPath": [
+                                        "38e85a30-cbed-11e9-ae66-f7db59c7febc",
+                                        "38eb1950-cbed-11e9-ae66-f7db59c7febc",
+                                        "f6007b40-cbfa-11e9-ae66-f7db59c7febc"
+                                    ],
+                                    "code": "",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "displayName": "subschema",
+                            "isActivated": true,
+                            "subschema": true,
+                            "childType": "record"
+                        }
+                    ],
+                    "choice": "oneOf",
+                    "GUID": "386582b0-cbfa-11e9-ae66-f7db59c7febc",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "392b56a0-cbed-11e9-ae66-f7db59c7febc",
+                    "name": "Test_null",
+                    "code": "",
+                    "type": "multiple",
+                    "properties": [],
+                    "multipleTypes": [
+                        {
+                            "type": "null",
+                            "format": "",
+                            "GUID": "7118a900-cbed-11e9-ae66-f7db59c7febc",
+                            "error": {}
+                        },
+                        {
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "enum": [],
+                            "sample": "",
+                            "type": "string",
+                            "GUID": "7118f720-cbed-11e9-ae66-f7db59c7febc"
+                        }
+                    ],
+                    "relationshipType": "",
+                    "primaryKey": false,
+                    "hackoladeMeta": {},
+                    "default": "null",
+                    "isActivated": true
+                },
+                {
+                    "GUID": "36561590-cbf8-11e9-ae66-f7db59c7febc",
+                    "name": "Test_null_multi",
+                    "code": "",
+                    "type": "multiple",
+                    "properties": [],
+                    "multipleTypes": [
+                        {
+                            "type": "null",
+                            "format": "",
+                            "GUID": "4796e4b0-cbf8-11e9-ae66-f7db59c7febc",
+                            "error": {}
+                        },
+                        {
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "enum": [],
+                            "sample": "",
+                            "type": "string",
+                            "GUID": "4796e4b1-cbf8-11e9-ae66-f7db59c7febc"
+                        },
+                        {
+                            "unit": "",
+                            "logicalType": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "enum": [],
+                            "mode": "int",
+                            "sample": "",
+                            "childType": "number",
+                            "type": "numeric",
+                            "GUID": "5e9f0ac0-cbf8-11e9-ae66-f7db59c7febc",
+                            "id": ""
+                        }
+                    ],
+                    "relationshipType": "",
+                    "primaryKey": false,
+                    "hackoladeMeta": {},
+                    "default": null,
+                    "isActivated": true
+                },
+                {
+                    "GUID": "7da87230-cbf8-11e9-ae66-f7db59c7febc",
+                    "name": "Test_null_multinull",
+                    "code": "",
+                    "type": "multiple",
+                    "properties": [],
+                    "multipleTypes": [
+                        {
+                            "type": "null",
+                            "format": "",
+                            "GUID": "93e5ce30-cbf8-11e9-ae66-f7db59c7febc",
+                            "error": {}
+                        },
+                        {
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "enum": [],
+                            "sample": "",
+                            "type": "string",
+                            "GUID": "93e5f540-cbf8-11e9-ae66-f7db59c7febc"
+                        },
+                        {
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "enum": [],
+                            "sample": "",
+                            "childType": "bytes",
+                            "type": "string",
+                            "GUID": "96665e90-cbf8-11e9-ae66-f7db59c7febc"
+                        },
+                        {
+                            "unit": "",
+                            "logicalType": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "enum": [],
+                            "mode": "int",
+                            "sample": "",
+                            "childType": "number",
+                            "type": "numeric",
+                            "GUID": "978bcbc0-cbf8-11e9-ae66-f7db59c7febc"
+                        }
+                    ],
+                    "relationshipType": "",
+                    "primaryKey": false,
+                    "hackoladeMeta": {},
+                    "default": "null",
+                    "isActivated": true
+                },
+                {
+                    "type": "choice",
+                    "properties": [
+                        {
+                            "GUID": "0b4669d0-cbf9-11e9-ae66-f7db59c7febc",
+                            "name": "subschema",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "required": true,
+                                    "type": "null",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "15463a50-cbf9-11e9-ae66-f7db59c7febc",
+                                    "name": "testarr_null",
+                                    "code": "",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "displayName": "subschema",
+                            "isActivated": true,
+                            "subschema": true,
+                            "childType": "record"
+                        },
+                        {
+                            "GUID": "0e9ac4f0-cbf9-11e9-ae66-f7db59c7febc",
+                            "name": "subschema",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "required": true,
+                                    "properties": [
+                                        {
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "relationshipType": "",
+                                            "properties": [
+                                                {
+                                                    "required": true,
+                                                    "primaryKey": false,
+                                                    "relationshipType": "",
+                                                    "type": "string",
+                                                    "GUID": "369f3710-cbf9-11e9-ae66-f7db59c7febc",
+                                                    "name": "Identifier",
+                                                    "code": "",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true
+                                                }
+                                            ],
+                                            "additionalProperties": false,
+                                            "childType": "record",
+                                            "type": "document",
+                                            "GUID": "28235450-cbf9-11e9-ae66-f7db59c7febc",
+                                            "hackoladeMeta": {},
+                                            "arrayItem": true,
+                                            "arrayParentType": "array",
+                                            "name": "testarr_null",
+                                            "displayName": "testarr_null",
+                                            "isActivated": true
+                                        }
+                                    ],
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "additionalItems": true,
+                                    "childType": "array",
+                                    "type": "array",
+                                    "GUID": "11ad0e00-cbf9-11e9-ae66-f7db59c7febc",
+                                    "name": "testarr_null",
+                                    "code": "",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "displayName": "subschema",
+                            "isActivated": true,
+                            "subschema": true,
+                            "childType": "record"
+                        }
+                    ],
+                    "choice": "oneOf",
+                    "GUID": "0b0c4700-cbf9-11e9-ae66-f7db59c7febc",
+                    "isActivated": true
+                },
+                {
+                    "type": "choice",
+                    "properties": [
+                        {
+                            "GUID": "39423a00-cbed-11e9-ae66-f7db59c7febc",
+                            "name": "subschema",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "required": true,
+                                    "type": "null",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "7118a900-cbed-11e9-ae66-f7db59c7febc",
+                                    "name": "Testenum_null",
+                                    "code": "",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "displayName": "subschema",
+                            "isActivated": true,
+                            "subschema": true,
+                            "childType": "record"
+                        },
+                        {
+                            "GUID": "3b62f720-cbed-11e9-ae66-f7db59c7febc",
+                            "name": "subschema",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "required": true,
+                                    "pattern": "^[A-Za-z_][A-Za-z0-9_]*$",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "symbols": [
+                                        "Y",
+                                        "N"
+                                    ],
+                                    "childType": "enum",
+                                    "type": "string",
+                                    "GUID": "3656d8e0-cbf8-11e9-ae66-f7db59c7febc",
+                                    "name": "Testenum_null",
+                                    "code": "",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "displayName": "subschema",
+                            "isActivated": true,
+                            "subschema": true,
+                            "childType": "record"
+                        }
+                    ],
+                    "choice": "oneOf",
+                    "GUID": "38e85a30-cbed-11e9-ae66-f7db59c7febc",
+                    "isActivated": true
+                },
+                {
+                    "type": "choice",
+                    "properties": [
+                        {
+                            "GUID": "5e9f31d0-cbf8-11e9-ae66-f7db59c7febc",
+                            "name": "subschema",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "required": true,
+                                    "type": "null",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "GUID": "7daa46f0-cbf8-11e9-ae66-f7db59c7febc",
+                                    "name": "Testmap_null",
+                                    "code": "",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "displayName": "subschema",
+                            "isActivated": true,
+                            "subschema": true,
+                            "childType": "record"
+                        },
+                        {
+                            "GUID": "7da87230-cbf8-11e9-ae66-f7db59c7febc",
+                            "name": "subschema",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "subtype": "map<string>",
+                                    "primaryKey": false,
+                                    "properties": [],
+                                    "additionalProperties": false,
+                                    "childType": "map",
+                                    "type": "document",
+                                    "GUID": "93e5f540-cbf8-11e9-ae66-f7db59c7febc",
+                                    "name": "Testmap_null",
+                                    "code": "",
+                                    "required": true,
+                                    "hackoladeMeta": {},
+                                    "isActivated": true
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "displayName": "subschema",
+                            "isActivated": true,
+                            "subschema": true,
+                            "childType": "record"
+                        }
+                    ],
+                    "choice": "oneOf",
+                    "GUID": "4796e4b1-cbf8-11e9-ae66-f7db59c7febc",
+                    "isActivated": true
+                },
+                {
+                    "default": "abc",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "type": "string",
+                    "GUID": "b1e89b10-cbf8-11e9-ae66-f7db59c7febc",
+                    "name": "Test_notreq_defstr",
+                    "code": "",
+                    "hackoladeMeta": {},
+                    "isActivated": true
+                },
+                {
+                    "required": true,
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "type": "string",
+                    "GUID": "c30cba70-cbf8-11e9-ae66-f7db59c7febc",
+                    "name": "Test_notreq_nodef",
+                    "code": "",
+                    "hackoladeMeta": {},
+                    "isActivated": true
+                },
+                {
+                    "GUID": "c6f71400-cbf8-11e9-ae66-f7db59c7febc",
+                    "name": "Test_notreq_multi_defnull",
+                    "code": "",
+                    "type": "multiple",
+                    "properties": [],
+                    "multipleTypes": [
+                        {
+                            "type": "null",
+                            "format": "",
+                            "GUID": "0b0c4700-cbf9-11e9-ae66-f7db59c7febc",
+                            "error": {}
+                        },
+                        {
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "enum": [],
+                            "sample": "",
+                            "childType": "bytes",
+                            "type": "string",
+                            "GUID": "0b4642c0-cbf9-11e9-ae66-f7db59c7febc",
+                            "id": ""
+                        },
+                        {
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "enum": [],
+                            "sample": "",
+                            "type": "string",
+                            "GUID": "0e9ac4f0-cbf9-11e9-ae66-f7db59c7febc"
+                        },
+                        {
+                            "unit": "",
+                            "logicalType": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "enum": [],
+                            "mode": "int",
+                            "sample": "",
+                            "childType": "number",
+                            "type": "numeric",
+                            "GUID": "11ad0e00-cbf9-11e9-ae66-f7db59c7febc"
+                        }
+                    ],
+                    "relationshipType": "",
+                    "primaryKey": false,
+                    "hackoladeMeta": {},
+                    "default": null,
+                    "isActivated": true
+                },
+                {
+                    "GUID": "11adf860-cbf9-11e9-ae66-f7db59c7febc",
+                    "name": "Test_req_multi_withnull",
+                    "code": "",
+                    "type": "multiple",
+                    "properties": [],
+                    "multipleTypes": [
+                        {
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "enum": [],
+                            "sample": "",
+                            "type": "string",
+                            "GUID": "28235450-cbf9-11e9-ae66-f7db59c7febc",
+                            "error": {}
+                        },
+                        {
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "enum": [],
+                            "sample": "",
+                            "childType": "bytes",
+                            "type": "string",
+                            "GUID": "2ea102f0-cbf9-11e9-ae66-f7db59c7febc"
+                        },
+                        {
+                            "unit": "",
+                            "logicalType": "",
+                            "minimum": "",
+                            "exclusiveMinimum": false,
+                            "maximum": "",
+                            "exclusiveMaximum": false,
+                            "multipleOf": "",
+                            "divisibleBy": "",
+                            "enum": [],
+                            "mode": "int",
+                            "sample": "",
+                            "childType": "number",
+                            "type": "numeric",
+                            "GUID": "369f3710-cbf9-11e9-ae66-f7db59c7febc"
+                        }
+                    ],
+                    "required": true,
+                    "relationshipType": "",
+                    "primaryKey": false,
+                    "hackoladeMeta": {},
+                    "isActivated": true
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [
+                    {
+                        "required": true,
+                        "primaryKey": false,
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "type": "string",
+                                "GUID": "d744b410-cbf9-11e9-ae66-f7db59c7febc",
+                                "name": "Identifier",
+                                "code": "",
+                                "hackoladeMeta": {},
+                                "isActivated": true
+                            },
+                            {
+                                "GUID": "e1718800-cbf9-11e9-ae66-f7db59c7febc",
+                                "name": "New_field",
+                                "code": "",
+                                "type": "multiple",
+                                "properties": [],
+                                "multipleTypes": [
+                                    {
+                                        "type": "null",
+                                        "format": "",
+                                        "GUID": "ee453900-cbf9-11e9-ae66-f7db59c7febc",
+                                        "error": {}
+                                    },
+                                    {
+                                        "minLength": "",
+                                        "maxLength": "",
+                                        "pattern": "",
+                                        "enum": [],
+                                        "sample": "",
+                                        "type": "string",
+                                        "GUID": "ee453901-cbf9-11e9-ae66-f7db59c7febc"
+                                    }
+                                ],
+                                "primaryKey": false,
+                                "hackoladeMeta": {},
+                                "default": "null",
+                                "isActivated": true
+                            }
+                        ],
+                        "additionalProperties": false,
+                        "childType": "record",
+                        "type": "document",
+                        "GUID": "ce20c4a0-cbf9-11e9-ae66-f7db59c7febc",
+                        "name": "PersonRecord",
+                        "code": "",
+                        "hackoladeMeta": {},
+                        "definitionRefs": [
+                            [
+                                "38e85a30-cbed-11e9-ae66-f7db59c7febc",
+                                "b5beb3e0-cbf9-11e9-ae66-f7db59c7febc",
+                                "bb821330-cbf9-11e9-ae66-f7db59c7febc",
+                                "fb544550-cbf9-11e9-ae66-f7db59c7febc"
+                            ]
+                        ],
+                        "isActivated": true
+                    },
+                    {
+                        "required": true,
+                        "primaryKey": false,
+                        "properties": [
+                            {
+                                "required": true,
+                                "primaryKey": false,
+                                "type": "string",
+                                "GUID": "fbaef300-cbfa-11e9-ae66-f7db59c7febc",
+                                "name": "Identifier",
+                                "code": "",
+                                "hackoladeMeta": {},
+                                "isActivated": true
+                            },
+                            {
+                                "GUID": "028f8220-cbfb-11e9-ae66-f7db59c7febc",
+                                "name": "Name",
+                                "code": "",
+                                "type": "multiple",
+                                "properties": [],
+                                "multipleTypes": [
+                                    {
+                                        "type": "null",
+                                        "format": "",
+                                        "GUID": "14a49130-cbfb-11e9-ae66-f7db59c7febc",
+                                        "error": {}
+                                    },
+                                    {
+                                        "minLength": "",
+                                        "maxLength": "",
+                                        "pattern": "",
+                                        "enum": [],
+                                        "sample": "",
+                                        "type": "string",
+                                        "GUID": "14a4b840-cbfb-11e9-ae66-f7db59c7febc"
+                                    }
+                                ],
+                                "primaryKey": false,
+                                "hackoladeMeta": {},
+                                "default": "null",
+                                "isActivated": true
+                            }
+                        ],
+                        "additionalProperties": false,
+                        "childType": "record",
+                        "type": "document",
+                        "GUID": "f6007b40-cbfa-11e9-ae66-f7db59c7febc",
+                        "name": "VendorRecord",
+                        "code": "",
+                        "hackoladeMeta": {},
+                        "definitionRefs": [
+                            [
+                                "38e85a30-cbed-11e9-ae66-f7db59c7febc",
+                                "386582b0-cbfa-11e9-ae66-f7db59c7febc",
+                                "3cdefce0-cbfa-11e9-ae66-f7db59c7febc",
+                                "20229d40-cbfb-11e9-ae66-f7db59c7febc"
+                            ]
+                        ],
+                        "isActivated": true
+                    }
+                ],
+                "GUID": "38eb1950-cbed-11e9-ae66-f7db59c7febc"
+            },
+            "collectionUsers": [],
+            "collation": {},
+            "bucketId": "38a5abe0-cbed-11e9-ae66-f7db59c7febc",
+            "isActivated": true
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "38a5abe0-cbed-11e9-ae66-f7db59c7febc",
+            "name": "com.test.canonicalmodel",
+            "code": "",
+            "type": "bucket",
+            "collectionIds": [
+                "38e85a30-cbed-11e9-ae66-f7db59c7febc"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "indexes": [],
+            "hackoladeMeta": {},
+            "isActivated": true
+        }
+    ],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "38a5abe0-cbed-11e9-ae66-f7db59c7febc": "com.test.canonicalmodel",
+        "392b56a0-cbed-11e9-ae66-f7db59c7febc": "Test_null",
+        "36561590-cbf8-11e9-ae66-f7db59c7febc": "Test_null_multi",
+        "7da87230-cbf8-11e9-ae66-f7db59c7febc": "subschema",
+        "11ad0e00-cbf9-11e9-ae66-f7db59c7febc": "testarr_null",
+        "15463a50-cbf9-11e9-ae66-f7db59c7febc": "testarr_null",
+        "28235450-cbf9-11e9-ae66-f7db59c7febc": "testarr_null",
+        "369f3710-cbf9-11e9-ae66-f7db59c7febc": "Identifier",
+        "707bfd60-cbf9-11e9-ae66-f7db59c7febc": "Identifier",
+        "7f18d5a0-cbf9-11e9-ae66-f7db59c7febc": "Name",
+        "88219bf0-cbf9-11e9-ae66-f7db59c7febc": "Description",
+        "c3c1bd20-cbf9-11e9-ae66-f7db59c7febc": "PersonRecord",
+        "fb544550-cbf9-11e9-ae66-f7db59c7febc": "PersonRecord",
+        "447ce890-cbfa-11e9-ae66-f7db59c7febc": "VendorRecord",
+        "20229d40-cbfb-11e9-ae66-f7db59c7febc": "VendorRecord",
+        "7118a900-cbed-11e9-ae66-f7db59c7febc": "Testenum_null",
+        "3656d8e0-cbf8-11e9-ae66-f7db59c7febc": "Testenum_null",
+        "7daa46f0-cbf8-11e9-ae66-f7db59c7febc": "Testmap_null",
+        "93e5f540-cbf8-11e9-ae66-f7db59c7febc": "Testmap_null",
+        "b1e89b10-cbf8-11e9-ae66-f7db59c7febc": "Test_notreq_defstr",
+        "c30cba70-cbf8-11e9-ae66-f7db59c7febc": "Test_notreq_nodef",
+        "c6f71400-cbf8-11e9-ae66-f7db59c7febc": "Test_notreq_multi_defnull",
+        "11adf860-cbf9-11e9-ae66-f7db59c7febc": "Test_req_multi_withnull",
+        "b633e3e0-cbf9-11e9-ae66-f7db59c7febc": "subschema",
+        "bb821330-cbf9-11e9-ae66-f7db59c7febc": "subschema",
+        "39101a90-cbfa-11e9-ae66-f7db59c7febc": "subschema",
+        "3cdefce0-cbfa-11e9-ae66-f7db59c7febc": "subschema",
+        "0b4669d0-cbf9-11e9-ae66-f7db59c7febc": "subschema",
+        "0e9ac4f0-cbf9-11e9-ae66-f7db59c7febc": "subschema",
+        "39423a00-cbed-11e9-ae66-f7db59c7febc": "subschema",
+        "3b62f720-cbed-11e9-ae66-f7db59c7febc": "subschema",
+        "5e9f31d0-cbf8-11e9-ae66-f7db59c7febc": "subschema",
+        "ce20c4a0-cbf9-11e9-ae66-f7db59c7febc": "PersonRecord",
+        "d744b410-cbf9-11e9-ae66-f7db59c7febc": "Identifier",
+        "e1718800-cbf9-11e9-ae66-f7db59c7febc": "New_field",
+        "f6007b40-cbfa-11e9-ae66-f7db59c7febc": "VendorRecord",
+        "fbaef300-cbfa-11e9-ae66-f7db59c7febc": "Identifier",
+        "028f8220-cbfb-11e9-ae66-f7db59c7febc": "Name"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "37cd7451-cbed-11e9-ae66-f7db59c7febc"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "f38a5c13-88b2-11ec-b2d0-75d3f8182ea0"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "37cd7452-cbed-11e9-ae66-f7db59c7febc"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVendor": "Avro",
+    "schemaNameStrategy": "TopicNameStrategy",
+    "appTarget": "Avro",
+    "creationTS": "2019-08-31T12:45:31.541Z",
+    "GUID": "37cd7450-cbed-11e9-ae66-f7db59c7febc",
+    "code": "",
+    "lastModifTS": "2022-02-08T07:45:41.021Z",
+    "persistenceSchemaVersion": "5",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "dbVersion": "",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Avro",
+        "pluginVersion": "0.1.84",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "5.4.3"
+    },
+    "hackoladeMeta": {},
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "38e85a30-cbed-11e9-ae66-f7db59c7febc",
+                        "x": 80,
+                        "y": 80,
+                        "width": 361,
+                        "height": 605,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 40,
+                        "y": 40,
+                        "GUID": "38a5abe0-cbed-11e9-ae66-f7db59c7febc"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

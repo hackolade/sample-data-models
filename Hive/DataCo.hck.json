@@ -1,0 +1,1464 @@
+{
+    "GUID": "17511960-dc52-11e8-8437-7734b2373917",
+    "lastModifTS": "2018-10-30T22:05:49.063Z",
+    "persistenceSchemaVersion": "2",
+    "description": "Inspired from https://www.cloudera.com/developers/get-started-with-hadoop-tutorial/exercise-1.html\n",
+    "comments": "",
+    "author": "Pascal",
+    "version": "0.1",
+    "collections": [
+        {
+            "GUID": "74a6d640-dc52-11e8-8437-7734b2373917",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": 11,
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "2fac2fd0-dc53-11e8-8437-7734b2373917"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "int",
+                    "sample": "",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "8b199a20-dc52-11e8-8437-7734b2373917",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "category_id",
+                    "error": {}
+                },
+                {
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": 11,
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "d6a9a070-dc52-11e8-8437-7734b2373917",
+                    "childRelationships": [],
+                    "foreignCollection": "186cc290-dc52-11e8-8437-7734b2373917",
+                    "foreignField": [
+                        "186cc290-dc52-11e8-8437-7734b2373917",
+                        "18b90dd0-dc52-11e8-8437-7734b2373917"
+                    ],
+                    "enum": [],
+                    "mode": "int",
+                    "sample": "",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "a5a28280-dc52-11e8-8437-7734b2373917",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "category_department_id",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": 45,
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "b383d2f0-dc52-11e8-8437-7734b2373917",
+                    "description": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "category_name",
+                    "error": {
+                        "name": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "74a8f920-dc52-11e8-8437-7734b2373917"
+            },
+            "collectionName": "categories",
+            "collectionUsers": [],
+            "collation": {},
+            "tableOptions": "",
+            "bucketId": "183bc780-dc52-11e8-8437-7734b2373917",
+            "storedAsTable": "Parquet"
+        },
+        {
+            "GUID": "0c046ba0-dc54-11e8-8437-7734b2373917",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": 11,
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "22284730-dc8b-11e8-953f-155d73f76df7"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "int",
+                    "sample": "",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "9d057be0-dc8a-11e8-953f-155d73f76df7",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "customer_id",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": 45,
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "bd4392c0-dc8a-11e8-953f-155d73f76df7",
+                    "description": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "customer_fname",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": 45,
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "c52935d0-dc8a-11e8-953f-155d73f76df7",
+                    "description": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "customer_lname",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": 45,
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "cdbd8f70-dc8a-11e8-953f-155d73f76df7",
+                    "description": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "customer_email",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": 45,
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "d9fb1af0-dc8a-11e8-953f-155d73f76df7",
+                    "description": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "customer_password",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": 45,
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "e5fa16d0-dc8a-11e8-953f-155d73f76df7",
+                    "description": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "customer_street",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": 45,
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "eeee43b0-dc8a-11e8-953f-155d73f76df7",
+                    "description": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "customer_city",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": 45,
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "f7fde7d0-dc8a-11e8-953f-155d73f76df7",
+                    "description": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "customer_state",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": 45,
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "088292e0-dc8b-11e8-953f-155d73f76df7",
+                    "description": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "customer_zipcode",
+                    "error": {
+                        "name": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "0c0a10f0-dc54-11e8-8437-7734b2373917"
+            },
+            "collectionName": "customers",
+            "collectionUsers": [],
+            "collation": {},
+            "tableOptions": "",
+            "bucketId": "183bc780-dc52-11e8-8437-7734b2373917",
+            "storedAsTable": "Parquet"
+        },
+        {
+            "GUID": "186cc290-dc52-11e8-8437-7734b2373917",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": 11,
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "d6a9a070-dc52-11e8-8437-7734b2373917"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "int",
+                    "sample": "",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "18b90dd0-dc52-11e8-8437-7734b2373917",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "department_id",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": 45,
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "4bc52380-dc52-11e8-8437-7734b2373917",
+                    "description": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "department_name",
+                    "error": {
+                        "name": false
+                    },
+                    "code": "department_name"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "186e4930-dc52-11e8-8437-7734b2373917"
+            },
+            "collectionName": "departments",
+            "collectionUsers": [],
+            "collation": {},
+            "tableOptions": "",
+            "bucketId": "183bc780-dc52-11e8-8437-7734b2373917",
+            "storedAsTable": "Parquet"
+        },
+        {
+            "GUID": "b8008c00-dc53-11e8-8437-7734b2373917",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": 11,
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "int",
+                    "sample": "",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "d9e9e1e0-dc53-11e8-8437-7734b2373917",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "order_item_id",
+                    "error": {}
+                },
+                {
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": 11,
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "642b5880-dc8a-11e8-953f-155d73f76df7",
+                    "childRelationships": [],
+                    "foreignCollection": "04fc3040-dc54-11e8-8437-7734b2373917",
+                    "foreignField": [
+                        "04fc3040-dc54-11e8-8437-7734b2373917",
+                        "0e027600-dc8a-11e8-953f-155d73f76df7"
+                    ],
+                    "enum": [],
+                    "mode": "int",
+                    "sample": "",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "efd99310-dc53-11e8-8437-7734b2373917",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "order_item_order_id",
+                    "error": {}
+                },
+                {
+                    "unit": "",
+                    "minimum": 11,
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "46953fb0-dc54-11e8-8437-7734b2373917",
+                    "childRelationships": [],
+                    "foreignCollection": "edea1490-dc52-11e8-8437-7734b2373917",
+                    "foreignField": [
+                        "edea1490-dc52-11e8-8437-7734b2373917",
+                        "fee59d50-dc52-11e8-8437-7734b2373917"
+                    ],
+                    "enum": [],
+                    "mode": "int",
+                    "sample": "",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "361c0650-dc54-11e8-8437-7734b2373917",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "order_item_product_id",
+                    "error": {}
+                },
+                {
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": 4,
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "tinyint",
+                    "sample": "",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "531e7a30-dc54-11e8-8437-7734b2373917",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "order_item_quantity",
+                    "error": {}
+                },
+                {
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "float",
+                    "sample": "",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "df9f27e0-dc89-11e8-953f-155d73f76df7",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "order_item_subtotal"
+                },
+                {
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "float",
+                    "sample": "",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "ede617f0-dc89-11e8-953f-155d73f76df7",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "order_item_product_price"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "b8040e70-dc53-11e8-8437-7734b2373917"
+            },
+            "collectionName": "order_items",
+            "collectionUsers": [],
+            "collation": {},
+            "tableOptions": "",
+            "bucketId": "183bc780-dc52-11e8-8437-7734b2373917",
+            "storedAsTable": "Parquet"
+        },
+        {
+            "GUID": "04fc3040-dc54-11e8-8437-7734b2373917",
+            "type": "object",
+            "description": "Table of customer orders",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": 11,
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "642b5880-dc8a-11e8-953f-155d73f76df7"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "int",
+                    "sample": "",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "0e027600-dc8a-11e8-953f-155d73f76df7",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "order_id",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "default": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "pattern": "",
+                    "format": "",
+                    "childType": "date",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "2335dc10-dc8a-11e8-953f-155d73f76df7",
+                    "description": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "order_date"
+                },
+                {
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": 11,
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "22284730-dc8b-11e8-953f-155d73f76df7",
+                    "childRelationships": [],
+                    "foreignCollection": "0c046ba0-dc54-11e8-8437-7734b2373917",
+                    "foreignField": [
+                        "0c046ba0-dc54-11e8-8437-7734b2373917",
+                        "9d057be0-dc8a-11e8-953f-155d73f76df7"
+                    ],
+                    "enum": [],
+                    "mode": "int",
+                    "sample": "",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "380e29d0-dc8a-11e8-953f-155d73f76df7",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "order_customer_id",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": 45,
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "8a5405c0-dc8a-11e8-953f-155d73f76df7",
+                    "description": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "order_status",
+                    "error": {
+                        "name": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "04ff6490-dc54-11e8-8437-7734b2373917"
+            },
+            "collectionName": "Orders",
+            "collectionUsers": [],
+            "collation": {},
+            "tableOptions": "",
+            "bucketId": "183bc780-dc52-11e8-8437-7734b2373917",
+            "storedAsTable": "textfile",
+            "externalTable": true,
+            "compositePartitionKey": [],
+            "sortedByKey": [],
+            "numBuckets": "5",
+            "code": "orders",
+            "rowFormat": "SerDe",
+            "SecIndxs": []
+        },
+        {
+            "GUID": "edea1490-dc52-11e8-8437-7734b2373917",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": 11,
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "primaryKey": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "46953fb0-dc54-11e8-8437-7734b2373917"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "int",
+                    "sample": "",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "fee59d50-dc52-11e8-8437-7734b2373917",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "product_id",
+                    "error": {}
+                },
+                {
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": 11,
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "2fac2fd0-dc53-11e8-8437-7734b2373917",
+                    "childRelationships": [],
+                    "foreignCollection": "74a6d640-dc52-11e8-8437-7734b2373917",
+                    "foreignField": [
+                        "74a6d640-dc52-11e8-8437-7734b2373917",
+                        "8b199a20-dc52-11e8-8437-7734b2373917"
+                    ],
+                    "enum": [],
+                    "mode": "int",
+                    "sample": "",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "239c1cf0-dc53-11e8-8437-7734b2373917",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "product_category_id",
+                    "error": {}
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": 45,
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "mode": "char",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "3fd74930-dc53-11e8-8437-7734b2373917",
+                    "description": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "product_name",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": 255,
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "487da430-dc53-11e8-8437-7734b2373917",
+                    "description": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "product_description",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "mode": "float",
+                    "sample": "",
+                    "childType": "numeric",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "55ec0e90-dc53-11e8-8437-7734b2373917",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "product_price"
+                },
+                {
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": 255,
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "mode": "varchar",
+                    "childType": "text",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "GUID": "60a0d730-dc53-11e8-8437-7734b2373917",
+                    "description": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "product_image",
+                    "error": {
+                        "name": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "edf0f260-dc52-11e8-8437-7734b2373917"
+            },
+            "collectionName": "products",
+            "collectionUsers": [],
+            "collation": {},
+            "tableOptions": "",
+            "bucketId": "183bc780-dc52-11e8-8437-7734b2373917",
+            "storedAsTable": "Parquet"
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "183bc780-dc52-11e8-8437-7734b2373917",
+            "name": "DataCo",
+            "type": "bucket",
+            "description": "",
+            "comments": "",
+            "collectionIds": [
+                "186cc290-dc52-11e8-8437-7734b2373917",
+                "74a6d640-dc52-11e8-8437-7734b2373917",
+                "edea1490-dc52-11e8-8437-7734b2373917",
+                "b8008c00-dc53-11e8-8437-7734b2373917",
+                "04fc3040-dc54-11e8-8437-7734b2373917",
+                "0c046ba0-dc54-11e8-8437-7734b2373917"
+            ],
+            "backgroundColor": {
+                "r": 254,
+                "g": 87,
+                "b": 34,
+                "a": 1
+            },
+            "show": true,
+            "indexes": []
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "d6a9a070-dc52-11e8-8437-7734b2373917",
+            "name": "fk departments.department_id to categories.category_department_id",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "186cc290-dc52-11e8-8437-7734b2373917",
+            "parentField": [
+                "186cc290-dc52-11e8-8437-7734b2373917",
+                "18b90dd0-dc52-11e8-8437-7734b2373917"
+            ],
+            "parentCardinality": "0..1",
+            "childCollection": "74a6d640-dc52-11e8-8437-7734b2373917",
+            "childField": [
+                "74a6d640-dc52-11e8-8437-7734b2373917",
+                "a5a28280-dc52-11e8-8437-7734b2373917"
+            ],
+            "childCardinality": "1..n",
+            "customProperties": {
+                "disableNoValidate": true
+            }
+        },
+        {
+            "GUID": "2fac2fd0-dc53-11e8-8437-7734b2373917",
+            "name": "fk categories.category_id to products.product_category_id",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "74a6d640-dc52-11e8-8437-7734b2373917",
+            "parentField": [
+                "74a6d640-dc52-11e8-8437-7734b2373917",
+                "8b199a20-dc52-11e8-8437-7734b2373917"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "edea1490-dc52-11e8-8437-7734b2373917",
+            "childField": [
+                "edea1490-dc52-11e8-8437-7734b2373917",
+                "239c1cf0-dc53-11e8-8437-7734b2373917"
+            ],
+            "childCardinality": "1",
+            "customProperties": {
+                "disableNoValidate": true
+            }
+        },
+        {
+            "GUID": "46953fb0-dc54-11e8-8437-7734b2373917",
+            "name": "fk products.product_id to order_items.order_item_product_id",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "edea1490-dc52-11e8-8437-7734b2373917",
+            "parentField": [
+                "edea1490-dc52-11e8-8437-7734b2373917",
+                "fee59d50-dc52-11e8-8437-7734b2373917"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "b8008c00-dc53-11e8-8437-7734b2373917",
+            "childField": [
+                "b8008c00-dc53-11e8-8437-7734b2373917",
+                "361c0650-dc54-11e8-8437-7734b2373917"
+            ],
+            "childCardinality": "0..n",
+            "customProperties": {
+                "disableNoValidate": true
+            }
+        },
+        {
+            "GUID": "642b5880-dc8a-11e8-953f-155d73f76df7",
+            "name": "fk orders.order_id to order_items.order_item_order_id",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "04fc3040-dc54-11e8-8437-7734b2373917",
+            "parentField": [
+                "04fc3040-dc54-11e8-8437-7734b2373917",
+                "0e027600-dc8a-11e8-953f-155d73f76df7"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "b8008c00-dc53-11e8-8437-7734b2373917",
+            "childField": [
+                "b8008c00-dc53-11e8-8437-7734b2373917",
+                "efd99310-dc53-11e8-8437-7734b2373917"
+            ],
+            "childCardinality": "0..n",
+            "customProperties": {
+                "disableNoValidate": true
+            }
+        },
+        {
+            "GUID": "22284730-dc8b-11e8-953f-155d73f76df7",
+            "name": "fk customers.customer_id to orders.order_customer_id",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "0c046ba0-dc54-11e8-8437-7734b2373917",
+            "parentField": [
+                "0c046ba0-dc54-11e8-8437-7734b2373917",
+                "9d057be0-dc8a-11e8-953f-155d73f76df7"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "04fc3040-dc54-11e8-8437-7734b2373917",
+            "childField": [
+                "04fc3040-dc54-11e8-8437-7734b2373917",
+                "380e29d0-dc8a-11e8-953f-155d73f76df7"
+            ],
+            "childCardinality": "0..n",
+            "customProperties": {
+                "disableNoValidate": true
+            }
+        }
+    ],
+    "users": [],
+    "idToNameHashTable": {
+        "183bc780-dc52-11e8-8437-7734b2373917": "DataCo",
+        "186cc290-dc52-11e8-8437-7734b2373917": "departments",
+        "18b90dd0-dc52-11e8-8437-7734b2373917": "department_id",
+        "4bc52380-dc52-11e8-8437-7734b2373917": "department_name",
+        "74a6d640-dc52-11e8-8437-7734b2373917": "categories",
+        "8b199a20-dc52-11e8-8437-7734b2373917": "category_id",
+        "a5a28280-dc52-11e8-8437-7734b2373917": "category_department_id",
+        "b383d2f0-dc52-11e8-8437-7734b2373917": "category_name",
+        "d6a9a070-dc52-11e8-8437-7734b2373917": "fk departments.department_id to categories.category_department_id",
+        "edea1490-dc52-11e8-8437-7734b2373917": "products",
+        "fee59d50-dc52-11e8-8437-7734b2373917": "product_id",
+        "239c1cf0-dc53-11e8-8437-7734b2373917": "product_category_id",
+        "2fac2fd0-dc53-11e8-8437-7734b2373917": "fk categories.category_id to products.product_category_id",
+        "3fd74930-dc53-11e8-8437-7734b2373917": "product_name",
+        "487da430-dc53-11e8-8437-7734b2373917": "product_description",
+        "55ec0e90-dc53-11e8-8437-7734b2373917": "product_price",
+        "60a0d730-dc53-11e8-8437-7734b2373917": "product_image",
+        "b8008c00-dc53-11e8-8437-7734b2373917": "order_items",
+        "d9e9e1e0-dc53-11e8-8437-7734b2373917": "order_item_id",
+        "efd99310-dc53-11e8-8437-7734b2373917": "order_item_order_id",
+        "04fc3040-dc54-11e8-8437-7734b2373917": "Orders",
+        "0c046ba0-dc54-11e8-8437-7734b2373917": "customers",
+        "361c0650-dc54-11e8-8437-7734b2373917": "order_item_product_id",
+        "46953fb0-dc54-11e8-8437-7734b2373917": "fk products.product_id to order_items.order_item_product_id",
+        "531e7a30-dc54-11e8-8437-7734b2373917": "order_item_quantity",
+        "df9f27e0-dc89-11e8-953f-155d73f76df7": "order_item_subtotal",
+        "ede617f0-dc89-11e8-953f-155d73f76df7": "order_item_product_price",
+        "0e027600-dc8a-11e8-953f-155d73f76df7": "order_id",
+        "2335dc10-dc8a-11e8-953f-155d73f76df7": "order_date",
+        "380e29d0-dc8a-11e8-953f-155d73f76df7": "order_customer_id",
+        "642b5880-dc8a-11e8-953f-155d73f76df7": "fk orders.order_id to order_items.order_item_order_id",
+        "8a5405c0-dc8a-11e8-953f-155d73f76df7": "order_status",
+        "9d057be0-dc8a-11e8-953f-155d73f76df7": "customer_id",
+        "bd4392c0-dc8a-11e8-953f-155d73f76df7": "customer_fname",
+        "c52935d0-dc8a-11e8-953f-155d73f76df7": "customer_lname",
+        "cdbd8f70-dc8a-11e8-953f-155d73f76df7": "customer_email",
+        "d9fb1af0-dc8a-11e8-953f-155d73f76df7": "customer_password",
+        "e5fa16d0-dc8a-11e8-953f-155d73f76df7": "customer_street",
+        "eeee43b0-dc8a-11e8-953f-155d73f76df7": "customer_city",
+        "f7fde7d0-dc8a-11e8-953f-155d73f76df7": "customer_state",
+        "088292e0-dc8b-11e8-953f-155d73f76df7": "customer_zipcode",
+        "22284730-dc8b-11e8-953f-155d73f76df7": "fk customers.customer_id to orders.order_customer_id"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "17511961-dc52-11e8-8437-7734b2373917"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "17511962-dc52-11e8-8437-7734b2373917"
+    },
+    "modelName": "DataCo",
+    "dbVersion": "3.x",
+    "dbVendor": "Hive",
+    "appTarget": "HIVE",
+    "creationTS": "2018-10-30T14:42:57.142Z",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Hive",
+        "pluginVersion": "0.1.0",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "host": "localhost",
+    "port": "10000",
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "186cc290-dc52-11e8-8437-7734b2373917",
+                        "x": 80,
+                        "y": 110,
+                        "width": 245,
+                        "height": 58,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "74a6d640-dc52-11e8-8437-7734b2373917",
+                        "x": 414,
+                        "y": 115,
+                        "width": 277,
+                        "height": 72,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "edea1490-dc52-11e8-8437-7734b2373917",
+                        "x": 76,
+                        "y": 240,
+                        "width": 255,
+                        "height": 114,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "b8008c00-dc53-11e8-8437-7734b2373917",
+                        "x": 410,
+                        "y": 240.67676767676767,
+                        "width": 285,
+                        "height": 114,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "04fc3040-dc54-11e8-8437-7734b2373917",
+                        "x": 429,
+                        "y": 437,
+                        "width": 247,
+                        "height": 86,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "0c046ba0-dc54-11e8-8437-7734b2373917",
+                        "x": 76,
+                        "y": 437,
+                        "width": 254,
+                        "height": 156,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 36,
+                        "y": 40,
+                        "GUID": "183bc780-dc52-11e8-8437-7734b2373917"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "selectedCollections": [],
+                "graphView": {
+                    "erd": [],
+                    "buckets": []
+                },
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "displayColorPicker": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true
+        }
+    }
+}

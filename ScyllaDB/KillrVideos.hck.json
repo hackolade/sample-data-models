@@ -1,0 +1,4663 @@
+{
+    "GUID": "f1e85fd0-5874-11ea-904d-b14aeefbf5a2",
+    "modelName": "KillrVideos",
+    "code": "",
+    "lastModifTS": "2020-02-26T09:30:47.788Z",
+    "persistenceSchemaVersion": "3",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "collections": [
+        {
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "comment",
+                    "GUID": "71312f30-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "commentid",
+                    "GUID": "71312f31-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "timeuuid",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "userid",
+                    "GUID": "71312f32-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "20c642e0-587a-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                        "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "videoid",
+                    "GUID": "71312f33-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "251e5260-587a-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "type": "object",
+            "collectionName": "comments_by_user",
+            "GUID": "71310820-5878-11ea-904d-b14aeefbf5a2",
+            "definitions": {
+                "GUID": "71317d50-5878-11ea-904d-b14aeefbf5a2",
+                "properties": [],
+                "type": "definitions"
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "71312f32-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "keyId": "71312f31-5878-11ea-904d-b14aeefbf5a2",
+                    "type": "ascending"
+                }
+            ],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "keys": "ALL",
+                    "rowsPerPartition": "ALL",
+                    "GUID": "7134d8b2-5878-11ea-904d-b14aeefbf5a2"
+                },
+                "cdc": null,
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "memtableFlushPeriod": 0,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99.0PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'sstable_compression':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'class':'SizeTieredCompactionStrategy'}",
+                "GUID": "7134d8b1-5878-11ea-904d-b14aeefbf5a2"
+            },
+            "comments": "",
+            "SecIndxs": [],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "comment",
+                    "GUID": "7131a461-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "commentid",
+                    "GUID": "7131a462-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "timeuuid",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "userid",
+                    "GUID": "7131a463-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "3c526a70-587a-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                        "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "videoid",
+                    "GUID": "7131a464-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "33e791d0-587a-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "type": "object",
+            "collectionName": "comments_by_video",
+            "GUID": "7131a460-5878-11ea-904d-b14aeefbf5a2",
+            "definitions": {
+                "GUID": "7131cb70-5878-11ea-904d-b14aeefbf5a2",
+                "properties": [],
+                "type": "definitions"
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "7131a464-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "keyId": "7131a462-5878-11ea-904d-b14aeefbf5a2",
+                    "type": "ascending"
+                }
+            ],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "keys": "ALL",
+                    "rowsPerPartition": "ALL",
+                    "GUID": "713526d1-5878-11ea-904d-b14aeefbf5a2"
+                },
+                "cdc": null,
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "memtableFlushPeriod": 0,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99.0PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'sstable_compression':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'class':'SizeTieredCompactionStrategy'}",
+                "GUID": "713526d0-5878-11ea-904d-b14aeefbf5a2"
+            },
+            "comments": "",
+            "SecIndxs": [],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "etag",
+                    "GUID": "7131cb72-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "jobid",
+                    "GUID": "7131cb73-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [
+                        "038629c0-587a-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "newstate",
+                    "GUID": "7131cb74-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "oldstate",
+                    "GUID": "7131cb75-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "status_date",
+                    "GUID": "7131cb76-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "timestamp",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "pattern": "",
+                    "format": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "type": "object",
+            "collectionName": "encoding_job_notifications",
+            "GUID": "7131cb71-5878-11ea-904d-b14aeefbf5a2",
+            "definitions": {
+                "GUID": "7131f280-5878-11ea-904d-b14aeefbf5a2",
+                "properties": [],
+                "type": "definitions"
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "7131cb73-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "keyId": "7131cb76-5878-11ea-904d-b14aeefbf5a2",
+                    "type": "ascending"
+                },
+                {
+                    "keyId": "7131cb72-5878-11ea-904d-b14aeefbf5a2",
+                    "type": "ascending"
+                }
+            ],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "keys": "ALL",
+                    "rowsPerPartition": "ALL",
+                    "GUID": "713526d3-5878-11ea-904d-b14aeefbf5a2"
+                },
+                "cdc": null,
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "memtableFlushPeriod": 0,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99.0PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'sstable_compression':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'class':'SizeTieredCompactionStrategy'}",
+                "GUID": "713526d2-5878-11ea-904d-b14aeefbf5a2"
+            },
+            "comments": "",
+            "SecIndxs": [],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "added_date",
+                    "GUID": "7131f282-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "timestamp",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "pattern": "",
+                    "format": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "name",
+                    "GUID": "7131f283-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "preview_image_location",
+                    "GUID": "7131f284-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "videoid",
+                    "GUID": "7131f285-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "2dadbf70-5879-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "yyyymmdd",
+                    "GUID": "7131f286-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "type": "object",
+            "collectionName": "latest_videos",
+            "GUID": "7131f281-5878-11ea-904d-b14aeefbf5a2",
+            "definitions": {
+                "GUID": "71321990-5878-11ea-904d-b14aeefbf5a2",
+                "properties": [],
+                "type": "definitions"
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "7131f286-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "keyId": "7131f282-5878-11ea-904d-b14aeefbf5a2",
+                    "type": "ascending"
+                },
+                {
+                    "keyId": "7131f285-5878-11ea-904d-b14aeefbf5a2",
+                    "type": "ascending"
+                }
+            ],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "keys": "ALL",
+                    "rowsPerPartition": "ALL",
+                    "GUID": "713526d5-5878-11ea-904d-b14aeefbf5a2"
+                },
+                "cdc": null,
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "memtableFlushPeriod": 0,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99.0PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'sstable_compression':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'class':'SizeTieredCompactionStrategy'}",
+                "GUID": "713526d4-5878-11ea-904d-b14aeefbf5a2"
+            },
+            "comments": "",
+            "SecIndxs": [],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "first_letter",
+                    "GUID": "71321992-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "tag",
+                    "GUID": "71321993-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "char",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "f9856450-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "7134b1a2-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "7134b1a2-5878-11ea-904d-b14aeefbf5a2",
+                        "7134b1a6-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "type": "object",
+            "collectionName": "tags_by_letter",
+            "GUID": "71321991-5878-11ea-904d-b14aeefbf5a2",
+            "definitions": {
+                "GUID": "713267b0-5878-11ea-904d-b14aeefbf5a2",
+                "properties": [],
+                "type": "definitions"
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "71321992-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "keyId": "71321993-5878-11ea-904d-b14aeefbf5a2",
+                    "type": "ascending"
+                }
+            ],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "keys": "ALL",
+                    "rowsPerPartition": "ALL",
+                    "GUID": "713526d7-5878-11ea-904d-b14aeefbf5a2"
+                },
+                "cdc": null,
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "memtableFlushPeriod": 0,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99.0PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'sstable_compression':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'class':'SizeTieredCompactionStrategy'}",
+                "GUID": "713526d6-5878-11ea-904d-b14aeefbf5a2"
+            },
+            "comments": "",
+            "SecIndxs": [],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "added_date",
+                    "GUID": "713267b2-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "pattern": "",
+                    "format": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "description",
+                    "GUID": "713267b3-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "jobid",
+                    "GUID": "713267b4-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "name",
+                    "GUID": "713267b5-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "array",
+                    "subtype": "set<str>",
+                    "static": false,
+                    "frozen": false,
+                    "name": "tags",
+                    "GUID": "713267b6-5878-11ea-904d-b14aeefbf5a2",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "mode": "text",
+                            "arrayItem": true,
+                            "GUID": "71328ec0-5878-11ea-904d-b14aeefbf5a2",
+                            "primaryKey": false,
+                            "childType": "char",
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "default": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "enum": [],
+                            "sample": "",
+                            "comments": "",
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositeClusteringKey"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositeClusteringKey": false,
+                            "description": "",
+                            "required": false,
+                            "id": "",
+                            "hackoladeMeta": {},
+                            "arrayParentType": "set"
+                        }
+                    ],
+                    "primaryKey": false,
+                    "childType": "set",
+                    "additionalItems": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "dependencies": [],
+                    "minProperties": "",
+                    "maxProperties": "",
+                    "additionalProperties": false,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "comments": "",
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "userid",
+                    "GUID": "713267b7-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "521a6f60-587a-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                        "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "videoid",
+                    "GUID": "713267b8-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "4cf41360-587a-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "type": "object",
+            "collectionName": "uploaded_videos",
+            "GUID": "713267b1-5878-11ea-904d-b14aeefbf5a2",
+            "definitions": {
+                "GUID": "7132b5d0-5878-11ea-904d-b14aeefbf5a2",
+                "properties": [],
+                "type": "definitions"
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "713267b8-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "keys": "ALL",
+                    "rowsPerPartition": "ALL",
+                    "GUID": "713526d9-5878-11ea-904d-b14aeefbf5a2"
+                },
+                "cdc": null,
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "memtableFlushPeriod": 0,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99.0PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'sstable_compression':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'class':'SizeTieredCompactionStrategy'}",
+                "GUID": "713526d8-5878-11ea-904d-b14aeefbf5a2"
+            },
+            "comments": "",
+            "SecIndxs": [],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "added_date",
+                    "GUID": "7132b5d2-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "pattern": "",
+                    "format": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "description",
+                    "GUID": "7132b5d3-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "jobid",
+                    "GUID": "7132b5d4-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "char",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "038629c0-587a-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "7131cb71-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "7131cb71-5878-11ea-904d-b14aeefbf5a2",
+                        "7131cb73-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "name",
+                    "GUID": "7132b5d5-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "array",
+                    "subtype": "set<str>",
+                    "static": false,
+                    "frozen": false,
+                    "name": "tags",
+                    "GUID": "7132b5d6-5878-11ea-904d-b14aeefbf5a2",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "mode": "text",
+                            "arrayItem": true,
+                            "GUID": "7132dce0-5878-11ea-904d-b14aeefbf5a2",
+                            "primaryKey": false,
+                            "childType": "char",
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "default": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "enum": [],
+                            "sample": "",
+                            "comments": "",
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositeClusteringKey"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositeClusteringKey": false,
+                            "description": "",
+                            "required": false,
+                            "id": "",
+                            "hackoladeMeta": {},
+                            "arrayParentType": "set"
+                        }
+                    ],
+                    "primaryKey": false,
+                    "childType": "set",
+                    "additionalItems": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "dependencies": [],
+                    "minProperties": "",
+                    "maxProperties": "",
+                    "additionalProperties": false,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "comments": "",
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "userid",
+                    "GUID": "7132b5d7-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "0a9eb8d0-587a-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                        "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "videoid",
+                    "GUID": "7132b5d8-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "ffa8c880-5879-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "type": "object",
+            "collectionName": "uploaded_videos_by_jobid",
+            "GUID": "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
+            "definitions": {
+                "GUID": "7132dce1-5878-11ea-904d-b14aeefbf5a2",
+                "properties": [],
+                "type": "definitions"
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "7132b5d4-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "keys": "ALL",
+                    "rowsPerPartition": "ALL",
+                    "GUID": "713526db-5878-11ea-904d-b14aeefbf5a2"
+                },
+                "cdc": null,
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "memtableFlushPeriod": 0,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99.0PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'sstable_compression':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'class':'SizeTieredCompactionStrategy'}",
+                "GUID": "713526da-5878-11ea-904d-b14aeefbf5a2"
+            },
+            "comments": "",
+            "SecIndxs": [],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "email",
+                    "GUID": "7132dce3-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "password",
+                    "GUID": "713303f0-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "userid",
+                    "GUID": "713303f1-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "578156d0-587a-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                        "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "type": "object",
+            "collectionName": "user_credentials",
+            "GUID": "7132dce2-5878-11ea-904d-b14aeefbf5a2",
+            "definitions": {
+                "GUID": "713303f2-5878-11ea-904d-b14aeefbf5a2",
+                "properties": [],
+                "type": "definitions"
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "7132dce3-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "keys": "ALL",
+                    "rowsPerPartition": "ALL",
+                    "GUID": "713526dd-5878-11ea-904d-b14aeefbf5a2"
+                },
+                "cdc": null,
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "memtableFlushPeriod": 0,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99.0PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'sstable_compression':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'class':'SizeTieredCompactionStrategy'}",
+                "GUID": "713526dc-5878-11ea-904d-b14aeefbf5a2"
+            },
+            "comments": "",
+            "SecIndxs": [],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "added_date",
+                    "GUID": "713303f4-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "timestamp",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "pattern": "",
+                    "format": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "name",
+                    "GUID": "713303f5-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "preview_image_location",
+                    "GUID": "713303f6-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "userid",
+                    "GUID": "713303f7-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "1569a180-587a-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                        "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "videoid",
+                    "GUID": "713303f8-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "1a771e50-587a-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "type": "object",
+            "collectionName": "user_videos",
+            "GUID": "713303f3-5878-11ea-904d-b14aeefbf5a2",
+            "definitions": {
+                "GUID": "71332b00-5878-11ea-904d-b14aeefbf5a2",
+                "properties": [],
+                "type": "definitions"
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "713303f7-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "keyId": "713303f4-5878-11ea-904d-b14aeefbf5a2",
+                    "type": "ascending"
+                },
+                {
+                    "keyId": "713303f8-5878-11ea-904d-b14aeefbf5a2",
+                    "type": "ascending"
+                }
+            ],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "keys": "ALL",
+                    "rowsPerPartition": "ALL",
+                    "GUID": "713526df-5878-11ea-904d-b14aeefbf5a2"
+                },
+                "cdc": null,
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "memtableFlushPeriod": 0,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99.0PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'sstable_compression':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'class':'SizeTieredCompactionStrategy'}",
+                "GUID": "713526de-5878-11ea-904d-b14aeefbf5a2"
+            },
+            "comments": "",
+            "SecIndxs": [],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "created_date",
+                    "GUID": "71332b02-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "pattern": "",
+                    "format": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "email",
+                    "GUID": "71332b03-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "firstname",
+                    "GUID": "71332b04-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "lastname",
+                    "GUID": "71332b05-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "userid",
+                    "GUID": "71332b06-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [
+                        "0a9eb8d0-587a-11ea-904d-b14aeefbf5a2",
+                        "1569a180-587a-11ea-904d-b14aeefbf5a2",
+                        "20c642e0-587a-11ea-904d-b14aeefbf5a2",
+                        "2ec9e860-587a-11ea-904d-b14aeefbf5a2",
+                        "3c526a70-587a-11ea-904d-b14aeefbf5a2",
+                        "521a6f60-587a-11ea-904d-b14aeefbf5a2",
+                        "578156d0-587a-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "type": "object",
+            "collectionName": "users",
+            "GUID": "71332b01-5878-11ea-904d-b14aeefbf5a2",
+            "definitions": {
+                "GUID": "71335210-5878-11ea-904d-b14aeefbf5a2",
+                "properties": [],
+                "type": "definitions"
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "71332b06-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "keys": "ALL",
+                    "rowsPerPartition": "ALL",
+                    "GUID": "713526e1-5878-11ea-904d-b14aeefbf5a2"
+                },
+                "cdc": null,
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "memtableFlushPeriod": 0,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99.0PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'sstable_compression':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'class':'SizeTieredCompactionStrategy'}",
+                "GUID": "713526e0-5878-11ea-904d-b14aeefbf5a2"
+            },
+            "comments": "",
+            "SecIndxs": [
+                {
+                    "GUID": "71354de0-5878-11ea-904d-b14aeefbf5a2",
+                    "name": "users_created_date_idx",
+                    "SecIndxKey": [
+                        {
+                            "keyId": "71332b02-5878-11ea-904d-b14aeefbf5a2",
+                            "type": "ascending"
+                        }
+                    ]
+                },
+                {
+                    "GUID": "71354de1-5878-11ea-904d-b14aeefbf5a2",
+                    "name": "users_email_idx",
+                    "SecIndxKey": [
+                        {
+                            "keyId": "71332b03-5878-11ea-904d-b14aeefbf5a2",
+                            "type": "ascending"
+                        }
+                    ]
+                },
+                {
+                    "GUID": "71354de2-5878-11ea-904d-b14aeefbf5a2",
+                    "name": "users_firstname_idx",
+                    "SecIndxKey": [
+                        {
+                            "keyId": "71332b04-5878-11ea-904d-b14aeefbf5a2",
+                            "type": "ascending"
+                        }
+                    ]
+                },
+                {
+                    "GUID": "71354de3-5878-11ea-904d-b14aeefbf5a2",
+                    "name": "users_lastname_idx",
+                    "SecIndxKey": [
+                        {
+                            "keyId": "71332b05-5878-11ea-904d-b14aeefbf5a2",
+                            "type": "ascending"
+                        }
+                    ]
+                }
+            ],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "event",
+                    "GUID": "71335212-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "event_timestamp",
+                    "GUID": "71335213-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "timeuuid",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": true,
+                    "frozen": false,
+                    "name": "preview_image_location",
+                    "GUID": "71335214-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "userid",
+                    "GUID": "71335215-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "numeric",
+                    "mode": "bigint",
+                    "static": false,
+                    "frozen": false,
+                    "name": "video_timestamp",
+                    "GUID": "71335216-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "videoid",
+                    "GUID": "71335217-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "32cb41d0-5879-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "type": "object",
+            "collectionName": "video_event",
+            "GUID": "71335211-5878-11ea-904d-b14aeefbf5a2",
+            "definitions": {
+                "GUID": "7133ee50-5878-11ea-904d-b14aeefbf5a2",
+                "properties": [],
+                "type": "definitions"
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "71335217-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                },
+                {
+                    "keyId": "71335215-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "keyId": "71335213-5878-11ea-904d-b14aeefbf5a2",
+                    "type": "ascending"
+                },
+                {
+                    "keyId": "71335212-5878-11ea-904d-b14aeefbf5a2",
+                    "type": "ascending"
+                }
+            ],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "keys": "ALL",
+                    "rowsPerPartition": "ALL",
+                    "GUID": "71354de5-5878-11ea-904d-b14aeefbf5a2"
+                },
+                "cdc": null,
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "memtableFlushPeriod": 0,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99.0PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'sstable_compression':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'class':'SizeTieredCompactionStrategy'}",
+                "GUID": "71354de4-5878-11ea-904d-b14aeefbf5a2"
+            },
+            "comments": "",
+            "SecIndxs": [],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "numeric",
+                    "mode": "counter",
+                    "static": false,
+                    "frozen": false,
+                    "name": "rating_counter",
+                    "GUID": "7133ee52-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "numeric",
+                    "mode": "counter",
+                    "static": false,
+                    "frozen": false,
+                    "name": "rating_total",
+                    "GUID": "7133ee53-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "videoid",
+                    "GUID": "7133ee54-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "368d2bd0-5879-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "type": "object",
+            "collectionName": "video_rating",
+            "GUID": "7133ee51-5878-11ea-904d-b14aeefbf5a2",
+            "definitions": {
+                "GUID": "71341560-5878-11ea-904d-b14aeefbf5a2",
+                "properties": [],
+                "type": "definitions"
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "7133ee54-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "keys": "ALL",
+                    "rowsPerPartition": "ALL",
+                    "GUID": "71354de7-5878-11ea-904d-b14aeefbf5a2"
+                },
+                "cdc": null,
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "memtableFlushPeriod": 0,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99.0PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'sstable_compression':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'class':'SizeTieredCompactionStrategy'}",
+                "GUID": "71354de6-5878-11ea-904d-b14aeefbf5a2"
+            },
+            "comments": "",
+            "SecIndxs": [],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "numeric",
+                    "mode": "int",
+                    "static": false,
+                    "frozen": false,
+                    "name": "rating",
+                    "GUID": "71341562-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "userid",
+                    "GUID": "71341563-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "2ec9e860-587a-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                        "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "videoid",
+                    "GUID": "71341564-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "29333e60-587a-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "type": "object",
+            "collectionName": "video_ratings_by_user",
+            "GUID": "71341561-5878-11ea-904d-b14aeefbf5a2",
+            "definitions": {
+                "GUID": "71341565-5878-11ea-904d-b14aeefbf5a2",
+                "properties": [],
+                "type": "definitions"
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "71341564-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "keyId": "71341563-5878-11ea-904d-b14aeefbf5a2",
+                    "type": "ascending"
+                }
+            ],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "keys": "ALL",
+                    "rowsPerPartition": "ALL",
+                    "GUID": "71354de9-5878-11ea-904d-b14aeefbf5a2"
+                },
+                "cdc": null,
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "memtableFlushPeriod": 0,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99.0PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'sstable_compression':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'class':'SizeTieredCompactionStrategy'}",
+                "GUID": "71354de8-5878-11ea-904d-b14aeefbf5a2"
+            },
+            "comments": "",
+            "SecIndxs": [],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "added_date",
+                    "GUID": "71341567-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "pattern": "",
+                    "format": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "description",
+                    "GUID": "71341568-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "location",
+                    "GUID": "71341569-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "numeric",
+                    "mode": "int",
+                    "static": false,
+                    "frozen": false,
+                    "name": "location_type",
+                    "GUID": "7134156a-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "numeric",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "unit": "",
+                    "minimum": "",
+                    "exclusiveMinimum": false,
+                    "maximum": "",
+                    "exclusiveMaximum": false,
+                    "multipleOf": "",
+                    "divisibleBy": "",
+                    "default": "",
+                    "enum": [],
+                    "sample": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "array",
+                    "subtype": "set<udt>",
+                    "static": false,
+                    "frozen": false,
+                    "name": "metadata",
+                    "GUID": "71343c70-5878-11ea-904d-b14aeefbf5a2",
+                    "properties": [
+                        {
+                            "GUID": "71343c76-5878-11ea-904d-b14aeefbf5a2",
+                            "type": "reference",
+                            "$ref": "#model/definitions/video_metadata",
+                            "refType": "model",
+                            "ref": "71348a92-5878-11ea-904d-b14aeefbf5a2",
+                            "refIdPath": [
+                                "f1e85fd0-5874-11ea-904d-b14aeefbf5a2",
+                                "f1e85fd1-5874-11ea-904d-b14aeefbf5a2",
+                                "71348a92-5878-11ea-904d-b14aeefbf5a2"
+                            ],
+                            "arrayItem": true,
+                            "arrayParentType": "set"
+                        }
+                    ],
+                    "primaryKey": false,
+                    "childType": "set",
+                    "additionalItems": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "dependencies": [],
+                    "minProperties": "",
+                    "maxProperties": "",
+                    "additionalProperties": false,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "comments": "",
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "name",
+                    "GUID": "71343c71-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "document",
+                    "keySubtype": "text",
+                    "keyType": "char",
+                    "subtype": "map<str>",
+                    "properties": [
+                        {
+                            "code": "",
+                            "type": "string",
+                            "mode": "text",
+                            "name": "New column",
+                            "GUID": "71346380-5878-11ea-904d-b14aeefbf5a2",
+                            "primaryKey": false,
+                            "childType": "char",
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "default": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "enum": [],
+                            "sample": "",
+                            "comments": "",
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositeClusteringKey"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositeClusteringKey": false,
+                            "description": "",
+                            "dependencies": [],
+                            "required": false,
+                            "id": ""
+                        }
+                    ],
+                    "static": false,
+                    "frozen": false,
+                    "name": "preview_thumbnails",
+                    "GUID": "71343c72-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "map",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "dependencies": [],
+                    "minProperties": "",
+                    "maxProperties": "",
+                    "additionalProperties": false,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "comments": "",
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "array",
+                    "subtype": "set<str>",
+                    "static": false,
+                    "frozen": false,
+                    "name": "tags",
+                    "GUID": "71343c73-5878-11ea-904d-b14aeefbf5a2",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "mode": "text",
+                            "arrayItem": true,
+                            "GUID": "71346381-5878-11ea-904d-b14aeefbf5a2",
+                            "primaryKey": false,
+                            "childType": "char",
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "childRelationships": [],
+                            "default": "",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "enum": [],
+                            "sample": "",
+                            "comments": "",
+                            "compositeKey": [
+                                "compositePartitionKey",
+                                "compositeClusteringKey"
+                            ],
+                            "compositePartitionKey": false,
+                            "compositeClusteringKey": false,
+                            "description": "",
+                            "required": false,
+                            "id": "",
+                            "hackoladeMeta": {},
+                            "arrayParentType": "set"
+                        }
+                    ],
+                    "primaryKey": false,
+                    "childType": "set",
+                    "additionalItems": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "dependencies": [],
+                    "minProperties": "",
+                    "maxProperties": "",
+                    "additionalProperties": false,
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "comments": "",
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "userid",
+                    "GUID": "71343c74-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "uuid",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "videoid",
+                    "GUID": "71343c75-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [
+                        "03993200-5879-11ea-904d-b14aeefbf5a2",
+                        "2dadbf70-5879-11ea-904d-b14aeefbf5a2",
+                        "32cb41d0-5879-11ea-904d-b14aeefbf5a2",
+                        "368d2bd0-5879-11ea-904d-b14aeefbf5a2",
+                        "ffa8c880-5879-11ea-904d-b14aeefbf5a2",
+                        "1a771e50-587a-11ea-904d-b14aeefbf5a2",
+                        "251e5260-587a-11ea-904d-b14aeefbf5a2",
+                        "29333e60-587a-11ea-904d-b14aeefbf5a2",
+                        "33e791d0-587a-11ea-904d-b14aeefbf5a2",
+                        "4cf41360-587a-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "type": "object",
+            "collectionName": "videos",
+            "GUID": "71341566-5878-11ea-904d-b14aeefbf5a2",
+            "definitions": {
+                "GUID": "71348a90-5878-11ea-904d-b14aeefbf5a2",
+                "properties": [],
+                "type": "definitions"
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "71343c75-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "keys": "ALL",
+                    "rowsPerPartition": "ALL",
+                    "GUID": "71354deb-5878-11ea-904d-b14aeefbf5a2"
+                },
+                "cdc": null,
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "memtableFlushPeriod": 0,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99.0PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'sstable_compression':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'class':'SizeTieredCompactionStrategy'}",
+                "GUID": "71354dea-5878-11ea-904d-b14aeefbf5a2"
+            },
+            "comments": "",
+            "SecIndxs": [],
+            "hasCollation": false,
+            "collation": {}
+        },
+        {
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "code": "",
+            "properties": [
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "added_date",
+                    "GUID": "7134b1a3-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "pattern": "",
+                    "format": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "name",
+                    "GUID": "7134b1a4-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "preview_image_location",
+                    "GUID": "7134b1a5-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "mode": "text",
+                    "static": false,
+                    "frozen": false,
+                    "name": "tag",
+                    "GUID": "7134b1a6-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "char",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [
+                        "f9856450-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": true,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "tagged_date",
+                    "GUID": "7134b1a7-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "childType": "timestamp",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "required": false,
+                    "default": "",
+                    "enum": [],
+                    "sample": "",
+                    "comments": "",
+                    "pattern": "",
+                    "format": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": false,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "type": "string",
+                    "static": false,
+                    "frozen": false,
+                    "name": "videoid",
+                    "GUID": "7134b1a8-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "childType": "uuid",
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "03993200-5879-11ea-904d-b14aeefbf5a2",
+                    "foreignCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "foreignField": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "childRelationships": [],
+                    "required": true,
+                    "default": "",
+                    "minLength": "",
+                    "maxLength": "",
+                    "enum": [],
+                    "sample": "",
+                    "pattern": "",
+                    "comments": "",
+                    "compositeKey": [
+                        "compositePartitionKey",
+                        "compositeClusteringKey"
+                    ],
+                    "compositePartitionKey": false,
+                    "compositeClusteringKey": true,
+                    "description": "",
+                    "dependencies": [],
+                    "id": ""
+                }
+            ],
+            "type": "object",
+            "collectionName": "videos_by_tag",
+            "GUID": "7134b1a2-5878-11ea-904d-b14aeefbf5a2",
+            "definitions": {
+                "GUID": "7134d8b0-5878-11ea-904d-b14aeefbf5a2",
+                "properties": [],
+                "type": "definitions"
+            },
+            "compositePartitionKey": [
+                {
+                    "keyId": "7134b1a6-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "keyId": "7134b1a8-5878-11ea-904d-b14aeefbf5a2",
+                    "type": "ascending"
+                }
+            ],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "keys": "ALL",
+                    "rowsPerPartition": "ALL",
+                    "GUID": "71354ded-5878-11ea-904d-b14aeefbf5a2"
+                },
+                "cdc": null,
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "memtableFlushPeriod": 0,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99.0PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'sstable_compression':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'class':'SizeTieredCompactionStrategy'}",
+                "GUID": "71354dec-5878-11ea-904d-b14aeefbf5a2"
+            },
+            "comments": "",
+            "SecIndxs": [],
+            "hasCollation": false,
+            "collation": {}
+        }
+    ],
+    "buckets": [
+        {
+            "GUID": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "name": "killervideos",
+            "code": "",
+            "type": "bucket",
+            "description": "",
+            "comments": "",
+            "collectionIds": [
+                "71310820-5878-11ea-904d-b14aeefbf5a2",
+                "7131a460-5878-11ea-904d-b14aeefbf5a2",
+                "7131cb71-5878-11ea-904d-b14aeefbf5a2",
+                "7131f281-5878-11ea-904d-b14aeefbf5a2",
+                "71321991-5878-11ea-904d-b14aeefbf5a2",
+                "713267b1-5878-11ea-904d-b14aeefbf5a2",
+                "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
+                "7132dce2-5878-11ea-904d-b14aeefbf5a2",
+                "713303f3-5878-11ea-904d-b14aeefbf5a2",
+                "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                "71335211-5878-11ea-904d-b14aeefbf5a2",
+                "7133ee51-5878-11ea-904d-b14aeefbf5a2",
+                "71341561-5878-11ea-904d-b14aeefbf5a2",
+                "71341566-5878-11ea-904d-b14aeefbf5a2",
+                "7134b1a2-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "indexes": [],
+            "replStrategy": "NetworkTopologyStrategy",
+            "addToCqlScript": true,
+            "dataCenters": [
+                {
+                    "GUID": "71354dee-5878-11ea-904d-b14aeefbf5a2",
+                    "dataCenterName": "AWS_EU_WEST_1",
+                    "replFactorValue": 3
+                }
+            ],
+            "durableWrites": true,
+            "UDFs": [],
+            "UDAs": [],
+            "addFieldsToBucket": true,
+            "isPlugin": true
+        }
+    ],
+    "views": [
+        {
+            "name": "videos_by_location",
+            "code": "",
+            "compositePartitionKey": [
+                {
+                    "keyId": "71363848-5878-11ea-904d-b14aeefbf5a2",
+                    "type": ""
+                }
+            ],
+            "compositeClusteringKey": [
+                {
+                    "keyId": "7136384c-5878-11ea-904d-b14aeefbf5a2",
+                    "type": "ascending"
+                }
+            ],
+            "tableOptions": {
+                "bloomFilterFalsePositiveChance": 0.01,
+                "caching": {
+                    "keys": "ALL",
+                    "rowsPerPartition": "ALL",
+                    "GUID": "71365f54-5878-11ea-904d-b14aeefbf5a2"
+                },
+                "localReadRepairChance": 0.1,
+                "defaultTtl": 0,
+                "gcGraceSeconds": 864000,
+                "minIndexInterval": 128,
+                "maxIndexInterval": 2048,
+                "readRepairChance": 0,
+                "speculativeRetry": "99.0PERCENTILE",
+                "crcCheckChance": 1,
+                "compression": "{'sstable_compression':'org.apache.cassandra.io.compress.LZ4Compressor'}",
+                "compaction": "{'class':'SizeTieredCompactionStrategy'}",
+                "GUID": "71365f53-5878-11ea-904d-b14aeefbf5a2"
+            },
+            "comments": "",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "$ref": "#collection/definitions/videos/added_date",
+                    "name": "added_date",
+                    "GUID": "71363846-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "type": "reference",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71341567-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "ref": "71341567-5878-11ea-904d-b14aeefbf5a2",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "$ref": "#collection/definitions/videos/description",
+                    "name": "description",
+                    "GUID": "71363847-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "type": "reference",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71341568-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "ref": "71341568-5878-11ea-904d-b14aeefbf5a2",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "$ref": "#collection/definitions/videos/location",
+                    "name": "location",
+                    "GUID": "71363848-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "type": "reference",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71341569-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "ref": "71341569-5878-11ea-904d-b14aeefbf5a2",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "compositeKey": [
+                        "compositePartitionKey"
+                    ],
+                    "compositePartitionKey": true
+                },
+                {
+                    "code": "",
+                    "$ref": "#collection/definitions/videos/location_type",
+                    "name": "location_type",
+                    "GUID": "71363849-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "type": "reference",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "7134156a-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "ref": "7134156a-5878-11ea-904d-b14aeefbf5a2",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "$ref": "#collection/definitions/videos/name",
+                    "name": "name",
+                    "GUID": "7136384a-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "type": "reference",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71343c71-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "ref": "71343c71-5878-11ea-904d-b14aeefbf5a2",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "$ref": "#collection/definitions/videos/userid",
+                    "name": "userid",
+                    "GUID": "7136384b-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": false,
+                    "type": "reference",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71343c74-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "ref": "71343c74-5878-11ea-904d-b14aeefbf5a2",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": ""
+                },
+                {
+                    "code": "",
+                    "$ref": "#collection/definitions/videos/videoid",
+                    "name": "videoid",
+                    "GUID": "7136384c-5878-11ea-904d-b14aeefbf5a2",
+                    "primaryKey": true,
+                    "type": "reference",
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "childRelationships": [],
+                    "refType": "collectionReference",
+                    "refIdPath": [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                    ],
+                    "ref": "71343c75-5878-11ea-904d-b14aeefbf5a2",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "compositeKey": [
+                        "compositeClusteringKey"
+                    ],
+                    "compositeClusteringKey": true
+                }
+            ],
+            "viewOn": "71341566-5878-11ea-904d-b14aeefbf5a2",
+            "GUID": "716585a4-5878-11ea-904d-b14aeefbf5a2",
+            "pipeline": "[\n    {\n        \"$project\": {\n            \"added_date\": 1,\n            \"description\": 1,\n            \"location\": 1,\n            \"location_type\": 1,\n            \"name\": 1,\n            \"userid\": 1,\n            \"videoid\": 1\n        }\n    }\n]",
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2"
+        }
+    ],
+    "relationships": [
+        {
+            "GUID": "f9856450-5878-11ea-904d-b14aeefbf5a2",
+            "name": "fk videos_by_tag.tag to tags_by_letter.tag",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "7134b1a2-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "7134b1a2-5878-11ea-904d-b14aeefbf5a2",
+                "7134b1a6-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "71321991-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "71321991-5878-11ea-904d-b14aeefbf5a2",
+                "71321993-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "1",
+            "lineSize": 2
+        },
+        {
+            "GUID": "03993200-5879-11ea-904d-b14aeefbf5a2",
+            "name": "fk videos.videoid to videos_by_tag.videoid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71341566-5878-11ea-904d-b14aeefbf5a2",
+                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "7134b1a2-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "7134b1a2-5878-11ea-904d-b14aeefbf5a2",
+                "7134b1a8-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        },
+        {
+            "GUID": "2dadbf70-5879-11ea-904d-b14aeefbf5a2",
+            "name": "fk videos.videoid to latest_videos.videoid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71341566-5878-11ea-904d-b14aeefbf5a2",
+                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "7131f281-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "7131f281-5878-11ea-904d-b14aeefbf5a2",
+                "7131f285-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        },
+        {
+            "GUID": "32cb41d0-5879-11ea-904d-b14aeefbf5a2",
+            "name": "fk videos.videoid to video_event.videoid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71341566-5878-11ea-904d-b14aeefbf5a2",
+                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "71335211-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "71335211-5878-11ea-904d-b14aeefbf5a2",
+                "71335217-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        },
+        {
+            "GUID": "368d2bd0-5879-11ea-904d-b14aeefbf5a2",
+            "name": "fk videos.videoid to video_rating.videoid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71341566-5878-11ea-904d-b14aeefbf5a2",
+                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "7133ee51-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "7133ee51-5878-11ea-904d-b14aeefbf5a2",
+                "7133ee54-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        },
+        {
+            "GUID": "ffa8c880-5879-11ea-904d-b14aeefbf5a2",
+            "name": "fk videos.videoid to uploaded_videos_by_jobid.videoid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71341566-5878-11ea-904d-b14aeefbf5a2",
+                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
+                "7132b5d8-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        },
+        {
+            "GUID": "038629c0-587a-11ea-904d-b14aeefbf5a2",
+            "name": "fk encoding_job_notifications.jobid to uploaded_videos_by_jobid.jobid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "7131cb71-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "7131cb71-5878-11ea-904d-b14aeefbf5a2",
+                "7131cb73-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
+                "7132b5d4-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "1",
+            "lineSize": 2
+        },
+        {
+            "GUID": "0a9eb8d0-587a-11ea-904d-b14aeefbf5a2",
+            "name": "fk users.userid to uploaded_videos_by_jobid.userid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                "71332b06-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
+                "7132b5d7-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        },
+        {
+            "GUID": "1569a180-587a-11ea-904d-b14aeefbf5a2",
+            "name": "fk users.userid to user_videos.userid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                "71332b06-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "713303f3-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "713303f3-5878-11ea-904d-b14aeefbf5a2",
+                "713303f7-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        },
+        {
+            "GUID": "1a771e50-587a-11ea-904d-b14aeefbf5a2",
+            "name": "fk videos.videoid to user_videos.videoid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71341566-5878-11ea-904d-b14aeefbf5a2",
+                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "713303f3-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "713303f3-5878-11ea-904d-b14aeefbf5a2",
+                "713303f8-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        },
+        {
+            "GUID": "20c642e0-587a-11ea-904d-b14aeefbf5a2",
+            "name": "fk users.userid to comments_by_user.userid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                "71332b06-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "71310820-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "71310820-5878-11ea-904d-b14aeefbf5a2",
+                "71312f32-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        },
+        {
+            "GUID": "251e5260-587a-11ea-904d-b14aeefbf5a2",
+            "name": "fk videos.videoid to comments_by_user.videoid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71341566-5878-11ea-904d-b14aeefbf5a2",
+                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "71310820-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "71310820-5878-11ea-904d-b14aeefbf5a2",
+                "71312f33-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        },
+        {
+            "GUID": "29333e60-587a-11ea-904d-b14aeefbf5a2",
+            "name": "fk videos.videoid to video_ratings_by_user.videoid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71341566-5878-11ea-904d-b14aeefbf5a2",
+                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "71341561-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "71341561-5878-11ea-904d-b14aeefbf5a2",
+                "71341564-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        },
+        {
+            "GUID": "2ec9e860-587a-11ea-904d-b14aeefbf5a2",
+            "name": "fk users.userid to video_ratings_by_user.userid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                "71332b06-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "71341561-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "71341561-5878-11ea-904d-b14aeefbf5a2",
+                "71341563-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        },
+        {
+            "GUID": "33e791d0-587a-11ea-904d-b14aeefbf5a2",
+            "name": "fk videos.videoid to comments_by_video.videoid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71341566-5878-11ea-904d-b14aeefbf5a2",
+                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "7131a460-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "7131a460-5878-11ea-904d-b14aeefbf5a2",
+                "7131a464-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        },
+        {
+            "GUID": "3c526a70-587a-11ea-904d-b14aeefbf5a2",
+            "name": "fk users.userid to comments_by_video.userid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                "71332b06-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "7131a460-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "7131a460-5878-11ea-904d-b14aeefbf5a2",
+                "7131a463-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "1",
+            "lineSize": 2
+        },
+        {
+            "GUID": "4cf41360-587a-11ea-904d-b14aeefbf5a2",
+            "name": "fk videos.videoid to uploaded_videos.videoid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71341566-5878-11ea-904d-b14aeefbf5a2",
+                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "713267b1-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "713267b1-5878-11ea-904d-b14aeefbf5a2",
+                "713267b8-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        },
+        {
+            "GUID": "521a6f60-587a-11ea-904d-b14aeefbf5a2",
+            "name": "fk users.userid to uploaded_videos.userid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                "71332b06-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "713267b1-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "713267b1-5878-11ea-904d-b14aeefbf5a2",
+                "713267b7-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        },
+        {
+            "GUID": "578156d0-587a-11ea-904d-b14aeefbf5a2",
+            "name": "fk users.userid to user_credentials.userid",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
+            "parentField": [
+                "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                "71332b06-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "7132dce2-5878-11ea-904d-b14aeefbf5a2",
+            "childField": [
+                "7132dce2-5878-11ea-904d-b14aeefbf5a2",
+                "713303f1-5878-11ea-904d-b14aeefbf5a2"
+            ],
+            "childCardinality": "0..n",
+            "lineSize": 2
+        }
+    ],
+    "users": [],
+    "idToNameHashTable": {
+        "71348a92-5878-11ea-904d-b14aeefbf5a2": "video_metadata",
+        "71348a93-5878-11ea-904d-b14aeefbf5a2": "height",
+        "71348a94-5878-11ea-904d-b14aeefbf5a2": "width",
+        "71348a95-5878-11ea-904d-b14aeefbf5a2": "video_bit_rate",
+        "71348a96-5878-11ea-904d-b14aeefbf5a2": "encoding",
+        "71312f30-5878-11ea-904d-b14aeefbf5a2": "comment",
+        "71312f31-5878-11ea-904d-b14aeefbf5a2": "commentid",
+        "71312f32-5878-11ea-904d-b14aeefbf5a2": "userid",
+        "71312f33-5878-11ea-904d-b14aeefbf5a2": "videoid",
+        "71310820-5878-11ea-904d-b14aeefbf5a2": "comments_by_user",
+        "7131a461-5878-11ea-904d-b14aeefbf5a2": "comment",
+        "7131a462-5878-11ea-904d-b14aeefbf5a2": "commentid",
+        "7131a463-5878-11ea-904d-b14aeefbf5a2": "userid",
+        "7131a464-5878-11ea-904d-b14aeefbf5a2": "videoid",
+        "7131a460-5878-11ea-904d-b14aeefbf5a2": "comments_by_video",
+        "7131cb72-5878-11ea-904d-b14aeefbf5a2": "etag",
+        "7131cb73-5878-11ea-904d-b14aeefbf5a2": "jobid",
+        "7131cb74-5878-11ea-904d-b14aeefbf5a2": "newstate",
+        "7131cb75-5878-11ea-904d-b14aeefbf5a2": "oldstate",
+        "7131cb76-5878-11ea-904d-b14aeefbf5a2": "status_date",
+        "7131cb71-5878-11ea-904d-b14aeefbf5a2": "encoding_job_notifications",
+        "7131f282-5878-11ea-904d-b14aeefbf5a2": "added_date",
+        "7131f283-5878-11ea-904d-b14aeefbf5a2": "name",
+        "7131f284-5878-11ea-904d-b14aeefbf5a2": "preview_image_location",
+        "7131f285-5878-11ea-904d-b14aeefbf5a2": "videoid",
+        "7131f286-5878-11ea-904d-b14aeefbf5a2": "yyyymmdd",
+        "7131f281-5878-11ea-904d-b14aeefbf5a2": "latest_videos",
+        "71321992-5878-11ea-904d-b14aeefbf5a2": "first_letter",
+        "71321993-5878-11ea-904d-b14aeefbf5a2": "tag",
+        "71321991-5878-11ea-904d-b14aeefbf5a2": "tags_by_letter",
+        "713267b2-5878-11ea-904d-b14aeefbf5a2": "added_date",
+        "713267b3-5878-11ea-904d-b14aeefbf5a2": "description",
+        "713267b4-5878-11ea-904d-b14aeefbf5a2": "jobid",
+        "713267b5-5878-11ea-904d-b14aeefbf5a2": "name",
+        "713267b6-5878-11ea-904d-b14aeefbf5a2": "tags",
+        "713267b7-5878-11ea-904d-b14aeefbf5a2": "userid",
+        "713267b8-5878-11ea-904d-b14aeefbf5a2": "videoid",
+        "713267b1-5878-11ea-904d-b14aeefbf5a2": "uploaded_videos",
+        "7132b5d2-5878-11ea-904d-b14aeefbf5a2": "added_date",
+        "7132b5d3-5878-11ea-904d-b14aeefbf5a2": "description",
+        "7132b5d4-5878-11ea-904d-b14aeefbf5a2": "jobid",
+        "7132b5d5-5878-11ea-904d-b14aeefbf5a2": "name",
+        "7132b5d6-5878-11ea-904d-b14aeefbf5a2": "tags",
+        "7132b5d7-5878-11ea-904d-b14aeefbf5a2": "userid",
+        "7132b5d8-5878-11ea-904d-b14aeefbf5a2": "videoid",
+        "7132b5d1-5878-11ea-904d-b14aeefbf5a2": "uploaded_videos_by_jobid",
+        "7132dce3-5878-11ea-904d-b14aeefbf5a2": "email",
+        "713303f0-5878-11ea-904d-b14aeefbf5a2": "password",
+        "713303f1-5878-11ea-904d-b14aeefbf5a2": "userid",
+        "7132dce2-5878-11ea-904d-b14aeefbf5a2": "user_credentials",
+        "713303f4-5878-11ea-904d-b14aeefbf5a2": "added_date",
+        "713303f5-5878-11ea-904d-b14aeefbf5a2": "name",
+        "713303f6-5878-11ea-904d-b14aeefbf5a2": "preview_image_location",
+        "713303f7-5878-11ea-904d-b14aeefbf5a2": "userid",
+        "713303f8-5878-11ea-904d-b14aeefbf5a2": "videoid",
+        "713303f3-5878-11ea-904d-b14aeefbf5a2": "user_videos",
+        "71332b02-5878-11ea-904d-b14aeefbf5a2": "created_date",
+        "71332b03-5878-11ea-904d-b14aeefbf5a2": "email",
+        "71332b04-5878-11ea-904d-b14aeefbf5a2": "firstname",
+        "71332b05-5878-11ea-904d-b14aeefbf5a2": "lastname",
+        "71332b06-5878-11ea-904d-b14aeefbf5a2": "userid",
+        "71332b01-5878-11ea-904d-b14aeefbf5a2": "users",
+        "71335212-5878-11ea-904d-b14aeefbf5a2": "event",
+        "71335213-5878-11ea-904d-b14aeefbf5a2": "event_timestamp",
+        "71335214-5878-11ea-904d-b14aeefbf5a2": "preview_image_location",
+        "71335215-5878-11ea-904d-b14aeefbf5a2": "userid",
+        "71335216-5878-11ea-904d-b14aeefbf5a2": "video_timestamp",
+        "71335217-5878-11ea-904d-b14aeefbf5a2": "videoid",
+        "71335211-5878-11ea-904d-b14aeefbf5a2": "video_event",
+        "7133ee52-5878-11ea-904d-b14aeefbf5a2": "rating_counter",
+        "7133ee53-5878-11ea-904d-b14aeefbf5a2": "rating_total",
+        "7133ee54-5878-11ea-904d-b14aeefbf5a2": "videoid",
+        "7133ee51-5878-11ea-904d-b14aeefbf5a2": "video_rating",
+        "71341562-5878-11ea-904d-b14aeefbf5a2": "rating",
+        "71341563-5878-11ea-904d-b14aeefbf5a2": "userid",
+        "71341564-5878-11ea-904d-b14aeefbf5a2": "videoid",
+        "71341561-5878-11ea-904d-b14aeefbf5a2": "video_ratings_by_user",
+        "71341567-5878-11ea-904d-b14aeefbf5a2": "added_date",
+        "71341568-5878-11ea-904d-b14aeefbf5a2": "description",
+        "71341569-5878-11ea-904d-b14aeefbf5a2": "location",
+        "7134156a-5878-11ea-904d-b14aeefbf5a2": "location_type",
+        "71343c70-5878-11ea-904d-b14aeefbf5a2": "metadata",
+        "71343c71-5878-11ea-904d-b14aeefbf5a2": "name",
+        "71343c72-5878-11ea-904d-b14aeefbf5a2": "preview_thumbnails",
+        "71346380-5878-11ea-904d-b14aeefbf5a2": "New column",
+        "71343c73-5878-11ea-904d-b14aeefbf5a2": "tags",
+        "71343c74-5878-11ea-904d-b14aeefbf5a2": "userid",
+        "71343c75-5878-11ea-904d-b14aeefbf5a2": "videoid",
+        "71341566-5878-11ea-904d-b14aeefbf5a2": "videos",
+        "7134b1a3-5878-11ea-904d-b14aeefbf5a2": "added_date",
+        "7134b1a4-5878-11ea-904d-b14aeefbf5a2": "name",
+        "7134b1a5-5878-11ea-904d-b14aeefbf5a2": "preview_image_location",
+        "7134b1a6-5878-11ea-904d-b14aeefbf5a2": "tag",
+        "7134b1a7-5878-11ea-904d-b14aeefbf5a2": "tagged_date",
+        "7134b1a8-5878-11ea-904d-b14aeefbf5a2": "videoid",
+        "7134b1a2-5878-11ea-904d-b14aeefbf5a2": "videos_by_tag",
+        "7165acb0-5878-11ea-904d-b14aeefbf5a2": "killervideos",
+        "716585a0-5878-11ea-904d-b14aeefbf5a2": "users_created_date_idx_index",
+        "716585a1-5878-11ea-904d-b14aeefbf5a2": "users_email_idx_index",
+        "716585a2-5878-11ea-904d-b14aeefbf5a2": "users_firstname_idx_index",
+        "716585a3-5878-11ea-904d-b14aeefbf5a2": "users_lastname_idx_index",
+        "716585a4-5878-11ea-904d-b14aeefbf5a2": "videos_by_location",
+        "f9856450-5878-11ea-904d-b14aeefbf5a2": "fk videos_by_tag.tag to tags_by_letter.tag",
+        "03993200-5879-11ea-904d-b14aeefbf5a2": "fk videos.videoid to videos_by_tag.videoid",
+        "2dadbf70-5879-11ea-904d-b14aeefbf5a2": "fk videos.videoid to latest_videos.videoid",
+        "32cb41d0-5879-11ea-904d-b14aeefbf5a2": "fk videos.videoid to video_event.videoid",
+        "368d2bd0-5879-11ea-904d-b14aeefbf5a2": "fk videos.videoid to video_rating.videoid",
+        "ffa8c880-5879-11ea-904d-b14aeefbf5a2": "fk videos.videoid to uploaded_videos_by_jobid.videoid",
+        "038629c0-587a-11ea-904d-b14aeefbf5a2": "fk encoding_job_notifications.jobid to uploaded_videos_by_jobid.jobid",
+        "0a9eb8d0-587a-11ea-904d-b14aeefbf5a2": "fk users.userid to uploaded_videos_by_jobid.userid",
+        "1569a180-587a-11ea-904d-b14aeefbf5a2": "fk users.userid to user_videos.userid",
+        "1a771e50-587a-11ea-904d-b14aeefbf5a2": "fk videos.videoid to user_videos.videoid",
+        "20c642e0-587a-11ea-904d-b14aeefbf5a2": "fk users.userid to comments_by_user.userid",
+        "251e5260-587a-11ea-904d-b14aeefbf5a2": "fk videos.videoid to comments_by_user.videoid",
+        "29333e60-587a-11ea-904d-b14aeefbf5a2": "fk videos.videoid to video_ratings_by_user.videoid",
+        "2ec9e860-587a-11ea-904d-b14aeefbf5a2": "fk users.userid to video_ratings_by_user.userid",
+        "33e791d0-587a-11ea-904d-b14aeefbf5a2": "fk videos.videoid to comments_by_video.videoid",
+        "3c526a70-587a-11ea-904d-b14aeefbf5a2": "fk users.userid to comments_by_video.userid",
+        "4cf41360-587a-11ea-904d-b14aeefbf5a2": "fk videos.videoid to uploaded_videos.videoid",
+        "521a6f60-587a-11ea-904d-b14aeefbf5a2": "fk users.userid to uploaded_videos.userid",
+        "578156d0-587a-11ea-904d-b14aeefbf5a2": "fk users.userid to user_credentials.userid"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [
+            {
+                "code": "",
+                "type": "document",
+                "properties": [
+                    {
+                        "code": "",
+                        "type": "numeric",
+                        "mode": "int",
+                        "frozen": false,
+                        "name": "height",
+                        "GUID": "71348a93-5878-11ea-904d-b14aeefbf5a2",
+                        "primaryKey": false,
+                        "childType": "numeric",
+                        "relationshipType": "",
+                        "parentRelationship": "",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "childRelationships": [],
+                        "unit": "",
+                        "minimum": "",
+                        "exclusiveMinimum": false,
+                        "maximum": "",
+                        "exclusiveMaximum": false,
+                        "multipleOf": "",
+                        "divisibleBy": "",
+                        "default": "",
+                        "enum": [],
+                        "sample": "",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "description": "",
+                        "comments": "",
+                        "dependencies": [],
+                        "required": false,
+                        "id": ""
+                    },
+                    {
+                        "code": "",
+                        "type": "numeric",
+                        "mode": "int",
+                        "frozen": false,
+                        "name": "width",
+                        "GUID": "71348a94-5878-11ea-904d-b14aeefbf5a2",
+                        "primaryKey": false,
+                        "childType": "numeric",
+                        "relationshipType": "",
+                        "parentRelationship": "",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "childRelationships": [],
+                        "unit": "",
+                        "minimum": "",
+                        "exclusiveMinimum": false,
+                        "maximum": "",
+                        "exclusiveMaximum": false,
+                        "multipleOf": "",
+                        "divisibleBy": "",
+                        "default": "",
+                        "enum": [],
+                        "sample": "",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "description": "",
+                        "comments": "",
+                        "dependencies": [],
+                        "required": false,
+                        "id": ""
+                    },
+                    {
+                        "code": "",
+                        "type": "array",
+                        "subtype": "set<str>",
+                        "frozen": true,
+                        "name": "video_bit_rate",
+                        "GUID": "71348a95-5878-11ea-904d-b14aeefbf5a2",
+                        "properties": [
+                            {
+                                "type": "string",
+                                "mode": "text",
+                                "arrayItem": true,
+                                "GUID": "7134b1a0-5878-11ea-904d-b14aeefbf5a2",
+                                "primaryKey": false,
+                                "childType": "char",
+                                "relationshipType": "",
+                                "parentRelationship": "",
+                                "foreignCollection": "",
+                                "foreignField": [],
+                                "childRelationships": [],
+                                "default": "",
+                                "minLength": "",
+                                "maxLength": "",
+                                "pattern": "",
+                                "enum": [],
+                                "sample": "",
+                                "comments": "",
+                                "compositeKey": [
+                                    "compositePartitionKey",
+                                    "compositeClusteringKey"
+                                ],
+                                "compositePartitionKey": false,
+                                "compositeClusteringKey": false,
+                                "description": "",
+                                "required": false,
+                                "id": "",
+                                "hackoladeMeta": {},
+                                "arrayParentType": "set"
+                            }
+                        ],
+                        "primaryKey": false,
+                        "childType": "set",
+                        "additionalItems": true,
+                        "relationshipType": "",
+                        "parentRelationship": "",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "childRelationships": [],
+                        "dependencies": [],
+                        "minProperties": "",
+                        "maxProperties": "",
+                        "additionalProperties": false,
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "description": "",
+                        "comments": "",
+                        "required": false,
+                        "id": ""
+                    },
+                    {
+                        "code": "",
+                        "type": "string",
+                        "mode": "text",
+                        "frozen": false,
+                        "name": "encoding",
+                        "GUID": "71348a96-5878-11ea-904d-b14aeefbf5a2",
+                        "primaryKey": false,
+                        "childType": "char",
+                        "relationshipType": "",
+                        "parentRelationship": "",
+                        "foreignCollection": "",
+                        "foreignField": [],
+                        "childRelationships": [],
+                        "default": "",
+                        "minLength": "",
+                        "maxLength": "",
+                        "pattern": "",
+                        "enum": [],
+                        "sample": "",
+                        "comments": "",
+                        "compositeKey": [
+                            "compositePartitionKey",
+                            "compositeClusteringKey"
+                        ],
+                        "compositePartitionKey": false,
+                        "compositeClusteringKey": false,
+                        "description": "",
+                        "dependencies": [],
+                        "required": false,
+                        "id": ""
+                    }
+                ],
+                "name": "video_metadata",
+                "GUID": "71348a92-5878-11ea-904d-b14aeefbf5a2",
+                "primaryKey": false,
+                "childType": "udt",
+                "relationshipType": "",
+                "parentRelationship": "",
+                "foreignCollection": "",
+                "foreignField": [],
+                "childRelationships": [],
+                "dependencies": [],
+                "minProperties": "",
+                "maxProperties": "",
+                "frozen": true,
+                "additionalProperties": false,
+                "compositeKey": [
+                    "compositePartitionKey",
+                    "compositeClusteringKey"
+                ],
+                "compositePartitionKey": false,
+                "compositeClusteringKey": false,
+                "description": "",
+                "comments": "",
+                "required": false,
+                "id": "",
+                "definitionRefs": [
+                    [
+                        "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "71343c70-5878-11ea-904d-b14aeefbf5a2",
+                        "71343c76-5878-11ea-904d-b14aeefbf5a2"
+                    ]
+                ]
+            }
+        ],
+        "GUID": "f1e85fd1-5874-11ea-904d-b14aeefbf5a2"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "f1e85fd2-5874-11ea-904d-b14aeefbf5a2"
+    },
+    "decorativeSymbols": [],
+    "dbVersion": "2019.x",
+    "dbVendor": "ScyllaDB",
+    "appTarget": "ScyllaDB",
+    "creationTS": "2020-02-26T08:49:48.621Z",
+    "hideModelViews": false,
+    "hackoladeMeta": {
+        "validationErrors": {
+            "port": false
+        }
+    },
+    "port": 9042,
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "ScyllaDB",
+        "pluginVersion": "0.0.1",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "3.6.6"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "71310820-5878-11ea-904d-b14aeefbf5a2",
+                        "x": 1142.2205125533094,
+                        "y": 577.0946575174074,
+                        "width": 245,
+                        "height": 86,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7131a460-5878-11ea-904d-b14aeefbf5a2",
+                        "x": 1142.2205125533094,
+                        "y": 812.0946575174074,
+                        "width": 245,
+                        "height": 86,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7131cb71-5878-11ea-904d-b14aeefbf5a2",
+                        "x": 1541.3494224335288,
+                        "y": 258.6557955551594,
+                        "width": 243,
+                        "height": 100,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7131f281-5878-11ea-904d-b14aeefbf5a2",
+                        "x": 184.2205125533095,
+                        "y": 308.289811918558,
+                        "width": 310,
+                        "height": 100,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "71321991-5878-11ea-904d-b14aeefbf5a2",
+                        "x": 217.2205125533095,
+                        "y": 790.289811918558,
+                        "width": 243,
+                        "height": 58,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "713267b1-5878-11ea-904d-b14aeefbf5a2",
+                        "x": 1133.656057613199,
+                        "y": 982.1620741490386,
+                        "width": 263,
+                        "height": 142,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
+                        "x": 1132.2205125533087,
+                        "y": 238.01549239264762,
+                        "width": 263,
+                        "height": 142,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7132dce2-5878-11ea-904d-b14aeefbf5a2",
+                        "x": 1544.2205125533094,
+                        "y": 795.289811918558,
+                        "width": 243,
+                        "height": 72,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "713303f3-5878-11ea-904d-b14aeefbf5a2",
+                        "x": 1109.2205125533094,
+                        "y": 427.0946575174075,
+                        "width": 328,
+                        "height": 100,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                        "x": 1534.2205125533094,
+                        "y": 597.1380872150806,
+                        "width": 263,
+                        "height": 100,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "71335211-5878-11ea-904d-b14aeefbf5a2",
+                        "x": 184.2205125533095,
+                        "y": 470.28981191855803,
+                        "width": 310,
+                        "height": 114,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7133ee51-5878-11ea-904d-b14aeefbf5a2",
+                        "x": 214.2205125533095,
+                        "y": 640.289811918558,
+                        "width": 250,
+                        "height": 72,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "71341561-5878-11ea-904d-b14aeefbf5a2",
+                        "x": 1142.2205125533094,
+                        "y": 688.0946575174074,
+                        "width": 243,
+                        "height": 72,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "71341566-5878-11ea-904d-b14aeefbf5a2",
+                        "x": 661.2205125533094,
+                        "y": 599.289811918558,
+                        "width": 315,
+                        "height": 282,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7134b1a2-5878-11ea-904d-b14aeefbf5a2",
+                        "x": 184.2205125533095,
+                        "y": 900.289811918558,
+                        "width": 310,
+                        "height": 114,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "716585a4-5878-11ea-904d-b14aeefbf5a2",
+                        "x": 683.2205125533094,
+                        "y": 389.289811918558,
+                        "width": 268,
+                        "height": 127,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 144.22051255330948,
+                        "y": 198.01549239264764,
+                        "GUID": "7165acb0-5878-11ea-904d-b14aeefbf5a2"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "hideRelationshipName": false,
+                    "showPropertiesBoxes": false,
+                    "nameAlongTheLine": false,
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "expandCollections": [],
+                "decorativeSymbols": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true,
+            "hideErdDetails": false
+        }
+    }
+}
