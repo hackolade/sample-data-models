@@ -15,7 +15,8 @@
                     "GUID": "1dbd63f0-5d9a-11eb-ba6c-471f1286dd5d",
                     "required": true,
                     "sample": "2017-04-28",
-                    "error": {}
+                    "error": {},
+                    "properties": []
                 },
                 {
                     "code": "",
@@ -37,7 +38,8 @@
                                         "c6b0c0b0-8202-11eb-8147-91e16025b928",
                                         "d14a1210-8202-11eb-8147-91e16025b928"
                                     ],
-                                    "parentRelationship": "e2bb8e20-8202-11eb-8147-91e16025b928"
+                                    "parentRelationship": "e2bb8e20-8202-11eb-8147-91e16025b928",
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -64,7 +66,8 @@
                                     "GUID": "1dbd8b00-5d9a-11eb-ba6c-471f1286dd5d",
                                     "required": false,
                                     "sample": null,
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -75,7 +78,8 @@
                                     "GUID": "1dbd63f2-5d9a-11eb-ba6c-471f1286dd5d",
                                     "required": true,
                                     "sample": "SanFrancisco,CA",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -86,7 +90,8 @@
                                     "GUID": "1dbd8b01-5d9a-11eb-ba6c-471f1286dd5d",
                                     "required": true,
                                     "sample": "JoyceRidgely",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -97,7 +102,8 @@
                                     "GUID": "1dbd8b02-5d9a-11eb-ba6c-471f1286dd5d",
                                     "required": true,
                                     "sample": "16504378889",
-                                    "description": "Added description"
+                                    "description": "Added description",
+                                    "properties": []
                                 },
                                 {
                                     "type": "string",
@@ -105,7 +111,8 @@
                                     "hackoladeMeta": {},
                                     "isActivated": true,
                                     "GUID": "8eec7520-5d9a-11eb-ba6c-471f1286dd5d",
-                                    "format": "email"
+                                    "format": "email",
+                                    "properties": []
                                 }
                             ],
                             "hackoladeMeta": {},
@@ -113,7 +120,8 @@
                             "GUID": "24ec6130-5d9a-11eb-ba6c-471f1286dd5d",
                             "arrayItem": true,
                             "arrayParentType": "array",
-                            "error": {}
+                            "error": {},
+                            "additionalProperties": true
                         }
                     ],
                     "additionalItems": true,
@@ -133,7 +141,8 @@
                     "GUID": "1dbd8b03-5d9a-11eb-ba6c-471f1286dd5d",
                     "required": true,
                     "sample": "PaulMillerToyota",
-                    "error": {}
+                    "error": {},
+                    "properties": []
                 },
                 {
                     "code": "",
@@ -155,7 +164,8 @@
                                 "c6b0c0b0-8202-11eb-8147-91e16025b928",
                                 "d14a1210-8202-11eb-8147-91e16025b928"
                             ],
-                            "parentRelationship": "e8111070-8202-11eb-8147-91e16025b928"
+                            "parentRelationship": "e8111070-8202-11eb-8147-91e16025b928",
+                            "properties": []
                         },
                         {
                             "type": "string",
@@ -163,7 +173,8 @@
                             "hackoladeMeta": {},
                             "isActivated": true,
                             "GUID": "a3185640-5d9a-11eb-ba6c-471f1286dd5d",
-                            "error": {}
+                            "error": {},
+                            "properties": []
                         },
                         {
                             "type": "string",
@@ -171,7 +182,8 @@
                             "hackoladeMeta": {},
                             "isActivated": true,
                             "GUID": "a84f7b20-5d9a-11eb-ba6c-471f1286dd5d",
-                            "error": {}
+                            "error": {},
+                            "properties": []
                         },
                         {
                             "code": "",
@@ -184,7 +196,8 @@
                             "sample": "+18889991010",
                             "error": {},
                             "hackoladeMeta": {},
-                            "default": ""
+                            "default": "",
+                            "properties": []
                         }
                     ],
                     "name": "salesperson",
@@ -192,7 +205,8 @@
                     "primaryKey": false,
                     "GUID": "1dbd8b04-5d9a-11eb-ba6c-471f1286dd5d",
                     "required": true,
-                    "error": {}
+                    "error": {},
+                    "additionalProperties": true
                 },
                 {
                     "code": "",
@@ -213,7 +227,8 @@
                                             "arrayItem": true,
                                             "arrayParentType": "array",
                                             "sample": "extwarranty",
-                                            "error": {}
+                                            "error": {},
+                                            "properties": []
                                         }
                                     ],
                                     "additionalItems": true,
@@ -233,7 +248,8 @@
                                     "GUID": "1dbd8b10-5d9a-11eb-ba6c-471f1286dd5d",
                                     "required": true,
                                     "sample": "Honda",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -244,7 +260,8 @@
                                     "GUID": "1dbd8b11-5d9a-11eb-ba6c-471f1286dd5d",
                                     "required": true,
                                     "sample": "Civic",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -255,7 +272,8 @@
                                     "GUID": "1dbd8b12-5d9a-11eb-ba6c-471f1286dd5d",
                                     "required": true,
                                     "sample": "20275",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -266,13 +284,14 @@
                                     "GUID": "1dbd8b13-5d9a-11eb-ba6c-471f1286dd5d",
                                     "required": true,
                                     "sample": "2017",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "type": "choice",
                                     "properties": [
                                         {
-                                            "type": "subschema",
+                                            "type": "document",
                                             "properties": [
                                                 {
                                                     "code": "",
@@ -281,16 +300,18 @@
                                                     "isActivated": true,
                                                     "primaryKey": false,
                                                     "GUID": "1dbd8b0b-5d9a-11eb-ba6c-471f1286dd5d",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 }
                                             ],
                                             "isActivated": true,
                                             "GUID": "1dbd8b0a-5d9a-11eb-ba6c-471f1286dd5d",
                                             "additionalProperties": true,
-                                            "error": {}
+                                            "error": {},
+                                            "subschema": true
                                         },
                                         {
-                                            "type": "subschema",
+                                            "type": "document",
                                             "properties": [
                                                 {
                                                     "code": "",
@@ -307,7 +328,8 @@
                                                                     "GUID": "24ecd660-5d9a-11eb-ba6c-471f1286dd5d",
                                                                     "arrayItem": true,
                                                                     "arrayParentType": "array",
-                                                                    "error": {}
+                                                                    "error": {},
+                                                                    "properties": []
                                                                 }
                                                             ],
                                                             "additionalItems": true,
@@ -326,20 +348,23 @@
                                                             "primaryKey": false,
                                                             "GUID": "1dbd8b0f-5d9a-11eb-ba6c-471f1286dd5d",
                                                             "required": true,
-                                                            "error": {}
+                                                            "error": {},
+                                                            "properties": []
                                                         }
                                                     ],
                                                     "name": "insurance",
                                                     "isActivated": true,
                                                     "primaryKey": false,
                                                     "GUID": "1dbd8b0d-5d9a-11eb-ba6c-471f1286dd5d",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "additionalProperties": true
                                                 }
                                             ],
                                             "isActivated": true,
                                             "GUID": "1dbd8b0c-5d9a-11eb-ba6c-471f1286dd5d",
                                             "additionalProperties": true,
-                                            "error": {}
+                                            "error": {},
+                                            "subschema": true
                                         }
                                     ],
                                     "isActivated": true,
@@ -378,7 +403,8 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             },
-            "bucketId": "24eb28b0-5d9a-11eb-ba6c-471f1286dd5d"
+            "bucketId": "24eb28b0-5d9a-11eb-ba6c-471f1286dd5d",
+            "additionalProperties": true
         },
         {
             "code": "",
@@ -395,7 +421,8 @@
                     "childRelationships": [
                         "e2bb8e20-8202-11eb-8147-91e16025b928",
                         "e8111070-8202-11eb-8147-91e16025b928"
-                    ]
+                    ],
+                    "properties": []
                 },
                 {
                     "code": "",
@@ -410,7 +437,8 @@
                             "GUID": "c6b18401-8202-11eb-8147-91e16025b928",
                             "required": true,
                             "sample": 24,
-                            "error": {}
+                            "error": {},
+                            "properties": []
                         },
                         {
                             "code": "",
@@ -421,7 +449,8 @@
                             "GUID": "c6b18402-8202-11eb-8147-91e16025b928",
                             "required": true,
                             "sample": "F",
-                            "error": {}
+                            "error": {},
+                            "properties": []
                         },
                         {
                             "code": "",
@@ -436,7 +465,8 @@
                                     "GUID": "c6b18404-8202-11eb-8147-91e16025b928",
                                     "required": true,
                                     "sample": "Jane",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -447,7 +477,8 @@
                                     "GUID": "c6b18405-8202-11eb-8147-91e16025b928",
                                     "required": true,
                                     "sample": "Roberts",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 }
                             ],
                             "name": "name",
@@ -455,7 +486,8 @@
                             "primaryKey": false,
                             "GUID": "c6b18403-8202-11eb-8147-91e16025b928",
                             "required": true,
-                            "error": {}
+                            "error": {},
+                            "additionalProperties": true
                         }
                     ],
                     "name": "personal",
@@ -463,7 +495,8 @@
                     "primaryKey": false,
                     "GUID": "c6b18400-8202-11eb-8147-91e16025b928",
                     "required": true,
-                    "error": {}
+                    "error": {},
+                    "additionalProperties": true
                 },
                 {
                     "code": "",
@@ -481,7 +514,8 @@
                                     "GUID": "c6b18408-8202-11eb-8147-91e16025b928",
                                     "required": true,
                                     "sample": "car",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -492,7 +526,8 @@
                                     "GUID": "c6b18409-8202-11eb-8147-91e16025b928",
                                     "required": true,
                                     "sample": "Honda Accord",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -507,7 +542,8 @@
                                             "GUID": "c6b1840b-8202-11eb-8147-91e16025b928",
                                             "required": true,
                                             "sample": "Car Insurance",
-                                            "error": {}
+                                            "error": {},
+                                            "properties": []
                                         },
                                         {
                                             "code": "",
@@ -518,7 +554,8 @@
                                             "GUID": "c6b1840c-8202-11eb-8147-91e16025b928",
                                             "required": true,
                                             "sample": "98765",
-                                            "error": {}
+                                            "error": {},
+                                            "properties": []
                                         }
                                     ],
                                     "name": "insurance",
@@ -526,7 +563,8 @@
                                     "primaryKey": false,
                                     "GUID": "c6b1840a-8202-11eb-8147-91e16025b928",
                                     "required": true,
-                                    "error": {}
+                                    "error": {},
+                                    "additionalProperties": true
                                 },
                                 {
                                     "code": "",
@@ -544,7 +582,8 @@
                                                     "GUID": "c6b1840f-8202-11eb-8147-91e16025b928",
                                                     "required": true,
                                                     "sample": "01-13-2018",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -555,7 +594,8 @@
                                                     "GUID": "c6b18410-8202-11eb-8147-91e16025b928",
                                                     "required": true,
                                                     "sample": "new brakes",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 }
                                             ],
                                             "hackoladeMeta": {},
@@ -563,7 +603,8 @@
                                             "GUID": "c6b1840e-8202-11eb-8147-91e16025b928",
                                             "arrayItem": true,
                                             "arrayParentType": "array",
-                                            "error": {}
+                                            "error": {},
+                                            "additionalProperties": true
                                         }
                                     ],
                                     "additionalItems": true,
@@ -580,7 +621,8 @@
                             "GUID": "c6b18407-8202-11eb-8147-91e16025b928",
                             "arrayItem": true,
                             "arrayParentType": "array",
-                            "error": {}
+                            "error": {},
+                            "additionalProperties": true
                         }
                     ],
                     "additionalItems": true,
@@ -600,7 +642,8 @@
                     "GUID": "c6b18411-8202-11eb-8147-91e16025b928",
                     "required": true,
                     "sample": "phone",
-                    "error": {}
+                    "error": {},
+                    "properties": []
                 }
             ],
             "definitions": {
@@ -611,7 +654,8 @@
             "isActivated": true,
             "GUID": "c6b0c0b0-8202-11eb-8147-91e16025b928",
             "hackoladeMeta": {},
-            "bucketId": "24eb28b0-5d9a-11eb-ba6c-471f1286dd5d"
+            "bucketId": "24eb28b0-5d9a-11eb-ba6c-471f1286dd5d",
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -740,6 +784,11 @@
         "properties": [],
         "GUID": "0d25a611-5d9a-11eb-ba6c-471f1286dd5d"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "d0879333-afff-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
@@ -747,18 +796,19 @@
     },
     "sources": [],
     "decorativeSymbols": [],
-    "dbVendor": "Plain JSON--no DB",
+    "dbVendor": "JSON",
+    "dbVersion": "draft-04",
     "appTarget": "JSON",
     "creationTS": "2021-01-23T16:42:59.185Z",
     "GUID": "f88567d0-8202-11eb-8147-91e16025b928",
-    "lastModifTS": "2021-03-11T00:46:38.237Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T08:03:17.629Z",
+    "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.11"
+        "version": "6.0.0"
     },
     "hackoladeMeta": {
         "customPropertiesUpdated": true,
@@ -777,15 +827,15 @@
                         "x": 90,
                         "y": 90,
                         "width": 293,
-                        "height": 467,
+                        "height": 591,
                         "color": {}
                     },
                     {
                         "GUID": "c6b0c0b0-8202-11eb-8147-91e16025b928",
                         "x": 515,
-                        "y": 174,
+                        "y": 198,
                         "width": 267,
-                        "height": 299,
+                        "height": 375,
                         "color": {}
                     }
                 ],
@@ -802,15 +852,15 @@
                     "childField": [],
                     "parentField": []
                 },
-                "selectedCollections": [],
+                "selectedCollections": [
+                    "24ebc4f0-5d9a-11eb-ba6c-471f1286dd5d",
+                    "c6b0c0b0-8202-11eb-8147-91e16025b928"
+                ],
                 "displayColorPicker": false,
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -824,8 +874,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

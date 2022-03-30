@@ -1,65 +1,36 @@
 {
-    "GUID": "55863d70-d3d0-11e9-8089-8f3eb49036fb",
     "modelName": "ProgramCreek",
-    "code": "",
-    "lastModifTS": "2019-12-18T10:11:27.872Z",
-    "persistenceSchemaVersion": "3",
-    "description": "",
-    "comments": "",
-    "author": "",
-    "version": "",
     "collections": [
         {
             "GUID": "ba8cf8d0-d3d0-11e9-8089-8f3eb49036fb",
             "collectionName": "ParquetSchema",
             "code": "",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
                     "subtype": "map<str>",
                     "keyType": "string",
-                    "dependencies": [],
                     "primaryKey": false,
                     "properties": [
                         {
                             "subtype": "map<str>",
                             "keyType": "string",
-                            "dependencies": [],
                             "primaryKey": false,
                             "properties": [
                                 {
                                     "subtype": "map<str>",
                                     "keyType": "string",
-                                    "dependencies": [],
                                     "primaryKey": false,
                                     "properties": [
                                         {
-                                            "required": false,
-                                            "minLength": "",
-                                            "maxLength": "",
-                                            "pattern": "",
-                                            "default": "",
                                             "primaryKey": false,
                                             "relationshipType": "",
-                                            "parentRelationship": "",
-                                            "childRelationships": [],
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "enum": [],
-                                            "sample": "",
                                             "childType": "binary",
                                             "type": "string",
                                             "GUID": "f602d5b0-d3d0-11e9-8089-8f3eb49036fb",
                                             "name": "first_name",
                                             "code": "",
-                                            "description": "",
-                                            "comments": "",
-                                            "dependencies": [],
-                                            "id": "",
                                             "hackoladeMeta": {},
                                             "bitWidth": "32",
                                             "logicalType": "UTF8",
@@ -73,31 +44,17 @@
                                                 "name": false,
                                                 "logicalType": false,
                                                 "repetition": false
-                                            }
+                                            },
+                                            "isActivated": true
                                         },
                                         {
-                                            "required": false,
-                                            "minLength": "",
-                                            "maxLength": "",
-                                            "pattern": "",
-                                            "default": "",
                                             "primaryKey": false,
                                             "relationshipType": "",
-                                            "parentRelationship": "",
-                                            "childRelationships": [],
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "enum": [],
-                                            "sample": "",
                                             "childType": "binary",
                                             "type": "string",
                                             "GUID": "015cb7f0-d3d1-11e9-8089-8f3eb49036fb",
                                             "name": "last_name",
                                             "code": "",
-                                            "description": "",
-                                            "comments": "",
-                                            "dependencies": [],
-                                            "id": "",
                                             "hackoladeMeta": {},
                                             "bitWidth": "32",
                                             "logicalType": "UTF8",
@@ -110,92 +67,52 @@
                                             "error": {
                                                 "name": false,
                                                 "logicalType": false
-                                            }
+                                            },
+                                            "isActivated": true
                                         }
                                     ],
-                                    "minProperties": "",
-                                    "maxProperties": "",
                                     "additionalProperties": false,
                                     "childType": "group",
                                     "type": "document",
                                     "GUID": "e81ca340-d3d0-11e9-8089-8f3eb49036fb",
                                     "name": "name",
                                     "code": "",
-                                    "description": "",
-                                    "comments": "",
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
                                     "bitWidth": "32",
-                                    "logicalType": "",
                                     "signed": true,
                                     "compressionCodec": "Uncompressed",
                                     "encoding": [
                                         "Plain"
                                     ],
-                                    "repetition": "required"
+                                    "repetition": "required",
+                                    "isActivated": true
                                 },
                                 {
-                                    "unit": "",
-                                    "minimum": "",
-                                    "exclusiveMinimum": false,
-                                    "maximum": "",
-                                    "exclusiveMaximum": false,
-                                    "multipleOf": "",
-                                    "divisibleBy": "",
-                                    "default": "",
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "enum": [],
                                     "bitWidth": "32",
-                                    "sample": "",
                                     "childType": "int",
                                     "type": "numeric",
                                     "GUID": "9c46c4e0-d3d1-11e9-8089-8f3eb49036fb",
                                     "name": "id",
                                     "code": "",
-                                    "description": "",
-                                    "comments": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "logicalType": "",
                                     "signed": true,
                                     "compressionCodec": "Uncompressed",
                                     "encoding": [
                                         "Plain"
                                     ],
                                     "repetition": "optional",
-                                    "error": {}
+                                    "isActivated": true
                                 },
                                 {
-                                    "required": false,
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "default": "",
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "enum": [],
-                                    "sample": "",
                                     "childType": "binary",
                                     "type": "string",
                                     "GUID": "ada5a350-d3d1-11e9-8089-8f3eb49036fb",
                                     "name": "email ",
                                     "code": "",
-                                    "description": "",
-                                    "comments": "",
-                                    "dependencies": [],
-                                    "id": "",
                                     "hackoladeMeta": {},
                                     "bitWidth": "32",
                                     "logicalType": "UTF8",
@@ -205,43 +122,26 @@
                                         "Plain"
                                     ],
                                     "repetition": "required",
-                                    "error": {}
+                                    "isActivated": true
                                 },
                                 {
                                     "subtype": "map<str>",
                                     "keyType": "string",
-                                    "dependencies": [],
                                     "primaryKey": false,
                                     "properties": [
                                         {
                                             "subtype": "map<str>",
                                             "keyType": "string",
-                                            "dependencies": [],
                                             "primaryKey": false,
                                             "properties": [
                                                 {
-                                                    "required": false,
-                                                    "minLength": "",
-                                                    "maxLength": "",
-                                                    "pattern": "",
-                                                    "default": "",
                                                     "primaryKey": false,
                                                     "relationshipType": "",
-                                                    "parentRelationship": "",
-                                                    "childRelationships": [],
-                                                    "foreignCollection": "",
-                                                    "foreignField": [],
-                                                    "enum": [],
-                                                    "sample": "",
                                                     "childType": "binary",
                                                     "type": "string",
                                                     "GUID": "dab19ed0-d3d1-11e9-8089-8f3eb49036fb",
                                                     "name": "number",
                                                     "code": "",
-                                                    "description": "",
-                                                    "comments": "",
-                                                    "dependencies": [],
-                                                    "id": "",
                                                     "hackoladeMeta": {},
                                                     "bitWidth": "32",
                                                     "logicalType": "UTF8",
@@ -251,31 +151,16 @@
                                                         "Plain"
                                                     ],
                                                     "repetition": "optional",
-                                                    "error": {}
+                                                    "isActivated": true
                                                 },
                                                 {
-                                                    "required": false,
-                                                    "minLength": "",
-                                                    "maxLength": "",
-                                                    "pattern": "",
-                                                    "default": "",
                                                     "primaryKey": false,
                                                     "relationshipType": "",
-                                                    "parentRelationship": "",
-                                                    "childRelationships": [],
-                                                    "foreignCollection": "",
-                                                    "foreignField": [],
-                                                    "enum": [],
-                                                    "sample": "",
                                                     "childType": "binary",
                                                     "type": "string",
                                                     "GUID": "e60b8110-d3d1-11e9-8089-8f3eb49036fb",
                                                     "name": "type",
                                                     "code": "",
-                                                    "description": "",
-                                                    "comments": "",
-                                                    "dependencies": [],
-                                                    "id": "",
                                                     "hackoladeMeta": {},
                                                     "bitWidth": "32",
                                                     "logicalType": "ENUM",
@@ -285,45 +170,32 @@
                                                         "Plain"
                                                     ],
                                                     "repetition": "optional",
-                                                    "error": {}
+                                                    "isActivated": true
                                                 }
                                             ],
-                                            "minProperties": "",
-                                            "maxProperties": "",
                                             "additionalProperties": false,
                                             "childType": "group",
                                             "type": "document",
                                             "GUID": "cfe2be80-d3d1-11e9-8089-8f3eb49036fb",
                                             "name": "phones_tuple",
                                             "code": "",
-                                            "description": "",
-                                            "comments": "",
-                                            "required": false,
-                                            "id": "",
                                             "hackoladeMeta": {},
                                             "bitWidth": "32",
-                                            "logicalType": "",
                                             "signed": true,
                                             "compressionCodec": "Uncompressed",
                                             "encoding": [
                                                 "Plain"
                                             ],
                                             "repetition": "repeated",
-                                            "error": {}
+                                            "isActivated": true
                                         }
                                     ],
-                                    "minProperties": "",
-                                    "maxProperties": "",
                                     "additionalProperties": false,
                                     "childType": "group",
                                     "type": "document",
                                     "GUID": "b8d76420-d3d1-11e9-8089-8f3eb49036fb",
                                     "name": "phones",
                                     "code": "",
-                                    "description": "",
-                                    "comments": "",
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
                                     "bitWidth": "32",
                                     "logicalType": "LIST",
@@ -333,24 +205,17 @@
                                         "Plain"
                                     ],
                                     "repetition": "optional",
-                                    "error": {}
+                                    "isActivated": true
                                 }
                             ],
-                            "minProperties": "",
-                            "maxProperties": "",
                             "additionalProperties": false,
                             "childType": "group",
                             "type": "document",
                             "GUID": "d996d570-d3d0-11e9-8089-8f3eb49036fb",
                             "name": "persons_tuple",
                             "code": "",
-                            "description": "",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
                             "hackoladeMeta": {},
                             "bitWidth": "32",
-                            "logicalType": "",
                             "signed": true,
                             "compressionCodec": "Uncompressed",
                             "encoding": [
@@ -359,21 +224,16 @@
                             "repetition": "repeated",
                             "error": {
                                 "repetition": false
-                            }
+                            },
+                            "isActivated": true
                         }
                     ],
-                    "minProperties": "",
-                    "maxProperties": "",
                     "additionalProperties": false,
                     "childType": "group",
                     "type": "document",
                     "GUID": "bb4636b0-d3d0-11e9-8089-8f3eb49036fb",
                     "name": "persons",
                     "code": "",
-                    "description": "",
-                    "comments": "",
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
                     "bitWidth": "32",
                     "logicalType": "LIST",
@@ -386,7 +246,8 @@
                     "error": {
                         "repetition": false,
                         "logicalType": false
-                    }
+                    },
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -401,7 +262,8 @@
                 "validationErrors": {
                     "collectionName": false
                 }
-            }
+            },
+            "isActivated": true
         }
     ],
     "buckets": [
@@ -411,7 +273,6 @@
             "code": "",
             "type": "bucket",
             "description": "Derived from https://www.programcreek.com/java-api-examples/?api=org.apache.parquet.schema.MessageTypeParser\n\nExpected schema:\n\nmessage ParquetSchema {\\n\" +\n                  \"  optional group persons (LIST) = 1 {\\n\" +\n                  \"    repeated group persons_tuple {\\n\" +\n                  \"      required group name = 1 {\\n\" +\n                  \"        optional binary first_name (UTF8) = 1;\\n\" +\n                  \"        optional binary last_name (UTF8) = 2;\\n\" +\n                  \"      }\\n\" +\n                  \"      optional int32 id = 2;\\n\" +\n                  \"      optional binary email (UTF8) = 3;\\n\" +\n                  \"      optional group phones (LIST) = 4 {\\n\" +\n                  \"        repeated group phones_tuple {\\n\" +\n                  \"          optional binary number (UTF8) = 1;\\n\" +\n                  \"          optional binary type (ENUM) = 2;\\n\" +\n                  \"        }\\n\" +\n                  \"      }\\n\" +\n                  \"    }\\n\" +\n                  \"  }\\n\" +\n                  \"}\";",
-            "comments": "",
             "collectionIds": [
                 "ba8cf8d0-d3d0-11e9-8089-8f3eb49036fb"
             ],
@@ -427,12 +288,14 @@
                 "validationErrors": {
                     "name": false
                 }
-            }
+            },
+            "isActivated": true
         }
     ],
     "views": [],
     "relationships": [],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "ba5dd280-d3d0-11e9-8089-8f3eb49036fb": "Example 8",
         "ba8cf8d0-d3d0-11e9-8089-8f3eb49036fb": "ParquetSchema",
@@ -453,16 +316,30 @@
         "properties": [],
         "GUID": "55863d71-d3d0-11e9-8089-8f3eb49036fb"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "4ed81fe3-b003-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "55863d72-d3d0-11e9-8089-8f3eb49036fb"
     },
+    "sources": [],
     "decorativeSymbols": [],
     "dbVersion": "2.x",
     "dbVendor": "Parquet",
     "appTarget": "PARQUET",
     "creationTS": "2019-09-10T13:38:55.303Z",
+    "GUID": "55863d70-d3d0-11e9-8089-8f3eb49036fb",
+    "code": "",
+    "lastModifTS": "2022-03-30T08:28:07.090Z",
+    "persistenceSchemaVersion": "6",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
     "hackoladeMeta": {
         "validationErrors": {
             "modelName": false
@@ -471,11 +348,11 @@
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "Parquet",
-        "pluginVersion": "0.1.0",
+        "pluginVersion": "0.1.3",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "3.5.5"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -485,40 +362,44 @@
                         "GUID": "ba8cf8d0-d3d0-11e9-8089-8f3eb49036fb",
                         "x": 80,
                         "y": 80,
-                        "width": 341,
-                        "height": 183,
+                        "width": 271,
+                        "height": 231,
                         "color": {}
                     }
                 ],
                 "buckets": [
                     {
                         "x": 40,
-                        "y": 10,
+                        "y": 40,
                         "GUID": "ba5dd280-d3d0-11e9-8089-8f3eb49036fb"
                     }
                 ],
                 "collapsedNodes": [],
                 "activeRelationship": "",
-                "selectedCollections": [],
-                "decorativeSymbols": [],
-                "graphView": {
-                    "erd": [],
-                    "buckets": []
-                },
                 "activeRelationshipFields": {
                     "childField": [],
                     "parentField": []
                 },
+                "selectedCollections": [],
                 "displayColorPicker": false,
-                "expandCollections": []
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false
+            "shouldDistributeCollections": false
         }
     }
 }

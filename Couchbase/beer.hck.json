@@ -1,11 +1,5 @@
 {
-    "GUID": "d7bfaf80-ffeb-11e6-bc11-bba283d07659",
-    "lastModifTS": "2017-03-04T11:17:56.821Z",
-    "persistenceSchemaVersion": "1",
-    "description": "beer-sample application described in http://docs.couchbase.com/admin/admin/Misc/sample-bucket-beer.html",
-    "comments": "",
-    "author": "",
-    "version": "",
+    "modelName": "beer",
     "collections": [
         {
             "bucketId": "e2117090-ffeb-11e6-bc11-bba283d07659",
@@ -16,13 +10,10 @@
                     "type": "string",
                     "name": "KEY",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
                     "GUID": "e1f50efd-ffeb-11e6-bc11-bba283d07659",
-                    "sample": "21st_amendment_brewery_cafe-21a_ipa"
+                    "sample": "21st_amendment_brewery_cafe-21a_ipa",
+                    "isActivated": true,
+                    "containerLevelKey": true
                 },
                 {
                     "type": "string",
@@ -31,12 +22,10 @@
                     "name": "type",
                     "GUID": "e1f50ef7-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "beer"
+                    "sample": "beer",
+                    "isActivated": true,
+                    "containerLevelKey": true
                 },
                 {
                     "type": "string",
@@ -44,12 +33,9 @@
                     "name": "name",
                     "GUID": "e1f50ef2-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "21A IPA"
+                    "sample": "21A IPA",
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -58,13 +44,9 @@
                     "name": "abv",
                     "GUID": "e1f50ef3-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
                     "sample": 7.2,
-                    "mode": "double"
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -73,12 +55,9 @@
                     "name": "ibu",
                     "GUID": "e1f50ef4-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": 0
+                    "sample": 0,
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -87,12 +66,9 @@
                     "name": "srm",
                     "GUID": "e1f50ef5-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": 0
+                    "sample": 0,
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -101,12 +77,9 @@
                     "name": "upc",
                     "GUID": "e1f50ef6-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": 0
+                    "sample": 0,
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -120,9 +93,9 @@
                         "e1f5d241-ffeb-11e6-bc11-bba283d07659",
                         "e1f5d252-ffeb-11e6-bc11-bba283d07659"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "21st_amendment_brewery_cafe"
+                    "sample": "21st_amendment_brewery_cafe",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -130,12 +103,9 @@
                     "name": "updated",
                     "GUID": "e1f50ef9-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "2010-07-22 20:00:20"
+                    "sample": "2010-07-22 20:00:20",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -143,12 +113,9 @@
                     "name": "description",
                     "GUID": "e1f50efa-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Deep golden color. Citrus and piney hop aromas. Assertive malt backbone supporting the overwhelming bitterness. Dry hopped in the fermenter with four types of hops giving an explosive hop aroma. Many refer to this IPA as Nectar of the Gods. Judge for yourself. Now Available in Cans!"
+                    "sample": "Deep golden color. Citrus and piney hop aromas. Assertive malt backbone supporting the overwhelming bitterness. Dry hopped in the fermenter with four types of hops giving an explosive hop aroma. Many refer to this IPA as Nectar of the Gods. Judge for yourself. Now Available in Cans!",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -156,12 +123,8 @@
                     "name": "style",
                     "GUID": "e1f50efb-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "sample": "American-Style India Pale Ale"
+                    "sample": "American-Style India Pale Ale",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -169,12 +132,8 @@
                     "name": "category",
                     "GUID": "e1f50efc-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "sample": "North American Ale"
+                    "sample": "North American Ale",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -184,7 +143,9 @@
                 "properties": [],
                 "type": "definitions"
             },
-            "collectionName": "beer"
+            "collectionName": "beer",
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "e2117090-ffeb-11e6-bc11-bba283d07659",
@@ -195,15 +156,13 @@
                     "type": "string",
                     "name": "KEY",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "childRelationships": [
                         "eeb89350-ffeb-11e6-bc11-bba283d07659"
                     ],
-                    "required": false,
                     "GUID": "e1f5d252-ffeb-11e6-bc11-bba283d07659",
-                    "sample": "21st_amendment_brewery_cafe"
+                    "sample": "21st_amendment_brewery_cafe",
+                    "isActivated": true,
+                    "containerLevelKey": true
                 },
                 {
                     "type": "string",
@@ -212,12 +171,10 @@
                     "name": "type",
                     "GUID": "e1f5d249-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "brewery"
+                    "sample": "brewery",
+                    "isActivated": true,
+                    "containerLevelKey": true
                 },
                 {
                     "type": "string",
@@ -225,12 +182,9 @@
                     "name": "name",
                     "GUID": "e1f5d242-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "21st Amendment Brewery Cafe"
+                    "sample": "21st Amendment Brewery Cafe",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -238,12 +192,9 @@
                     "name": "city",
                     "GUID": "e1f5d243-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "San Francisco"
+                    "sample": "San Francisco",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -251,12 +202,9 @@
                     "name": "state",
                     "GUID": "e1f5d244-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "California"
+                    "sample": "California",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -264,12 +212,9 @@
                     "name": "code",
                     "GUID": "e1f5d245-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "94107"
+                    "sample": "94107",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -277,12 +222,9 @@
                     "name": "country",
                     "GUID": "e1f5d246-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "United States"
+                    "sample": "United States",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -290,12 +232,9 @@
                     "name": "phone",
                     "GUID": "e1f5d247-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "1-415-369-0900"
+                    "sample": "1-415-369-0900",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -303,12 +242,9 @@
                     "name": "website",
                     "GUID": "e1f5d248-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "http://www.21st-amendment.com/"
+                    "sample": "http://www.21st-amendment.com/",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -316,12 +252,9 @@
                     "name": "updated",
                     "GUID": "e1f5d24a-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "2010-10-24 13:54:07"
+                    "sample": "2010-10-24 13:54:07",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -329,12 +262,9 @@
                     "name": "description",
                     "GUID": "e1f5d24b-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "The 21st Amendment Brewery offers a variety of award winning house made brews and American grilled cuisine in a comfortable loft like setting. Join us before and after Giants baseball games in our outdoor beer garden. A great location for functions and parties in our semi-private Brewers Loft. See you soon at the 21A!"
+                    "sample": "The 21st Amendment Brewery offers a variety of award winning house made brews and American grilled cuisine in a comfortable loft like setting. Join us before and after Giants baseball games in our outdoor beer garden. A great location for functions and parties in our semi-private Brewers Loft. See you soon at the 21A!",
+                    "isActivated": true
                 },
                 {
                     "type": "array",
@@ -343,25 +273,19 @@
                     "additionalItems": true,
                     "GUID": "e1f5d24c-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "properties": [
                         {
                             "type": "string",
                             "arrayItem": true,
                             "primaryKey": false,
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
                             "GUID": "e1f5d24d-ffeb-11e6-bc11-bba283d07659",
-                            "sample": "563 Second Street"
+                            "sample": "563 Second Street",
+                            "isActivated": true
                         }
                     ],
-                    "required": true
+                    "required": true,
+                    "isActivated": true
                 },
                 {
                     "type": "document",
@@ -373,12 +297,9 @@
                             "name": "accuracy",
                             "GUID": "e1f5d24f-ffeb-11e6-bc11-bba283d07659",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
                             "required": true,
-                            "sample": "ROOFTOP"
+                            "sample": "ROOFTOP",
+                            "isActivated": true
                         },
                         {
                             "type": "numeric",
@@ -387,13 +308,9 @@
                             "name": "lat",
                             "GUID": "e1f5d250-ffeb-11e6-bc11-bba283d07659",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
                             "required": true,
                             "sample": 37.7825,
-                            "mode": "double"
+                            "isActivated": true
                         },
                         {
                             "type": "numeric",
@@ -402,23 +319,16 @@
                             "name": "lon",
                             "GUID": "e1f5d251-ffeb-11e6-bc11-bba283d07659",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
                             "required": true,
                             "sample": -122.393,
-                            "mode": "double"
+                            "isActivated": true
                         }
                     ],
                     "name": "geo",
                     "GUID": "e1f5d24e-ffeb-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false
+                    "isActivated": true,
+                    "additionalProperties": true
                 }
             ],
             "type": "object",
@@ -428,7 +338,9 @@
                 "properties": [],
                 "type": "definitions"
             },
-            "collectionName": "brewery"
+            "collectionName": "brewery",
+            "isActivated": true,
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -436,8 +348,6 @@
             "GUID": "e2117090-ffeb-11e6-bc11-bba283d07659",
             "name": "beer-sample",
             "type": "bucket",
-            "description": "",
-            "comments": "",
             "collectionIds": [
                 "e1f50ef1-ffeb-11e6-bc11-bba283d07659",
                 "e1f5d241-ffeb-11e6-bc11-bba283d07659"
@@ -459,14 +369,12 @@
             "accessControl": "Standart port",
             "password": "123",
             "conflictResolution": "Sequence number",
-            "replicasEnable": false,
             "replicasNumber": 1,
-            "replicasViewIndex": false,
             "bucketIOPriority": "Low (Default)",
-            "overrideDefault": false,
-            "setBucketFlushEnable": false
+            "isActivated": true
         }
     ],
+    "views": [],
     "relationships": [
         {
             "GUID": "eeb89350-ffeb-11e6-bc11-bba283d07659",
@@ -476,19 +384,24 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "e1f5d241-ffeb-11e6-bc11-bba283d07659",
             "parentField": [
-                "e1f5d241-ffeb-11e6-bc11-bba283d07659",
-                "e1f5d252-ffeb-11e6-bc11-bba283d07659"
+                [
+                    "e1f5d241-ffeb-11e6-bc11-bba283d07659",
+                    "e1f5d252-ffeb-11e6-bc11-bba283d07659"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "e1f50ef1-ffeb-11e6-bc11-bba283d07659",
             "childField": [
-                "e1f50ef1-ffeb-11e6-bc11-bba283d07659",
-                "e1f50ef8-ffeb-11e6-bc11-bba283d07659"
+                [
+                    "e1f50ef1-ffeb-11e6-bc11-bba283d07659",
+                    "e1f50ef8-ffeb-11e6-bc11-bba283d07659"
+                ]
             ],
             "childCardinality": "0..n"
         }
     ],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "e1f50efd-ffeb-11e6-bc11-bba283d07659": "KEY",
         "e1f50ef7-ffeb-11e6-bc11-bba283d07659": "type",
@@ -520,18 +433,47 @@
         "e1f5d250-ffeb-11e6-bc11-bba283d07659": "lat",
         "e1f5d251-ffeb-11e6-bc11-bba283d07659": "lon",
         "e1f5d241-ffeb-11e6-bc11-bba283d07659": "brewery",
-        "e2117090-ffeb-11e6-bc11-bba283d07659": "beer-sample"
+        "e2117090-ffeb-11e6-bc11-bba283d07659": "beer-sample",
+        "eeb89350-ffeb-11e6-bc11-bba283d07659": "fk brewery.KEY to beer.brewery_id"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
         "GUID": "d7bfaf81-ffeb-11e6-bc11-bba283d07659"
     },
-    "databaseName": "beer",
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "51d20db3-affd-11ec-ab49-f732172fe980"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "51d20db2-affd-11ec-ab49-f732172fe980"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
     "dbVendor": "Couchbase",
     "dbVersion": "v4.6",
     "appTarget": "COUCHBASE",
     "creationTS": "2017-03-03T08:31:48.344Z",
+    "GUID": "d7bfaf80-ffeb-11e6-bc11-bba283d07659",
+    "lastModifTS": "2022-03-30T07:45:21.000Z",
+    "persistenceSchemaVersion": "6",
+    "description": "beer-sample application described in http://docs.couchbase.com/admin/admin/Misc/sample-bucket-beer.html",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.0.0"
+    },
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -644,8 +586,8 @@
                         "GUID": "e1f50ef1-ffeb-11e6-bc11-bba283d07659",
                         "x": 375,
                         "y": 96,
-                        "width": 195,
-                        "height": 203,
+                        "width": 216,
+                        "height": 249,
                         "color": {
                             "hsl": {
                                 "h": 3.789473684210526,
@@ -674,8 +616,8 @@
                         "GUID": "e1f5d241-ffeb-11e6-bc11-bba283d07659",
                         "x": 90,
                         "y": 90,
-                        "width": 201,
-                        "height": 272,
+                        "width": 222,
+                        "height": 339,
                         "color": {
                             "hsl": {
                                 "h": 3.789473684210526,
@@ -766,16 +708,6 @@
                 ],
                 "buckets": [
                     {
-                        "x": 40,
-                        "y": 40,
-                        "GUID": "85f04210-fac7-11e6-9f58-33155ddb31fb"
-                    },
-                    {
-                        "x": 80,
-                        "y": 80,
-                        "GUID": "d7bd6590-ffeb-11e6-bc11-bba283d07659"
-                    },
-                    {
                         "x": 50,
                         "y": 50,
                         "GUID": "e2117090-ffeb-11e6-bc11-bba283d07659"
@@ -783,15 +715,30 @@
                 ],
                 "collapsedNodes": [],
                 "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
                 "selectedCollections": [],
-                "displayColorPicker": false
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
-            "nodes": [],
-            "details": true
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
         }
     }
 }

@@ -1,11 +1,5 @@
 {
-    "GUID": "2b5d5b10-6da5-11e8-977e-574156f5cc39",
-    "lastModifTS": "2018-06-17T11:38:50.908Z",
-    "persistenceSchemaVersion": "2",
-    "description": "",
-    "comments": "",
-    "author": "",
-    "version": "",
+    "modelName": "New model",
     "collections": [
         {
             "bucketId": "575b9aa0-6da6-11e8-977e-574156f5cc39",
@@ -16,45 +10,18 @@
                     "name": "title",
                     "GUID": "57450562-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "A League of Their Own",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "tagline",
                     "GUID": "57450563-6da6-11e8-977e-574156f5cc39",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Once in a lifetime you get a chance to do something different.",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -63,27 +30,9 @@
                     "childType": "number",
                     "GUID": "57450564-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 1992,
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -94,9 +43,9 @@
                 "type": "definitions"
             },
             "collectionName": "Movie",
-            "constraint": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "575b9aa0-6da6-11e8-977e-574156f5cc39",
@@ -107,22 +56,9 @@
                     "name": "name",
                     "GUID": "57455383-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "James Thompson",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -131,27 +67,9 @@
                     "childType": "number",
                     "GUID": "57455384-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 1943,
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -162,9 +80,9 @@
                 "type": "definitions"
             },
             "collectionName": "Person",
-            "constraint": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -172,8 +90,6 @@
             "GUID": "575b9aa0-6da6-11e8-977e-574156f5cc39",
             "name": "graph.db",
             "type": "bucket",
-            "description": "",
-            "comments": "",
             "collectionIds": [
                 "57450561-6da6-11e8-977e-574156f5cc39",
                 "57455382-6da6-11e8-977e-574156f5cc39"
@@ -187,7 +103,8 @@
             "show": true,
             "indexes": [],
             "addFieldsToBucket": true,
-            "isPlugin": true
+            "isPlugin": true,
+            "isActivated": true
         }
     ],
     "views": [],
@@ -205,6 +122,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "575b9aa0-6da6-11e8-977e-574156f5cc39",
+            "level": "entity",
             "properties": [
                 {
                     "type": "array",
@@ -220,35 +138,14 @@
                             "arrayParentType": "list",
                             "primaryKey": false,
                             "GUID": "57472843-6da6-11e8-977e-574156f5cc39",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
-                            "required": false,
-                            "id": "",
                             "name": "New property key",
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
                             "sample": "Emil",
-                            "unique": false
+                            "isActivated": true
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -265,6 +162,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "575b9aa0-6da6-11e8-977e-574156f5cc39",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -272,22 +170,9 @@
                     "name": "summary",
                     "GUID": "5748d5f2-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "A solid romp",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -296,27 +181,9 @@
                     "childType": "number",
                     "GUID": "5748d5f3-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 68,
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -333,6 +200,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "575b9aa0-6da6-11e8-977e-574156f5cc39",
+            "level": "entity",
             "properties": []
         },
         {
@@ -348,6 +216,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "575b9aa0-6da6-11e8-977e-574156f5cc39",
+            "level": "entity",
             "properties": []
         },
         {
@@ -363,6 +232,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "575b9aa0-6da6-11e8-977e-574156f5cc39",
+            "level": "entity",
             "properties": []
         },
         {
@@ -378,10 +248,12 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "575b9aa0-6da6-11e8-977e-574156f5cc39",
+            "level": "entity",
             "properties": []
         }
     ],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "57450562-6da6-11e8-977e-574156f5cc39": "title",
         "57450563-6da6-11e8-977e-574156f5cc39": "tagline",
@@ -396,30 +268,49 @@
         "575be8c3-6da6-11e8-977e-574156f5cc39": "WROTE",
         "575be8c4-6da6-11e8-977e-574156f5cc39": "FOLLOWS",
         "575be8c5-6da6-11e8-977e-574156f5cc39": "DIRECTED",
-        "575b9aa0-6da6-11e8-977e-574156f5cc39": "graph.db"
+        "575b9aa0-6da6-11e8-977e-574156f5cc39": "graph.db",
+        "57472842-6da6-11e8-977e-574156f5cc39": "roles",
+        "57472843-6da6-11e8-977e-574156f5cc39": "New property key",
+        "5748d5f2-6da6-11e8-977e-574156f5cc39": "summary",
+        "5748d5f3-6da6-11e8-977e-574156f5cc39": "rating"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
         "GUID": "2b5d8220-6da5-11e8-977e-574156f5cc39"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "96d24ab3-b002-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "2b5d8221-6da5-11e8-977e-574156f5cc39"
     },
-    "modelName": "New model",
+    "sources": [],
+    "decorativeSymbols": [],
     "dbVersion": "3.x",
     "dbVendor": "Neo4j",
     "appTarget": "NEO4J",
     "creationTS": "2018-06-11T18:27:59.937Z",
-    "hideModelViews": false,
+    "GUID": "2b5d5b10-6da5-11e8-977e-574156f5cc39",
+    "lastModifTS": "2022-03-30T08:22:57.955Z",
+    "persistenceSchemaVersion": "6",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
     "isCreatedByPlugin": true,
     "pluginInformation": {
-        "pluginVersion": "",
-        "pluginName": "",
-        "pluginLink": "",
+        "pluginName": "Neo4j",
+        "pluginVersion": "0.1.39",
         "pluginEngineVersion": "1.0.0"
+    },
+    "hackoladeMeta": {},
+    "applicationInformation": {
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -511,19 +402,49 @@
                 ],
                 "collapsedNodes": [],
                 "activeRelationship": "",
-                "selectedCollections": [],
                 "activeRelationshipFields": {
                     "childField": [],
                     "parentField": []
                 },
-                "displayColorPicker": false
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "57450561-6da6-11e8-977e-574156f5cc39",
+                            "x": 276.9010263750776,
+                            "y": 340.0000000000233,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "57455382-6da6-11e8-977e-574156f5cc39",
+                            "x": 577.0989736249236,
+                            "y": 340.0000000000148,
+                            "size": 100
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 236.9010263750776,
+                            "y": 300.0000000000148,
+                            "GUID": "575b9aa0-6da6-11e8-977e-574156f5cc39"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true
+            "shouldDistributeCollections": false
         }
     }
 }

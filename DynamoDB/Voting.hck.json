@@ -1,72 +1,32 @@
 {
-    "GUID": "ab9c3be0-b8f5-11e6-8089-6f1f31218a06",
-    "lastModifTS": "2016-12-03T01:42:39.804Z",
-    "persistenceSchemaVersion": "1",
-    "description": "DAT-401 YouTube video https://youtu.be/ggDIat_FZtA?t=2541 by Rick Houlihan, Principal Solutions Architect\n\nFourth use case illustrating write-heavy items",
-    "comments": "",
-    "author": "",
-    "version": "",
+    "modelName": "Voting",
     "collections": [
         {
             "GUID": "19409fb0-b8f6-11e6-8089-6f1f31218a06",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "A_1",
                     "GUID": "19416300-b8f6-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "segment",
                     "partitionKey": true,
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
                     "childType": "number",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": 23,
                     "GUID": "1e5b8a00-b8f6-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "votes",
-                    "error": {}
+                    "isActivated": true
                 }
             ],
             "collectionName": "aggregationVotes",
@@ -74,89 +34,49 @@
             "indexes": [],
             "readCapacity": 5,
             "writeCapacity": 5,
-            "streamEnabled": false,
-            "streamViewType": "Keys only"
+            "streamViewType": "Keys only",
+            "definitions": {
+                "id": "7b2af6d1-affe-11ec-ab49-f732172fe980",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
         },
         {
             "GUID": "edd24ea0-b8f5-11e6-8089-6f1f31218a06",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Alice",
                     "GUID": "edd2c3d0-b8f5-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "userId",
                     "partitionKey": true,
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "A",
                     "GUID": "f1845a20-b8f5-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "candidate",
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "2013-10-02",
                     "GUID": "fe89a270-b8f5-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "date",
-                    "error": {}
+                    "isActivated": true
                 }
             ],
             "collectionName": "rawVotes",
@@ -164,12 +84,20 @@
             "indexes": [],
             "readCapacity": 5,
             "writeCapacity": 5,
-            "streamEnabled": false,
-            "streamViewType": "Keys only"
+            "streamViewType": "Keys only",
+            "definitions": {
+                "id": "7b2af6d2-affe-11ec-ab49-f732172fe980",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
         }
     ],
+    "buckets": [],
+    "views": [],
     "relationships": [],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "edd2c3d0-b8f5-11e6-8089-6f1f31218a06": "userId",
         "edd24ea0-b8f5-11e6-8089-6f1f31218a06": "rawVotes",
@@ -179,10 +107,43 @@
         "19409fb0-b8f6-11e6-8089-6f1f31218a06": "aggregationVotes",
         "1e5b8a00-b8f6-11e6-8089-6f1f31218a06": "votes"
     },
-    "databaseName": "Voting",
+    "definitions": {
+        "id": "7b2af6d0-affe-11ec-ab49-f732172fe980",
+        "properties": [],
+        "type": "definitions"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "7c3a43f3-affe-11ec-ab49-f732172fe980"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "7c3a43f2-affe-11ec-ab49-f732172fe980"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
     "dbVendor": "AWS DynamoDB",
     "appTarget": "DYNAMODB",
     "creationTS": "2016-12-03T01:13:16.702Z",
+    "GUID": "ab9c3be0-b8f5-11e6-8089-6f1f31218a06",
+    "lastModifTS": "2022-03-30T07:53:36.098Z",
+    "persistenceSchemaVersion": "6",
+    "description": "DAT-401 YouTube video https://youtu.be/ggDIat_FZtA?t=2541 by Rick Houlihan, Principal Solutions Architect\n\nFourth use case illustrating write-heavy items",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.0.0"
+    },
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -191,27 +152,44 @@
                         "GUID": "edd24ea0-b8f5-11e6-8089-6f1f31218a06",
                         "x": 40,
                         "y": 40,
-                        "width": 200,
-                        "height": 100
+                        "width": 190,
+                        "height": 87
                     },
                     {
                         "GUID": "19409fb0-b8f6-11e6-8089-6f1f31218a06",
                         "x": 337,
                         "y": 40,
-                        "width": 200,
-                        "height": 100
+                        "width": 220,
+                        "height": 69
                     }
                 ],
+                "buckets": [],
                 "collapsedNodes": [],
                 "activeRelationship": "",
-                "selectedCollections": []
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
-            "nodes": [],
-            "details": true
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
         }
     }
 }

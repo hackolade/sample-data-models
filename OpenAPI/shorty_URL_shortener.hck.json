@@ -1846,16 +1846,16 @@
             "dbVersion": false
         }
     },
-    "lastModifTS": "2022-01-22T18:23:28.417Z",
-    "persistenceSchemaVersion": "5",
+    "lastModifTS": "2022-03-30T08:27:31.572Z",
+    "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "OpenAPI",
-        "pluginVersion": "0.1.39",
+        "pluginVersion": "0.1.46",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "5.4.0"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {

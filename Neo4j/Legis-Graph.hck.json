@@ -1,11 +1,5 @@
 {
-    "GUID": "524e8570-6dc6-11e8-977e-574156f5cc39",
-    "lastModifTS": "2018-06-19T08:57:30.728Z",
-    "persistenceSchemaVersion": "2",
-    "description": "",
-    "comments": "",
-    "author": "",
-    "version": "",
+    "modelName": "New model",
     "collections": [
         {
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
@@ -16,22 +10,9 @@
                     "name": "enacted",
                     "GUID": "213c3126-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "False",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -39,22 +20,9 @@
                     "name": "vetoed",
                     "GUID": "213c3127-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "False",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -62,22 +30,9 @@
                     "name": "active",
                     "GUID": "213c3128-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "False",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -85,22 +40,9 @@
                     "name": "officialTitle",
                     "GUID": "213c3129-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "To amend title XVIII of the Social Security Act to include recreational therapy among the therapy modalities that constitute an intensive rehabilitation therapy program in an inpatient rehabilitation hospital or unit.",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -109,21 +51,9 @@
                     "name": "billID",
                     "GUID": "213c312a-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "hr1906-114"
+                    "sample": "hr1906-114",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -134,7 +64,6 @@
                 "type": "definitions"
             },
             "collectionName": "Bill",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "213f1751-739e-11e8-9291-1b091dee6fcb",
@@ -149,11 +78,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
@@ -165,21 +96,9 @@
                     "name": "type",
                     "GUID": "213c0a1a-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "House"
+                    "sample": "House",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -190,7 +109,6 @@
                 "type": "definitions"
             },
             "collectionName": "Body",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "213ef041-739e-11e8-9291-1b091dee6fcb",
@@ -205,11 +123,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
@@ -220,22 +140,9 @@
                     "name": "name",
                     "GUID": "213b94e2-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Senate Committee on Veterans' Affairs",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -243,22 +150,9 @@
                     "name": "type",
                     "GUID": "213b94e3-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "senate",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -266,45 +160,18 @@
                     "name": "url",
                     "GUID": "213b94e4-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "http://veterans.senate.gov/",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "jurisdiction",
                     "GUID": "213b94e5-739e-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "The Committee on Ways and Means is the oldest committee of the United States Congress, and is the chief tax-writing committee in the House of Representatives. The Committee derives a large share of its jurisdiction from Article I, Section VII of the U.S. Constitution which declares, “All Bills for raising Revenue shall originate in the House of Representatives.”",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -313,21 +180,9 @@
                     "name": "thomasID",
                     "GUID": "213b94e6-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "SSVA"
+                    "sample": "SSVA",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -338,7 +193,6 @@
                 "type": "definitions"
             },
             "collectionName": "Committee",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "213ec930-739e-11e8-9291-1b091dee6fcb",
@@ -353,11 +207,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
@@ -369,27 +225,9 @@
                     "childType": "number",
                     "GUID": "213c0a16-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 114,
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -400,9 +238,9 @@
                 "type": "definitions"
             },
             "collectionName": "Congress",
-            "constraint": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
@@ -413,22 +251,9 @@
                     "name": "birthday",
                     "GUID": "213db7c2-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "1966-07-28",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -436,22 +261,9 @@
                     "name": "lastName",
                     "GUID": "213db7c3-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Cheney",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -459,22 +271,9 @@
                     "name": "gender",
                     "GUID": "213db7c4-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "F",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -483,27 +282,9 @@
                     "childType": "number",
                     "GUID": "213db7c5-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 0,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -511,22 +292,9 @@
                     "name": "opensecretsID",
                     "GUID": "213db7c6-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "N00035504",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -535,27 +303,9 @@
                     "childType": "number",
                     "GUID": "213db7c7-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 0,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -563,22 +313,9 @@
                     "name": "type",
                     "GUID": "213db7c8-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "House",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -586,28 +323,9 @@
                     "name": "icpsrID",
                     "childType": "number",
                     "GUID": "213db7c9-739e-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 20731,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -616,50 +334,18 @@
                     "childType": "number",
                     "GUID": "213db7ca-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 145932,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "religion",
                     "GUID": "213db7cb-739e-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Episcopalian",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -667,45 +353,18 @@
                     "name": "firstName",
                     "GUID": "213db7cc-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Liz",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "lisID",
                     "GUID": "213db7cd-739e-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "S385",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -714,27 +373,9 @@
                     "childType": "number",
                     "GUID": "213db7ce-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 1021773,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -742,22 +383,9 @@
                     "name": "thomasID",
                     "GUID": "213db7cf-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "01861",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -765,22 +393,9 @@
                     "name": "wikipediaID",
                     "GUID": "213db7d0-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Liz Cheney",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -789,27 +404,9 @@
                     "childType": "number",
                     "GUID": "213db7d1-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 1,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -817,22 +414,9 @@
                     "name": "state",
                     "GUID": "213db7d2-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "WY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -841,27 +425,9 @@
                     "childType": "number",
                     "GUID": "213db7d3-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 412732,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -869,22 +435,9 @@
                     "name": "currentParty",
                     "GUID": "213db7d4-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Republican",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -892,22 +445,9 @@
                     "name": "party",
                     "GUID": "213db7d5-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "republican",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -915,22 +455,9 @@
                     "name": "fecIDs",
                     "GUID": "213db7d6-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "['H6WY00159']",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -939,21 +466,9 @@
                     "name": "bioguideID",
                     "GUID": "213db7d7-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "C001109"
+                    "sample": "C001109",
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -961,28 +476,9 @@
                     "name": "district",
                     "childType": "number",
                     "GUID": "213db7d8-739e-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 0,
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -993,7 +489,6 @@
                 "type": "definitions"
             },
             "collectionName": "Legislator",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "213f1753-739e-11e8-9291-1b091dee6fcb",
@@ -1008,7 +503,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "213f1754-739e-11e8-9291-1b091dee6fcb",
@@ -1023,7 +519,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "213f1755-739e-11e8-9291-1b091dee6fcb",
@@ -1038,7 +535,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "213f1756-739e-11e8-9291-1b091dee6fcb",
@@ -1053,7 +551,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "213f1757-739e-11e8-9291-1b091dee6fcb",
@@ -1068,7 +567,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "213f1758-739e-11e8-9291-1b091dee6fcb",
@@ -1083,7 +583,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "213f1759-739e-11e8-9291-1b091dee6fcb",
@@ -1098,7 +599,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "213f175a-739e-11e8-9291-1b091dee6fcb",
@@ -1108,7 +610,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "213f175b-739e-11e8-9291-1b091dee6fcb",
@@ -1123,7 +626,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "213f175c-739e-11e8-9291-1b091dee6fcb",
@@ -1138,11 +642,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
@@ -1154,21 +660,9 @@
                     "name": "name",
                     "GUID": "213c0a12-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "Independent"
+                    "sample": "Independent",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -1179,7 +673,6 @@
                 "type": "definitions"
             },
             "collectionName": "Party",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "213ef040-739e-11e8-9291-1b091dee6fcb",
@@ -1194,11 +687,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
@@ -1210,21 +705,9 @@
                     "name": "code",
                     "GUID": "213c3122-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "PR"
+                    "sample": "PR",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -1235,7 +718,6 @@
                 "type": "definitions"
             },
             "collectionName": "State",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "213f1750-739e-11e8-9291-1b091dee6fcb",
@@ -1250,11 +732,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
@@ -1266,21 +750,9 @@
                     "name": "title",
                     "GUID": "213d1b82-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "Libraries and archives"
+                    "sample": "Libraries and archives",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -1291,7 +763,6 @@
                 "type": "definitions"
             },
             "collectionName": "Subject",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "213f1752-739e-11e8-9291-1b091dee6fcb",
@@ -1306,11 +777,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -1318,8 +791,6 @@
             "GUID": "214be890-739e-11e8-9291-1b091dee6fcb",
             "name": "legis-graph.db",
             "type": "bucket",
-            "description": "",
-            "comments": "",
             "collectionIds": [
                 "213b94e1-739e-11e8-9291-1b091dee6fcb",
                 "213c0a11-739e-11e8-9291-1b091dee6fcb",
@@ -1339,7 +810,8 @@
             "show": true,
             "indexes": [],
             "addFieldsToBucket": true,
-            "isPlugin": true
+            "isPlugin": true,
+            "isActivated": true
         }
     ],
     "views": [],
@@ -1357,6 +829,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "boolean",
@@ -1365,19 +838,9 @@
                     "childType": "boolean",
                     "GUID": "213f6573-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "default": "",
-                    "enum": [],
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignField": [],
                     "sample": true,
-                    "unique": false,
-                    "foreignCollection": ""
+                    "isActivated": true
                 }
             ]
         },
@@ -1394,6 +857,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -1401,22 +865,9 @@
                     "name": "vote",
                     "GUID": "214001b2-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Yea",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -1433,6 +884,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1448,6 +900,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1463,6 +916,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1478,6 +932,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1493,6 +948,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1508,6 +964,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "numeric",
@@ -1516,27 +973,9 @@
                     "childType": "number",
                     "GUID": "2142c0d2-739e-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 7,
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -1553,10 +992,12 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "214be890-739e-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         }
     ],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "98a1e8a0-6dc6-11e8-977e-574156f5cc39": "legis-graph.db",
         "213b94e2-739e-11e8-9291-1b091dee6fcb": "name",
@@ -1614,30 +1055,48 @@
         "214c0fa5-739e-11e8-9291-1b091dee6fcb": "ELECTED_TO",
         "214c0fa6-739e-11e8-9291-1b091dee6fcb": "SERVES_ON",
         "214c0fa7-739e-11e8-9291-1b091dee6fcb": "IS_MEMBER_OF",
-        "214be890-739e-11e8-9291-1b091dee6fcb": "legis-graph.db"
+        "214be890-739e-11e8-9291-1b091dee6fcb": "legis-graph.db",
+        "213f6573-739e-11e8-9291-1b091dee6fcb": "cosponsor",
+        "214001b2-739e-11e8-9291-1b091dee6fcb": "vote",
+        "2142c0d2-739e-11e8-9291-1b091dee6fcb": "rank"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
         "GUID": "524e8571-6dc6-11e8-977e-574156f5cc39"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "8d994ca3-b002-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "524e8572-6dc6-11e8-977e-574156f5cc39"
     },
-    "modelName": "New model",
+    "sources": [],
+    "decorativeSymbols": [],
     "dbVersion": "3.x",
     "dbVendor": "Neo4j",
     "appTarget": "NEO4J",
     "creationTS": "2018-06-11T22:25:18.663Z",
-    "hideModelViews": false,
+    "GUID": "524e8570-6dc6-11e8-977e-574156f5cc39",
+    "lastModifTS": "2022-03-30T08:22:44.221Z",
+    "persistenceSchemaVersion": "6",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
     "isCreatedByPlugin": true,
     "pluginInformation": {
-        "pluginVersion": "",
-        "pluginName": "",
-        "pluginLink": "",
+        "pluginName": "Neo4j",
+        "pluginVersion": "0.1.39",
         "pluginEngineVersion": "1.0.0"
+    },
+    "hackoladeMeta": {},
+    "applicationInformation": {
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -1800,11 +1259,6 @@
                 ],
                 "buckets": [
                     {
-                        "x": 50,
-                        "y": 20,
-                        "GUID": "98a1e8a0-6dc6-11e8-977e-574156f5cc39"
-                    },
-                    {
                         "x": 70,
                         "y": 264,
                         "GUID": "214be890-739e-11e8-9291-1b091dee6fcb"
@@ -1812,19 +1266,85 @@
                 ],
                 "collapsedNodes": [],
                 "activeRelationship": "",
-                "selectedCollections": [],
                 "activeRelationshipFields": {
                     "childField": [],
                     "parentField": []
                 },
-                "displayColorPicker": false
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "213b94e1-739e-11e8-9291-1b091dee6fcb",
+                            "x": 466.3263961012734,
+                            "y": 576.7487747549249,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "213c0a11-739e-11e8-9291-1b091dee6fcb",
+                            "x": 116.80780272020598,
+                            "y": 145.30759280408148,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "213c0a15-739e-11e8-9291-1b091dee6fcb",
+                            "x": 884.7820276143734,
+                            "y": 572.0765536026895,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "213c0a19-739e-11e8-9291-1b091dee6fcb",
+                            "x": 80.83745720623205,
+                            "y": 272.2768755900001,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "213c3121-739e-11e8-9291-1b091dee6fcb",
+                            "x": 100.22561152870554,
+                            "y": 395.96992171467497,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "213c3125-739e-11e8-9291-1b091dee6fcb",
+                            "x": 673.2073298343619,
+                            "y": 358.97953169118676,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "213d1b81-739e-11e8-9291-1b091dee6fcb",
+                            "x": 909.4907516316157,
+                            "y": 173.6752709790299,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "213db7c1-739e-11e8-9291-1b091dee6fcb",
+                            "x": 380.73567051970224,
+                            "y": 288.6544438110457,
+                            "size": 100
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 40.837457206232045,
+                            "y": 105.30759280408148,
+                            "GUID": "214be890-739e-11e8-9291-1b091dee6fcb"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true
+            "shouldDistributeCollections": false
         }
     }
 }

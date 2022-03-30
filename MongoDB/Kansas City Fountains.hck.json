@@ -17,7 +17,7 @@
                     "properties": [
                         {
                             "GUID": "f8ca7831-8ecc-11e6-9a2f-37f1efd6553e",
-                            "type": "subschema",
+                            "type": "document",
                             "properties": [
                                 {
                                     "GUID": "f8ca7832-8ecc-11e6-9a2f-37f1efd6553e",
@@ -81,11 +81,12 @@
                                 }
                             ],
                             "description": "private donor sub-schema",
-                            "isActivated": true
+                            "isActivated": true,
+                            "subschema": true
                         },
                         {
                             "GUID": "f8ca7836-8ecc-11e6-9a2f-37f1efd6553e",
-                            "type": "subschema",
+                            "type": "document",
                             "properties": [
                                 {
                                     "GUID": "f8ca7837-8ecc-11e6-9a2f-37f1efd6553e",
@@ -136,7 +137,8 @@
                                 }
                             ],
                             "description": "corporate donor sub-schema",
-                            "isActivated": true
+                            "isActivated": true,
+                            "subschema": true
                         }
                     ],
                     "choice": "oneOf",
@@ -293,7 +295,7 @@
                     "properties": [
                         {
                             "GUID": "a8322530-8ecc-11e6-9a2f-37f1efd6553e",
-                            "type": "subschema",
+                            "type": "document",
                             "properties": [
                                 {
                                     "GUID": "b32d93c0-8ecc-11e6-9a2f-37f1efd6553e",
@@ -336,11 +338,12 @@
                                 }
                             ],
                             "description": "private donor sub-schema",
-                            "isActivated": true
+                            "isActivated": true,
+                            "subschema": true
                         },
                         {
                             "GUID": "d1d52c20-8ecc-11e6-9a2f-37f1efd6553e",
-                            "type": "subschema",
+                            "type": "document",
                             "properties": [
                                 {
                                     "GUID": "d7f6ff20-8ecc-11e6-9a2f-37f1efd6553e",
@@ -374,7 +377,8 @@
                                 }
                             ],
                             "description": "corporate donor sub-schema",
-                            "isActivated": true
+                            "isActivated": true,
+                            "subschema": true
                         }
                     ],
                     "choice": "oneOf",
@@ -408,12 +412,13 @@
                     "primaryKey": true,
                     "relationshipType": "",
                     "childRelationships": [
-                        "7568bdd0-8ecc-11e6-9a2f-37f1efd6553e",
-                        "6d7b8ec2-8ece-11e6-9a2f-37f1efd6553e",
                         "5f761f12-8ecf-11e6-9a2f-37f1efd6553e"
                     ],
                     "sample": "Kansas City Fountain",
-                    "isActivated": true
+                    "isActivated": true,
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": []
                 },
                 {
                     "GUID": "2fdacd80-8ecc-11e6-9a2f-37f1efd6553e",
@@ -563,39 +568,56 @@
         "41065f90-8ecf-11e6-9a2f-37f1efd6553e": "donation",
         "4f3fbb10-8ecf-11e6-9a2f-37f1efd6553e": "donationAmount",
         "52fa7920-8ecf-11e6-9a2f-37f1efd6553e": "donationDate",
-        "5f761f10-8ecf-11e6-9a2f-37f1efd6553e": "fountains"
+        "5f761f10-8ecf-11e6-9a2f-37f1efd6553e": "fountains",
+        "28642370-8ecd-11e6-9a2f-37f1efd6553e": "fk_privateDonor",
+        "f8ca7832-8ecc-11e6-9a2f-37f1efd6553e": "donorSSN",
+        "30efca80-8ecd-11e6-9a2f-37f1efd6553e": "fk_corporateDonor",
+        "f8ca7833-8ecc-11e6-9a2f-37f1efd6553e": "donorFirstName",
+        "5f761f12-8ecf-11e6-9a2f-37f1efd6553e": "fk_donationFountains",
+        "f8ca7834-8ecc-11e6-9a2f-37f1efd6553e": "donorLastName",
+        "f8ca7835-8ecc-11e6-9a2f-37f1efd6553e": "donorBirthDate",
+        "f8ca7837-8ecc-11e6-9a2f-37f1efd6553e": "donorTaxID",
+        "f8ca7838-8ecc-11e6-9a2f-37f1efd6553e": "companyName",
+        "f8ca7839-8ecc-11e6-9a2f-37f1efd6553e": "contactName"
     },
     "definitions": {
         "id": "c6583930-596d-11eb-abd9-032680bfc303",
         "properties": [],
         "type": "definitions"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "7beb75c3-b000-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "c6707c22-596d-11eb-abd9-032680bfc303"
     },
+    "sources": [],
     "decorativeSymbols": [],
     "dbVersion": "v3.2",
     "dbVendor": "MongoDB",
-    "hideModelViews": true,
     "appTarget": "MONGODB",
     "creationTS": "2016-10-10T09:22:33.357Z",
     "GUID": "133bf2e0-8ecb-11e6-9a2f-37f1efd6553e",
-    "lastModifTS": "2021-01-18T09:15:59.876Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T08:08:07.786Z",
+    "persistenceSchemaVersion": "6",
     "description": "This model is drawn from an exercise in Steve Hoberman's class on 'Advanced modeling for NoSQL'.  It is asked to model donations where the donor can either be an individual or a corporation, each requiring deffirent fields.",
     "comments": "This example is interesting because it features physical sub-types in the form of a oneOf choice between the individual and the corporate donor.  It shows the power of JSON and NoSQL documents.  And the power of Hackolade modeling...",
     "author": "Pascal",
     "version": "1",
     "validation": "MongoDB extension",
-    "hackoladeMeta": {},
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.3"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -717,22 +739,22 @@
                         "GUID": "21aa8f30-8ecb-11e6-9a2f-37f1efd6553e",
                         "x": 429,
                         "y": 75,
-                        "width": 308,
-                        "height": 335
+                        "width": 353,
+                        "height": 411
                     },
                     {
                         "GUID": "0f5bdd10-8ecc-11e6-9a2f-37f1efd6553e",
-                        "x": 442,
-                        "y": 480,
-                        "width": 282,
-                        "height": 93
+                        "x": 461,
+                        "y": 548,
+                        "width": 290,
+                        "height": 105
                     },
                     {
                         "GUID": "8d2b3330-8ecc-11e6-9a2f-37f1efd6553e",
                         "x": 49,
                         "y": 153,
-                        "width": 287,
-                        "height": 179
+                        "width": 284,
+                        "height": 213
                     }
                 ],
                 "buckets": [],
@@ -742,15 +764,15 @@
                     "childField": [],
                     "parentField": []
                 },
-                "selectedCollections": [],
+                "selectedCollections": [
+                    "21aa8f30-8ecb-11e6-9a2f-37f1efd6553e",
+                    "0f5bdd10-8ecc-11e6-9a2f-37f1efd6553e"
+                ],
                 "displayColorPicker": false,
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -764,8 +786,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

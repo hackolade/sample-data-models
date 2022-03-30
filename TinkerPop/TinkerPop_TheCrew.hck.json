@@ -1,13 +1,5 @@
 {
-    "GUID": "ac939c50-edd6-11e9-a625-6b181646502d",
     "modelName": "TheCrew",
-    "code": "",
-    "lastModifTS": "2019-10-13T16:31:05.523Z",
-    "persistenceSchemaVersion": "3",
-    "description": "Reverse-engineered from example http://tinkerpop.apache.org/docs/current/tutorials/the-gremlin-console/#toy-graphs",
-    "comments": "",
-    "author": "",
-    "version": "",
     "collections": [
         {
             "bucketId": "a7b9a280-eb2c-11e9-ad75-0752853282b4",
@@ -20,21 +12,12 @@
                     "name": "name",
                     "GUID": "a786aba0-eb2c-11e9-ad75-0752853282b4",
                     "required": true,
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
-                    "enum": [],
                     "sample": "tinkergraph",
                     "compositeKey": [
                         "compositeNodeKey"
                     ],
-                    "compositeNodeKey": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "propCardinality": "list"
+                    "propCardinality": "list",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -45,8 +28,9 @@
                 "properties": [],
                 "type": "definitions"
             },
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "a7b9a280-eb2c-11e9-ad75-0752853282b4",
@@ -59,21 +43,12 @@
                     "name": "name",
                     "GUID": "a786f9c1-eb2c-11e9-ad75-0752853282b4",
                     "required": true,
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
-                    "enum": [],
                     "sample": "daniel",
                     "compositeKey": [
                         "compositeNodeKey"
                     ],
-                    "compositeNodeKey": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "propCardinality": "list"
+                    "propCardinality": "list",
+                    "isActivated": true
                 },
                 {
                     "code": "",
@@ -97,20 +72,9 @@
                             "arrayItem": true,
                             "GUID": "a78aca50-eb2c-11e9-ad75-0752853282b4",
                             "primaryKey": false,
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
-                            "enum": [],
-                            "sample": "",
                             "compositeKey": [
                                 "compositeNodeKey"
                             ],
-                            "compositeNodeKey": false,
-                            "description": "",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
                             "hackoladeMeta": {},
                             "propCardinality": "list",
                             "arrayParentType": "multi-property",
@@ -126,25 +90,18 @@
                                     "metaPropType": "string"
                                 }
                             ],
-                            "error": {}
+                            "isActivated": true
                         }
                     ],
                     "childType": "multi-property",
                     "additionalItems": true,
                     "required": true,
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
                     "subtype": "no-multi",
                     "compositeKey": [
                         "compositeNodeKey"
                     ],
-                    "compositeNodeKey": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "propCardinality": "list"
+                    "propCardinality": "list",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -155,8 +112,9 @@
                 "properties": [],
                 "type": "definitions"
             },
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -165,8 +123,6 @@
             "name": "g",
             "code": "",
             "type": "bucket",
-            "description": "",
-            "comments": "",
             "collectionIds": [
                 "a7891ca0-eb2c-11e9-ad75-0752853282b4",
                 "a78aa340-eb2c-11e9-ad75-0752853282b4"
@@ -184,7 +140,8 @@
                     "GUID": "b572d2b0-edb7-11e9-be4a-41c497257011",
                     "name": "idx",
                     "elementType": "Vertex",
-                    "propertyName": "name"
+                    "propertyName": "name",
+                    "isActivated": true
                 }
             ],
             "features": "\n> GraphFeatures\r\n>-- Computer: true\r\n>-- IoRead: true\r\n>-- IoWrite: true\r\n>-- Transactions: false\r\n>-- Persistence: true\r\n>-- ConcurrentAccess: false\r\n>-- ThreadedTransactions: false\r\n> VariableFeatures\r\n>-- Variables: true\r\n>-- MapValues: true\r\n>-- ByteValues: true\r\n>-- LongValues: true\r\n>-- LongArrayValues: true\r\n>-- BooleanArrayValues: true\r\n>-- ByteArrayValues: true\r\n>-- DoubleArrayValues: true\r\n>-- BooleanValues: true\r\n>-- StringArrayValues: true\r\n>-- StringValues: true\r\n>-- SerializableValues: true\r\n>-- FloatArrayValues: true\r\n>-- UniformListValues: true\r\n>-- DoubleValues: true\r\n>-- MixedListValues: true\r\n>-- FloatValues: true\r\n>-- IntegerValues: true\r\n>-- IntegerArrayValues: true\r\n> VertexFeatures\r\n>-- Upsert: false\r\n>-- MetaProperties: true\r\n>-- RemoveVertices: true\r\n>-- MultiProperties: true\r\n>-- AddVertices: true\r\n>-- DuplicateMultiProperties: true\r\n>-- UuidIds: true\r\n>-- NumericIds: true\r\n>-- StringIds: true\r\n>-- CustomIds: false\r\n>-- AnyIds: true\r\n>-- UserSuppliedIds: true\r\n>-- AddProperty: true\r\n>-- RemoveProperty: true\r\n> VertexPropertyFeatures\r\n>-- UuidIds: true\r\n>-- NumericIds: true\r\n>-- StringIds: true\r\n>-- CustomIds: false\r\n>-- AnyIds: true\r\n>-- UserSuppliedIds: true\r\n>-- RemoveProperty: true\r\n>-- Properties: true\r\n>-- MapValues: true\r\n>-- ByteValues: true\r\n>-- LongValues: true\r\n>-- LongArrayValues: true\r\n>-- BooleanArrayValues: true\r\n>-- ByteArrayValues: true\r\n>-- DoubleArrayValues: true\r\n>-- BooleanValues: true\r\n>-- StringArrayValues: true\r\n>-- StringValues: true\r\n>-- SerializableValues: true\r\n>-- FloatArrayValues: true\r\n>-- UniformListValues: true\r\n>-- DoubleValues: true\r\n>-- MixedListValues: true\r\n>-- FloatValues: true\r\n>-- IntegerValues: true\r\n>-- IntegerArrayValues: true\r\n> EdgeFeatures\r\n>-- Upsert: false\r\n>-- AddEdges: true\r\n>-- RemoveEdges: true\r\n>-- UuidIds: true\r\n>-- NumericIds: true\r\n>-- StringIds: true\r\n>-- CustomIds: false\r\n>-- AnyIds: true\r\n>-- UserSuppliedIds: true\r\n>-- AddProperty: true\r\n>-- RemoveProperty: true\r\n> EdgePropertyFeatures\r\n>-- Properties: true\r\n>-- MapValues: true\r\n>-- ByteValues: true\r\n>-- LongValues: true\r\n>-- LongArrayValues: true\r\n>-- BooleanArrayValues: true\r\n>-- ByteArrayValues: true\r\n>-- DoubleArrayValues: true\r\n>-- BooleanValues: true\r\n>-- StringArrayValues: true\r\n>-- StringValues: true\r\n>-- SerializableValues: true\r\n>-- FloatArrayValues: true\r\n>-- UniformListValues: true\r\n>-- DoubleValues: true\r\n>-- MixedListValues: true\r\n>-- FloatValues: true\r\n>-- IntegerValues: true\r\n>-- IntegerArrayValues: true\r\n",
@@ -206,7 +163,8 @@
                 }
             ],
             "addFieldsToBucket": true,
-            "isPlugin": true
+            "isPlugin": true,
+            "isActivated": true
         }
     ],
     "views": [],
@@ -222,6 +180,7 @@
             "childCollection": "a7891ca0-eb2c-11e9-ad75-0752853282b4",
             "childCardinality": "1",
             "bucketId": "a7b9a280-eb2c-11e9-ad75-0752853282b4",
+            "level": "entity",
             "properties": []
         },
         {
@@ -235,6 +194,7 @@
             "childCollection": "a7891ca0-eb2c-11e9-ad75-0752853282b4",
             "childCardinality": "1",
             "bucketId": "a7b9a280-eb2c-11e9-ad75-0752853282b4",
+            "level": "entity",
             "properties": [
                 {
                     "code": "",
@@ -245,30 +205,18 @@
                     "GUID": "a787bd10-eb2c-11e9-ad75-0752853282b4",
                     "childType": "number",
                     "required": true,
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
-                    "enum": [],
                     "sample": 3,
                     "compositeKey": [
                         "compositeNodeKey"
                     ],
-                    "compositeNodeKey": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "propCardinality": "list"
+                    "propCardinality": "list",
+                    "isActivated": true
                 }
             ]
         }
     ],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "a786aba0-eb2c-11e9-ad75-0752853282b4": "name",
         "a7891ca0-eb2c-11e9-ad75-0752853282b4": "software",
@@ -277,33 +225,47 @@
         "a78aa340-eb2c-11e9-ad75-0752853282b4": "person",
         "a78d3b50-eb2c-11e9-ad75-0752853282b4": "traverses",
         "a78d6262-eb2c-11e9-ad75-0752853282b4": "uses",
-        "a7b9a280-eb2c-11e9-ad75-0752853282b4": "g"
+        "a7b9a280-eb2c-11e9-ad75-0752853282b4": "g",
+        "a787bd10-eb2c-11e9-ad75-0752853282b4": "skill"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
         "GUID": "747c7641-eb22-11e9-9e9f-8b8f2a80b10e"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "0c054603-b005-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "747c7642-eb22-11e9-9e9f-8b8f2a80b10e"
     },
+    "sources": [],
     "decorativeSymbols": [],
-    "dbVersion": "",
     "dbVendor": "Apache TinkerPop",
     "appTarget": "TinkerPop",
     "creationTS": "2019-10-10T05:54:42.724Z",
+    "GUID": "ac939c50-edd6-11e9-a625-6b181646502d",
+    "code": "",
+    "lastModifTS": "2022-03-30T08:40:32.156Z",
+    "persistenceSchemaVersion": "6",
+    "description": "Reverse-engineered from example http://tinkerpop.apache.org/docs/current/tutorials/the-gremlin-console/#toy-graphs",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "dbVersion": "",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "TinkerPop",
-        "pluginVersion": "0.0.1",
+        "pluginVersion": "0.1.10",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "3.5.0"
+        "version": "6.0.0"
     },
-    "hideModelViews": false,
     "hackoladeMeta": {
         "validationErrors": {
             "modelName": false
@@ -361,10 +323,27 @@
                 ],
                 "collapsedNodes": [],
                 "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
                 "selectedCollections": [],
-                "decorativeSymbols": [],
+                "displayColorPicker": false,
                 "graphView": {
-                    "erd": [],
+                    "erd": [
+                        {
+                            "GUID": "a7891ca0-eb2c-11e9-ad75-0752853282b4",
+                            "x": 454.6922234684597,
+                            "y": 263.11485338887945,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "a78aa340-eb2c-11e9-ad75-0752853282b4",
+                            "x": 91,
+                            "y": 110,
+                            "size": 100
+                        }
+                    ],
                     "buckets": [
                         {
                             "x": 51,
@@ -372,22 +351,21 @@
                             "GUID": "a7b9a280-eb2c-11e9-ad75-0752853282b4"
                         }
                     ],
-                    "showPropertiesBoxes": false
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
                 },
-                "activeRelationshipFields": {
-                    "childField": [],
-                    "parentField": []
-                },
-                "displayColorPicker": false,
-                "expandCollections": []
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false
+            "shouldDistributeCollections": false
         }
     }
 }

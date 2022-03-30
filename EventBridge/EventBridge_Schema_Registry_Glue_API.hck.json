@@ -457,6 +457,11 @@
         ],
         "GUID": "05d3dd91-d27c-11ea-a67d-2523550081c5"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "41d67de3-afff-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
@@ -470,8 +475,8 @@
     "creationTS": "2020-07-30T15:47:50.377Z",
     "GUID": "05d3dd90-d27c-11ea-a67d-2523550081c5",
     "code": "",
-    "lastModifTS": "2021-03-06T16:42:41.184Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T07:59:11.987Z",
+    "persistenceSchemaVersion": "6",
     "description": "OpenAPI definition for aws.glue@GlueDataCatalogTableStateChange API",
     "comments": "",
     "author": "",
@@ -493,11 +498,11 @@
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "EventBridge",
-        "pluginVersion": "0.1.5",
+        "pluginVersion": "0.1.22",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.10"
+        "version": "6.0.0"
     },
     "hackoladeMeta": {
         "validationErrors": {}
@@ -519,9 +524,6 @@
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -535,8 +537,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

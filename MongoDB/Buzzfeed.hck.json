@@ -476,12 +476,15 @@
                     "default": false,
                     "primaryKey": false,
                     "relationshipType": "",
-                    "foreignCollection": "8f9ec3f0-02e2-11e6-a6da-47e48d71d0e8",
+                    "foreignCollection": "",
                     "sample": "true",
                     "error": {
                         "sample": false
                     },
-                    "isActivated": true
+                    "isActivated": true,
+                    "childRelationships": [],
+                    "parentRelationship": "",
+                    "foreignField": []
                 },
                 {
                     "GUID": "d40a6570-0310-11e6-a6da-47e48d71d0e8",
@@ -748,28 +751,39 @@
         "900b0790-0314-11e6-a6da-47e48d71d0e8": "read",
         "a048e5a0-0314-11e6-a6da-47e48d71d0e8": "user_id",
         "a8766720-0314-11e6-a6da-47e48d71d0e8": "feed_entry_id",
-        "b2e1f1c0-0314-11e6-a6da-47e48d71d0e8": "feed_id"
+        "b2e1f1c0-0314-11e6-a6da-47e48d71d0e8": "feed_id",
+        "3ac1ac70-0310-11e6-a6da-47e48d71d0e8": "feedID to _id of feed",
+        "d6559120-0314-11e6-a6da-47e48d71d0e8": "feed_id to _id of feed",
+        "dddbd620-0314-11e6-a6da-47e48d71d0e8": "feed_entry_id to _id of feedEntries",
+        "4981d1e0-0315-11e6-a6da-47e48d71d0e8": "user_id to _id of usersS",
+        "42eefc50-030f-11e6-a6da-47e48d71d0e8": "",
+        "e565e120-0313-11e6-a6da-47e48d71d0e8": ""
     },
     "definitions": {
         "id": "81f21770-bb5d-11e9-980c-11e55127ccf6",
         "properties": [],
         "type": "definitions"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "1b3772b3-b000-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "82207a72-bb5d-11e9-980c-11e55127ccf6"
     },
+    "sources": [],
     "decorativeSymbols": [],
     "dbVersion": "v3.2",
     "dbVendor": "MongoDB",
-    "hideModelViews": true,
     "appTarget": "MONGODB",
     "creationTS": "2016-10-21T01:57:47.887Z",
     "GUID": "c3ff77f0-9731-11e6-9010-056a22b35869",
     "code": "",
-    "lastModifTS": "2021-01-15T09:20:59.757Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T08:05:50.972Z",
+    "persistenceSchemaVersion": "6",
     "description": "Model derived from article: https://www.mongodb.com/blog/post/building-your-first-application-mongodb-creating-rest-api-using-mean-stack-part-1, a blog series on how to use MongoDB, Mongoose Object Data Mapping (ODM) with Express.js and Node.js.  \n\nThe  article describes hte steps required to build an RSS Aggregator application, similar to Google Reader.",
     "comments": "",
     "author": "Norberto Leite",
@@ -780,9 +794,11 @@
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.3"
+        "version": "6.0.0"
     },
-    "hackoladeMeta": {},
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -791,29 +807,29 @@
                         "GUID": "78055a60-02e2-11e6-a6da-47e48d71d0e8",
                         "x": 100,
                         "y": 82,
-                        "width": 300,
-                        "height": 198
+                        "width": 282,
+                        "height": 249
                     },
                     {
                         "GUID": "8f9ec3f0-02e2-11e6-a6da-47e48d71d0e8",
                         "x": 504,
                         "y": 83,
-                        "width": 284,
-                        "height": 226
+                        "width": 244,
+                        "height": 285
                     },
                     {
                         "GUID": "9cff72b0-02e2-11e6-a6da-47e48d71d0e8",
-                        "x": 116,
+                        "x": 111,
                         "y": 366,
-                        "width": 268,
-                        "height": 198
+                        "width": 259,
+                        "height": 249
                     },
                     {
                         "GUID": "eec26300-02e2-11e6-a6da-47e48d71d0e8",
-                        "x": 524,
-                        "y": 399,
-                        "width": 244,
-                        "height": 100
+                        "x": 512,
+                        "y": 429,
+                        "width": 228,
+                        "height": 123
                     }
                 ],
                 "buckets": [],
@@ -823,15 +839,15 @@
                     "childField": [],
                     "parentField": []
                 },
-                "selectedCollections": [],
+                "selectedCollections": [
+                    "8f9ec3f0-02e2-11e6-a6da-47e48d71d0e8",
+                    "eec26300-02e2-11e6-a6da-47e48d71d0e8"
+                ],
                 "displayColorPicker": false,
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -845,8 +861,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

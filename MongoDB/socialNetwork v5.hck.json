@@ -335,7 +335,8 @@
                     "backgroundIndexing": true,
                     "languageOverride": false,
                     "weights": "",
-                    "defaultLanguage": "french"
+                    "defaultLanguage": "french",
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -373,13 +374,17 @@
                     "childRelationships": [
                         "ee8978c0-f378-11e5-ae63-ed98875331f1",
                         "01871070-f3e4-11e5-9c39-49b275bf0df4",
-                        "e324b710-f3e6-11e5-9c39-49b275bf0df4",
+                        "12a20f60-31ae-11e6-bfd8-019a140b8dcc",
                         "81538ec0-f3e7-11e5-938a-bd54cc414623",
-                        "12a20f60-31ae-11e6-bfd8-019a140b8dcc"
+                        "e324b710-f3e6-11e5-9c39-49b275bf0df4"
                     ],
                     "sample": "pdesmarets",
                     "name": "username",
-                    "isActivated": true
+                    "isActivated": true,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": []
                 },
                 {
                     "GUID": "636bbd00-f370-11e5-a4af-ebcc6a2c834f",
@@ -1012,28 +1017,45 @@
         "ce1ba400-31ad-11e6-bfd8-019a140b8dcc": "^[a-z0-9_-]{5,20}$",
         "d6a35370-31ad-11e6-bfd8-019a140b8dcc": "friendshipId",
         "de7fcec0-31ad-11e6-bfd8-019a140b8dcc": "friendshipStatus",
-        "e6ecf150-31ad-11e6-bfd8-019a140b8dcc": "userFullName"
+        "e6ecf150-31ad-11e6-bfd8-019a140b8dcc": "userFullName",
+        "ee8978c0-f378-11e5-ae63-ed98875331f1": "fk of username",
+        "01871070-f3e4-11e5-9c39-49b275bf0df4": "fk of blockedUsers' username",
+        "6cceb960-f401-11e5-938a-bd54cc414623": "fk of skills",
+        "13c43080-3217-11e6-bc05-2bb400ec3751": "New Relationship(4)",
+        "e6ecf151-31ad-11e6-bfd8-019a140b8dcc": "New Relationship(2)",
+        "12a20f60-31ae-11e6-bfd8-019a140b8dcc": "fk of friends' username",
+        "087809e0-3217-11e6-bc05-2bb400ec3751": "New Relationship(3)",
+        "81538ec0-f3e7-11e5-938a-bd54cc414623": "fk of invitee's username",
+        "bcabd2b0-f401-11e5-938a-bd54cc414623": "fm of skillDescription",
+        "e324b710-f3e6-11e5-9c39-49b275bf0df4": "fk of invitor's username",
+        "d6a35371-31ad-11e6-bfd8-019a140b8dcc": "New Relationship",
+        "de7fcec1-31ad-11e6-bfd8-019a140b8dcc": "New Relationship(1)"
     },
     "definitions": {
         "id": "c65be2c0-bc10-11e9-980c-11e55127ccf6",
         "properties": [],
         "type": "definitions"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "4d69d4c3-b001-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "c68f75e1-bc10-11e9-980c-11e55127ccf6"
     },
+    "sources": [],
     "decorativeSymbols": [],
     "dbVersion": "v3.2",
     "dbVendor": "MongoDB",
-    "hideModelViews": true,
     "appTarget": "MONGODB",
     "creationTS": "2016-04-28T08:11:26.118Z",
     "GUID": "8b6c2620-112d-11e6-9f2c-e978a8d7cc1e",
     "code": "",
-    "lastModifTS": "2021-01-15T10:34:11.397Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T08:14:10.923Z",
+    "persistenceSchemaVersion": "6",
     "description": "Social network to showcase Hackolade capabilities",
     "comments": "One feature of particular interest is in the userFriends collection.  We have there a 'pattern field' for which the key a variable with a regular expression format.  This is useful to leverage the 'dot notation' of MongoDB.",
     "author": "John",
@@ -1044,9 +1066,11 @@
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.3"
+        "version": "6.0.0"
     },
-    "hackoladeMeta": {},
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -1055,29 +1079,29 @@
                         "GUID": "4a349e70-f36f-11e5-adc0-8541c508aaa8",
                         "x": 41,
                         "y": 40,
-                        "width": 307,
-                        "height": 408
+                        "width": 320,
+                        "height": 519
                     },
                     {
                         "GUID": "527fcb00-f378-11e5-ae63-ed98875331f1",
                         "x": 518,
                         "y": 97,
-                        "width": 301,
-                        "height": 184
+                        "width": 345,
+                        "height": 231
                     },
                     {
                         "GUID": "2e5777a0-f3e6-11e5-9c39-49b275bf0df4",
-                        "x": 536,
-                        "y": 348,
-                        "width": 264,
-                        "height": 100
+                        "x": 573.1750741839761,
+                        "y": 406.8605341246291,
+                        "width": 238,
+                        "height": 123
                     },
                     {
                         "GUID": "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
-                        "x": 71,
-                        "y": 518,
-                        "width": 244,
-                        "height": 58
+                        "x": 104.04451038575684,
+                        "y": 614.0356083086047,
+                        "width": 185,
+                        "height": 69
                     }
                 ],
                 "buckets": [],
@@ -1093,9 +1117,6 @@
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -1110,8 +1131,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

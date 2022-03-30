@@ -72,7 +72,9 @@
                 "properties": [],
                 "type": "definitions"
             },
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true,
+            "indexes": []
         },
         {
             "properties": [
@@ -303,7 +305,9 @@
                 "properties": [],
                 "type": "definitions"
             },
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true,
+            "indexes": []
         },
         {
             "properties": [
@@ -374,7 +378,9 @@
                 "properties": [],
                 "type": "definitions"
             },
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true,
+            "indexes": []
         },
         {
             "properties": [
@@ -807,7 +813,9 @@
                 "properties": [],
                 "type": "definitions"
             },
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true,
+            "indexes": []
         },
         {
             "properties": [
@@ -940,7 +948,9 @@
                 "properties": [],
                 "type": "definitions"
             },
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true,
+            "indexes": []
         },
         {
             "properties": [
@@ -1646,7 +1656,9 @@
                 "properties": [],
                 "type": "definitions"
             },
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true,
+            "indexes": []
         }
     ],
     "buckets": [],
@@ -1877,39 +1889,52 @@
         "1ee86b35-50c0-11e6-bed2-17e5bd00121b": "keywords",
         "1ee86b36-50c0-11e6-bed2-17e5bd00121b": "name",
         "1ee86b37-50c0-11e6-bed2-17e5bd00121b": "wikipedia_link",
-        "1ee86b30-50c0-11e6-bed2-17e5bd00121b": "countries"
+        "1ee86b30-50c0-11e6-bed2-17e5bd00121b": "countries",
+        "ccc72b40-50e0-11e6-bed2-17e5bd00121b": "countriesAirports",
+        "0e3a1510-50e1-11e6-bed2-17e5bd00121b": "countriesRegions",
+        "308a6a20-50e1-11e6-bed2-17e5bd00121b": "regionsAirports",
+        "a3c2dfe0-50e1-11e6-bed2-17e5bd00121b": "airportsNavaids",
+        "1428d4b0-50e2-11e6-bed2-17e5bd00121b": "airportsRunaways",
+        "759c7e40-50e2-11e6-bed2-17e5bd00121b": "New Relationship"
     },
     "definitions": {
         "id": "12fe26e0-596f-11eb-abd9-032680bfc303",
         "properties": [],
         "type": "definitions"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "edcac423-b000-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "1349fcf2-596f-11eb-abd9-032680bfc303"
     },
+    "sources": [],
     "decorativeSymbols": [],
     "dbVersion": "v3.2",
     "dbVendor": "MongoDB",
-    "hideModelViews": true,
     "appTarget": "MONGODB",
     "creationTS": "2016-07-23T10:27:35.093Z",
     "GUID": "12375d60-50c0-11e6-bed2-17e5bd00121b",
-    "lastModifTS": "2021-01-18T09:25:23.183Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T08:12:08.225Z",
+    "persistenceSchemaVersion": "6",
     "description": "http://ourairports.com/data/ is a free site where visitors can explore the world's airports, read other people's comments, and leave their own. The help pages have information to get you started.\n\nThe site is dedicated to both passengers and pilots. You can create a map of the airports you've visited and share that map with friends. You can find the closest airports to you, and discover the ones that you haven't visited yet.",
     "comments": "Downloaded from http://ourairports.com/data/\n\nTotally flat and relational...",
     "author": "Pascal",
     "version": "0.1",
     "validation": "MongoDB extension",
-    "hackoladeMeta": {},
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.3"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -1987,36 +2012,36 @@
                     },
                     {
                         "GUID": "1e557a00-50c0-11e6-bed2-17e5bd00121b",
-                        "x": 746,
+                        "x": 732.86943620178,
                         "y": 302,
-                        "width": 250,
-                        "height": 325
+                        "width": 302,
+                        "height": 393
                     },
                     {
                         "GUID": "1e7f7030-50c0-11e6-bed2-17e5bd00121b",
                         "x": 393,
-                        "y": 316,
-                        "width": 250,
-                        "height": 297
+                        "y": 320,
+                        "width": 258,
+                        "height": 357
                     },
                     {
                         "GUID": "1e8c1a62-50c0-11e6-bed2-17e5bd00121b",
                         "x": 611,
-                        "y": 75,
-                        "width": 250,
-                        "height": 157
+                        "y": 71,
+                        "width": 234,
+                        "height": 177
                     },
                     {
                         "GUID": "1ec504b5-50c0-11e6-bed2-17e5bd00121b",
                         "x": 40,
                         "y": 302,
-                        "width": 250,
-                        "height": 325
+                        "width": 289,
+                        "height": 393
                     },
                     {
                         "GUID": "1ed6b7f0-50c0-11e6-bed2-17e5bd00121b",
-                        "x": 393,
-                        "y": 671,
+                        "x": 397,
+                        "y": 736.6528189910994,
                         "width": 250,
                         "height": 129
                     },
@@ -2024,8 +2049,8 @@
                         "GUID": "1ee86b30-50c0-11e6-bed2-17e5bd00121b",
                         "x": 185,
                         "y": 89,
-                        "width": 250,
-                        "height": 129
+                        "width": 231,
+                        "height": 141
                     }
                 ],
                 "buckets": [],
@@ -2041,9 +2066,6 @@
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -2057,8 +2079,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

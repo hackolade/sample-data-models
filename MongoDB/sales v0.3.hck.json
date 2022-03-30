@@ -18,7 +18,13 @@
                     "type": "objectId",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "isActivated": true
+                    "isActivated": true,
+                    "childRelationships": [
+                        "152408b0-128a-11e8-9f2d-819809faafb9"
+                    ],
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": []
                 },
                 {
                     "GUID": "30c4f110-0440-11e6-a1a6-29098b60dd65",
@@ -368,7 +374,8 @@
                     "ttlIndex": "",
                     "backgroundIndexing": false,
                     "languageOverride": false,
-                    "weights": ""
+                    "weights": "",
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -581,7 +588,20 @@
         "dd065780-1289-11e8-9f2d-819809faafb9": "customerRef",
         "dd067e90-1289-11e8-9f2d-819809faafb9": "$id",
         "dd067e91-1289-11e8-9f2d-819809faafb9": "$db",
-        "dd06a5a0-1289-11e8-9f2d-819809faafb9": "$ref"
+        "dd06a5a0-1289-11e8-9f2d-819809faafb9": "$ref",
+        "b89c3b50-f672-11e6-a8f0-0b0b313c735c": "address",
+        "b1d6ab80-0441-11e6-a1a6-29098b60dd65": "fm_customerName",
+        "235d5fe0-f674-11e6-a8f0-0b0b313c735c": "houseNumber",
+        "5682e440-0722-11e6-a0f3-475ccb6d8902": "New Relationship",
+        "235d5fe1-f674-11e6-a8f0-0b0b313c735c": "streetName",
+        "6ec9f2f0-0722-11e6-a0f3-475ccb6d8902": "fm_productDescription",
+        "235d5fe2-f674-11e6-a8f0-0b0b313c735c": "appartment",
+        "89b76980-0722-11e6-a0f3-475ccb6d8902": "New Relationship(2)",
+        "235d5fe4-f674-11e6-a8f0-0b0b313c735c": "city",
+        "5d24e7b0-00c0-11e7-b3e8-155c696e0db1": "fk customers. to salesOrders.customerInfo.",
+        "235d5fe5-f674-11e6-a8f0-0b0b313c735c": "state",
+        "152408b0-128a-11e8-9f2d-819809faafb9": "fk customers._id to salesOrders.customerInfo.customerRef.$id",
+        "235d5fe3-f674-11e6-a8f0-0b0b313c735c": "zipCode"
     },
     "definitions": {
         "GUID": "58f47820-f672-11e6-a8f0-0b0b313c735c",
@@ -677,6 +697,11 @@
         ],
         "type": "definitions"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "3f2e7d73-b001-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
@@ -686,13 +711,12 @@
     "decorativeSymbols": [],
     "dbVersion": "v3.6",
     "dbVendor": "MongoDB",
-    "hideModelViews": true,
     "appTarget": "MONGODB",
     "creationTS": "2016-05-09T16:09:02.887Z",
     "GUID": "53fc2360-128a-11e8-9f2d-819809faafb9",
     "code": "",
-    "lastModifTS": "2021-04-01T12:50:35.271Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T08:13:31.389Z",
+    "persistenceSchemaVersion": "6",
     "description": "Basic demo of a sales application data model, with denormalization of some master data\n",
     "comments": "More comments here...",
     "author": "John Doe",
@@ -703,7 +727,7 @@
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.14"
+        "version": "6.0.0"
     },
     "hackoladeMeta": {
         "customPropertiesUpdated": true
@@ -1085,7 +1109,7 @@
                         "x": 47,
                         "y": 123,
                         "width": 276,
-                        "height": 173,
+                        "height": 213,
                         "color": {}
                     },
                     {
@@ -1093,7 +1117,7 @@
                         "x": 537,
                         "y": 46,
                         "width": 377,
-                        "height": 327,
+                        "height": 411,
                         "color": {
                             "hsl": {
                                 "h": 339.7058823529412,
@@ -1120,10 +1144,10 @@
                     },
                     {
                         "GUID": "b63dd6c0-0721-11e6-a0f3-475ccb6d8902",
-                        "x": 610,
-                        "y": 433.877618522602,
+                        "x": 611.1078748651564,
+                        "y": 538.0178558473053,
                         "width": 231,
-                        "height": 89,
+                        "height": 105,
                         "color": {
                             "hsl": {
                                 "h": 290.8029197080292,
@@ -1647,18 +1671,12 @@
                     "childField": [],
                     "parentField": []
                 },
-                "selectedCollections": [
-                    "46aed5e0-0440-11e6-a1a6-29098b60dd65",
-                    "166589b0-0440-11e6-a1a6-29098b60dd65"
-                ],
+                "selectedCollections": [],
                 "displayColorPicker": false,
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -1672,8 +1690,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

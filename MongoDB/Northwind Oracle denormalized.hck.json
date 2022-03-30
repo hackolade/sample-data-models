@@ -729,13 +729,15 @@
                                     "GUID": "bf709d90-9236-11eb-a1cd-2b20d40ce8aa",
                                     "name": "products",
                                     "required": true,
-                                    "error": {}
+                                    "error": {},
+                                    "additionalProperties": true
                                 }
                             ],
                             "hackoladeMeta": {},
                             "isActivated": true,
                             "GUID": "b46d8de0-9236-11eb-a1cd-2b20d40ce8aa",
-                            "arrayItem": true
+                            "arrayItem": true,
+                            "additionalProperties": true
                         }
                     ],
                     "additionalItems": true,
@@ -1510,12 +1512,23 @@
         "bf70ebbe-9236-11eb-a1cd-2b20d40ce8aa": "products...supplier_id to orders...supplier_id",
         "bf70ebbf-9236-11eb-a1cd-2b20d40ce8aa": "products...category_id to orders...category_id",
         "bf70ebc0-9236-11eb-a1cd-2b20d40ce8aa": "products...quantity_per_unit to orders...quantity_per_unit",
-        "bf70ebc1-9236-11eb-a1cd-2b20d40ce8aa": "products...unit_price to orders...unit_price"
+        "bf70ebc1-9236-11eb-a1cd-2b20d40ce8aa": "products...unit_price to orders...unit_price",
+        "05f92170-899e-11e6-a8d7-35e2bcca9f8c": "fk_reports_to",
+        "05f92171-899e-11e6-a8d7-35e2bcca9f8c": "fk_category_id",
+        "05f92172-899e-11e6-a8d7-35e2bcca9f8c": "fk_supplier_id",
+        "05f92173-899e-11e6-a8d7-35e2bcca9f8c": "fk_customer_id",
+        "05f92174-899e-11e6-a8d7-35e2bcca9f8c": "fk_employee_id",
+        "05f92175-899e-11e6-a8d7-35e2bcca9f8c": "fk_shipper_id"
     },
     "definitions": {
         "GUID": "186c47c0-e5f0-11e6-88d2-2d3300b4e17f",
         "properties": [],
         "type": "definitions"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "975dfad3-b000-11ec-ab49-f732172fe980"
     },
     "externalDefinitions": {
         "type": "externalDefinitions",
@@ -1526,12 +1539,11 @@
     "decorativeSymbols": [],
     "dbVersion": "v4.4",
     "dbVendor": "MongoDB",
-    "hideModelViews": true,
     "appTarget": "MONGODB",
     "creationTS": "2016-10-03T19:11:11.926Z",
     "GUID": "e2fe7bb0-9236-11eb-a1cd-2b20d40ce8aa",
-    "lastModifTS": "2021-03-31T15:37:43.275Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T08:09:24.357Z",
+    "persistenceSchemaVersion": "6",
     "description": "The famous Microsoft Access example, imported from an Oracle DDL at http://www.geeksengine.com/article/northwind-oracle-2.html",
     "comments": "More comments here",
     "author": "John Doe",
@@ -1542,7 +1554,7 @@
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.14"
+        "version": "6.0.0"
     },
     "hackoladeMeta": {
         "customPropertiesUpdated": true,
@@ -1551,7 +1563,6 @@
             "modelName": false
         }
     },
-    "hideForeignMaster": true,
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -1797,51 +1808,51 @@
                     {
                         "GUID": "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
                         "x": 850,
-                        "y": 646,
+                        "y": 687,
                         "width": 240,
-                        "height": 87
+                        "height": 105
                     },
                     {
                         "GUID": "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
                         "x": 850,
                         "y": 80,
-                        "width": 250,
-                        "height": 199
+                        "width": 243,
+                        "height": 249
                     },
                     {
                         "GUID": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
                         "x": 80,
                         "y": 80,
-                        "width": 248,
-                        "height": 272
+                        "width": 245,
+                        "height": 339
                     },
                     {
                         "GUID": "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
                         "x": 80,
-                        "y": 590,
+                        "y": 615,
                         "width": 243,
-                        "height": 199
+                        "height": 249
                     },
                     {
                         "GUID": "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
-                        "x": 850,
-                        "y": 320,
-                        "width": 250,
-                        "height": 75
+                        "x": 846.1320474777447,
+                        "y": 394.78041543026677,
+                        "width": 243,
+                        "height": 87
                     },
                     {
                         "GUID": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
-                        "x": 482,
-                        "y": 601,
+                        "x": 489.73590504451033,
+                        "y": 651,
                         "width": 253,
-                        "height": 177
+                        "height": 213
                     },
                     {
                         "GUID": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
                         "x": 453,
                         "y": 80,
-                        "width": 311,
-                        "height": 397
+                        "width": 324,
+                        "height": 501
                     }
                 ],
                 "buckets": [
@@ -1857,18 +1868,12 @@
                     "childField": [],
                     "parentField": []
                 },
-                "selectedCollections": [
-                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
-                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c"
-                ],
+                "selectedCollections": [],
                 "displayColorPicker": false,
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -1882,8 +1887,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

@@ -1,125 +1,56 @@
 {
-    "GUID": "0f408fd0-b8f0-11e6-8089-6f1f31218a06",
-    "lastModifTS": "2016-12-10T15:12:13.392Z",
-    "persistenceSchemaVersion": "1",
-    "description": "DAT-401 YouTube video https://www.youtube.com/watch?v=ggDIat_FZtA&t=3s by Rick Houlihan, Principal Solutions Architect\n\nThird use case illustrating query filters vs composite key indexes",
-    "comments": "Issue that we don't yet support composite keys, cfr: https://youtu.be/ggDIat_FZtA?t=2421",
-    "author": "",
-    "version": "",
+    "modelName": "Online Gaming",
     "collections": [
         {
             "GUID": "4ca9b130-b8f0-11e6-8089-6f1f31218a06",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "d9bI3",
                     "GUID": "4caa4d70-b8f0-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "gameId",
-                    "partitionKey": true
+                    "partitionKey": true,
+                    "isActivated": true
                 },
                 {
                     "GUID": "53d21ec0-b8f0-11e6-8089-6f1f31218a06",
                     "type": "string",
-                    "description": "",
-                    "comments": "",
                     "required": true,
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "id": "",
                     "name": "date",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "enum": [],
                     "sample": "2014-10-02",
-                    "sortKey": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "David",
                     "GUID": "5dbdf210-b8f0-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
-                    "name": "host"
+                    "name": "host",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Alice",
                     "GUID": "62bb9060-b8f0-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
-                    "name": "opponent"
+                    "name": "opponent",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "enum": [
                         "DONE",
                         "PENDING",
@@ -127,15 +58,12 @@
                     ],
                     "sample": "DONE",
                     "GUID": "6836c320-b8f0-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "status",
                     "compositeAttributes": [
                         "4caa4d70-b8f0-11e6-8089-6f1f31218a06"
-                    ]
+                    ],
+                    "isActivated": true
                 }
             ],
             "collectionName": "games",
@@ -145,16 +73,17 @@
                     "GUID": "3925da70-b8f1-11e6-8089-6f1f31218a06",
                     "name": "queryFilterGSI",
                     "lsi": false,
-                    "sortKey": {
-                        "include": true,
-                        "GUID": "53d21ec0-b8f0-11e6-8089-6f1f31218a06",
-                        "value": "date"
-                    },
+                    "sortKey": [
+                        {
+                            "keyId": "53d21ec0-b8f0-11e6-8089-6f1f31218a06"
+                        }
+                    ],
                     "projectionType": "Include",
-                    "partitionKey": {
-                        "GUID": "62bb9060-b8f0-11e6-8089-6f1f31218a06",
-                        "value": "opponent"
-                    },
+                    "partitionKey": [
+                        {
+                            "keyId": "62bb9060-b8f0-11e6-8089-6f1f31218a06"
+                        }
+                    ],
                     "readCapacity": 5,
                     "writeCapacity": 5,
                     "key": [
@@ -163,25 +92,34 @@
                         "5dbdf210-b8f0-11e6-8089-6f1f31218a06"
                     ],
                     "nonKeyAttributes": [
-                        "4caa4d70-b8f0-11e6-8089-6f1f31218a06",
-                        "6836c320-b8f0-11e6-8089-6f1f31218a06",
-                        "5dbdf210-b8f0-11e6-8089-6f1f31218a06"
-                    ]
+                        {
+                            "keyId": "4caa4d70-b8f0-11e6-8089-6f1f31218a06"
+                        },
+                        {
+                            "keyId": "6836c320-b8f0-11e6-8089-6f1f31218a06"
+                        },
+                        {
+                            "keyId": "5dbdf210-b8f0-11e6-8089-6f1f31218a06"
+                        }
+                    ],
+                    "isActivated": true,
+                    "includeSortKey": true
                 },
                 {
                     "GUID": "cecd50d0-b8f1-11e6-8089-6f1f31218a06",
                     "name": "compositeKeyGSI",
                     "lsi": false,
-                    "sortKey": {
-                        "include": true,
-                        "GUID": "6836c320-b8f0-11e6-8089-6f1f31218a06",
-                        "value": "status"
-                    },
+                    "sortKey": [
+                        {
+                            "keyId": "6836c320-b8f0-11e6-8089-6f1f31218a06"
+                        }
+                    ],
                     "projectionType": "Include",
-                    "partitionKey": {
-                        "GUID": "62bb9060-b8f0-11e6-8089-6f1f31218a06",
-                        "value": "opponent"
-                    },
+                    "partitionKey": [
+                        {
+                            "keyId": "62bb9060-b8f0-11e6-8089-6f1f31218a06"
+                        }
+                    ],
                     "readCapacity": 5,
                     "writeCapacity": 5,
                     "key": [
@@ -189,19 +127,33 @@
                         "5dbdf210-b8f0-11e6-8089-6f1f31218a06"
                     ],
                     "nonKeyAttributes": [
-                        "4caa4d70-b8f0-11e6-8089-6f1f31218a06",
-                        "5dbdf210-b8f0-11e6-8089-6f1f31218a06"
-                    ]
+                        {
+                            "keyId": "4caa4d70-b8f0-11e6-8089-6f1f31218a06"
+                        },
+                        {
+                            "keyId": "5dbdf210-b8f0-11e6-8089-6f1f31218a06"
+                        }
+                    ],
+                    "isActivated": true,
+                    "includeSortKey": true
                 }
             ],
             "readCapacity": 5,
             "writeCapacity": 5,
-            "streamEnabled": false,
-            "streamViewType": "Keys only"
+            "streamViewType": "Keys only",
+            "definitions": {
+                "id": "55bb3951-affe-11ec-ab49-f732172fe980",
+                "properties": [],
+                "type": "definitions"
+            },
+            "isActivated": true
         }
     ],
+    "buckets": [],
+    "views": [],
     "relationships": [],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "4caa4d70-b8f0-11e6-8089-6f1f31218a06": "gameId",
         "4ca9b130-b8f0-11e6-8089-6f1f31218a06": "games",
@@ -210,10 +162,43 @@
         "62bb9060-b8f0-11e6-8089-6f1f31218a06": "opponent",
         "6836c320-b8f0-11e6-8089-6f1f31218a06": "status"
     },
-    "databaseName": "Online Gaming",
+    "definitions": {
+        "id": "55bb3950-affe-11ec-ab49-f732172fe980",
+        "properties": [],
+        "type": "definitions"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "56cd4593-affe-11ec-ab49-f732172fe980"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "56cd4592-affe-11ec-ab49-f732172fe980"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
     "dbVendor": "AWS DynamoDB",
     "appTarget": "DYNAMODB",
     "creationTS": "2016-12-03T00:33:06.893Z",
+    "GUID": "0f408fd0-b8f0-11e6-8089-6f1f31218a06",
+    "lastModifTS": "2022-03-30T07:52:32.002Z",
+    "persistenceSchemaVersion": "6",
+    "description": "DAT-401 YouTube video https://www.youtube.com/watch?v=ggDIat_FZtA&t=3s by Rick Houlihan, Principal Solutions Architect\n\nThird use case illustrating query filters vs composite key indexes",
+    "comments": "Issue that we don't yet support composite keys, cfr: https://youtu.be/ggDIat_FZtA?t=2421",
+    "author": "",
+    "version": "",
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.0.0"
+    },
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -222,20 +207,37 @@
                         "GUID": "4ca9b130-b8f0-11e6-8089-6f1f31218a06",
                         "x": 40,
                         "y": 40,
-                        "width": 192,
-                        "height": 107
+                        "width": 247,
+                        "height": 123
                     }
                 ],
+                "buckets": [],
                 "collapsedNodes": [],
                 "activeRelationship": "",
-                "selectedCollections": []
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
-            "nodes": [],
-            "details": true
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
         }
     }
 }

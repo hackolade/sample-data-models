@@ -1,11 +1,5 @@
 {
-    "GUID": "3d869f60-a99a-11e7-aafd-e50efd50e6cc",
-    "lastModifTS": "2018-04-14T08:33:13.430Z",
-    "persistenceSchemaVersion": "1",
-    "description": "Demo Cosmos DB",
-    "comments": "Thu Oct 05 2017 08:55:21 GMT+0200 (Romance Summer Time): ",
-    "author": "pascal",
-    "version": "v1.0",
+    "modelName": "travel-sample",
     "collections": [
         {
             "bucketId": "20f57360-a7b7-11e7-8d8c-d582de6a019a",
@@ -17,14 +11,12 @@
                     "name": "id",
                     "GUID": "20e51fb0-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "childRelationships": [
                         "e3510e40-a999-11e7-aafd-e50efd50e6cc"
                     ],
                     "required": true,
-                    "sample": "1eb93081-62b7-4574-a8b4-90764e3b0501"
+                    "sample": "1eb93081-62b7-4574-a8b4-90764e3b0501",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -34,12 +26,9 @@
                     "name": "type",
                     "GUID": "20e51fb1-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "airline"
+                    "sample": "airline",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -47,12 +36,9 @@
                     "name": "callsign",
                     "GUID": "20e51fb2-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Epic"
+                    "sample": "Epic",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -60,12 +46,9 @@
                     "name": "country",
                     "GUID": "20e51fb3-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "United States"
+                    "sample": "United States",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -73,12 +56,9 @@
                     "name": "iata",
                     "GUID": "20e51fb4-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "FA"
+                    "sample": "FA",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -86,12 +66,9 @@
                     "name": "icao",
                     "GUID": "20e51fb5-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "4AA"
+                    "sample": "4AA",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -99,12 +76,9 @@
                     "name": "name",
                     "GUID": "20e51fb6-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Epic Holiday"
+                    "sample": "Epic Holiday",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -115,8 +89,9 @@
                 "type": "definitions"
             },
             "collectionName": "airline",
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "20f57360-a7b7-11e7-8d8c-d582de6a019a",
@@ -128,15 +103,13 @@
                     "name": "id",
                     "GUID": "20e546d0-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "childRelationships": [
                         "27a0e8c0-a7b7-11e7-8d8c-d582de6a019a",
                         "2c81b040-a7b7-11e7-8d8c-d582de6a019a"
                     ],
                     "required": true,
-                    "sample": "408cf88c-9543-4eba-9cdf-3d87a9b7b2ef"
+                    "sample": "408cf88c-9543-4eba-9cdf-3d87a9b7b2ef",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -146,12 +119,9 @@
                     "name": "type",
                     "GUID": "20e546d1-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "airport"
+                    "sample": "airport",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -159,12 +129,9 @@
                     "name": "airportname",
                     "GUID": "20e546d2-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "La M√¥le Airport"
+                    "sample": "La M√¥le Airport",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -172,12 +139,9 @@
                     "name": "city",
                     "GUID": "20e546d3-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "La M√¥le"
+                    "sample": "La M√¥le",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -185,12 +149,9 @@
                     "name": "country",
                     "GUID": "20e546d4-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "France"
+                    "sample": "France",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -198,12 +159,9 @@
                     "name": "faa",
                     "GUID": "20e546d5-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "LTT"
+                    "sample": "LTT",
+                    "isActivated": true
                 },
                 {
                     "type": "document",
@@ -215,12 +173,9 @@
                             "name": "accuracy",
                             "GUID": "20e546d7-a7b7-11e7-8d8c-d582de6a019a",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
                             "required": true,
-                            "sample": "ROOFTOP"
+                            "sample": "ROOFTOP",
+                            "isActivated": true
                         },
                         {
                             "type": "numeric",
@@ -229,12 +184,9 @@
                             "childType": "number",
                             "GUID": "20e546d8-a7b7-11e7-8d8c-d582de6a019a",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
                             "required": true,
-                            "sample": 59
+                            "sample": 59,
+                            "isActivated": true
                         },
                         {
                             "type": "numeric",
@@ -243,12 +195,9 @@
                             "childType": "number",
                             "GUID": "20e546d9-a7b7-11e7-8d8c-d582de6a019a",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
                             "required": true,
-                            "sample": 43.2054
+                            "sample": 43.2054,
+                            "isActivated": true
                         },
                         {
                             "type": "numeric",
@@ -257,23 +206,18 @@
                             "childType": "number",
                             "GUID": "20e546da-a7b7-11e7-8d8c-d582de6a019a",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
                             "required": true,
-                            "sample": 6.482
+                            "sample": 6.482,
+                            "isActivated": true
                         }
                     ],
                     "name": "geo",
                     "childType": "object",
                     "GUID": "20e546d6-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": true
+                    "required": true,
+                    "isActivated": true,
+                    "additionalProperties": true
                 },
                 {
                     "type": "string",
@@ -281,12 +225,9 @@
                     "name": "icao",
                     "GUID": "20e546db-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "LFTZ"
+                    "sample": "LFTZ",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -294,12 +235,9 @@
                     "name": "tz",
                     "GUID": "20e546dc-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Europe/Paris"
+                    "sample": "Europe/Paris",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -310,8 +248,9 @@
                 "type": "definitions"
             },
             "collectionName": "airport",
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "20f57360-a7b7-11e7-8d8c-d582de6a019a",
@@ -323,12 +262,9 @@
                     "name": "id",
                     "GUID": "20e594e4-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "e0ac0119-6cf7-4f56-9158-690aa34bc875"
+                    "sample": "e0ac0119-6cf7-4f56-9158-690aa34bc875",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -338,12 +274,9 @@
                     "name": "type",
                     "GUID": "20e594e5-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "hotel"
+                    "sample": "hotel",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -351,12 +284,9 @@
                     "name": "address",
                     "GUID": "20e594e6-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Route de Meyrin, 01210 Ferney Voltaire, France"
+                    "sample": "Route de Meyrin, 01210 Ferney Voltaire, France",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -364,12 +294,9 @@
                     "name": "alias",
                     "GUID": "20e594e7-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Lorem"
+                    "sample": "Lorem",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -377,12 +304,9 @@
                     "name": "checkin",
                     "GUID": "20e594e8-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Lorem"
+                    "sample": "Lorem",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -390,12 +314,9 @@
                     "name": "checkout",
                     "GUID": "20e594e9-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Lorem"
+                    "sample": "Lorem",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -403,12 +324,9 @@
                     "name": "city",
                     "GUID": "20e594ea-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Ferney-Voltaire"
+                    "sample": "Ferney-Voltaire",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -416,12 +334,9 @@
                     "name": "country",
                     "GUID": "20e594eb-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "France"
+                    "sample": "France",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -429,12 +344,9 @@
                     "name": "description",
                     "GUID": "20e594ec-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Right behind the airport on the French side. Inexpensive but still a good standard since it belongs to the Accor hotel chain."
+                    "sample": "Right behind the airport on the French side. Inexpensive but still a good standard since it belongs to the Accor hotel chain.",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -442,12 +354,9 @@
                     "name": "directions",
                     "GUID": "20e594ed-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Lorem"
+                    "sample": "Lorem",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -455,12 +364,9 @@
                     "name": "email",
                     "GUID": "20e594ee-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Lorem"
+                    "sample": "Lorem",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -468,12 +374,9 @@
                     "name": "fax",
                     "GUID": "20e594ef-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Lorem"
+                    "sample": "Lorem",
+                    "isActivated": true
                 },
                 {
                     "type": "boolean",
@@ -481,12 +384,9 @@
                     "name": "free_breakfast",
                     "GUID": "20e594f0-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": false
+                    "sample": false,
+                    "isActivated": true
                 },
                 {
                     "type": "boolean",
@@ -494,12 +394,9 @@
                     "name": "free_internet",
                     "GUID": "20e594f1-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": true
+                    "sample": true,
+                    "isActivated": true
                 },
                 {
                     "type": "boolean",
@@ -507,12 +404,9 @@
                     "name": "free_parking",
                     "GUID": "20e594f2-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": false
+                    "sample": false,
+                    "isActivated": true
                 },
                 {
                     "type": "document",
@@ -524,12 +418,9 @@
                             "name": "accuracy",
                             "GUID": "20e5bbf1-a7b7-11e7-8d8c-d582de6a019a",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
                             "required": true,
-                            "sample": "ROOFTOP"
+                            "sample": "ROOFTOP",
+                            "isActivated": true
                         },
                         {
                             "type": "numeric",
@@ -538,12 +429,9 @@
                             "childType": "number",
                             "GUID": "20e5bbf2-a7b7-11e7-8d8c-d582de6a019a",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
                             "required": true,
-                            "sample": 59
+                            "sample": 59,
+                            "isActivated": true
                         },
                         {
                             "type": "numeric",
@@ -552,12 +440,9 @@
                             "childType": "number",
                             "GUID": "20e5bbf3-a7b7-11e7-8d8c-d582de6a019a",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
                             "required": true,
-                            "sample": 43.2054
+                            "sample": 43.2054,
+                            "isActivated": true
                         },
                         {
                             "type": "numeric",
@@ -566,23 +451,18 @@
                             "childType": "number",
                             "GUID": "20e5bbf4-a7b7-11e7-8d8c-d582de6a019a",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
                             "required": true,
-                            "sample": 6.482
+                            "sample": 6.482,
+                            "isActivated": true
                         }
                     ],
                     "name": "geo",
                     "childType": "object",
                     "GUID": "20e5bbf0-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": true
+                    "required": true,
+                    "isActivated": true,
+                    "additionalProperties": true
                 },
                 {
                     "type": "string",
@@ -590,12 +470,9 @@
                     "name": "name",
                     "GUID": "20e5bbf5-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Hotel Formule 1"
+                    "sample": "Hotel Formule 1",
+                    "isActivated": true
                 },
                 {
                     "type": "boolean",
@@ -603,12 +480,9 @@
                     "name": "pets_ok",
                     "GUID": "20e5bbf6-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": false
+                    "sample": false,
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -616,12 +490,9 @@
                     "name": "phone",
                     "GUID": "20e5bbf7-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "+33 891 705 254"
+                    "sample": "+33 891 705 254",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -629,12 +500,9 @@
                     "name": "price",
                     "GUID": "20e5bbf8-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "31€"
+                    "sample": "31€",
+                    "isActivated": true
                 },
                 {
                     "type": "array",
@@ -643,10 +511,6 @@
                     "additionalItems": true,
                     "GUID": "20e5bbf9-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "properties": [
                         {
                             "type": "string",
@@ -654,14 +518,12 @@
                             "primaryKey": false,
                             "GUID": "20e5bbfa-a7b7-11e7-8d8c-d582de6a019a",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
-                            "sample": "Lorena Hansen"
+                            "sample": "Lorena Hansen",
+                            "isActivated": true
                         }
                     ],
-                    "required": true
+                    "required": true,
+                    "isActivated": true
                 },
                 {
                     "type": "array",
@@ -670,10 +532,6 @@
                     "additionalItems": true,
                     "GUID": "20e5bbfb-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "properties": [
                         {
                             "type": "document",
@@ -684,12 +542,9 @@
                                     "name": "author",
                                     "GUID": "20e5bbfd-a7b7-11e7-8d8c-d582de6a019a",
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "childRelationships": [],
                                     "required": true,
-                                    "sample": "Aaron Schmidt II"
+                                    "sample": "Aaron Schmidt II",
+                                    "isActivated": true
                                 },
                                 {
                                     "type": "string",
@@ -697,12 +552,9 @@
                                     "name": "content",
                                     "GUID": "20e5bbfe-a7b7-11e7-8d8c-d582de6a019a",
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "childRelationships": [],
                                     "required": true,
-                                    "sample": "As a newer hotel that's close to the corporate offices of a business I visit regularly, I was excited to stay here for the first time last month. The hotel gets very high marks for staff enthusiasm, courtesy, friendlieness, and helpfulness. Being a newer hotel, it was spotlessly clean. I liked the breakfast area, although it did get a bit noisy when the 'rush' hit about 8:00 a.m. on a Saturday morning. The room was similarly clean and comfortable. The wireless internet connection (free) was useful. I also liked their simply-put, straight-forward internet privacy policy ('You have no expectation of privacy...). No beating around the bush there--wish others would spare us the jibberish and just come out and say what is obvious: on an unsecured, free wireless internet network connection, you don't have any privacy! There was just one problem, and I discovered later that a colleague who has stayed here twice experienced both times on this visit. I did not get my wake-up call, which made me late for a meeting. That is unaccetable, especially when I asked the front desk about the reliability of their wake-up calls. My back-up system for awakening (the hotel's very cheap alarm clocks) proved equally inadequate. The alarm did go off, but was so quiet that it couldn't be heard and didn't do the job. I'm not that heavy of a sleeper, either! It may be a little problem to some, but it's enough to put them on my 'one more chance' list. I'd like to stay here again."
+                                    "sample": "As a newer hotel that's close to the corporate offices of a business I visit regularly, I was excited to stay here for the first time last month. The hotel gets very high marks for staff enthusiasm, courtesy, friendlieness, and helpfulness. Being a newer hotel, it was spotlessly clean. I liked the breakfast area, although it did get a bit noisy when the 'rush' hit about 8:00 a.m. on a Saturday morning. The room was similarly clean and comfortable. The wireless internet connection (free) was useful. I also liked their simply-put, straight-forward internet privacy policy ('You have no expectation of privacy...). No beating around the bush there--wish others would spare us the jibberish and just come out and say what is obvious: on an unsecured, free wireless internet network connection, you don't have any privacy! There was just one problem, and I discovered later that a colleague who has stayed here twice experienced both times on this visit. I did not get my wake-up call, which made me late for a meeting. That is unaccetable, especially when I asked the front desk about the reliability of their wake-up calls. My back-up system for awakening (the hotel's very cheap alarm clocks) proved equally inadequate. The alarm did go off, but was so quiet that it couldn't be heard and didn't do the job. I'm not that heavy of a sleeper, either! It may be a little problem to some, but it's enough to put them on my 'one more chance' list. I'd like to stay here again.",
+                                    "isActivated": true
                                 },
                                 {
                                     "type": "string",
@@ -710,12 +562,9 @@
                                     "name": "date",
                                     "GUID": "20e5bbff-a7b7-11e7-8d8c-d582de6a019a",
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "childRelationships": [],
                                     "required": true,
-                                    "sample": "2015-03-19 03:17:18 +0300"
+                                    "sample": "2015-03-19 03:17:18 +0300",
+                                    "isActivated": true
                                 },
                                 {
                                     "type": "document",
@@ -728,12 +577,9 @@
                                             "childType": "number",
                                             "GUID": "20e5bc01-a7b7-11e7-8d8c-d582de6a019a",
                                             "relationshipType": "",
-                                            "parentRelationship": "",
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "childRelationships": [],
                                             "required": true,
-                                            "sample": 12
+                                            "sample": 12,
+                                            "isActivated": true
                                         },
                                         {
                                             "type": "numeric",
@@ -742,12 +588,9 @@
                                             "childType": "number",
                                             "GUID": "20e5bc02-a7b7-11e7-8d8c-d582de6a019a",
                                             "relationshipType": "",
-                                            "parentRelationship": "",
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "childRelationships": [],
                                             "required": true,
-                                            "sample": -26
+                                            "sample": -26,
+                                            "isActivated": true
                                         },
                                         {
                                             "type": "numeric",
@@ -756,12 +599,9 @@
                                             "childType": "number",
                                             "GUID": "20e5bc03-a7b7-11e7-8d8c-d582de6a019a",
                                             "relationshipType": "",
-                                            "parentRelationship": "",
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "childRelationships": [],
                                             "required": true,
-                                            "sample": -56
+                                            "sample": -56,
+                                            "isActivated": true
                                         },
                                         {
                                             "type": "numeric",
@@ -770,12 +610,9 @@
                                             "childType": "number",
                                             "GUID": "20e5bc04-a7b7-11e7-8d8c-d582de6a019a",
                                             "relationshipType": "",
-                                            "parentRelationship": "",
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "childRelationships": [],
                                             "required": true,
-                                            "sample": 5
+                                            "sample": 5,
+                                            "isActivated": true
                                         },
                                         {
                                             "type": "numeric",
@@ -784,12 +621,9 @@
                                             "childType": "number",
                                             "GUID": "20e5bc05-a7b7-11e7-8d8c-d582de6a019a",
                                             "relationshipType": "",
-                                            "parentRelationship": "",
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "childRelationships": [],
                                             "required": true,
-                                            "sample": 5
+                                            "sample": 5,
+                                            "isActivated": true
                                         },
                                         {
                                             "type": "numeric",
@@ -798,12 +632,9 @@
                                             "childType": "number",
                                             "GUID": "20e5bc06-a7b7-11e7-8d8c-d582de6a019a",
                                             "relationshipType": "",
-                                            "parentRelationship": "",
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "childRelationships": [],
                                             "required": true,
-                                            "sample": 4
+                                            "sample": 4,
+                                            "isActivated": true
                                         },
                                         {
                                             "type": "numeric",
@@ -812,12 +643,9 @@
                                             "childType": "number",
                                             "GUID": "20e5bc07-a7b7-11e7-8d8c-d582de6a019a",
                                             "relationshipType": "",
-                                            "parentRelationship": "",
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "childRelationships": [],
                                             "required": true,
-                                            "sample": 5
+                                            "sample": 5,
+                                            "isActivated": true
                                         },
                                         {
                                             "type": "numeric",
@@ -826,12 +654,9 @@
                                             "childType": "number",
                                             "GUID": "20e5bc08-a7b7-11e7-8d8c-d582de6a019a",
                                             "relationshipType": "",
-                                            "parentRelationship": "",
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "childRelationships": [],
                                             "required": true,
-                                            "sample": 4
+                                            "sample": 4,
+                                            "isActivated": true
                                         },
                                         {
                                             "type": "numeric",
@@ -840,12 +665,9 @@
                                             "childType": "number",
                                             "GUID": "20e5bc09-a7b7-11e7-8d8c-d582de6a019a",
                                             "relationshipType": "",
-                                            "parentRelationship": "",
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "childRelationships": [],
                                             "required": true,
-                                            "sample": -28
+                                            "sample": -28,
+                                            "isActivated": true
                                         },
                                         {
                                             "type": "numeric",
@@ -854,23 +676,18 @@
                                             "childType": "number",
                                             "GUID": "20e5bc0a-a7b7-11e7-8d8c-d582de6a019a",
                                             "relationshipType": "",
-                                            "parentRelationship": "",
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "childRelationships": [],
                                             "required": true,
-                                            "sample": 5
+                                            "sample": 5,
+                                            "isActivated": true
                                         }
                                     ],
                                     "name": "ratings",
                                     "childType": "object",
                                     "GUID": "20e5bc00-a7b7-11e7-8d8c-d582de6a019a",
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "childRelationships": [],
-                                    "required": true
+                                    "required": true,
+                                    "isActivated": true,
+                                    "additionalProperties": true
                                 }
                             ],
                             "arrayItem": true,
@@ -878,13 +695,12 @@
                             "childType": "object",
                             "GUID": "20e5bbfc-a7b7-11e7-8d8c-d582de6a019a",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": []
+                            "isActivated": true,
+                            "additionalProperties": true
                         }
                     ],
-                    "required": true
+                    "required": true,
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -892,12 +708,9 @@
                     "name": "state",
                     "GUID": "20e5bc0b-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Rhône-Alpes"
+                    "sample": "Rhône-Alpes",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -905,12 +718,9 @@
                     "name": "title",
                     "GUID": "20e5bc0c-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Geneva"
+                    "sample": "Geneva",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -918,12 +728,9 @@
                     "name": "tollfree",
                     "GUID": "20e5bc0d-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Lorem"
+                    "sample": "Lorem",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -931,12 +738,9 @@
                     "name": "url",
                     "GUID": "20e5bc0e-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "http://www.accorhotels.com/gb/hotel-2257-formule-1-hotelf1-geneve-aeroport-ferney-voltaire/index.shtml"
+                    "sample": "http://www.accorhotels.com/gb/hotel-2257-formule-1-hotelf1-geneve-aeroport-ferney-voltaire/index.shtml",
+                    "isActivated": true
                 },
                 {
                     "type": "boolean",
@@ -944,12 +748,9 @@
                     "name": "vacancy",
                     "GUID": "20e5bc0f-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": false
+                    "sample": false,
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -960,8 +761,9 @@
                 "type": "definitions"
             },
             "collectionName": "hotel",
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "20f57360-a7b7-11e7-8d8c-d582de6a019a",
@@ -973,12 +775,9 @@
                     "name": "id",
                     "GUID": "20e5e31b-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "5bb63b6c-d56b-4a6f-9d0b-131cb8011cb4"
+                    "sample": "5bb63b6c-d56b-4a6f-9d0b-131cb8011cb4",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -988,12 +787,9 @@
                     "name": "type",
                     "GUID": "20e5e31c-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "landmark"
+                    "sample": "landmark",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1001,12 +797,9 @@
                     "name": "activity",
                     "GUID": "20e5e31d-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "see"
+                    "sample": "see",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1014,12 +807,9 @@
                     "name": "address",
                     "GUID": "20e5e31e-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "St. Ann's Square"
+                    "sample": "St. Ann's Square",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1027,12 +817,9 @@
                     "name": "alt",
                     "GUID": "20e5e31f-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Lorem"
+                    "sample": "Lorem",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1040,12 +827,9 @@
                     "name": "city",
                     "GUID": "20e5e320-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Manchester"
+                    "sample": "Manchester",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1053,12 +837,9 @@
                     "name": "content",
                     "GUID": "20e5e321-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "The neo-classical Royal Exchange was the commercial heart of Manchester's and therefore the world's cotton trade. The main trading hall, essentially a neo-Roman basilica, was at one time the largest commercial room in the world. It fell into disuse in the 1960s, but was rescued in the 1970s by the restoration of the building and the addition of an ultra-modern theatre in-the-round for Sir Robert D.H. Scott's '69 (now Royal Exchange) theatre Company. It stands in the centre of the main trading floor, squatting like an alien invader's spaceship, but is actually supported on the hall's load bearing columns. Ill-disposed members of the audience sitting in the theatre's surrounding on-stage banquette seats are well-placed to trip the actors up physically. Extensive wine merchant cellars have now been converted into a shopping centre and the wings surrounding the theatre hall contain offices and Barristers' chambers. Pop in during the day for a coffee or something stronger at the tranquil and elegant licensed cafe in the main hall: the entrance is up the stairs in St. Ann's Square or on Cross Street. As well as the wonderfully-restored interior and three dramatic coloured-glass domes, you can admire the trading board, which still shows the price of cotton around the world on the last day of trading in 1969. There is also a small, expensive craft shop inside."
+                    "sample": "The neo-classical Royal Exchange was the commercial heart of Manchester's and therefore the world's cotton trade. The main trading hall, essentially a neo-Roman basilica, was at one time the largest commercial room in the world. It fell into disuse in the 1960s, but was rescued in the 1970s by the restoration of the building and the addition of an ultra-modern theatre in-the-round for Sir Robert D.H. Scott's '69 (now Royal Exchange) theatre Company. It stands in the centre of the main trading floor, squatting like an alien invader's spaceship, but is actually supported on the hall's load bearing columns. Ill-disposed members of the audience sitting in the theatre's surrounding on-stage banquette seats are well-placed to trip the actors up physically. Extensive wine merchant cellars have now been converted into a shopping centre and the wings surrounding the theatre hall contain offices and Barristers' chambers. Pop in during the day for a coffee or something stronger at the tranquil and elegant licensed cafe in the main hall: the entrance is up the stairs in St. Ann's Square or on Cross Street. As well as the wonderfully-restored interior and three dramatic coloured-glass domes, you can admire the trading board, which still shows the price of cotton around the world on the last day of trading in 1969. There is also a small, expensive craft shop inside.",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1066,12 +847,9 @@
                     "name": "country",
                     "GUID": "20e5e322-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "United Kingdom"
+                    "sample": "United Kingdom",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1079,12 +857,9 @@
                     "name": "directions",
                     "GUID": "20e5e323-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Lorem"
+                    "sample": "Lorem",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1092,12 +867,9 @@
                     "name": "email",
                     "GUID": "20e5e324-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Lorem"
+                    "sample": "Lorem",
+                    "isActivated": true
                 },
                 {
                     "type": "document",
@@ -1109,12 +881,9 @@
                             "name": "accuracy",
                             "GUID": "20e5e326-a7b7-11e7-8d8c-d582de6a019a",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
                             "required": true,
-                            "sample": "APPROXIMATE"
+                            "sample": "APPROXIMATE",
+                            "isActivated": true
                         },
                         {
                             "type": "numeric",
@@ -1123,12 +892,9 @@
                             "childType": "number",
                             "GUID": "20e5e327-a7b7-11e7-8d8c-d582de6a019a",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
                             "required": true,
-                            "sample": 53.4825
+                            "sample": 53.4825,
+                            "isActivated": true
                         },
                         {
                             "type": "numeric",
@@ -1137,23 +903,18 @@
                             "childType": "number",
                             "GUID": "20e5e328-a7b7-11e7-8d8c-d582de6a019a",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
                             "required": true,
-                            "sample": -2.24482
+                            "sample": -2.24482,
+                            "isActivated": true
                         }
                     ],
                     "name": "geo",
                     "childType": "object",
                     "GUID": "20e5e325-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": true
+                    "required": true,
+                    "isActivated": true,
+                    "additionalProperties": true
                 },
                 {
                     "type": "string",
@@ -1161,12 +922,9 @@
                     "name": "hours",
                     "GUID": "20e5e329-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Mon-Sat 9:30 AM - Late (depending on length of evening's performance)"
+                    "sample": "Mon-Sat 9:30 AM - Late (depending on length of evening's performance)",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1174,12 +932,9 @@
                     "name": "image",
                     "GUID": "20e5e32a-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Lorem"
+                    "sample": "Lorem",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1187,12 +942,9 @@
                     "name": "image_direct_url",
                     "GUID": "20e5e32b-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Lorem"
+                    "sample": "Lorem",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1200,12 +952,9 @@
                     "name": "name",
                     "GUID": "20e5e32c-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Royal Exchange"
+                    "sample": "Royal Exchange",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1213,12 +962,9 @@
                     "name": "phone",
                     "GUID": "20e5e32d-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "+44 161 833-9833"
+                    "sample": "+44 161 833-9833",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1226,12 +972,9 @@
                     "name": "price",
                     "GUID": "20e5e32e-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Free entry to theatre building, theatre tickets vary"
+                    "sample": "Free entry to theatre building, theatre tickets vary",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1239,12 +982,9 @@
                     "name": "state",
                     "GUID": "20e5e32f-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Lorem"
+                    "sample": "Lorem",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1252,12 +992,9 @@
                     "name": "title",
                     "GUID": "20e5e330-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Manchester/Victoria-Shopping District"
+                    "sample": "Manchester/Victoria-Shopping District",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1265,12 +1002,9 @@
                     "name": "tollfree",
                     "GUID": "20e5e331-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Lorem"
+                    "sample": "Lorem",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1278,12 +1012,9 @@
                     "name": "url",
                     "GUID": "20e5e332-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "http://www.royalexchange.co.uk"
+                    "sample": "http://www.royalexchange.co.uk",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -1294,8 +1025,9 @@
                 "type": "definitions"
             },
             "collectionName": "landmark",
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "20f57360-a7b7-11e7-8d8c-d582de6a019a",
@@ -1307,12 +1039,9 @@
                     "name": "id",
                     "GUID": "20e60a21-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "af1c7fd1-860b-4e11-8d25-6f7fd43dadf5"
+                    "sample": "af1c7fd1-860b-4e11-8d25-6f7fd43dadf5",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1322,12 +1051,9 @@
                     "name": "type",
                     "GUID": "20e60a22-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "route"
+                    "sample": "route",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1335,12 +1061,9 @@
                     "name": "airline",
                     "GUID": "20e60a23-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "AV"
+                    "sample": "AV",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1354,9 +1077,9 @@
                         "20e4f8a1-a7b7-11e7-8d8c-d582de6a019a",
                         "20e51fb0-a7b7-11e7-8d8c-d582de6a019a"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "airline_515"
+                    "sample": "airline_515",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1370,9 +1093,9 @@
                         "20e546cf-a7b7-11e7-8d8c-d582de6a019a",
                         "20e546d0-a7b7-11e7-8d8c-d582de6a019a"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "SAL"
+                    "sample": "SAL",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1386,9 +1109,9 @@
                         "20e546cf-a7b7-11e7-8d8c-d582de6a019a",
                         "20e546d0-a7b7-11e7-8d8c-d582de6a019a"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "EWR"
+                    "sample": "EWR",
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1397,12 +1120,9 @@
                     "childType": "number",
                     "GUID": "20e60a27-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": 0
+                    "sample": 0,
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1410,12 +1130,9 @@
                     "name": "equipment",
                     "GUID": "20e60a28-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "320 738"
+                    "sample": "320 738",
+                    "isActivated": true
                 },
                 {
                     "type": "array",
@@ -1424,10 +1141,6 @@
                     "additionalItems": true,
                     "GUID": "20e60a29-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "properties": [
                         {
                             "type": "document",
@@ -1439,12 +1152,9 @@
                                     "childType": "number",
                                     "GUID": "20e60a2b-a7b7-11e7-8d8c-d582de6a019a",
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "childRelationships": [],
                                     "required": true,
-                                    "sample": 6
+                                    "sample": 6,
+                                    "isActivated": true
                                 },
                                 {
                                     "type": "string",
@@ -1452,12 +1162,9 @@
                                     "name": "flight",
                                     "GUID": "20e60a2c-a7b7-11e7-8d8c-d582de6a019a",
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "childRelationships": [],
                                     "required": true,
-                                    "sample": "AV502"
+                                    "sample": "AV502",
+                                    "isActivated": true
                                 },
                                 {
                                     "type": "string",
@@ -1465,12 +1172,9 @@
                                     "name": "utc",
                                     "GUID": "20e60a2d-a7b7-11e7-8d8c-d582de6a019a",
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "childRelationships": [],
                                     "required": true,
-                                    "sample": "06:36:00"
+                                    "sample": "06:36:00",
+                                    "isActivated": true
                                 }
                             ],
                             "arrayItem": true,
@@ -1478,13 +1182,12 @@
                             "childType": "object",
                             "GUID": "20e60a2a-a7b7-11e7-8d8c-d582de6a019a",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": []
+                            "isActivated": true,
+                            "additionalProperties": true
                         }
                     ],
-                    "required": true
+                    "required": true,
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1493,12 +1196,9 @@
                     "childType": "number",
                     "GUID": "20e60a2e-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": 3358.38183997838
+                    "sample": 3358.38183997838,
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -1509,8 +1209,9 @@
                 "type": "definitions"
             },
             "collectionName": "route",
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -1518,8 +1219,6 @@
             "GUID": "20f57360-a7b7-11e7-8d8c-d582de6a019a",
             "name": "travel-sample",
             "type": "bucket",
-            "description": "",
-            "comments": "",
             "collectionIds": [
                 "20e4f8a1-a7b7-11e7-8d8c-d582de6a019a",
                 "20e546cf-a7b7-11e7-8d8c-d582de6a019a",
@@ -1534,33 +1233,6 @@
                 "a": 1
             },
             "show": true,
-            "indexes": [
-                {
-                    "dataType": "Number",
-                    "indexIncludedPath": "/*",
-                    "indexPrecision": -1,
-                    "kind": "Range",
-                    "mode": "consistent",
-                    "name": "New Index(1)",
-                    "precision": -1
-                },
-                {
-                    "dataType": "String",
-                    "indexIncludedPath": "/*",
-                    "indexPrecision": -1,
-                    "kind": "Range",
-                    "mode": "consistent",
-                    "name": "New Index(2)",
-                    "precision": -1
-                },
-                {
-                    "dataType": "Point",
-                    "indexIncludedPath": "/*",
-                    "kind": "Spatial",
-                    "mode": "consistent",
-                    "name": "New Index(3)"
-                }
-            ],
             "addFieldsToBucket": true,
             "isPlugin": true,
             "rump": "On",
@@ -1600,7 +1272,63 @@
                     "udfComments": "",
                     "GUID": "60e0b460-3bf7-11e8-9ec3-6dc4a17d3634"
                 }
-            ]
+            ],
+            "dbId": "sample",
+            "indexingMode": "Consistent",
+            "indexingAutomatic": "true",
+            "includedPaths": [
+                {
+                    "GUID": "3f5478d0-affd-11ec-ab49-f732172fe980",
+                    "name": "New Index(1)",
+                    "indexIncludedPath": [
+                        {
+                            "GUID": "3f54ee00-affd-11ec-ab49-f732172fe980",
+                            "name": "/*"
+                        }
+                    ],
+                    "inclIndexes": [
+                        {
+                            "GUID": "3f5478d1-affd-11ec-ab49-f732172fe980",
+                            "kind": "Range",
+                            "dataType": "Number"
+                        }
+                    ],
+                    "isActivated": true
+                },
+                {
+                    "GUID": "3f5478d2-affd-11ec-ab49-f732172fe980",
+                    "name": "New Index(2)",
+                    "indexIncludedPath": [
+                        {
+                            "GUID": "3f551510-affd-11ec-ab49-f732172fe980",
+                            "name": "/*"
+                        }
+                    ],
+                    "inclIndexes": [
+                        {
+                            "GUID": "3f5478d3-affd-11ec-ab49-f732172fe980",
+                            "kind": "Range",
+                            "dataType": "String"
+                        }
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "spatialIndexes": [
+                {
+                    "GUID": "3f5478d4-affd-11ec-ab49-f732172fe980",
+                    "name": "New Index(3)",
+                    "indexIncludedPath": [
+                        {
+                            "GUID": "3f551511-affd-11ec-ab49-f732172fe980",
+                            "name": "/*"
+                        }
+                    ],
+                    "isActivated": true
+                }
+            ],
+            "capacityMode": "Provisioned throughput",
+            "isActivated": true
         }
     ],
     "views": [],
@@ -1613,14 +1341,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "20e546cf-a7b7-11e7-8d8c-d582de6a019a",
             "parentField": [
-                "20e546cf-a7b7-11e7-8d8c-d582de6a019a",
-                "20e546d0-a7b7-11e7-8d8c-d582de6a019a"
+                [
+                    "20e546cf-a7b7-11e7-8d8c-d582de6a019a",
+                    "20e546d0-a7b7-11e7-8d8c-d582de6a019a"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "20e60a20-a7b7-11e7-8d8c-d582de6a019a",
             "childField": [
-                "20e60a20-a7b7-11e7-8d8c-d582de6a019a",
-                "20e60a25-a7b7-11e7-8d8c-d582de6a019a"
+                [
+                    "20e60a20-a7b7-11e7-8d8c-d582de6a019a",
+                    "20e60a25-a7b7-11e7-8d8c-d582de6a019a"
+                ]
             ],
             "childCardinality": "0..n"
         },
@@ -1632,14 +1364,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "20e546cf-a7b7-11e7-8d8c-d582de6a019a",
             "parentField": [
-                "20e546cf-a7b7-11e7-8d8c-d582de6a019a",
-                "20e546d0-a7b7-11e7-8d8c-d582de6a019a"
+                [
+                    "20e546cf-a7b7-11e7-8d8c-d582de6a019a",
+                    "20e546d0-a7b7-11e7-8d8c-d582de6a019a"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "20e60a20-a7b7-11e7-8d8c-d582de6a019a",
             "childField": [
-                "20e60a20-a7b7-11e7-8d8c-d582de6a019a",
-                "20e60a26-a7b7-11e7-8d8c-d582de6a019a"
+                [
+                    "20e60a20-a7b7-11e7-8d8c-d582de6a019a",
+                    "20e60a26-a7b7-11e7-8d8c-d582de6a019a"
+                ]
             ],
             "childCardinality": "0..n"
         },
@@ -1651,19 +1387,24 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "20e4f8a1-a7b7-11e7-8d8c-d582de6a019a",
             "parentField": [
-                "20e4f8a1-a7b7-11e7-8d8c-d582de6a019a",
-                "20e51fb0-a7b7-11e7-8d8c-d582de6a019a"
+                [
+                    "20e4f8a1-a7b7-11e7-8d8c-d582de6a019a",
+                    "20e51fb0-a7b7-11e7-8d8c-d582de6a019a"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "20e60a20-a7b7-11e7-8d8c-d582de6a019a",
             "childField": [
-                "20e60a20-a7b7-11e7-8d8c-d582de6a019a",
-                "20e60a24-a7b7-11e7-8d8c-d582de6a019a"
+                [
+                    "20e60a20-a7b7-11e7-8d8c-d582de6a019a",
+                    "20e60a24-a7b7-11e7-8d8c-d582de6a019a"
+                ]
             ],
             "childCardinality": "0..n"
         }
     ],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "20e51fb0-a7b7-11e7-8d8c-d582de6a019a": "id",
         "20e51fb1-a7b7-11e7-8d8c-d582de6a019a": "type",
@@ -1772,38 +1513,60 @@
         "20e60a2d-a7b7-11e7-8d8c-d582de6a019a": "utc",
         "20e60a2e-a7b7-11e7-8d8c-d582de6a019a": "distance",
         "20e60a20-a7b7-11e7-8d8c-d582de6a019a": "route",
-        "20f57360-a7b7-11e7-8d8c-d582de6a019a": "travel-sample"
+        "20f57360-a7b7-11e7-8d8c-d582de6a019a": "travel-sample",
+        "27a0e8c0-a7b7-11e7-8d8c-d582de6a019a": "fk airport.id to route.sourceairport",
+        "2c81b040-a7b7-11e7-8d8c-d582de6a019a": "fk airport.id to route.destinationairport",
+        "e3510e40-a999-11e7-aafd-e50efd50e6cc": "fk airline.id to route.airlineid"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
         "GUID": "9f9c0c20-a7b6-11e7-8d8c-d582de6a019a"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "40510143-affd-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "9f9c0c21-a7b6-11e7-8d8c-d582de6a019a"
     },
-    "modelName": "travel-sample",
-    "dbVersion": "",
+    "sources": [],
+    "decorativeSymbols": [],
     "dbVendor": "CosmosDB",
     "apiExperience": "DocumentDB SQL",
+    "transactionalDataStored": 10,
+    "analyticalDataStored": 10,
+    "itemSize": 1,
+    "readsPerSecPerRegion": 100,
+    "writesPerSecPerRegion": 100,
     "appTarget": "COSMOSDB-SQL",
     "creationTS": "2017-10-02T21:14:06.177Z",
+    "GUID": "3d869f60-a99a-11e7-aafd-e50efd50e6cc",
+    "lastModifTS": "2022-03-30T07:45:00.448Z",
+    "persistenceSchemaVersion": "6",
+    "description": "Demo Cosmos DB",
+    "comments": "Thu Oct 05 2017 08:55:21 GMT+0200 (Romance Summer Time): ",
+    "author": "pascal",
+    "version": "v1.0",
+    "dbVersion": "",
     "accountID": "*****",
-    "dbId": "sample",
     "defaultConsistency": "Session",
     "preferredLocation": "North Europe",
-    "hideModelViews": false,
     "tenant": "****",
     "resGrp": "ResGrp",
     "subscription": "****",
     "isCreatedByPlugin": true,
     "pluginInformation": {
-        "pluginVersion": "",
-        "pluginName": "",
-        "pluginLink": "",
+        "pluginName": "CosmosDB-with-SQL-API",
+        "pluginVersion": "0.1.32",
         "pluginEngineVersion": "1.0.0"
+    },
+    "hackoladeMeta": {},
+    "applicationInformation": {
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -1811,10 +1574,10 @@
                 "erd": [
                     {
                         "GUID": "20e4f8a1-a7b7-11e7-8d8c-d582de6a019a",
-                        "x": 99,
-                        "y": 432,
-                        "width": 244,
-                        "height": 128,
+                        "x": 100.25816023738872,
+                        "y": 491.13353115726994,
+                        "width": 186,
+                        "height": 159,
                         "color": {
                             "hsl": {
                                 "h": 339.7058823529412,
@@ -1843,8 +1606,8 @@
                         "GUID": "20e546cf-a7b7-11e7-8d8c-d582de6a019a",
                         "x": 80,
                         "y": 167,
-                        "width": 264,
-                        "height": 212,
+                        "width": 225,
+                        "height": 267,
                         "color": {
                             "hsl": {
                                 "h": 339.7058823529412,
@@ -1901,8 +1664,8 @@
                     },
                     {
                         "GUID": "20e5e31a-a7b7-11e7-8d8c-d582de6a019a",
-                        "x": 418,
-                        "y": 455,
+                        "x": 412.9673590504451,
+                        "y": 492.74480712166167,
                         "width": 264,
                         "height": 366,
                         "color": {
@@ -1933,8 +1696,8 @@
                         "GUID": "20e60a20-a7b7-11e7-8d8c-d582de6a019a",
                         "x": 416,
                         "y": 173,
-                        "width": 284,
-                        "height": 226,
+                        "width": 259,
+                        "height": 285,
                         "color": {
                             "hsl": {
                                 "h": 339.7058823529412,
@@ -2416,58 +2179,8 @@
                 "buckets": [
                     {
                         "x": 40,
-                        "y": 79,
+                        "y": 109,
                         "GUID": "20f57360-a7b7-11e7-8d8c-d582de6a019a"
-                    },
-                    {
-                        "x": 50,
-                        "y": 20,
-                        "GUID": "278fbf10-a996-11e7-aafd-e50efd50e6cc"
-                    },
-                    {
-                        "x": 50,
-                        "y": 50,
-                        "GUID": "35198b10-ffec-11e6-bc11-bba283d07659"
-                    },
-                    {
-                        "x": 120,
-                        "y": 120,
-                        "GUID": "b4dff890-00e4-11e7-94c9-270ac0401f9d"
-                    },
-                    {
-                        "x": 60,
-                        "y": 80,
-                        "GUID": "3dee5aa0-f5dc-11e6-aaa0-997d0683e5e6"
-                    },
-                    {
-                        "x": 60,
-                        "y": 80,
-                        "GUID": "e43995f0-00d6-11e7-94c9-270ac0401f9d"
-                    },
-                    {
-                        "x": 160,
-                        "y": 160,
-                        "GUID": "9b213ef0-2b1e-11e7-bde4-57d99ab8fafb"
-                    },
-                    {
-                        "x": 183,
-                        "y": 26,
-                        "GUID": "ac3be870-2b1e-11e7-bde4-57d99ab8fafb"
-                    },
-                    {
-                        "x": 200,
-                        "y": 200,
-                        "GUID": "9509cd70-53f5-11e7-b1ef-ab0119d70e5d"
-                    },
-                    {
-                        "x": 50,
-                        "y": 20,
-                        "GUID": "1fa0c6a0-53f6-11e7-b1ef-ab0119d70e5d"
-                    },
-                    {
-                        "x": 50,
-                        "y": 20,
-                        "GUID": "97bb9010-1ed1-11e8-bfff-af9e00eabe08"
                     }
                 ],
                 "collapsedNodes": [
@@ -2484,14 +2197,25 @@
                     "parentField": []
                 },
                 "selectedCollections": [],
-                "displayColorPicker": false
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true
+            "shouldDistributeCollections": false
         }
     }
 }

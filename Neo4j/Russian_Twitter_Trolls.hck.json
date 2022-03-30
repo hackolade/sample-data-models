@@ -1,11 +1,5 @@
 {
-    "GUID": "fb2602b0-6dc4-11e8-977e-574156f5cc39",
-    "lastModifTS": "2018-06-19T11:14:47.304Z",
-    "persistenceSchemaVersion": "2",
-    "description": "",
-    "comments": "",
-    "author": "",
-    "version": "",
+    "modelName": "New model",
     "collections": [
         {
             "bucketId": "ac1282a0-73b1-11e8-9291-1b091dee6fcb",
@@ -17,21 +11,9 @@
                     "name": "tag",
                     "GUID": "ac008142-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "unexcitingvideogames"
+                    "sample": "unexcitingvideogames",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -42,7 +24,6 @@
                 "type": "definitions"
             },
             "collectionName": "Hashtag",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "ac05d870-73b1-11e8-9291-1b091dee6fcb",
@@ -57,11 +38,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "ac1282a0-73b1-11e8-9291-1b091dee6fcb",
@@ -73,21 +56,9 @@
                     "name": "name",
                     "GUID": "ac016ba3-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "<a href=\"http://www.google.com/\" rel=\"nofollow\">Google</a>"
+                    "sample": "<a href=\"http://www.google.com/\" rel=\"nofollow\">Google</a>",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -98,7 +69,6 @@
                 "type": "definitions"
             },
             "collectionName": "Source",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "ac05d871-73b1-11e8-9291-1b091dee6fcb",
@@ -113,11 +83,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "ac1282a0-73b1-11e8-9291-1b091dee6fcb",
@@ -128,28 +100,9 @@
                     "name": "friends_count",
                     "childType": "number",
                     "GUID": "ac02cb32-73b1-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 100,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -157,28 +110,9 @@
                     "name": "listed_count",
                     "childType": "number",
                     "GUID": "ac02cb33-73b1-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 0,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -186,28 +120,9 @@
                     "name": "favourites_count",
                     "childType": "number",
                     "GUID": "ac02cb34-73b1-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 11,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "boolean",
@@ -215,20 +130,9 @@
                     "name": "verified",
                     "childType": "boolean",
                     "GUID": "ac02cb35-73b1-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "default": "",
-                    "enum": [],
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignField": [],
                     "sample": false,
-                    "unique": false,
-                    "foreignCollection": ""
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -236,22 +140,8 @@
                     "name": "description",
                     "GUID": "ac02cb36-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -259,22 +149,8 @@
                     "name": "created_at",
                     "GUID": "ac02cb37-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -282,22 +158,9 @@
                     "name": "user_key",
                     "GUID": "ac02cb38-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "srahse",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -305,22 +168,8 @@
                     "name": "time_zone",
                     "GUID": "ac02cb39-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -328,22 +177,9 @@
                     "name": "screen_name",
                     "GUID": "ac02cb3a-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "srahSE",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -351,28 +187,9 @@
                     "name": "statuses_count",
                     "childType": "number",
                     "GUID": "ac02cb3b-73b1-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 15,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -380,28 +197,9 @@
                     "name": "followers_count",
                     "childType": "number",
                     "GUID": "ac02cb3c-73b1-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 8,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -409,22 +207,8 @@
                     "name": "name",
                     "GUID": "ac02cb3d-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -432,22 +216,8 @@
                     "name": "location",
                     "GUID": "ac02cb3e-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -456,27 +226,8 @@
                     "childType": "number",
                     "GUID": "ac02cb3f-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
-                    "sample": "",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -484,22 +235,8 @@
                     "name": "lang",
                     "GUID": "ac02cb40-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -510,9 +247,9 @@
                 "type": "definitions"
             },
             "collectionName": "Troll",
-            "constraint": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "ac1282a0-73b1-11e8-9291-1b091dee6fcb",
@@ -524,27 +261,9 @@
                     "childType": "number",
                     "GUID": "ac0192b2-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": -1692194824,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -552,22 +271,9 @@
                     "name": "text",
                     "GUID": "ac0192b3-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "RT @THExTRUMPxTRAIN: New Virginia and Pennsylvania polls! The Trump Train is pulling away #MAGA https://t.co/Y4TltuFDhu",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -575,22 +281,9 @@
                     "name": "created_str",
                     "GUID": "ac0192b4-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "2016-10-06 17:55:55",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -600,26 +293,9 @@
                     "childType": "number",
                     "GUID": "ac0192b5-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
-                    "sample": 784089821912391700
+                    "sample": 784089821912391700,
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -627,28 +303,9 @@
                     "name": "favorite_count",
                     "childType": "number",
                     "GUID": "ac0192b6-73b1-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 0,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -656,28 +313,9 @@
                     "name": "retweet_count",
                     "childType": "number",
                     "GUID": "ac0192b7-73b1-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 0,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "boolean",
@@ -685,20 +323,9 @@
                     "name": "retweeted",
                     "childType": "boolean",
                     "GUID": "ac0192b8-73b1-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "default": "",
-                    "enum": [],
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignField": [],
                     "sample": false,
-                    "unique": false,
-                    "foreignCollection": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -709,7 +336,6 @@
                 "type": "definitions"
             },
             "collectionName": "Tweet",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "ac05d872-73b1-11e8-9291-1b091dee6fcb",
@@ -724,7 +350,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "ac05d873-73b1-11e8-9291-1b091dee6fcb",
@@ -739,11 +366,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "ac1282a0-73b1-11e8-9291-1b091dee6fcb",
@@ -755,21 +384,9 @@
                     "name": "expanded_url",
                     "GUID": "ac051523-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "http://bit.ly/2dBQrGF"
+                    "sample": "http://bit.ly/2dBQrGF",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -780,7 +397,6 @@
                 "type": "definitions"
             },
             "collectionName": "URL",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "ac05d876-73b1-11e8-9291-1b091dee6fcb",
@@ -795,11 +411,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "ac1282a0-73b1-11e8-9291-1b091dee6fcb",
@@ -810,28 +428,9 @@
                     "name": "friends_count",
                     "childType": "number",
                     "GUID": "ac0403b2-73b1-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 100,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -839,28 +438,9 @@
                     "name": "listed_count",
                     "childType": "number",
                     "GUID": "ac0403b3-73b1-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 0,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -868,28 +448,9 @@
                     "name": "favourites_count",
                     "childType": "number",
                     "GUID": "ac0403b4-73b1-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 11,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "boolean",
@@ -897,20 +458,9 @@
                     "name": "verified",
                     "childType": "boolean",
                     "GUID": "ac0403b5-73b1-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "default": "",
-                    "enum": [],
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignField": [],
                     "sample": false,
-                    "unique": false,
-                    "foreignCollection": ""
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -918,22 +468,8 @@
                     "name": "description",
                     "GUID": "ac0403b6-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -941,22 +477,8 @@
                     "name": "created_at",
                     "GUID": "ac0403b7-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -965,21 +487,9 @@
                     "name": "user_key",
                     "GUID": "ac0403b8-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "theconsultant20"
+                    "sample": "theconsultant20",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -987,22 +497,8 @@
                     "name": "time_zone",
                     "GUID": "ac0403b9-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1010,22 +506,9 @@
                     "name": "screen_name",
                     "GUID": "ac0403ba-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "srahSE",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1033,28 +516,9 @@
                     "name": "statuses_count",
                     "childType": "number",
                     "GUID": "ac0403bb-73b1-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 15,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1062,28 +526,9 @@
                     "name": "followers_count",
                     "childType": "number",
                     "GUID": "ac0403bc-73b1-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 8,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1091,22 +536,8 @@
                     "name": "name",
                     "GUID": "ac0403bd-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1114,22 +545,8 @@
                     "name": "location",
                     "GUID": "ac0403be-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1138,27 +555,8 @@
                     "childType": "number",
                     "GUID": "ac0403bf-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
-                    "sample": "",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1166,22 +564,8 @@
                     "name": "lang",
                     "GUID": "ac0403c0-73b1-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -1192,7 +576,6 @@
                 "type": "definitions"
             },
             "collectionName": "User",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "ac05d874-73b1-11e8-9291-1b091dee6fcb",
@@ -1207,7 +590,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "ac05d875-73b1-11e8-9291-1b091dee6fcb",
@@ -1222,11 +606,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -1234,8 +620,6 @@
             "GUID": "ac1282a0-73b1-11e8-9291-1b091dee6fcb",
             "name": "twitter-trolls.db",
             "type": "bucket",
-            "description": "",
-            "comments": "",
             "collectionIds": [
                 "ac008141-73b1-11e8-9291-1b091dee6fcb",
                 "ac016ba2-73b1-11e8-9291-1b091dee6fcb",
@@ -1253,7 +637,8 @@
             "show": true,
             "indexes": [],
             "addFieldsToBucket": true,
-            "isPlugin": true
+            "isPlugin": true,
+            "isActivated": true
         }
     ],
     "views": [],
@@ -1271,6 +656,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "ac1282a0-73b1-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1286,6 +672,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "ac1282a0-73b1-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1301,6 +688,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "ac1282a0-73b1-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1316,6 +704,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "ac1282a0-73b1-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1331,6 +720,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "ac1282a0-73b1-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1346,6 +736,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "ac1282a0-73b1-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1361,6 +752,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "ac1282a0-73b1-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1376,6 +768,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "ac1282a0-73b1-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1391,10 +784,12 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "ac1282a0-73b1-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         }
     ],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "1ff9ce50-6dc5-11e8-977e-574156f5cc39": "twitter-trolls.db",
         "ac008142-73b1-11e8-9291-1b091dee6fcb": "tag",
@@ -1459,23 +854,38 @@
         "properties": [],
         "GUID": "fb2602b1-6dc4-11e8-977e-574156f5cc39"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "f2d289b3-b002-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "fb2602b2-6dc4-11e8-977e-574156f5cc39"
     },
-    "modelName": "New model",
+    "sources": [],
+    "decorativeSymbols": [],
     "dbVersion": "3.x",
     "dbVendor": "Neo4j",
     "appTarget": "NEO4J",
     "creationTS": "2018-06-11T22:15:42.939Z",
-    "hideModelViews": false,
+    "GUID": "fb2602b0-6dc4-11e8-977e-574156f5cc39",
+    "lastModifTS": "2022-03-30T08:25:34.695Z",
+    "persistenceSchemaVersion": "6",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
     "isCreatedByPlugin": true,
     "pluginInformation": {
-        "pluginVersion": "",
-        "pluginName": "",
-        "pluginLink": "",
+        "pluginName": "Neo4j",
+        "pluginVersion": "0.1.39",
         "pluginEngineVersion": "1.0.0"
+    },
+    "hackoladeMeta": {},
+    "applicationInformation": {
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -1622,11 +1032,6 @@
                 ],
                 "buckets": [
                     {
-                        "x": 60,
-                        "y": 80,
-                        "GUID": "1ff9ce50-6dc5-11e8-977e-574156f5cc39"
-                    },
-                    {
                         "x": 50,
                         "y": 20,
                         "GUID": "ac1282a0-73b1-11e8-9291-1b091dee6fcb"
@@ -1634,19 +1039,73 @@
                 ],
                 "collapsedNodes": [],
                 "activeRelationship": "ac12a9b3-73b1-11e8-9291-1b091dee6fcb",
-                "selectedCollections": [],
                 "activeRelationshipFields": {
                     "childField": [],
                     "parentField": []
                 },
-                "displayColorPicker": false
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "ac008141-73b1-11e8-9291-1b091dee6fcb",
+                            "x": 403.8302287010665,
+                            "y": 192.3912601091576,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "ac016ba2-73b1-11e8-9291-1b091dee6fcb",
+                            "x": 828.7827669156551,
+                            "y": 613.1007781966518,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "ac0192b1-73b1-11e8-9291-1b091dee6fcb",
+                            "x": 636.3648249385573,
+                            "y": 382.5383916110465,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "ac02cb31-73b1-11e8-9291-1b091dee6fcb",
+                            "x": 873.9397760004442,
+                            "y": 198.7949238354589,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "ac0403b1-73b1-11e8-9291-1b091dee6fcb",
+                            "x": 648.1168654969474,
+                            "y": 682.6937547612628,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "ac051522-73b1-11e8-9291-1b091dee6fcb",
+                            "x": 337.14010111723684,
+                            "y": 356.04979105972245,
+                            "size": 100
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 297.14010111723684,
+                            "y": 152.3912601091576,
+                            "GUID": "ac1282a0-73b1-11e8-9291-1b091dee6fcb"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true
+            "shouldDistributeCollections": false
         }
     }
 }

@@ -1317,12 +1317,24 @@
         "05faa81a-899e-11e6-a8d7-35e2bcca9f8c": "discount",
         "05faa815-899e-11e6-a8d7-35e2bcca9f8c": "order_details",
         "90bc1010-c4a6-11e9-bfa6-8fc6304606d9": "fk orders.order_id to order_details.order_id",
-        "085c2ff0-7ff0-11eb-b777-bbe0d63270e1": "Northwind"
+        "085c2ff0-7ff0-11eb-b777-bbe0d63270e1": "Northwind",
+        "05f92170-899e-11e6-a8d7-35e2bcca9f8c": "fk_reports_to",
+        "05f92171-899e-11e6-a8d7-35e2bcca9f8c": "fk_category_id",
+        "05f92172-899e-11e6-a8d7-35e2bcca9f8c": "fk_supplier_id",
+        "05f92173-899e-11e6-a8d7-35e2bcca9f8c": "fk_customer_id",
+        "05f92174-899e-11e6-a8d7-35e2bcca9f8c": "fk_employee_id",
+        "05f92175-899e-11e6-a8d7-35e2bcca9f8c": "fk_shipper_id",
+        "05f92177-899e-11e6-a8d7-35e2bcca9f8c": "fk_product_id"
     },
     "definitions": {
         "GUID": "186c47c0-e5f0-11e6-88d2-2d3300b4e17f",
         "properties": [],
         "type": "definitions"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "baccdf43-b000-11ec-ab49-f732172fe980"
     },
     "externalDefinitions": {
         "type": "externalDefinitions",
@@ -1333,13 +1345,12 @@
     "decorativeSymbols": [],
     "dbVersion": "v4.4",
     "dbVendor": "MongoDB",
-    "hideModelViews": true,
     "appTarget": "MONGODB",
     "creationTS": "2016-10-03T19:11:11.926Z",
     "GUID": "25d97d60-899d-11e6-a8d7-35e2bcca9f8c",
     "code": "",
-    "lastModifTS": "2021-03-08T09:26:42.899Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T08:10:33.453Z",
+    "persistenceSchemaVersion": "6",
     "description": "The famous Microsoft Access example, imported from an Oracle DDL at http://www.geeksengine.com/article/northwind-oracle-2.html",
     "comments": "More comments here",
     "author": "John Doe",
@@ -1350,12 +1361,11 @@
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.10"
+        "version": "6.0.0"
     },
     "hackoladeMeta": {
         "customPropertiesUpdated": true
     },
-    "hideForeignMaster": true,
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -1601,58 +1611,58 @@
                     {
                         "GUID": "05f96f90-899e-11e6-a8d7-35e2bcca9f8c",
                         "x": 850,
-                        "y": 646,
-                        "width": 250,
-                        "height": 87
+                        "y": 682,
+                        "width": 240,
+                        "height": 105
                     },
                     {
                         "GUID": "05f9e4c3-899e-11e6-a8d7-35e2bcca9f8c",
                         "x": 850,
                         "y": 80,
-                        "width": 250,
-                        "height": 199
+                        "width": 243,
+                        "height": 249
                     },
                     {
                         "GUID": "05fa0bd2-899e-11e6-a8d7-35e2bcca9f8c",
                         "x": 80,
                         "y": 80,
-                        "width": 248,
-                        "height": 272
+                        "width": 245,
+                        "height": 339
                     },
                     {
                         "GUID": "05fa59f4-899e-11e6-a8d7-35e2bcca9f8c",
                         "x": 80,
-                        "y": 590,
-                        "width": 250,
-                        "height": 199
+                        "y": 610,
+                        "width": 243,
+                        "height": 249
                     },
                     {
                         "GUID": "05fa5a01-899e-11e6-a8d7-35e2bcca9f8c",
-                        "x": 850,
-                        "y": 320,
-                        "width": 250,
-                        "height": 75
+                        "x": 852.5786350148368,
+                        "y": 361.2581602373886,
+                        "width": 243,
+                        "height": 87
                     },
                     {
                         "GUID": "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
-                        "x": 482,
-                        "y": 601,
-                        "width": 250,
-                        "height": 177
+                        "x": 485,
+                        "y": 628,
+                        "width": 253,
+                        "height": 213
                     },
                     {
                         "GUID": "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c",
-                        "x": 475,
+                        "x": 481,
                         "y": 80,
-                        "width": 264,
-                        "height": 226
+                        "width": 262,
+                        "height": 285
                     },
                     {
                         "GUID": "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
-                        "x": 500,
-                        "y": 410,
+                        "x": 505,
+                        "y": 430.6290801186942,
                         "width": 213,
-                        "height": 103
+                        "height": 123
                     }
                 ],
                 "buckets": [
@@ -1668,15 +1678,16 @@
                     "childField": [],
                     "parentField": []
                 },
-                "selectedCollections": [],
+                "selectedCollections": [
+                    "05fa5a05-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05faa815-899e-11e6-a8d7-35e2bcca9f8c",
+                    "05fa5a10-899e-11e6-a8d7-35e2bcca9f8c"
+                ],
                 "displayColorPicker": false,
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -1690,8 +1701,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

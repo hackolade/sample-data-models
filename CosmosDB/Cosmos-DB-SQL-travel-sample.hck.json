@@ -88,7 +88,8 @@
             },
             "collectionName": "airline",
             "collation": {},
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "20f57360-a7b7-11e7-8d8c-d582de6a019a",
@@ -211,7 +212,8 @@
                     "GUID": "20e546d6-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
                     "required": true,
-                    "isActivated": true
+                    "isActivated": true,
+                    "additionalProperties": true
                 },
                 {
                     "type": "string",
@@ -243,7 +245,8 @@
             },
             "collectionName": "airport",
             "collation": {},
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "20f57360-a7b7-11e7-8d8c-d582de6a019a",
@@ -452,7 +455,8 @@
                     "GUID": "20e5bbf0-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
                     "required": true,
-                    "isActivated": true
+                    "isActivated": true,
+                    "additionalProperties": true
                 },
                 {
                     "type": "string",
@@ -676,7 +680,8 @@
                                     "GUID": "20e5bc00-a7b7-11e7-8d8c-d582de6a019a",
                                     "relationshipType": "",
                                     "required": true,
-                                    "isActivated": true
+                                    "isActivated": true,
+                                    "additionalProperties": true
                                 }
                             ],
                             "arrayItem": true,
@@ -684,7 +689,8 @@
                             "childType": "object",
                             "GUID": "20e5bbfc-a7b7-11e7-8d8c-d582de6a019a",
                             "relationshipType": "",
-                            "isActivated": true
+                            "isActivated": true,
+                            "additionalProperties": true
                         }
                     ],
                     "required": true,
@@ -750,7 +756,8 @@
             },
             "collectionName": "hotel",
             "collation": {},
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "20f57360-a7b7-11e7-8d8c-d582de6a019a",
@@ -898,7 +905,8 @@
                     "GUID": "20e5e325-a7b7-11e7-8d8c-d582de6a019a",
                     "relationshipType": "",
                     "required": true,
-                    "isActivated": true
+                    "isActivated": true,
+                    "additionalProperties": true
                 },
                 {
                     "type": "string",
@@ -1010,7 +1018,8 @@
             },
             "collectionName": "landmark",
             "collation": {},
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "20f57360-a7b7-11e7-8d8c-d582de6a019a",
@@ -1163,7 +1172,8 @@
                             "childType": "object",
                             "GUID": "20e60a2a-a7b7-11e7-8d8c-d582de6a019a",
                             "relationshipType": "",
-                            "isActivated": true
+                            "isActivated": true,
+                            "additionalProperties": true
                         }
                     ],
                     "required": true,
@@ -1190,7 +1200,8 @@
             },
             "collectionName": "route",
             "collation": {},
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -1267,7 +1278,8 @@
                             ]
                         }
                     ],
-                    "inclIndexes": []
+                    "inclIndexes": [],
+                    "isActivated": true
                 },
                 {
                     "GUID": "1e755bb0-5c0d-11eb-9a52-1f76273122c3",
@@ -1288,7 +1300,8 @@
                             "dataType": "String",
                             "indexPrecision": 4
                         }
-                    ]
+                    ],
+                    "isActivated": true
                 }
             ],
             "spatialIndexes": [],
@@ -1301,7 +1314,8 @@
                         "20e51fb1-a7b7-11e7-8d8c-d582de6a019a"
                     ]
                 }
-            ]
+            ],
+            "capacityMode": "Provisioned throughput"
         }
     ],
     "views": [],
@@ -1486,18 +1500,27 @@
         "20e60a2d-a7b7-11e7-8d8c-d582de6a019a": "utc",
         "20e60a2e-a7b7-11e7-8d8c-d582de6a019a": "distance",
         "20e60a20-a7b7-11e7-8d8c-d582de6a019a": "route",
-        "20f57360-a7b7-11e7-8d8c-d582de6a019a": "travel-sample"
+        "20f57360-a7b7-11e7-8d8c-d582de6a019a": "travel-sample",
+        "27a0e8c0-a7b7-11e7-8d8c-d582de6a019a": "fk airport.id to route.sourceairport",
+        "2c81b040-a7b7-11e7-8d8c-d582de6a019a": "fk airport.id to route.destinationairport",
+        "e3510e40-a999-11e7-aafd-e50efd50e6cc": "fk airline.id to route.airlineid"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
         "GUID": "9f9c0c20-a7b6-11e7-8d8c-d582de6a019a"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "2563d8d3-affd-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "9f9c0c21-a7b6-11e7-8d8c-d582de6a019a"
     },
+    "sources": [],
     "decorativeSymbols": [],
     "dbVendor": "CosmosDB",
     "apiExperience": "DocumentDB SQL",
@@ -1509,8 +1532,8 @@
     "appTarget": "COSMOSDB-SQL",
     "creationTS": "2017-10-02T21:14:06.177Z",
     "GUID": "3d869f60-a99a-11e7-aafd-e50efd50e6cc",
-    "lastModifTS": "2021-01-21T17:29:26.585Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T07:44:26.678Z",
+    "persistenceSchemaVersion": "6",
     "description": "Demo Cosmos DB",
     "comments": "Thu Oct 05 2017 08:55:21 GMT+0200 (Romance Summer Time): ",
     "author": "pascal",
@@ -1519,19 +1542,18 @@
     "accountID": "*****",
     "defaultConsistency": "Session",
     "preferredLocation": "North Europe",
-    "hideModelViews": false,
     "tenant": "****",
     "resGrp": "ResGrp",
     "subscription": "****",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "CosmosDB-with-SQL-API",
-        "pluginVersion": "0.1.22",
+        "pluginVersion": "0.1.32",
         "pluginEngineVersion": "1.0.0"
     },
     "hackoladeMeta": {},
     "applicationInformation": {
-        "version": "4.3.4"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -1539,10 +1561,10 @@
                 "erd": [
                     {
                         "GUID": "20e4f8a1-a7b7-11e7-8d8c-d582de6a019a",
-                        "x": 188.3293768545994,
-                        "y": 531.3946587537091,
-                        "width": 244,
-                        "height": 128,
+                        "x": 185.81305637982194,
+                        "y": 586.7537091988144,
+                        "width": 186,
+                        "height": 159,
                         "color": {
                             "hsl": {
                                 "h": 339.7058823529412,
@@ -1571,8 +1593,8 @@
                         "GUID": "20e546cf-a7b7-11e7-8d8c-d582de6a019a",
                         "x": 169.3293768545994,
                         "y": 266.3946587537091,
-                        "width": 264,
-                        "height": 212,
+                        "width": 225,
+                        "height": 267,
                         "color": {
                             "hsl": {
                                 "h": 339.7058823529412,
@@ -1629,8 +1651,8 @@
                     },
                     {
                         "GUID": "20e5e31a-a7b7-11e7-8d8c-d582de6a019a",
-                        "x": 507.3293768545994,
-                        "y": 554.3946587537091,
+                        "x": 507.32937685459933,
+                        "y": 594.6557863501491,
                         "width": 264,
                         "height": 366,
                         "color": {
@@ -1661,8 +1683,8 @@
                         "GUID": "20e60a20-a7b7-11e7-8d8c-d582de6a019a",
                         "x": 505.3293768545994,
                         "y": 272.3946587537091,
-                        "width": 284,
-                        "height": 226,
+                        "width": 259,
+                        "height": 285,
                         "color": {
                             "hsl": {
                                 "h": 339.7058823529412,
@@ -2167,9 +2189,6 @@
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -2183,8 +2202,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

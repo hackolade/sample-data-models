@@ -223,7 +223,7 @@
                             "choice": "oneOf",
                             "properties": [
                                 {
-                                    "type": "subschema",
+                                    "type": "document",
                                     "properties": [
                                         {
                                             "type": "string",
@@ -236,10 +236,11 @@
                                     ],
                                     "primaryKey": false,
                                     "GUID": "9bdbd5d0-baa3-11e6-92fc-ef23eb4f82b1",
-                                    "isActivated": true
+                                    "isActivated": true,
+                                    "subschema": true
                                 },
                                 {
-                                    "type": "subschema",
+                                    "type": "document",
                                     "additionalProperties": true,
                                     "properties": [
                                         {
@@ -260,7 +261,8 @@
                                     ],
                                     "primaryKey": false,
                                     "GUID": "5d8245a0-57c2-11e7-b5ff-dd5e79dcd289",
-                                    "isActivated": true
+                                    "isActivated": true,
+                                    "subschema": true
                                 }
                             ],
                             "primaryKey": false,
@@ -465,7 +467,7 @@
                             "choice": "oneOf",
                             "properties": [
                                 {
-                                    "type": "subschema",
+                                    "type": "document",
                                     "properties": [
                                         {
                                             "GUID": "06442d10-23dc-11ea-aa7a-432909273784",
@@ -490,10 +492,11 @@
                                     "primaryKey": false,
                                     "GUID": "e96b6147-23db-11ea-aa7a-432909273784",
                                     "relationshipType": "",
-                                    "isActivated": true
+                                    "isActivated": true,
+                                    "subschema": true
                                 },
                                 {
-                                    "type": "subschema",
+                                    "type": "document",
                                     "additionalProperties": true,
                                     "properties": [
                                         {
@@ -519,7 +522,8 @@
                                     "primaryKey": false,
                                     "GUID": "e96b6149-23db-11ea-aa7a-432909273784",
                                     "relationshipType": "",
-                                    "isActivated": true
+                                    "isActivated": true,
+                                    "subschema": true
                                 }
                             ],
                             "primaryKey": false,
@@ -691,7 +695,6 @@
         "5f142490-baa3-11e6-92fc-ef23eb4f82b1": "firstName",
         "69c25d80-baa3-11e6-92fc-ef23eb4f82b1": "lastName",
         "6fc5fa20-baa3-11e6-92fc-ef23eb4f82b1": "addresses",
-        "9bdbd5d0-baa3-11e6-92fc-ef23eb4f82b1": "Schema",
         "a46d7050-baa3-11e6-92fc-ef23eb4f82b1": "shipping",
         "daab40a0-fdd0-11e6-b0cf-c9b29ac2191f": "embedding",
         "e522b220-fdd0-11e6-b0cf-c9b29ac2191f": "uid",
@@ -735,12 +738,24 @@
         "e96b6154-23db-11ea-aa7a-432909273784": "housenum",
         "e96b6155-23db-11ea-aa7a-432909273784": "postalCode",
         "e96b6156-23db-11ea-aa7a-432909273784": "city",
-        "06442d10-23dc-11ea-aa7a-432909273784": "BEaddress"
+        "06442d10-23dc-11ea-aa7a-432909273784": "BEaddress",
+        "17747880-fdd1-11e6-b0cf-c9b29ac2191f": "New Field",
+        "7e25d592-5b66-11e7-8385-2500b1597ba4": "billing",
+        "7e25d594-5b66-11e7-8385-2500b1597ba4": "shipping",
+        "000095f0-57f2-11e7-b5ff-dd5e79dcd289": "housenum",
+        "f7d7cf60-57f1-11e7-b5ff-dd5e79dcd289": "streetname",
+        "8a9d2990-baa3-11e6-92fc-ef23eb4f82b1": "city",
+        "8ff39640-baa3-11e6-92fc-ef23eb4f82b1": "state"
     },
     "definitions": {
         "GUID": "1329a4e0-fdd0-11e6-b0cf-c9b29ac2191f",
         "properties": [],
         "type": "definitions"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "1cdaf413-b001-11ec-ab49-f732172fe980"
     },
     "externalDefinitions": {
         "type": "externalDefinitions",
@@ -751,13 +766,12 @@
     "decorativeSymbols": [],
     "dbVersion": "v3.6",
     "dbVendor": "MongoDB",
-    "hideModelViews": true,
     "appTarget": "MONGODB",
     "creationTS": "2016-12-05T04:28:24.022Z",
     "GUID": "081f8ee0-5b1b-11e7-9388-d7359d07943d",
     "code": "",
-    "lastModifTS": "2021-03-31T15:47:46.911Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T08:12:41.636Z",
+    "persistenceSchemaVersion": "6",
     "description": "",
     "comments": "",
     "version": "",
@@ -766,7 +780,7 @@
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.14"
+        "version": "6.0.0"
     },
     "hackoladeMeta": {
         "customPropertiesUpdated": true
@@ -779,8 +793,8 @@
                         "GUID": "49a5ff70-baa3-11e6-92fc-ef23eb4f82b1",
                         "x": 53,
                         "y": 70,
-                        "width": 343,
-                        "height": 324,
+                        "width": 319,
+                        "height": 411,
                         "color": {
                             "hsl": {
                                 "h": 206.57142857142858,
@@ -807,10 +821,10 @@
                     },
                     {
                         "GUID": "daab40a0-fdd0-11e6-b0cf-c9b29ac2191f",
-                        "x": 54,
-                        "y": 410,
-                        "width": 284,
-                        "height": 184,
+                        "x": 52,
+                        "y": 505,
+                        "width": 263,
+                        "height": 231,
                         "color": {
                             "hsl": {
                                 "h": 3.789473684210526,
@@ -1356,8 +1370,8 @@
                         "GUID": "e9682cf0-23db-11ea-aa7a-432909273784",
                         "x": 439.5,
                         "y": 70,
-                        "width": 343,
-                        "height": 296,
+                        "width": 319,
+                        "height": 375,
                         "color": {
                             "hsl": {
                                 "h": 206.57142857142858,
@@ -1403,9 +1417,6 @@
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -1428,8 +1439,6 @@
                     "7f3ba630-baa3-11e6-92fc-ef23eb4f82b1"
                 ]
             ],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

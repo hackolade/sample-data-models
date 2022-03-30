@@ -56,7 +56,8 @@
             "code": "",
             "hackoladeMeta": {
                 "validationErrors": {}
-            }
+            },
+            "additionalProperties": true
         },
         {
             "collectionName": "Address",
@@ -87,7 +88,8 @@
             "code": "",
             "hackoladeMeta": {
                 "validationErrors": {}
-            }
+            },
+            "additionalProperties": true
         },
         {
             "collectionName": "DateOfBirth",
@@ -118,7 +120,8 @@
             "code": "",
             "hackoladeMeta": {
                 "validationErrors": {}
-            }
+            },
+            "additionalProperties": true
         },
         {
             "collectionName": "EmailAddress",
@@ -149,7 +152,8 @@
             "code": "",
             "hackoladeMeta": {
                 "validationErrors": {}
-            }
+            },
+            "additionalProperties": true
         },
         {
             "collectionName": "IpAddress",
@@ -180,7 +184,8 @@
             "code": "",
             "hackoladeMeta": {
                 "validationErrors": {}
-            }
+            },
+            "additionalProperties": true
         },
         {
             "collectionName": "Merchant",
@@ -211,7 +216,8 @@
             "code": "",
             "hackoladeMeta": {
                 "validationErrors": {}
-            }
+            },
+            "additionalProperties": true
         },
         {
             "collectionName": "PhoneNumber",
@@ -242,7 +248,8 @@
             "code": "",
             "hackoladeMeta": {
                 "validationErrors": {}
-            }
+            },
+            "additionalProperties": true
         },
         {
             "collectionName": "Transaction",
@@ -286,7 +293,8 @@
             "code": "",
             "hackoladeMeta": {
                 "validationErrors": {}
-            }
+            },
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -473,6 +481,11 @@
         "properties": [],
         "GUID": "204ac7a0-cd0e-11eb-b8a5-21f500645e7c"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "0ce72c73-b003-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
@@ -485,7 +498,6 @@
     "creationTS": "2021-06-14T12:43:31.993Z",
     "GUID": "204aa090-cd0e-11eb-b8a5-21f500645e7c",
     "isLineageEnabled": false,
-    "hideModelViews": false,
     "description": "Build from Sagemaker notebook according to https://aws.amazon.com/neptune/fraud-graphs-on-aws/",
     "author": "Pascal",
     "version": "0.1",
@@ -494,16 +506,16 @@
             "modelName": false
         }
     },
-    "lastModifTS": "2021-06-16T10:15:42.459Z",
-    "persistenceSchemaVersion": "5",
+    "lastModifTS": "2022-03-30T08:26:44.493Z",
+    "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "Neptune-Gremlin",
-        "pluginVersion": "0.1.0",
+        "pluginVersion": "0.1.5",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "5.0.4"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -651,70 +663,69 @@
                     "childField": [],
                     "parentField": []
                 },
-                "selectedCollections": [],
+                "selectedCollections": [
+                    "8eafc5e2-cd1a-11eb-b8a5-21f500645e7c"
+                ],
                 "displayColorPicker": false,
                 "graphView": {
                     "erd": [
                         {
                             "GUID": "8eaeb470-cd1a-11eb-b8a5-21f500645e7c",
                             "size": 100,
-                            "x": 343.5227507819467,
-                            "y": 259.90276211602065
+                            "x": 320.7095318108922,
+                            "y": 224.8292010592508
                         },
                         {
                             "GUID": "8eaf77c0-cd1a-11eb-b8a5-21f500645e7c",
                             "size": 100,
-                            "x": 138.75146829851334,
-                            "y": 130.25046187103894
+                            "x": 113.13871767869642,
+                            "y": 100
                         },
                         {
                             "GUID": "8eaf9ed0-cd1a-11eb-b8a5-21f500645e7c",
                             "size": 100,
-                            "x": 118.27371647419383,
-                            "y": 349.872444251932
+                            "x": 106.21020289875716,
+                            "y": 337.5075127269988
                         },
                         {
                             "GUID": "8eaf9ed2-cd1a-11eb-b8a5-21f500645e7c",
                             "size": 100,
-                            "x": 541.2424114805627,
-                            "y": 119.96936397333273
+                            "x": 528.3061522156992,
+                            "y": 100
                         },
                         {
                             "GUID": "8eafc5e0-cd1a-11eb-b8a5-21f500645e7c",
                             "size": 100,
-                            "x": 338.122044692768,
-                            "y": 776.0654042537975
+                            "x": 801.462493714095,
+                            "y": 374.2275357538236
                         },
                         {
                             "GUID": "8eafc5e2-cd1a-11eb-b8a5-21f500645e7c",
                             "size": 100,
-                            "x": 370.4339645085021,
-                            "y": 633.5774084999433
+                            "x": 907.6622931951418,
+                            "y": 349.17406036294875
                         },
                         {
                             "GUID": "8eafecf0-cd1a-11eb-b8a5-21f500645e7c",
                             "size": 100,
-                            "x": 318.38323644252233,
-                            "y": 502.8101663330158
+                            "x": 695.8629042799611,
+                            "y": 350.51341366809584
                         },
                         {
                             "GUID": "8eafecf2-cd1a-11eb-b8a5-21f500645e7c",
                             "size": 100,
-                            "x": 128.75948720106865,
-                            "y": 653.8623466623869
+                            "x": 800.5411745752616,
+                            "y": 131.75178934151958
                         }
                     ],
                     "buckets": [
                         {
-                            "x": 78.27371647419383,
-                            "y": 79.96936397333273,
+                            "x": 66.21020289875716,
+                            "y": 60,
                             "GUID": "8eb08933-cd1a-11eb-b8a5-21f500645e7c"
                         }
                     ],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 242
                 },
@@ -728,10 +739,7 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
-            "shouldDistributeCollections": false,
-            "dndHandles": true
+            "shouldDistributeCollections": false
         }
     }
 }

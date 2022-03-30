@@ -2312,6 +2312,11 @@
         "properties": [],
         "GUID": "afc656f1-5e2a-11ea-a595-3ba5f5c2642b"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "e66e6df3-b003-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
@@ -2324,14 +2329,13 @@
     "creationTS": "2020-03-04T15:13:21.887Z",
     "GUID": "afc656f0-5e2a-11ea-a595-3ba5f5c2642b",
     "code": "Sample_TPCH_SF1",
-    "lastModifTS": "2021-03-06T08:23:02.671Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T08:34:06.950Z",
+    "persistenceSchemaVersion": "6",
     "description": "Reverse-engineered from sandbox, based on https://docs.snowflake.com/en/user-guide/sample-data-tpch.html",
     "comments": "",
     "author": "",
     "version": "",
     "dbVersion": "",
-    "hideModelViews": false,
     "hackoladeMeta": {
         "validationErrors": {
             "modelName": false
@@ -2340,11 +2344,11 @@
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "Snowflake",
-        "pluginVersion": "0.1.26",
+        "pluginVersion": "0.1.49",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.10"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -2352,73 +2356,73 @@
                 "erd": [
                     {
                         "GUID": "ab0bc7d0-654b-11ea-8989-7b28ab317531",
-                        "x": 484.4548953178477,
-                        "y": 256.2375773618522,
-                        "width": 304,
-                        "height": 142,
+                        "x": 484,
+                        "y": 292,
+                        "width": 281,
+                        "height": 177,
                         "color": {}
                     },
                     {
                         "GUID": "ab0c6410-654b-11ea-8989-7b28ab317531",
-                        "x": 889,
-                        "y": 320.52934166295546,
-                        "width": 304,
-                        "height": 254,
+                        "x": 882,
+                        "y": 389.9187939956128,
+                        "width": 291,
+                        "height": 321,
                         "color": {}
                     },
                     {
                         "GUID": "ab0d0051-654b-11ea-8989-7b28ab317531",
                         "x": 86,
-                        "y": 288.1851440272696,
-                        "width": 304,
-                        "height": 86,
+                        "y": 338,
+                        "width": 268,
+                        "height": 105,
                         "color": {}
                     },
                     {
                         "GUID": "ab0d2761-654b-11ea-8989-7b28ab317531",
-                        "x": 484.4548953178477,
-                        "y": 473.55932913522616,
-                        "width": 304,
-                        "height": 156,
+                        "x": 478,
+                        "y": 514,
+                        "width": 294,
+                        "height": 195,
                         "color": {}
                     },
                     {
                         "GUID": "ab0d7581-654b-11ea-8989-7b28ab317531",
-                        "x": 889,
-                        "y": 96,
-                        "width": 304,
-                        "height": 156,
+                        "x": 892,
+                        "y": 88,
+                        "width": 271,
+                        "height": 195,
                         "color": {}
                     },
                     {
                         "GUID": "ab0dc3a2-654b-11ea-8989-7b28ab317531",
-                        "x": 484.4548953178477,
-                        "y": 124.00000000000003,
-                        "width": 304,
-                        "height": 99,
+                        "x": 485,
+                        "y": 124,
+                        "width": 280,
+                        "height": 123,
                         "color": {}
                     },
                     {
                         "GUID": "ab0e11c1-654b-11ea-8989-7b28ab317531",
                         "x": 86,
-                        "y": 427.4646566805534,
-                        "width": 304,
-                        "height": 72,
+                        "y": 512,
+                        "width": 267,
+                        "height": 87,
                         "color": {}
                     },
                     {
                         "GUID": "ab0e38d1-654b-11ea-8989-7b28ab317531",
-                        "x": 86,
-                        "y": 110,
-                        "width": 304,
-                        "height": 128,
+                        "x": 87,
+                        "y": 106,
+                        "width": 266,
+                        "height": 159,
                         "color": {}
                     }
                 ],
                 "buckets": [
                     {
                         "x": 46,
-                        "y": 56,
+                        "y": 48,
                         "GUID": "ab521fa0-654b-11ea-8989-7b28ab317531"
                     }
                 ],
@@ -2434,9 +2438,6 @@
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -2450,8 +2451,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

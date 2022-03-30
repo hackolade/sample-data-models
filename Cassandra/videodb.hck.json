@@ -20,7 +20,9 @@
                         "compositeClusteringKey"
                     ],
                     "compositeClusteringKey": true,
-                    "isActivated": true
+                    "isActivated": true,
+                    "childType": "char",
+                    "subtype": "object"
                 },
                 {
                     "type": "string",
@@ -62,7 +64,9 @@
                         "compositePartitionKey"
                     ],
                     "compositePartitionKey": true,
-                    "isActivated": true
+                    "isActivated": true,
+                    "childType": "char",
+                    "subtype": "object"
                 },
                 {
                     "type": "numeric",
@@ -156,7 +160,9 @@
                 "GUID": "dee08371-9240-11eb-a1cd-2b20d40ce8aa"
             },
             "collation": {},
-            "isActivated": true
+            "isActivated": true,
+            "tableIfNotExist": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "3aa06440-a230-11e8-a073-4d93be1f0ee6",
@@ -257,7 +263,9 @@
                 "GUID": "dee08373-9240-11eb-a1cd-2b20d40ce8aa"
             },
             "collation": {},
-            "isActivated": true
+            "isActivated": true,
+            "tableIfNotExist": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "3aa06440-a230-11e8-a073-4d93be1f0ee6",
@@ -358,7 +366,9 @@
                     "required": true,
                     "additionalProperties": false,
                     "sample": "Raymond",
-                    "isActivated": true
+                    "isActivated": true,
+                    "childType": "char",
+                    "subtype": "object"
                 },
                 {
                     "type": "jsonObject",
@@ -372,7 +382,9 @@
                     "required": true,
                     "additionalProperties": false,
                     "sample": "Boyce",
-                    "isActivated": true
+                    "isActivated": true,
+                    "childType": "char",
+                    "subtype": "object"
                 },
                 {
                     "type": "jsonObject",
@@ -386,7 +398,9 @@
                     "required": true,
                     "additionalProperties": false,
                     "sample": "7f4dcc3b5aa765d61d8327deb882cf66",
-                    "isActivated": true
+                    "isActivated": true,
+                    "childType": "char",
+                    "subtype": "object"
                 },
                 {
                     "type": "jsonObject",
@@ -407,7 +421,9 @@
                         "compositePartitionKey"
                     ],
                     "compositePartitionKey": true,
-                    "isActivated": true
+                    "isActivated": true,
+                    "childType": "char",
+                    "subtype": "object"
                 }
             ],
             "type": "object",
@@ -445,7 +461,9 @@
                 "GUID": "dee0aa81-9240-11eb-a1cd-2b20d40ce8aa"
             },
             "collation": {},
-            "isActivated": true
+            "isActivated": true,
+            "tableIfNotExist": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "3aa06440-a230-11e8-a073-4d93be1f0ee6",
@@ -462,7 +480,9 @@
                     "required": true,
                     "additionalProperties": false,
                     "sample": "My dog learned to play the piano because of the cat.",
-                    "isActivated": true
+                    "isActivated": true,
+                    "childType": "char",
+                    "subtype": "object"
                 },
                 {
                     "type": "document",
@@ -567,7 +587,9 @@
                     "required": true,
                     "additionalProperties": false,
                     "sample": "tcodd",
-                    "isActivated": true
+                    "isActivated": true,
+                    "childType": "char",
+                    "subtype": "object"
                 },
                 {
                     "type": "string",
@@ -603,7 +625,9 @@
                     "required": true,
                     "additionalProperties": false,
                     "sample": "Now my dog plays piano!",
-                    "isActivated": true
+                    "isActivated": true,
+                    "childType": "char",
+                    "subtype": "object"
                 }
             ],
             "type": "object",
@@ -641,7 +665,9 @@
                 "GUID": "dee0aa83-9240-11eb-a1cd-2b20d40ce8aa"
             },
             "collation": {},
-            "isActivated": true
+            "isActivated": true,
+            "tableIfNotExist": true,
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -698,7 +724,8 @@
                 }
             ],
             "addToCqlScript": true,
-            "isActivated": true
+            "isActivated": true,
+            "keyspaceIfNotExist": true
         }
     ],
     "views": [],
@@ -938,6 +965,11 @@
         ],
         "GUID": "34558571-a230-11e8-a073-4d93be1f0ee6"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "0817ffe2-affd-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
@@ -950,22 +982,21 @@
     "appTarget": "CASSANDRA",
     "creationTS": "2018-08-17T15:14:15.495Z",
     "GUID": "34558570-a230-11e8-a073-4d93be1f0ee6",
-    "lastModifTS": "2021-03-31T16:48:51.101Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T07:43:35.286Z",
+    "persistenceSchemaVersion": "6",
     "description": "From https://github.com/jbisso/cassandra-samples/blob/master/java/videodb-tutorial/src/main/resources/videodb.cql",
     "comments": "",
     "author": "",
     "version": "",
-    "hideModelViews": false,
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "Cassandra",
-        "pluginVersion": "0.1.71",
+        "pluginVersion": "0.1.102",
         "pluginEngineVersion": "1.0.0"
     },
     "hackoladeMeta": {},
     "applicationInformation": {
-        "version": "4.3.14"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -976,31 +1007,31 @@
                         "x": 99,
                         "y": 162,
                         "width": 303,
-                        "height": 103,
+                        "height": 123,
                         "color": {}
                     },
                     {
                         "GUID": "3a995f62-a230-11e8-a073-4d93be1f0ee6",
-                        "x": 472,
-                        "y": 415,
+                        "x": 479,
+                        "y": 473,
                         "width": 300,
-                        "height": 75,
+                        "height": 87,
                         "color": {}
                     },
                     {
                         "GUID": "3a99ad80-a230-11e8-a073-4d93be1f0ee6",
                         "x": 480,
                         "y": 150,
-                        "width": 283,
-                        "height": 240,
+                        "width": 301,
+                        "height": 303,
                         "color": {}
                     },
                     {
                         "GUID": "3a9a22b0-a230-11e8-a073-4d93be1f0ee6",
                         "x": 100,
-                        "y": 318,
+                        "y": 367,
                         "width": 301,
-                        "height": 159,
+                        "height": 195,
                         "color": {}
                     }
                 ],
@@ -1017,18 +1048,12 @@
                     "childField": [],
                     "parentField": []
                 },
-                "selectedCollections": [
-                    "3a99ad80-a230-11e8-a073-4d93be1f0ee6",
-                    "3a995f62-a230-11e8-a073-4d93be1f0ee6"
-                ],
+                "selectedCollections": [],
                 "displayColorPicker": false,
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -1042,8 +1067,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

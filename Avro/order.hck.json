@@ -96,12 +96,12 @@
                                         {
                                             "name": "product_name",
                                             "type": "string",
-                                            "doc": "This is the name of the product",
                                             "primaryKey": false,
                                             "GUID": "fddc1760-dc64-11e8-8b1b-d5a8e735dace",
                                             "relationshipType": "",
                                             "required": true,
-                                            "isActivated": true
+                                            "isActivated": true,
+                                            "description": "This is the name of the product"
                                         },
                                         {
                                             "name": "New_field",
@@ -123,8 +123,8 @@
                                             "hackoladeMeta": {},
                                             "relationshipType": "",
                                             "default": null,
-                                            "doc": "This is the description of the product",
-                                            "GUID": "e142e992-8670-11eb-8318-378b02c75a97"
+                                            "GUID": "e142e992-8670-11eb-8318-378b02c75a97",
+                                            "description": "This is the description of the product"
                                         },
                                         {
                                             "name": "product_status",
@@ -145,7 +145,6 @@
                                         {
                                             "name": "product_category",
                                             "type": "array",
-                                            "doc": "This contains array of categories",
                                             "primaryKey": false,
                                             "childType": "array",
                                             "additionalItems": true,
@@ -166,7 +165,8 @@
                                                     "isActivated": true
                                                 }
                                             ],
-                                            "isActivated": true
+                                            "isActivated": true,
+                                            "description": "This contains array of categories"
                                         },
                                         {
                                             "name": "price",
@@ -222,9 +222,9 @@
             "collectionName": "Order",
             "collectionUsers": [],
             "collation": {},
-            "doc": "This Schema describes about Order -- from http://www.treselle.com/blog/advanced-avro-schema-design-reuse/",
             "bucketId": "fdece040-dc64-11e8-8b1b-d5a8e735dace",
-            "isActivated": true
+            "isActivated": true,
+            "description": "This Schema describes about Order -- from http://www.treselle.com/blog/advanced-avro-schema-design-reuse/"
         }
     ],
     "buckets": [
@@ -268,12 +268,18 @@
         "fddc3e72-dc64-11e8-8b1b-d5a8e735dace": "New field",
         "fddc3e73-dc64-11e8-8b1b-d5a8e735dace": "price",
         "fddc3e74-dc64-11e8-8b1b-d5a8e735dace": "product_hash",
-        "fddb7b20-dc64-11e8-8b1b-d5a8e735dace": "Order"
+        "fddb7b20-dc64-11e8-8b1b-d5a8e735dace": "Order",
+        "e142e992-8670-11eb-8318-378b02c75a97": "New_field"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
         "GUID": "f8009c31-dc64-11e8-8b1b-d5a8e735dace"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "964ed193-affc-11ec-ab49-f732172fe980"
     },
     "externalDefinitions": {
         "type": "externalDefinitions",
@@ -283,11 +289,12 @@
     "sources": [],
     "decorativeSymbols": [],
     "dbVendor": "Avro",
+    "schemaNameStrategy": "TopicNameStrategy",
     "appTarget": "Avro",
     "creationTS": "2018-10-30T16:58:05.043Z",
     "GUID": "f8009c30-dc64-11e8-8b1b-d5a8e735dace",
-    "lastModifTS": "2021-03-16T16:01:36.156Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T07:40:01.149Z",
+    "persistenceSchemaVersion": "6",
     "description": "",
     "comments": "",
     "author": "",
@@ -296,12 +303,12 @@
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "Avro",
-        "pluginVersion": "0.1.56",
+        "pluginVersion": "0.1.85",
         "pluginEngineVersion": "1.0.0"
     },
     "hackoladeMeta": {},
     "applicationInformation": {
-        "version": "4.3.12"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -335,9 +342,6 @@
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -351,8 +355,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

@@ -123,7 +123,9 @@
                     "keyId": "c59a4880-a231-11e8-a82b-ab38db90b078"
                 }
             ],
-            "isActivated": true
+            "isActivated": true,
+            "tableIfNotExist": true,
+            "additionalProperties": true
         },
         {
             "GUID": "c59abdb0-a231-11e8-a82b-ab38db90b078",
@@ -245,7 +247,9 @@
                     "keyId": "c59abdb4-a231-11e8-a82b-ab38db90b078"
                 }
             ],
-            "isActivated": true
+            "isActivated": true,
+            "tableIfNotExist": true,
+            "additionalProperties": true
         },
         {
             "GUID": "c59b0bd9-a231-11e8-a82b-ab38db90b078",
@@ -454,7 +458,9 @@
                     "keyId": "c59b0bdf-a231-11e8-a82b-ab38db90b078"
                 }
             ],
-            "isActivated": true
+            "isActivated": true,
+            "tableIfNotExist": true,
+            "additionalProperties": true
         },
         {
             "GUID": "c59ae4c0-a231-11e8-a82b-ab38db90b078",
@@ -473,7 +479,8 @@
                     "SecIndxID": "",
                     "SecIndxDescription": "",
                     "SecIndxFunction": "",
-                    "SecIndxComments": ""
+                    "SecIndxComments": "",
+                    "isActivated": true
                 }
             ],
             "bucketId": "c5a43390-a231-11e8-a82b-ab38db90b078",
@@ -616,7 +623,9 @@
                     "keyId": "c59ae4c2-a231-11e8-a82b-ab38db90b078"
                 }
             ],
-            "isActivated": true
+            "isActivated": true,
+            "tableIfNotExist": true,
+            "additionalProperties": true
         },
         {
             "GUID": "c59ae4c8-a231-11e8-a82b-ab38db90b078",
@@ -751,7 +760,9 @@
                     "keyId": "c59ae4ca-a231-11e8-a82b-ab38db90b078"
                 }
             ],
-            "isActivated": true
+            "isActivated": true,
+            "tableIfNotExist": true,
+            "additionalProperties": true
         },
         {
             "GUID": "c59b0bd4-a231-11e8-a82b-ab38db90b078",
@@ -860,7 +871,9 @@
                     "keyId": "c59b0bd7-a231-11e8-a82b-ab38db90b078"
                 }
             ],
-            "isActivated": true
+            "isActivated": true,
+            "tableIfNotExist": true,
+            "additionalProperties": true
         },
         {
             "GUID": "c59b32e8-a231-11e8-a82b-ab38db90b078",
@@ -1020,7 +1033,9 @@
                     "keyId": "c59b32ed-a231-11e8-a82b-ab38db90b078"
                 }
             ],
-            "isActivated": true
+            "isActivated": true,
+            "tableIfNotExist": true,
+            "additionalProperties": true
         },
         {
             "GUID": "c59b0be5-a231-11e8-a82b-ab38db90b078",
@@ -1186,7 +1201,9 @@
                     "keyId": "c59b32e4-a231-11e8-a82b-ab38db90b078"
                 }
             ],
-            "isActivated": true
+            "isActivated": true,
+            "tableIfNotExist": true,
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -1244,7 +1261,8 @@
                 }
             ],
             "addToCqlScript": true,
-            "isActivated": true
+            "isActivated": true,
+            "keyspaceIfNotExist": true
         },
         {
             "GUID": "c5a481b0-a231-11e8-a82b-ab38db90b078",
@@ -1270,7 +1288,8 @@
                 "r": 3
             },
             "addToCqlScript": true,
-            "isActivated": true
+            "isActivated": true,
+            "keyspaceIfNotExist": true
         }
     ],
     "views": [],
@@ -1655,6 +1674,11 @@
             }
         ]
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "ae31ee53-affc-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "GUID": "be8059e2-a231-11e8-a82b-ab38db90b078",
         "type": "externalDefinitions",
@@ -1668,21 +1692,20 @@
     "creationTS": "2018-08-17T15:25:16.798Z",
     "GUID": "be8059e0-a231-11e8-a82b-ab38db90b078",
     "code": "",
-    "lastModifTS": "2021-03-31T16:47:48.958Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T07:42:49.665Z",
+    "persistenceSchemaVersion": "6",
     "description": "Based on https://www.oreilly.com/ideas/cassandra-data-modeling\nDesigning data models for Cassandra\nBy Jeff Carpenter and Eben Hewitt February 22, 2016\nFrom Chapter 5 of \"Cassandra: the Definitive Guide\"\n\nCode from:\nhttps://github.com/jeffreyscarpenter/cassandra-guide/blob/master/resources/hotel.cql\nhttps://github.com/jeffreyscarpenter/cassandra-guide/blob/master/resources/reservation.cql",
     "comments": "",
     "author": "",
     "version": "",
-    "hideModelViews": false,
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "Cassandra",
-        "pluginVersion": "0.1.71",
+        "pluginVersion": "0.1.102",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.14"
+        "version": "6.0.0"
     },
     "hackoladeMeta": {},
     "settings": {
@@ -1691,78 +1714,78 @@
                 "erd": [
                     {
                         "GUID": "c599fa60-a231-11e8-a82b-ab38db90b078",
-                        "x": 496.752225519288,
-                        "y": 126.5786350148368,
-                        "width": 255,
-                        "height": 86,
+                        "x": 627,
+                        "y": 137.6920726606733,
+                        "width": 302,
+                        "height": 105,
                         "color": {}
                     },
                     {
                         "GUID": "c59abdb0-a231-11e8-a82b-ab38db90b078",
-                        "x": 128.752225519288,
-                        "y": 464.5786350148368,
-                        "width": 258,
-                        "height": 86,
+                        "x": 127,
+                        "y": 555.0737701309337,
+                        "width": 300,
+                        "height": 105,
                         "color": {}
                     },
                     {
                         "GUID": "c59ae4c0-a231-11e8-a82b-ab38db90b078",
-                        "x": 459.752225519288,
-                        "y": 273.5786350148368,
-                        "width": 329,
-                        "height": 184,
+                        "x": 585,
+                        "y": 325,
+                        "width": 386,
+                        "height": 231,
                         "color": {}
                     },
                     {
                         "GUID": "c59ae4c8-a231-11e8-a82b-ab38db90b078",
-                        "x": 111.752225519288,
+                        "x": 99,
                         "y": 123.5786350148368,
-                        "width": 291,
-                        "height": 170,
+                        "width": 356,
+                        "height": 213,
                         "color": {}
                     },
                     {
                         "GUID": "c59b0bd4-a231-11e8-a82b-ab38db90b078",
-                        "x": 135.752225519288,
-                        "y": 357.5786350148368,
-                        "width": 244,
-                        "height": 72,
+                        "x": 141,
+                        "y": 397,
+                        "width": 271,
+                        "height": 87,
                         "color": {}
                     },
                     {
                         "GUID": "c59b0bd9-a231-11e8-a82b-ab38db90b078",
-                        "x": 781.2373887240354,
-                        "y": 863.6439169139469,
-                        "width": 266,
-                        "height": 170,
+                        "x": 906.6604707270467,
+                        "y": 916.0358372443195,
+                        "width": 325,
+                        "height": 213,
                         "color": {}
                     },
                     {
                         "GUID": "c59b0be5-a231-11e8-a82b-ab38db90b078",
-                        "x": 615.2373887240354,
-                        "y": 665.6439169139469,
-                        "width": 266,
-                        "height": 128,
+                        "x": 691.443818295485,
+                        "y": 694.2213280032411,
+                        "width": 325,
+                        "height": 159,
                         "color": {}
                     },
                     {
                         "GUID": "c59b32e8-a231-11e8-a82b-ab38db90b078",
-                        "x": 935.2373887240354,
-                        "y": 662.6439169139469,
-                        "width": 266,
-                        "height": 114,
+                        "x": 1094.0007836645564,
+                        "y": 695.9842298514567,
+                        "width": 313,
+                        "height": 141,
                         "color": {}
                     }
                 ],
                 "buckets": [
                     {
-                        "x": 71.75222551928778,
-                        "y": 53.5786350148368,
+                        "x": 59,
+                        "y": 83.5786350148368,
                         "GUID": "c5a43390-a231-11e8-a82b-ab38db90b078"
                     },
                     {
-                        "x": 575.2373887240354,
-                        "y": 592.6439169139468,
+                        "x": 651.443818295485,
+                        "y": 654.2213280032411,
                         "GUID": "c5a481b0-a231-11e8-a82b-ab38db90b078"
                     }
                 ],
@@ -1789,9 +1812,6 @@
                         }
                     ],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -1805,8 +1825,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

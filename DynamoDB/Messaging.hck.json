@@ -1,71 +1,36 @@
 {
-    "GUID": "ffc3eda0-b8e9-11e6-8089-6f1f31218a06",
-    "lastModifTS": "2018-05-19T09:07:22.644Z",
-    "persistenceSchemaVersion": "1",
-    "description": "DAT-401 YouTube video https://www.youtube.com/watch?v=ggDIat_FZtA&t=3s by Rick Houlihan, Principal Solutions Architect",
-    "comments": "",
-    "author": "Pascal",
-    "version": "0.1",
+    "modelName": "Messaging",
     "collections": [
         {
             "GUID": "3e7daae0-b8ea-11e6-8089-6f1f31218a06",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "Foreign Key",
                     "parentRelationship": "e0e75700-f86d-11e6-afef-f1bdcc5dc5f7",
-                    "childRelationships": [],
                     "foreignCollection": "158d2b10-b8ea-11e6-8089-6f1f31218a06",
                     "foreignField": [
                         "158d2b10-b8ea-11e6-8089-6f1f31218a06",
                         "158f26e4-b8ea-11e6-8089-6f1f31218a06"
                     ],
-                    "enum": [],
-                    "sample": "",
                     "GUID": "c233ede0-b8ea-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "msgId",
                     "partitionKey": true,
-                    "sortKey": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Blablabla",
                     "GUID": "3e812d54-b8ea-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "body",
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "type": "array",
@@ -75,41 +40,17 @@
                             "type": "binary",
                             "primaryKey": false,
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "default": "",
-                            "gridFS": "",
-                            "enum": [],
-                            "sample": "",
                             "GUID": "3e812d56-b8ea-11e6-8089-6f1f31218a06",
-                            "description": "",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
                             "arrayItem": true,
-                            "arrayParentType": "list"
+                            "arrayParentType": "list",
+                            "isActivated": true
                         }
                     ],
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "additionalItems": false,
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
-                    "enum": [],
                     "GUID": "3e812d55-b8ea-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
-                    "name": "attachments"
+                    "name": "attachments",
+                    "isActivated": true
                 }
             ],
             "collectionName": "messageBody",
@@ -117,153 +58,84 @@
             "indexes": [],
             "readCapacity": 5,
             "writeCapacity": 5,
-            "streamEnabled": false,
             "streamViewType": "Keys only",
             "definitions": {
                 "GUID": "32754a11-f86d-11e6-afef-f1bdcc5dc5f7",
                 "properties": [],
                 "type": "definitions"
             },
-            "bucketId": "8641c3e0-0640-11e7-8ad3-83453b80bb7b"
+            "bucketId": "8641c3e0-0640-11e7-8ad3-83453b80bb7b",
+            "isActivated": true
         },
         {
             "GUID": "158d2b10-b8ea-11e6-8089-6f1f31218a06",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "2014-10-02",
                     "GUID": "158f26e1-b8ea-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "date",
-                    "sortKey": false,
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": false,
                     "relationshipType": "Foreign Key",
                     "parentRelationship": "f561f460-f86d-11e6-afef-f1bdcc5dc5f7",
-                    "childRelationships": [],
                     "foreignCollection": "24436570-b8ef-11e6-8089-6f1f31218a06",
                     "foreignField": [
                         "24436570-b8ef-11e6-8089-6f1f31218a06",
                         "244958e0-b8ef-11e6-8089-6f1f31218a06"
                     ],
-                    "enum": [],
                     "sample": "David",
                     "GUID": "158f26e0-b8ea-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "recipient",
-                    "partitionKey": false,
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": false,
                     "relationshipType": "Foreign Key",
                     "parentRelationship": "eda07b20-f86d-11e6-afef-f1bdcc5dc5f7",
-                    "childRelationships": [],
                     "foreignCollection": "24436570-b8ef-11e6-8089-6f1f31218a06",
                     "foreignField": [
                         "24436570-b8ef-11e6-8089-6f1f31218a06",
                         "244958e0-b8ef-11e6-8089-6f1f31218a06"
                     ],
-                    "enum": [],
                     "sample": "Bob",
                     "GUID": "158f26e2-b8ea-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "sender",
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "GUID": "158f26e3-b8ea-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
-                    "name": "subject"
+                    "name": "subject",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
                     "childRelationships": [
                         "e0e75700-f86d-11e6-afef-f1bdcc5dc5f7"
                     ],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Blablabla",
                     "GUID": "158f26e4-b8ea-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "msgId",
-                    "error": {},
                     "partitionKey": true,
-                    "sortKey": false
+                    "isActivated": true
                 }
             ],
             "collectionName": "messageHeaders",
@@ -273,16 +145,17 @@
                     "GUID": "d5127200-b8eb-11e6-8089-6f1f31218a06",
                     "name": "inboxGSI",
                     "lsi": false,
-                    "sortKey": {
-                        "include": true,
-                        "GUID": "158f26e1-b8ea-11e6-8089-6f1f31218a06",
-                        "value": "date"
-                    },
+                    "sortKey": [
+                        {
+                            "keyId": "158f26e1-b8ea-11e6-8089-6f1f31218a06"
+                        }
+                    ],
                     "projectionType": "Include",
-                    "partitionKey": {
-                        "GUID": "158f26e0-b8ea-11e6-8089-6f1f31218a06",
-                        "value": "recipient"
-                    },
+                    "partitionKey": [
+                        {
+                            "keyId": "158f26e0-b8ea-11e6-8089-6f1f31218a06"
+                        }
+                    ],
                     "readCapacity": 5,
                     "writeCapacity": 5,
                     "key": [
@@ -293,27 +166,40 @@
                         "158f26e2-b8ea-11e6-8089-6f1f31218a06"
                     ],
                     "nonKeyAttributes": [
-                        "158f26e4-b8ea-11e6-8089-6f1f31218a06",
-                        "158f26e0-b8ea-11e6-8089-6f1f31218a06",
-                        "158f26e1-b8ea-11e6-8089-6f1f31218a06",
-                        "158f26e3-b8ea-11e6-8089-6f1f31218a06",
-                        "158f26e2-b8ea-11e6-8089-6f1f31218a06"
-                    ]
+                        {
+                            "keyId": "158f26e4-b8ea-11e6-8089-6f1f31218a06"
+                        },
+                        {
+                            "keyId": "158f26e0-b8ea-11e6-8089-6f1f31218a06"
+                        },
+                        {
+                            "keyId": "158f26e1-b8ea-11e6-8089-6f1f31218a06"
+                        },
+                        {
+                            "keyId": "158f26e3-b8ea-11e6-8089-6f1f31218a06"
+                        },
+                        {
+                            "keyId": "158f26e2-b8ea-11e6-8089-6f1f31218a06"
+                        }
+                    ],
+                    "isActivated": true,
+                    "includeSortKey": true
                 },
                 {
                     "GUID": "c18684f0-b8ec-11e6-8089-6f1f31218a06",
                     "name": "outboxGSi",
                     "lsi": false,
-                    "sortKey": {
-                        "include": true,
-                        "GUID": "158f26e1-b8ea-11e6-8089-6f1f31218a06",
-                        "value": "date"
-                    },
+                    "sortKey": [
+                        {
+                            "keyId": "158f26e1-b8ea-11e6-8089-6f1f31218a06"
+                        }
+                    ],
                     "projectionType": "Include",
-                    "partitionKey": {
-                        "GUID": "158f26e2-b8ea-11e6-8089-6f1f31218a06",
-                        "value": "sender"
-                    },
+                    "partitionKey": [
+                        {
+                            "keyId": "158f26e2-b8ea-11e6-8089-6f1f31218a06"
+                        }
+                    ],
                     "readCapacity": 5,
                     "writeCapacity": 5,
                     "key": [
@@ -324,159 +210,105 @@
                         "158f26e2-b8ea-11e6-8089-6f1f31218a06"
                     ],
                     "nonKeyAttributes": [
-                        "158f26e4-b8ea-11e6-8089-6f1f31218a06",
-                        "158f26e0-b8ea-11e6-8089-6f1f31218a06",
-                        "158f26e1-b8ea-11e6-8089-6f1f31218a06",
-                        "158f26e3-b8ea-11e6-8089-6f1f31218a06",
-                        "158f26e2-b8ea-11e6-8089-6f1f31218a06"
-                    ]
+                        {
+                            "keyId": "158f26e4-b8ea-11e6-8089-6f1f31218a06"
+                        },
+                        {
+                            "keyId": "158f26e0-b8ea-11e6-8089-6f1f31218a06"
+                        },
+                        {
+                            "keyId": "158f26e1-b8ea-11e6-8089-6f1f31218a06"
+                        },
+                        {
+                            "keyId": "158f26e3-b8ea-11e6-8089-6f1f31218a06"
+                        },
+                        {
+                            "keyId": "158f26e2-b8ea-11e6-8089-6f1f31218a06"
+                        }
+                    ],
+                    "isActivated": true,
+                    "includeSortKey": true
                 }
             ],
             "readCapacity": 5,
             "writeCapacity": 5,
-            "streamEnabled": false,
             "streamViewType": "Keys only",
             "definitions": {
                 "GUID": "32754a12-f86d-11e6-afef-f1bdcc5dc5f7",
                 "properties": [],
                 "type": "definitions"
             },
-            "bucketId": "8641c3e0-0640-11e7-8ad3-83453b80bb7b"
+            "bucketId": "8641c3e0-0640-11e7-8ad3-83453b80bb7b",
+            "isActivated": true
         },
         {
             "GUID": "00dbed50-b8ea-11e6-8089-6f1f31218a06",
             "type": "object",
             "description": "Problem is that it ends up costing 1600 RCU to read 50 messages, with formula:\n\nItems evaluated by query * Avg item size * Conversion ratio * Consistent/Eventually consistent reads = # of RCU\n\n50 * 256kb * (1 RCU /4kb) * (1/2) = 1600 RCU\n",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "Foreign Key",
                     "parentRelationship": "d43d7520-f86d-11e6-afef-f1bdcc5dc5f7",
-                    "childRelationships": [],
                     "foreignCollection": "24436570-b8ef-11e6-8089-6f1f31218a06",
                     "foreignField": [
                         "24436570-b8ef-11e6-8089-6f1f31218a06",
                         "244958e0-b8ef-11e6-8089-6f1f31218a06"
                     ],
-                    "enum": [],
                     "sample": "David",
                     "GUID": "00e89780-b8ea-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "recipient",
                     "partitionKey": true,
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "2014-10-02",
                     "GUID": "00e89782-b8ea-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "date",
                     "sortKey": true,
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": false,
                     "relationshipType": "Foreign Key",
                     "parentRelationship": "c64fc8a0-f86d-11e6-afef-f1bdcc5dc5f7",
-                    "childRelationships": [],
                     "foreignCollection": "24436570-b8ef-11e6-8089-6f1f31218a06",
                     "foreignField": [
                         "24436570-b8ef-11e6-8089-6f1f31218a06",
                         "244958e0-b8ef-11e6-8089-6f1f31218a06"
                     ],
-                    "enum": [],
                     "sample": "Bob",
                     "GUID": "00e8be90-b8ea-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "sender",
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "GUID": "00e8be92-b8ea-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
-                    "name": "subject"
+                    "name": "subject",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Blablabla",
                     "GUID": "00e8be93-b8ea-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "body",
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "type": "array",
@@ -486,41 +318,17 @@
                             "type": "binary",
                             "primaryKey": false,
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "default": "",
-                            "gridFS": "",
-                            "enum": [],
-                            "sample": "",
                             "GUID": "00e8be95-b8ea-11e6-8089-6f1f31218a06",
-                            "description": "",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
                             "arrayItem": true,
-                            "arrayParentType": "list"
+                            "arrayParentType": "list",
+                            "isActivated": true
                         }
                     ],
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "additionalItems": false,
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
-                    "enum": [],
                     "GUID": "00e8be94-b8ea-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
-                    "name": "attachments"
+                    "name": "attachments",
+                    "isActivated": true
                 }
             ],
             "collectionName": "messagesEmbedded",
@@ -528,51 +336,36 @@
             "indexes": [],
             "readCapacity": 5,
             "writeCapacity": 5,
-            "streamEnabled": false,
             "streamViewType": "Keys only",
             "definitions": {
                 "GUID": "32754a13-f86d-11e6-afef-f1bdcc5dc5f7",
                 "properties": [],
                 "type": "definitions"
             },
-            "bucketId": "8641c3e0-0640-11e7-8ad3-83453b80bb7b"
+            "bucketId": "8641c3e0-0640-11e7-8ad3-83453b80bb7b",
+            "isActivated": true
         },
         {
             "GUID": "24436570-b8ef-11e6-8089-6f1f31218a06",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
                     "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "format": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
                     "childRelationships": [
                         "c64fc8a0-f86d-11e6-afef-f1bdcc5dc5f7",
                         "d43d7520-f86d-11e6-afef-f1bdcc5dc5f7",
                         "eda07b20-f86d-11e6-afef-f1bdcc5dc5f7",
                         "f561f460-f86d-11e6-afef-f1bdcc5dc5f7"
                     ],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Bob",
                     "GUID": "244958e0-b8ef-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "user",
-                    "partitionKey": true
+                    "partitionKey": true,
+                    "isActivated": true
                 },
                 {
                     "type": "array",
@@ -580,46 +373,21 @@
                     "properties": [
                         {
                             "type": "string",
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "format": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
                             "sample": "Rob",
                             "GUID": "244958e2-b8ef-11e6-8089-6f1f31218a06",
-                            "description": "",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
                             "arrayItem": true,
-                            "arrayParentType": "list"
+                            "arrayParentType": "list",
+                            "isActivated": true
                         }
                     ],
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "additionalItems": false,
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
-                    "enum": [],
                     "GUID": "244958e1-b8ef-11e6-8089-6f1f31218a06",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
-                    "name": "nicknames"
+                    "name": "nicknames",
+                    "isActivated": true
                 }
             ],
             "collectionName": "users",
@@ -627,14 +395,14 @@
             "indexes": [],
             "readCapacity": 5,
             "writeCapacity": 5,
-            "streamEnabled": false,
             "streamViewType": "Keys only",
             "definitions": {
                 "GUID": "32754a14-f86d-11e6-afef-f1bdcc5dc5f7",
                 "properties": [],
                 "type": "definitions"
             },
-            "bucketId": "8641c3e0-0640-11e7-8ad3-83453b80bb7b"
+            "bucketId": "8641c3e0-0640-11e7-8ad3-83453b80bb7b",
+            "isActivated": true
         }
     ],
     "buckets": [
@@ -642,8 +410,6 @@
             "GUID": "8641c3e0-0640-11e7-8ad3-83453b80bb7b",
             "name": "eu-west-1",
             "type": "bucket",
-            "description": "",
-            "comments": "",
             "collectionIds": [
                 "00dbed50-b8ea-11e6-8089-6f1f31218a06",
                 "24436570-b8ef-11e6-8089-6f1f31218a06",
@@ -656,7 +422,8 @@
                 "b": 213,
                 "a": 1
             },
-            "show": true
+            "show": true,
+            "isActivated": true
         }
     ],
     "views": [],
@@ -669,14 +436,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "24436570-b8ef-11e6-8089-6f1f31218a06",
             "parentField": [
-                "24436570-b8ef-11e6-8089-6f1f31218a06",
-                "244958e0-b8ef-11e6-8089-6f1f31218a06"
+                [
+                    "24436570-b8ef-11e6-8089-6f1f31218a06",
+                    "244958e0-b8ef-11e6-8089-6f1f31218a06"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "00dbed50-b8ea-11e6-8089-6f1f31218a06",
             "childField": [
-                "00dbed50-b8ea-11e6-8089-6f1f31218a06",
-                "00e8be90-b8ea-11e6-8089-6f1f31218a06"
+                [
+                    "00dbed50-b8ea-11e6-8089-6f1f31218a06",
+                    "00e8be90-b8ea-11e6-8089-6f1f31218a06"
+                ]
             ],
             "childCardinality": "0..n"
         },
@@ -688,14 +459,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "24436570-b8ef-11e6-8089-6f1f31218a06",
             "parentField": [
-                "24436570-b8ef-11e6-8089-6f1f31218a06",
-                "244958e0-b8ef-11e6-8089-6f1f31218a06"
+                [
+                    "24436570-b8ef-11e6-8089-6f1f31218a06",
+                    "244958e0-b8ef-11e6-8089-6f1f31218a06"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "00dbed50-b8ea-11e6-8089-6f1f31218a06",
             "childField": [
-                "00dbed50-b8ea-11e6-8089-6f1f31218a06",
-                "00e89780-b8ea-11e6-8089-6f1f31218a06"
+                [
+                    "00dbed50-b8ea-11e6-8089-6f1f31218a06",
+                    "00e89780-b8ea-11e6-8089-6f1f31218a06"
+                ]
             ],
             "childCardinality": "0..n"
         },
@@ -707,14 +482,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "158d2b10-b8ea-11e6-8089-6f1f31218a06",
             "parentField": [
-                "158d2b10-b8ea-11e6-8089-6f1f31218a06",
-                "158f26e4-b8ea-11e6-8089-6f1f31218a06"
+                [
+                    "158d2b10-b8ea-11e6-8089-6f1f31218a06",
+                    "158f26e4-b8ea-11e6-8089-6f1f31218a06"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "3e7daae0-b8ea-11e6-8089-6f1f31218a06",
             "childField": [
-                "3e7daae0-b8ea-11e6-8089-6f1f31218a06",
-                "c233ede0-b8ea-11e6-8089-6f1f31218a06"
+                [
+                    "3e7daae0-b8ea-11e6-8089-6f1f31218a06",
+                    "c233ede0-b8ea-11e6-8089-6f1f31218a06"
+                ]
             ],
             "childCardinality": "0..n"
         },
@@ -726,14 +505,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "24436570-b8ef-11e6-8089-6f1f31218a06",
             "parentField": [
-                "24436570-b8ef-11e6-8089-6f1f31218a06",
-                "244958e0-b8ef-11e6-8089-6f1f31218a06"
+                [
+                    "24436570-b8ef-11e6-8089-6f1f31218a06",
+                    "244958e0-b8ef-11e6-8089-6f1f31218a06"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "158d2b10-b8ea-11e6-8089-6f1f31218a06",
             "childField": [
-                "158d2b10-b8ea-11e6-8089-6f1f31218a06",
-                "158f26e2-b8ea-11e6-8089-6f1f31218a06"
+                [
+                    "158d2b10-b8ea-11e6-8089-6f1f31218a06",
+                    "158f26e2-b8ea-11e6-8089-6f1f31218a06"
+                ]
             ],
             "childCardinality": "0..n"
         },
@@ -745,19 +528,24 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "24436570-b8ef-11e6-8089-6f1f31218a06",
             "parentField": [
-                "24436570-b8ef-11e6-8089-6f1f31218a06",
-                "244958e0-b8ef-11e6-8089-6f1f31218a06"
+                [
+                    "24436570-b8ef-11e6-8089-6f1f31218a06",
+                    "244958e0-b8ef-11e6-8089-6f1f31218a06"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "158d2b10-b8ea-11e6-8089-6f1f31218a06",
             "childField": [
-                "158d2b10-b8ea-11e6-8089-6f1f31218a06",
-                "158f26e0-b8ea-11e6-8089-6f1f31218a06"
+                [
+                    "158d2b10-b8ea-11e6-8089-6f1f31218a06",
+                    "158f26e0-b8ea-11e6-8089-6f1f31218a06"
+                ]
             ],
             "childCardinality": "0..n"
         }
     ],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "00e89780-b8ea-11e6-8089-6f1f31218a06": "recipient",
         "00e89782-b8ea-11e6-8089-6f1f31218a06": "date",
@@ -779,27 +567,49 @@
         "244958e0-b8ef-11e6-8089-6f1f31218a06": "user",
         "244958e1-b8ef-11e6-8089-6f1f31218a06": "nicknames",
         "24436570-b8ef-11e6-8089-6f1f31218a06": "users",
-        "8641c3e0-0640-11e7-8ad3-83453b80bb7b": "eu-west-1"
+        "8641c3e0-0640-11e7-8ad3-83453b80bb7b": "eu-west-1",
+        "c64fc8a0-f86d-11e6-afef-f1bdcc5dc5f7": "fk users.user to messagesEmbedded.sender",
+        "d43d7520-f86d-11e6-afef-f1bdcc5dc5f7": "fk users.user to messagesEmbedded.recipient",
+        "e0e75700-f86d-11e6-afef-f1bdcc5dc5f7": "fk messageHeaders.msgId to messageBody.msgId",
+        "eda07b20-f86d-11e6-afef-f1bdcc5dc5f7": "fk users.user to messageHeaders.sender",
+        "f561f460-f86d-11e6-afef-f1bdcc5dc5f7": "fk users.user to messageHeaders.recipient"
     },
     "definitions": {
         "GUID": "32754a10-f86d-11e6-afef-f1bdcc5dc5f7",
         "properties": [],
         "type": "definitions"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "a4e8ce33-affd-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "f5c5d682-5b43-11e8-9c3f-1d376af9020b"
     },
-    "modelName": "Messaging",
+    "sources": [],
+    "decorativeSymbols": [],
     "dbVendor": "AWS DynamoDB",
     "appTarget": "DYNAMODB",
     "creationTS": "2016-12-02T23:49:43.930Z",
+    "GUID": "ffc3eda0-b8e9-11e6-8089-6f1f31218a06",
+    "lastModifTS": "2022-03-30T07:48:06.159Z",
+    "persistenceSchemaVersion": "6",
+    "description": "DAT-401 YouTube video https://www.youtube.com/watch?v=ggDIat_FZtA&t=3s by Rick Houlihan, Principal Solutions Architect",
+    "comments": "",
+    "author": "Pascal",
+    "version": "0.1",
     "isCreatedByPlugin": true,
     "pluginInformation": {
-        "pluginVersion": "0.1.3",
-        "pluginName": "Firebase",
         "pluginEngineVersion": "1.0.0"
+    },
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
+    "applicationInformation": {
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -809,8 +619,8 @@
                         "GUID": "00dbed50-b8ea-11e6-8089-6f1f31218a06",
                         "x": 90,
                         "y": 80,
-                        "width": 264,
-                        "height": 128,
+                        "width": 238,
+                        "height": 159,
                         "color": {
                             "hsl": {
                                 "h": 3.789473684210526,
@@ -837,10 +647,10 @@
                     },
                     {
                         "GUID": "158d2b10-b8ea-11e6-8089-6f1f31218a06",
-                        "x": 100,
-                        "y": 446,
-                        "width": 244,
-                        "height": 100,
+                        "x": 87,
+                        "y": 489,
+                        "width": 243,
+                        "height": 123,
                         "color": {
                             "hsl": {
                                 "h": 3.789473684210526,
@@ -868,9 +678,9 @@
                     {
                         "GUID": "3e7daae0-b8ea-11e6-8089-6f1f31218a06",
                         "x": 419.00000000000006,
-                        "y": 453,
-                        "width": 264,
-                        "height": 86,
+                        "y": 498,
+                        "width": 205,
+                        "height": 105,
                         "color": {
                             "hsl": {
                                 "h": 339.7058823529412,
@@ -897,10 +707,10 @@
                     },
                     {
                         "GUID": "24436570-b8ef-11e6-8089-6f1f31218a06",
-                        "x": 90,
-                        "y": 288,
-                        "width": 264,
-                        "height": 75,
+                        "x": 111,
+                        "y": 316,
+                        "width": 196,
+                        "height": 87,
                         "color": {
                             "hsl": {
                                 "h": 206.57142857142858,
@@ -1017,7 +827,7 @@
                     },
                     {
                         "GUID": "350da431-ffec-11e6-bc11-bba283d07659",
-                        "x": 90,
+                        "x": 112,
                         "y": 90,
                         "width": 194,
                         "height": 149,
@@ -1065,7 +875,7 @@
                     },
                     {
                         "GUID": "166589b0-0440-11e6-a1a6-29098b60dd65",
-                        "x": 87,
+                        "x": 92,
                         "y": 133,
                         "width": 234,
                         "height": 166,
@@ -1149,7 +959,7 @@
                     },
                     {
                         "GUID": "889580b1-00d6-11e7-94c9-270ac0401f9d",
-                        "x": 80,
+                        "x": 85,
                         "y": 80,
                         "width": 247,
                         "height": 176,
@@ -1295,7 +1105,7 @@
                     },
                     {
                         "GUID": "03b0fbab-899d-11e6-a8d7-35e2bcca9f8c",
-                        "x": 100,
+                        "x": 84,
                         "y": 100,
                         "width": 250,
                         "height": 283,
@@ -1303,7 +1113,7 @@
                     },
                     {
                         "GUID": "03b122bb-899d-11e6-a8d7-35e2bcca9f8c",
-                        "x": 96,
+                        "x": 84,
                         "y": 463,
                         "width": 250,
                         "height": 199,
@@ -1403,7 +1213,7 @@
                     },
                     {
                         "GUID": "5a3e1c60-56ec-11e7-b5ff-dd5e79dcd289",
-                        "x": 90,
+                        "x": 75,
                         "y": 90,
                         "width": 268,
                         "height": 193
@@ -1411,59 +1221,9 @@
                 ],
                 "buckets": [
                     {
-                        "x": 40,
+                        "x": 47,
                         "y": 40,
-                        "GUID": "85f04210-fac7-11e6-9f58-33155ddb31fb"
-                    },
-                    {
-                        "x": 60,
-                        "y": 103,
-                        "GUID": "ac31ce80-fac7-11e6-9f58-33155ddb31fb"
-                    },
-                    {
-                        "x": 762,
-                        "y": 40,
-                        "GUID": ""
-                    },
-                    {
-                        "x": 87,
-                        "y": 44,
-                        "GUID": "dbb0e310-02ad-11e7-86f4-b37d72813e2e"
-                    },
-                    {
-                        "x": 50,
-                        "y": 10,
                         "GUID": "8641c3e0-0640-11e7-8ad3-83453b80bb7b"
-                    },
-                    {
-                        "x": 60,
-                        "y": 80,
-                        "GUID": "e43995f0-00d6-11e7-94c9-270ac0401f9d"
-                    },
-                    {
-                        "x": 160,
-                        "y": 160,
-                        "GUID": "9b213ef0-2b1e-11e7-bde4-57d99ab8fafb"
-                    },
-                    {
-                        "x": 183,
-                        "y": 26,
-                        "GUID": "ac3be870-2b1e-11e7-bde4-57d99ab8fafb"
-                    },
-                    {
-                        "x": 200,
-                        "y": 200,
-                        "GUID": "9509cd70-53f5-11e7-b1ef-ab0119d70e5d"
-                    },
-                    {
-                        "x": 50,
-                        "y": 20,
-                        "GUID": "1fa0c6a0-53f6-11e7-b1ef-ab0119d70e5d"
-                    },
-                    {
-                        "x": 50,
-                        "y": 20,
-                        "GUID": "97bb9010-1ed1-11e8-bfff-af9e00eabe08"
                     }
                 ],
                 "collapsedNodes": [
@@ -1479,15 +1239,29 @@
                     "childField": [],
                     "parentField": []
                 },
-                "selectedCollections": [],
-                "displayColorPicker": false
+                "selectedCollections": [
+                    "158d2b10-b8ea-11e6-8089-6f1f31218a06",
+                    "3e7daae0-b8ea-11e6-8089-6f1f31218a06"
+                ],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true
+            "shouldDistributeCollections": false
         }
     }
 }

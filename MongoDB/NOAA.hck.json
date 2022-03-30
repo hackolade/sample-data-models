@@ -66,7 +66,8 @@
                     "relationshipType": "",
                     "required": true,
                     "GUID": "a6333943-696f-11e6-bcf0-194926187780",
-                    "isActivated": true
+                    "isActivated": true,
+                    "additionalProperties": true
                 },
                 {
                     "type": "string",
@@ -157,7 +158,8 @@
                             "primaryKey": false,
                             "relationshipType": "",
                             "GUID": "a6333949-696f-11e6-bcf0-194926187780",
-                            "isActivated": true
+                            "isActivated": true,
+                            "additionalProperties": true
                         }
                     ],
                     "required": true,
@@ -191,7 +193,9 @@
                 "properties": [],
                 "type": "definitions"
             },
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true,
+            "indexes": []
         },
         {
             "properties": [
@@ -272,7 +276,8 @@
                             "relationshipType": "",
                             "required": true,
                             "GUID": "a5b04da6-696f-11e6-bcf0-194926187780",
-                            "isActivated": true
+                            "isActivated": true,
+                            "additionalProperties": true
                         }
                     ],
                     "name": "metadata",
@@ -280,7 +285,8 @@
                     "relationshipType": "",
                     "required": true,
                     "GUID": "a5b04da4-696f-11e6-bcf0-194926187780",
-                    "isActivated": true
+                    "isActivated": true,
+                    "additionalProperties": true
                 }
             ],
             "type": "object",
@@ -291,7 +297,9 @@
                 "properties": [],
                 "type": "definitions"
             },
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true,
+            "indexes": []
         }
     ],
     "buckets": [],
@@ -351,12 +359,18 @@
         "a6333951-696f-11e6-bcf0-194926187780": "v",
         "a6333952-696f-11e6-bcf0-194926187780": "fetch_date",
         "a6333953-696f-11e6-bcf0-194926187780": "id",
-        "a6333940-696f-11e6-bcf0-194926187780": "ocean_data"
+        "a6333940-696f-11e6-bcf0-194926187780": "ocean_data",
+        "bbb35fc0-696f-11e6-bcf0-194926187780": "stationsOceanData"
     },
     "definitions": {
         "GUID": "714d1d10-92e4-11eb-8852-3d869fc674b7",
         "properties": [],
         "type": "definitions"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "8bab9853-b000-11ec-ab49-f732172fe980"
     },
     "externalDefinitions": {
         "type": "externalDefinitions",
@@ -367,24 +381,25 @@
     "decorativeSymbols": [],
     "dbVersion": "v3.2",
     "dbVendor": "MongoDB",
-    "hideModelViews": true,
     "appTarget": "MONGODB",
     "creationTS": "2016-08-23T20:24:37.336Z",
     "GUID": "9cbdf580-696f-11e6-bcf0-194926187780",
-    "lastModifTS": "2021-04-01T12:26:05.857Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T08:08:26.834Z",
+    "persistenceSchemaVersion": "6",
     "description": "NOAA ocean weather buoys info",
     "comments": "Don't understand why GeoJSON is used to store lat/long in one collection, and not the other??",
     "author": "Pascal",
     "version": "1",
     "validation": "MongoDB extension",
-    "hackoladeMeta": {},
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.14"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -428,16 +443,16 @@
                     {
                         "GUID": "a5b04da0-696f-11e6-bcf0-194926187780",
                         "x": 40,
-                        "y": 111,
+                        "y": 138,
                         "width": 260,
-                        "height": 159
+                        "height": 195
                     },
                     {
                         "GUID": "a6333940-696f-11e6-bcf0-194926187780",
                         "x": 403,
                         "y": 48,
-                        "width": 250,
-                        "height": 297
+                        "width": 232,
+                        "height": 375
                     }
                 ],
                 "buckets": [],
@@ -447,15 +462,15 @@
                     "childField": [],
                     "parentField": []
                 },
-                "selectedCollections": [],
+                "selectedCollections": [
+                    "a6333940-696f-11e6-bcf0-194926187780",
+                    "a5b04da0-696f-11e6-bcf0-194926187780"
+                ],
                 "displayColorPicker": false,
                 "graphView": {
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -469,8 +484,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

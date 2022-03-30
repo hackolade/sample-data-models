@@ -1,11 +1,5 @@
 {
-    "GUID": "dc4284b0-6dc2-11e8-977e-574156f5cc39",
-    "lastModifTS": "2018-06-19T19:43:05.984Z",
-    "persistenceSchemaVersion": "2",
-    "description": "",
-    "comments": "",
-    "author": "",
-    "version": "",
+    "modelName": "New model",
     "collections": [
         {
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
@@ -16,22 +10,9 @@
                     "name": "sourceID",
                     "GUID": "26cad4c2-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Paradise Papers - Appleby",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -39,22 +20,9 @@
                     "name": "valid_until",
                     "GUID": "26cad4c3-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Appleby data is current through 2014",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -62,22 +30,9 @@
                     "name": "address",
                     "GUID": "26cad4c4-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "3rd Floor",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "array",
@@ -93,35 +48,14 @@
                             "arrayParentType": "list",
                             "primaryKey": false,
                             "GUID": "26cad4c6-73b2-11e8-9291-1b091dee6fcb",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
-                            "required": false,
-                            "id": "",
                             "name": "New property key",
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
                             "sample": "Address",
-                            "unique": false
+                            "isActivated": true
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -129,22 +63,9 @@
                     "name": "name",
                     "GUID": "26cad4c7-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "3rd Floor; Jubilee Buildings; Victoria Street; Douglas; Isle of Man IM1 2LR",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -152,22 +73,9 @@
                     "name": "country_codes",
                     "GUID": "26cad4c8-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "IMN",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -175,22 +83,9 @@
                     "name": "countries",
                     "GUID": "26cad4c9-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Isle of Man",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -199,27 +94,9 @@
                     "childType": "number",
                     "GUID": "26cad4ca-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 81001619,
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -230,7 +107,6 @@
                 "type": "definitions"
             },
             "collectionName": "Address",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "26dada50-73b2-11e8-9291-1b091dee6fcb",
@@ -245,7 +121,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db0160-73b2-11e8-9291-1b091dee6fcb",
@@ -260,7 +137,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db0161-73b2-11e8-9291-1b091dee6fcb",
@@ -270,7 +148,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db0162-73b2-11e8-9291-1b091dee6fcb",
@@ -280,7 +159,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db0163-73b2-11e8-9291-1b091dee6fcb",
@@ -295,11 +175,13 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
@@ -310,22 +192,9 @@
                     "name": "sourceID",
                     "GUID": "26d7a602-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Paradise Papers - Appleby",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -333,22 +202,9 @@
                     "name": "jurisdiction",
                     "GUID": "26d7a603-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "KY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -356,45 +212,18 @@
                     "name": "service_provider",
                     "GUID": "26d7a604-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Appleby",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "countries",
                     "GUID": "26d7a605-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Cayman Islands",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -402,22 +231,9 @@
                     "name": "jurisdiction_description",
                     "GUID": "26d7a606-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Cayman Islands",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -425,22 +241,9 @@
                     "name": "type",
                     "GUID": "26d7a607-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "CE",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -448,22 +251,9 @@
                     "name": "valid_until",
                     "GUID": "26d7a608-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Appleby data is current through 2014",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "multiple",
@@ -515,11 +305,7 @@
                             "type": "string"
                         }
                     ],
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "type": "array",
@@ -535,35 +321,14 @@
                             "arrayParentType": "list",
                             "primaryKey": false,
                             "GUID": "26d7a60b-73b2-11e8-9291-1b091dee6fcb",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
-                            "required": false,
-                            "id": "",
                             "name": "New property key",
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
                             "sample": "Entity",
-                            "unique": false
+                            "isActivated": true
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -571,68 +336,27 @@
                     "name": "name",
                     "GUID": "26d7a60c-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Akanthos Arbitrage Fund, Ltd.",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "country_codes",
                     "GUID": "26d7a60d-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "CYM",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "incorporation_date",
                     "GUID": "26d7a60e-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "2002-Aug-15",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -641,50 +365,18 @@
                     "childType": "number",
                     "GUID": "26d7a60f-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 82010924,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "closed_date",
                     "GUID": "26d7a610-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "2013-Jun-14",
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -695,7 +387,6 @@
                 "type": "definitions"
             },
             "collectionName": "Entity",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "26db2876-73b2-11e8-9291-1b091dee6fcb",
@@ -705,7 +396,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db2877-73b2-11e8-9291-1b091dee6fcb",
@@ -715,7 +407,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db2878-73b2-11e8-9291-1b091dee6fcb",
@@ -725,7 +418,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db4f80-73b2-11e8-9291-1b091dee6fcb",
@@ -740,7 +434,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db4f81-73b2-11e8-9291-1b091dee6fcb",
@@ -755,7 +450,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db4f82-73b2-11e8-9291-1b091dee6fcb",
@@ -770,7 +466,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db4f83-73b2-11e8-9291-1b091dee6fcb",
@@ -780,7 +477,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26dd4b50-73b2-11e8-9291-1b091dee6fcb",
@@ -795,7 +493,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26dd4b51-73b2-11e8-9291-1b091dee6fcb",
@@ -810,7 +509,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26dd4b52-73b2-11e8-9291-1b091dee6fcb",
@@ -820,7 +520,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26dd4b53-73b2-11e8-9291-1b091dee6fcb",
@@ -830,11 +531,13 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
@@ -845,22 +548,9 @@
                     "name": "sourceID",
                     "GUID": "26d0a122-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Paradise Papers - Appleby",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -868,22 +558,9 @@
                     "name": "name",
                     "GUID": "26d0a123-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Econergy International Plc",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -891,22 +568,9 @@
                     "name": "valid_until",
                     "GUID": "26d0a124-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Appleby data is current through 2014",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "array",
@@ -922,35 +586,14 @@
                             "arrayParentType": "list",
                             "primaryKey": false,
                             "GUID": "26d0a126-73b2-11e8-9291-1b091dee6fcb",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
-                            "required": false,
-                            "id": "",
                             "name": "New property key",
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
                             "sample": "Other",
-                            "unique": false
+                            "isActivated": true
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -959,27 +602,9 @@
                     "childType": "number",
                     "GUID": "26d0a127-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 80010572,
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -990,7 +615,6 @@
                 "type": "definitions"
             },
             "collectionName": "Intermediary",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "26db0164-73b2-11e8-9291-1b091dee6fcb",
@@ -1000,7 +624,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db0165-73b2-11e8-9291-1b091dee6fcb",
@@ -1010,7 +635,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db0166-73b2-11e8-9291-1b091dee6fcb",
@@ -1020,7 +646,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db0167-73b2-11e8-9291-1b091dee6fcb",
@@ -1030,7 +657,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db0168-73b2-11e8-9291-1b091dee6fcb",
@@ -1045,7 +673,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db0169-73b2-11e8-9291-1b091dee6fcb",
@@ -1060,7 +689,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db016a-73b2-11e8-9291-1b091dee6fcb",
@@ -1070,7 +700,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db016b-73b2-11e8-9291-1b091dee6fcb",
@@ -1085,11 +716,13 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
@@ -1100,22 +733,9 @@
                     "name": "sourceID",
                     "GUID": "26d2c402-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Paradise Papers - Appleby",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1123,22 +743,9 @@
                     "name": "valid_until",
                     "GUID": "26d2c403-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Appleby data is current through 2014",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "array",
@@ -1154,35 +761,14 @@
                             "arrayParentType": "list",
                             "primaryKey": false,
                             "GUID": "26d2c405-73b2-11e8-9291-1b091dee6fcb",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
-                            "required": false,
-                            "id": "",
                             "name": "New property key",
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
                             "sample": "Officer",
-                            "unique": false
+                            "isActivated": true
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1190,68 +776,27 @@
                     "name": "name",
                     "GUID": "26d2c406-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Rathbone Investment Management International",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "country_codes",
                     "GUID": "26d2c407-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "GBR",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "countries",
                     "GUID": "26d2c408-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "United Kingdom",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1260,50 +805,18 @@
                     "childType": "number",
                     "GUID": "26d2c409-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 80115894,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "note",
                     "GUID": "26d2c40a-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Not all beneficiaries are aware of offshore trusts in which they are named because the settlor may select beneficiaries without their knowledge.",
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -1314,7 +827,6 @@
                 "type": "definitions"
             },
             "collectionName": "Officer",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "26db2870-73b2-11e8-9291-1b091dee6fcb",
@@ -1324,7 +836,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db2871-73b2-11e8-9291-1b091dee6fcb",
@@ -1339,7 +852,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db2872-73b2-11e8-9291-1b091dee6fcb",
@@ -1349,7 +863,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db2873-73b2-11e8-9291-1b091dee6fcb",
@@ -1359,7 +874,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db2874-73b2-11e8-9291-1b091dee6fcb",
@@ -1374,7 +890,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "26db2875-73b2-11e8-9291-1b091dee6fcb",
@@ -1389,11 +906,13 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
@@ -1404,22 +923,9 @@
                     "name": "sourceID",
                     "GUID": "26cfb6c2-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Paradise Papers - Appleby",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1427,22 +933,9 @@
                     "name": "name",
                     "GUID": "26cfb6c3-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Zheng - Paul",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1450,22 +943,9 @@
                     "name": "valid_until",
                     "GUID": "26cfb6c4-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Appleby data is current through 2014",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "array",
@@ -1481,35 +961,14 @@
                             "arrayParentType": "list",
                             "primaryKey": false,
                             "GUID": "26cfb6c6-73b2-11e8-9291-1b091dee6fcb",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
-                            "required": false,
-                            "id": "",
                             "name": "New property key",
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
                             "sample": "Intermediary",
-                            "unique": false
+                            "isActivated": true
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1518,160 +977,62 @@
                     "childType": "number",
                     "GUID": "26cfb6c7-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 80148939,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "country_codes",
                     "GUID": "26cfb6c8-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "CHN",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "countries",
                     "GUID": "26cfb6c9-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "China",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "jurisdiction",
                     "GUID": "26cfb6ca-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "BAH",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "jurisdiction_description",
                     "GUID": "26cfb6cb-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Bahamas",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "null",
                     "primaryKey": false,
                     "name": "status",
                     "GUID": "26cfb6cc-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignField": [],
-                    "format": "",
-                    "unique": false,
-                    "foreignCollection": ""
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "note",
                     "GUID": "26cfb6cd-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Not all beneficiaries are aware of offshore trusts in which they are named because the settlor may select beneficiaries without their knowledge.",
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -1682,9 +1043,9 @@
                 "type": "definitions"
             },
             "collectionName": "Other",
-            "constraint": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -1692,8 +1053,6 @@
             "GUID": "27012700-73b2-11e8-9291-1b091dee6fcb",
             "name": "icij-paradise-papers.db",
             "type": "bucket",
-            "description": "",
-            "comments": "",
             "collectionIds": [
                 "26cad4c1-73b2-11e8-9291-1b091dee6fcb",
                 "26cfb6c1-73b2-11e8-9291-1b091dee6fcb",
@@ -1710,7 +1069,8 @@
             "show": true,
             "indexes": [],
             "addFieldsToBucket": true,
-            "isPlugin": true
+            "isPlugin": true,
+            "isActivated": true
         }
     ],
     "views": [],
@@ -1728,6 +1088,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1743,6 +1104,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -1750,45 +1112,18 @@
                     "name": "sourceID",
                     "GUID": "26dfbc52-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_APPLEBY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "end_date",
                     "GUID": "26dfbc53-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "2013OCT29",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1796,45 +1131,18 @@
                     "name": "valid_until",
                     "GUID": "26dfbc54-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "start_date",
                     "GUID": "26dfbc55-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "2012NOV05",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -1851,6 +1159,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -1858,22 +1167,9 @@
                     "name": "sourceID",
                     "GUID": "26e25462-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_APPLEBY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1881,68 +1177,27 @@
                     "name": "valid_until",
                     "GUID": "26e25463-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "start_date",
                     "GUID": "26e25464-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "2014JAN02",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "end_date",
                     "GUID": "26e25465-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "2014MAR10",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -1959,6 +1214,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -1966,45 +1222,18 @@
                     "name": "sourceID",
                     "GUID": "26e49e53-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_APPLEBY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "end_date",
                     "GUID": "26e49e54-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "2007JUL07",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -2012,22 +1241,9 @@
                     "name": "valid_until",
                     "GUID": "26e49e55-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "multiple",
@@ -2080,10 +1296,7 @@
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ]
         },
@@ -2100,6 +1313,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -2107,22 +1321,9 @@
                     "name": "sourceID",
                     "GUID": "26e4c562-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_BARBADOS_CORPORATE_REGISTRY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -2130,22 +1331,9 @@
                     "name": "valid_until",
                     "GUID": "26e4c563-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "BARBADOS_CORPORATE_REGISTRY_DATA_IS_CURRENT_THROUGH_2016",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -2162,6 +1350,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -2177,6 +1366,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -2184,22 +1374,9 @@
                     "name": "sourceID",
                     "GUID": "26e53a92-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_APPLEBY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -2208,27 +1385,9 @@
                     "childType": "number",
                     "GUID": "26e53a93-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 2003,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -2236,22 +1395,9 @@
                     "name": "valid_until",
                     "GUID": "26e53a94-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -2260,27 +1406,9 @@
                     "childType": "number",
                     "GUID": "26e53a95-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 1991,
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -2297,6 +1425,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -2312,6 +1441,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -2319,45 +1449,18 @@
                     "name": "sourceID",
                     "GUID": "26e588b2-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_APPLEBY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "end_date",
                     "GUID": "26e588b3-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "2013OCT29",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -2365,45 +1468,18 @@
                     "name": "valid_until",
                     "GUID": "26e588b4-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "start_date",
                     "GUID": "26e588b5-73b2-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "2012NOV05",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -2420,6 +1496,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -2427,22 +1504,9 @@
                     "name": "sourceID",
                     "GUID": "26e78482-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_APPLEBY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -2450,22 +1514,9 @@
                     "name": "valid_until",
                     "GUID": "26e78483-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -2482,6 +1533,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -2489,22 +1541,9 @@
                     "name": "sourceID",
                     "GUID": "26e7f9b3-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_APPLEBY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -2512,22 +1551,9 @@
                     "name": "valid_until",
                     "GUID": "26e7f9b4-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -2544,6 +1570,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -2551,22 +1578,9 @@
                     "name": "sourceID",
                     "GUID": "26e98051-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_APPLEBY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -2574,22 +1588,9 @@
                     "name": "valid_until",
                     "GUID": "26e98052-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -2606,6 +1607,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -2613,22 +1615,9 @@
                     "name": "sourceID",
                     "GUID": "26eadfe2-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_MALTA_CORPORATE_REGISTRY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -2636,22 +1625,9 @@
                     "name": "valid_until",
                     "GUID": "26eadfe3-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "MALTA_CORPORATE_REGISTRY_DATA_IS_CURRENT_THROUGH_2016",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -2668,6 +1644,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -2675,22 +1652,9 @@
                     "name": "sourceID",
                     "GUID": "26eadfe7-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_APPLEBY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -2698,22 +1662,9 @@
                     "name": "valid_until",
                     "GUID": "26eadfe8-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -2730,6 +1681,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -2737,22 +1689,9 @@
                     "name": "sourceID",
                     "GUID": "26eb5513-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_APPLEBY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -2760,22 +1699,9 @@
                     "name": "valid_until",
                     "GUID": "26eb5514-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -2792,6 +1718,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -2799,22 +1726,9 @@
                     "name": "sourceID",
                     "GUID": "26ec8d92-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_APPLEBY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -2822,22 +1736,9 @@
                     "name": "valid_until",
                     "GUID": "26ec8d93-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -2854,6 +1755,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -2861,22 +1763,9 @@
                     "name": "sourceID",
                     "GUID": "26ee1431-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_APPLEBY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -2884,22 +1773,9 @@
                     "name": "valid_until",
                     "GUID": "26ee1432-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -2916,6 +1792,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -2931,6 +1808,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -2938,22 +1816,9 @@
                     "name": "sourceID",
                     "GUID": "26ef4cb3-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_APPLEBY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -2961,22 +1826,9 @@
                     "name": "valid_until",
                     "GUID": "26ef4cb4-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -2993,6 +1845,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -3008,6 +1861,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -3015,22 +1869,9 @@
                     "name": "sourceID",
                     "GUID": "26ef9ad6-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_APPLEBY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -3038,22 +1879,9 @@
                     "name": "valid_until",
                     "GUID": "26ef9ad7-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -3070,6 +1898,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -3077,22 +1906,9 @@
                     "name": "sourceID",
                     "GUID": "26f01002-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_APPLEBY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -3100,22 +1916,9 @@
                     "name": "valid_until",
                     "GUID": "26f01003-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -3132,6 +1935,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -3147,6 +1951,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -3154,22 +1959,9 @@
                     "name": "sourceID",
                     "GUID": "26f05e24-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_APPLEBY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -3177,22 +1969,9 @@
                     "name": "valid_until",
                     "GUID": "26f05e25-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "APPLEBY_DATA_IS_CURRENT_THROUGH_2014",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -3209,6 +1988,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "27012700-73b2-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "string",
@@ -3216,22 +1996,9 @@
                     "name": "sourceID",
                     "GUID": "26f08532-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "PARADISE_PAPERS_BARBADOS_CORPORATE_REGISTRY",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -3239,27 +2006,15 @@
                     "name": "valid_until",
                     "GUID": "26f08533-73b2-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "BARBADOS_CORPORATE_REGISTRY_DATA_IS_CURRENT_THROUGH_2016",
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         }
     ],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "eeb93bc0-6dc2-11e8-977e-574156f5cc39": "icij-paradise-papers.db",
         "26cad4c2-73b2-11e8-9291-1b091dee6fcb": "sourceID",
@@ -3343,29 +2098,93 @@
         "27014e25-73b2-11e8-9291-1b091dee6fcb": "SAME_NAME_AS",
         "27014e26-73b2-11e8-9291-1b091dee6fcb": "SAME_NAME_AS",
         "27014e27-73b2-11e8-9291-1b091dee6fcb": "SAME_NAME_AS",
-        "27012700-73b2-11e8-9291-1b091dee6fcb": "icij-paradise-papers.db"
+        "27012700-73b2-11e8-9291-1b091dee6fcb": "icij-paradise-papers.db",
+        "26dfbc52-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26dfbc53-73b2-11e8-9291-1b091dee6fcb": "end_date",
+        "26dfbc54-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26dfbc55-73b2-11e8-9291-1b091dee6fcb": "start_date",
+        "26e25462-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26e25463-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26e25464-73b2-11e8-9291-1b091dee6fcb": "start_date",
+        "26e25465-73b2-11e8-9291-1b091dee6fcb": "end_date",
+        "26e49e53-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26e49e54-73b2-11e8-9291-1b091dee6fcb": "end_date",
+        "26e49e55-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26e49e56-73b2-11e8-9291-1b091dee6fcb": "start_date",
+        "26e4c562-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26e4c563-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26e53a92-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26e53a93-73b2-11e8-9291-1b091dee6fcb": "end_date",
+        "26e53a94-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26e53a95-73b2-11e8-9291-1b091dee6fcb": "start_date",
+        "26e588b2-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26e588b3-73b2-11e8-9291-1b091dee6fcb": "end_date",
+        "26e588b4-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26e588b5-73b2-11e8-9291-1b091dee6fcb": "start_date",
+        "26e78482-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26e78483-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26e7f9b3-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26e7f9b4-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26e98051-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26e98052-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26eadfe2-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26eadfe3-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26eadfe7-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26eadfe8-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26eb5513-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26eb5514-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26ec8d92-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26ec8d93-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26ee1431-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26ee1432-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26ef4cb3-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26ef4cb4-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26ef9ad6-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26ef9ad7-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26f01002-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26f01003-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26f05e24-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26f05e25-73b2-11e8-9291-1b091dee6fcb": "valid_until",
+        "26f08532-73b2-11e8-9291-1b091dee6fcb": "sourceID",
+        "26f08533-73b2-11e8-9291-1b091dee6fcb": "valid_until"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
         "GUID": "dc4284b1-6dc2-11e8-977e-574156f5cc39"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "e21e1c13-b002-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "dc4284b2-6dc2-11e8-977e-574156f5cc39"
     },
-    "modelName": "New model",
+    "sources": [],
+    "decorativeSymbols": [],
     "dbVersion": "3.x",
     "dbVendor": "Neo4j",
     "appTarget": "NEO4J",
     "creationTS": "2018-06-11T22:00:32.123Z",
-    "hideModelViews": false,
+    "GUID": "dc4284b0-6dc2-11e8-977e-574156f5cc39",
+    "lastModifTS": "2022-03-30T08:25:05.702Z",
+    "persistenceSchemaVersion": "6",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
     "isCreatedByPlugin": true,
     "pluginInformation": {
-        "pluginVersion": "0.1.1",
         "pluginName": "Neo4j",
+        "pluginVersion": "0.1.39",
         "pluginEngineVersion": "1.0.0"
+    },
+    "hackoladeMeta": {},
+    "applicationInformation": {
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -3664,11 +2483,6 @@
                 ],
                 "buckets": [
                     {
-                        "x": 50,
-                        "y": 20,
-                        "GUID": "eeb93bc0-6dc2-11e8-977e-574156f5cc39"
-                    },
-                    {
                         "x": 60,
                         "y": 242,
                         "GUID": "27012700-73b2-11e8-9291-1b091dee6fcb"
@@ -3676,19 +2490,67 @@
                 ],
                 "collapsedNodes": [],
                 "activeRelationship": "",
-                "selectedCollections": [],
                 "activeRelationshipFields": {
                     "childField": [],
                     "parentField": []
                 },
-                "displayColorPicker": false
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "26cad4c1-73b2-11e8-9291-1b091dee6fcb",
+                            "x": 1386.5186953664138,
+                            "y": 904.8319919390029,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "26cfb6c1-73b2-11e8-9291-1b091dee6fcb",
+                            "x": 1383.9946457110043,
+                            "y": 1323.9825943321518,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "26d0a121-73b2-11e8-9291-1b091dee6fcb",
+                            "x": 1554.8938917558226,
+                            "y": 1301.01675254249,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "26d2c401-73b2-11e8-9291-1b091dee6fcb",
+                            "x": 1588.0931023860414,
+                            "y": 1051.0870822181382,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "26d7a601-73b2-11e8-9291-1b091dee6fcb",
+                            "x": 1285.2731503965922,
+                            "y": 1092.7682773807114,
+                            "size": 100
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 1245.2731503965922,
+                            "y": 864.8319919390029,
+                            "GUID": "27012700-73b2-11e8-9291-1b091dee6fcb"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true
+            "shouldDistributeCollections": false
         }
     }
 }

@@ -743,8 +743,12 @@
                     "GUID": "61c33de1-4b8d-11ec-ae71-d5c74b0d4990",
                     "error": {},
                     "childRelationships": [
+                        "bbe36030-03d9-11ec-b847-e1184f4ea812",
                         "bbddbae0-03d9-11ec-b847-e1184f4ea812"
-                    ]
+                    ],
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": []
                 },
                 {
                     "exclusiveMinimum": false,
@@ -755,15 +759,17 @@
                     "name": "ParentProductCategoryID",
                     "isActivated": true,
                     "required": true,
-                    "foreignCollection": "9936b310-6a9d-11ea-a5ff-a16524f9bb05",
+                    "foreignCollection": "bb845040-03d9-11ec-b847-e1184f4ea812",
                     "foreignField": [
-                        "9936b310-6a9d-11ea-a5ff-a16524f9bb05",
-                        "992f6014-6a9d-11ea-a5ff-a16524f9bb05"
+                        "bb845040-03d9-11ec-b847-e1184f4ea812",
+                        "61c33de1-4b8d-11ec-ae71-d5c74b0d4990"
                     ],
                     "relationshipType": "Foreign Key",
                     "sample": null,
                     "GUID": "61c33de2-4b8d-11ec-ae71-d5c74b0d4990",
-                    "error": {}
+                    "error": {},
+                    "childRelationships": [],
+                    "parentRelationship": "bbe36030-03d9-11ec-b847-e1184f4ea812"
                 },
                 {
                     "name": "Name",
@@ -911,9 +917,12 @@
                     "GUID": "61c4c481-4b8d-11ec-ae71-d5c74b0d4990",
                     "error": {},
                     "childRelationships": [
-                        "bbc6fe90-03d9-11ec-b847-e1184f4ea812",
-                        "bbccf200-03d9-11ec-b847-e1184f4ea812"
-                    ]
+                        "bbccf200-03d9-11ec-b847-e1184f4ea812",
+                        "bbc6fe90-03d9-11ec-b847-e1184f4ea812"
+                    ],
+                    "parentRelationship": "",
+                    "foreignCollection": "",
+                    "foreignField": []
                 },
                 {
                     "name": "Name",
@@ -2827,16 +2836,16 @@
             "modelName": false
         }
     },
-    "lastModifTS": "2021-11-22T12:13:12.107Z",
-    "persistenceSchemaVersion": "5",
+    "lastModifTS": "2022-03-30T07:40:25.079Z",
+    "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "BigQuery",
-        "pluginVersion": "0.1.0",
+        "pluginVersion": "0.1.2",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "5.2.11"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {

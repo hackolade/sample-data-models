@@ -1,213 +1,117 @@
 {
-    "GUID": "1965bf50-d819-11e7-8683-2f809a0e46e8",
     "modelName": "MovieLens Recommendations",
-    "code": "",
-    "lastModifTS": "2019-01-26T18:14:02.165Z",
-    "persistenceSchemaVersion": "2",
-    "description": "Derived from https://github.com/elastic/examples/tree/master/Graph/movie_recommendations example",
-    "comments": "",
-    "author": "",
-    "version": "",
     "collections": [
         {
             "GUID": "b6454160-d81e-11e7-8683-2f809a0e46e8",
             "type": "object",
             "description": "See http://files.grouplens.org/papers/tag_genome.pdf",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "b64d7ec0-d81e-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_index",
                     "index": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "b64da5d0-d81e-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_type",
                     "docType": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "b64da5d1-d81e-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_id",
                     "docID": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "properties": [
                         {
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "Foreign Key",
                             "parentRelationship": "a48e1450-d81f-11e7-8683-2f809a0e46e8",
-                            "childRelationships": [],
                             "foreignCollection": "32512450-d819-11e7-8683-2f809a0e46e8",
                             "foreignField": [
                                 "32512450-d819-11e7-8683-2f809a0e46e8",
                                 "32543191-d819-11e7-8683-2f809a0e46e8"
                             ],
-                            "enum": [],
-                            "sample": "",
                             "index_options": "docs",
                             "similarity": "BM25",
                             "type": "string",
                             "GUID": "9bd4cd90-d81f-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
-                            "name": "movieId"
+                            "name": "movieId",
+                            "isActivated": true
                         },
                         {
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "Foreign Key",
                             "parentRelationship": "b04cf9f0-d81f-11e7-8683-2f809a0e46e8",
-                            "childRelationships": [],
                             "foreignCollection": "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
                             "foreignField": [
                                 "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
                                 "d3fa7562-d81c-11e7-8683-2f809a0e46e8"
                             ],
-                            "enum": [],
-                            "sample": "",
                             "index_options": "docs",
                             "similarity": "BM25",
                             "type": "string",
                             "GUID": "a622be10-d81f-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
-                            "name": "tagId"
+                            "name": "tagId",
+                            "isActivated": true
                         },
                         {
-                            "unit": "",
-                            "minimum": "",
-                            "exclusiveMinimum": false,
-                            "maximum": "",
-                            "exclusiveMaximum": false,
-                            "multipleOf": "",
-                            "divisibleBy": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
-                            "sample": "",
                             "childType": "number",
                             "type": "numeric",
                             "GUID": "b4b66e90-d81f-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
-                            "name": "relevance"
+                            "name": "relevance",
+                            "isActivated": true
                         }
                     ],
-                    "dependencies": [],
-                    "minProperties": "",
-                    "maxProperties": "",
                     "additionalProperties": false,
-                    "enum": [],
                     "childType": "object",
                     "type": "document",
                     "GUID": "b64da5d2-d81e-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
                     "required": true,
-                    "id": "",
                     "name": "_source",
                     "source": true,
                     "containerLevelKey": true,
                     "hasERDDivider": false,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -218,177 +122,103 @@
             "collectionName": "genome-scores",
             "collectionUsers": [],
             "collation": {},
-            "bucketId": "1b0342b0-d819-11e7-8683-2f809a0e46e8"
+            "bucketId": "1b0342b0-d819-11e7-8683-2f809a0e46e8",
+            "isActivated": true
         },
         {
             "GUID": "4f22c000-d820-11e7-8683-2f809a0e46e8",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "4f2cf930-d820-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_index",
                     "index": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "4f2cf931-d820-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_type",
                     "docType": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "4f2cf932-d820-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_id",
                     "docID": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "properties": [
                         {
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "Foreign Key",
                             "parentRelationship": "d90bc5f0-d820-11e7-8683-2f809a0e46e8",
-                            "childRelationships": [],
                             "foreignCollection": "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
                             "foreignField": [
                                 "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
                                 "d3fa7562-d81c-11e7-8683-2f809a0e46e8"
                             ],
-                            "enum": [],
-                            "sample": "",
                             "index_options": "docs",
                             "similarity": "BM25",
                             "type": "string",
                             "GUID": "5b4fd0c0-d820-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
-                            "name": "tagId"
+                            "name": "tagId",
+                            "isActivated": true
                         },
                         {
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
-                            "sample": "",
                             "index_options": "docs",
                             "similarity": "BM25",
                             "type": "string",
                             "GUID": "c93d99a0-d820-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
-                            "name": "tag"
+                            "name": "tag",
+                            "isActivated": true
                         }
                     ],
-                    "dependencies": [],
-                    "minProperties": "",
-                    "maxProperties": "",
                     "additionalProperties": false,
-                    "enum": [],
                     "childType": "object",
                     "type": "document",
                     "GUID": "4f2cf933-d820-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
                     "required": true,
-                    "id": "",
                     "name": "_source",
                     "source": true,
                     "containerLevelKey": true,
                     "hasERDDivider": false,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -399,115 +229,67 @@
             "collectionName": "genome-tags",
             "collectionUsers": [],
             "collation": {},
-            "bucketId": "1b0342b0-d819-11e7-8683-2f809a0e46e8"
+            "bucketId": "1b0342b0-d819-11e7-8683-2f809a0e46e8",
+            "isActivated": true
         },
         {
             "GUID": "0c8a3430-d81b-11e7-8683-2f809a0e46e8",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "0c8fd980-d81b-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_index",
                     "index": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "0c8fd981-d81b-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_type",
                     "docType": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
                     "childRelationships": [
                         "c75a9b10-d81b-11e7-8683-2f809a0e46e8"
                     ],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "0c8fd982-d81b-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_id",
                     "docID": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "properties": [
                         {
-                            "childRelationships": [],
-                            "comments": "",
-                            "default": "",
-                            "description": "",
                             "enum": [
                                 "Action",
                                 "Adventure",
@@ -551,41 +333,29 @@
                                     false
                                 ]
                             },
-                            "foreignCollection": "",
-                            "foreignField": [],
                             "GUID": "8f45ea90-d81b-11e7-8683-2f809a0e46e8",
                             "index_options": "docs",
-                            "maxLength": "",
-                            "minLength": "",
-                            "parentRelationship": "",
-                            "pattern": "",
                             "primaryKey": false,
                             "relationshipType": "",
                             "required": true,
                             "sample": "Adventure",
-                            "id": "",
                             "similarity": "BM25",
                             "type": "string",
-                            "name": "genre"
+                            "name": "genre",
+                            "isActivated": true
                         }
                     ],
-                    "dependencies": [],
-                    "minProperties": "",
-                    "maxProperties": "",
                     "additionalProperties": false,
-                    "enum": [],
                     "childType": "object",
                     "type": "document",
                     "GUID": "0c8fd983-d81b-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
                     "required": true,
-                    "id": "",
                     "name": "_source",
                     "source": true,
                     "containerLevelKey": true,
                     "hasERDDivider": false,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -596,136 +366,80 @@
             "collectionName": "genres",
             "collectionUsers": [],
             "collation": {},
-            "bucketId": "1b0342b0-d819-11e7-8683-2f809a0e46e8"
+            "bucketId": "1b0342b0-d819-11e7-8683-2f809a0e46e8",
+            "isActivated": true
         },
         {
             "GUID": "32512450-d819-11e7-8683-2f809a0e46e8",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "32540a81-d819-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_index",
                     "index": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "32543190-d819-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_type",
                     "docType": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
                     "childRelationships": [
                         "5313c290-d81b-11e7-8683-2f809a0e46e8",
                         "f0159680-d81c-11e7-8683-2f809a0e46e8",
                         "a48e1450-d81f-11e7-8683-2f809a0e46e8"
                     ],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "32543191-d819-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_id",
                     "docID": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "properties": [
                         {
                             "minLength": 1,
                             "maxLength": 20,
-                            "pattern": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
                             "sample": "Toy Story",
                             "index_options": "freqs",
                             "similarity": "classic",
                             "type": "string",
                             "GUID": "63d6e820-d819-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
                             "name": "title",
-                            "error": {},
                             "boost": 1,
                             "doc_values": true,
                             "eager_global_ordinals": true,
@@ -735,36 +449,21 @@
                             "norms": true,
                             "store": true,
                             "normalizer": "norm",
-                            "format": "",
-                            "_index": true
+                            "_index": true,
+                            "isActivated": true
                         },
                         {
                             "unit": "fgd",
                             "minimum": 1900,
-                            "exclusiveMinimum": false,
                             "maximum": 3000,
-                            "exclusiveMaximum": false,
-                            "multipleOf": "",
-                            "divisibleBy": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
                             "sample": 1995,
                             "childType": "number",
                             "type": "numeric",
                             "GUID": "6ed0a900-d819-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
                             "name": "year",
-                            "error": {},
                             "boost": 2,
                             "doc_values": true,
                             "ignore_malformed": true,
@@ -774,34 +473,22 @@
                             "null_value": "dwf",
                             "scaling_factor": 2,
                             "coerce": true,
-                            "_index": true
+                            "_index": true,
+                            "isActivated": true
                         },
                         {
                             "properties": [
                                 {
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "default": "",
                                     "primaryKey": false,
                                     "relationshipType": "Foreign Key",
                                     "parentRelationship": "c75a9b10-d81b-11e7-8683-2f809a0e46e8",
-                                    "childRelationships": [],
                                     "foreignCollection": "0c8a3430-d81b-11e7-8683-2f809a0e46e8",
                                     "foreignField": [
                                         "0c8a3430-d81b-11e7-8683-2f809a0e46e8",
                                         "0c8fd982-d81b-11e7-8683-2f809a0e46e8"
                                     ],
-                                    "enum": [],
-                                    "sample": "",
-                                    "index_options": "",
-                                    "similarity": "",
                                     "type": "string",
                                     "GUID": "0583c300-d81a-11e7-8683-2f809a0e46e8",
-                                    "description": "",
-                                    "comments": "",
-                                    "required": false,
-                                    "id": "",
                                     "arrayItem": true,
                                     "arrayParentType": "array",
                                     "error": {
@@ -827,118 +514,59 @@
                                             false
                                         ],
                                         "sample": false
-                                    }
+                                    },
+                                    "isActivated": true
                                 }
                             ],
                             "primaryKey": false,
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
                             "additionalItems": true,
-                            "minItems": "",
-                            "maxItems": "",
-                            "uniqueItems": false,
                             "childType": "array",
                             "type": "array",
                             "GUID": "d4556e00-d819-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
-                            "required": false,
-                            "id": "",
-                            "name": "genreId"
+                            "name": "genreId",
+                            "isActivated": true
                         },
                         {
                             "primaryKey": false,
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
                             "properties": [
                                 {
-                                    "childRelationships": [],
-                                    "comments": "",
-                                    "default": "",
-                                    "dependencies": [],
-                                    "description": "",
-                                    "enum": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
                                     "GUID": "eaaf3960-d81e-11e7-8683-2f809a0e46e8",
-                                    "index_options": "",
-                                    "maxLength": "",
-                                    "minLength": "",
                                     "name": "imdbId",
-                                    "parentRelationship": "",
-                                    "pattern": "",
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "required": false,
-                                    "sample": "",
-                                    "id": "",
-                                    "similarity": "",
-                                    "type": "string"
+                                    "type": "string",
+                                    "isActivated": true
                                 },
                                 {
-                                    "childRelationships": [],
-                                    "comments": "",
-                                    "default": "",
-                                    "dependencies": [],
-                                    "description": "",
-                                    "enum": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
                                     "GUID": "edcb4670-d81e-11e7-8683-2f809a0e46e8",
-                                    "index_options": "",
-                                    "maxLength": "",
-                                    "minLength": "",
                                     "name": "tmdbId",
-                                    "parentRelationship": "",
-                                    "pattern": "",
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "required": false,
-                                    "sample": "",
-                                    "id": "",
-                                    "similarity": "",
-                                    "type": "string"
+                                    "type": "string",
+                                    "isActivated": true
                                 }
                             ],
-                            "dependencies": [],
-                            "minProperties": "",
-                            "maxProperties": "",
                             "additionalProperties": false,
-                            "enum": [],
                             "childType": "object",
                             "type": "document",
                             "GUID": "e0e2ade0-d81e-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
-                            "name": "links"
+                            "name": "links",
+                            "isActivated": true
                         }
                     ],
-                    "dependencies": [],
-                    "minProperties": "",
-                    "maxProperties": "",
                     "additionalProperties": false,
-                    "enum": [],
                     "childType": "object",
                     "type": "document",
                     "GUID": "32543192-d819-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
                     "required": true,
-                    "id": "",
                     "name": "_source",
                     "source": true,
                     "containerLevelKey": true,
                     "hasERDDivider": false,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -950,208 +578,124 @@
             "collectionUsers": [],
             "collation": {},
             "bucketId": "1b0342b0-d819-11e7-8683-2f809a0e46e8",
-            "dynamic": "strict"
+            "dynamic": "strict",
+            "isActivated": true
         },
         {
             "GUID": "30701d60-d81b-11e7-8683-2f809a0e46e8",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "30774950-d81b-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_index",
                     "index": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "30774951-d81b-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_type",
                     "docType": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "30774952-d81b-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_id",
                     "docID": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "properties": [
                         {
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "Foreign Key",
                             "parentRelationship": "4d20c7c0-d81b-11e7-8683-2f809a0e46e8",
-                            "childRelationships": [],
                             "foreignCollection": "c7fd1210-d81a-11e7-8683-2f809a0e46e8",
                             "foreignField": [
                                 "c7fd1210-d81a-11e7-8683-2f809a0e46e8",
                                 "c801f411-d81a-11e7-8683-2f809a0e46e8"
                             ],
-                            "enum": [],
-                            "sample": "",
                             "index_options": "docs",
                             "similarity": "BM25",
                             "type": "string",
                             "GUID": "3bac1760-d81b-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
-                            "name": "userId"
+                            "name": "userId",
+                            "isActivated": true
                         },
                         {
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "Foreign Key",
                             "parentRelationship": "5313c290-d81b-11e7-8683-2f809a0e46e8",
-                            "childRelationships": [],
                             "foreignCollection": "32512450-d819-11e7-8683-2f809a0e46e8",
                             "foreignField": [
                                 "32512450-d819-11e7-8683-2f809a0e46e8",
                                 "32543191-d819-11e7-8683-2f809a0e46e8"
                             ],
-                            "enum": [],
-                            "sample": "",
                             "index_options": "docs",
                             "similarity": "BM25",
                             "type": "string",
                             "GUID": "42ac8a90-d81b-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
-                            "name": "movieId"
+                            "name": "movieId",
+                            "isActivated": true
                         },
                         {
                             "unit": "stars",
                             "minimum": 0.5,
-                            "exclusiveMinimum": false,
                             "maximum": 5,
-                            "exclusiveMaximum": false,
                             "multipleOf": 0.5,
-                            "divisibleBy": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
                             "sample": 4.5,
                             "childType": "number",
                             "type": "numeric",
                             "GUID": "57d71700-d81b-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
                             "name": "rating",
-                            "error": {}
+                            "isActivated": true
                         }
                     ],
-                    "dependencies": [],
-                    "minProperties": "",
-                    "maxProperties": "",
                     "additionalProperties": false,
-                    "enum": [],
                     "childType": "object",
                     "type": "document",
                     "GUID": "30774953-d81b-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
                     "required": true,
-                    "id": "",
                     "name": "_source",
                     "source": true,
                     "containerLevelKey": true,
                     "hasERDDivider": false,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -1162,226 +706,134 @@
             "collectionName": "ratings",
             "collectionUsers": [],
             "collation": {},
-            "bucketId": "1b0342b0-d819-11e7-8683-2f809a0e46e8"
+            "bucketId": "1b0342b0-d819-11e7-8683-2f809a0e46e8",
+            "isActivated": true
         },
         {
             "GUID": "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "d3fa7560-d81c-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_index",
                     "index": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "d3fa7561-d81c-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_type",
                     "docType": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
                     "childRelationships": [
                         "b04cf9f0-d81f-11e7-8683-2f809a0e46e8",
                         "d90bc5f0-d820-11e7-8683-2f809a0e46e8"
                     ],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "d3fa7562-d81c-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_id",
                     "docID": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "properties": [
                         {
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "Foreign Key",
                             "parentRelationship": "e52c2950-d81c-11e7-8683-2f809a0e46e8",
-                            "childRelationships": [],
                             "foreignCollection": "c7fd1210-d81a-11e7-8683-2f809a0e46e8",
                             "foreignField": [
                                 "c7fd1210-d81a-11e7-8683-2f809a0e46e8",
                                 "c801f411-d81a-11e7-8683-2f809a0e46e8"
                             ],
-                            "enum": [],
-                            "sample": "",
                             "index_options": "docs",
                             "similarity": "BM25",
                             "type": "string",
                             "GUID": "dcb62d20-d81c-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
-                            "name": "userId"
+                            "name": "userId",
+                            "isActivated": true
                         },
                         {
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "Foreign Key",
                             "parentRelationship": "f0159680-d81c-11e7-8683-2f809a0e46e8",
-                            "childRelationships": [],
                             "foreignCollection": "32512450-d819-11e7-8683-2f809a0e46e8",
                             "foreignField": [
                                 "32512450-d819-11e7-8683-2f809a0e46e8",
                                 "32543191-d819-11e7-8683-2f809a0e46e8"
                             ],
-                            "enum": [],
-                            "sample": "",
                             "index_options": "docs",
                             "similarity": "BM25",
                             "type": "string",
                             "GUID": "e6397aa0-d81c-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
-                            "name": "movieId"
+                            "name": "movieId",
+                            "isActivated": true
                         },
                         {
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
-                            "sample": "",
                             "index_options": "docs",
                             "similarity": "BM25",
                             "type": "string",
                             "GUID": "fe7b0b10-d81c-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
-                            "name": "tag"
+                            "name": "tag",
+                            "isActivated": true
                         },
                         {
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "default": "",
                             "format": "yyyyMMdd'T'HHmmssZ",
-                            "sample": "",
                             "childType": "date",
                             "type": "string",
                             "GUID": "03cb8450-d81d-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
-                            "name": "timestamp"
+                            "name": "timestamp",
+                            "isActivated": true
                         }
                     ],
-                    "dependencies": [],
-                    "minProperties": "",
-                    "maxProperties": "",
                     "additionalProperties": false,
-                    "enum": [],
                     "childType": "object",
                     "type": "document",
                     "GUID": "d3fa7563-d81c-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
                     "required": true,
-                    "id": "",
                     "name": "_source",
                     "source": true,
                     "containerLevelKey": true,
                     "hasERDDivider": false,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -1392,201 +844,112 @@
             "collectionName": "tags",
             "collectionUsers": [],
             "collation": {},
-            "bucketId": "1b0342b0-d819-11e7-8683-2f809a0e46e8"
+            "bucketId": "1b0342b0-d819-11e7-8683-2f809a0e46e8",
+            "isActivated": true
         },
         {
             "GUID": "c7fd1210-d81a-11e7-8683-2f809a0e46e8",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "c801cd00-d81a-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_index",
                     "index": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "c801f410-d81a-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_type",
                     "docType": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "primaryKey": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
                     "childRelationships": [
                         "4d20c7c0-d81b-11e7-8683-2f809a0e46e8",
                         "e52c2950-d81c-11e7-8683-2f809a0e46e8"
                     ],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "",
                     "index_options": "docs",
                     "similarity": "BM25",
                     "type": "string",
                     "GUID": "c801f411-d81a-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "name": "_id",
                     "docID": true,
                     "containerLevelKey": true,
                     "hasERDDivider": true,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "properties": [
                         {
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
-                            "sample": "",
                             "index_options": "docs",
                             "similarity": "BM25",
                             "type": "string",
                             "GUID": "de9956f0-d81a-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
-                            "name": "firstName"
+                            "name": "firstName",
+                            "isActivated": true
                         },
                         {
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
-                            "sample": "",
                             "index_options": "docs",
                             "similarity": "BM25",
                             "type": "string",
                             "GUID": "e55fce60-d81a-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
-                            "name": "lastName"
+                            "name": "lastName",
+                            "isActivated": true
                         },
                         {
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
-                            "sample": "",
                             "index_options": "docs",
                             "similarity": "BM25",
                             "type": "string",
                             "GUID": "e972e5a0-d81a-11e7-8683-2f809a0e46e8",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
                             "required": true,
-                            "id": "",
-                            "name": "email"
+                            "name": "email",
+                            "isActivated": true
                         }
                     ],
-                    "dependencies": [],
-                    "minProperties": "",
-                    "maxProperties": "",
                     "additionalProperties": false,
-                    "enum": [],
                     "childType": "object",
                     "type": "document",
                     "GUID": "c801f412-d81a-11e7-8683-2f809a0e46e8",
-                    "description": "",
-                    "comments": "",
                     "required": true,
-                    "id": "",
                     "name": "_source",
                     "source": true,
                     "containerLevelKey": true,
                     "hasERDDivider": false,
-                    "_index": true
+                    "_index": true,
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -1597,7 +960,8 @@
             "collectionName": "users",
             "collectionUsers": [],
             "collation": {},
-            "bucketId": "1b0342b0-d819-11e7-8683-2f809a0e46e8"
+            "bucketId": "1b0342b0-d819-11e7-8683-2f809a0e46e8",
+            "isActivated": true
         }
     ],
     "buckets": [
@@ -1605,8 +969,6 @@
             "GUID": "1b0342b0-d819-11e7-8683-2f809a0e46e8",
             "name": "MovieLens",
             "type": "bucket",
-            "description": "",
-            "comments": "",
             "collectionIds": [
                 "32512450-d819-11e7-8683-2f809a0e46e8",
                 "c7fd1210-d81a-11e7-8683-2f809a0e46e8",
@@ -1643,7 +1005,8 @@
                 }
             ],
             "_indexName": "_index",
-            "_indexType": "string"
+            "_indexType": "string",
+            "isActivated": true
         }
     ],
     "views": [],
@@ -1656,15 +1019,19 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "c7fd1210-d81a-11e7-8683-2f809a0e46e8",
             "parentField": [
-                "c7fd1210-d81a-11e7-8683-2f809a0e46e8",
-                "c801f411-d81a-11e7-8683-2f809a0e46e8"
+                [
+                    "c7fd1210-d81a-11e7-8683-2f809a0e46e8",
+                    "c801f411-d81a-11e7-8683-2f809a0e46e8"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "30701d60-d81b-11e7-8683-2f809a0e46e8",
             "childField": [
-                "30701d60-d81b-11e7-8683-2f809a0e46e8",
-                "30774953-d81b-11e7-8683-2f809a0e46e8",
-                "3bac1760-d81b-11e7-8683-2f809a0e46e8"
+                [
+                    "30701d60-d81b-11e7-8683-2f809a0e46e8",
+                    "30774953-d81b-11e7-8683-2f809a0e46e8",
+                    "3bac1760-d81b-11e7-8683-2f809a0e46e8"
+                ]
             ],
             "childCardinality": "0..n"
         },
@@ -1676,15 +1043,19 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "32512450-d819-11e7-8683-2f809a0e46e8",
             "parentField": [
-                "32512450-d819-11e7-8683-2f809a0e46e8",
-                "32543191-d819-11e7-8683-2f809a0e46e8"
+                [
+                    "32512450-d819-11e7-8683-2f809a0e46e8",
+                    "32543191-d819-11e7-8683-2f809a0e46e8"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "30701d60-d81b-11e7-8683-2f809a0e46e8",
             "childField": [
-                "30701d60-d81b-11e7-8683-2f809a0e46e8",
-                "30774953-d81b-11e7-8683-2f809a0e46e8",
-                "42ac8a90-d81b-11e7-8683-2f809a0e46e8"
+                [
+                    "30701d60-d81b-11e7-8683-2f809a0e46e8",
+                    "30774953-d81b-11e7-8683-2f809a0e46e8",
+                    "42ac8a90-d81b-11e7-8683-2f809a0e46e8"
+                ]
             ],
             "childCardinality": "0..n"
         },
@@ -1696,16 +1067,20 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "0c8a3430-d81b-11e7-8683-2f809a0e46e8",
             "parentField": [
-                "0c8a3430-d81b-11e7-8683-2f809a0e46e8",
-                "0c8fd982-d81b-11e7-8683-2f809a0e46e8"
+                [
+                    "0c8a3430-d81b-11e7-8683-2f809a0e46e8",
+                    "0c8fd982-d81b-11e7-8683-2f809a0e46e8"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "32512450-d819-11e7-8683-2f809a0e46e8",
             "childField": [
-                "32512450-d819-11e7-8683-2f809a0e46e8",
-                "32543192-d819-11e7-8683-2f809a0e46e8",
-                "d4556e00-d819-11e7-8683-2f809a0e46e8",
-                "0583c300-d81a-11e7-8683-2f809a0e46e8"
+                [
+                    "32512450-d819-11e7-8683-2f809a0e46e8",
+                    "32543192-d819-11e7-8683-2f809a0e46e8",
+                    "d4556e00-d819-11e7-8683-2f809a0e46e8",
+                    "0583c300-d81a-11e7-8683-2f809a0e46e8"
+                ]
             ],
             "childCardinality": "0..n"
         },
@@ -1717,15 +1092,19 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "c7fd1210-d81a-11e7-8683-2f809a0e46e8",
             "parentField": [
-                "c7fd1210-d81a-11e7-8683-2f809a0e46e8",
-                "c801f411-d81a-11e7-8683-2f809a0e46e8"
+                [
+                    "c7fd1210-d81a-11e7-8683-2f809a0e46e8",
+                    "c801f411-d81a-11e7-8683-2f809a0e46e8"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
             "childField": [
-                "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
-                "d3fa7563-d81c-11e7-8683-2f809a0e46e8",
-                "dcb62d20-d81c-11e7-8683-2f809a0e46e8"
+                [
+                    "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
+                    "d3fa7563-d81c-11e7-8683-2f809a0e46e8",
+                    "dcb62d20-d81c-11e7-8683-2f809a0e46e8"
+                ]
             ],
             "childCardinality": "0..n"
         },
@@ -1737,15 +1116,19 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "32512450-d819-11e7-8683-2f809a0e46e8",
             "parentField": [
-                "32512450-d819-11e7-8683-2f809a0e46e8",
-                "32543191-d819-11e7-8683-2f809a0e46e8"
+                [
+                    "32512450-d819-11e7-8683-2f809a0e46e8",
+                    "32543191-d819-11e7-8683-2f809a0e46e8"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
             "childField": [
-                "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
-                "d3fa7563-d81c-11e7-8683-2f809a0e46e8",
-                "e6397aa0-d81c-11e7-8683-2f809a0e46e8"
+                [
+                    "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
+                    "d3fa7563-d81c-11e7-8683-2f809a0e46e8",
+                    "e6397aa0-d81c-11e7-8683-2f809a0e46e8"
+                ]
             ],
             "childCardinality": "0..n"
         },
@@ -1757,15 +1140,19 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "32512450-d819-11e7-8683-2f809a0e46e8",
             "parentField": [
-                "32512450-d819-11e7-8683-2f809a0e46e8",
-                "32543191-d819-11e7-8683-2f809a0e46e8"
+                [
+                    "32512450-d819-11e7-8683-2f809a0e46e8",
+                    "32543191-d819-11e7-8683-2f809a0e46e8"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "b6454160-d81e-11e7-8683-2f809a0e46e8",
             "childField": [
-                "b6454160-d81e-11e7-8683-2f809a0e46e8",
-                "b64da5d2-d81e-11e7-8683-2f809a0e46e8",
-                "9bd4cd90-d81f-11e7-8683-2f809a0e46e8"
+                [
+                    "b6454160-d81e-11e7-8683-2f809a0e46e8",
+                    "b64da5d2-d81e-11e7-8683-2f809a0e46e8",
+                    "9bd4cd90-d81f-11e7-8683-2f809a0e46e8"
+                ]
             ],
             "childCardinality": "0..n"
         },
@@ -1777,15 +1164,19 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
             "parentField": [
-                "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
-                "d3fa7562-d81c-11e7-8683-2f809a0e46e8"
+                [
+                    "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
+                    "d3fa7562-d81c-11e7-8683-2f809a0e46e8"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "b6454160-d81e-11e7-8683-2f809a0e46e8",
             "childField": [
-                "b6454160-d81e-11e7-8683-2f809a0e46e8",
-                "b64da5d2-d81e-11e7-8683-2f809a0e46e8",
-                "a622be10-d81f-11e7-8683-2f809a0e46e8"
+                [
+                    "b6454160-d81e-11e7-8683-2f809a0e46e8",
+                    "b64da5d2-d81e-11e7-8683-2f809a0e46e8",
+                    "a622be10-d81f-11e7-8683-2f809a0e46e8"
+                ]
             ],
             "childCardinality": "0..n"
         },
@@ -1797,20 +1188,25 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
             "parentField": [
-                "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
-                "d3fa7562-d81c-11e7-8683-2f809a0e46e8"
+                [
+                    "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
+                    "d3fa7562-d81c-11e7-8683-2f809a0e46e8"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "4f22c000-d820-11e7-8683-2f809a0e46e8",
             "childField": [
-                "4f22c000-d820-11e7-8683-2f809a0e46e8",
-                "4f2cf933-d820-11e7-8683-2f809a0e46e8",
-                "5b4fd0c0-d820-11e7-8683-2f809a0e46e8"
+                [
+                    "4f22c000-d820-11e7-8683-2f809a0e46e8",
+                    "4f2cf933-d820-11e7-8683-2f809a0e46e8",
+                    "5b4fd0c0-d820-11e7-8683-2f809a0e46e8"
+                ]
             ],
             "childCardinality": "0..n"
         }
     ],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "edcb4670-d81e-11e7-8683-2f809a0e46e8": "tmdbId",
         "eaaf3960-d81e-11e7-8683-2f809a0e46e8": "imdbId",
@@ -1869,34 +1265,57 @@
         "4f2cf933-d820-11e7-8683-2f809a0e46e8": "_source",
         "4f22c000-d820-11e7-8683-2f809a0e46e8": "genome-tags",
         "5b4fd0c0-d820-11e7-8683-2f809a0e46e8": "tagId",
-        "c93d99a0-d820-11e7-8683-2f809a0e46e8": "tag"
+        "c93d99a0-d820-11e7-8683-2f809a0e46e8": "tag",
+        "4d20c7c0-d81b-11e7-8683-2f809a0e46e8": "New Relationship",
+        "5313c290-d81b-11e7-8683-2f809a0e46e8": "New Relationship(1)",
+        "c75a9b10-d81b-11e7-8683-2f809a0e46e8": "New Relationship(2)",
+        "e52c2950-d81c-11e7-8683-2f809a0e46e8": "New Relationship(3)",
+        "f0159680-d81c-11e7-8683-2f809a0e46e8": "New Relationship(4)",
+        "a48e1450-d81f-11e7-8683-2f809a0e46e8": "New Relationship(5)",
+        "b04cf9f0-d81f-11e7-8683-2f809a0e46e8": "New Relationship(6)",
+        "d90bc5f0-d820-11e7-8683-2f809a0e46e8": "New Relationship(7)"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
         "GUID": "1965bf51-d819-11e7-8683-2f809a0e46e8"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "acd2e8a3-affe-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "1965bf52-d819-11e7-8683-2f809a0e46e8"
     },
+    "sources": [],
+    "decorativeSymbols": [],
     "dbVersion": "5.6.x",
     "dbVendor": "Elasticsearch",
     "port": 9200,
     "appTarget": "ELASTICSEARCH",
     "creationTS": "2017-12-03T10:59:56.997Z",
+    "GUID": "1965bf50-d819-11e7-8683-2f809a0e46e8",
+    "code": "",
+    "lastModifTS": "2022-03-30T07:58:53.612Z",
+    "persistenceSchemaVersion": "6",
+    "description": "Derived from https://github.com/elastic/examples/tree/master/Graph/movie_recommendations example",
+    "comments": "",
+    "author": "",
+    "version": "",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "Elasticsearch",
-        "pluginVersion": "0.1.13",
+        "pluginVersion": "0.1.27",
         "pluginEngineVersion": "1.0.0"
     },
     "hackoladeMeta": {
         "namingConvention": ""
     },
     "applicationInformation": {
-        "version": "2.4.1"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -1934,10 +1353,10 @@
                     },
                     {
                         "GUID": "32512450-d819-11e7-8683-2f809a0e46e8",
-                        "x": 640,
-                        "y": 264,
-                        "width": 284,
-                        "height": 184,
+                        "x": 707,
+                        "y": 274.82937685459945,
+                        "width": 235,
+                        "height": 231,
                         "color": {
                             "hsl": {
                                 "h": 3.789473684210526,
@@ -1964,26 +1383,26 @@
                     },
                     {
                         "GUID": "c7fd1210-d81a-11e7-8683-2f809a0e46e8",
-                        "x": 104,
-                        "y": 673,
-                        "width": 264,
-                        "height": 128,
+                        "x": 117,
+                        "y": 816,
+                        "width": 222,
+                        "height": 159,
                         "color": {}
                     },
                     {
                         "GUID": "0c8a3430-d81b-11e7-8683-2f809a0e46e8",
-                        "x": 109,
-                        "y": 150,
-                        "width": 264,
-                        "height": 100,
+                        "x": 128,
+                        "y": 177.67507418397634,
+                        "width": 199,
+                        "height": 123,
                         "color": {}
                     },
                     {
                         "GUID": "30701d60-d81b-11e7-8683-2f809a0e46e8",
-                        "x": 650,
-                        "y": 673,
-                        "width": 264,
-                        "height": 128,
+                        "x": 717,
+                        "y": 816,
+                        "width": 218,
+                        "height": 159,
                         "color": {
                             "hsl": {
                                 "h": 3.789473684210526,
@@ -2010,10 +1429,10 @@
                     },
                     {
                         "GUID": "d3f25f10-d81c-11e7-8683-2f809a0e46e8",
-                        "x": 102,
-                        "y": 474,
-                        "width": 264,
-                        "height": 142,
+                        "x": 58,
+                        "y": 583,
+                        "width": 340,
+                        "height": 177,
                         "color": {
                             "hsl": {
                                 "h": 3.789473684210526,
@@ -2040,10 +1459,10 @@
                     },
                     {
                         "GUID": "b6454160-d81e-11e7-8683-2f809a0e46e8",
-                        "x": 105,
-                        "y": 291.7142857142857,
-                        "width": 264,
-                        "height": 128,
+                        "x": 114,
+                        "y": 353.0807545570159,
+                        "width": 227,
+                        "height": 159,
                         "color": {
                             "hsl": {
                                 "h": 3.789473684210526,
@@ -2070,10 +1489,10 @@
                     },
                     {
                         "GUID": "4f22c000-d820-11e7-8683-2f809a0e46e8",
-                        "x": 508,
-                        "y": 510.7142857142858,
-                        "width": 264,
-                        "height": 114,
+                        "x": 582.4842738775528,
+                        "y": 629.947476864285,
+                        "width": 195,
+                        "height": 141,
                         "color": {}
                     },
                     {
@@ -2155,7 +1574,7 @@
                     },
                     {
                         "GUID": "ac2700e1-2b1e-11e7-bde4-57d99ab8fafb",
-                        "x": 228,
+                        "x": 130,
                         "y": 396,
                         "width": 193,
                         "height": 149,
@@ -2283,7 +1702,7 @@
                     },
                     {
                         "GUID": "97abffb1-1ed1-11e8-bfff-af9e00eabe08",
-                        "x": 140,
+                        "x": 95,
                         "y": 440,
                         "width": 263,
                         "height": 380,
@@ -2300,80 +1719,40 @@
                 ],
                 "buckets": [
                     {
-                        "x": 93.71428571428572,
-                        "y": 77.71428571428572,
-                        "GUID": "82551e60-c4c4-11e7-89c7-0bdf55433e4f"
-                    },
-                    {
-                        "x": 62,
-                        "y": 80,
+                        "x": 18,
+                        "y": 137.67507418397634,
                         "GUID": "1b0342b0-d819-11e7-8683-2f809a0e46e8"
-                    },
-                    {
-                        "x": 50,
-                        "y": 50,
-                        "GUID": "35198b10-ffec-11e6-bc11-bba283d07659"
-                    },
-                    {
-                        "x": 120,
-                        "y": 120,
-                        "GUID": "77cd15e0-00d6-11e7-94c9-270ac0401f9d"
-                    },
-                    {
-                        "x": 40,
-                        "y": 40,
-                        "GUID": "889afef0-00d6-11e7-94c9-270ac0401f9d"
-                    },
-                    {
-                        "x": 60,
-                        "y": 80,
-                        "GUID": "e43995f0-00d6-11e7-94c9-270ac0401f9d"
-                    },
-                    {
-                        "x": 160,
-                        "y": 160,
-                        "GUID": "9b213ef0-2b1e-11e7-bde4-57d99ab8fafb"
-                    },
-                    {
-                        "x": 183,
-                        "y": 26,
-                        "GUID": "ac3be870-2b1e-11e7-bde4-57d99ab8fafb"
-                    },
-                    {
-                        "x": 200,
-                        "y": 200,
-                        "GUID": "134c8460-1ed1-11e8-bfff-af9e00eabe08"
-                    },
-                    {
-                        "x": 50,
-                        "y": 20,
-                        "GUID": "1ab3a8a0-1ed1-11e8-bfff-af9e00eabe08"
-                    },
-                    {
-                        "x": 50,
-                        "y": 20,
-                        "GUID": "97bb9010-1ed1-11e8-bfff-af9e00eabe08"
                     }
                 ],
                 "collapsedNodes": [],
                 "activeRelationship": "",
-                "selectedCollections": [],
-                "graphView": {
-                    "erd": [],
-                    "buckets": []
-                },
                 "activeRelationshipFields": {
                     "childField": [],
                     "parentField": []
                 },
-                "displayColorPicker": false
+                "selectedCollections": [
+                    "c7fd1210-d81a-11e7-8683-2f809a0e46e8",
+                    "30701d60-d81b-11e7-8683-2f809a0e46e8"
+                ],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true
+            "shouldDistributeCollections": false
         }
     }
 }

@@ -1,11 +1,5 @@
 {
-    "GUID": "7b9d3860-6da6-11e8-977e-574156f5cc39",
-    "lastModifTS": "2018-06-11T21:41:34.937Z",
-    "persistenceSchemaVersion": "1",
-    "description": "",
-    "comments": "",
-    "author": "",
-    "version": "",
+    "modelName": "New model",
     "collections": [
         {
             "bucketId": "9d911590-6da6-11e8-977e-574156f5cc39",
@@ -16,22 +10,9 @@
                     "name": "description",
                     "GUID": "9d7e50e2-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Seaweed and fish",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -39,22 +20,9 @@
                     "name": "categoryName",
                     "GUID": "9d7e50e3-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Seafood",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -62,22 +30,9 @@
                     "name": "picture",
                     "GUID": "9d7e50e4-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "0x151C2F00020000000D000E0014002100FFFFFFFF4269746D617020496D616765005061696E742E5069637475726500010500000200000007000000504272757368000000000000000000A0290000424D98290000000000005600000028000000AC00000078000000010004000000000000000000880B0000880B0000080000",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -86,27 +41,9 @@
                     "childType": "number",
                     "GUID": "9d7e50e5-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 8,
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -117,7 +54,6 @@
                 "type": "definitions"
             },
             "collectionName": "Category",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "9d8332e0-6da6-11e8-977e-574156f5cc39",
@@ -132,11 +68,13 @@
                     "type": "node_label_property",
                     "provider": "{\n    \"version\": \"2.0\",\n    \"key\": \"lucene+native\"\n}",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "9d911590-6da6-11e8-977e-574156f5cc39",
@@ -147,22 +85,9 @@
                     "name": "country",
                     "GUID": "9d7eed22-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Poland",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -170,22 +95,9 @@
                     "name": "contactTitle",
                     "GUID": "9d7eed23-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Owner",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -193,22 +105,9 @@
                     "name": "address",
                     "GUID": "9d7eed24-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "ul. Filtrowa 68",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -216,22 +115,9 @@
                     "name": "phone",
                     "GUID": "9d7eed25-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "(26) 642-7012",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -239,22 +125,9 @@
                     "name": "city",
                     "GUID": "9d7eed26-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Warszawa",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -262,22 +135,9 @@
                     "name": "contactName",
                     "GUID": "9d7eed27-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Zbyszek Piestrzeniewicz",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -285,22 +145,9 @@
                     "name": "companyName",
                     "GUID": "9d7eed28-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Wolski  Zajazd",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "multiple",
@@ -353,10 +200,7 @@
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -364,22 +208,9 @@
                     "name": "customerID",
                     "GUID": "9d7eed2a-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "WOLZA",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -387,22 +218,9 @@
                     "name": "fax",
                     "GUID": "9d7eed2b-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "(26) 642-7012",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -410,22 +228,9 @@
                     "name": "region",
                     "GUID": "9d7eed2c-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "NULL",
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -436,7 +241,6 @@
                 "type": "definitions"
             },
             "collectionName": "Customer",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "9d8359f0-6da6-11e8-977e-574156f5cc39",
@@ -451,11 +255,13 @@
                     "type": "node_label_property",
                     "provider": "{\n    \"version\": \"2.0\",\n    \"key\": \"lucene+native\"\n}",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "9d911590-6da6-11e8-977e-574156f5cc39",
@@ -511,10 +317,7 @@
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -523,27 +326,9 @@
                     "childType": "number",
                     "GUID": "9d80e8f3-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 11077,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -552,27 +337,9 @@
                     "childType": "number",
                     "GUID": "9d80e8f4-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 8.53,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -580,22 +347,9 @@
                     "name": "requiredDate",
                     "GUID": "9d80e8f5-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "1998-06-03 00:00:00.000",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -604,27 +358,9 @@
                     "childType": "number",
                     "GUID": "9d80e8f6-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 1,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -632,22 +368,9 @@
                     "name": "shipName",
                     "GUID": "9d80e8f7-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Rattlesnake Canyon Grocery",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "multiple",
@@ -700,10 +423,7 @@
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "type": "multiple",
@@ -756,10 +476,7 @@
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "type": "multiple",
@@ -812,10 +529,7 @@
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -824,27 +538,9 @@
                     "childType": "number",
                     "GUID": "9d80e8fb-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 2,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -852,22 +548,9 @@
                     "name": "customerID",
                     "GUID": "9d80e8fc-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "RATTC",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -875,22 +558,9 @@
                     "name": "shippedDate",
                     "GUID": "9d80e8fd-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "NULL",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -898,22 +568,9 @@
                     "name": "shipRegion",
                     "GUID": "9d80e8fe-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "NM",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -921,22 +578,9 @@
                     "name": "orderDate",
                     "GUID": "9d80e8ff-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "1998-05-06 00:00:00.000",
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -947,7 +591,6 @@
                 "type": "definitions"
             },
             "collectionName": "Order",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "9d8359f3-6da6-11e8-977e-574156f5cc39",
@@ -962,11 +605,13 @@
                     "type": "node_label_property",
                     "provider": "{\n    \"version\": \"2.0\",\n    \"key\": \"lucene+native\"\n}",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "9d911590-6da6-11e8-977e-574156f5cc39",
@@ -978,27 +623,9 @@
                     "childType": "number",
                     "GUID": "9d804cb2-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 15,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1007,27 +634,9 @@
                     "childType": "number",
                     "GUID": "9d804cb3-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 32,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1036,27 +645,9 @@
                     "childType": "number",
                     "GUID": "9d804cb4-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 13,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1065,27 +656,9 @@
                     "childType": "number",
                     "GUID": "9d804cb5-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 12,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1094,27 +667,9 @@
                     "childType": "number",
                     "GUID": "9d804cb6-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 77,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1122,22 +677,9 @@
                     "name": "quantityPerUnit",
                     "GUID": "9d804cb7-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "12 boxes",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "boolean",
@@ -1146,19 +688,9 @@
                     "childType": "boolean",
                     "GUID": "9d804cb8-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "default": "",
-                    "enum": [],
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignField": [],
                     "sample": false,
-                    "unique": false,
-                    "foreignCollection": ""
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1166,22 +698,9 @@
                     "name": "productName",
                     "GUID": "9d804cb9-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Original Frankfurter grüne Soße",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1190,27 +709,9 @@
                     "childType": "number",
                     "GUID": "9d804cba-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 0,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1219,27 +720,9 @@
                     "childType": "number",
                     "GUID": "9d804cbb-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 2,
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -1250,7 +733,6 @@
                 "type": "definitions"
             },
             "collectionName": "Product",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "9d8359f2-6da6-11e8-977e-574156f5cc39",
@@ -1265,11 +747,13 @@
                     "type": "node_label_property",
                     "provider": "{\n    \"version\": \"2.0\",\n    \"key\": \"lucene+native\"\n}",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "9d911590-6da6-11e8-977e-574156f5cc39",
@@ -1325,10 +809,7 @@
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1336,22 +817,9 @@
                     "name": "contactTitle",
                     "GUID": "9d7ffe95-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Accounting Manager",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "multiple",
@@ -1404,10 +872,7 @@
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1416,27 +881,9 @@
                     "childType": "number",
                     "GUID": "9d7ffe97-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 29,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "multiple",
@@ -1489,10 +936,7 @@
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "type": "multiple",
@@ -1545,10 +989,7 @@
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1556,22 +997,9 @@
                     "name": "contactName",
                     "GUID": "9d7ffe9a-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Chantal Goulet",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1579,22 +1007,9 @@
                     "name": "companyName",
                     "GUID": "9d7ffe9b-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Forêts d'érables",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "multiple",
@@ -1647,10 +1062,7 @@
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1658,22 +1070,9 @@
                     "name": "region",
                     "GUID": "9d7ffe9d-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Québec",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "multiple",
@@ -1726,10 +1125,7 @@
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -1737,22 +1133,9 @@
                     "name": "homePage",
                     "GUID": "9d7ffe9f-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "NULL",
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -1763,7 +1146,6 @@
                 "type": "definitions"
             },
             "collectionName": "Supplier",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "9d8359f1-6da6-11e8-977e-574156f5cc39",
@@ -1778,11 +1160,13 @@
                     "type": "node_label_property",
                     "provider": "{\n    \"version\": \"2.0\",\n    \"key\": \"lucene+native\"\n}",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -1790,8 +1174,6 @@
             "GUID": "9d911590-6da6-11e8-977e-574156f5cc39",
             "name": "graph.db",
             "type": "bucket",
-            "description": "",
-            "comments": "",
             "collectionIds": [
                 "9d7e50e1-6da6-11e8-977e-574156f5cc39",
                 "9d7eed21-6da6-11e8-977e-574156f5cc39",
@@ -1808,7 +1190,8 @@
             "show": true,
             "indexes": [],
             "addFieldsToBucket": true,
-            "isPlugin": true
+            "isPlugin": true,
+            "isActivated": true
         }
     ],
     "views": [],
@@ -1826,6 +1209,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "9d911590-6da6-11e8-977e-574156f5cc39",
+            "level": "entity",
             "properties": [
                 {
                     "type": "numeric",
@@ -1834,27 +1218,9 @@
                     "childType": "number",
                     "GUID": "9d83a812-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 18,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1863,27 +1229,9 @@
                     "childType": "number",
                     "GUID": "9d83a813-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 0,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1892,27 +1240,9 @@
                     "childType": "number",
                     "GUID": "9d83a814-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 28,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1921,27 +1251,9 @@
                     "childType": "number",
                     "GUID": "9d83a815-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 39,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1950,27 +1262,9 @@
                     "childType": "number",
                     "GUID": "9d83a816-6da6-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 10830,
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -1987,6 +1281,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "9d911590-6da6-11e8-977e-574156f5cc39",
+            "level": "entity",
             "properties": []
         },
         {
@@ -2002,10 +1297,12 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "9d911590-6da6-11e8-977e-574156f5cc39",
+            "level": "entity",
             "properties": []
         }
     ],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "9d7e50e2-6da6-11e8-977e-574156f5cc39": "description",
         "9d7e50e3-6da6-11e8-977e-574156f5cc39": "categoryName",
@@ -2066,29 +1363,50 @@
         "9d913ca0-6da6-11e8-977e-574156f5cc39": "ORDERS",
         "9d913ca1-6da6-11e8-977e-574156f5cc39": "PART_OF",
         "9d913ca2-6da6-11e8-977e-574156f5cc39": "PURCHASED",
-        "9d911590-6da6-11e8-977e-574156f5cc39": "graph.db"
+        "9d911590-6da6-11e8-977e-574156f5cc39": "graph.db",
+        "9d83a812-6da6-11e8-977e-574156f5cc39": "unitPrice",
+        "9d83a813-6da6-11e8-977e-574156f5cc39": "discount",
+        "9d83a814-6da6-11e8-977e-574156f5cc39": "quantity",
+        "9d83a815-6da6-11e8-977e-574156f5cc39": "productID",
+        "9d83a816-6da6-11e8-977e-574156f5cc39": "orderID"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
         "GUID": "7b9d3861-6da6-11e8-977e-574156f5cc39"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "b45dc4b2-b002-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "7b9d3862-6da6-11e8-977e-574156f5cc39"
     },
-    "modelName": "New model",
+    "sources": [],
+    "decorativeSymbols": [],
     "dbVersion": "3.x",
     "dbVendor": "Neo4j",
     "appTarget": "NEO4J",
     "creationTS": "2018-06-11T18:37:24.070Z",
-    "hideModelViews": false,
+    "GUID": "7b9d3860-6da6-11e8-977e-574156f5cc39",
+    "lastModifTS": "2022-03-30T08:23:54.348Z",
+    "persistenceSchemaVersion": "6",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
     "isCreatedByPlugin": true,
     "pluginInformation": {
-        "pluginVersion": "0.1.1",
         "pluginName": "Neo4j",
+        "pluginVersion": "0.1.39",
         "pluginEngineVersion": "1.0.0"
+    },
+    "hackoladeMeta": {},
+    "applicationInformation": {
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -2178,15 +1496,65 @@
                     "childField": [],
                     "parentField": []
                 },
-                "selectedCollections": [],
-                "displayColorPicker": false
+                "selectedCollections": [
+                    "9d7ffe93-6da6-11e8-977e-574156f5cc39"
+                ],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "9d7e50e1-6da6-11e8-977e-574156f5cc39",
+                            "x": 486.3765317638937,
+                            "y": 455.40637144290986,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "9d7eed21-6da6-11e8-977e-574156f5cc39",
+                            "x": 463.3102817599892,
+                            "y": 100,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "9d7ffe93-6da6-11e8-977e-574156f5cc39",
+                            "x": 743.5139990023068,
+                            "y": 218.5703768115563,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "9d804cb1-6da6-11e8-977e-574156f5cc39",
+                            "x": 186.68951940067822,
+                            "y": 474.0322766488535,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "9d80e8f1-6da6-11e8-977e-574156f5cc39",
+                            "x": 172.26533534166572,
+                            "y": 173.7463299714124,
+                            "size": 100
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 132.26533534166572,
+                            "y": 60,
+                            "GUID": "9d911590-6da6-11e8-977e-574156f5cc39"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true
+            "shouldDistributeCollections": false
         }
     }
 }

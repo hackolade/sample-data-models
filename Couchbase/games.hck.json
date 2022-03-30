@@ -1,11 +1,5 @@
 {
-    "GUID": "2a1e91b0-ffec-11e6-bc11-bba283d07659",
-    "lastModifTS": "2017-03-04T11:18:41.260Z",
-    "persistenceSchemaVersion": "1",
-    "description": "games-sample application described in http://docs.couchbase.com/admin/admin/Misc/sample-bucket-game.html",
-    "comments": "",
-    "author": "",
-    "version": "",
+    "modelName": "New Model",
     "collections": [
         {
             "bucketId": "35198b10-ffec-11e6-bc11-bba283d07659",
@@ -16,13 +10,10 @@
                     "type": "string",
                     "name": "KEY",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
                     "GUID": "350cb9d5-ffec-11e6-bc11-bba283d07659",
-                    "sample": "Axe_14e3ad7b-8469-444e-8057-ac5aefcdf89e"
+                    "sample": "Axe_14e3ad7b-8469-444e-8057-ac5aefcdf89e",
+                    "isActivated": true,
+                    "containerLevelKey": true
                 },
                 {
                     "type": "string",
@@ -31,12 +22,10 @@
                     "name": "jsonType",
                     "GUID": "350cb9d1-ffec-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "item"
+                    "sample": "item",
+                    "isActivated": true,
+                    "containerLevelKey": true
                 },
                 {
                     "type": "string",
@@ -44,12 +33,9 @@
                     "name": "name",
                     "GUID": "350cb9d2-ffec-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Axe_14e3ad7b-8469-444e-8057-ac5aefcdf89e"
+                    "sample": "Axe_14e3ad7b-8469-444e-8057-ac5aefcdf89e",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -57,12 +43,9 @@
                     "name": "uuid",
                     "GUID": "350cb9d3-ffec-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "14e3ad7b-8469-444e-8057-ac5aefcdf89e"
+                    "sample": "14e3ad7b-8469-444e-8057-ac5aefcdf89e",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -76,9 +59,9 @@
                         "350da431-ffec-11e6-bc11-bba283d07659",
                         "350da439-ffec-11e6-bc11-bba283d07659"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Benjamin2"
+                    "sample": "Benjamin2",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -88,7 +71,9 @@
                 "properties": [],
                 "type": "definitions"
             },
-            "collectionName": "item"
+            "collectionName": "item",
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "35198b10-ffec-11e6-bc11-bba283d07659",
@@ -99,13 +84,10 @@
                     "type": "string",
                     "name": "KEY",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
                     "GUID": "350d2f0e-ffec-11e6-bc11-bba283d07659",
-                    "sample": "Bauchan0"
+                    "sample": "Bauchan0",
+                    "isActivated": true,
+                    "containerLevelKey": true
                 },
                 {
                     "type": "string",
@@ -114,12 +96,10 @@
                     "name": "jsonType",
                     "GUID": "350d2f0b-ffec-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "monster"
+                    "sample": "monster",
+                    "isActivated": true,
+                    "containerLevelKey": true
                 },
                 {
                     "type": "numeric",
@@ -128,13 +108,9 @@
                     "name": "experienceWhenKilled",
                     "GUID": "350d2f08-ffec-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
                     "sample": 28,
-                    "mode": "integer32"
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -143,13 +119,9 @@
                     "name": "hitpoints",
                     "GUID": "350d2f09-ffec-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
                     "sample": 3755,
-                    "mode": "integer32"
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -158,13 +130,9 @@
                     "name": "itemProbability",
                     "GUID": "350d2f0a-ffec-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
                     "sample": 0.31149362634773436,
-                    "mode": "double"
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -172,12 +140,9 @@
                     "name": "name",
                     "GUID": "350d2f0c-ffec-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Bauchan0"
+                    "sample": "Bauchan0",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -185,12 +150,9 @@
                     "name": "uuid",
                     "GUID": "350d2f0d-ffec-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "0ca96555-7543-4497-b707-341c320b1ad6"
+                    "sample": "0ca96555-7543-4497-b707-341c320b1ad6",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -200,7 +162,9 @@
                 "properties": [],
                 "type": "definitions"
             },
-            "collectionName": "monster"
+            "collectionName": "monster",
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "35198b10-ffec-11e6-bc11-bba283d07659",
@@ -211,15 +175,13 @@
                     "type": "string",
                     "name": "KEY",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "childRelationships": [
                         "3d8722d0-ffec-11e6-bc11-bba283d07659"
                     ],
-                    "required": false,
                     "GUID": "350da439-ffec-11e6-bc11-bba283d07659",
-                    "sample": "Aaron0"
+                    "sample": "Aaron0",
+                    "isActivated": true,
+                    "containerLevelKey": true
                 },
                 {
                     "type": "string",
@@ -228,12 +190,10 @@
                     "name": "jsonType",
                     "GUID": "350da434-ffec-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "player"
+                    "sample": "player",
+                    "isActivated": true,
+                    "containerLevelKey": true
                 },
                 {
                     "type": "numeric",
@@ -242,13 +202,9 @@
                     "name": "experience",
                     "GUID": "350da432-ffec-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
                     "sample": 14746,
-                    "mode": "integer32"
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -257,13 +213,9 @@
                     "name": "hitpoints",
                     "GUID": "350da433-ffec-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
                     "sample": 20210,
-                    "mode": "integer32"
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -272,13 +224,9 @@
                     "name": "level",
                     "GUID": "350da435-ffec-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
                     "sample": 146,
-                    "mode": "integer32"
+                    "isActivated": true
                 },
                 {
                     "type": "boolean",
@@ -286,12 +234,9 @@
                     "name": "loggedIn",
                     "GUID": "350da436-ffec-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": true
+                    "sample": true,
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -299,12 +244,9 @@
                     "name": "name",
                     "GUID": "350da437-ffec-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "Aaron0"
+                    "sample": "Aaron0",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -312,12 +254,9 @@
                     "name": "uuid",
                     "GUID": "350da438-ffec-11e6-bc11-bba283d07659",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "sample": "3b49dd18-1d56-478e-8ab1-fb38e31ce7e2"
+                    "sample": "3b49dd18-1d56-478e-8ab1-fb38e31ce7e2",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -327,7 +266,9 @@
                 "properties": [],
                 "type": "definitions"
             },
-            "collectionName": "player"
+            "collectionName": "player",
+            "isActivated": true,
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -335,8 +276,6 @@
             "GUID": "35198b10-ffec-11e6-bc11-bba283d07659",
             "name": "gamesim-sample",
             "type": "bucket",
-            "description": "",
-            "comments": "",
             "collectionIds": [
                 "350cb9d0-ffec-11e6-bc11-bba283d07659",
                 "350d2f07-ffec-11e6-bc11-bba283d07659",
@@ -359,14 +298,12 @@
             "accessControl": "Standart port",
             "password": "123",
             "conflictResolution": "Sequence number",
-            "replicasEnable": false,
             "replicasNumber": 1,
-            "replicasViewIndex": false,
             "bucketIOPriority": "Low (Default)",
-            "overrideDefault": false,
-            "setBucketFlushEnable": false
+            "isActivated": true
         }
     ],
+    "views": [],
     "relationships": [
         {
             "GUID": "3d8722d0-ffec-11e6-bc11-bba283d07659",
@@ -376,19 +313,24 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "350da431-ffec-11e6-bc11-bba283d07659",
             "parentField": [
-                "350da431-ffec-11e6-bc11-bba283d07659",
-                "350da439-ffec-11e6-bc11-bba283d07659"
+                [
+                    "350da431-ffec-11e6-bc11-bba283d07659",
+                    "350da439-ffec-11e6-bc11-bba283d07659"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "350cb9d0-ffec-11e6-bc11-bba283d07659",
             "childField": [
-                "350cb9d0-ffec-11e6-bc11-bba283d07659",
-                "350cb9d4-ffec-11e6-bc11-bba283d07659"
+                [
+                    "350cb9d0-ffec-11e6-bc11-bba283d07659",
+                    "350cb9d4-ffec-11e6-bc11-bba283d07659"
+                ]
             ],
             "childCardinality": "0..n"
         }
     ],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "350cb9d5-ffec-11e6-bc11-bba283d07659": "KEY",
         "350cb9d1-ffec-11e6-bc11-bba283d07659": "jsonType",
@@ -413,18 +355,47 @@
         "350da437-ffec-11e6-bc11-bba283d07659": "name",
         "350da438-ffec-11e6-bc11-bba283d07659": "uuid",
         "350da431-ffec-11e6-bc11-bba283d07659": "player",
-        "35198b10-ffec-11e6-bc11-bba283d07659": "gamesim-sample"
+        "35198b10-ffec-11e6-bc11-bba283d07659": "gamesim-sample",
+        "3d8722d0-ffec-11e6-bc11-bba283d07659": "fk player.KEY to item.ownerId"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
         "GUID": "2a1e91b1-ffec-11e6-bc11-bba283d07659"
     },
-    "databaseName": "New Model",
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "5dc91a53-affd-11ec-ab49-f732172fe980"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "5dc91a52-affd-11ec-ab49-f732172fe980"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
     "dbVendor": "Couchbase",
     "dbVersion": "v4.6",
     "appTarget": "COUCHBASE",
     "creationTS": "2017-03-03T08:34:06.539Z",
+    "GUID": "2a1e91b0-ffec-11e6-bc11-bba283d07659",
+    "lastModifTS": "2022-03-30T07:45:42.901Z",
+    "persistenceSchemaVersion": "6",
+    "description": "games-sample application described in http://docs.couchbase.com/admin/admin/Misc/sample-bucket-game.html",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.0.0"
+    },
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -535,10 +506,10 @@
                     },
                     {
                         "GUID": "350cb9d0-ffec-11e6-bc11-bba283d07659",
-                        "x": 240,
-                        "y": 290,
+                        "x": 274,
+                        "y": 339,
                         "width": 193,
-                        "height": 107,
+                        "height": 123,
                         "color": {
                             "hsl": {
                                 "h": 3.789473684210526,
@@ -567,8 +538,8 @@
                         "GUID": "350d2f07-ffec-11e6-bc11-bba283d07659",
                         "x": 390,
                         "y": 90,
-                        "width": 257,
-                        "height": 135,
+                        "width": 278,
+                        "height": 159,
                         "color": {
                             "hsl": {
                                 "h": 3.789473684210526,
@@ -597,8 +568,8 @@
                         "GUID": "350da431-ffec-11e6-bc11-bba283d07659",
                         "x": 90,
                         "y": 90,
-                        "width": 194,
-                        "height": 149
+                        "width": 214,
+                        "height": 177
                     },
                     {
                         "GUID": "4a8e3c70-f3f9-11e5-938a-bd54cc414623",
@@ -659,16 +630,6 @@
                 ],
                 "buckets": [
                     {
-                        "x": 40,
-                        "y": 40,
-                        "GUID": "85f04210-fac7-11e6-9f58-33155ddb31fb"
-                    },
-                    {
-                        "x": 80,
-                        "y": 80,
-                        "GUID": "2a1c47c0-ffec-11e6-bc11-bba283d07659"
-                    },
-                    {
                         "x": 50,
                         "y": 50,
                         "GUID": "35198b10-ffec-11e6-bc11-bba283d07659"
@@ -676,15 +637,30 @@
                 ],
                 "collapsedNodes": [],
                 "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
                 "selectedCollections": [],
-                "displayColorPicker": false
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
-            "nodes": [],
-            "details": true
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
         }
     }
 }

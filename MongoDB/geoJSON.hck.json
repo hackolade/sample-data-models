@@ -1,17 +1,10 @@
 {
-    "GUID": "2bd1d210-57f3-11e7-b5ff-dd5e79dcd289",
-    "lastModifTS": "2017-10-02T15:06:06.154Z",
-    "persistenceSchemaVersion": "1",
-    "description": "Re-usable external refernce model with geoJSON possibilities\nRef: https://tools.ietf.org/html/rfc7946#appendix-A",
-    "comments": "",
-    "author": "Pascal",
-    "version": "0.1",
+    "modelName": "geoJSON",
     "collections": [
         {
             "GUID": "a4622560-5846-11e7-b5ff-dd5e79dcd289",
             "type": "object",
             "description": "One geometry as defined by GeoJSON: https://tools.ietf.org/html/rfc7946#appendix-A\n\n",
-            "comments": "",
             "$schema": "http://json-schema.org/draft-04/schema#",
             "additionalProperties": false,
             "properties": [
@@ -26,10 +19,6 @@
                                     "type": "document",
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
                                     "properties": [
                                         {
                                             "enum": [
@@ -38,7 +27,8 @@
                                             "GUID": "791c9770-663b-11e7-8624-0dc6c9140dad",
                                             "name": "type",
                                             "primaryKey": false,
-                                            "type": "string"
+                                            "type": "string",
+                                            "isActivated": true
                                         },
                                         {
                                             "GUID": "80cc3660-663b-11e7-8624-0dc6c9140dad",
@@ -51,25 +41,21 @@
                                                 "a4622560-5846-11e7-b5ff-dd5e79dcd289",
                                                 "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
                                                 "a45eca01-5846-11e7-b5ff-dd5e79dcd289"
-                                            ]
+                                            ],
+                                            "isActivated": true
                                         }
                                     ],
-                                    "dependencies": [],
-                                    "minProperties": "",
-                                    "maxProperties": "",
                                     "additionalProperties": false,
-                                    "enum": [],
                                     "GUID": "6c8c3100-663b-11e7-8624-0dc6c9140dad",
-                                    "description": "",
-                                    "comments": "",
-                                    "required": false,
-                                    "id": "",
-                                    "name": "Point"
+                                    "name": "Point",
+                                    "isActivated": true
                                 }
                             ],
-                            "type": "subschema",
+                            "type": "document",
                             "primaryKey": false,
-                            "GUID": "a4622562-5846-11e7-b5ff-dd5e79dcd289"
+                            "GUID": "a4622562-5846-11e7-b5ff-dd5e79dcd289",
+                            "isActivated": true,
+                            "subschema": true
                         },
                         {
                             "title": "MultiPoint",
@@ -78,10 +64,6 @@
                                     "type": "document",
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
                                     "properties": [
                                         {
                                             "enum": [
@@ -90,7 +72,8 @@
                                             "GUID": "f5ce6fa0-663b-11e7-8624-0dc6c9140dad",
                                             "name": "type",
                                             "primaryKey": false,
-                                            "type": "string"
+                                            "type": "string",
+                                            "isActivated": true
                                         },
                                         {
                                             "GUID": "fc591690-663b-11e7-8624-0dc6c9140dad",
@@ -103,25 +86,21 @@
                                                 "a4622560-5846-11e7-b5ff-dd5e79dcd289",
                                                 "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
                                                 "a45f3f32-5846-11e7-b5ff-dd5e79dcd289"
-                                            ]
+                                            ],
+                                            "isActivated": true
                                         }
                                     ],
-                                    "dependencies": [],
-                                    "minProperties": "",
-                                    "maxProperties": "",
                                     "additionalProperties": false,
-                                    "enum": [],
                                     "GUID": "e940ef60-663b-11e7-8624-0dc6c9140dad",
-                                    "description": "",
-                                    "comments": "",
-                                    "required": false,
-                                    "id": "",
-                                    "name": "MultiPoint"
+                                    "name": "MultiPoint",
+                                    "isActivated": true
                                 }
                             ],
-                            "type": "subschema",
+                            "type": "document",
                             "primaryKey": false,
-                            "GUID": "a4622565-5846-11e7-b5ff-dd5e79dcd289"
+                            "GUID": "a4622565-5846-11e7-b5ff-dd5e79dcd289",
+                            "isActivated": true,
+                            "subschema": true
                         },
                         {
                             "title": "LineString",
@@ -130,10 +109,6 @@
                                     "type": "document",
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
                                     "properties": [
                                         {
                                             "enum": [
@@ -142,7 +117,8 @@
                                             "GUID": "7816cac0-663c-11e7-8624-0dc6c9140dad",
                                             "name": "type",
                                             "primaryKey": false,
-                                            "type": "string"
+                                            "type": "string",
+                                            "isActivated": true
                                         },
                                         {
                                             "GUID": "6e4f2140-663c-11e7-8624-0dc6c9140dad",
@@ -155,25 +131,21 @@
                                                 "a4622560-5846-11e7-b5ff-dd5e79dcd289",
                                                 "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
                                                 "a45f8d50-5846-11e7-b5ff-dd5e79dcd289"
-                                            ]
+                                            ],
+                                            "isActivated": true
                                         }
                                     ],
-                                    "dependencies": [],
-                                    "minProperties": "",
-                                    "maxProperties": "",
                                     "additionalProperties": false,
-                                    "enum": [],
                                     "GUID": "1846bf10-663c-11e7-8624-0dc6c9140dad",
-                                    "description": "",
-                                    "comments": "",
-                                    "required": false,
-                                    "id": "",
-                                    "name": "LineString"
+                                    "name": "LineString",
+                                    "isActivated": true
                                 }
                             ],
-                            "type": "subschema",
+                            "type": "document",
                             "primaryKey": false,
-                            "GUID": "a4622568-5846-11e7-b5ff-dd5e79dcd289"
+                            "GUID": "a4622568-5846-11e7-b5ff-dd5e79dcd289",
+                            "isActivated": true,
+                            "subschema": true
                         },
                         {
                             "title": "MultiLineString",
@@ -182,10 +154,6 @@
                                     "type": "document",
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
                                     "properties": [
                                         {
                                             "enum": [
@@ -194,16 +162,13 @@
                                             "GUID": "a8c0ad80-663c-11e7-8624-0dc6c9140dad",
                                             "name": "type",
                                             "primaryKey": false,
-                                            "type": "string"
+                                            "type": "string",
+                                            "isActivated": true
                                         },
                                         {
                                             "additionalItems": true,
-                                            "childRelationships": [],
-                                            "foreignCollection": "",
-                                            "foreignField": [],
                                             "GUID": "9d2e0800-663c-11e7-8624-0dc6c9140dad",
                                             "name": "coordinates",
-                                            "parentRelationship": "",
                                             "primaryKey": false,
                                             "properties": [
                                                 {
@@ -218,29 +183,26 @@
                                                         "a45f8d50-5846-11e7-b5ff-dd5e79dcd289"
                                                     ],
                                                     "refType": "internal",
-                                                    "type": "reference"
+                                                    "type": "reference",
+                                                    "isActivated": true
                                                 }
                                             ],
                                             "relationshipType": "",
-                                            "type": "array"
+                                            "type": "array",
+                                            "isActivated": true
                                         }
                                     ],
-                                    "dependencies": [],
-                                    "minProperties": "",
-                                    "maxProperties": "",
                                     "additionalProperties": false,
-                                    "enum": [],
                                     "GUID": "26a9c2a0-663c-11e7-8624-0dc6c9140dad",
-                                    "description": "",
-                                    "comments": "",
-                                    "required": false,
-                                    "id": "",
-                                    "name": "MultiLineString"
+                                    "name": "MultiLineString",
+                                    "isActivated": true
                                 }
                             ],
-                            "type": "subschema",
+                            "type": "document",
                             "primaryKey": false,
-                            "GUID": "a462256b-5846-11e7-b5ff-dd5e79dcd289"
+                            "GUID": "a462256b-5846-11e7-b5ff-dd5e79dcd289",
+                            "isActivated": true,
+                            "subschema": true
                         },
                         {
                             "title": "Polygon",
@@ -249,10 +211,6 @@
                                     "type": "document",
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
                                     "properties": [
                                         {
                                             "enum": [
@@ -261,7 +219,8 @@
                                             "GUID": "fde428c0-664e-11e7-8624-0dc6c9140dad",
                                             "name": "type",
                                             "primaryKey": false,
-                                            "type": "string"
+                                            "type": "string",
+                                            "isActivated": true
                                         },
                                         {
                                             "GUID": "e63b07c0-664e-11e7-8624-0dc6c9140dad",
@@ -274,25 +233,21 @@
                                                 "a4622560-5846-11e7-b5ff-dd5e79dcd289",
                                                 "a45eca00-5846-11e7-b5ff-dd5e79dcd289",
                                                 "a45fb461-5846-11e7-b5ff-dd5e79dcd289"
-                                            ]
+                                            ],
+                                            "isActivated": true
                                         }
                                     ],
-                                    "dependencies": [],
-                                    "minProperties": "",
-                                    "maxProperties": "",
                                     "additionalProperties": false,
-                                    "enum": [],
                                     "GUID": "38ed34b0-663c-11e7-8624-0dc6c9140dad",
-                                    "description": "",
-                                    "comments": "",
-                                    "required": false,
-                                    "id": "",
-                                    "name": "Polygon"
+                                    "name": "Polygon",
+                                    "isActivated": true
                                 }
                             ],
-                            "type": "subschema",
+                            "type": "document",
                             "primaryKey": false,
-                            "GUID": "a462256f-5846-11e7-b5ff-dd5e79dcd289"
+                            "GUID": "a462256f-5846-11e7-b5ff-dd5e79dcd289",
+                            "isActivated": true,
+                            "subschema": true
                         },
                         {
                             "title": "MultiPolygon",
@@ -301,10 +256,6 @@
                                     "type": "document",
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
                                     "properties": [
                                         {
                                             "enum": [
@@ -313,16 +264,13 @@
                                             "GUID": "3fa53290-664f-11e7-8624-0dc6c9140dad",
                                             "name": "type",
                                             "primaryKey": false,
-                                            "type": "string"
+                                            "type": "string",
+                                            "isActivated": true
                                         },
                                         {
                                             "additionalItems": true,
-                                            "childRelationships": [],
-                                            "foreignCollection": "",
-                                            "foreignField": [],
                                             "GUID": "3a323d30-664f-11e7-8624-0dc6c9140dad",
                                             "name": "coordinates",
-                                            "parentRelationship": "",
                                             "primaryKey": false,
                                             "properties": [
                                                 {
@@ -337,39 +285,32 @@
                                                         "a45fb461-5846-11e7-b5ff-dd5e79dcd289"
                                                     ],
                                                     "refType": "internal",
-                                                    "type": "reference"
+                                                    "type": "reference",
+                                                    "isActivated": true
                                                 }
                                             ],
                                             "relationshipType": "",
-                                            "type": "array"
+                                            "type": "array",
+                                            "isActivated": true
                                         }
                                     ],
-                                    "dependencies": [],
-                                    "minProperties": "",
-                                    "maxProperties": "",
                                     "additionalProperties": false,
-                                    "enum": [],
                                     "GUID": "57391880-663c-11e7-8624-0dc6c9140dad",
-                                    "description": "",
-                                    "comments": "",
-                                    "required": false,
-                                    "id": "",
-                                    "name": "MultiPolygons"
+                                    "name": "MultiPolygons",
+                                    "isActivated": true
                                 }
                             ],
-                            "type": "subschema",
+                            "type": "document",
                             "primaryKey": false,
-                            "GUID": "a4622572-5846-11e7-b5ff-dd5e79dcd289"
+                            "GUID": "a4622572-5846-11e7-b5ff-dd5e79dcd289",
+                            "isActivated": true,
+                            "subschema": true
                         }
                     ],
                     "primaryKey": false,
                     "GUID": "a4622561-5846-11e7-b5ff-dd5e79dcd289",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -379,57 +320,39 @@
                         "description": "A single position",
                         "type": "array",
                         "minItems": 2,
-                        "additionalItems": false,
                         "name": "position",
                         "primaryKey": false,
                         "GUID": "a45eca01-5846-11e7-b5ff-dd5e79dcd289",
-                        "relationshipType": "",
-                        "parentRelationship": "",
-                        "foreignCollection": "",
-                        "foreignField": [],
-                        "childRelationships": [],
                         "properties": [
                             {
                                 "type": "numeric",
                                 "arrayItem": true,
                                 "primaryKey": false,
                                 "GUID": "a45f3f30-5846-11e7-b5ff-dd5e79dcd289",
-                                "relationshipType": "",
-                                "parentRelationship": "",
-                                "foreignCollection": "",
-                                "foreignField": [],
-                                "childRelationships": [],
                                 "properties": [],
                                 "description": "Longitude in decimal degrees",
-                                "error": {
-                                    "minimum": true
-                                },
+                                "error": {},
                                 "minimum": "-180.0",
                                 "mode": "double",
                                 "maximum": 180,
                                 "sample": 4.3328727,
-                                "unit": "Decimal degrees"
+                                "unit": "Decimal degrees",
+                                "isActivated": true
                             },
                             {
                                 "type": "numeric",
                                 "arrayItem": true,
                                 "primaryKey": false,
                                 "GUID": "a45f3f31-5846-11e7-b5ff-dd5e79dcd289",
-                                "relationshipType": "",
-                                "parentRelationship": "",
-                                "foreignCollection": "",
-                                "foreignField": [],
-                                "childRelationships": [],
                                 "properties": [],
                                 "sample": 50.7636859,
-                                "error": {
-                                    "minimum": true
-                                },
+                                "error": {},
                                 "description": "Latitude in decimal degrees",
                                 "mode": "double",
                                 "unit": "Decimal degrees",
                                 "minimum": "-90.0",
-                                "maximum": 90
+                                "maximum": 90,
+                                "isActivated": true
                             }
                         ],
                         "definitionRefs": [
@@ -446,7 +369,8 @@
                                 "6c8c3100-663b-11e7-8624-0dc6c9140dad",
                                 "80cc3660-663b-11e7-8624-0dc6c9140dad"
                             ]
-                        ]
+                        ],
+                        "isActivated": true
                     },
                     {
                         "description": "An array of positions",
@@ -455,11 +379,6 @@
                         "primaryKey": false,
                         "additionalItems": true,
                         "GUID": "a45f3f32-5846-11e7-b5ff-dd5e79dcd289",
-                        "relationshipType": "",
-                        "parentRelationship": "",
-                        "foreignCollection": "",
-                        "foreignField": [],
-                        "childRelationships": [],
                         "properties": [
                             {
                                 "$ref": "#/definitions/position",
@@ -474,7 +393,7 @@
                                     "a45eca01-5846-11e7-b5ff-dd5e79dcd289"
                                 ],
                                 "ref": "a45eca01-5846-11e7-b5ff-dd5e79dcd289",
-                                "properties": []
+                                "isActivated": true
                             }
                         ],
                         "definitionRefs": [
@@ -491,7 +410,8 @@
                                 "e940ef60-663b-11e7-8624-0dc6c9140dad",
                                 "fc591690-663b-11e7-8624-0dc6c9140dad"
                             ]
-                        ]
+                        ],
+                        "isActivated": true
                     },
                     {
                         "description": "An array of two or more positions",
@@ -500,11 +420,6 @@
                         "primaryKey": false,
                         "additionalItems": true,
                         "GUID": "a45f8d50-5846-11e7-b5ff-dd5e79dcd289",
-                        "relationshipType": "",
-                        "parentRelationship": "",
-                        "foreignCollection": "",
-                        "foreignField": [],
-                        "childRelationships": [],
                         "properties": [
                             {
                                 "type": "choice",
@@ -522,23 +437,21 @@
                                             "a45f3f32-5846-11e7-b5ff-dd5e79dcd289"
                                         ],
                                         "ref": "a45f3f32-5846-11e7-b5ff-dd5e79dcd289",
-                                        "properties": []
+                                        "isActivated": true
                                     },
                                     {
                                         "minItems": 2,
-                                        "type": "subschema",
+                                        "type": "array",
                                         "primaryKey": false,
                                         "GUID": "a45f8d54-5846-11e7-b5ff-dd5e79dcd289",
-                                        "properties": []
+                                        "properties": [],
+                                        "isActivated": true,
+                                        "subschema": true
                                     }
                                 ],
                                 "primaryKey": false,
                                 "GUID": "a45f8d51-5846-11e7-b5ff-dd5e79dcd289",
-                                "relationshipType": "",
-                                "parentRelationship": "",
-                                "foreignCollection": "",
-                                "foreignField": [],
-                                "childRelationships": []
+                                "isActivated": true
                             }
                         ],
                         "definitionRefs": [
@@ -562,7 +475,8 @@
                                 "1846bf10-663c-11e7-8624-0dc6c9140dad",
                                 "6e4f2140-663c-11e7-8624-0dc6c9140dad"
                             ]
-                        ]
+                        ],
+                        "isActivated": true
                     },
                     {
                         "description": "An array of four positions where the first equals the last",
@@ -571,11 +485,6 @@
                         "primaryKey": false,
                         "additionalItems": true,
                         "GUID": "a45f8d55-5846-11e7-b5ff-dd5e79dcd289",
-                        "relationshipType": "",
-                        "parentRelationship": "",
-                        "foreignCollection": "",
-                        "foreignField": [],
-                        "childRelationships": [],
                         "properties": [
                             {
                                 "type": "choice",
@@ -593,33 +502,33 @@
                                             "a45f3f32-5846-11e7-b5ff-dd5e79dcd289"
                                         ],
                                         "ref": "a45f3f32-5846-11e7-b5ff-dd5e79dcd289",
-                                        "properties": []
+                                        "isActivated": true
                                     },
                                     {
                                         "minItems": 4,
-                                        "type": "subschema",
+                                        "type": "array",
                                         "primaryKey": false,
                                         "GUID": "a45f8d59-5846-11e7-b5ff-dd5e79dcd289",
-                                        "properties": []
+                                        "properties": [],
+                                        "isActivated": true,
+                                        "subschema": true
                                     },
                                     {
                                         "maxItems": 4,
-                                        "type": "subschema",
+                                        "type": "array",
                                         "primaryKey": false,
                                         "GUID": "a45fb460-5846-11e7-b5ff-dd5e79dcd289",
-                                        "properties": []
+                                        "properties": [],
+                                        "isActivated": true,
+                                        "subschema": true
                                     }
                                 ],
                                 "primaryKey": false,
                                 "GUID": "a45f8d56-5846-11e7-b5ff-dd5e79dcd289",
-                                "relationshipType": "",
-                                "parentRelationship": "",
-                                "foreignCollection": "",
-                                "foreignField": [],
-                                "childRelationships": []
+                                "isActivated": true
                             }
                         ],
-                        "definitionRefs": []
+                        "isActivated": true
                     },
                     {
                         "description": "An array of linear rings",
@@ -628,11 +537,6 @@
                         "primaryKey": false,
                         "additionalItems": true,
                         "GUID": "a45fb461-5846-11e7-b5ff-dd5e79dcd289",
-                        "relationshipType": "",
-                        "parentRelationship": "",
-                        "foreignCollection": "",
-                        "foreignField": [],
-                        "childRelationships": [],
                         "properties": [
                             {
                                 "$ref": "#/definitions/linearRing",
@@ -647,7 +551,7 @@
                                     "a45f8d55-5846-11e7-b5ff-dd5e79dcd289"
                                 ],
                                 "ref": "a45f8d55-5846-11e7-b5ff-dd5e79dcd289",
-                                "properties": []
+                                "isActivated": true
                             }
                         ],
                         "definitionRefs": [
@@ -671,17 +575,15 @@
                                 "38ed34b0-663c-11e7-8624-0dc6c9140dad",
                                 "e63b07c0-664e-11e7-8624-0dc6c9140dad"
                             ]
-                        ]
+                        ],
+                        "isActivated": true
                     }
                 ],
                 "GUID": "a45eca00-5846-11e7-b5ff-dd5e79dcd289"
             },
             "collectionName": "geoJSON",
-            "capped": false,
             "validationLevel": "Off",
             "validationAction": "Warn",
-            "size": "",
-            "max": "",
             "storageEngineName": "WiredTiger",
             "collectionUsers": [],
             "indexes": [],
@@ -696,16 +598,15 @@
                 "comments": ""
             },
             "id": "http://json-schema.org/geojson/geometry.json#",
-            "bucketId": "a47ba0d0-5846-11e7-b5ff-dd5e79dcd289"
+            "bucketId": "a47ba0d0-5846-11e7-b5ff-dd5e79dcd289",
+            "isActivated": true
         }
     ],
     "buckets": [
         {
             "GUID": "a47ba0d0-5846-11e7-b5ff-dd5e79dcd289",
-            "name": "geoJSON Schema",
+            "name": "geoJSON",
             "type": "bucket",
-            "description": "",
-            "comments": "",
             "collectionIds": [
                 "a4622560-5846-11e7-b5ff-dd5e79dcd289"
             ],
@@ -715,12 +616,15 @@
                 "b": 115,
                 "a": 1
             },
-            "show": true
+            "show": true,
+            "hackoladeMeta": {},
+            "isActivated": true
         }
     ],
     "views": [],
     "relationships": [],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "3fa53290-664f-11e7-8624-0dc6c9140dad": "type",
         "3a323d30-664f-11e7-8624-0dc6c9140dad": "coordinates",
@@ -734,7 +638,7 @@
         "66ce6d30-5828-11e7-b5ff-dd5e79dcd289": "geoJSON Schema",
         "49bee480-5829-11e7-b5ff-dd5e79dcd289": "geoJSON Schema",
         "c0e50f30-5829-11e7-b5ff-dd5e79dcd289": "geoJSON Schema",
-        "a47ba0d0-5846-11e7-b5ff-dd5e79dcd289": "geoJSON Schema",
+        "a47ba0d0-5846-11e7-b5ff-dd5e79dcd289": "geoJSON",
         "a4622560-5846-11e7-b5ff-dd5e79dcd289": "geoJSON",
         "6c8c3100-663b-11e7-8624-0dc6c9140dad": "Point",
         "80cc3660-663b-11e7-8624-0dc6c9140dad": "coordinates",
@@ -745,24 +649,51 @@
         "38ed34b0-663c-11e7-8624-0dc6c9140dad": "Polygon",
         "57391880-663c-11e7-8624-0dc6c9140dad": "MultiPolygons",
         "6e4f2140-663c-11e7-8624-0dc6c9140dad": "lineString",
-        "e63b07c0-664e-11e7-8624-0dc6c9140dad": "coodinates"
+        "e63b07c0-664e-11e7-8624-0dc6c9140dad": "coodinates",
+        "a45eca01-5846-11e7-b5ff-dd5e79dcd289": "position",
+        "a45f3f32-5846-11e7-b5ff-dd5e79dcd289": "positionArray",
+        "a45f8d50-5846-11e7-b5ff-dd5e79dcd289": "lineString",
+        "a45f8d55-5846-11e7-b5ff-dd5e79dcd289": "linearRing",
+        "a45fb461-5846-11e7-b5ff-dd5e79dcd289": "polygon"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
         "GUID": "2bd1d211-57f3-11e7-b5ff-dd5e79dcd289"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "3b55f3a3-b000-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "2bd1d212-57f3-11e7-b5ff-dd5e79dcd289"
     },
-    "modelName": "geoJSON",
+    "sources": [],
+    "decorativeSymbols": [],
     "dbVersion": "v3.4",
     "dbVendor": "MongoDB",
-    "hideModelViews": true,
     "appTarget": "MONGODB",
     "creationTS": "2017-06-23T09:05:58.193Z",
+    "GUID": "2bd1d210-57f3-11e7-b5ff-dd5e79dcd289",
+    "lastModifTS": "2022-03-30T08:06:15.667Z",
+    "persistenceSchemaVersion": "6",
+    "description": "Re-usable external refernce model with geoJSON possibilities\nRef: https://tools.ietf.org/html/rfc7946#appendix-A",
+    "comments": "",
+    "author": "Pascal",
+    "version": "0.1",
+    "hackoladeMeta": {
+        "customPropertiesUpdated": true
+    },
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.0.0"
+    },
     "settings": {
         "centralPane": {
             "dbLevel": {
@@ -1066,39 +997,14 @@
                         "GUID": "a4622560-5846-11e7-b5ff-dd5e79dcd289",
                         "x": 90,
                         "y": 90,
-                        "width": 328,
-                        "height": 851
+                        "width": 297,
+                        "height": 645
                     }
                 ],
                 "buckets": [
                     {
-                        "x": 427,
-                        "y": 40,
-                        "GUID": ""
-                    },
-                    {
                         "x": 50,
-                        "y": 20,
-                        "GUID": "f2f52060-5823-11e7-b5ff-dd5e79dcd289"
-                    },
-                    {
-                        "x": 50,
-                        "y": 20,
-                        "GUID": "66ce6d30-5828-11e7-b5ff-dd5e79dcd289"
-                    },
-                    {
-                        "x": 50,
-                        "y": 20,
-                        "GUID": "49bee480-5829-11e7-b5ff-dd5e79dcd289"
-                    },
-                    {
-                        "x": 50,
-                        "y": 20,
-                        "GUID": "c0e50f30-5829-11e7-b5ff-dd5e79dcd289"
-                    },
-                    {
-                        "x": 50,
-                        "y": 20,
+                        "y": 50,
                         "GUID": "a47ba0d0-5846-11e7-b5ff-dd5e79dcd289"
                     }
                 ],
@@ -1109,14 +1015,25 @@
                     "parentField": []
                 },
                 "selectedCollections": [],
-                "displayColorPicker": false
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true
+            "shouldDistributeCollections": false
         }
     }
 }

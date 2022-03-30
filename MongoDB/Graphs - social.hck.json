@@ -81,7 +81,8 @@
                             "primaryKey": false,
                             "relationshipType": "",
                             "GUID": "4315bc64-2360-11e7-b174-834c31d10a9e",
-                            "isActivated": true
+                            "isActivated": true,
+                            "additionalProperties": true
                         }
                     ],
                     "required": true,
@@ -105,7 +106,8 @@
                         }
                     ],
                     "name": "_id_",
-                    "GUID": "4316cdd0-2360-11e7-b174-834c31d10a9e"
+                    "GUID": "4316cdd0-2360-11e7-b174-834c31d10a9e",
+                    "isActivated": true
                 }
             ],
             "collation": {},
@@ -118,7 +120,8 @@
                 "zone": "",
                 "comments": ""
             },
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "61540440-2363-11e7-b174-834c31d10a9e",
@@ -202,7 +205,8 @@
                         }
                     ],
                     "name": "_id_",
-                    "GUID": "61370667-2363-11e7-b174-834c31d10a9e"
+                    "GUID": "61370667-2363-11e7-b174-834c31d10a9e",
+                    "isActivated": true
                 }
             ],
             "collation": {},
@@ -215,7 +219,8 @@
                 "zone": "",
                 "comments": ""
             },
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "1f61bbd0-2364-11e7-b174-834c31d10a9e",
@@ -299,7 +304,8 @@
                         }
                     ],
                     "name": "_id_",
-                    "GUID": "1f3e7c6c-2364-11e7-b174-834c31d10a9e"
+                    "GUID": "1f3e7c6c-2364-11e7-b174-834c31d10a9e",
+                    "isActivated": true
                 }
             ],
             "collation": {},
@@ -312,7 +318,8 @@
                 "zone": "",
                 "comments": ""
             },
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "1f61bbd0-2364-11e7-b174-834c31d10a9e",
@@ -396,7 +403,8 @@
                         }
                     ],
                     "name": "_id_",
-                    "GUID": "1f40783c-2364-11e7-b174-834c31d10a9e"
+                    "GUID": "1f40783c-2364-11e7-b174-834c31d10a9e",
+                    "isActivated": true
                 }
             ],
             "collation": {},
@@ -409,7 +417,8 @@
                 "zone": "",
                 "comments": ""
             },
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "1f61bbd0-2364-11e7-b174-834c31d10a9e",
@@ -468,7 +477,8 @@
                         }
                     ],
                     "name": "_id_",
-                    "GUID": "1f3ca7a0-2364-11e7-b174-834c31d10a9e"
+                    "GUID": "1f3ca7a0-2364-11e7-b174-834c31d10a9e",
+                    "isActivated": true
                 }
             ],
             "collation": {},
@@ -484,7 +494,8 @@
                     "hashed": false
                 }
             },
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "61540440-2363-11e7-b174-834c31d10a9e",
@@ -541,7 +552,8 @@
                         }
                     ],
                     "name": "_id_",
-                    "GUID": "6135f4f0-2363-11e7-b174-834c31d10a9e"
+                    "GUID": "6135f4f0-2363-11e7-b174-834c31d10a9e",
+                    "isActivated": true
                 }
             ],
             "collation": {},
@@ -554,7 +566,8 @@
                 "zone": "",
                 "comments": ""
             },
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "61f60610-2362-11e7-b174-834c31d10a9e",
@@ -686,7 +699,8 @@
                         }
                     ],
                     "name": "_id_",
-                    "GUID": "61ddea30-2362-11e7-b174-834c31d10a9e"
+                    "GUID": "61ddea30-2362-11e7-b174-834c31d10a9e",
+                    "isActivated": true
                 }
             ],
             "collation": {},
@@ -699,7 +713,8 @@
                 "zone": "",
                 "comments": ""
             },
-            "isActivated": true
+            "isActivated": true,
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -1037,12 +1052,26 @@
         "1f40783a-2364-11e7-b174-834c31d10a9e": "group",
         "1f40783b-2364-11e7-b174-834c31d10a9e": "ts",
         "1f407836-2364-11e7-b174-834c31d10a9e": "following",
-        "1f61bbd0-2364-11e7-b174-834c31d10a9e": "graphs(3)"
+        "1f61bbd0-2364-11e7-b174-834c31d10a9e": "graphs(3)",
+        "8bfb3c20-2360-11e7-b174-834c31d10a9e": "fk airports.airport to airports.connects.[0].to",
+        "74da24f0-2362-11e7-b174-834c31d10a9e": "New Relationship",
+        "7da482b0-2362-11e7-b174-834c31d10a9e": "fk twitEdgeArray._id to twitEdgeArray.following.[0]",
+        "a7dc0c00-2363-11e7-b174-834c31d10a9e": "fk users._id to followers.from",
+        "ad1c0a80-2363-11e7-b174-834c31d10a9e": "fk users._id to followers.to",
+        "5c9d3d80-2364-11e7-b174-834c31d10a9e": "fk users._id to followers.from",
+        "643ab400-2364-11e7-b174-834c31d10a9e": "fk users._id to followers.to",
+        "68f555e0-2364-11e7-b174-834c31d10a9e": "fk users._id to following.from",
+        "6d08e250-2364-11e7-b174-834c31d10a9e": "fk users._id to following.to"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
         "GUID": "3a412570-2360-11e7-b174-834c31d10a9e"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "531582d3-b000-11ec-ab49-f732172fe980"
     },
     "externalDefinitions": {
         "type": "externalDefinitions",
@@ -1053,12 +1082,11 @@
     "decorativeSymbols": [],
     "dbVersion": "v3.4",
     "dbVendor": "MongoDB",
-    "hideModelViews": false,
     "appTarget": "MONGODB",
     "creationTS": "2017-04-17T11:23:05.925Z",
     "GUID": "3a40d750-2360-11e7-b174-834c31d10a9e",
-    "lastModifTS": "2021-04-01T12:44:57.065Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T08:07:18.356Z",
+    "persistenceSchemaVersion": "6",
     "description": "Different ways to model graphs, according to article:\nhttps://www.mongodb.com/presentations/socialite-open-source-status-feed-part-2-managing-social-graph?jmp=docs&_ga=1.11176368.544578421.1459505203\n",
     "comments": "",
     "author": "Pascal",
@@ -1071,7 +1099,7 @@
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.14"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -1229,10 +1257,10 @@
                     },
                     {
                         "GUID": "4315bc60-2360-11e7-b174-834c31d10a9e",
-                        "x": 888,
-                        "y": 402,
+                        "x": 819.7982195845696,
+                        "y": 424.2967359050444,
                         "width": 263,
-                        "height": 131,
+                        "height": 159,
                         "color": {
                             "hsl": {
                                 "h": 3.789473684210526,
@@ -1262,7 +1290,7 @@
                         "x": 268,
                         "y": 150,
                         "width": 229,
-                        "height": 159,
+                        "height": 195,
                         "color": {
                             "hsl": {
                                 "h": 3.789473684210526,
@@ -1289,38 +1317,38 @@
                     },
                     {
                         "GUID": "61350a91-2363-11e7-b174-834c31d10a9e",
-                        "x": 143,
-                        "y": 433.5,
-                        "width": 192,
-                        "height": 70
+                        "x": 145.62314540059347,
+                        "y": 447.92729970326394,
+                        "width": 225,
+                        "height": 87
                     },
                     {
                         "GUID": "61370661-2363-11e7-b174-834c31d10a9e",
-                        "x": 386,
-                        "y": 419.5,
-                        "width": 193,
-                        "height": 98
+                        "x": 460.7596439169135,
+                        "y": 429.9925816023738,
+                        "width": 211,
+                        "height": 123
                     },
                     {
                         "GUID": "1f3b6f21-2364-11e7-b174-834c31d10a9e",
-                        "x": 100,
-                        "y": 652,
-                        "width": 206,
-                        "height": 218
+                        "x": 101.31157270029674,
+                        "y": 743.8100890207714,
+                        "width": 225,
+                        "height": 87
                     },
                     {
                         "GUID": "1f3e7c66-2364-11e7-b174-834c31d10a9e",
                         "x": 419,
                         "y": 648,
-                        "width": 193,
-                        "height": 98
+                        "width": 211,
+                        "height": 123
                     },
                     {
                         "GUID": "1f407836-2364-11e7-b174-834c31d10a9e",
-                        "x": 420,
-                        "y": 776,
-                        "width": 193,
-                        "height": 98
+                        "x": 418.6884272997033,
+                        "y": 800.9198813056386,
+                        "width": 211,
+                        "height": 123
                     },
                     {
                         "GUID": "6e9a9cc0-f422-11e5-ab1e-4fda87c84016",
@@ -1520,8 +1548,8 @@
                 ],
                 "buckets": [
                     {
-                        "x": 848,
-                        "y": 362,
+                        "x": 779.7982195845696,
+                        "y": 384.2967359050444,
                         "GUID": "432b8e50-2360-11e7-b174-834c31d10a9e"
                     },
                     {
@@ -1530,12 +1558,12 @@
                         "GUID": "61f60610-2362-11e7-b174-834c31d10a9e"
                     },
                     {
-                        "x": 103,
-                        "y": 379.5,
+                        "x": 105.62314540059347,
+                        "y": 389.9925816023738,
                         "GUID": "61540440-2363-11e7-b174-834c31d10a9e"
                     },
                     {
-                        "x": 60,
+                        "x": 61.311572700296736,
                         "y": 608,
                         "GUID": "1f61bbd0-2364-11e7-b174-834c31d10a9e"
                     }
@@ -1573,9 +1601,6 @@
                         }
                     ],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -1589,8 +1614,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

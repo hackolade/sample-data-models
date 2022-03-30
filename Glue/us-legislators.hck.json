@@ -1,13 +1,5 @@
 {
-    "GUID": "ea78b3b0-1131-11ea-8b30-3b47dc7b41c0",
     "modelName": "us-legislators",
-    "code": "",
-    "lastModifTS": "2019-12-18T10:38:53.421Z",
-    "persistenceSchemaVersion": "3",
-    "description": "Derived from tutorial https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-samples-legislators.html",
-    "comments": "",
-    "author": "",
-    "version": "",
     "collections": [
         {
             "GUID": "ec9d1a50-1131-11ea-8b30-3b47dc7b41c0",
@@ -15,24 +7,11 @@
             "code": "",
             "type": "object",
             "description": "Table of ISO 3166 countries",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -40,34 +19,18 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "ecf9e050-1131-11ea-8b30-3b47dc7b41c0",
                     "name": "country",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
                     "error": {
                         "name": false
-                    }
+                    },
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -75,34 +38,18 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "02b00af0-1132-11ea-8b30-3b47dc7b41c0",
                     "name": "code",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
                     "error": {
                         "name": false
-                    }
+                    },
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -110,19 +57,14 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "06473b70-1132-11ea-8b30-3b47dc7b41c0",
                     "name": "name",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
                     "error": {
                         "name": false
-                    }
+                    },
+                    "isActivated": true
                 },
                 {
                     "subtype": "array<struct>",
@@ -133,41 +75,20 @@
                             "primaryKey": false,
                             "properties": [
                                 {
-                                    "unit": "",
-                                    "minimum": "",
-                                    "exclusiveMinimum": false,
-                                    "maximum": "",
-                                    "exclusiveMaximum": false,
-                                    "multipleOf": "",
-                                    "divisibleBy": "",
-                                    "default": "",
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "enum": [],
                                     "mode": "int",
-                                    "sample": "",
                                     "childType": "numeric",
                                     "type": "numeric",
                                     "compositeKey": [
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "1d221a80-1133-11ea-8b30-3b47dc7b41c0",
                                     "name": "person_count",
                                     "code": "",
-                                    "description": "",
-                                    "comments": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "pattern": ""
+                                    "isActivated": true
                                 },
                                 {
                                     "subtype": "array<struct>",
@@ -180,17 +101,6 @@
                                                 {
                                                     "primaryKey": false,
                                                     "relationshipType": "",
-                                                    "parentRelationship": "",
-                                                    "childRelationships": [],
-                                                    "foreignCollection": "",
-                                                    "foreignField": [],
-                                                    "default": "",
-                                                    "minLength": "",
-                                                    "maxLength": "",
-                                                    "pattern": "",
-                                                    "enum": [],
-                                                    "sample": "",
-                                                    "comments": "",
                                                     "mode": "string",
                                                     "childType": "text",
                                                     "type": "string",
@@ -198,34 +108,18 @@
                                                         "compositePartitionKey",
                                                         "compositeClusteringKey"
                                                     ],
-                                                    "compositePartitionKey": false,
-                                                    "compositeClusteringKey": false,
                                                     "GUID": "48d0a8e0-1133-11ea-8b30-3b47dc7b41c0",
                                                     "name": "slug",
                                                     "code": "",
-                                                    "description": "",
-                                                    "dependencies": [],
-                                                    "required": false,
-                                                    "id": "",
                                                     "hackoladeMeta": {},
                                                     "error": {
                                                         "name": false
-                                                    }
+                                                    },
+                                                    "isActivated": true
                                                 },
                                                 {
                                                     "primaryKey": false,
                                                     "relationshipType": "",
-                                                    "parentRelationship": "",
-                                                    "childRelationships": [],
-                                                    "foreignCollection": "",
-                                                    "foreignField": [],
-                                                    "default": "",
-                                                    "minLength": "",
-                                                    "maxLength": "",
-                                                    "pattern": "",
-                                                    "enum": [],
-                                                    "sample": "",
-                                                    "comments": "",
                                                     "mode": "string",
                                                     "childType": "text",
                                                     "type": "string",
@@ -233,34 +127,18 @@
                                                         "compositePartitionKey",
                                                         "compositeClusteringKey"
                                                     ],
-                                                    "compositePartitionKey": false,
-                                                    "compositeClusteringKey": false,
                                                     "GUID": "48d0a8e1-1133-11ea-8b30-3b47dc7b41c0",
                                                     "name": "csv_url",
                                                     "code": "",
-                                                    "description": "",
-                                                    "dependencies": [],
-                                                    "required": false,
-                                                    "id": "",
                                                     "hackoladeMeta": {},
                                                     "error": {
                                                         "name": false
-                                                    }
+                                                    },
+                                                    "isActivated": true
                                                 },
                                                 {
                                                     "primaryKey": false,
                                                     "relationshipType": "",
-                                                    "parentRelationship": "",
-                                                    "childRelationships": [],
-                                                    "foreignCollection": "",
-                                                    "foreignField": [],
-                                                    "default": "",
-                                                    "minLength": "",
-                                                    "maxLength": "",
-                                                    "pattern": "",
-                                                    "enum": [],
-                                                    "sample": "",
-                                                    "comments": "",
                                                     "mode": "string",
                                                     "childType": "text",
                                                     "type": "string",
@@ -268,34 +146,18 @@
                                                         "compositePartitionKey",
                                                         "compositeClusteringKey"
                                                     ],
-                                                    "compositePartitionKey": false,
-                                                    "compositeClusteringKey": false,
                                                     "GUID": "48d0a8e2-1133-11ea-8b30-3b47dc7b41c0",
                                                     "name": "id",
                                                     "code": "",
-                                                    "description": "",
-                                                    "dependencies": [],
-                                                    "required": false,
-                                                    "id": "",
                                                     "hackoladeMeta": {},
                                                     "error": {
                                                         "name": false
-                                                    }
+                                                    },
+                                                    "isActivated": true
                                                 },
                                                 {
                                                     "primaryKey": false,
                                                     "relationshipType": "",
-                                                    "parentRelationship": "",
-                                                    "childRelationships": [],
-                                                    "foreignCollection": "",
-                                                    "foreignField": [],
-                                                    "default": "",
-                                                    "minLength": "",
-                                                    "maxLength": "",
-                                                    "pattern": "",
-                                                    "enum": [],
-                                                    "sample": "",
-                                                    "comments": "",
                                                     "mode": "string",
                                                     "childType": "text",
                                                     "type": "string",
@@ -303,34 +165,18 @@
                                                         "compositePartitionKey",
                                                         "compositeClusteringKey"
                                                     ],
-                                                    "compositePartitionKey": false,
-                                                    "compositeClusteringKey": false,
                                                     "GUID": "48d0a8e3-1133-11ea-8b30-3b47dc7b41c0",
                                                     "name": "start_date",
                                                     "code": "",
-                                                    "description": "",
-                                                    "dependencies": [],
-                                                    "required": false,
-                                                    "id": "",
                                                     "hackoladeMeta": {},
                                                     "error": {
                                                         "name": false
-                                                    }
+                                                    },
+                                                    "isActivated": true
                                                 },
                                                 {
                                                     "primaryKey": false,
                                                     "relationshipType": "",
-                                                    "parentRelationship": "",
-                                                    "childRelationships": [],
-                                                    "foreignCollection": "",
-                                                    "foreignField": [],
-                                                    "default": "",
-                                                    "minLength": "",
-                                                    "maxLength": "",
-                                                    "pattern": "",
-                                                    "enum": [],
-                                                    "sample": "",
-                                                    "comments": "",
                                                     "mode": "string",
                                                     "childType": "text",
                                                     "type": "string",
@@ -338,34 +184,18 @@
                                                         "compositePartitionKey",
                                                         "compositeClusteringKey"
                                                     ],
-                                                    "compositePartitionKey": false,
-                                                    "compositeClusteringKey": false,
                                                     "GUID": "48d0a8e4-1133-11ea-8b30-3b47dc7b41c0",
                                                     "name": "csv",
                                                     "code": "",
-                                                    "description": "",
-                                                    "dependencies": [],
-                                                    "required": false,
-                                                    "id": "",
                                                     "hackoladeMeta": {},
                                                     "error": {
                                                         "name": false
-                                                    }
+                                                    },
+                                                    "isActivated": true
                                                 },
                                                 {
                                                     "primaryKey": false,
                                                     "relationshipType": "",
-                                                    "parentRelationship": "",
-                                                    "childRelationships": [],
-                                                    "foreignCollection": "",
-                                                    "foreignField": [],
-                                                    "default": "",
-                                                    "minLength": "",
-                                                    "maxLength": "",
-                                                    "pattern": "",
-                                                    "enum": [],
-                                                    "sample": "",
-                                                    "comments": "",
                                                     "mode": "string",
                                                     "childType": "text",
                                                     "type": "string",
@@ -373,23 +203,16 @@
                                                         "compositePartitionKey",
                                                         "compositeClusteringKey"
                                                     ],
-                                                    "compositePartitionKey": false,
-                                                    "compositeClusteringKey": false,
                                                     "GUID": "48d0a8e5-1133-11ea-8b30-3b47dc7b41c0",
                                                     "name": "end_date",
                                                     "code": "",
-                                                    "description": "",
-                                                    "dependencies": [],
-                                                    "required": false,
-                                                    "id": "",
                                                     "hackoladeMeta": {},
                                                     "error": {
                                                         "name": false
-                                                    }
+                                                    },
+                                                    "isActivated": true
                                                 }
                                             ],
-                                            "minProperties": "",
-                                            "maxProperties": "",
                                             "additionalProperties": false,
                                             "childType": "struct",
                                             "type": "document",
@@ -397,68 +220,35 @@
                                                 "compositePartitionKey",
                                                 "compositeClusteringKey"
                                             ],
-                                            "compositePartitionKey": false,
-                                            "compositeClusteringKey": false,
                                             "GUID": "48ce37e0-1133-11ea-8b30-3b47dc7b41c0",
-                                            "description": "",
-                                            "comments": "",
-                                            "required": false,
-                                            "id": "",
                                             "hackoladeMeta": {},
                                             "arrayItem": true,
                                             "arrayParentType": "array",
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "parentRelationship": "",
-                                            "childRelationships": [],
-                                            "relationshipType": ""
+                                            "relationshipType": "",
+                                            "isActivated": true
                                         }
                                     ],
                                     "primaryKey": false,
                                     "additionalItems": true,
-                                    "minItems": "",
-                                    "maxItems": "",
-                                    "uniqueItems": false,
                                     "childType": "array",
                                     "type": "array",
                                     "compositeKey": [
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "3f501a80-1133-11ea-8b30-3b47dc7b41c0",
                                     "name": "legilative_periods",
                                     "code": "",
-                                    "description": "",
-                                    "comments": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
                                     "relationshipType": "",
                                     "error": {
                                         "name": false
-                                    }
+                                    },
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -466,71 +256,34 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "1d224198-1133-11ea-8b30-3b47dc7b41c0",
                                     "name": "name",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
                                     "error": {
                                         "name": false
-                                    }
+                                    },
+                                    "isActivated": true
                                 },
                                 {
-                                    "unit": "",
-                                    "minimum": "",
-                                    "exclusiveMinimum": false,
-                                    "maximum": "",
-                                    "exclusiveMaximum": false,
-                                    "multipleOf": "",
-                                    "divisibleBy": "",
-                                    "default": "",
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "enum": [],
                                     "mode": "int",
-                                    "sample": "",
                                     "childType": "numeric",
                                     "type": "numeric",
                                     "compositeKey": [
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "1d224199-1133-11ea-8b30-3b47dc7b41c0",
                                     "name": "statement_count",
                                     "code": "",
-                                    "description": "",
-                                    "comments": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "pattern": ""
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -538,34 +291,18 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "1d22419a-1133-11ea-8b30-3b47dc7b41c0",
                                     "name": "sources_directory",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
                                     "error": {
                                         "name": false
-                                    }
+                                    },
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -573,34 +310,18 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "1d22419b-1133-11ea-8b30-3b47dc7b41c0",
                                     "name": "sha",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
                                     "error": {
                                         "name": false
-                                    }
+                                    },
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -608,34 +329,18 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "1d22419c-1133-11ea-8b30-3b47dc7b41c0",
                                     "name": "popolo_url",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
                                     "error": {
                                         "name": false
-                                    }
+                                    },
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -643,34 +348,18 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "1d22419d-1133-11ea-8b30-3b47dc7b41c0",
                                     "name": "popolo",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
                                     "error": {
                                         "name": false
-                                    }
+                                    },
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -678,34 +367,18 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "1d22419e-1133-11ea-8b30-3b47dc7b41c0",
                                     "name": "lastmod",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
                                     "error": {
                                         "name": false
-                                    }
+                                    },
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -713,34 +386,18 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "1d22419f-1133-11ea-8b30-3b47dc7b41c0",
                                     "name": "type",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
                                     "error": {
                                         "name": false
-                                    }
+                                    },
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -748,34 +405,18 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "1d2241a0-1133-11ea-8b30-3b47dc7b41c0",
                                     "name": "slug",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
                                     "error": {
                                         "name": false
-                                    }
+                                    },
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -783,23 +424,16 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "1d2241a1-1133-11ea-8b30-3b47dc7b41c0",
                                     "name": "names",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
                                     "error": {
                                         "name": false
-                                    }
+                                    },
+                                    "isActivated": true
                                 }
                             ],
-                            "minProperties": "",
-                            "maxProperties": "",
                             "additionalProperties": false,
                             "childType": "struct",
                             "type": "document",
@@ -807,66 +441,32 @@
                                 "compositePartitionKey",
                                 "compositeClusteringKey"
                             ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
                             "GUID": "1d1ebf20-1133-11ea-8b30-3b47dc7b41c0",
-                            "description": "",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
                             "hackoladeMeta": {},
                             "arrayItem": true,
                             "arrayParentType": "array",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "relationshipType": ""
+                            "relationshipType": "",
+                            "isActivated": true
                         }
                     ],
                     "primaryKey": false,
                     "additionalItems": true,
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
                     "childType": "array",
                     "type": "array",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "077c6aa0-1133-11ea-8b30-3b47dc7b41c0",
                     "name": "legislatures",
                     "code": "",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "parentRelationship": "",
-                    "childRelationships": [],
                     "relationshipType": "",
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -874,19 +474,14 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "1117f080-1132-11ea-8b30-3b47dc7b41c0",
                     "name": "slug",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
                     "error": {
                         "name": false
-                    }
+                    },
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -915,7 +510,6 @@
             "inputFormatClassname": "org.apache.hadoop.mapred.TextInputFormat",
             "outputFormatClassname": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
             "serDeLibrary": "org.openx.data.jsonserde.JsonSerDe",
-            "compressed": false,
             "parameterPaths": [
                 {
                     "keyId": "02b00af0-1132-11ea-8b30-3b47dc7b41c0",
@@ -940,32 +534,65 @@
             ],
             "externalTable": true,
             "numBuckets": -1,
-            "tableProperties": "{\n\t\t\t\t\t\"CrawlerSchemaDeserializerVersion\": \"1.0\",\n\t\t\t\t\t\"CrawlerSchemaSerializerVersion\": \"1.0\",\n\t\t\t\t\t\"UPDATED_BY_CRAWLER\": \"legislator\",\n\t\t\t\t\t\"averageRecordSize\": \"12117\",\n\t\t\t\t\t\"classification\": \"json\",\n\t\t\t\t\t\"compressionType\": \"none\",\n\t\t\t\t\t\"recordCount\": \"13\",\n\t\t\t\t\t\"sizeKey\": \"157531\",\n\t\t\t\t\t\"typeOfData\": \"file\"\n\t\t\t\t}"
+            "tableProperties": [
+                {
+                    "tablePropKey": "CrawlerSchemaDeserializerVersion",
+                    "tablePropValue": "1.0",
+                    "GUID": "4ca31440-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "CrawlerSchemaSerializerVersion",
+                    "tablePropValue": "1.0",
+                    "GUID": "4ca31441-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "UPDATED_BY_CRAWLER",
+                    "tablePropValue": "legislator",
+                    "GUID": "4ca31442-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "averageRecordSize",
+                    "tablePropValue": "12117",
+                    "GUID": "4ca31443-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "classification",
+                    "tablePropValue": "json",
+                    "GUID": "4ca31444-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "compressionType",
+                    "tablePropValue": "none",
+                    "GUID": "4ca31445-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "recordCount",
+                    "tablePropValue": "13",
+                    "GUID": "4ca31446-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "sizeKey",
+                    "tablePropValue": "157531",
+                    "GUID": "4ca31447-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "typeOfData",
+                    "tablePropValue": "file",
+                    "GUID": "4ca31448-afff-11ec-ab49-f732172fe980"
+                }
+            ],
+            "isActivated": true
         },
         {
             "GUID": "525c5e00-1137-11ea-8d75-2fa9680ef861",
             "collectionName": "events_json",
             "code": "",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -973,32 +600,15 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "6f5b7680-1137-11ea-8d75-2fa9680ef861",
                     "name": "classification",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -1006,32 +616,15 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "72e894e0-1137-11ea-8d75-2fa9680ef861",
                     "name": "name",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -1039,17 +632,11 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "76dd27a0-1137-11ea-8d75-2fa9680ef861",
                     "name": "end_date",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "subtype": "array<struct>",
@@ -1062,17 +649,6 @@
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -1080,32 +656,15 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "925e79c0-1137-11ea-8d75-2fa9680ef861",
                                     "name": "scheme",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "error": {}
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -1113,21 +672,13 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "96c30c60-1137-11ea-8d75-2fa9680ef861",
                                     "name": "identifier",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "error": {}
+                                    "isActivated": true
                                 }
                             ],
-                            "minProperties": "",
-                            "maxProperties": "",
                             "additionalProperties": false,
                             "childType": "struct",
                             "type": "document",
@@ -1135,61 +686,31 @@
                                 "compositePartitionKey",
                                 "compositeClusteringKey"
                             ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
                             "GUID": "7e647e10-1137-11ea-8d75-2fa9680ef861",
-                            "description": "",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
                             "hackoladeMeta": {},
                             "arrayItem": true,
-                            "arrayParentType": "array"
+                            "arrayParentType": "array",
+                            "isActivated": true
                         }
                     ],
                     "primaryKey": false,
                     "additionalItems": true,
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
                     "childType": "array",
                     "type": "array",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "7a422490-1137-11ea-8d75-2fa9680ef861",
                     "name": "identifiers",
                     "code": "",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "parentRelationship": "",
-                    "childRelationships": [],
                     "relationshipType": "",
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -1197,32 +718,15 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "809fa100-1137-11ea-8d75-2fa9680ef861",
                     "name": "id",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -1230,35 +734,21 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "8460a0a0-1137-11ea-8d75-2fa9680ef861",
                     "name": "start_date",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "Foreign Key",
                     "parentRelationship": "957130a0-113a-11ea-8d75-2fa9680ef861",
-                    "childRelationships": [],
                     "foreignCollection": "9d55ad20-1138-11ea-8d75-2fa9680ef861",
                     "foreignField": [
                         "9d55ad20-1138-11ea-8d75-2fa9680ef861",
                         "dbc7da10-1138-11ea-8d75-2fa9680ef861"
                     ],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -1266,17 +756,11 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "8785fc80-1137-11ea-8d75-2fa9680ef861",
                     "name": "organization_id",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -1332,35 +816,71 @@
                     "type": ""
                 }
             ],
-            "tableProperties": "{\n\t\t\t\t\t\"CrawlerSchemaDeserializerVersion\": \"1.0\",\n\t\t\t\t\t\"CrawlerSchemaSerializerVersion\": \"1.0\",\n\t\t\t\t\t\"UPDATED_BY_CRAWLER\": \"legislator\",\n\t\t\t\t\t\"averageRecordSize\": \"237\",\n\t\t\t\t\t\"classification\": \"json\",\n\t\t\t\t\t\"compressionType\": \"none\",\n\t\t\t\t\t\"recordCount\": \"164\",\n\t\t\t\t\t\"sizeKey\": \"38985\",\n\t\t\t\t\t\"typeOfData\": \"file\"\n\t\t\t\t}"
+            "tableProperties": [
+                {
+                    "tablePropKey": "CrawlerSchemaDeserializerVersion",
+                    "tablePropValue": "1.0",
+                    "GUID": "4ca33b50-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "CrawlerSchemaSerializerVersion",
+                    "tablePropValue": "1.0",
+                    "GUID": "4ca33b51-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "UPDATED_BY_CRAWLER",
+                    "tablePropValue": "legislator",
+                    "GUID": "4ca33b52-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "averageRecordSize",
+                    "tablePropValue": "237",
+                    "GUID": "4ca33b53-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "classification",
+                    "tablePropValue": "json",
+                    "GUID": "4ca33b54-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "compressionType",
+                    "tablePropValue": "none",
+                    "GUID": "4ca33b55-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "recordCount",
+                    "tablePropValue": "164",
+                    "GUID": "4ca33b56-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "sizeKey",
+                    "tablePropValue": "38985",
+                    "GUID": "4ca33b57-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "typeOfData",
+                    "tablePropValue": "file",
+                    "GUID": "4ca33b58-afff-11ec-ab49-f732172fe980"
+                }
+            ],
+            "isActivated": true
         },
         {
             "GUID": "f96794d0-1137-11ea-8d75-2fa9680ef861",
             "collectionName": "memberships_json",
             "code": "",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
                     "primaryKey": false,
                     "relationshipType": "Foreign Key",
                     "parentRelationship": "7bbbc4e0-113a-11ea-8d75-2fa9680ef861",
-                    "childRelationships": [],
                     "foreignCollection": "f59b38a0-1139-11ea-8d75-2fa9680ef861",
                     "foreignField": [
                         "f59b38a0-1139-11ea-8d75-2fa9680ef861",
                         "06f02c00-113a-11ea-8d75-2fa9680ef861"
                     ],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -1368,32 +888,15 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "fccc1c90-1137-11ea-8d75-2fa9680ef861",
                     "name": "area_id",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -1401,35 +904,21 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "011474a0-1138-11ea-8d75-2fa9680ef861",
                     "name": "on_behalf_of_id",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "Foreign Key",
                     "parentRelationship": "8713ab50-113a-11ea-8d75-2fa9680ef861",
-                    "childRelationships": [],
                     "foreignCollection": "9d55ad20-1138-11ea-8d75-2fa9680ef861",
                     "foreignField": [
                         "9d55ad20-1138-11ea-8d75-2fa9680ef861",
                         "dbc7da10-1138-11ea-8d75-2fa9680ef861"
                     ],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -1437,32 +926,15 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "079111d0-1138-11ea-8d75-2fa9680ef861",
                     "name": "organization_id",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -1470,32 +942,15 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "0c0e83a0-1138-11ea-8d75-2fa9680ef861",
                     "name": "role",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -1503,32 +958,15 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "0f73f5c0-1138-11ea-8d75-2fa9680ef861",
                     "name": "person_id",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -1536,32 +974,15 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "18c33af0-1138-11ea-8d75-2fa9680ef861",
                     "name": "legislative_period_id",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -1569,32 +990,15 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "1deeee20-1138-11ea-8d75-2fa9680ef861",
                     "name": "start_date",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -1602,17 +1006,11 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "21e22150-1138-11ea-8d75-2fa9680ef861",
                     "name": "end_date",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -1676,16 +1074,60 @@
                     "type": ""
                 }
             ],
-            "tableProperties": "{\n\t\t\t\t\t\"CrawlerSchemaDeserializerVersion\": \"1.0\",\n\t\t\t\t\t\"CrawlerSchemaSerializerVersion\": \"1.0\",\n\t\t\t\t\t\"UPDATED_BY_CRAWLER\": \"legislator\",\n\t\t\t\t\t\"averageRecordSize\": \"1048\",\n\t\t\t\t\t\"classification\": \"json\",\n\t\t\t\t\t\"compressionType\": \"none\",\n\t\t\t\t\t\"recordCount\": \"2593\",\n\t\t\t\t\t\"sizeKey\": \"2718476\",\n\t\t\t\t\t\"typeOfData\": \"file\"\n\t\t\t\t}"
+            "tableProperties": [
+                {
+                    "tablePropKey": "CrawlerSchemaDeserializerVersion",
+                    "tablePropValue": "1.0",
+                    "GUID": "4ca33b59-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "CrawlerSchemaSerializerVersion",
+                    "tablePropValue": "1.0",
+                    "GUID": "4ca33b5a-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "UPDATED_BY_CRAWLER",
+                    "tablePropValue": "legislator",
+                    "GUID": "4ca33b5b-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "averageRecordSize",
+                    "tablePropValue": "1048",
+                    "GUID": "4ca33b5c-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "classification",
+                    "tablePropValue": "json",
+                    "GUID": "4ca33b5d-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "compressionType",
+                    "tablePropValue": "none",
+                    "GUID": "4ca33b5e-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "recordCount",
+                    "tablePropValue": "2593",
+                    "GUID": "4ca33b5f-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "sizeKey",
+                    "tablePropValue": "2718476",
+                    "GUID": "4ca33b60-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "typeOfData",
+                    "tablePropValue": "file",
+                    "GUID": "4ca33b61-afff-11ec-ab49-f732172fe980"
+                }
+            ],
+            "isActivated": true
         },
         {
             "GUID": "9d55ad20-1138-11ea-8d75-2fa9680ef861",
             "collectionName": "organizations_json",
             "code": "",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
@@ -1699,17 +1141,6 @@
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -1717,32 +1148,15 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "bcaff3b0-1138-11ea-8d75-2fa9680ef861",
                                     "name": "scheme",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "error": {}
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -1750,21 +1164,13 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "c08f29b0-1138-11ea-8d75-2fa9680ef861",
                                     "name": "identifier",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "error": {}
+                                    "isActivated": true
                                 }
                             ],
-                            "minProperties": "",
-                            "maxProperties": "",
                             "additionalProperties": false,
                             "childType": "struct",
                             "type": "document",
@@ -1772,46 +1178,27 @@
                                 "compositePartitionKey",
                                 "compositeClusteringKey"
                             ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
                             "GUID": "b75d5790-1138-11ea-8d75-2fa9680ef861",
-                            "description": "",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
                             "hackoladeMeta": {},
                             "arrayItem": true,
-                            "arrayParentType": "array"
+                            "arrayParentType": "array",
+                            "isActivated": true
                         }
                     ],
                     "primaryKey": false,
                     "additionalItems": true,
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
                     "childType": "array",
                     "type": "array",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "b058c5b0-1138-11ea-8d75-2fa9680ef861",
                     "name": "identifiers",
                     "code": "",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "parentRelationship": "",
-                    "childRelationships": [],
                     "relationshipType": "",
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "subtype": "array<struct>",
@@ -1824,17 +1211,6 @@
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -1842,32 +1218,15 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "d23634b0-1138-11ea-8d75-2fa9680ef861",
                                     "name": "lang",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "error": {}
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -1875,32 +1234,15 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "d62214e0-1138-11ea-8d75-2fa9680ef861",
                                     "name": "note",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "error": {}
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -1908,21 +1250,13 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "d9504a60-1138-11ea-8d75-2fa9680ef861",
                                     "name": "name",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "error": {}
+                                    "isActivated": true
                                 }
                             ],
-                            "minProperties": "",
-                            "maxProperties": "",
                             "additionalProperties": false,
                             "childType": "struct",
                             "type": "document",
@@ -1930,64 +1264,35 @@
                                 "compositePartitionKey",
                                 "compositeClusteringKey"
                             ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
                             "GUID": "cd200550-1138-11ea-8d75-2fa9680ef861",
-                            "description": "",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
                             "hackoladeMeta": {},
                             "arrayItem": true,
-                            "arrayParentType": "array"
+                            "arrayParentType": "array",
+                            "isActivated": true
                         }
                     ],
                     "primaryKey": false,
                     "additionalItems": true,
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
                     "childType": "array",
                     "type": "array",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "c3aff1b0-1138-11ea-8d75-2fa9680ef861",
                     "name": "other_names",
                     "code": "",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "parentRelationship": "",
-                    "childRelationships": [],
                     "relationshipType": "",
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
                     "childRelationships": [
                         "8713ab50-113a-11ea-8d75-2fa9680ef861",
                         "957130a0-113a-11ea-8d75-2fa9680ef861"
                     ],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -1995,32 +1300,15 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "dbc7da10-1138-11ea-8d75-2fa9680ef861",
                     "name": "id",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -2028,32 +1316,15 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "e1720c10-1138-11ea-8d75-2fa9680ef861",
                     "name": "classification",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -2061,17 +1332,11 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "e54b9cc0-1138-11ea-8d75-2fa9680ef861",
                     "name": "name",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "subtype": "array<struct>",
@@ -2084,17 +1349,6 @@
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -2102,32 +1356,15 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "f08c0390-1138-11ea-8d75-2fa9680ef861",
                                     "name": "note",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "error": {}
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -2135,21 +1372,13 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "f4456210-1138-11ea-8d75-2fa9680ef861",
                                     "name": "url",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "error": {}
+                                    "isActivated": true
                                 }
                             ],
-                            "minProperties": "",
-                            "maxProperties": "",
                             "additionalProperties": false,
                             "childType": "struct",
                             "type": "document",
@@ -2157,61 +1386,31 @@
                                 "compositePartitionKey",
                                 "compositeClusteringKey"
                             ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
                             "GUID": "ecb028f0-1138-11ea-8d75-2fa9680ef861",
-                            "description": "",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
                             "hackoladeMeta": {},
                             "arrayItem": true,
-                            "arrayParentType": "array"
+                            "arrayParentType": "array",
+                            "isActivated": true
                         }
                     ],
                     "primaryKey": false,
                     "additionalItems": true,
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
                     "childType": "array",
                     "type": "array",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "e8a59d30-1138-11ea-8d75-2fa9680ef861",
                     "name": "links",
                     "code": "",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "parentRelationship": "",
-                    "childRelationships": [],
                     "relationshipType": "",
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -2219,70 +1418,31 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "f8a93160-1138-11ea-8d75-2fa9680ef861",
                     "name": "image",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "mode": "int",
-                    "sample": "",
                     "childType": "numeric",
                     "type": "numeric",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "fbbb5360-1138-11ea-8d75-2fa9680ef861",
                     "name": "seats",
                     "code": "",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "pattern": "",
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -2290,17 +1450,11 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "060dd7c0-1139-11ea-8d75-2fa9680ef861",
                     "name": "type",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -2327,7 +1481,6 @@
             "location": "s3://hackglue/organizations.json",
             "inputFormatClassname": "org.apache.hadoop.mapred.TextInputFormat",
             "outputFormatClassname": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
-            "numBuckets": "",
             "externalTable": true,
             "serDeLibrary": "org.openx.data.jsonserde.JsonSerDe",
             "parameterPaths": [
@@ -2364,32 +1517,65 @@
                     "type": ""
                 }
             ],
-            "tableProperties": "{\n\t\t\t\t\t\"CrawlerSchemaDeserializerVersion\": \"1.0\",\n\t\t\t\t\t\"CrawlerSchemaSerializerVersion\": \"1.0\",\n\t\t\t\t\t\"UPDATED_BY_CRAWLER\": \"legislator\",\n\t\t\t\t\t\"averageRecordSize\": \"12117\",\n\t\t\t\t\t\"classification\": \"json\",\n\t\t\t\t\t\"compressionType\": \"none\",\n\t\t\t\t\t\"recordCount\": \"13\",\n\t\t\t\t\t\"sizeKey\": \"157531\",\n\t\t\t\t\t\"typeOfData\": \"file\"\n\t\t\t\t}"
+            "tableProperties": [
+                {
+                    "tablePropKey": "CrawlerSchemaDeserializerVersion",
+                    "tablePropValue": "1.0",
+                    "GUID": "4ca33b62-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "CrawlerSchemaSerializerVersion",
+                    "tablePropValue": "1.0",
+                    "GUID": "4ca33b63-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "UPDATED_BY_CRAWLER",
+                    "tablePropValue": "legislator",
+                    "GUID": "4ca33b64-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "averageRecordSize",
+                    "tablePropValue": "12117",
+                    "GUID": "4ca33b65-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "classification",
+                    "tablePropValue": "json",
+                    "GUID": "4ca33b66-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "compressionType",
+                    "tablePropValue": "none",
+                    "GUID": "4ca33b67-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "recordCount",
+                    "tablePropValue": "13",
+                    "GUID": "4ca33b68-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "sizeKey",
+                    "tablePropValue": "157531",
+                    "GUID": "4ca33b69-afff-11ec-ab49-f732172fe980"
+                },
+                {
+                    "tablePropKey": "typeOfData",
+                    "tablePropValue": "file",
+                    "GUID": "4ca33b6a-afff-11ec-ab49-f732172fe980"
+                }
+            ],
+            "isActivated": true
         },
         {
             "GUID": "f59b38a0-1139-11ea-8d75-2fa9680ef861",
             "collectionName": "areas_json",
             "code": "",
             "type": "object",
-            "description": "",
-            "comments": "",
-            "$schema": "",
             "additionalProperties": false,
             "properties": [
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -2397,34 +1583,18 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "fff29f00-1139-11ea-8d75-2fa9680ef861",
                     "name": "type",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
                     "childRelationships": [
                         "7bbbc4e0-113a-11ea-8d75-2fa9680ef861"
                     ],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -2432,32 +1602,15 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "06f02c00-113a-11ea-8d75-2fa9680ef861",
                     "name": "id",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "primaryKey": false,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "mode": "string",
                     "childType": "text",
                     "type": "string",
@@ -2465,17 +1618,11 @@
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "0a2e8e20-113a-11ea-8d75-2fa9680ef861",
                     "name": "name",
                     "code": "",
-                    "description": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "subtype": "array<struct>",
@@ -2488,17 +1635,6 @@
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -2506,32 +1642,15 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "17517090-113a-11ea-8d75-2fa9680ef861",
                                     "name": "scheme",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "error": {}
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -2539,21 +1658,13 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "1dbccfb0-113a-11ea-8d75-2fa9680ef861",
                                     "name": "identifier",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "error": {}
+                                    "isActivated": true
                                 }
                             ],
-                            "minProperties": "",
-                            "maxProperties": "",
                             "additionalProperties": false,
                             "childType": "struct",
                             "type": "document",
@@ -2561,46 +1672,27 @@
                                 "compositePartitionKey",
                                 "compositeClusteringKey"
                             ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
                             "GUID": "1338db10-113a-11ea-8d75-2fa9680ef861",
-                            "description": "",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
                             "hackoladeMeta": {},
                             "arrayItem": true,
-                            "arrayParentType": "array"
+                            "arrayParentType": "array",
+                            "isActivated": true
                         }
                     ],
                     "primaryKey": false,
                     "additionalItems": true,
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
                     "childType": "array",
                     "type": "array",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "0de66600-113a-11ea-8d75-2fa9680ef861",
                     "name": "identifiers",
                     "code": "",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "parentRelationship": "",
-                    "childRelationships": [],
                     "relationshipType": "",
-                    "error": {}
+                    "isActivated": true
                 },
                 {
                     "subtype": "array<struct>",
@@ -2613,17 +1705,6 @@
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -2631,32 +1712,15 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "38d46380-113a-11ea-8d75-2fa9680ef861",
                                     "name": "lang",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "error": {}
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -2664,32 +1728,15 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "3c596b90-113a-11ea-8d75-2fa9680ef861",
                                     "name": "note",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "error": {}
+                                    "isActivated": true
                                 },
                                 {
                                     "primaryKey": false,
                                     "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "default": "",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "enum": [],
-                                    "sample": "",
-                                    "comments": "",
                                     "mode": "string",
                                     "childType": "text",
                                     "type": "string",
@@ -2697,21 +1744,13 @@
                                         "compositePartitionKey",
                                         "compositeClusteringKey"
                                     ],
-                                    "compositePartitionKey": false,
-                                    "compositeClusteringKey": false,
                                     "GUID": "3f95f8f0-113a-11ea-8d75-2fa9680ef861",
                                     "name": "name",
                                     "code": "",
-                                    "description": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
                                     "hackoladeMeta": {},
-                                    "error": {}
+                                    "isActivated": true
                                 }
                             ],
-                            "minProperties": "",
-                            "maxProperties": "",
                             "additionalProperties": false,
                             "childType": "struct",
                             "type": "document",
@@ -2719,46 +1758,27 @@
                                 "compositePartitionKey",
                                 "compositeClusteringKey"
                             ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
                             "GUID": "3197d1b0-113a-11ea-8d75-2fa9680ef861",
-                            "description": "",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
                             "hackoladeMeta": {},
                             "arrayItem": true,
-                            "arrayParentType": "array"
+                            "arrayParentType": "array",
+                            "isActivated": true
                         }
                     ],
                     "primaryKey": false,
                     "additionalItems": true,
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
                     "childType": "array",
                     "type": "array",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
                     "GUID": "2d055140-113a-11ea-8d75-2fa9680ef861",
                     "name": "other_names",
                     "code": "",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
                     "hackoladeMeta": {},
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "parentRelationship": "",
-                    "childRelationships": [],
                     "relationshipType": "",
-                    "error": {}
+                    "isActivated": true
                 }
             ],
             "definitions": {
@@ -2809,7 +1829,8 @@
                     "keyId": "fff29f00-1139-11ea-8d75-2fa9680ef861",
                     "type": ""
                 }
-            ]
+            ],
+            "isActivated": true
         }
     ],
     "buckets": [
@@ -2819,7 +1840,6 @@
             "code": "",
             "type": "bucket",
             "description": "Derived from tutorial https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-samples-legislators.html",
-            "comments": "",
             "collectionIds": [
                 "ec9d1a50-1131-11ea-8b30-3b47dc7b41c0",
                 "525c5e00-1137-11ea-8d75-2fa9680ef861",
@@ -2839,7 +1859,8 @@
                 "validationErrors": {
                     "name": false
                 }
-            }
+            },
+            "isActivated": true
         }
     ],
     "views": [],
@@ -2852,14 +1873,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "f59b38a0-1139-11ea-8d75-2fa9680ef861",
             "parentField": [
-                "f59b38a0-1139-11ea-8d75-2fa9680ef861",
-                "06f02c00-113a-11ea-8d75-2fa9680ef861"
+                [
+                    "f59b38a0-1139-11ea-8d75-2fa9680ef861",
+                    "06f02c00-113a-11ea-8d75-2fa9680ef861"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "f96794d0-1137-11ea-8d75-2fa9680ef861",
             "childField": [
-                "f96794d0-1137-11ea-8d75-2fa9680ef861",
-                "fccc1c90-1137-11ea-8d75-2fa9680ef861"
+                [
+                    "f96794d0-1137-11ea-8d75-2fa9680ef861",
+                    "fccc1c90-1137-11ea-8d75-2fa9680ef861"
+                ]
             ],
             "childCardinality": "0..n",
             "customProperties": {
@@ -2875,14 +1900,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "9d55ad20-1138-11ea-8d75-2fa9680ef861",
             "parentField": [
-                "9d55ad20-1138-11ea-8d75-2fa9680ef861",
-                "dbc7da10-1138-11ea-8d75-2fa9680ef861"
+                [
+                    "9d55ad20-1138-11ea-8d75-2fa9680ef861",
+                    "dbc7da10-1138-11ea-8d75-2fa9680ef861"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "f96794d0-1137-11ea-8d75-2fa9680ef861",
             "childField": [
-                "f96794d0-1137-11ea-8d75-2fa9680ef861",
-                "079111d0-1138-11ea-8d75-2fa9680ef861"
+                [
+                    "f96794d0-1137-11ea-8d75-2fa9680ef861",
+                    "079111d0-1138-11ea-8d75-2fa9680ef861"
+                ]
             ],
             "childCardinality": "0..n",
             "customProperties": {
@@ -2898,14 +1927,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "9d55ad20-1138-11ea-8d75-2fa9680ef861",
             "parentField": [
-                "9d55ad20-1138-11ea-8d75-2fa9680ef861",
-                "dbc7da10-1138-11ea-8d75-2fa9680ef861"
+                [
+                    "9d55ad20-1138-11ea-8d75-2fa9680ef861",
+                    "dbc7da10-1138-11ea-8d75-2fa9680ef861"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "525c5e00-1137-11ea-8d75-2fa9680ef861",
             "childField": [
-                "525c5e00-1137-11ea-8d75-2fa9680ef861",
-                "8785fc80-1137-11ea-8d75-2fa9680ef861"
+                [
+                    "525c5e00-1137-11ea-8d75-2fa9680ef861",
+                    "8785fc80-1137-11ea-8d75-2fa9680ef861"
+                ]
             ],
             "childCardinality": "0..n",
             "customProperties": {
@@ -2915,6 +1948,7 @@
         }
     ],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "ebf6c830-1131-11ea-8b30-3b47dc7b41c0": "us-legislators",
         "ec9d1a50-1131-11ea-8b30-3b47dc7b41c0": "countries_json",
@@ -2997,24 +2031,38 @@
         "properties": [],
         "GUID": "ea78b3b1-1131-11ea-8b30-3b47dc7b41c0"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "4dbee483-afff-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "ea78b3b2-1131-11ea-8b30-3b47dc7b41c0"
     },
+    "sources": [],
     "decorativeSymbols": [],
     "dbVersion": "2.x",
     "dbVendor": "Glue",
     "appTarget": "Glue",
     "creationTS": "2019-11-27T16:21:07.307Z",
+    "GUID": "ea78b3b0-1131-11ea-8b30-3b47dc7b41c0",
+    "code": "",
+    "lastModifTS": "2022-03-30T08:00:09.949Z",
+    "persistenceSchemaVersion": "6",
+    "description": "Derived from tutorial https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-samples-legislators.html",
+    "comments": "",
+    "author": "",
+    "version": "",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "Glue",
-        "pluginVersion": "0.1.2",
+        "pluginVersion": "0.1.21",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "3.5.5"
+        "version": "6.0.0"
     },
     "hackoladeMeta": {
         "validationErrors": {
@@ -3029,76 +2077,79 @@
                         "GUID": "ec9d1a50-1131-11ea-8b30-3b47dc7b41c0",
                         "x": 93.30185860423876,
                         "y": 248.850874409055,
-                        "width": 323,
-                        "height": 379,
+                        "width": 318,
+                        "height": 483,
                         "color": {}
                     },
                     {
                         "GUID": "525c5e00-1137-11ea-8d75-2fa9680ef861",
                         "x": 864.5714525224813,
-                        "y": 416.7101661332115,
-                        "width": 283,
-                        "height": 169,
+                        "y": 497,
+                        "width": 270,
+                        "height": 213,
                         "color": {}
                     },
                     {
                         "GUID": "f96794d0-1137-11ea-8d75-2fa9680ef861",
-                        "x": 504.5714525224813,
-                        "y": 169.7101661332115,
-                        "width": 257,
-                        "height": 141,
+                        "x": 503,
+                        "y": 170,
+                        "width": 248,
+                        "height": 177,
                         "color": {}
                     },
                     {
                         "GUID": "9d55ad20-1138-11ea-8d75-2fa9680ef861",
-                        "x": 491.5714525224813,
-                        "y": 416.7101661332115,
-                        "width": 283,
-                        "height": 295,
+                        "x": 492,
+                        "y": 416,
+                        "width": 270,
+                        "height": 375,
                         "color": {}
                     },
                     {
                         "GUID": "f59b38a0-1139-11ea-8d75-2fa9680ef861",
                         "x": 864.5714525224813,
-                        "y": 169.7101661332115,
-                        "width": 283,
-                        "height": 197,
+                        "y": 134,
+                        "width": 270,
+                        "height": 249,
                         "color": {}
                     }
                 ],
                 "buckets": [
                     {
                         "x": 53.30185860423876,
-                        "y": 99.71016613321149,
+                        "y": 94,
                         "GUID": "ebf6c830-1131-11ea-8b30-3b47dc7b41c0"
                     }
                 ],
                 "collapsedNodes": [],
                 "activeRelationship": "",
-                "selectedCollections": [],
-                "decorativeSymbols": [],
-                "graphView": {
-                    "erd": [],
-                    "buckets": [],
-                    "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false
-                },
                 "activeRelationshipFields": {
                     "childField": [],
                     "parentField": []
                 },
+                "selectedCollections": [
+                    "9d55ad20-1138-11ea-8d75-2fa9680ef861",
+                    "f96794d0-1137-11ea-8d75-2fa9680ef861"
+                ],
                 "displayColorPicker": false,
-                "expandCollections": []
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false
+            "shouldDistributeCollections": false
         }
     }
 }

@@ -133,7 +133,8 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             },
-            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521"
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "additionalProperties": true
         },
         {
             "collectionName": "Entity",
@@ -359,7 +360,8 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             },
-            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521"
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "additionalProperties": true
         },
         {
             "collectionName": "Intermediary",
@@ -456,7 +458,8 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             },
-            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521"
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "additionalProperties": true
         },
         {
             "collectionName": "Officer",
@@ -589,7 +592,8 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             },
-            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521"
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "additionalProperties": true
         },
         {
             "collectionName": "Other",
@@ -756,7 +760,8 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             },
-            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521"
+            "bucketId": "0034f0e0-816d-11eb-adda-352b12f01521",
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -808,7 +813,8 @@
                                 "0034f0e0-816d-11eb-adda-352b12f01521"
                             ]
                         }
-                    ]
+                    ],
+                    "isActivated": true
                 },
                 {
                     "GUID": "0f467130-819f-11eb-9e71-991ce22353de",
@@ -821,7 +827,8 @@
                                 "0035b433-816d-11eb-adda-352b12f01521"
                             ]
                         }
-                    ]
+                    ],
+                    "isActivated": true
                 },
                 {
                     "GUID": "1f7b4e90-819f-11eb-9e71-991ce22353de",
@@ -834,7 +841,8 @@
                                 "00ffbaf5-816d-11eb-adda-352b12f01521"
                             ]
                         }
-                    ]
+                    ],
+                    "isActivated": true
                 }
             ],
             "excludedPaths": [
@@ -846,9 +854,11 @@
                             "GUID": "0cdb64a0-819f-11eb-9e71-991ce22353de",
                             "name": "/_etag/?"
                         }
-                    ]
+                    ],
+                    "isActivated": true
                 }
-            ]
+            ],
+            "capacityMode": "Provisioned throughput"
         }
     ],
     "views": [],
@@ -1853,6 +1863,11 @@
         "properties": [],
         "GUID": "e54ef461-816c-11eb-adda-352b12f01521"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "1ed58863-affd-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
@@ -1875,16 +1890,16 @@
             "modelName": false
         }
     },
-    "lastModifTS": "2021-03-10T12:59:38.625Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T07:43:47.621Z",
+    "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "CosmosDB-with-Gremlin-API",
-        "pluginVersion": "0.1.9",
+        "pluginVersion": "0.1.21",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.11"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -2227,9 +2242,6 @@
                         }
                     ],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": true,
                     "forceLayout": false,
                     "defaultLinkLength": 400
                 },
@@ -2243,8 +2255,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

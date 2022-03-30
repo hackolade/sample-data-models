@@ -1,11 +1,5 @@
 {
-    "GUID": "656db8e0-6dc3-11e8-977e-574156f5cc39",
-    "lastModifTS": "2018-06-19T11:11:24.018Z",
-    "persistenceSchemaVersion": "2",
-    "description": "",
-    "comments": "",
-    "author": "",
-    "version": "",
+    "modelName": "New model",
     "collections": [
         {
             "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
@@ -17,21 +11,9 @@
                     "name": "fecID",
                     "GUID": "0d59e6b2-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "H2MI05119"
+                    "sample": "H2MI05119",
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -40,27 +22,9 @@
                     "childType": "number",
                     "GUID": "0d59e6b3-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 5,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -68,22 +32,9 @@
                     "name": "name",
                     "GUID": "0d59e6b4-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "KILDEE, DANIEL T.",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -91,45 +42,18 @@
                     "name": "office",
                     "GUID": "0d59e6b5-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "H",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "state",
                     "GUID": "0d59e6b6-739f-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "MI",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -138,27 +62,9 @@
                     "childType": "number",
                     "GUID": "0d59e6b7-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 2016,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -166,45 +72,18 @@
                     "name": "party",
                     "GUID": "0d59e6b8-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "DEM",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "incumbent",
                     "GUID": "0d59e6b9-739f-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "I",
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -215,7 +94,6 @@
                 "type": "definitions"
             },
             "collectionName": "Candidate",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "0d5ea1a0-739f-11e8-9291-1b091dee6fcb",
@@ -230,11 +108,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
@@ -290,10 +170,7 @@
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -302,27 +179,9 @@
                     "childType": "number",
                     "GUID": "0d5bbb73-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 500,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -332,26 +191,9 @@
                     "childType": "number",
                     "GUID": "0d5bbb74-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
-                    "sample": 2120920161357130000
+                    "sample": 2120920161357130000,
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -362,7 +204,6 @@
                 "type": "definitions"
             },
             "collectionName": "Contribution",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "0d5ec8b0-739f-11e8-9291-1b091dee6fcb",
@@ -377,11 +218,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
@@ -392,22 +235,9 @@
                     "name": "name",
                     "GUID": "0d5e2c75-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "KOPEC, JOHN R",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -416,21 +246,9 @@
                     "name": "namezip",
                     "GUID": "0d5e2c76-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "KOPEC, JOHN R628964192"
+                    "sample": "KOPEC, JOHN R628964192",
+                    "isActivated": true
                 },
                 {
                     "type": "multiple",
@@ -483,10 +301,7 @@
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -497,7 +312,6 @@
                 "type": "definitions"
             },
             "collectionName": "Contributor",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "0d5ec8b3-739f-11e8-9291-1b091dee6fcb",
@@ -512,11 +326,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
@@ -528,21 +344,9 @@
                     "name": "name",
                     "GUID": "0d5ca5d3-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "NGL SUPPLY COMPANY"
+                    "sample": "NGL SUPPLY COMPANY",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -553,7 +357,6 @@
                 "type": "definitions"
             },
             "collectionName": "Employer",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "0d5ec8b1-739f-11e8-9291-1b091dee6fcb",
@@ -568,11 +371,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
@@ -583,22 +388,9 @@
                     "name": "name",
                     "GUID": "0d5d4212-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "MDU RESOURCES GROUP GOOD GOVERNMENT FUND",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -606,68 +398,27 @@
                     "name": "designation",
                     "GUID": "0d5d4213-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "U",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "category",
                     "GUID": "0d5d4214-739f-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "C",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
                     "primaryKey": false,
                     "name": "committee_party",
                     "GUID": "0d5d4215-739f-11e8-9291-1b091dee6fcb",
-                    "required": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "DEM",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -676,21 +427,9 @@
                     "name": "committee_id",
                     "GUID": "0d5d4216-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "C00163253"
+                    "sample": "C00163253",
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -698,22 +437,9 @@
                     "name": "committee_type",
                     "GUID": "0d5d4217-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Q",
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -724,7 +450,6 @@
                 "type": "definitions"
             },
             "collectionName": "FECCommittee",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "0d5ec8b2-739f-11e8-9291-1b091dee6fcb",
@@ -739,11 +464,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
@@ -755,21 +482,9 @@
                     "name": "name",
                     "GUID": "0d5ad117-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "PHYSICAL THERAPY"
+                    "sample": "PHYSICAL THERAPY",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -780,7 +495,6 @@
                 "type": "definitions"
             },
             "collectionName": "Occupation",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "0d5ea1a2-739f-11e8-9291-1b091dee6fcb",
@@ -795,11 +509,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
@@ -811,21 +527,9 @@
                     "name": "name",
                     "GUID": "0d5b4643-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "NATIONAL PAWNBROKERS ASSOCIATION INC"
+                    "sample": "NATIONAL PAWNBROKERS ASSOCIATION INC",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -836,7 +540,6 @@
                 "type": "definitions"
             },
             "collectionName": "Organization",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "0d5ea1a3-739f-11e8-9291-1b091dee6fcb",
@@ -851,11 +554,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
@@ -867,21 +572,9 @@
                     "name": "code",
                     "GUID": "0d5ad113-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "AS"
+                    "sample": "AS",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -892,7 +585,6 @@
                 "type": "definitions"
             },
             "collectionName": "State",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "0d5ea1a1-739f-11e8-9291-1b091dee6fcb",
@@ -907,11 +599,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -919,8 +613,6 @@
             "GUID": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
             "name": "nicar.db",
             "type": "bucket",
-            "description": "",
-            "comments": "",
             "collectionIds": [
                 "0d59e6b1-739f-11e8-9291-1b091dee6fcb",
                 "0d5ad112-739f-11e8-9291-1b091dee6fcb",
@@ -940,7 +632,8 @@
             "show": true,
             "indexes": [],
             "addFieldsToBucket": true,
-            "isPlugin": true
+            "isPlugin": true,
+            "isActivated": true
         }
     ],
     "views": [],
@@ -958,6 +651,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -973,6 +667,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -988,6 +683,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1003,6 +699,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": [
                 {
                     "type": "numeric",
@@ -1011,27 +708,9 @@
                     "childType": "number",
                     "GUID": "0d6112a2-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 2016,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -1040,27 +719,9 @@
                     "childType": "number",
                     "GUID": "0d6112a3-739f-11e8-9291-1b091dee6fcb",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 2012,
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -1077,6 +738,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1092,6 +754,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         },
         {
@@ -1107,10 +770,12 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "0d688cb0-739f-11e8-9291-1b091dee6fcb",
+            "level": "entity",
             "properties": []
         }
     ],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "95a774b0-6dc3-11e8-977e-574156f5cc39": "nicar.db",
         "0d59e6b2-739f-11e8-9291-1b091dee6fcb": "fecID",
@@ -1152,30 +817,47 @@
         "0d68b3c1-739f-11e8-9291-1b091dee6fcb": "MADE_TO",
         "0d68b3c2-739f-11e8-9291-1b091dee6fcb": "CONNECTED_ORG",
         "0d68b3c3-739f-11e8-9291-1b091dee6fcb": "HAS_OCCUPATION",
-        "0d688cb0-739f-11e8-9291-1b091dee6fcb": "nicar.db"
+        "0d688cb0-739f-11e8-9291-1b091dee6fcb": "nicar.db",
+        "0d6112a2-739f-11e8-9291-1b091dee6fcb": "fec_year",
+        "0d6112a3-739f-11e8-9291-1b091dee6fcb": "cand_year"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
         "GUID": "656db8e1-6dc3-11e8-977e-574156f5cc39"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "a8f22f33-b002-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "656db8e2-6dc3-11e8-977e-574156f5cc39"
     },
-    "modelName": "New model",
+    "sources": [],
+    "decorativeSymbols": [],
     "dbVersion": "3.x",
     "dbVendor": "Neo4j",
     "appTarget": "NEO4J",
     "creationTS": "2018-06-11T22:04:22.254Z",
-    "hideModelViews": false,
+    "GUID": "656db8e0-6dc3-11e8-977e-574156f5cc39",
+    "lastModifTS": "2022-03-30T08:23:31.884Z",
+    "persistenceSchemaVersion": "6",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
     "isCreatedByPlugin": true,
     "pluginInformation": {
-        "pluginVersion": "",
-        "pluginName": "",
-        "pluginLink": "",
+        "pluginName": "Neo4j",
+        "pluginVersion": "0.1.39",
         "pluginEngineVersion": "1.0.0"
+    },
+    "hackoladeMeta": {},
+    "applicationInformation": {
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -1318,31 +1000,88 @@
                 ],
                 "buckets": [
                     {
-                        "x": 50,
-                        "y": 20,
-                        "GUID": "95a774b0-6dc3-11e8-977e-574156f5cc39"
-                    },
-                    {
                         "x": 60,
                         "y": 151,
                         "GUID": "0d688cb0-739f-11e8-9291-1b091dee6fcb"
                     }
                 ],
                 "collapsedNodes": [],
-                "activeRelationship": "0d688cb1-739f-11e8-9291-1b091dee6fcb",
-                "selectedCollections": [],
+                "activeRelationship": "",
                 "activeRelationshipFields": {
                     "childField": [],
                     "parentField": []
                 },
-                "displayColorPicker": false
+                "selectedCollections": [
+                    "0d59e6b1-739f-11e8-9291-1b091dee6fcb"
+                ],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "0d59e6b1-739f-11e8-9291-1b091dee6fcb",
+                            "x": 100,
+                            "y": 221,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "0d5ad112-739f-11e8-9291-1b091dee6fcb",
+                            "x": 100,
+                            "y": 745,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "0d5ad116-739f-11e8-9291-1b091dee6fcb",
+                            "x": 1084,
+                            "y": 534,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "0d5b4642-739f-11e8-9291-1b091dee6fcb",
+                            "x": 1084,
+                            "y": 221,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "0d5bbb71-739f-11e8-9291-1b091dee6fcb",
+                            "x": 428,
+                            "y": 221,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "0d5ca5d2-739f-11e8-9291-1b091dee6fcb",
+                            "x": 100,
+                            "y": 432,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "0d5d4211-739f-11e8-9291-1b091dee6fcb",
+                            "x": 756,
+                            "y": 346,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "0d5e2c74-739f-11e8-9291-1b091dee6fcb",
+                            "x": 428,
+                            "y": 562,
+                            "size": 100
+                        }
+                    ],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true
+            "shouldDistributeCollections": false
         }
     }
 }

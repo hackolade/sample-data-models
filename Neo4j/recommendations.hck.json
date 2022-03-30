@@ -1,11 +1,5 @@
 {
-    "GUID": "ab348c20-6dc6-11e8-977e-574156f5cc39",
-    "lastModifTS": "2018-06-19T19:35:24.186Z",
-    "persistenceSchemaVersion": "2",
-    "description": "",
-    "comments": "",
-    "author": "",
-    "version": "",
+    "modelName": "recommendations",
     "collections": [
         {
             "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
@@ -17,21 +11,9 @@
                     "name": "name",
                     "GUID": "bd40f333-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": " Mady Correll"
+                    "sample": " Mady Correll",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -42,7 +24,6 @@
                 "type": "definitions"
             },
             "collectionName": "Actor",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "bd4d0120-6dc7-11e8-977e-574156f5cc39",
@@ -57,11 +38,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
@@ -73,21 +56,9 @@
                     "name": "name",
                     "GUID": "bd436432-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "Noel Black"
+                    "sample": "Noel Black",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -98,7 +69,6 @@
                 "type": "definitions"
             },
             "collectionName": "Director",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "bd4d0121-6dc7-11e8-977e-574156f5cc39",
@@ -113,11 +83,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
@@ -129,21 +101,9 @@
                     "name": "name",
                     "GUID": "bd4cda13-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "sample": "(no genres listed)"
+                    "sample": "(no genres listed)",
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -154,7 +114,6 @@
                 "type": "definitions"
             },
             "collectionName": "Genre",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "bd4d2831-6dc7-11e8-977e-574156f5cc39",
@@ -169,11 +128,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
@@ -188,47 +149,20 @@
                     "properties": [
                         {
                             "GUID": "bd47d103-6dc7-11e8-977e-574156f5cc39",
-                            "description": "",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
-                            "unit": "",
-                            "minimum": "",
-                            "exclusiveMinimum": false,
-                            "maximum": "",
-                            "exclusiveMaximum": false,
-                            "multipleOf": "",
-                            "divisibleBy": "",
-                            "default": "",
                             "primaryKey": false,
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
-                            "mode": "",
-                            "sample": "",
-                            "unique": false,
                             "childType": "number",
                             "type": "numeric",
                             "compositeKey": [
                                 "compositeNodeKey"
                             ],
-                            "compositeNodeKey": false,
                             "arrayItem": true,
-                            "arrayParentType": "list"
+                            "arrayParentType": "list",
+                            "isActivated": true
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -237,27 +171,9 @@
                     "childType": "number",
                     "GUID": "bd47d104-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 1990,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -265,22 +181,9 @@
                     "name": "imdbId",
                     "GUID": "bd47d105-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "0100150",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -289,27 +192,9 @@
                     "childType": "number",
                     "GUID": "bd47d106-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 115,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -318,27 +203,9 @@
                     "childType": "number",
                     "GUID": "bd47d107-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 7.9,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -348,30 +215,13 @@
                     "childType": "number",
                     "GUID": "bd47d108-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 1245,
                     "compositeKey": [
                         "compositeNodeKey"
                     ],
-                    "compositeNodeKey": true
+                    "compositeNodeKey": true,
+                    "isActivated": true
                 },
                 {
                     "type": "array",
@@ -387,35 +237,14 @@
                             "arrayParentType": "list",
                             "primaryKey": false,
                             "GUID": "bd47d10a-6dc7-11e8-977e-574156f5cc39",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
-                            "required": false,
-                            "id": "",
                             "name": "New property key",
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "default": "",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
                             "sample": "USA",
-                            "unique": false
+                            "isActivated": true
                         }
                     ],
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -424,27 +253,9 @@
                     "childType": "number",
                     "GUID": "bd47d10b-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 101410,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -452,22 +263,9 @@
                     "name": "title",
                     "GUID": "bd47d10c-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Miller's Crossing",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -476,27 +274,9 @@
                     "childType": "number",
                     "GUID": "bd47d10d-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 379,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -504,22 +284,9 @@
                     "name": "plot",
                     "GUID": "bd47d10e-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Tom Regan, an advisor to a Prohibition-era crime boss, tries to keep the peace between warring mobs but gets caught in divided loyalties.",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -527,22 +294,9 @@
                     "name": "poster",
                     "GUID": "bd47d10f-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "http://ia.media-imdb.com/images/M/MV5BMTY2Njk3MTAzM15BMl5BanBnXkFtZTgwMTY5Mzk4NjE@._V1_SX300.jpg",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "string",
@@ -550,22 +304,9 @@
                     "name": "released",
                     "GUID": "bd47d110-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "1990-10-05",
-                    "unique": false
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -615,7 +356,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "bd4d2830-6dc7-11e8-977e-574156f5cc39",
@@ -630,11 +372,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
@@ -645,22 +389,9 @@
                     "name": "name",
                     "GUID": "bd4511e2-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
                     "sample": "Michelle Taylor",
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -670,26 +401,9 @@
                     "childType": "number",
                     "GUID": "bd4511e3-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
-                    "sample": 671
+                    "sample": 671,
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -700,7 +414,6 @@
                 "type": "definitions"
             },
             "collectionName": "User",
-            "constraint": [],
             "index": [
                 {
                     "GUID": "bd4d0122-6dc7-11e8-977e-574156f5cc39",
@@ -715,7 +428,8 @@
                     "type": "node_label_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "bd4d0123-6dc7-11e8-977e-574156f5cc39",
@@ -730,11 +444,13 @@
                     "type": "node_unique_property",
                     "provider": "",
                     "description": "",
-                    "storedProcComments": ""
+                    "storedProcComments": "",
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "isActivated": true,
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -742,8 +458,6 @@
             "GUID": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
             "name": "recommendations.db",
             "type": "bucket",
-            "description": "",
-            "comments": "",
             "collectionIds": [
                 "bd40f332-6dc7-11e8-977e-574156f5cc39",
                 "bd436431-6dc7-11e8-977e-574156f5cc39",
@@ -760,7 +474,8 @@
             "show": true,
             "indexes": [],
             "addFieldsToBucket": true,
-            "isPlugin": true
+            "isPlugin": true,
+            "isActivated": true
         }
     ],
     "views": [],
@@ -778,6 +493,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
+            "level": "entity",
             "properties": []
         },
         {
@@ -793,6 +509,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
+            "level": "entity",
             "properties": [
                 {
                     "type": "numeric",
@@ -801,27 +518,9 @@
                     "childType": "number",
                     "GUID": "bd4e87c2-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 1,
-                    "unique": false
+                    "isActivated": true
                 },
                 {
                     "type": "numeric",
@@ -830,27 +529,9 @@
                     "childType": "number",
                     "GUID": "bd4e87c3-6dc7-11e8-977e-574156f5cc39",
                     "required": true,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": "",
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "enum": [],
-                    "mode": "",
                     "sample": 1349048081,
-                    "unique": false
+                    "isActivated": true
                 }
             ]
         },
@@ -867,6 +548,7 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
+            "level": "entity",
             "properties": []
         },
         {
@@ -882,10 +564,12 @@
             "childField": [],
             "childCardinality": "1",
             "bucketId": "bd6989d0-6dc7-11e8-977e-574156f5cc39",
+            "level": "entity",
             "properties": []
         }
     ],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "bd40f333-6dc7-11e8-977e-574156f5cc39": "name",
         "bd40f332-6dc7-11e8-977e-574156f5cc39": "Actor",
@@ -895,7 +579,6 @@
         "bd4511e3-6dc7-11e8-977e-574156f5cc39": "userId",
         "bd4511e1-6dc7-11e8-977e-574156f5cc39": "User",
         "bd47d102-6dc7-11e8-977e-574156f5cc39": "languages",
-        "bd47d103-6dc7-11e8-977e-574156f5cc39": "New property key",
         "bd47d104-6dc7-11e8-977e-574156f5cc39": "year",
         "bd47d105-6dc7-11e8-977e-574156f5cc39": "imdbId",
         "bd47d106-6dc7-11e8-977e-574156f5cc39": "runtime",
@@ -919,29 +602,47 @@
         "bd6989d0-6dc7-11e8-977e-574156f5cc39": "recommendations.db",
         "e28fc770-73f7-11e8-958a-476ba8247fd9": "x",
         "e28fee80-73f7-11e8-958a-476ba8247fd9": "y",
-        "e28fee81-73f7-11e8-958a-476ba8247fd9": "z"
+        "e28fee81-73f7-11e8-958a-476ba8247fd9": "z",
+        "bd4e87c2-6dc7-11e8-977e-574156f5cc39": "rating",
+        "bd4e87c3-6dc7-11e8-977e-574156f5cc39": "timestamp"
     },
     "definitions": {
         "type": "definitions",
         "properties": [],
         "GUID": "ab348c21-6dc6-11e8-977e-574156f5cc39"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "ec07f393-b002-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "ab348c22-6dc6-11e8-977e-574156f5cc39"
     },
-    "modelName": "recommendations",
+    "sources": [],
+    "decorativeSymbols": [],
     "dbVersion": "3.x",
     "dbVendor": "Neo4j",
     "appTarget": "NEO4J",
     "creationTS": "2018-06-11T22:27:47.810Z",
-    "hideModelViews": false,
+    "GUID": "ab348c20-6dc6-11e8-977e-574156f5cc39",
+    "lastModifTS": "2022-03-30T08:25:18.549Z",
+    "persistenceSchemaVersion": "6",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
     "isCreatedByPlugin": true,
     "pluginInformation": {
-        "pluginVersion": "0.1.1",
         "pluginName": "Neo4j",
+        "pluginVersion": "0.1.39",
         "pluginEngineVersion": "1.0.0"
+    },
+    "hackoladeMeta": {},
+    "applicationInformation": {
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -1037,19 +738,61 @@
                 ],
                 "collapsedNodes": [],
                 "activeRelationship": "",
-                "selectedCollections": [],
                 "activeRelationshipFields": {
                     "childField": [],
                     "parentField": []
                 },
-                "displayColorPicker": false
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "bd40f332-6dc7-11e8-977e-574156f5cc39",
+                            "x": 817,
+                            "y": 150,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "bd436431-6dc7-11e8-977e-574156f5cc39",
+                            "x": 1121,
+                            "y": 487,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "bd4511e1-6dc7-11e8-977e-574156f5cc39",
+                            "x": 488,
+                            "y": 480,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "bd47d101-6dc7-11e8-977e-574156f5cc39",
+                            "x": 807,
+                            "y": 333,
+                            "size": 100
+                        },
+                        {
+                            "GUID": "bd4cda12-6dc7-11e8-977e-574156f5cc39",
+                            "x": 817,
+                            "y": 718,
+                            "size": 100
+                        }
+                    ],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true
+            "shouldDistributeCollections": false
         }
     }
 }

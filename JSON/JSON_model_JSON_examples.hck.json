@@ -18,7 +18,8 @@
                             "GUID": "f6a4a2d1-8263-11eb-aa82-6b7894d077f5",
                             "required": true,
                             "sample": "SVG Viewer",
-                            "error": {}
+                            "error": {},
+                            "properties": []
                         },
                         {
                             "code": "",
@@ -36,7 +37,8 @@
                                             "GUID": "f6a4c9e0-8263-11eb-aa82-6b7894d077f5",
                                             "required": true,
                                             "sample": "About",
-                                            "error": {}
+                                            "error": {},
+                                            "properties": []
                                         },
                                         {
                                             "code": "",
@@ -47,7 +49,8 @@
                                             "GUID": "f6a4c9e1-8263-11eb-aa82-6b7894d077f5",
                                             "required": false,
                                             "sample": "About Adobe CVG Viewer...",
-                                            "error": {}
+                                            "error": {},
+                                            "properties": []
                                         }
                                     ],
                                     "hackoladeMeta": {},
@@ -55,7 +58,8 @@
                                     "GUID": "f6bee190-8263-11eb-aa82-6b7894d077f5",
                                     "arrayItem": true,
                                     "arrayParentType": "array",
-                                    "error": {}
+                                    "error": {},
+                                    "additionalProperties": true
                                 },
                                 {
                                     "type": "null",
@@ -64,7 +68,8 @@
                                     "GUID": "f6bee191-8263-11eb-aa82-6b7894d077f5",
                                     "arrayItem": true,
                                     "arrayParentType": "array",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 }
                             ],
                             "additionalItems": true,
@@ -81,7 +86,8 @@
                     "primaryKey": false,
                     "GUID": "f6a4a2d0-8263-11eb-aa82-6b7894d077f5",
                     "required": true,
-                    "error": {}
+                    "error": {},
+                    "additionalProperties": true
                 }
             ],
             "definitions": {
@@ -95,7 +101,8 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             },
-            "bucketId": "f6be4550-8263-11eb-aa82-6b7894d077f5"
+            "bucketId": "f6be4550-8263-11eb-aa82-6b7894d077f5",
+            "additionalProperties": true
         },
         {
             "collectionName": "example4",
@@ -121,7 +128,8 @@
                                             "GUID": "f744da9c-8263-11eb-aa82-6b7894d077f5",
                                             "required": true,
                                             "sample": "cofaxTools",
-                                            "error": {}
+                                            "error": {},
+                                            "properties": []
                                         },
                                         {
                                             "code": "",
@@ -132,7 +140,8 @@
                                             "GUID": "f744da9b-8263-11eb-aa82-6b7894d077f5",
                                             "required": true,
                                             "sample": "org.cofax.cms.CofaxToolsServlet",
-                                            "error": {}
+                                            "error": {},
+                                            "properties": []
                                         },
                                         {
                                             "code": "",
@@ -147,7 +156,8 @@
                                                     "GUID": "f744da97-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
                                                     "sample": "toolstemplates/",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -158,7 +168,8 @@
                                                     "GUID": "f744da88-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
                                                     "sample": 1,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -169,7 +180,8 @@
                                                     "GUID": "f744da89-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
                                                     "sample": "/usr/local/tomcat/logs/CofaxTools.log",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -180,7 +192,8 @@
                                                     "GUID": "f744da8a-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
                                                     "sample": "",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -191,7 +204,8 @@
                                                     "GUID": "f744da74-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
                                                     "sample": 1,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -202,7 +216,8 @@
                                                     "GUID": "f744da75-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
                                                     "sample": "/usr/local/tomcat/logs/dataLog.log",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -213,7 +228,8 @@
                                                     "GUID": "f744da76-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
                                                     "sample": "",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -224,7 +240,8 @@
                                                     "GUID": "f744da90-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
                                                     "sample": "/content/admin/remove?cache=pages&id=",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -235,7 +252,8 @@
                                                     "GUID": "f744da91-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
                                                     "sample": "/content/admin/remove?cache=templates&id=",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -246,7 +264,8 @@
                                                     "GUID": "f744da85-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
                                                     "sample": "/usr/local/tomcat/webapps/content/fileTransferFolder",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -257,7 +276,8 @@
                                                     "GUID": "f744da8b-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
                                                     "sample": 1,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -268,7 +288,8 @@
                                                     "GUID": "f744b363-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
                                                     "sample": 4,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -279,7 +300,8 @@
                                                     "GUID": "f744b364-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
                                                     "sample": true,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -289,7 +311,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da86-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -299,7 +322,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744b367-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -309,7 +333,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744b366-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -319,7 +344,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744b365-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -329,7 +355,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744b36e-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -339,7 +366,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744b36d-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -349,7 +377,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744b36c-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -359,7 +388,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744b36b-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -369,7 +399,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744b36a-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -379,7 +410,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744b369-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -389,7 +421,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744b368-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -399,7 +432,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da93-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -409,7 +443,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da92-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -419,7 +454,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da94-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -429,7 +465,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da99-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -439,7 +476,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da77-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -449,7 +487,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da8f-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -459,7 +498,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da7e-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -469,7 +509,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da79-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -479,7 +520,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da81-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -489,7 +531,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da82-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -499,7 +542,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da7f-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -509,7 +553,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da80-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -519,7 +564,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da7b-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -529,7 +575,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da7a-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -539,7 +586,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da7d-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -549,7 +597,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da78-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -559,7 +608,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da7c-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -569,7 +619,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da8e-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -579,7 +630,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744b36f-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -589,7 +641,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da70-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -599,7 +652,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da71-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -609,7 +663,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da72-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -619,7 +674,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da73-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -629,7 +685,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da83-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -639,7 +696,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da84-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -649,7 +707,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da87-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -659,7 +718,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da8c-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -669,7 +729,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da8d-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -679,7 +740,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da95-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -689,7 +751,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da96-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -699,7 +762,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da98-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -709,7 +773,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f744da9a-8263-11eb-aa82-6b7894d077f5",
                                                     "required": false,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 }
                                             ],
                                             "name": "init-param",
@@ -717,7 +782,8 @@
                                             "primaryKey": false,
                                             "GUID": "f744b362-8263-11eb-aa82-6b7894d077f5",
                                             "required": false,
-                                            "error": {}
+                                            "error": {},
+                                            "additionalProperties": true
                                         }
                                     ],
                                     "hackoladeMeta": {},
@@ -725,7 +791,8 @@
                                     "GUID": "f760edf0-8263-11eb-aa82-6b7894d077f5",
                                     "arrayItem": true,
                                     "arrayParentType": "array",
-                                    "error": {}
+                                    "error": {},
+                                    "additionalProperties": true
                                 }
                             ],
                             "additionalItems": true,
@@ -749,7 +816,8 @@
                                     "GUID": "f744da9f-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "/",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -760,7 +828,8 @@
                                     "GUID": "f744daa0-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "/cofaxutil/aemail/*",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -771,7 +840,8 @@
                                     "GUID": "f744da9e-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "/admin/*",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -782,7 +852,8 @@
                                     "GUID": "f744daa2-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "/static/*",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -793,7 +864,8 @@
                                     "GUID": "f744daa1-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "/tools/*",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 }
                             ],
                             "name": "servlet-mapping",
@@ -801,7 +873,8 @@
                             "primaryKey": false,
                             "GUID": "f744da9d-8263-11eb-aa82-6b7894d077f5",
                             "required": true,
-                            "error": {}
+                            "error": {},
+                            "additionalProperties": true
                         },
                         {
                             "code": "",
@@ -816,7 +889,8 @@
                                     "GUID": "f744daa5-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "cofax.tld",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -827,7 +901,8 @@
                                     "GUID": "f744daa4-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "/WEB-INF/tlds/cofax.tld",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 }
                             ],
                             "name": "taglib",
@@ -835,7 +910,8 @@
                             "primaryKey": false,
                             "GUID": "f744daa3-8263-11eb-aa82-6b7894d077f5",
                             "required": true,
-                            "error": {}
+                            "error": {},
+                            "additionalProperties": true
                         }
                     ],
                     "name": "web-app",
@@ -843,7 +919,8 @@
                     "primaryKey": false,
                     "GUID": "f744b360-8263-11eb-aa82-6b7894d077f5",
                     "required": true,
-                    "error": {}
+                    "error": {},
+                    "additionalProperties": true
                 }
             ],
             "definitions": {
@@ -857,7 +934,8 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             },
-            "bucketId": "f76078c0-8263-11eb-aa82-6b7894d077f5"
+            "bucketId": "f76078c0-8263-11eb-aa82-6b7894d077f5",
+            "additionalProperties": true
         },
         {
             "collectionName": "example3",
@@ -876,7 +954,8 @@
                             "GUID": "f7ed7681-8263-11eb-aa82-6b7894d077f5",
                             "required": true,
                             "sample": "on",
-                            "error": {}
+                            "error": {},
+                            "properties": []
                         },
                         {
                             "code": "",
@@ -891,7 +970,8 @@
                                     "GUID": "f7ed9d9b-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "Sample Konfabulator Widget",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -902,7 +982,8 @@
                                     "GUID": "f7ed9d9a-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "main_window",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -913,7 +994,8 @@
                                     "GUID": "f7ed9d9c-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": 500,
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -924,7 +1006,8 @@
                                     "GUID": "f7ed9d99-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": 500,
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 }
                             ],
                             "name": "window",
@@ -932,7 +1015,8 @@
                             "primaryKey": false,
                             "GUID": "f7ed9d98-8263-11eb-aa82-6b7894d077f5",
                             "required": true,
-                            "error": {}
+                            "error": {},
+                            "additionalProperties": true
                         },
                         {
                             "code": "",
@@ -947,7 +1031,8 @@
                                     "GUID": "f7ed7686-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "Images/Sun.png",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -958,7 +1043,8 @@
                                     "GUID": "f7ed7685-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "sun1",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -969,7 +1055,8 @@
                                     "GUID": "f7ed7684-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": 250,
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -980,7 +1067,8 @@
                                     "GUID": "f7ed7687-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": 250,
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -991,7 +1079,8 @@
                                     "GUID": "f7ed7683-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "center",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 }
                             ],
                             "name": "image",
@@ -999,7 +1088,8 @@
                             "primaryKey": false,
                             "GUID": "f7ed7682-8263-11eb-aa82-6b7894d077f5",
                             "required": true,
-                            "error": {}
+                            "error": {},
+                            "additionalProperties": true
                         },
                         {
                             "code": "",
@@ -1014,7 +1104,8 @@
                                     "GUID": "f7ed9d91-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "Click Here",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -1025,7 +1116,8 @@
                                     "GUID": "f7ed9d95-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": 36,
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -1036,7 +1128,8 @@
                                     "GUID": "f7ed9d96-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "bold",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -1047,7 +1140,8 @@
                                     "GUID": "f7ed9d93-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "text1",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -1058,7 +1152,8 @@
                                     "GUID": "f7ed9d92-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": 250,
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -1069,7 +1164,8 @@
                                     "GUID": "f7ed9d97-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": 100,
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -1080,7 +1176,8 @@
                                     "GUID": "f7ed9d90-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "center",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -1091,7 +1188,8 @@
                                     "GUID": "f7ed9d94-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "sun1.opacity = (sun1.opacity / 100) * 90;",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 }
                             ],
                             "name": "text",
@@ -1099,7 +1197,8 @@
                             "primaryKey": false,
                             "GUID": "f7ed7688-8263-11eb-aa82-6b7894d077f5",
                             "required": true,
-                            "error": {}
+                            "error": {},
+                            "additionalProperties": true
                         }
                     ],
                     "name": "widget",
@@ -1107,7 +1206,8 @@
                     "primaryKey": false,
                     "GUID": "f7ed7680-8263-11eb-aa82-6b7894d077f5",
                     "required": true,
-                    "error": {}
+                    "error": {},
+                    "additionalProperties": true
                 }
             ],
             "definitions": {
@@ -1121,7 +1221,8 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             },
-            "bucketId": "f8071900-8263-11eb-aa82-6b7894d077f5"
+            "bucketId": "f8071900-8263-11eb-aa82-6b7894d077f5",
+            "additionalProperties": true
         },
         {
             "collectionName": "example2",
@@ -1140,7 +1241,8 @@
                             "GUID": "f88374f1-8263-11eb-aa82-6b7894d077f5",
                             "required": true,
                             "sample": "file",
-                            "error": {}
+                            "error": {},
+                            "properties": []
                         },
                         {
                             "code": "",
@@ -1151,7 +1253,8 @@
                             "GUID": "f88374f6-8263-11eb-aa82-6b7894d077f5",
                             "required": true,
                             "sample": "File",
-                            "error": {}
+                            "error": {},
+                            "properties": []
                         },
                         {
                             "code": "",
@@ -1173,7 +1276,8 @@
                                                     "GUID": "f88374f5-8263-11eb-aa82-6b7894d077f5",
                                                     "required": true,
                                                     "sample": "Close",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -1184,7 +1288,8 @@
                                                     "GUID": "f88374f4-8263-11eb-aa82-6b7894d077f5",
                                                     "required": true,
                                                     "sample": "CloseDoc()",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 }
                                             ],
                                             "hackoladeMeta": {},
@@ -1192,7 +1297,8 @@
                                             "GUID": "f89cc952-8263-11eb-aa82-6b7894d077f5",
                                             "arrayItem": true,
                                             "arrayParentType": "array",
-                                            "error": {}
+                                            "error": {},
+                                            "additionalProperties": true
                                         }
                                     ],
                                     "additionalItems": true,
@@ -1209,7 +1315,8 @@
                             "primaryKey": false,
                             "GUID": "f88374f2-8263-11eb-aa82-6b7894d077f5",
                             "required": true,
-                            "error": {}
+                            "error": {},
+                            "additionalProperties": true
                         }
                     ],
                     "name": "menu",
@@ -1217,7 +1324,8 @@
                     "primaryKey": false,
                     "GUID": "f88374f0-8263-11eb-aa82-6b7894d077f5",
                     "required": true,
-                    "error": {}
+                    "error": {},
+                    "additionalProperties": true
                 }
             ],
             "definitions": {
@@ -1231,7 +1339,8 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             },
-            "bucketId": "f89ca240-8263-11eb-aa82-6b7894d077f5"
+            "bucketId": "f89ca240-8263-11eb-aa82-6b7894d077f5",
+            "additionalProperties": true
         },
         {
             "collectionName": "example1",
@@ -1250,7 +1359,8 @@
                             "GUID": "f918890e-8263-11eb-aa82-6b7894d077f5",
                             "required": true,
                             "sample": "example glossary",
-                            "error": {}
+                            "error": {},
+                            "properties": []
                         },
                         {
                             "code": "",
@@ -1265,7 +1375,8 @@
                                     "GUID": "f918890d-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
                                     "sample": "S",
-                                    "error": {}
+                                    "error": {},
+                                    "properties": []
                                 },
                                 {
                                     "code": "",
@@ -1284,7 +1395,8 @@
                                                     "GUID": "f918890b-8263-11eb-aa82-6b7894d077f5",
                                                     "required": true,
                                                     "sample": "SGML",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -1295,7 +1407,8 @@
                                                     "GUID": "f918890c-8263-11eb-aa82-6b7894d077f5",
                                                     "required": true,
                                                     "sample": "SGML",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -1306,7 +1419,8 @@
                                                     "GUID": "f918890a-8263-11eb-aa82-6b7894d077f5",
                                                     "required": true,
                                                     "sample": "Standard Generalized Markup Language",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -1317,7 +1431,8 @@
                                                     "GUID": "f9188905-8263-11eb-aa82-6b7894d077f5",
                                                     "required": true,
                                                     "sample": "SGML",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -1328,7 +1443,8 @@
                                                     "GUID": "f9188904-8263-11eb-aa82-6b7894d077f5",
                                                     "required": true,
                                                     "sample": "ISO 8879:1986",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 },
                                                 {
                                                     "code": "",
@@ -1343,7 +1459,8 @@
                                                             "GUID": "f9188908-8263-11eb-aa82-6b7894d077f5",
                                                             "required": true,
                                                             "sample": "A meta-markup language, used to create markup languages such as DocBook.",
-                                                            "error": {}
+                                                            "error": {},
+                                                            "properties": []
                                                         },
                                                         {
                                                             "code": "",
@@ -1357,7 +1474,8 @@
                                                                     "arrayItem": true,
                                                                     "arrayParentType": "array",
                                                                     "sample": "GML",
-                                                                    "error": {}
+                                                                    "error": {},
+                                                                    "properties": []
                                                                 }
                                                             ],
                                                             "additionalItems": true,
@@ -1374,7 +1492,8 @@
                                                     "primaryKey": false,
                                                     "GUID": "f9188906-8263-11eb-aa82-6b7894d077f5",
                                                     "required": true,
-                                                    "error": {}
+                                                    "error": {},
+                                                    "additionalProperties": true
                                                 },
                                                 {
                                                     "code": "",
@@ -1385,7 +1504,8 @@
                                                     "GUID": "f9188909-8263-11eb-aa82-6b7894d077f5",
                                                     "required": true,
                                                     "sample": "markup",
-                                                    "error": {}
+                                                    "error": {},
+                                                    "properties": []
                                                 }
                                             ],
                                             "name": "GlossEntry",
@@ -1393,7 +1513,8 @@
                                             "primaryKey": false,
                                             "GUID": "f9188903-8263-11eb-aa82-6b7894d077f5",
                                             "required": true,
-                                            "error": {}
+                                            "error": {},
+                                            "additionalProperties": true
                                         }
                                     ],
                                     "name": "GlossList",
@@ -1401,7 +1522,8 @@
                                     "primaryKey": false,
                                     "GUID": "f9188902-8263-11eb-aa82-6b7894d077f5",
                                     "required": true,
-                                    "error": {}
+                                    "error": {},
+                                    "additionalProperties": true
                                 }
                             ],
                             "name": "GlossDiv",
@@ -1409,7 +1531,8 @@
                             "primaryKey": false,
                             "GUID": "f9188901-8263-11eb-aa82-6b7894d077f5",
                             "required": true,
-                            "error": {}
+                            "error": {},
+                            "additionalProperties": true
                         }
                     ],
                     "name": "glossary",
@@ -1417,7 +1540,8 @@
                     "primaryKey": false,
                     "GUID": "f9188900-8263-11eb-aa82-6b7894d077f5",
                     "required": true,
-                    "error": {}
+                    "error": {},
+                    "additionalProperties": true
                 }
             ],
             "definitions": {
@@ -1431,7 +1555,8 @@
             "hackoladeMeta": {
                 "validationErrors": {}
             },
-            "bucketId": "f931dd60-8263-11eb-aa82-6b7894d077f5"
+            "bucketId": "f931dd60-8263-11eb-aa82-6b7894d077f5",
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -1676,6 +1801,11 @@
         "properties": [],
         "GUID": "ebda7d71-8263-11eb-aa82-6b7894d077f5"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "dfa5d073-afff-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
@@ -1683,7 +1813,8 @@
     },
     "sources": [],
     "decorativeSymbols": [],
-    "dbVendor": "Plain JSON--no DB",
+    "dbVendor": "JSON",
+    "dbVersion": "draft-04",
     "appTarget": "JSON",
     "creationTS": "2021-03-11T12:18:43.527Z",
     "GUID": "ebda7d70-8263-11eb-aa82-6b7894d077f5",
@@ -1695,14 +1826,14 @@
         "customPropertiesUpdated": true
     },
     "description": "From https://json.org/example.html after reverse-engineering",
-    "lastModifTS": "2021-03-11T12:20:30.394Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T08:04:19.935Z",
+    "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.11"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -1710,10 +1841,10 @@
                 "erd": [
                     {
                         "GUID": "f6be9370-8263-11eb-aa82-6b7894d077f5",
-                        "x": 874,
-                        "y": 674,
-                        "width": 227,
-                        "height": 127,
+                        "x": 904.9792284866475,
+                        "y": 761.7744807121658,
+                        "width": 208,
+                        "height": 87,
                         "color": {}
                     },
                     {
@@ -1726,57 +1857,59 @@
                     },
                     {
                         "GUID": "f8071901-8263-11eb-aa82-6b7894d077f5",
-                        "x": 553,
-                        "y": 90,
-                        "width": 241,
-                        "height": 337,
+                        "x": 558.1632047477738,
+                        "y": 88.27893175074186,
+                        "width": 262,
+                        "height": 429,
                         "color": {}
                     },
                     {
                         "GUID": "f89cc950-8263-11eb-aa82-6b7894d077f5",
-                        "x": 874,
-                        "y": 438,
-                        "width": 244,
-                        "height": 141,
+                        "x": 908.4213649851629,
+                        "y": 498.23738872403584,
+                        "width": 264,
+                        "height": 177,
                         "color": {}
                     },
                     {
                         "GUID": "f931dd61-8263-11eb-aa82-6b7894d077f5",
-                        "x": 874,
+                        "x": 906.7002967359047,
                         "y": 90,
-                        "width": 298,
-                        "height": 253,
+                        "width": 320,
+                        "height": 321,
                         "color": {}
                     }
                 ],
                 "buckets": [
                     {
-                        "x": 824,
-                        "y": 624,
+                        "x": 864.9792284866475,
+                        "y": 721.7744807121658,
                         "GUID": "f6be4550-8263-11eb-aa82-6b7894d077f5"
                     },
                     {
-                        "x": 40,
-                        "y": 40,
+                        "x": 50,
+                        "y": 50,
                         "GUID": "f76078c0-8263-11eb-aa82-6b7894d077f5"
                     },
                     {
-                        "x": 503,
-                        "y": 40,
+                        "x": 518.1632047477738,
+                        "y": 48.278931750741855,
                         "GUID": "f8071900-8263-11eb-aa82-6b7894d077f5"
                     },
                     {
-                        "x": 824,
-                        "y": 388,
+                        "x": 868.4213649851629,
+                        "y": 458.23738872403584,
                         "GUID": "f89ca240-8263-11eb-aa82-6b7894d077f5"
                     },
                     {
-                        "x": 824,
-                        "y": 40,
+                        "x": 866.7002967359047,
+                        "y": 50,
                         "GUID": "f931dd60-8263-11eb-aa82-6b7894d077f5"
                     }
                 ],
-                "collapsedNodes": [],
+                "collapsedNodes": [
+                    "f6be9370-8263-11eb-aa82-6b7894d077f5f6a4a2d0-8263-11eb-aa82-6b7894d077f5f6a4a2d2-8263-11eb-aa82-6b7894d077f5"
+                ],
                 "activeRelationship": "",
                 "activeRelationshipFields": {
                     "childField": [],
@@ -1788,9 +1921,6 @@
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -1804,8 +1934,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

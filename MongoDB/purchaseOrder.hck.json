@@ -96,7 +96,8 @@
                     "name": "Part",
                     "required": true,
                     "relationshipType": "",
-                    "isActivated": true
+                    "isActivated": true,
+                    "additionalProperties": true
                 }
             ],
             "definitions": {
@@ -242,7 +243,8 @@
                             "name": "Address",
                             "relationshipType": "",
                             "required": true,
-                            "isActivated": true
+                            "isActivated": true,
+                            "additionalProperties": true
                         },
                         {
                             "type": "array",
@@ -280,7 +282,8 @@
                                     "GUID": "ac7d0b07-45b2-11e6-bdac-a78b37239d26",
                                     "relationshipType": "",
                                     "required": true,
-                                    "isActivated": true
+                                    "isActivated": true,
+                                    "additionalProperties": true
                                 }
                             ],
                             "required": true,
@@ -298,7 +301,8 @@
                         "c3db0450-5899-11e6-84f0-f9d5bcd61bef",
                         "270cd8a0-589a-11e6-84f0-f9d5bcd61bef"
                     ],
-                    "isActivated": true
+                    "isActivated": true,
+                    "additionalProperties": true
                 },
                 {
                     "GUID": "ac7d0b0a-45b2-11e6-bdac-a78b37239d26",
@@ -410,7 +414,8 @@
                                     "name": "Part",
                                     "required": true,
                                     "relationshipType": "",
-                                    "isActivated": true
+                                    "isActivated": true,
+                                    "additionalProperties": true
                                 },
                                 {
                                     "type": "numeric",
@@ -429,7 +434,8 @@
                             "GUID": "ac7d0af4-45b2-11e6-bdac-a78b37239d26",
                             "relationshipType": "",
                             "required": true,
-                            "isActivated": true
+                            "isActivated": true,
+                            "additionalProperties": true
                         }
                     ],
                     "isActivated": true
@@ -453,7 +459,8 @@
                     "expireAfterSeconds": "",
                     "background": false,
                     "language_override": "",
-                    "weights": ""
+                    "weights": "",
+                    "isActivated": true
                 },
                 {
                     "GUID": "39e97e50-aaa8-11e6-8752-4380fdd9f6bd",
@@ -474,7 +481,8 @@
                     "expireAfterSeconds": "",
                     "background": false,
                     "language_override": "",
-                    "weights": ""
+                    "weights": "",
+                    "isActivated": true
                 }
             ],
             "collectionUsers": [
@@ -587,7 +595,8 @@
                             "name": "Address",
                             "relationshipType": "",
                             "required": true,
-                            "isActivated": true
+                            "isActivated": true,
+                            "additionalProperties": true
                         },
                         {
                             "type": "array",
@@ -625,7 +634,8 @@
                                     "GUID": "270cd8a9-589a-11e6-84f0-f9d5bcd61bef",
                                     "relationshipType": "",
                                     "required": true,
-                                    "isActivated": true
+                                    "isActivated": true,
+                                    "additionalProperties": true
                                 }
                             ],
                             "required": true,
@@ -640,7 +650,8 @@
                     "childRelationships": [
                         "576c0150-589b-11e6-84f0-f9d5bcd61bef"
                     ],
-                    "isActivated": true
+                    "isActivated": true,
+                    "additionalProperties": true
                 }
             ],
             "definitions": {
@@ -858,12 +869,35 @@
         "66c84e70-589a-11e6-84f0-f9d5bcd61bef": "Part",
         "66c84e72-589a-11e6-84f0-f9d5bcd61bef": "UnitPriceLevel1",
         "75206010-589b-11e6-84f0-f9d5bcd61bef": "UnitPriceLevel2",
-        "859f3ec0-589b-11e6-84f0-f9d5bcd61bef": "UnitPriceLevel3"
+        "859f3ec0-589b-11e6-84f0-f9d5bcd61bef": "UnitPriceLevel3",
+        "88827e00-589a-11e6-84f0-f9d5bcd61bef": "New Relationship",
+        "39e198c0-589b-11e6-84f0-f9d5bcd61bef": "New Relationship(1)",
+        "66c84e71-589a-11e6-84f0-f9d5bcd61bef": "Description",
+        "576c0150-589b-11e6-84f0-f9d5bcd61bef": "New Relationship(2)",
+        "93fb1660-589b-11e6-84f0-f9d5bcd61bef": "New Relationship(3)",
+        "a36acf00-589b-11e6-84f0-f9d5bcd61bef": "New Relationship(5)",
+        "a8880340-589b-11e6-84f0-f9d5bcd61bef": "New Relationship(6)",
+        "66c84e73-589a-11e6-84f0-f9d5bcd61bef": "UPCCode",
+        "270cd8a1-589a-11e6-84f0-f9d5bcd61bef": "name",
+        "270cd8a2-589a-11e6-84f0-f9d5bcd61bef": "Address",
+        "270cd8a3-589a-11e6-84f0-f9d5bcd61bef": "street",
+        "270cd8a4-589a-11e6-84f0-f9d5bcd61bef": "city",
+        "270cd8a5-589a-11e6-84f0-f9d5bcd61bef": "state",
+        "270cd8a6-589a-11e6-84f0-f9d5bcd61bef": "zipCode",
+        "270cd8a7-589a-11e6-84f0-f9d5bcd61bef": "country",
+        "270cd8a8-589a-11e6-84f0-f9d5bcd61bef": "Phone",
+        "270cd8aa-589a-11e6-84f0-f9d5bcd61bef": "type",
+        "270cd8ab-589a-11e6-84f0-f9d5bcd61bef": "number"
     },
     "definitions": {
         "id": "d8c23ae0-5fb0-11e7-93c6-9d9c238b87f7",
         "properties": [],
         "type": "definitions"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "3002aba3-b001-11ec-ab49-f732172fe980"
     },
     "externalDefinitions": {
         "type": "externalDefinitions",
@@ -874,12 +908,11 @@
     "decorativeSymbols": [],
     "dbVersion": "v3.2",
     "dbVendor": "Plain JSON--no DB",
-    "hideModelViews": true,
     "appTarget": "MONGODB",
     "creationTS": "2016-07-09T08:53:49.982Z",
     "GUID": "0c3d6610-5fb1-11e7-93c6-9d9c238b87f7",
-    "lastModifTS": "2021-03-31T15:49:01.806Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T08:13:07.227Z",
+    "persistenceSchemaVersion": "6",
     "description": "Taken from Oracle JSON https://docs.oracle.com/database/121/ADXDB/json.htm#ADXDB6250",
     "comments": "",
     "author": "",
@@ -893,7 +926,7 @@
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.14"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -904,23 +937,23 @@
                         "x": 452,
                         "y": 40,
                         "width": 350,
-                        "height": 411,
+                        "height": 519,
                         "color": {}
                     },
                     {
                         "GUID": "c3db0450-5899-11e6-84f0-f9d5bcd61bef",
                         "x": 43,
                         "y": 136,
-                        "width": 274,
-                        "height": 216,
+                        "width": 283,
+                        "height": 267,
                         "color": {}
                     },
                     {
                         "GUID": "41c890d0-589a-11e6-84f0-f9d5bcd61bef",
-                        "x": 497.9347181008904,
-                        "y": 519.7032640949556,
+                        "x": 489.93038153017136,
+                        "y": 616.8987795965438,
                         "width": 275,
-                        "height": 131
+                        "height": 159
                     },
                     {
                         "GUID": "collectionId4",
@@ -1027,9 +1060,6 @@
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -1043,8 +1073,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

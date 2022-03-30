@@ -312,7 +312,8 @@
                     "ALLOW_PAGE_LOCKS": true,
                     "OPTIMIZE_FOR_SEQUENTIAL_KEY": false,
                     "COMPRESSION_DELAY": null,
-                    "DATA_COMPRESSION": "NONE"
+                    "DATA_COMPRESSION": "NONE",
+                    "isActivated": true
                 },
                 {
                     "GUID": "9939c050-6a9d-11ea-a5ff-a16524f9bb05",
@@ -334,7 +335,8 @@
                     "ALLOW_PAGE_LOCKS": true,
                     "OPTIMIZE_FOR_SEQUENTIAL_KEY": false,
                     "COMPRESSION_DELAY": null,
-                    "DATA_COMPRESSION": "NONE"
+                    "DATA_COMPRESSION": "NONE",
+                    "isActivated": true
                 }
             ],
             "isActivated": true
@@ -751,7 +753,8 @@
                     "ALLOW_PAGE_LOCKS": true,
                     "OPTIMIZE_FOR_SEQUENTIAL_KEY": false,
                     "COMPRESSION_DELAY": null,
-                    "DATA_COMPRESSION": "NONE"
+                    "DATA_COMPRESSION": "NONE",
+                    "isActivated": true
                 }
             ],
             "isActivated": true
@@ -1509,7 +1512,8 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "clustered": true,
-                    "isActivated": true
+                    "isActivated": true,
+                    "additionalProperties": true
                 },
                 {
                     "code": "",
@@ -1741,7 +1745,8 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "clustered": true,
-                    "isActivated": true
+                    "isActivated": true,
+                    "additionalProperties": true
                 }
             ],
             "definitions": {
@@ -3340,7 +3345,8 @@
                     "ALLOW_PAGE_LOCKS": true,
                     "OPTIMIZE_FOR_SEQUENTIAL_KEY": false,
                     "COMPRESSION_DELAY": null,
-                    "DATA_COMPRESSION": "NONE"
+                    "DATA_COMPRESSION": "NONE",
+                    "isActivated": true
                 }
             ],
             "chkConstr": [
@@ -4025,7 +4031,8 @@
                     "ALLOW_PAGE_LOCKS": true,
                     "OPTIMIZE_FOR_SEQUENTIAL_KEY": false,
                     "COMPRESSION_DELAY": null,
-                    "DATA_COMPRESSION": "NONE"
+                    "DATA_COMPRESSION": "NONE",
+                    "isActivated": true
                 }
             ],
             "chkConstr": [
@@ -5213,7 +5220,40 @@
         "997ae800-6a9d-11ea-a5ff-a16524f9bb05": "SalesLT",
         "997ac0f0-6a9d-11ea-a5ff-a16524f9bb05": "vProductAndDescription",
         "997ac0f1-6a9d-11ea-a5ff-a16524f9bb05": "vGetAllCategories",
-        "997ac0f2-6a9d-11ea-a5ff-a16524f9bb05": "vProductModelCatalogDescription"
+        "997ac0f2-6a9d-11ea-a5ff-a16524f9bb05": "vProductModelCatalogDescription",
+        "993aaab1-6a9d-11ea-a5ff-a16524f9bb05": "Culture",
+        "993aaab2-6a9d-11ea-a5ff-a16524f9bb05": "Description",
+        "993aaab3-6a9d-11ea-a5ff-a16524f9bb05": "Name",
+        "993aaab4-6a9d-11ea-a5ff-a16524f9bb05": "ProductID",
+        "993aaab5-6a9d-11ea-a5ff-a16524f9bb05": "ProductModel",
+        "993b46f4-6a9d-11ea-a5ff-a16524f9bb05": "ParentProductCategoryName",
+        "993b46f5-6a9d-11ea-a5ff-a16524f9bb05": "ProductCategoryID",
+        "993b46f6-6a9d-11ea-a5ff-a16524f9bb05": "ProductCategoryName",
+        "993b6e04-6a9d-11ea-a5ff-a16524f9bb05": "BikeFrame",
+        "993b6e05-6a9d-11ea-a5ff-a16524f9bb05": "Color",
+        "993b6e06-6a9d-11ea-a5ff-a16524f9bb05": "Copyright",
+        "993b6e07-6a9d-11ea-a5ff-a16524f9bb05": "Crankset",
+        "993b6e08-6a9d-11ea-a5ff-a16524f9bb05": "MaintenanceDescription",
+        "993b6e09-6a9d-11ea-a5ff-a16524f9bb05": "Manufacturer",
+        "993b6e0a-6a9d-11ea-a5ff-a16524f9bb05": "Material",
+        "993b6e0b-6a9d-11ea-a5ff-a16524f9bb05": "ModifiedDate",
+        "993b6e0c-6a9d-11ea-a5ff-a16524f9bb05": "Name",
+        "993b6e0d-6a9d-11ea-a5ff-a16524f9bb05": "NoOfYears",
+        "993b6e0e-6a9d-11ea-a5ff-a16524f9bb05": "Pedal",
+        "993b6e0f-6a9d-11ea-a5ff-a16524f9bb05": "PictureAngle",
+        "993b6e10-6a9d-11ea-a5ff-a16524f9bb05": "PictureSize",
+        "993b6e11-6a9d-11ea-a5ff-a16524f9bb05": "ProductLine",
+        "993b6e12-6a9d-11ea-a5ff-a16524f9bb05": "ProductModelID",
+        "993b6e13-6a9d-11ea-a5ff-a16524f9bb05": "ProductPhotoID",
+        "993b6e14-6a9d-11ea-a5ff-a16524f9bb05": "ProductURL",
+        "993b6e15-6a9d-11ea-a5ff-a16524f9bb05": "RiderExperience",
+        "993b6e16-6a9d-11ea-a5ff-a16524f9bb05": "Saddle",
+        "993b6e17-6a9d-11ea-a5ff-a16524f9bb05": "Style",
+        "993b6e18-6a9d-11ea-a5ff-a16524f9bb05": "Summary",
+        "993b6e19-6a9d-11ea-a5ff-a16524f9bb05": "WarrantyDescription",
+        "993b6e1a-6a9d-11ea-a5ff-a16524f9bb05": "WarrantyPeriod",
+        "993b6e1b-6a9d-11ea-a5ff-a16524f9bb05": "Wheel",
+        "993b6e1c-6a9d-11ea-a5ff-a16524f9bb05": "rowguid"
     },
     "definitions": {
         "type": "definitions",
@@ -5427,6 +5467,11 @@
         ],
         "GUID": "908fe2e1-6a9d-11ea-a5ff-a16524f9bb05"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "496f6e43-b004-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
@@ -5440,21 +5485,20 @@
     "creationTS": "2020-03-20T11:25:55.598Z",
     "GUID": "908fe2e0-6a9d-11ea-a5ff-a16524f9bb05",
     "code": "",
-    "lastModifTS": "2021-03-06T08:16:37.866Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T08:36:27.792Z",
+    "persistenceSchemaVersion": "6",
     "description": "From the AdventureWorks sample database described at https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15",
     "comments": "",
     "author": "",
     "version": "",
-    "hideModelViews": false,
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "SQLServer",
-        "pluginVersion": "0.1.17",
+        "pluginVersion": "0.1.40",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.10"
+        "version": "6.0.0"
     },
     "hackoladeMeta": {
         "validationErrors": {
@@ -5475,42 +5519,42 @@
                     },
                     {
                         "GUID": "9932bb70-6a9d-11ea-a5ff-a16524f9bb05",
-                        "x": 629.9015948451236,
-                        "y": 478.52850973689686,
-                        "width": 332,
-                        "height": 240,
+                        "x": 683.1732476559644,
+                        "y": 482.9678141378002,
+                        "width": 355,
+                        "height": 303,
                         "color": {}
                     },
                     {
                         "GUID": "9933cce0-6a9d-11ea-a5ff-a16524f9bb05",
-                        "x": 643.9340816462964,
-                        "y": 239.7065717503445,
-                        "width": 303,
-                        "height": 100,
+                        "x": 686.107473454879,
+                        "y": 228.60831074808604,
+                        "width": 304,
+                        "height": 123,
                         "color": {}
                     },
                     {
                         "GUID": "9933f3f5-6a9d-11ea-a5ff-a16524f9bb05",
-                        "x": 186.1039184186551,
-                        "y": 922.3580451319262,
-                        "width": 406,
-                        "height": 625,
+                        "x": 168.34670081504157,
+                        "y": 1011.1441331499935,
+                        "width": 388,
+                        "height": 572,
                         "color": {}
                     },
                     {
                         "GUID": "99363de0-6a9d-11ea-a5ff-a16524f9bb05",
                         "x": 1178.133847240573,
                         "y": 471.10369640293953,
-                        "width": 367,
-                        "height": 268,
+                        "width": 389,
+                        "height": 339,
                         "color": {}
                     },
                     {
                         "GUID": "9936b310-6a9d-11ea-a5ff-a16524f9bb05",
                         "x": 1024.2952370820533,
                         "y": 236.1260410717453,
-                        "width": 349,
-                        "height": 100,
+                        "width": 372,
+                        "height": 123,
                         "color": {}
                     },
                     {
@@ -5525,62 +5569,62 @@
                         "GUID": "99370133-6a9d-11ea-a5ff-a16524f9bb05",
                         "x": 1429.295236128379,
                         "y": 236.1260410717453,
-                        "width": 312,
-                        "height": 100,
+                        "width": 335,
+                        "height": 123,
                         "color": {}
                     },
                     {
                         "GUID": "99379d75-6a9d-11ea-a5ff-a16524f9bb05",
                         "x": 1686.0570210483747,
                         "y": 482.126040118071,
-                        "width": 303,
-                        "height": 100,
+                        "width": 310,
+                        "height": 123,
                         "color": {}
                     },
                     {
                         "GUID": "9937eb93-6a9d-11ea-a5ff-a16524f9bb05",
-                        "x": 661.1670599989274,
-                        "y": 801.5667109817763,
-                        "width": 326,
-                        "height": 156,
+                        "x": 678.9242776025409,
+                        "y": 865.9366247948751,
+                        "width": 360,
+                        "height": 195,
                         "color": {}
                     },
                     {
                         "GUID": "993860c2-6a9d-11ea-a5ff-a16524f9bb05",
                         "x": 171.52730938900586,
                         "y": 485.3124610738156,
-                        "width": 390,
-                        "height": 338,
+                        "width": 425,
+                        "height": 429,
                         "color": {}
                     },
                     {
                         "GUID": "997ac0f0-6a9d-11ea-a5ff-a16524f9bb05",
                         "x": 1703.4645381512123,
                         "y": 826.1612805359434,
-                        "width": 301,
-                        "height": 97,
+                        "width": 285,
+                        "height": 123,
                         "color": {}
                     },
                     {
                         "GUID": "997ac0f1-6a9d-11ea-a5ff-a16524f9bb05",
                         "x": 1718.0178391257743,
                         "y": 1033.6760368121631,
-                        "width": 301,
-                        "height": 69,
+                        "width": 284,
+                        "height": 87,
                         "color": {}
                     },
                     {
                         "GUID": "997ac0f2-6a9d-11ea-a5ff-a16524f9bb05",
                         "x": 1213.6697801841954,
                         "y": 833.8986105598892,
-                        "width": 302,
-                        "height": 377,
+                        "width": 315,
+                        "height": 483,
                         "color": {}
                     }
                 ],
                 "buckets": [
                     {
-                        "x": 131.52730938900586,
+                        "x": 128.34670081504157,
                         "y": 171.31246202748991,
                         "GUID": "997ae800-6a9d-11ea-a5ff-a16524f9bb05"
                     }
@@ -5603,9 +5647,6 @@
                         }
                     ],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -5619,8 +5660,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

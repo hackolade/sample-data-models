@@ -1493,7 +1493,7 @@
                                                     },
                                                     "tPrecision": 9,
                                                     "error": {
-                                                        "name": "reservedWords"
+                                                        "name": false
                                                     },
                                                     "isActivated": true
                                                 }
@@ -2267,7 +2267,7 @@
                                                     },
                                                     "tPrecision": 9,
                                                     "error": {
-                                                        "name": "reservedWords"
+                                                        "name": false
                                                     },
                                                     "isActivated": true
                                                 }
@@ -3332,7 +3332,7 @@
                                     },
                                     "tPrecision": 9,
                                     "error": {
-                                        "name": "reservedWords"
+                                        "name": false
                                     },
                                     "isActivated": true
                                 }
@@ -4081,6 +4081,11 @@
         "properties": [],
         "GUID": "abd1b850-5d26-11ea-8059-874a48fba8a1"
     },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "2fd94a53-b004-11ec-ab49-f732172fe980"
+    },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
@@ -4093,14 +4098,13 @@
     "creationTS": "2020-03-03T08:12:06.100Z",
     "GUID": "abd19140-5d26-11ea-8059-874a48fba8a1",
     "code": "",
-    "lastModifTS": "2021-03-06T08:26:53.087Z",
-    "persistenceSchemaVersion": "4",
+    "lastModifTS": "2022-03-30T08:34:37.654Z",
+    "persistenceSchemaVersion": "6",
     "description": "Reverse-engineered from sandbox derived from https://docs.snowflake.com/en/user-guide/sample-data-openweathermap.html\n\nIncluding display of unique ability to infer schema of JSON stored in VARIANT columns",
     "comments": "",
     "author": "",
     "version": "",
     "dbVersion": "",
-    "hideModelViews": false,
     "hackoladeMeta": {
         "validationErrors": {
             "modelName": false
@@ -4109,11 +4113,11 @@
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "Snowflake",
-        "pluginVersion": "0.1.26",
+        "pluginVersion": "0.1.49",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "4.3.10"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -4179,9 +4183,6 @@
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
@@ -4195,8 +4196,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false,
             "shouldDistributeCollections": false
         }
     }

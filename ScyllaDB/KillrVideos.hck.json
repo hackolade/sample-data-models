@@ -1,13 +1,5 @@
 {
-    "GUID": "f1e85fd0-5874-11ea-904d-b14aeefbf5a2",
     "modelName": "KillrVideos",
-    "code": "",
-    "lastModifTS": "2020-02-26T09:30:47.788Z",
-    "persistenceSchemaVersion": "3",
-    "description": "",
-    "comments": "",
-    "author": "",
-    "version": "",
     "collections": [
         {
             "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
@@ -17,72 +9,36 @@
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "comment",
                     "GUID": "71312f30-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "commentid",
                     "GUID": "71312f31-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
                     "childType": "timeuuid",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
                     "compositeClusteringKey": true,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "userid",
                     "GUID": "71312f32-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
@@ -94,30 +50,17 @@
                         "71332b01-5878-11ea-904d-b14aeefbf5a2",
                         "71332b06-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "videoid",
                     "GUID": "71312f33-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
@@ -129,24 +72,11 @@
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71343c75-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -190,10 +120,10 @@
                 "compaction": "{'class':'SizeTieredCompactionStrategy'}",
                 "GUID": "7134d8b1-5878-11ea-904d-b14aeefbf5a2"
             },
-            "comments": "",
-            "SecIndxs": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "tableIfNotExist": true,
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
@@ -203,72 +133,36 @@
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "comment",
                     "GUID": "7131a461-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "commentid",
                     "GUID": "7131a462-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
                     "childType": "timeuuid",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
                     "compositeClusteringKey": true,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "userid",
                     "GUID": "7131a463-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
@@ -280,30 +174,15 @@
                         "71332b01-5878-11ea-904d-b14aeefbf5a2",
                         "71332b06-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "videoid",
                     "GUID": "7131a464-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
@@ -315,24 +194,13 @@
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71343c75-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -376,10 +244,10 @@
                 "compaction": "{'class':'SizeTieredCompactionStrategy'}",
                 "GUID": "713526d0-5878-11ea-904d-b14aeefbf5a2"
             },
-            "comments": "",
-            "SecIndxs": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "tableIfNotExist": true,
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
@@ -389,166 +257,84 @@
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "etag",
                     "GUID": "7131cb72-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
                     "compositeClusteringKey": true,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "jobid",
                     "GUID": "7131cb73-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "childRelationships": [
                         "038629c0-587a-11ea-904d-b14aeefbf5a2"
                     ],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "newstate",
                     "GUID": "7131cb74-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "oldstate",
                     "GUID": "7131cb75-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "status_date",
                     "GUID": "7131cb76-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
                     "childType": "timestamp",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
-                    "pattern": "",
-                    "format": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
                     "compositeClusteringKey": true,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -596,10 +382,10 @@
                 "compaction": "{'class':'SizeTieredCompactionStrategy'}",
                 "GUID": "713526d2-5878-11ea-904d-b14aeefbf5a2"
             },
-            "comments": "",
-            "SecIndxs": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "tableIfNotExist": true,
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
@@ -608,105 +394,52 @@
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "added_date",
                     "GUID": "7131f282-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
                     "childType": "timestamp",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
-                    "pattern": "",
-                    "format": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
                     "compositeClusteringKey": true,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "name",
                     "GUID": "7131f283-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "preview_image_location",
                     "GUID": "7131f284-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "videoid",
                     "GUID": "7131f285-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
@@ -718,57 +451,30 @@
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71343c75-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
                     "compositeClusteringKey": true,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "yyyymmdd",
                     "GUID": "7131f286-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -816,10 +522,10 @@
                 "compaction": "{'class':'SizeTieredCompactionStrategy'}",
                 "GUID": "713526d4-5878-11ea-904d-b14aeefbf5a2"
             },
-            "comments": "",
-            "SecIndxs": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "tableIfNotExist": true,
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
@@ -829,41 +535,23 @@
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "first_letter",
                     "GUID": "71321992-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "tag",
                     "GUID": "71321993-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
@@ -875,24 +563,13 @@
                         "7134b1a2-5878-11ea-904d-b14aeefbf5a2",
                         "7134b1a6-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
                     "compositeClusteringKey": true,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -936,10 +613,10 @@
                 "compaction": "{'class':'SizeTieredCompactionStrategy'}",
                 "GUID": "713526d6-5878-11ea-904d-b14aeefbf5a2"
             },
-            "comments": "",
-            "SecIndxs": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "tableIfNotExist": true,
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
@@ -948,139 +625,66 @@
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "added_date",
                     "GUID": "713267b2-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "timestamp",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
-                    "pattern": "",
-                    "format": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "description",
                     "GUID": "713267b3-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "jobid",
                     "GUID": "713267b4-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "name",
                     "GUID": "713267b5-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "array",
                     "subtype": "set<str>",
-                    "static": false,
-                    "frozen": false,
                     "name": "tags",
                     "GUID": "713267b6-5878-11ea-904d-b14aeefbf5a2",
                     "properties": [
@@ -1092,58 +696,29 @@
                             "primaryKey": false,
                             "childType": "char",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
-                            "default": "",
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "enum": [],
-                            "sample": "",
-                            "comments": "",
                             "compositeKey": [
                                 "compositePartitionKey",
                                 "compositeClusteringKey"
                             ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "description": "",
-                            "required": false,
-                            "id": "",
                             "hackoladeMeta": {},
-                            "arrayParentType": "set"
+                            "arrayParentType": "set",
+                            "isActivated": true
                         }
                     ],
                     "primaryKey": false,
                     "childType": "set",
                     "additionalItems": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "dependencies": [],
-                    "minProperties": "",
-                    "maxProperties": "",
                     "additionalProperties": false,
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "comments": "",
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "userid",
                     "GUID": "713267b7-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
@@ -1155,30 +730,15 @@
                         "71332b01-5878-11ea-904d-b14aeefbf5a2",
                         "71332b06-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "videoid",
                     "GUID": "713267b8-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
@@ -1190,24 +750,13 @@
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71343c75-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -1224,7 +773,6 @@
                     "type": ""
                 }
             ],
-            "compositeClusteringKey": [],
             "tableOptions": {
                 "bloomFilterFalsePositiveChance": 0.01,
                 "caching": {
@@ -1246,10 +794,10 @@
                 "compaction": "{'class':'SizeTieredCompactionStrategy'}",
                 "GUID": "713526d8-5878-11ea-904d-b14aeefbf5a2"
             },
-            "comments": "",
-            "SecIndxs": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "tableIfNotExist": true,
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
@@ -1258,73 +806,36 @@
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "added_date",
                     "GUID": "7132b5d2-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "timestamp",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
-                    "pattern": "",
-                    "format": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "description",
                     "GUID": "7132b5d3-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "jobid",
                     "GUID": "7132b5d4-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
@@ -1336,64 +847,33 @@
                         "7131cb71-5878-11ea-904d-b14aeefbf5a2",
                         "7131cb73-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "name",
                     "GUID": "7132b5d5-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "array",
                     "subtype": "set<str>",
-                    "static": false,
-                    "frozen": false,
                     "name": "tags",
                     "GUID": "7132b5d6-5878-11ea-904d-b14aeefbf5a2",
                     "properties": [
@@ -1405,58 +885,29 @@
                             "primaryKey": false,
                             "childType": "char",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
-                            "default": "",
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "enum": [],
-                            "sample": "",
-                            "comments": "",
                             "compositeKey": [
                                 "compositePartitionKey",
                                 "compositeClusteringKey"
                             ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "description": "",
-                            "required": false,
-                            "id": "",
                             "hackoladeMeta": {},
-                            "arrayParentType": "set"
+                            "arrayParentType": "set",
+                            "isActivated": true
                         }
                     ],
                     "primaryKey": false,
                     "childType": "set",
                     "additionalItems": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "dependencies": [],
-                    "minProperties": "",
-                    "maxProperties": "",
                     "additionalProperties": false,
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "comments": "",
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "userid",
                     "GUID": "7132b5d7-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
@@ -1468,30 +919,15 @@
                         "71332b01-5878-11ea-904d-b14aeefbf5a2",
                         "71332b06-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "videoid",
                     "GUID": "7132b5d8-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
@@ -1503,24 +939,11 @@
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71343c75-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -1537,7 +960,6 @@
                     "type": ""
                 }
             ],
-            "compositeClusteringKey": [],
             "tableOptions": {
                 "bloomFilterFalsePositiveChance": 0.01,
                 "caching": {
@@ -1559,10 +981,10 @@
                 "compaction": "{'class':'SizeTieredCompactionStrategy'}",
                 "GUID": "713526da-5878-11ea-904d-b14aeefbf5a2"
             },
-            "comments": "",
-            "SecIndxs": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "tableIfNotExist": true,
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
@@ -1572,73 +994,37 @@
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "email",
                     "GUID": "7132dce3-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "password",
                     "GUID": "713303f0-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "userid",
                     "GUID": "713303f1-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
@@ -1650,24 +1036,11 @@
                         "71332b01-5878-11ea-904d-b14aeefbf5a2",
                         "71332b06-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -1684,7 +1057,6 @@
                     "type": ""
                 }
             ],
-            "compositeClusteringKey": [],
             "tableOptions": {
                 "bloomFilterFalsePositiveChance": 0.01,
                 "caching": {
@@ -1706,10 +1078,10 @@
                 "compaction": "{'class':'SizeTieredCompactionStrategy'}",
                 "GUID": "713526dc-5878-11ea-904d-b14aeefbf5a2"
             },
-            "comments": "",
-            "SecIndxs": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "tableIfNotExist": true,
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
@@ -1718,105 +1090,52 @@
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "added_date",
                     "GUID": "713303f4-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
                     "childType": "timestamp",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
-                    "pattern": "",
-                    "format": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
                     "compositeClusteringKey": true,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "name",
                     "GUID": "713303f5-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "preview_image_location",
                     "GUID": "713303f6-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "userid",
                     "GUID": "713303f7-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
@@ -1828,30 +1147,17 @@
                         "71332b01-5878-11ea-904d-b14aeefbf5a2",
                         "71332b06-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "videoid",
                     "GUID": "713303f8-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
@@ -1863,24 +1169,13 @@
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71343c75-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
                     "compositeClusteringKey": true,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -1928,10 +1223,10 @@
                 "compaction": "{'class':'SizeTieredCompactionStrategy'}",
                 "GUID": "713526de-5878-11ea-904d-b14aeefbf5a2"
             },
-            "comments": "",
-            "SecIndxs": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "tableIfNotExist": true,
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
@@ -1940,146 +1235,70 @@
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "created_date",
                     "GUID": "71332b02-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "timestamp",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
-                    "pattern": "",
-                    "format": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "email",
                     "GUID": "71332b03-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "firstname",
                     "GUID": "71332b04-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "lastname",
                     "GUID": "71332b05-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "userid",
                     "GUID": "71332b06-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
                     "childType": "uuid",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "childRelationships": [
                         "0a9eb8d0-587a-11ea-904d-b14aeefbf5a2",
                         "1569a180-587a-11ea-904d-b14aeefbf5a2",
@@ -2090,22 +1309,12 @@
                         "578156d0-587a-11ea-904d-b14aeefbf5a2"
                     ],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -2122,7 +1331,6 @@
                     "type": ""
                 }
             ],
-            "compositeClusteringKey": [],
             "tableOptions": {
                 "bloomFilterFalsePositiveChance": 0.01,
                 "caching": {
@@ -2144,7 +1352,6 @@
                 "compaction": "{'class':'SizeTieredCompactionStrategy'}",
                 "GUID": "713526e0-5878-11ea-904d-b14aeefbf5a2"
             },
-            "comments": "",
             "SecIndxs": [
                 {
                     "GUID": "71354de0-5878-11ea-904d-b14aeefbf5a2",
@@ -2154,7 +1361,8 @@
                             "keyId": "71332b02-5878-11ea-904d-b14aeefbf5a2",
                             "type": "ascending"
                         }
-                    ]
+                    ],
+                    "isActivated": true
                 },
                 {
                     "GUID": "71354de1-5878-11ea-904d-b14aeefbf5a2",
@@ -2164,7 +1372,8 @@
                             "keyId": "71332b03-5878-11ea-904d-b14aeefbf5a2",
                             "type": "ascending"
                         }
-                    ]
+                    ],
+                    "isActivated": true
                 },
                 {
                     "GUID": "71354de2-5878-11ea-904d-b14aeefbf5a2",
@@ -2174,7 +1383,8 @@
                             "keyId": "71332b04-5878-11ea-904d-b14aeefbf5a2",
                             "type": "ascending"
                         }
-                    ]
+                    ],
+                    "isActivated": true
                 },
                 {
                     "GUID": "71354de3-5878-11ea-904d-b14aeefbf5a2",
@@ -2184,11 +1394,14 @@
                             "keyId": "71332b05-5878-11ea-904d-b14aeefbf5a2",
                             "type": "ascending"
                         }
-                    ]
+                    ],
+                    "isActivated": true
                 }
             ],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "tableIfNotExist": true,
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
@@ -2198,174 +1411,85 @@
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "event",
                     "GUID": "71335212-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
                     "compositeClusteringKey": true,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "event_timestamp",
                     "GUID": "71335213-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
                     "childType": "timeuuid",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
                     "compositeClusteringKey": true,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
                     "static": true,
-                    "frozen": false,
                     "name": "preview_image_location",
                     "GUID": "71335214-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "userid",
                     "GUID": "71335215-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
                     "childType": "uuid",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "numeric",
                     "mode": "bigint",
-                    "static": false,
-                    "frozen": false,
                     "name": "video_timestamp",
                     "GUID": "71335216-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "numeric",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
-                    "enum": [],
-                    "sample": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "videoid",
                     "GUID": "71335217-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
@@ -2377,24 +1501,13 @@
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71343c75-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -2446,10 +1559,10 @@
                 "compaction": "{'class':'SizeTieredCompactionStrategy'}",
                 "GUID": "71354de4-5878-11ea-904d-b14aeefbf5a2"
             },
-            "comments": "",
-            "SecIndxs": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "tableIfNotExist": true,
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
@@ -2459,81 +1572,35 @@
                     "code": "",
                     "type": "numeric",
                     "mode": "counter",
-                    "static": false,
-                    "frozen": false,
                     "name": "rating_counter",
                     "GUID": "7133ee52-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "numeric",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
-                    "enum": [],
-                    "sample": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "numeric",
                     "mode": "counter",
-                    "static": false,
-                    "frozen": false,
                     "name": "rating_total",
                     "GUID": "7133ee53-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "numeric",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
-                    "enum": [],
-                    "sample": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "videoid",
                     "GUID": "7133ee54-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
@@ -2545,24 +1612,13 @@
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71343c75-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -2579,7 +1635,6 @@
                     "type": ""
                 }
             ],
-            "compositeClusteringKey": [],
             "tableOptions": {
                 "bloomFilterFalsePositiveChance": 0.01,
                 "caching": {
@@ -2601,10 +1656,10 @@
                 "compaction": "{'class':'SizeTieredCompactionStrategy'}",
                 "GUID": "71354de6-5878-11ea-904d-b14aeefbf5a2"
             },
-            "comments": "",
-            "SecIndxs": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "tableIfNotExist": true,
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
@@ -2614,44 +1669,20 @@
                     "code": "",
                     "type": "numeric",
                     "mode": "int",
-                    "static": false,
-                    "frozen": false,
                     "name": "rating",
                     "GUID": "71341562-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "numeric",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
-                    "enum": [],
-                    "sample": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "userid",
                     "GUID": "71341563-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
@@ -2663,30 +1694,17 @@
                         "71332b01-5878-11ea-904d-b14aeefbf5a2",
                         "71332b06-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
                     "compositeClusteringKey": true,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "videoid",
                     "GUID": "71341564-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
@@ -2698,24 +1716,13 @@
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71343c75-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -2759,10 +1766,10 @@
                 "compaction": "{'class':'SizeTieredCompactionStrategy'}",
                 "GUID": "71354de8-5878-11ea-904d-b14aeefbf5a2"
             },
-            "comments": "",
-            "SecIndxs": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "tableIfNotExist": true,
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
@@ -2771,143 +1778,66 @@
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "added_date",
                     "GUID": "71341567-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "timestamp",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
-                    "pattern": "",
-                    "format": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "description",
                     "GUID": "71341568-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "location",
                     "GUID": "71341569-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "numeric",
                     "mode": "int",
-                    "static": false,
-                    "frozen": false,
                     "name": "location_type",
                     "GUID": "7134156a-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "numeric",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "unit": "",
-                    "minimum": "",
-                    "exclusiveMinimum": false,
-                    "maximum": "",
-                    "exclusiveMaximum": false,
-                    "multipleOf": "",
-                    "divisibleBy": "",
-                    "default": "",
-                    "enum": [],
-                    "sample": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "array",
                     "subtype": "set<udt>",
-                    "static": false,
-                    "frozen": false,
                     "name": "metadata",
                     "GUID": "71343c70-5878-11ea-904d-b14aeefbf5a2",
                     "properties": [
@@ -2923,64 +1853,35 @@
                                 "71348a92-5878-11ea-904d-b14aeefbf5a2"
                             ],
                             "arrayItem": true,
-                            "arrayParentType": "set"
+                            "arrayParentType": "set",
+                            "isActivated": true
                         }
                     ],
                     "primaryKey": false,
                     "childType": "set",
                     "additionalItems": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "dependencies": [],
-                    "minProperties": "",
-                    "maxProperties": "",
                     "additionalProperties": false,
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "comments": "",
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "name",
                     "GUID": "71343c71-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
@@ -2998,61 +1899,29 @@
                             "primaryKey": false,
                             "childType": "char",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
-                            "default": "",
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "enum": [],
-                            "sample": "",
-                            "comments": "",
                             "compositeKey": [
                                 "compositePartitionKey",
                                 "compositeClusteringKey"
                             ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "description": "",
-                            "dependencies": [],
-                            "required": false,
-                            "id": ""
+                            "isActivated": true
                         }
                     ],
-                    "static": false,
-                    "frozen": false,
                     "name": "preview_thumbnails",
                     "GUID": "71343c72-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "map",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "dependencies": [],
-                    "minProperties": "",
-                    "maxProperties": "",
                     "additionalProperties": false,
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "comments": "",
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "array",
                     "subtype": "set<str>",
-                    "static": false,
-                    "frozen": false,
                     "name": "tags",
                     "GUID": "71343c73-5878-11ea-904d-b14aeefbf5a2",
                     "properties": [
@@ -3064,98 +1933,48 @@
                             "primaryKey": false,
                             "childType": "char",
                             "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [],
-                            "default": "",
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "enum": [],
-                            "sample": "",
-                            "comments": "",
                             "compositeKey": [
                                 "compositePartitionKey",
                                 "compositeClusteringKey"
                             ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "description": "",
-                            "required": false,
-                            "id": "",
                             "hackoladeMeta": {},
-                            "arrayParentType": "set"
+                            "arrayParentType": "set",
+                            "isActivated": true
                         }
                     ],
                     "primaryKey": false,
                     "childType": "set",
                     "additionalItems": true,
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "dependencies": [],
-                    "minProperties": "",
-                    "maxProperties": "",
                     "additionalProperties": false,
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "comments": "",
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "userid",
                     "GUID": "71343c74-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "uuid",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "videoid",
                     "GUID": "71343c75-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
                     "childType": "uuid",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "childRelationships": [
                         "03993200-5879-11ea-904d-b14aeefbf5a2",
                         "2dadbf70-5879-11ea-904d-b14aeefbf5a2",
@@ -3169,22 +1988,12 @@
                         "4cf41360-587a-11ea-904d-b14aeefbf5a2"
                     ],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -3201,7 +2010,6 @@
                     "type": ""
                 }
             ],
-            "compositeClusteringKey": [],
             "tableOptions": {
                 "bloomFilterFalsePositiveChance": 0.01,
                 "caching": {
@@ -3223,10 +2031,10 @@
                 "compaction": "{'class':'SizeTieredCompactionStrategy'}",
                 "GUID": "71354dea-5878-11ea-904d-b14aeefbf5a2"
             },
-            "comments": "",
-            "SecIndxs": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "tableIfNotExist": true,
+            "isActivated": true,
+            "additionalProperties": true
         },
         {
             "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
@@ -3235,171 +2043,84 @@
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "added_date",
                     "GUID": "7134b1a3-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "timestamp",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
-                    "pattern": "",
-                    "format": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "name",
                     "GUID": "7134b1a4-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "preview_image_location",
                     "GUID": "7134b1a5-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
                     "mode": "text",
-                    "static": false,
-                    "frozen": false,
                     "name": "tag",
                     "GUID": "7134b1a6-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
                     "childType": "char",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
                     "childRelationships": [
                         "f9856450-5878-11ea-904d-b14aeefbf5a2"
                     ],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
                     "compositePartitionKey": true,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "tagged_date",
                     "GUID": "7134b1a7-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": false,
                     "childType": "timestamp",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
-                    "required": false,
-                    "default": "",
-                    "enum": [],
-                    "sample": "",
-                    "comments": "",
-                    "pattern": "",
-                    "format": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
-                    "compositeClusteringKey": false,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
                     "type": "string",
-                    "static": false,
-                    "frozen": false,
                     "name": "videoid",
                     "GUID": "7134b1a8-5878-11ea-904d-b14aeefbf5a2",
                     "primaryKey": true,
@@ -3411,24 +2132,13 @@
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71343c75-5878-11ea-904d-b14aeefbf5a2"
                     ],
-                    "childRelationships": [],
                     "required": true,
-                    "default": "",
-                    "minLength": "",
-                    "maxLength": "",
-                    "enum": [],
-                    "sample": "",
-                    "pattern": "",
-                    "comments": "",
                     "compositeKey": [
                         "compositePartitionKey",
                         "compositeClusteringKey"
                     ],
-                    "compositePartitionKey": false,
                     "compositeClusteringKey": true,
-                    "description": "",
-                    "dependencies": [],
-                    "id": ""
+                    "isActivated": true
                 }
             ],
             "type": "object",
@@ -3472,10 +2182,10 @@
                 "compaction": "{'class':'SizeTieredCompactionStrategy'}",
                 "GUID": "71354dec-5878-11ea-904d-b14aeefbf5a2"
             },
-            "comments": "",
-            "SecIndxs": [],
-            "hasCollation": false,
-            "collation": {}
+            "collation": {},
+            "tableIfNotExist": true,
+            "isActivated": true,
+            "additionalProperties": true
         }
     ],
     "buckets": [
@@ -3484,8 +2194,6 @@
             "name": "killervideos",
             "code": "",
             "type": "bucket",
-            "description": "",
-            "comments": "",
             "collectionIds": [
                 "71310820-5878-11ea-904d-b14aeefbf5a2",
                 "7131a460-5878-11ea-904d-b14aeefbf5a2",
@@ -3521,10 +2229,10 @@
                 }
             ],
             "durableWrites": true,
-            "UDFs": [],
-            "UDAs": [],
             "addFieldsToBucket": true,
-            "isPlugin": true
+            "isPlugin": true,
+            "keyspaceIfNotExist": true,
+            "isActivated": true
         }
     ],
     "views": [
@@ -3562,7 +2270,6 @@
                 "compaction": "{'class':'SizeTieredCompactionStrategy'}",
                 "GUID": "71365f53-5878-11ea-904d-b14aeefbf5a2"
             },
-            "comments": "",
             "type": "object",
             "properties": [
                 {
@@ -3573,21 +2280,13 @@
                     "primaryKey": false,
                     "type": "reference",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "refType": "collectionReference",
                     "refIdPath": [
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71341567-5878-11ea-904d-b14aeefbf5a2"
                     ],
                     "ref": "71341567-5878-11ea-904d-b14aeefbf5a2",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
@@ -3597,21 +2296,13 @@
                     "primaryKey": false,
                     "type": "reference",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "refType": "collectionReference",
                     "refIdPath": [
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71341568-5878-11ea-904d-b14aeefbf5a2"
                     ],
                     "ref": "71341568-5878-11ea-904d-b14aeefbf5a2",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
@@ -3621,25 +2312,18 @@
                     "primaryKey": true,
                     "type": "reference",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "refType": "collectionReference",
                     "refIdPath": [
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71341569-5878-11ea-904d-b14aeefbf5a2"
                     ],
                     "ref": "71341569-5878-11ea-904d-b14aeefbf5a2",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "compositeKey": [
                         "compositePartitionKey"
                     ],
-                    "compositePartitionKey": true
+                    "compositePartitionKey": true,
+                    "isActivated": true
                 },
                 {
                     "code": "",
@@ -3649,21 +2333,13 @@
                     "primaryKey": false,
                     "type": "reference",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "refType": "collectionReference",
                     "refIdPath": [
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "7134156a-5878-11ea-904d-b14aeefbf5a2"
                     ],
                     "ref": "7134156a-5878-11ea-904d-b14aeefbf5a2",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
@@ -3673,21 +2349,13 @@
                     "primaryKey": false,
                     "type": "reference",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "refType": "collectionReference",
                     "refIdPath": [
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71343c71-5878-11ea-904d-b14aeefbf5a2"
                     ],
                     "ref": "71343c71-5878-11ea-904d-b14aeefbf5a2",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
@@ -3697,21 +2365,13 @@
                     "primaryKey": false,
                     "type": "reference",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "refType": "collectionReference",
                     "refIdPath": [
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71343c74-5878-11ea-904d-b14aeefbf5a2"
                     ],
                     "ref": "71343c74-5878-11ea-904d-b14aeefbf5a2",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": ""
+                    "isActivated": true
                 },
                 {
                     "code": "",
@@ -3721,31 +2381,26 @@
                     "primaryKey": true,
                     "type": "reference",
                     "relationshipType": "",
-                    "parentRelationship": "",
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "childRelationships": [],
                     "refType": "collectionReference",
                     "refIdPath": [
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71343c75-5878-11ea-904d-b14aeefbf5a2"
                     ],
                     "ref": "71343c75-5878-11ea-904d-b14aeefbf5a2",
-                    "description": "",
-                    "comments": "",
-                    "dependencies": [],
                     "required": true,
-                    "id": "",
                     "compositeKey": [
                         "compositeClusteringKey"
                     ],
-                    "compositeClusteringKey": true
+                    "compositeClusteringKey": true,
+                    "isActivated": true
                 }
             ],
             "viewOn": "71341566-5878-11ea-904d-b14aeefbf5a2",
             "GUID": "716585a4-5878-11ea-904d-b14aeefbf5a2",
             "pipeline": "[\n    {\n        \"$project\": {\n            \"added_date\": 1,\n            \"description\": 1,\n            \"location\": 1,\n            \"location_type\": 1,\n            \"name\": 1,\n            \"userid\": 1,\n            \"videoid\": 1\n        }\n    }\n]",
-            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2"
+            "bucketId": "7165acb0-5878-11ea-904d-b14aeefbf5a2",
+            "viewIfNotExist": true,
+            "isActivated": true
         }
     ],
     "relationships": [
@@ -3757,14 +2412,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "7134b1a2-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "7134b1a2-5878-11ea-904d-b14aeefbf5a2",
-                "7134b1a6-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "7134b1a2-5878-11ea-904d-b14aeefbf5a2",
+                    "7134b1a6-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "71321991-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "71321991-5878-11ea-904d-b14aeefbf5a2",
-                "71321993-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71321991-5878-11ea-904d-b14aeefbf5a2",
+                    "71321993-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "1",
             "lineSize": 2
@@ -3777,14 +2436,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71341566-5878-11ea-904d-b14aeefbf5a2",
-                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "7134b1a2-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "7134b1a2-5878-11ea-904d-b14aeefbf5a2",
-                "7134b1a8-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "7134b1a2-5878-11ea-904d-b14aeefbf5a2",
+                    "7134b1a8-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "0..n",
             "lineSize": 2
@@ -3797,14 +2460,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71341566-5878-11ea-904d-b14aeefbf5a2",
-                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "7131f281-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "7131f281-5878-11ea-904d-b14aeefbf5a2",
-                "7131f285-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "7131f281-5878-11ea-904d-b14aeefbf5a2",
+                    "7131f285-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "0..n",
             "lineSize": 2
@@ -3817,14 +2484,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71341566-5878-11ea-904d-b14aeefbf5a2",
-                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "71335211-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "71335211-5878-11ea-904d-b14aeefbf5a2",
-                "71335217-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71335211-5878-11ea-904d-b14aeefbf5a2",
+                    "71335217-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "0..n",
             "lineSize": 2
@@ -3837,14 +2508,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71341566-5878-11ea-904d-b14aeefbf5a2",
-                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "7133ee51-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "7133ee51-5878-11ea-904d-b14aeefbf5a2",
-                "7133ee54-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "7133ee51-5878-11ea-904d-b14aeefbf5a2",
+                    "7133ee54-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "0..n",
             "lineSize": 2
@@ -3857,14 +2532,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71341566-5878-11ea-904d-b14aeefbf5a2",
-                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
-                "7132b5d8-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
+                    "7132b5d8-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "0..n",
             "lineSize": 2
@@ -3877,14 +2556,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "7131cb71-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "7131cb71-5878-11ea-904d-b14aeefbf5a2",
-                "7131cb73-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "7131cb71-5878-11ea-904d-b14aeefbf5a2",
+                    "7131cb73-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
-                "7132b5d4-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
+                    "7132b5d4-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "1",
             "lineSize": 2
@@ -3897,14 +2580,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71332b01-5878-11ea-904d-b14aeefbf5a2",
-                "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                    "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
-                "7132b5d7-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
+                    "7132b5d7-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "0..n",
             "lineSize": 2
@@ -3917,14 +2604,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71332b01-5878-11ea-904d-b14aeefbf5a2",
-                "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                    "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "713303f3-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "713303f3-5878-11ea-904d-b14aeefbf5a2",
-                "713303f7-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "713303f3-5878-11ea-904d-b14aeefbf5a2",
+                    "713303f7-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "0..n",
             "lineSize": 2
@@ -3937,14 +2628,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71341566-5878-11ea-904d-b14aeefbf5a2",
-                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "713303f3-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "713303f3-5878-11ea-904d-b14aeefbf5a2",
-                "713303f8-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "713303f3-5878-11ea-904d-b14aeefbf5a2",
+                    "713303f8-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "0..n",
             "lineSize": 2
@@ -3957,14 +2652,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71332b01-5878-11ea-904d-b14aeefbf5a2",
-                "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                    "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "71310820-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "71310820-5878-11ea-904d-b14aeefbf5a2",
-                "71312f32-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71310820-5878-11ea-904d-b14aeefbf5a2",
+                    "71312f32-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "0..n",
             "lineSize": 2
@@ -3977,14 +2676,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71341566-5878-11ea-904d-b14aeefbf5a2",
-                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "71310820-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "71310820-5878-11ea-904d-b14aeefbf5a2",
-                "71312f33-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71310820-5878-11ea-904d-b14aeefbf5a2",
+                    "71312f33-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "0..n",
             "lineSize": 2
@@ -3997,14 +2700,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71341566-5878-11ea-904d-b14aeefbf5a2",
-                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "71341561-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "71341561-5878-11ea-904d-b14aeefbf5a2",
-                "71341564-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71341561-5878-11ea-904d-b14aeefbf5a2",
+                    "71341564-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "0..n",
             "lineSize": 2
@@ -4017,14 +2724,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71332b01-5878-11ea-904d-b14aeefbf5a2",
-                "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                    "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "71341561-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "71341561-5878-11ea-904d-b14aeefbf5a2",
-                "71341563-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71341561-5878-11ea-904d-b14aeefbf5a2",
+                    "71341563-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "0..n",
             "lineSize": 2
@@ -4037,14 +2748,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71341566-5878-11ea-904d-b14aeefbf5a2",
-                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "7131a460-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "7131a460-5878-11ea-904d-b14aeefbf5a2",
-                "7131a464-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "7131a460-5878-11ea-904d-b14aeefbf5a2",
+                    "7131a464-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "0..n",
             "lineSize": 2
@@ -4057,14 +2772,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71332b01-5878-11ea-904d-b14aeefbf5a2",
-                "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                    "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "7131a460-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "7131a460-5878-11ea-904d-b14aeefbf5a2",
-                "7131a463-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "7131a460-5878-11ea-904d-b14aeefbf5a2",
+                    "7131a463-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "1",
             "lineSize": 2
@@ -4077,14 +2796,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71341566-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71341566-5878-11ea-904d-b14aeefbf5a2",
-                "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71341566-5878-11ea-904d-b14aeefbf5a2",
+                    "71343c75-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "713267b1-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "713267b1-5878-11ea-904d-b14aeefbf5a2",
-                "713267b8-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "713267b1-5878-11ea-904d-b14aeefbf5a2",
+                    "713267b8-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "0..n",
             "lineSize": 2
@@ -4097,14 +2820,18 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71332b01-5878-11ea-904d-b14aeefbf5a2",
-                "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                    "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "713267b1-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "713267b1-5878-11ea-904d-b14aeefbf5a2",
-                "713267b7-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "713267b1-5878-11ea-904d-b14aeefbf5a2",
+                    "713267b7-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "0..n",
             "lineSize": 2
@@ -4117,20 +2844,25 @@
             "relationshipType": "Foreign Key",
             "parentCollection": "71332b01-5878-11ea-904d-b14aeefbf5a2",
             "parentField": [
-                "71332b01-5878-11ea-904d-b14aeefbf5a2",
-                "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "71332b01-5878-11ea-904d-b14aeefbf5a2",
+                    "71332b06-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "parentCardinality": "1",
             "childCollection": "7132dce2-5878-11ea-904d-b14aeefbf5a2",
             "childField": [
-                "7132dce2-5878-11ea-904d-b14aeefbf5a2",
-                "713303f1-5878-11ea-904d-b14aeefbf5a2"
+                [
+                    "7132dce2-5878-11ea-904d-b14aeefbf5a2",
+                    "713303f1-5878-11ea-904d-b14aeefbf5a2"
+                ]
             ],
             "childCardinality": "0..n",
             "lineSize": 2
         }
     ],
     "users": [],
+    "diagramViews": [],
     "idToNameHashTable": {
         "71348a92-5878-11ea-904d-b14aeefbf5a2": "video_metadata",
         "71348a93-5878-11ea-904d-b14aeefbf5a2": "height",
@@ -4252,7 +2984,14 @@
         "3c526a70-587a-11ea-904d-b14aeefbf5a2": "fk users.userid to comments_by_video.userid",
         "4cf41360-587a-11ea-904d-b14aeefbf5a2": "fk videos.videoid to uploaded_videos.videoid",
         "521a6f60-587a-11ea-904d-b14aeefbf5a2": "fk users.userid to uploaded_videos.userid",
-        "578156d0-587a-11ea-904d-b14aeefbf5a2": "fk users.userid to user_credentials.userid"
+        "578156d0-587a-11ea-904d-b14aeefbf5a2": "fk users.userid to user_credentials.userid",
+        "71363846-5878-11ea-904d-b14aeefbf5a2": "added_date",
+        "71363847-5878-11ea-904d-b14aeefbf5a2": "description",
+        "71363848-5878-11ea-904d-b14aeefbf5a2": "location",
+        "71363849-5878-11ea-904d-b14aeefbf5a2": "location_type",
+        "7136384a-5878-11ea-904d-b14aeefbf5a2": "name",
+        "7136384b-5878-11ea-904d-b14aeefbf5a2": "userid",
+        "7136384c-5878-11ea-904d-b14aeefbf5a2": "videoid"
     },
     "definitions": {
         "type": "definitions",
@@ -4265,73 +3004,29 @@
                         "code": "",
                         "type": "numeric",
                         "mode": "int",
-                        "frozen": false,
                         "name": "height",
                         "GUID": "71348a93-5878-11ea-904d-b14aeefbf5a2",
                         "primaryKey": false,
                         "childType": "numeric",
-                        "relationshipType": "",
-                        "parentRelationship": "",
-                        "foreignCollection": "",
-                        "foreignField": [],
-                        "childRelationships": [],
-                        "unit": "",
-                        "minimum": "",
-                        "exclusiveMinimum": false,
-                        "maximum": "",
-                        "exclusiveMaximum": false,
-                        "multipleOf": "",
-                        "divisibleBy": "",
-                        "default": "",
-                        "enum": [],
-                        "sample": "",
                         "compositeKey": [
                             "compositePartitionKey",
                             "compositeClusteringKey"
                         ],
-                        "compositePartitionKey": false,
-                        "compositeClusteringKey": false,
-                        "description": "",
-                        "comments": "",
-                        "dependencies": [],
-                        "required": false,
-                        "id": ""
+                        "isActivated": true
                     },
                     {
                         "code": "",
                         "type": "numeric",
                         "mode": "int",
-                        "frozen": false,
                         "name": "width",
                         "GUID": "71348a94-5878-11ea-904d-b14aeefbf5a2",
                         "primaryKey": false,
                         "childType": "numeric",
-                        "relationshipType": "",
-                        "parentRelationship": "",
-                        "foreignCollection": "",
-                        "foreignField": [],
-                        "childRelationships": [],
-                        "unit": "",
-                        "minimum": "",
-                        "exclusiveMinimum": false,
-                        "maximum": "",
-                        "exclusiveMaximum": false,
-                        "multipleOf": "",
-                        "divisibleBy": "",
-                        "default": "",
-                        "enum": [],
-                        "sample": "",
                         "compositeKey": [
                             "compositePartitionKey",
                             "compositeClusteringKey"
                         ],
-                        "compositePartitionKey": false,
-                        "compositeClusteringKey": false,
-                        "description": "",
-                        "comments": "",
-                        "dependencies": [],
-                        "required": false,
-                        "id": ""
+                        "isActivated": true
                     },
                     {
                         "code": "",
@@ -4348,133 +3043,86 @@
                                 "GUID": "7134b1a0-5878-11ea-904d-b14aeefbf5a2",
                                 "primaryKey": false,
                                 "childType": "char",
-                                "relationshipType": "",
-                                "parentRelationship": "",
-                                "foreignCollection": "",
-                                "foreignField": [],
-                                "childRelationships": [],
-                                "default": "",
-                                "minLength": "",
-                                "maxLength": "",
-                                "pattern": "",
-                                "enum": [],
-                                "sample": "",
-                                "comments": "",
                                 "compositeKey": [
                                     "compositePartitionKey",
                                     "compositeClusteringKey"
                                 ],
-                                "compositePartitionKey": false,
-                                "compositeClusteringKey": false,
-                                "description": "",
-                                "required": false,
-                                "id": "",
                                 "hackoladeMeta": {},
-                                "arrayParentType": "set"
+                                "arrayParentType": "set",
+                                "isActivated": true
                             }
                         ],
                         "primaryKey": false,
                         "childType": "set",
                         "additionalItems": true,
-                        "relationshipType": "",
-                        "parentRelationship": "",
-                        "foreignCollection": "",
-                        "foreignField": [],
-                        "childRelationships": [],
-                        "dependencies": [],
-                        "minProperties": "",
-                        "maxProperties": "",
                         "additionalProperties": false,
                         "compositeKey": [
                             "compositePartitionKey",
                             "compositeClusteringKey"
                         ],
-                        "compositePartitionKey": false,
-                        "compositeClusteringKey": false,
-                        "description": "",
-                        "comments": "",
-                        "required": false,
-                        "id": ""
+                        "isActivated": true
                     },
                     {
                         "code": "",
                         "type": "string",
                         "mode": "text",
-                        "frozen": false,
                         "name": "encoding",
                         "GUID": "71348a96-5878-11ea-904d-b14aeefbf5a2",
                         "primaryKey": false,
                         "childType": "char",
-                        "relationshipType": "",
-                        "parentRelationship": "",
-                        "foreignCollection": "",
-                        "foreignField": [],
-                        "childRelationships": [],
-                        "default": "",
-                        "minLength": "",
-                        "maxLength": "",
-                        "pattern": "",
-                        "enum": [],
-                        "sample": "",
-                        "comments": "",
                         "compositeKey": [
                             "compositePartitionKey",
                             "compositeClusteringKey"
                         ],
-                        "compositePartitionKey": false,
-                        "compositeClusteringKey": false,
-                        "description": "",
-                        "dependencies": [],
-                        "required": false,
-                        "id": ""
+                        "isActivated": true
                     }
                 ],
                 "name": "video_metadata",
                 "GUID": "71348a92-5878-11ea-904d-b14aeefbf5a2",
                 "primaryKey": false,
                 "childType": "udt",
-                "relationshipType": "",
-                "parentRelationship": "",
-                "foreignCollection": "",
-                "foreignField": [],
-                "childRelationships": [],
-                "dependencies": [],
-                "minProperties": "",
-                "maxProperties": "",
                 "frozen": true,
                 "additionalProperties": false,
                 "compositeKey": [
                     "compositePartitionKey",
                     "compositeClusteringKey"
                 ],
-                "compositePartitionKey": false,
-                "compositeClusteringKey": false,
-                "description": "",
-                "comments": "",
-                "required": false,
-                "id": "",
                 "definitionRefs": [
                     [
                         "71341566-5878-11ea-904d-b14aeefbf5a2",
                         "71343c70-5878-11ea-904d-b14aeefbf5a2",
                         "71343c76-5878-11ea-904d-b14aeefbf5a2"
                     ]
-                ]
+                ],
+                "isActivated": true
             }
         ],
         "GUID": "f1e85fd1-5874-11ea-904d-b14aeefbf5a2"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "93edabe3-b003-11ec-ab49-f732172fe980"
     },
     "externalDefinitions": {
         "type": "externalDefinitions",
         "properties": [],
         "GUID": "f1e85fd2-5874-11ea-904d-b14aeefbf5a2"
     },
+    "sources": [],
     "decorativeSymbols": [],
     "dbVersion": "2019.x",
     "dbVendor": "ScyllaDB",
     "appTarget": "ScyllaDB",
     "creationTS": "2020-02-26T08:49:48.621Z",
-    "hideModelViews": false,
+    "GUID": "f1e85fd0-5874-11ea-904d-b14aeefbf5a2",
+    "code": "",
+    "lastModifTS": "2022-03-30T08:32:04.909Z",
+    "persistenceSchemaVersion": "6",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
     "hackoladeMeta": {
         "validationErrors": {
             "port": false
@@ -4484,11 +3132,11 @@
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "ScyllaDB",
-        "pluginVersion": "0.0.1",
+        "pluginVersion": "0.1.42",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "3.6.6"
+        "version": "6.0.0"
     },
     "settings": {
         "centralPane": {
@@ -4496,137 +3144,137 @@
                 "erd": [
                     {
                         "GUID": "71310820-5878-11ea-904d-b14aeefbf5a2",
-                        "x": 1142.2205125533094,
-                        "y": 577.0946575174074,
-                        "width": 245,
-                        "height": 86,
+                        "x": 1140.156186612576,
+                        "y": 551.7484787018255,
+                        "width": 265,
+                        "height": 105,
                         "color": {}
                     },
                     {
                         "GUID": "7131a460-5878-11ea-904d-b14aeefbf5a2",
-                        "x": 1142.2205125533094,
-                        "y": 812.0946575174074,
-                        "width": 245,
-                        "height": 86,
+                        "x": 1140.156186612576,
+                        "y": 801.7484787018255,
+                        "width": 265,
+                        "height": 105,
                         "color": {}
                     },
                     {
                         "GUID": "7131cb71-5878-11ea-904d-b14aeefbf5a2",
-                        "x": 1541.3494224335288,
-                        "y": 258.6557955551594,
-                        "width": 243,
-                        "height": 100,
+                        "x": 1550.156186612576,
+                        "y": 214.40427425698493,
+                        "width": 271,
+                        "height": 123,
                         "color": {}
                     },
                     {
                         "GUID": "7131f281-5878-11ea-904d-b14aeefbf5a2",
-                        "x": 184.2205125533095,
-                        "y": 308.289811918558,
-                        "width": 310,
-                        "height": 100,
+                        "x": 182.15618661257608,
+                        "y": 264.0382906203835,
+                        "width": 346,
+                        "height": 123,
                         "color": {}
                     },
                     {
                         "GUID": "71321991-5878-11ea-904d-b14aeefbf5a2",
-                        "x": 217.2205125533095,
-                        "y": 790.289811918558,
+                        "x": 233.15618661257608,
+                        "y": 752.7484787018255,
                         "width": 243,
                         "height": 58,
                         "color": {}
                     },
                     {
                         "GUID": "713267b1-5878-11ea-904d-b14aeefbf5a2",
-                        "x": 1133.656057613199,
-                        "y": 982.1620741490386,
-                        "width": 263,
-                        "height": 142,
+                        "x": 1130.156186612576,
+                        "y": 935.7484787018255,
+                        "width": 286,
+                        "height": 177,
                         "color": {}
                     },
                     {
                         "GUID": "7132b5d1-5878-11ea-904d-b14aeefbf5a2",
-                        "x": 1132.2205125533087,
-                        "y": 238.01549239264762,
-                        "width": 263,
-                        "height": 142,
+                        "x": 1130.156186612576,
+                        "y": 193.76397109447316,
+                        "width": 286,
+                        "height": 177,
                         "color": {}
                     },
                     {
                         "GUID": "7132dce2-5878-11ea-904d-b14aeefbf5a2",
-                        "x": 1544.2205125533094,
-                        "y": 795.289811918558,
-                        "width": 243,
-                        "height": 72,
+                        "x": 1566.156186612576,
+                        "y": 751.0382906203836,
+                        "width": 239,
+                        "height": 87,
                         "color": {}
                     },
                     {
                         "GUID": "713303f3-5878-11ea-904d-b14aeefbf5a2",
-                        "x": 1109.2205125533094,
-                        "y": 427.0946575174075,
-                        "width": 328,
-                        "height": 100,
+                        "x": 1100.156186612576,
+                        "y": 399.74847870182555,
+                        "width": 346,
+                        "height": 123,
                         "color": {}
                     },
                     {
                         "GUID": "71332b01-5878-11ea-904d-b14aeefbf5a2",
-                        "x": 1534.2205125533094,
-                        "y": 597.1380872150806,
-                        "width": 263,
-                        "height": 100,
+                        "x": 1532.156186612576,
+                        "y": 552.8865659169062,
+                        "width": 308,
+                        "height": 123,
                         "color": {}
                     },
                     {
                         "GUID": "71335211-5878-11ea-904d-b14aeefbf5a2",
-                        "x": 184.2205125533095,
-                        "y": 470.28981191855803,
-                        "width": 310,
-                        "height": 114,
+                        "x": 185.15618661257608,
+                        "y": 432.74847870182555,
+                        "width": 340,
+                        "height": 141,
                         "color": {}
                     },
                     {
                         "GUID": "7133ee51-5878-11ea-904d-b14aeefbf5a2",
-                        "x": 214.2205125533095,
-                        "y": 640.289811918558,
-                        "width": 250,
-                        "height": 72,
+                        "x": 205.15618661257608,
+                        "y": 619.7484787018255,
+                        "width": 300,
+                        "height": 87,
                         "color": {}
                     },
                     {
                         "GUID": "71341561-5878-11ea-904d-b14aeefbf5a2",
-                        "x": 1142.2205125533094,
-                        "y": 688.0946575174074,
-                        "width": 243,
-                        "height": 72,
+                        "x": 1146.156186612576,
+                        "y": 685.7484787018255,
+                        "width": 253,
+                        "height": 87,
                         "color": {}
                     },
                     {
                         "GUID": "71341566-5878-11ea-904d-b14aeefbf5a2",
-                        "x": 661.2205125533094,
-                        "y": 599.289811918558,
-                        "width": 315,
-                        "height": 282,
+                        "x": 648.5876525127416,
+                        "y": 504.6894062390452,
+                        "width": 373,
+                        "height": 357,
                         "color": {}
                     },
                     {
                         "GUID": "7134b1a2-5878-11ea-904d-b14aeefbf5a2",
-                        "x": 184.2205125533095,
-                        "y": 900.289811918558,
-                        "width": 310,
-                        "height": 114,
+                        "x": 182.15618661257608,
+                        "y": 856.7484787018255,
+                        "width": 346,
+                        "height": 141,
                         "color": {}
                     },
                     {
                         "GUID": "716585a4-5878-11ea-904d-b14aeefbf5a2",
-                        "x": 683.2205125533094,
-                        "y": 389.289811918558,
-                        "width": 268,
-                        "height": 127,
+                        "x": 683.1748736080762,
+                        "y": 269.5149640483755,
+                        "width": 271,
+                        "height": 159,
                         "color": {}
                     }
                 ],
                 "buckets": [
                     {
-                        "x": 144.22051255330948,
-                        "y": 198.01549239264764,
+                        "x": 142.15618661257608,
+                        "y": 153.76397109447316,
                         "GUID": "7165acb0-5878-11ea-904d-b14aeefbf5a2"
                     }
                 ],
@@ -4642,22 +3290,20 @@
                     "erd": [],
                     "buckets": [],
                     "decorativeSymbols": [],
-                    "hideRelationshipName": false,
-                    "showPropertiesBoxes": false,
-                    "nameAlongTheLine": false,
                     "forceLayout": true,
                     "defaultLinkLength": 300
                 },
-                "expandCollections": [],
-                "decorativeSymbols": []
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
             },
             "collectionLevel": {},
             "changed": false
         },
         "dtDiagram": {
             "collapsedNodes": [],
-            "details": true,
-            "hideErdDetails": false
+            "shouldDistributeCollections": false
         }
     }
 }

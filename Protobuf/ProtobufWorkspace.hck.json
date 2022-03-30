@@ -2923,7 +2923,7 @@
                     "type": "choice",
                     "properties": [
                         {
-                            "type": "subschema",
+                            "type": "document",
                             "properties": [
                                 {
                                     "code": "",
@@ -2941,10 +2941,12 @@
                             ],
                             "isActivated": true,
                             "GUID": "e4007680-3736-11ec-aed3-1d08cc738c68",
-                            "error": {}
+                            "error": {},
+                            "subschema": true,
+                            "childType": "message"
                         },
                         {
-                            "type": "subschema",
+                            "type": "document",
                             "properties": [
                                 {
                                     "code": "",
@@ -2965,10 +2967,12 @@
                             ],
                             "isActivated": true,
                             "GUID": "e4007681-3736-11ec-aed3-1d08cc738c68",
-                            "error": {}
+                            "error": {},
+                            "subschema": true,
+                            "childType": "message"
                         },
                         {
-                            "type": "subschema",
+                            "type": "document",
                             "properties": [
                                 {
                                     "code": "",
@@ -2992,10 +2996,12 @@
                             ],
                             "isActivated": true,
                             "GUID": "e4007682-3736-11ec-aed3-1d08cc738c68",
-                            "error": {}
+                            "error": {},
+                            "subschema": true,
+                            "childType": "message"
                         },
                         {
-                            "type": "subschema",
+                            "type": "document",
                             "properties": [
                                 {
                                     "code": "",
@@ -3019,10 +3025,12 @@
                             ],
                             "isActivated": true,
                             "GUID": "e4007683-3736-11ec-aed3-1d08cc738c68",
-                            "error": {}
+                            "error": {},
+                            "subschema": true,
+                            "childType": "message"
                         },
                         {
-                            "type": "subschema",
+                            "type": "document",
                             "properties": [
                                 {
                                     "code": "",
@@ -3041,10 +3049,12 @@
                             ],
                             "isActivated": true,
                             "GUID": "e4007684-3736-11ec-aed3-1d08cc738c68",
-                            "error": {}
+                            "error": {},
+                            "subschema": true,
+                            "childType": "message"
                         },
                         {
-                            "type": "subschema",
+                            "type": "document",
                             "properties": [
                                 {
                                     "code": "",
@@ -3063,10 +3073,12 @@
                             ],
                             "isActivated": true,
                             "GUID": "e4007685-3736-11ec-aed3-1d08cc738c68",
-                            "error": {}
+                            "error": {},
+                            "subschema": true,
+                            "childType": "message"
                         },
                         {
-                            "type": "subschema",
+                            "type": "document",
                             "properties": [
                                 {
                                     "code": "",
@@ -3085,10 +3097,12 @@
                             ],
                             "isActivated": true,
                             "GUID": "e4007686-3736-11ec-aed3-1d08cc738c68",
-                            "error": {}
+                            "error": {},
+                            "subschema": true,
+                            "childType": "message"
                         },
                         {
-                            "type": "subschema",
+                            "type": "document",
                             "properties": [
                                 {
                                     "code": "",
@@ -3107,7 +3121,9 @@
                             ],
                             "isActivated": true,
                             "GUID": "e4007687-3736-11ec-aed3-1d08cc738c68",
-                            "error": {}
+                            "error": {},
+                            "subschema": true,
+                            "childType": "message"
                         }
                     ],
                     "isActivated": true,
@@ -3159,7 +3175,7 @@
                                 "type": "choice",
                                 "properties": [
                                     {
-                                        "type": "subschema",
+                                        "type": "document",
                                         "properties": [
                                             {
                                                 "code": "",
@@ -3177,10 +3193,12 @@
                                         ],
                                         "isActivated": true,
                                         "GUID": "e3ff3e03-3736-11ec-aed3-1d08cc738c68",
-                                        "error": {}
+                                        "error": {},
+                                        "subschema": true,
+                                        "childType": "message"
                                     },
                                     {
-                                        "type": "subschema",
+                                        "type": "document",
                                         "properties": [
                                             {
                                                 "code": "",
@@ -3201,10 +3219,12 @@
                                         ],
                                         "isActivated": true,
                                         "GUID": "e3ff3e04-3736-11ec-aed3-1d08cc738c68",
-                                        "error": {}
+                                        "error": {},
+                                        "subschema": true,
+                                        "childType": "message"
                                     },
                                     {
-                                        "type": "subschema",
+                                        "type": "document",
                                         "properties": [
                                             {
                                                 "code": "",
@@ -3228,10 +3248,12 @@
                                         ],
                                         "isActivated": true,
                                         "GUID": "e3ff3e05-3736-11ec-aed3-1d08cc738c68",
-                                        "error": {}
+                                        "error": {},
+                                        "subschema": true,
+                                        "childType": "message"
                                     },
                                     {
-                                        "type": "subschema",
+                                        "type": "document",
                                         "properties": [
                                             {
                                                 "code": "",
@@ -3255,7 +3277,9 @@
                                         ],
                                         "isActivated": true,
                                         "GUID": "e3ff3e06-3736-11ec-aed3-1d08cc738c68",
-                                        "error": {}
+                                        "error": {},
+                                        "subschema": true,
+                                        "childType": "message"
                                     }
                                 ],
                                 "isActivated": true,
@@ -3708,16 +3732,16 @@
     "creationTS": "2021-10-27T15:01:51.673Z",
     "GUID": "d10d8a90-3736-11ec-aed3-1d08cc738c68",
     "isLineageEnabled": false,
-    "lastModifTS": "2021-10-27T17:53:35.891Z",
-    "persistenceSchemaVersion": "5",
+    "lastModifTS": "2022-03-30T08:29:44.988Z",
+    "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginName": "Protobuf",
-        "pluginVersion": "0.0.1",
+        "pluginVersion": "0.1.3",
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "5.2.7"
+        "version": "6.0.0"
     },
     "hackoladeMeta": {
         "validationErrors": {
