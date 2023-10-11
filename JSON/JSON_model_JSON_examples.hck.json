@@ -2,109 +2,6 @@
     "modelName": "JSON examples",
     "collections": [
         {
-            "collectionName": "example5",
-            "type": "object",
-            "properties": [
-                {
-                    "code": "",
-                    "type": "document",
-                    "properties": [
-                        {
-                            "code": "",
-                            "type": "string",
-                            "name": "header",
-                            "isActivated": true,
-                            "primaryKey": false,
-                            "GUID": "f6a4a2d1-8263-11eb-aa82-6b7894d077f5",
-                            "required": true,
-                            "sample": "SVG Viewer",
-                            "error": {},
-                            "properties": []
-                        },
-                        {
-                            "code": "",
-                            "type": "array",
-                            "properties": [
-                                {
-                                    "type": "document",
-                                    "properties": [
-                                        {
-                                            "code": "",
-                                            "type": "string",
-                                            "name": "id",
-                                            "isActivated": true,
-                                            "primaryKey": false,
-                                            "GUID": "f6a4c9e0-8263-11eb-aa82-6b7894d077f5",
-                                            "required": true,
-                                            "sample": "About",
-                                            "error": {},
-                                            "properties": []
-                                        },
-                                        {
-                                            "code": "",
-                                            "type": "string",
-                                            "name": "label",
-                                            "isActivated": true,
-                                            "primaryKey": false,
-                                            "GUID": "f6a4c9e1-8263-11eb-aa82-6b7894d077f5",
-                                            "required": false,
-                                            "sample": "About Adobe CVG Viewer...",
-                                            "error": {},
-                                            "properties": []
-                                        }
-                                    ],
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "GUID": "f6bee190-8263-11eb-aa82-6b7894d077f5",
-                                    "arrayItem": true,
-                                    "arrayParentType": "array",
-                                    "error": {},
-                                    "additionalProperties": true
-                                },
-                                {
-                                    "type": "null",
-                                    "hackoladeMeta": {},
-                                    "isActivated": true,
-                                    "GUID": "f6bee191-8263-11eb-aa82-6b7894d077f5",
-                                    "arrayItem": true,
-                                    "arrayParentType": "array",
-                                    "error": {},
-                                    "properties": []
-                                }
-                            ],
-                            "additionalItems": true,
-                            "name": "items",
-                            "isActivated": true,
-                            "primaryKey": false,
-                            "GUID": "f6a4a2d2-8263-11eb-aa82-6b7894d077f5",
-                            "required": true,
-                            "error": {}
-                        }
-                    ],
-                    "name": "menu",
-                    "isActivated": true,
-                    "primaryKey": false,
-                    "GUID": "f6a4a2d0-8263-11eb-aa82-6b7894d077f5",
-                    "required": true,
-                    "error": {},
-                    "additionalProperties": true
-                }
-            ],
-            "definitions": {
-                "type": "definitions",
-                "GUID": "f6beba80-8263-11eb-aa82-6b7894d077f5",
-                "properties": []
-            },
-            "isActivated": true,
-            "GUID": "f6be9370-8263-11eb-aa82-6b7894d077f5",
-            "code": "",
-            "hackoladeMeta": {
-                "validationErrors": {}
-            },
-            "bucketId": "f6be4550-8263-11eb-aa82-6b7894d077f5",
-            "additionalProperties": true
-        },
-        {
             "collectionName": "example4",
             "type": "object",
             "properties": [
@@ -790,7 +687,6 @@
                                     "isActivated": true,
                                     "GUID": "f760edf0-8263-11eb-aa82-6b7894d077f5",
                                     "arrayItem": true,
-                                    "arrayParentType": "array",
                                     "error": {},
                                     "additionalProperties": true
                                 }
@@ -1296,7 +1192,6 @@
                                             "isActivated": true,
                                             "GUID": "f89cc952-8263-11eb-aa82-6b7894d077f5",
                                             "arrayItem": true,
-                                            "arrayParentType": "array",
                                             "error": {},
                                             "additionalProperties": true
                                         }
@@ -1472,7 +1367,6 @@
                                                                     "isActivated": true,
                                                                     "GUID": "f9320470-8263-11eb-aa82-6b7894d077f5",
                                                                     "arrayItem": true,
-                                                                    "arrayParentType": "array",
                                                                     "sample": "GML",
                                                                     "error": {},
                                                                     "properties": []
@@ -1561,26 +1455,6 @@
     ],
     "buckets": [
         {
-            "name": "example5",
-            "type": "bucket",
-            "collectionIds": [
-                "f6be9370-8263-11eb-aa82-6b7894d077f5"
-            ],
-            "backgroundColor": {
-                "r": 216,
-                "g": 0,
-                "b": 115,
-                "a": 1
-            },
-            "show": true,
-            "isActivated": true,
-            "GUID": "f6be4550-8263-11eb-aa82-6b7894d077f5",
-            "code": "",
-            "hackoladeMeta": {
-                "validationErrors": {}
-            }
-        },
-        {
             "name": "example4",
             "type": "bucket",
             "collectionIds": [
@@ -1666,13 +1540,6 @@
     "users": [],
     "diagramViews": [],
     "idToNameHashTable": {
-        "f6be4550-8263-11eb-aa82-6b7894d077f5": "example5",
-        "f6a4a2d0-8263-11eb-aa82-6b7894d077f5": "menu",
-        "f6a4a2d1-8263-11eb-aa82-6b7894d077f5": "header",
-        "f6a4a2d2-8263-11eb-aa82-6b7894d077f5": "items",
-        "f6a4c9e0-8263-11eb-aa82-6b7894d077f5": "id",
-        "f6a4c9e1-8263-11eb-aa82-6b7894d077f5": "label",
-        "f6be9370-8263-11eb-aa82-6b7894d077f5": "example5",
         "f76078c0-8263-11eb-aa82-6b7894d077f5": "example4",
         "f744b360-8263-11eb-aa82-6b7894d077f5": "web-app",
         "f744b361-8263-11eb-aa82-6b7894d077f5": "servlet",
@@ -1826,90 +1693,81 @@
         "customPropertiesUpdated": true
     },
     "description": "From https://json.org/example.html after reverse-engineering",
-    "lastModifTS": "2022-03-30T08:04:19.935Z",
+    "lastModifTS": "2023-10-11T09:21:08.442Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "6.0.0"
+        "version": "6.11.4"
     },
     "settings": {
         "centralPane": {
             "dbLevel": {
                 "erd": [
                     {
-                        "GUID": "f6be9370-8263-11eb-aa82-6b7894d077f5",
-                        "x": 904.9792284866475,
-                        "y": 761.7744807121658,
-                        "width": 208,
-                        "height": 87,
-                        "color": {}
-                    },
-                    {
                         "GUID": "f7609fd0-8263-11eb-aa82-6b7894d077f5",
-                        "x": 90,
-                        "y": 90,
+                        "x": 1040,
+                        "y": 1041.7210682492582,
                         "width": 383,
                         "height": 1000,
                         "color": {}
                     },
                     {
                         "GUID": "f8071901-8263-11eb-aa82-6b7894d077f5",
-                        "x": 558.1632047477738,
-                        "y": 88.27893175074186,
+                        "x": 1508.1632047477738,
+                        "y": 1040,
                         "width": 262,
                         "height": 429,
                         "color": {}
                     },
                     {
                         "GUID": "f89cc950-8263-11eb-aa82-6b7894d077f5",
-                        "x": 908.4213649851629,
-                        "y": 498.23738872403584,
+                        "x": 1858.4213649851629,
+                        "y": 1449.958456973294,
                         "width": 264,
                         "height": 177,
                         "color": {}
                     },
                     {
                         "GUID": "f931dd61-8263-11eb-aa82-6b7894d077f5",
-                        "x": 906.7002967359047,
-                        "y": 90,
+                        "x": 1856.7002967359047,
+                        "y": 1041.7210682492582,
                         "width": 320,
                         "height": 321,
                         "color": {}
                     }
                 ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
                 "buckets": [
                     {
-                        "x": 864.9792284866475,
-                        "y": 721.7744807121658,
-                        "GUID": "f6be4550-8263-11eb-aa82-6b7894d077f5"
-                    },
-                    {
-                        "x": 50,
-                        "y": 50,
+                        "x": 1000,
+                        "y": 1001.7210682492582,
                         "GUID": "f76078c0-8263-11eb-aa82-6b7894d077f5"
                     },
                     {
-                        "x": 518.1632047477738,
-                        "y": 48.278931750741855,
+                        "x": 1468.1632047477738,
+                        "y": 1000,
                         "GUID": "f8071900-8263-11eb-aa82-6b7894d077f5"
                     },
                     {
-                        "x": 868.4213649851629,
-                        "y": 458.23738872403584,
+                        "x": 1818.4213649851629,
+                        "y": 1409.958456973294,
                         "GUID": "f89ca240-8263-11eb-aa82-6b7894d077f5"
                     },
                     {
-                        "x": 866.7002967359047,
-                        "y": 50,
+                        "x": 1816.7002967359047,
+                        "y": 1001.7210682492582,
                         "GUID": "f931dd60-8263-11eb-aa82-6b7894d077f5"
                     }
                 ],
-                "collapsedNodes": [
-                    "f6be9370-8263-11eb-aa82-6b7894d077f5f6a4a2d0-8263-11eb-aa82-6b7894d077f5f6a4a2d2-8263-11eb-aa82-6b7894d077f5"
-                ],
+                "collapsedNodes": [],
                 "activeRelationship": "",
                 "activeRelationshipFields": {
                     "childField": [],
@@ -1927,7 +1785,29 @@
                 "diagramViews": [],
                 "decorativeSymbols": [],
                 "nestedCollectionsLayout": "horizontal",
-                "options": []
+                "options": [
+                    {
+                        "GUID": "f7609fd0-8263-11eb-aa82-6b7894d077f5",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "f8071901-8263-11eb-aa82-6b7894d077f5",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "f89cc950-8263-11eb-aa82-6b7894d077f5",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    },
+                    {
+                        "GUID": "f931dd61-8263-11eb-aa82-6b7894d077f5",
+                        "autoWidth": false,
+                        "autoHeight": false
+                    }
+                ],
+                "relationshipUpdateDisabled": false
             },
             "collectionLevel": {},
             "changed": false
