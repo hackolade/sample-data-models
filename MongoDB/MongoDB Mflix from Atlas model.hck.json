@@ -1,0 +1,1695 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "Comments",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Id",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "code": "_id",
+                    "GUID": "e3898b61-3ec5-4607-998e-4b48a9121f7a",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Name",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "code": "name",
+                    "GUID": "78a8db4e-edcd-4439-a4d2-64d5ec2fc516",
+                    "required": true,
+                    "sample": "Jordan Medina",
+                    "error": {}
+                },
+                {
+                    "name": "Email",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "code": "email",
+                    "GUID": "007db2dd-ece3-4d02-940e-32f205b19ece",
+                    "required": true,
+                    "sample": "jordan_medina@fakegmail.com",
+                    "error": {}
+                },
+                {
+                    "name": "Movie Id",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": false,
+                    "code": "movie_id",
+                    "GUID": "855238a3-4928-445c-88cc-f67e937215d5",
+                    "required": true,
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "629e9ef6-f3eb-435b-8df9-b44418993659",
+                    "foreignField": [
+                        "629e9ef6-f3eb-435b-8df9-b44418993659",
+                        "db9349af-2b5a-485b-a4ec-0a627ad80605"
+                    ],
+                    "parentRelationship": "c6b7ba65-cf5e-48c5-82d3-1b712619d204",
+                    "error": {}
+                },
+                {
+                    "name": "Text",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "code": "text",
+                    "GUID": "b77d427a-cb9a-47e9-820e-756ed5377952",
+                    "required": true,
+                    "sample": "Eum labore modi maxime alias quaerat reprehenderit atque. Deserunt dignissimos voluptatibus nihil fuga tenetur minus ullam. Illo libero culpa dolores error.",
+                    "error": {}
+                },
+                {
+                    "name": "Date",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "code": "date",
+                    "GUID": "61ce0c34-3212-4618-9d1b-aebac2dafb9a",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "dd80cacf-c9ab-482b-b80e-8f6c6238f8ab",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "e3898b61-3ec5-4607-998e-4b48a9121f7a",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "9be8e1c4-3144-43a3-914e-c2c399e80de7"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "21d1f3c1-ae7d-4d34-8aba-2236a758ca17",
+            "bucketId": "a6b5c57a-b886-4144-8b53-4ecb5e30b4af",
+            "code": "comments",
+            "hackoladeMeta": {
+                "namingConvention": "collectionName",
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Movies",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Id",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "code": "_id",
+                    "GUID": "db9349af-2b5a-485b-a4ec-0a627ad80605",
+                    "required": true,
+                    "childRelationships": [
+                        "c6b7ba65-cf5e-48c5-82d3-1b712619d204"
+                    ],
+                    "error": {}
+                },
+                {
+                    "name": "Plot",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "code": "plot",
+                    "GUID": "25f2e405-a51b-456d-95a5-7865e2a59980",
+                    "required": false,
+                    "sample": "Youth film about friendship between two boys from very different backgrounds. Steffen finish school and do not really know what he wants. He lives at home with his mother, who is a ...",
+                    "error": {}
+                },
+                {
+                    "name": "Genres",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "354d37ce-f09a-478d-8ae7-70831a28d74f",
+                            "arrayItem": true,
+                            "sample": "Drama",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "code": "genres",
+                    "GUID": "b4e1cdc7-c551-444f-874a-16ade55daf1c",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "name": "Runtime",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "code": "runtime",
+                    "GUID": "d07cb369-6e0e-4152-89b5-625b71fdb937",
+                    "required": false,
+                    "mode": "integer32",
+                    "sample": 910,
+                    "error": {}
+                },
+                {
+                    "name": "Cast",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "0c235376-921c-4292-9dd3-0e4aa2148870",
+                            "arrayItem": true,
+                            "sample": "Stanley Hunt",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "code": "cast",
+                    "GUID": "ec139b9d-c16b-485b-b824-f19feee6d7d0",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "name": "Num Mflix Comments",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "code": "num_mflix_comments",
+                    "GUID": "c655d1bc-ae23-4598-bb48-f9afef7e7cbb",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 153,
+                    "error": {}
+                },
+                {
+                    "name": "Title",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "code": "title",
+                    "GUID": "4dc419ba-2925-489b-81e1-e565d701fdb5",
+                    "required": true,
+                    "sample": "Me and Charly",
+                    "error": {}
+                },
+                {
+                    "name": "Fullplot",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "code": "fullplot",
+                    "GUID": "e91ebfdd-b50c-4740-b403-8de8b0b73e12",
+                    "required": false,
+                    "sample": "Youth film about friendship between two boys from very different backgrounds. Steffen finish school and do not really know what he wants. He lives at home with his mother, who is a journalist. He comes with Majbritt, the daughter of one of the rich men in Silkeborg, where the story takes place. Charly is a Copenhagen mess already know life's dark sides and is placed in a youth home outside the city. They meet when Charly is by cutting Steffens moped. As the story concludes, the Charly again got mixed up in something and have to run away, and now gives Steffen him the moped. They have become friends, and the friendship has also been shown to outweigh Steffens compared to Majbritt and the upper class, she represents.",
+                    "error": {}
+                },
+                {
+                    "name": "Countries",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "8111d6ab-572a-4514-806f-8bc74ea4c4af",
+                            "arrayItem": true,
+                            "sample": "USA",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "code": "countries",
+                    "GUID": "e74dbf8f-6bee-46b7-899f-b15189879ae9",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Released",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "code": "released",
+                    "GUID": "ea043fbe-2c0f-4df3-b7f9-681e3aebdac8",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "name": "Directors",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "b94888c7-a41c-4ff8-9204-a1ee9529e7db",
+                            "arrayItem": true,
+                            "sample": "Edward S. Curtis",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "code": "directors",
+                    "GUID": "30381013-62c3-4d5f-9287-96c479116a57",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "name": "Rated",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "code": "rated",
+                    "GUID": "49b7cfc9-4c76-4bbc-b84b-238e69346f7b",
+                    "required": false,
+                    "sample": "UNRATED",
+                    "error": {}
+                },
+                {
+                    "name": "Awards",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "Wins",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "code": "wins",
+                            "GUID": "5006c2a5-d07f-472c-9148-08bf1bc242bb",
+                            "required": true,
+                            "mode": "integer32",
+                            "sample": 105,
+                            "error": {}
+                        },
+                        {
+                            "name": "Nominations",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "code": "nominations",
+                            "GUID": "3947566c-f19e-43af-b21e-c355a0590d15",
+                            "required": true,
+                            "mode": "integer32",
+                            "sample": 112,
+                            "error": {}
+                        },
+                        {
+                            "name": "Text",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "code": "text",
+                            "GUID": "993f35fa-9493-4762-9393-72ace2c7f8e2",
+                            "required": true,
+                            "sample": "1 win & 1 nomination.",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "primaryKey": false,
+                    "code": "awards",
+                    "GUID": "a0db8e0a-cf1b-4ffc-8e20-027aec4f02b6",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Lastupdated",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "code": "lastupdated",
+                    "GUID": "53323eb4-46a0-4c54-b6bf-2d474cd901b9",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Year",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "code": "year",
+                    "type": "multiple",
+                    "primaryKey": false,
+                    "multipleTypes": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "GUID": "d8e3b189-c559-4c78-a8b5-1320271651dc",
+                            "primaryKey": false
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "7cd82eeb-ba6a-4df8-9781-0e100bcb8629",
+                            "primaryKey": false
+                        }
+                    ],
+                    "GUID": "74452c5e-1ea1-48b1-965c-6d145cde43a9",
+                    "required": true,
+                    "sample": 1998,
+                    "error": {}
+                },
+                {
+                    "name": "Imdb",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "Rating",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "code": "rating",
+                            "type": "multiple",
+                            "primaryKey": false,
+                            "multipleTypes": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "GUID": "bc3725c1-702d-47e4-b106-de598f344557",
+                                    "primaryKey": false
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "0f3a39bd-5a76-42fd-b8fa-e965f9e0265e",
+                                    "primaryKey": false
+                                }
+                            ],
+                            "GUID": "6216ea54-0f73-462d-8793-ebfb394ac412",
+                            "required": true,
+                            "sample": 7.5,
+                            "error": {}
+                        },
+                        {
+                            "name": "Votes",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "code": "votes",
+                            "type": "multiple",
+                            "primaryKey": false,
+                            "multipleTypes": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "GUID": "b22ec18f-0eb7-47de-bb69-e97381397aef",
+                                    "primaryKey": false
+                                },
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "6ec2e451-f620-4252-ba56-eaca8bbd99bd",
+                                    "primaryKey": false
+                                }
+                            ],
+                            "GUID": "67f8ddbd-cccf-445c-a4f9-6397881779f7",
+                            "required": true,
+                            "sample": 775637,
+                            "error": {}
+                        },
+                        {
+                            "name": "Id",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "code": "id",
+                            "GUID": "bc8cb3a8-db9f-48d7-b099-4f201e2da25b",
+                            "required": true,
+                            "mode": "integer32",
+                            "sample": 218533,
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "primaryKey": false,
+                    "code": "imdb",
+                    "GUID": "2cdafcca-ec6e-428b-ac75-d7f2551d7856",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Type",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "code": "type",
+                    "GUID": "b28576f8-8cd8-41ba-86e3-96fc7ca96e3a",
+                    "required": true,
+                    "sample": "movie",
+                    "error": {}
+                },
+                {
+                    "name": "Tomatoes",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "Viewer",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "Rating",
+                                    "hackoladeMeta": {
+                                        "namingConvention": "name"
+                                    },
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "code": "rating",
+                                    "GUID": "c1a893d4-9563-4ce1-856a-e3807aab032c",
+                                    "required": true,
+                                    "mode": "double",
+                                    "sample": 2.7,
+                                    "error": {}
+                                },
+                                {
+                                    "name": "Num Reviews",
+                                    "hackoladeMeta": {
+                                        "namingConvention": "name"
+                                    },
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "code": "numReviews",
+                                    "GUID": "41b4c980-2604-4802-8a0c-5fb7b50efe85",
+                                    "required": true,
+                                    "mode": "integer32",
+                                    "sample": 32707679,
+                                    "error": {}
+                                },
+                                {
+                                    "name": "Meter",
+                                    "hackoladeMeta": {
+                                        "namingConvention": "name"
+                                    },
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "code": "meter",
+                                    "GUID": "0f56a3b4-73d2-4f5d-866e-b881e78e1ea6",
+                                    "required": false,
+                                    "mode": "integer32",
+                                    "sample": 100,
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "primaryKey": false,
+                            "code": "viewer",
+                            "GUID": "1b91e779-85b6-49c9-bd4b-3771fd79cfbc",
+                            "required": true,
+                            "error": {}
+                        },
+                        {
+                            "name": "Last Updated",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "code": "lastUpdated",
+                            "GUID": "56079ebf-a1a3-4dbe-89dd-e57b74ef0673",
+                            "required": true,
+                            "error": {}
+                        },
+                        {
+                            "name": "Box Office",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "code": "boxOffice",
+                            "GUID": "494a514b-cef9-42a9-b644-053a1d946a22",
+                            "required": false,
+                            "sample": "$53.3M",
+                            "error": {}
+                        },
+                        {
+                            "name": "Consensus",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "code": "consensus",
+                            "GUID": "d76c5165-e684-428a-b693-72efab9849bc",
+                            "required": false,
+                            "sample": "As can be expected from a Tim Burton movie, Corpse Bride is whimsically macabre, visually imaginative, and emotionally bittersweet.",
+                            "error": {}
+                        },
+                        {
+                            "name": "Critic",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "Meter",
+                                    "hackoladeMeta": {
+                                        "namingConvention": "name"
+                                    },
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "code": "meter",
+                                    "GUID": "f94cfa6d-3d4f-4fd4-a4ec-e7cb303225af",
+                                    "required": false,
+                                    "mode": "integer32",
+                                    "sample": 100,
+                                    "error": {}
+                                },
+                                {
+                                    "name": "Num Reviews",
+                                    "hackoladeMeta": {
+                                        "namingConvention": "name"
+                                    },
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "code": "numReviews",
+                                    "GUID": "e07b6058-24d1-431e-ac1a-c7f77b4f2c32",
+                                    "required": true,
+                                    "mode": "integer32",
+                                    "sample": 247,
+                                    "error": {}
+                                },
+                                {
+                                    "name": "Rating",
+                                    "hackoladeMeta": {
+                                        "namingConvention": "name"
+                                    },
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "primaryKey": false,
+                                    "code": "rating",
+                                    "GUID": "512fad62-6d35-41c2-a7c1-ad79f1f78ed8",
+                                    "required": false,
+                                    "mode": "double",
+                                    "sample": 8.1,
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "primaryKey": false,
+                            "code": "critic",
+                            "GUID": "da45e20d-c0a0-40f1-bab5-030a9a1d2675",
+                            "required": false,
+                            "error": {}
+                        },
+                        {
+                            "name": "Dvd",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "code": "dvd",
+                            "GUID": "0aaa8aaf-efde-4371-929b-69535a7cf13f",
+                            "required": false,
+                            "error": {}
+                        },
+                        {
+                            "name": "Fresh",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "code": "fresh",
+                            "GUID": "2154d816-a7a3-4aa5-a845-613d99bdbc6b",
+                            "required": false,
+                            "mode": "integer32",
+                            "sample": 236,
+                            "error": {}
+                        },
+                        {
+                            "name": "Production",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "code": "production",
+                            "GUID": "1aa5c800-f9f9-48cf-a082-408382f769bc",
+                            "required": false,
+                            "sample": "Strand",
+                            "error": {}
+                        },
+                        {
+                            "name": "Rotten",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "type": "numeric",
+                            "primaryKey": false,
+                            "code": "rotten",
+                            "GUID": "0c741e45-aaeb-4400-b2a1-e549c1605047",
+                            "required": false,
+                            "mode": "integer32",
+                            "sample": 126,
+                            "error": {}
+                        },
+                        {
+                            "name": "Website",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "type": "string",
+                            "primaryKey": false,
+                            "code": "website",
+                            "GUID": "78026ba1-690b-47d7-8726-b6e1624c30eb",
+                            "required": false,
+                            "sample": "http://corpsebridemovie.warnerbros.com/",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "primaryKey": false,
+                    "code": "tomatoes",
+                    "GUID": "10d5a0ad-0dd8-4e36-aaff-26c4acc1474c",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "name": "Languages",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "1b9dfee9-2bae-46ab-976f-d417aac80f93",
+                            "arrayItem": true,
+                            "sample": "English",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "code": "languages",
+                    "GUID": "566f9929-5557-40b8-be1f-8cde76c9e262",
+                    "required": false,
+                    "error": {}
+                },
+                {
+                    "name": "Metacritic",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "code": "metacritic",
+                    "GUID": "6abb276c-ef73-420e-ac12-5df9db125884",
+                    "required": false,
+                    "mode": "integer32",
+                    "sample": 99,
+                    "error": {}
+                },
+                {
+                    "name": "Poster",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "code": "poster",
+                    "GUID": "a504ca74-952a-41ba-a549-ddc982d6c1b3",
+                    "required": false,
+                    "sample": "https://m.media-amazon.com/images/M/MV5BMzQ5ODkxNjg1Nl5BMl5BanBnXkFtZTcwOTQ4ODgyMQ@@._V1_SY1000_SX677_AL_.jpg",
+                    "error": {}
+                },
+                {
+                    "name": "Writers",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "1619d92b-4ea1-4c34-8e75-a1cbd57a5403",
+                            "arrayItem": true,
+                            "sample": "Edward S. Curtis (story)",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "primaryKey": false,
+                    "code": "writers",
+                    "GUID": "6defbf6a-c5b6-4881-986e-86561843fcc4",
+                    "required": false,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "8482eb47-bf7c-46c2-95e1-6690eb1333e4",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "db9349af-2b5a-485b-a4ec-0a627ad80605",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "be92a86d-a29a-45e7-9166-4a6305c3fba9"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "ec139b9d-c16b-485b-b824-f19feee6d7d0",
+                            "type": "text"
+                        },
+                        {
+                            "keyId": "e91ebfdd-b50c-4740-b403-8de8b0b73e12",
+                            "type": "text"
+                        },
+                        {
+                            "keyId": "b4e1cdc7-c551-444f-874a-16ade55daf1c",
+                            "type": "text"
+                        },
+                        {
+                            "keyId": "4dc419ba-2925-489b-81e1-e565d701fdb5",
+                            "type": "text"
+                        }
+                    ],
+                    "name": "cast_text_fullplot_text_genres_text_title_text",
+                    "weights": "{\n    \"cast\": 1,\n    \"fullplot\": 1,\n    \"genres\": 1,\n    \"title\": 1\n}",
+                    "default_language": "english",
+                    "language_override": "language",
+                    "textIndexVersion": 3,
+                    "GUID": "c1e9a808-f2b4-439e-921f-3d0e97f97f1d"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "629e9ef6-f3eb-435b-8df9-b44418993659",
+            "bucketId": "a6b5c57a-b886-4144-8b53-4ecb5e30b4af",
+            "code": "movies",
+            "hackoladeMeta": {
+                "namingConvention": "collectionName",
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Sessions",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Id",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "code": "_id",
+                    "GUID": "98c02999-5ca5-4a70-9ff7-c725f6902e3b",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "User Id",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "code": "user_id",
+                    "GUID": "536e540b-3911-4785-8728-449a6845399e",
+                    "required": true,
+                    "sample": "t3qulfeem@kwiv5.6ur",
+                    "error": {}
+                },
+                {
+                    "name": "Jwt",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "code": "jwt",
+                    "GUID": "bd95c50c-f802-4084-a29c-6a2be3f5d05e",
+                    "required": true,
+                    "sample": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MTk5MDkzMjEsIm5iZiI6MTUxOTkwOTMyMSwianRpIjoiNmJlZDAwMWYtNTFiYi00NzVhLTgxZDAtMDcwNGE5Mjk0MWZlIiwiZXhwIjoxNTE5OTEwMjIxLCJpZGVudGl0eSI6eyJlbWFpbCI6InQzcXVsZmVlbUBrd2l2NS42dXIiLCJuYW1lIjoiM2lveHJtZnF4IiwicGFzc3dvcmQiOm51bGx9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2NsYWltcyI6eyJ1c2VyIjp7ImVtYWlsIjoidDNxdWxmZWVtQGt3aXY1LjZ1ciIsIm5hbWUiOiIzaW94cm1mcXgiLCJwYXNzd29yZCI6bnVsbH19fQ.ejtr_NyZyBronWMKuE0RFTjWej--T0zGrdc_iymGtVs",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "775b0569-586b-45d8-88f6-46d7565d106f",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "98c02999-5ca5-4a70-9ff7-c725f6902e3b",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "6e47eafa-1ca7-44bf-b5c1-c24f54ee2f9f"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "536e540b-3911-4785-8728-449a6845399e",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "user_id_1",
+                    "unique": true,
+                    "GUID": "89d7eea2-bbd2-41b6-9bec-d66175f22255"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "1c41beb8-7d0d-40c8-9f78-d3d0ecf1101e",
+            "bucketId": "a6b5c57a-b886-4144-8b53-4ecb5e30b4af",
+            "code": "sessions",
+            "hackoladeMeta": {
+                "namingConvention": "collectionName",
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Theaters",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Id",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "code": "_id",
+                    "GUID": "f2f4c984-8449-4734-be5f-857bf5b84ad3",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Theater Id",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "code": "theaterId",
+                    "GUID": "7bf2444e-e641-4b6a-b62e-0622cbe01e90",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 8916,
+                    "error": {}
+                },
+                {
+                    "name": "Location",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "Address",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "Street1",
+                                    "hackoladeMeta": {
+                                        "namingConvention": "name"
+                                    },
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "code": "street1",
+                                    "GUID": "39731b83-17a0-4169-b8a1-4f853eff1c98",
+                                    "required": true,
+                                    "sample": "4620 Garth Rd",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "City",
+                                    "hackoladeMeta": {
+                                        "namingConvention": "name"
+                                    },
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "code": "city",
+                                    "GUID": "82cec944-2abe-45f5-a848-b4e117bc9f20",
+                                    "required": true,
+                                    "sample": "Baytown",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "State",
+                                    "hackoladeMeta": {
+                                        "namingConvention": "name"
+                                    },
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "code": "state",
+                                    "GUID": "09369b98-86ea-48f6-ae03-d7ca158c4ce6",
+                                    "required": true,
+                                    "sample": "TX",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "Zipcode",
+                                    "hackoladeMeta": {
+                                        "namingConvention": "name"
+                                    },
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "code": "zipcode",
+                                    "GUID": "c946fc0e-622f-4d91-aa84-b64490dc4216",
+                                    "required": true,
+                                    "sample": "77521",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "Street2",
+                                    "hackoladeMeta": {
+                                        "namingConvention": "name"
+                                    },
+                                    "isActivated": true,
+                                    "code": "street2",
+                                    "type": "multiple",
+                                    "primaryKey": false,
+                                    "multipleTypes": [
+                                        {
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "string",
+                                            "GUID": "d839f593-048a-47b3-8313-dba6a057210d",
+                                            "primaryKey": false
+                                        },
+                                        {
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "null",
+                                            "GUID": "9d459c5f-f5ae-4585-ae05-1c4d913f6a8b",
+                                            "primaryKey": false
+                                        }
+                                    ],
+                                    "GUID": "930cb92d-9632-400f-885a-f9bf994b84c5",
+                                    "required": false,
+                                    "sample": "Ste B",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "primaryKey": false,
+                            "code": "address",
+                            "GUID": "ce20a8f3-e1f2-4689-b1aa-a7671e476ffc",
+                            "required": true,
+                            "error": {}
+                        },
+                        {
+                            "name": "Geo",
+                            "hackoladeMeta": {
+                                "namingConvention": "name"
+                            },
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "Type",
+                                    "hackoladeMeta": {
+                                        "namingConvention": "name"
+                                    },
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "primaryKey": false,
+                                    "code": "type",
+                                    "GUID": "9ec26d25-dec5-47c2-8ecd-52bcf5b9bcc0",
+                                    "required": true,
+                                    "sample": "Point",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "Coordinates",
+                                    "hackoladeMeta": {
+                                        "namingConvention": "name"
+                                    },
+                                    "isActivated": true,
+                                    "type": "array",
+                                    "properties": [
+                                        {
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "numeric",
+                                            "GUID": "008ddafb-3b30-4f58-8a71-8c409344e458",
+                                            "arrayItem": true,
+                                            "mode": "double",
+                                            "sample": -76.512016,
+                                            "error": {}
+                                        }
+                                    ],
+                                    "additionalItems": true,
+                                    "primaryKey": false,
+                                    "code": "coordinates",
+                                    "GUID": "573648f2-8521-40f4-b664-f477959791e4",
+                                    "required": true,
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": true,
+                            "primaryKey": false,
+                            "code": "geo",
+                            "GUID": "911762fd-9e47-4c71-802c-dff14cf6f4d6",
+                            "required": true,
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": true,
+                    "primaryKey": false,
+                    "code": "location",
+                    "GUID": "6b11534b-7c4a-4a99-8e3c-0c85f1bb0542",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "9e4b2e57-f870-483d-9bb0-960efb939909",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "f2f4c984-8449-4734-be5f-857bf5b84ad3",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "cd5552e8-713b-41de-bf08-5efe9f1e869c"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "911762fd-9e47-4c71-802c-dff14cf6f4d6",
+                            "type": "2DSphere"
+                        }
+                    ],
+                    "name": "geo index",
+                    "2dsphereIndexVersion": 3,
+                    "GUID": "39107896-9079-4e6f-8888-015632bc2deb"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "a596ccf7-398b-48a2-a81e-4bc30e4682e0",
+            "bucketId": "a6b5c57a-b886-4144-8b53-4ecb5e30b4af",
+            "code": "theaters",
+            "hackoladeMeta": {
+                "namingConvention": "collectionName",
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Users",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Id",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "code": "_id",
+                    "GUID": "c17a1257-966c-4dfd-904d-4e39b435b67b",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Name",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "code": "name",
+                    "GUID": "5364cb85-cc02-484d-9612-fb053d34c809",
+                    "required": true,
+                    "sample": "Ashlee Hart",
+                    "error": {}
+                },
+                {
+                    "name": "Email",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "code": "email",
+                    "GUID": "db37b04e-580f-4b39-b56f-d145b95f5357",
+                    "required": true,
+                    "sample": "ashlee_hart@fakegmail.com",
+                    "error": {}
+                },
+                {
+                    "name": "Password",
+                    "hackoladeMeta": {
+                        "namingConvention": "name"
+                    },
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "code": "password",
+                    "GUID": "e6f40eee-e988-4f2f-8fc1-6e8c18fa7518",
+                    "required": true,
+                    "sample": "$2b$12$S707opDk6HG/Lqk7MaHeQ.1N36I6kEUOhRv/RQEHZUbw89xAuO6Ju",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "d02e5671-5f7b-4935-96e9-77baf73f8e3b",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [
+                {
+                    "key": [
+                        {
+                            "keyId": "c17a1257-966c-4dfd-904d-4e39b435b67b",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "_id_",
+                    "GUID": "dee583ce-ae7e-40f4-8a6c-cfb4971a430f"
+                },
+                {
+                    "key": [
+                        {
+                            "keyId": "db37b04e-580f-4b39-b56f-d145b95f5357",
+                            "type": "ascending"
+                        }
+                    ],
+                    "name": "email_1",
+                    "unique": true,
+                    "GUID": "6b114e58-79c0-49eb-842b-546faf5ce23f"
+                }
+            ],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "5abbfc2d-ed3b-456d-9aed-874f2876aec6",
+            "bucketId": "a6b5c57a-b886-4144-8b53-4ecb5e30b4af",
+            "code": "users",
+            "hackoladeMeta": {
+                "namingConvention": "collectionName",
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "name": "sample_mflix",
+            "type": "bucket",
+            "collectionIds": [
+                "21d1f3c1-ae7d-4d34-8aba-2236a758ca17",
+                "629e9ef6-f3eb-435b-8df9-b44418993659",
+                "1c41beb8-7d0d-40c8-9f78-d3d0ecf1101e",
+                "a596ccf7-398b-48a2-a81e-4bc30e4682e0",
+                "5abbfc2d-ed3b-456d-9aed-874f2876aec6"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "a6b5c57a-b886-4144-8b53-4ecb5e30b4af",
+            "code": "sample_mflix",
+            "hackoladeMeta": {
+                "namingConvention": "name"
+            }
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk movies._id to comments.movie_id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "629e9ef6-f3eb-435b-8df9-b44418993659",
+                    "db9349af-2b5a-485b-a4ec-0a627ad80605"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "21d1f3c1-ae7d-4d34-8aba-2236a758ca17",
+                    "855238a3-4928-445c-88cc-f67e937215d5"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "GUID": "c6b7ba65-cf5e-48c5-82d3-1b712619d204",
+            "parentCollection": "629e9ef6-f3eb-435b-8df9-b44418993659",
+            "childCollection": "21d1f3c1-ae7d-4d34-8aba-2236a758ca17",
+            "hackoladeStyles": {
+                "GUID": "b88bc09f-e065-4467-b47b-76ed9c8325a7",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1764,
+                        "y": 1419
+                    },
+                    {
+                        "x": 1739,
+                        "y": 1419
+                    },
+                    {
+                        "x": 1739,
+                        "y": 1815
+                    },
+                    {
+                        "x": 1714,
+                        "y": 1815
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "a6b5c57a-b886-4144-8b53-4ecb5e30b4af": "sample_mflix",
+        "e3898b61-3ec5-4607-998e-4b48a9121f7a": "Id",
+        "78a8db4e-edcd-4439-a4d2-64d5ec2fc516": "Name",
+        "007db2dd-ece3-4d02-940e-32f205b19ece": "Email",
+        "855238a3-4928-445c-88cc-f67e937215d5": "Movie Id",
+        "b77d427a-cb9a-47e9-820e-756ed5377952": "Text",
+        "61ce0c34-3212-4618-9d1b-aebac2dafb9a": "Date",
+        "21d1f3c1-ae7d-4d34-8aba-2236a758ca17": "Comments",
+        "db9349af-2b5a-485b-a4ec-0a627ad80605": "Id",
+        "25f2e405-a51b-456d-95a5-7865e2a59980": "Plot",
+        "b4e1cdc7-c551-444f-874a-16ade55daf1c": "Genres",
+        "d07cb369-6e0e-4152-89b5-625b71fdb937": "Runtime",
+        "ec139b9d-c16b-485b-b824-f19feee6d7d0": "Cast",
+        "c655d1bc-ae23-4598-bb48-f9afef7e7cbb": "Num Mflix Comments",
+        "4dc419ba-2925-489b-81e1-e565d701fdb5": "Title",
+        "e91ebfdd-b50c-4740-b403-8de8b0b73e12": "Fullplot",
+        "e74dbf8f-6bee-46b7-899f-b15189879ae9": "Countries",
+        "ea043fbe-2c0f-4df3-b7f9-681e3aebdac8": "Released",
+        "30381013-62c3-4d5f-9287-96c479116a57": "Directors",
+        "49b7cfc9-4c76-4bbc-b84b-238e69346f7b": "Rated",
+        "a0db8e0a-cf1b-4ffc-8e20-027aec4f02b6": "Awards",
+        "5006c2a5-d07f-472c-9148-08bf1bc242bb": "Wins",
+        "3947566c-f19e-43af-b21e-c355a0590d15": "Nominations",
+        "993f35fa-9493-4762-9393-72ace2c7f8e2": "Text",
+        "53323eb4-46a0-4c54-b6bf-2d474cd901b9": "Lastupdated",
+        "74452c5e-1ea1-48b1-965c-6d145cde43a9": "Year",
+        "2cdafcca-ec6e-428b-ac75-d7f2551d7856": "Imdb",
+        "6216ea54-0f73-462d-8793-ebfb394ac412": "Rating",
+        "67f8ddbd-cccf-445c-a4f9-6397881779f7": "Votes",
+        "bc8cb3a8-db9f-48d7-b099-4f201e2da25b": "Id",
+        "b28576f8-8cd8-41ba-86e3-96fc7ca96e3a": "Type",
+        "10d5a0ad-0dd8-4e36-aaff-26c4acc1474c": "Tomatoes",
+        "1b91e779-85b6-49c9-bd4b-3771fd79cfbc": "Viewer",
+        "c1a893d4-9563-4ce1-856a-e3807aab032c": "Rating",
+        "41b4c980-2604-4802-8a0c-5fb7b50efe85": "Num Reviews",
+        "0f56a3b4-73d2-4f5d-866e-b881e78e1ea6": "Meter",
+        "56079ebf-a1a3-4dbe-89dd-e57b74ef0673": "Last Updated",
+        "494a514b-cef9-42a9-b644-053a1d946a22": "Box Office",
+        "d76c5165-e684-428a-b693-72efab9849bc": "Consensus",
+        "da45e20d-c0a0-40f1-bab5-030a9a1d2675": "Critic",
+        "f94cfa6d-3d4f-4fd4-a4ec-e7cb303225af": "Meter",
+        "e07b6058-24d1-431e-ac1a-c7f77b4f2c32": "Num Reviews",
+        "512fad62-6d35-41c2-a7c1-ad79f1f78ed8": "Rating",
+        "0aaa8aaf-efde-4371-929b-69535a7cf13f": "Dvd",
+        "2154d816-a7a3-4aa5-a845-613d99bdbc6b": "Fresh",
+        "1aa5c800-f9f9-48cf-a082-408382f769bc": "Production",
+        "0c741e45-aaeb-4400-b2a1-e549c1605047": "Rotten",
+        "78026ba1-690b-47d7-8726-b6e1624c30eb": "Website",
+        "566f9929-5557-40b8-be1f-8cde76c9e262": "Languages",
+        "6abb276c-ef73-420e-ac12-5df9db125884": "Metacritic",
+        "a504ca74-952a-41ba-a549-ddc982d6c1b3": "Poster",
+        "6defbf6a-c5b6-4881-986e-86561843fcc4": "Writers",
+        "629e9ef6-f3eb-435b-8df9-b44418993659": "Movies",
+        "98c02999-5ca5-4a70-9ff7-c725f6902e3b": "Id",
+        "536e540b-3911-4785-8728-449a6845399e": "User Id",
+        "bd95c50c-f802-4084-a29c-6a2be3f5d05e": "Jwt",
+        "1c41beb8-7d0d-40c8-9f78-d3d0ecf1101e": "Sessions",
+        "f2f4c984-8449-4734-be5f-857bf5b84ad3": "Id",
+        "7bf2444e-e641-4b6a-b62e-0622cbe01e90": "Theater Id",
+        "6b11534b-7c4a-4a99-8e3c-0c85f1bb0542": "Location",
+        "ce20a8f3-e1f2-4689-b1aa-a7671e476ffc": "Address",
+        "39731b83-17a0-4169-b8a1-4f853eff1c98": "Street1",
+        "82cec944-2abe-45f5-a848-b4e117bc9f20": "City",
+        "09369b98-86ea-48f6-ae03-d7ca158c4ce6": "State",
+        "c946fc0e-622f-4d91-aa84-b64490dc4216": "Zipcode",
+        "930cb92d-9632-400f-885a-f9bf994b84c5": "Street2",
+        "911762fd-9e47-4c71-802c-dff14cf6f4d6": "Geo",
+        "9ec26d25-dec5-47c2-8ecd-52bcf5b9bcc0": "Type",
+        "573648f2-8521-40f4-b664-f477959791e4": "Coordinates",
+        "a596ccf7-398b-48a2-a81e-4bc30e4682e0": "Theaters",
+        "c17a1257-966c-4dfd-904d-4e39b435b67b": "Id",
+        "5364cb85-cc02-484d-9612-fb053d34c809": "Name",
+        "db37b04e-580f-4b39-b56f-d145b95f5357": "Email",
+        "e6f40eee-e988-4f2f-8fc1-6e8c18fa7518": "Password",
+        "5abbfc2d-ed3b-456d-9aed-874f2876aec6": "Users",
+        "c6b7ba65-cf5e-48c5-82d3-1b712619d204": "fk movies._id to comments.movie_id"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "9223f63b-a5df-4de5-8943-df0d427a756c"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "d03523b5-29a7-4a09-8a35-2e550d3eda25"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "73d05102-bc4d-4d09-ab3a-05c3e527991c"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v6.0",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2023-10-11T07:52:28.470Z",
+    "GUID": "0b4f6ee6-43e1-4ddc-a665-2d84e82e8618",
+    "hackoladeMeta": {
+        "namingConvention": "modelName"
+    },
+    "isLineageEnabled": false,
+    "code": "new_model",
+    "lastModifTS": "2023-10-11T07:53:03.425Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.11.4"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "21d1f3c1-ae7d-4d34-8aba-2236a758ca17",
+                        "x": 1764,
+                        "y": 1350,
+                        "width": 211,
+                        "height": 138,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "629e9ef6-f3eb-435b-8df9-b44418993659",
+                        "x": 1400,
+                        "y": 1350,
+                        "width": 314,
+                        "height": 930,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "1c41beb8-7d0d-40c8-9f78-d3d0ecf1101e",
+                        "x": 1150,
+                        "y": 1400,
+                        "width": 196,
+                        "height": 84,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "a596ccf7-398b-48a2-a81e-4bc30e4682e0",
+                        "x": 1050,
+                        "y": 1050,
+                        "width": 286,
+                        "height": 264,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "5abbfc2d-ed3b-456d-9aed-874f2876aec6",
+                        "x": 1550,
+                        "y": 1150,
+                        "width": 210,
+                        "height": 102,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1000,
+                        "y": 1000,
+                        "GUID": "a6b5c57a-b886-4144-8b53-4ecb5e30b4af"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false,
+                "displayOptions": {
+                    "dndHandles": false,
+                    "hideErdRelationshipsNames": false
+                }
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
